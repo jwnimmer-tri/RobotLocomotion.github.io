@@ -1,0 +1,185 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Model Version Control &#8212; Drake Documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  false,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Credits" href="credits.html" />
+    <link rel="prev" title="Avoid Accidental Pushes to the Repository" href="no_push_to_origin.html" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="credits.html" title="Credits"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="no_push_to_origin.html" title="Avoid Accidental Pushes to the Repository"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Drake Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="developers.html" accesskey="U">For Developers</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="model-version-control">
+<h1>Model Version Control<a class="headerlink" href="#model-version-control" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="adding-model-artifacts-in-pull-requests">
+<h2>Adding Model Artifacts in Pull Requests<a class="headerlink" href="#adding-model-artifacts-in-pull-requests" title="Permalink to this headline">¶</a></h2>
+<p>Model artifacts have the potential to be very large, and we should avoid
+committing large files directly to Git.</p>
+<p>If your model’s files are small enough (&lt;100KB in a given directory), then you
+may add them directly to Git in a PR to master.</p>
+<p>Otherwise, you should add the large files to
+<a class="reference external" href="https://github.com/RobotLocomotion/models">RobotLocomotion/models</a>. Please do
+not commit files that are generally small, like <code class="docutils literal"><span class="pre">*.sdf</span></code> or <code class="docutils literal"><span class="pre">*.urdf</span></code> files,
+in <code class="docutils literal"><span class="pre">RobotLocomotion/models</span></code>; instead, please commit those directly.</p>
+<p>Before you decide to submit models, please ensure that you have tests that
+will need them. Do not submit a PR that adds models but has zero intent to use
+them, as Drake is not a model repository.</p>
+<p>See below for the suggested workflow.</p>
+<div class="section" id="develop-changes-locally">
+<h3>Develop Changes Locally<a class="headerlink" href="#develop-changes-locally" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Clone <code class="docutils literal"><span class="pre">RobotLocomotion/models</span></code> locally</li>
+<li>Create a Git branch in your local checkouts of <em>both</em> <code class="docutils literal"><span class="pre">models</span></code> and
+<code class="docutils literal"><span class="pre">drake</span></code>.</li>
+<li>Update <code class="docutils literal"><span class="pre">drake/tools/workspace/models/repository.bzl</span></code> to point to your
+<code class="docutils literal"><span class="pre">models</span></code> checkout using
+<code class="docutils literal"><span class="pre">github_archive(...,</span> <span class="pre">local_repository_override</span> <span class="pre">=</span> <span class="pre">&lt;path&gt;)</span></code>.</li>
+<li>Update <code class="docutils literal"><span class="pre">drake/tools/workspace/models/files.bzl</span></code> to incorporate the models
+you want.</li>
+<li>Update <code class="docutils literal"><span class="pre">drake/tools/workspace/models/package.BUILD.bazel</span></code> to export the
+models.</li>
+<li>Ensure that you use <code class="docutils literal"><span class="pre">forward_files</span></code> to make the files available inside
+the Drake bazel workspace. For an example, see
+<a class="reference external" href="https://github.com/RobotLocomotion/drake/blob/master/manipulation/models/ycb/BUILD.bazel">drake/manipulation/models/ycb/BUILD.bazel</a>.</li>
+<li>Ensure your tests pass under <code class="docutils literal"><span class="pre">bazel</span> <span class="pre">test</span></code>.</li>
+</ol>
+</div>
+<div class="section" id="submit-changes-in-a-pull-request">
+<h3>Submit Changes in a Pull Request<a class="headerlink" href="#submit-changes-in-a-pull-request" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Push your changes to your fork of <code class="docutils literal"><span class="pre">RobotLocomotion/models</span></code>. Make a PR.</li>
+<li>Update <code class="docutils literal"><span class="pre">drake/tools/workspace/models/models/repository.bzl</span></code> to use the
+commit you pushed.</li>
+<li>Submit a PR to Drake, and add a self-blocking discussion thread, such as
+<code class="docutils literal"><span class="pre">&quot;Working</span> <span class="pre">temporary</span> <span class="pre">SHA1</span> <span class="pre">until</span> <span class="pre">the</span> <span class="pre">models</span> <span class="pre">PR</span> <span class="pre">&lt;LINK&gt;</span> <span class="pre">is</span> <span class="pre">merged.&quot;</span></code>,
+where <code class="docutils literal"><span class="pre">&lt;LINK&gt;</span></code> references your <code class="docutils literal"><span class="pre">models</span></code> PR.</li>
+<li>Get review on your Drake PR first. Once it is generally approved, then
+request review for your <code class="docutils literal"><span class="pre">models</span></code> PR.</li>
+<li>Once both PRs are approved:<ol class="arabic">
+<li>Merge your <code class="docutils literal"><span class="pre">models</span></code> PR.</li>
+<li>Update <code class="docutils literal"><span class="pre">drake/tools/workspace/models/repository.bzl</span></code> to the latest
+merge commit on <code class="docutils literal"><span class="pre">master</span></code> for <code class="docutils literal"><span class="pre">RobotLocomotion/models</span></code>.</li>
+<li>Merge your <code class="docutils literal"><span class="pre">drake</span></code> PR.</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">Drake Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation and Quickstart</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://drake.mit.edu/#tutorials-and-examples">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference external" href="doxygen_cxx/index.html#://">API Documentation (C++)</a></li>
+<li class="toctree-l1"><a class="reference external" href="pydrake/index.html#://">API Documentation (Python)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting Help</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="developers.html">For Developers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/RobotLocomotion/drake">GitHub</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="python_bindings.html">Using Drake from Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="julia_bindings.html">Using Drake from Julia</a></li>
+</ul>
+
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Model Version Control</a><ul>
+<li><a class="reference internal" href="#adding-model-artifacts-in-pull-requests">Adding Model Artifacts in Pull Requests</a><ul>
+<li><a class="reference internal" href="#develop-changes-locally">Develop Changes Locally</a></li>
+<li><a class="reference internal" href="#submit-changes-in-a-pull-request">Submit Changes in a Pull Request</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="credits.html" title="Credits"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="no_push_to_origin.html" title="Avoid Accidental Pushes to the Repository"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Drake Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="developers.html" >For Developers</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright Robot Locomotion Group (MIT).
+    </div>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Getting Help &#8212; Drake Documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  false,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="For Developers" href="developers.html" />
+    <link rel="prev" title="Drake v0.19.0" href="release_notes/v0.19.0.html" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="developers.html" title="For Developers"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="release_notes/v0.19.0.html" title="Drake v0.19.0"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Drake Documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-help">
+<span id="id1"></span><h1>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="searching-for-your-question">
+<h2>Searching For Your Question<a class="headerlink" href="#searching-for-your-question" title="Permalink to this headline">¶</a></h2>
+<p>If you need help with Drake, please first review the documentation on this
+website for things such as <a class="reference internal" href="installation.html#installation-and-quick-start"><span class="std std-ref">installation</span></a>,
+<a class="reference external" href="doxygen_cxx/index.html#://">the C++ API</a>, or
+<a class="reference internal" href="python_bindings.html#python-bindings"><span class="std std-ref">Python bindings</span></a>.</p>
+<p>Please also briefly review
+<a class="reference external" href="https://github.com/RobotLocomotion/drake/issues?q=is%3Aissue">Drake’s open and closed GitHub issues</a>
+and <a class="reference external" href="https://stackoverflow.com/questions/tagged/drake">StackOverflow posts tagged for Drake</a>
+to see if your issue has been encountered by someone else before.</p>
+</div>
+<div class="section" id="asking-your-question">
+<h2>Asking Your Question<a class="headerlink" href="#asking-your-question" title="Permalink to this headline">¶</a></h2>
+<p>If you know your question is a bug or feature request, please
+<a class="reference external" href="https://github.com/RobotLocomotion/drake/issues/new">post a GitHub issue</a>.</p>
+<p>Otherwise, if you are seeking assistance (e.g. tutorials or a brief example),
+please <a class="reference external" href="https://stackoverflow.com/questions/ask?tags=drake">post a question on StackOverflow</a> with the <code class="docutils literal"><span class="pre">drake</span></code> tag.</p>
+<p>If you are actively developing with Drake and may need more active discussions
+than what StackOverflow and GitHub may offer, consider asking for access to the
+Drake Developers Slack Channel. To do so, please email Russ Tedrake for access.
+Please note that this access may not always be readily granted.</p>
+<p>If you wish to contribute a patch, please see how to <a class="reference internal" href="developers.html#pull-request"><span class="std std-ref">submit a pull request</span></a>.</p>
+<div class="section" id="helpful-information">
+<h3>Helpful Information<a class="headerlink" href="#helpful-information" title="Permalink to this headline">¶</a></h3>
+<p>When reporting an issue, please consider providing the following information
+(<em>examples in italics</em>, <code class="docutils literal"><span class="pre">helper</span> <span class="pre">command</span> <span class="pre">in</span> <span class="pre">monospace</span></code>):</p>
+<ul class="simple">
+<li>Operating system (<em>Ubuntu 18.04, macOS Catalina</em>)</li>
+<li>Language (C++, <a class="reference internal" href="python_bindings.html#python-bindings"><span class="std std-ref">Python</span></a>)<ul>
+<li>C++ compiler (<em>GCC 7.5.0, GCC 9.3.0, Clang 6.0.0</em>)</li>
+<li>Python version (<em>Python 3.6.7</em>)</li>
+<li>Python distribution (<em>apt, homebrew</em>)</li>
+</ul>
+</li>
+<li>If building from source:<ul>
+<li>Build system (Bazel, CMake)<ul>
+<li>Bazel version (<code class="docutils literal"><span class="pre">which</span> <span class="pre">bazel;</span> <span class="pre">bazel</span> <span class="pre">version</span></code>)</li>
+<li>Bazel C++ compiler (<code class="docutils literal"><span class="pre">bazel</span> <span class="pre">run</span> <span class="pre">&#64;drake//common:print_host_settings</span></code>)</li>
+<li>CMake version (<code class="docutils literal"><span class="pre">which</span> <span class="pre">cmake;</span> <span class="pre">cmake</span> <span class="pre">--version</span></code>)</li>
+<li>CMake C++ compiler (<code class="docutils literal"><span class="pre">cmake</span> <span class="pre">-LA</span> <span class="pre">&lt;path_to_source_dir&gt;</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">'CMAKE_.*_COMPILER'</span></code>)</li>
+</ul>
+</li>
+<li>Git revision (<code class="docutils literal"><span class="pre">git</span> <span class="pre">rev-parse</span> <span class="pre">--short</span> <span class="pre">HEAD</span></code>)</li>
+<li><a class="reference internal" href="from_source.html#build-from-source"><span class="std std-ref">Building Drake</span></a> vs. downstream project (like <a class="reference external" href="https://github.com/RobotLocomotion/drake-external-examples/tree/master/drake_bazel_external">drake_bazel_external</a>, <a class="reference external" href="https://github.com/RobotLocomotion/drake-external-examples/tree/master/drake_cmake_external">drake_cmake_external</a>)</li>
+</ul>
+</li>
+<li>If using binary release:<ul>
+<li>Download URL</li>
+<li>Contents of <code class="docutils literal"><span class="pre">drake/share/doc/drake/VERSION.txt</span></code></li>
+<li>Building downstream project (<a class="reference external" href="https://github.com/RobotLocomotion/drake-external-examples/tree/master/drake_cmake_installed">drake_cmake_installed</a>)</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="older-sources">
+<h2>Older Sources<a class="headerlink" href="#older-sources" title="Permalink to this headline">¶</a></h2>
+<p>Some information was previously on a
+<a class="reference external" href="http://mailman.mit.edu/mailman/listinfo/drake-users">mailing list</a>.
+Please do not use these resources, as they are now inactive.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">Drake Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation and Quickstart</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://drake.mit.edu/#tutorials-and-examples">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference external" href="doxygen_cxx/index.html#://">API Documentation (C++)</a></li>
+<li class="toctree-l1"><a class="reference external" href="pydrake/index.html#://">API Documentation (Python)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">For Developers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/RobotLocomotion/drake">GitHub</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="python_bindings.html">Using Drake from Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="julia_bindings.html">Using Drake from Julia</a></li>
+</ul>
+
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Getting Help</a><ul>
+<li><a class="reference internal" href="#searching-for-your-question">Searching For Your Question</a></li>
+<li><a class="reference internal" href="#asking-your-question">Asking Your Question</a><ul>
+<li><a class="reference internal" href="#helpful-information">Helpful Information</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#older-sources">Older Sources</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="developers.html" title="For Developers"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="release_notes/v0.19.0.html" title="Drake v0.19.0"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Drake Documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright Robot Locomotion Group (MIT).
+    </div>
+  </body>
+</html>

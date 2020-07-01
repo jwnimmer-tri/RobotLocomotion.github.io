@@ -1,0 +1,102 @@
+<map id="drake/systems/primitives/gain.h" name="drake/systems/primitives/gain.h">
+<area shape="rect" id="node1" title=" " alt="" coords="393,5,581,47"/>
+<area shape="rect" id="node2" href="$default__scalars_8h.html" title=" " alt="" coords="6441,899,6612,940"/>
+<area shape="rect" id="node9" href="$eigen__types_8h.html" title="This file contains abbreviated definitions for certain specializations of Eigen::Matrix that are comm..." alt="" coords="6797,1167,6957,1208"/>
+<area shape="rect" id="node13" href="$drake__copyable_8h.html" title="Provides careful macros to selectively enable or disable the special member functions for copy&#45;constr..." alt="" coords="5382,1435,5543,1476"/>
+<area shape="rect" id="node61" href="$vector__system_8h.html" title=" " alt="" coords="6735,95,6929,136"/>
+<area shape="rect" id="node3" href="$common_2autodiff_8h.html" title=" " alt="" coords="3965,995,4152,1022"/>
+<area shape="rect" id="node22" href="$symbolic_8h.html" title="Provides public header files of Drake&#39;s symbolic library." alt="" coords="5883,995,6077,1022"/>
+<area shape="rect" id="node4" title=" " alt="" coords="6003,1263,6095,1290"/>
+<area shape="rect" id="node5" title=" " alt="" coords="3814,1085,4015,1111"/>
+<area shape="rect" id="node6" href="$eigen__autodiff__types_8h.html" title="This file contains abbreviated definitions for certain uses of AutoDiffScalar that are commonly used ..." alt="" coords="4595,1077,4755,1119"/>
+<area shape="rect" id="node14" href="$autodiffxd_8h.html" title=" " alt="" coords="4368,1085,4571,1111"/>
+<area shape="rect" id="node17" href="$autodiff__overloads_8h.html" title="Overloads for STL mathematical operations on AutoDiffScalar." alt="" coords="2425,1077,2599,1119"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2693,1442,2785,1469"/>
+<area shape="rect" id="node8" title=" " alt="" coords="7070,1263,7173,1290"/>
+<area shape="rect" id="node10" title=" " alt="" coords="12443,1442,12503,1469"/>
+<area shape="rect" id="node11" href="$constants_8h.html" title=" " alt="" coords="7373,1263,7571,1290"/>
+<area shape="rect" id="node12" href="$drake__assert_8h.html" title="Provides Drake&#39;s assertion implementation." alt="" coords="1749,1345,1910,1387"/>
+<area shape="rect" id="node15" title=" " alt="" coords="2438,1263,2501,1290"/>
+<area shape="rect" id="node16" title=" " alt="" coords="5678,1174,5754,1201"/>
+<area shape="rect" id="node18" title=" " alt="" coords="2023,1263,2081,1290"/>
+<area shape="rect" id="node19" href="$cond_8h.html" title=" " alt="" coords="2777,1174,2943,1201"/>
+<area shape="rect" id="node21" href="$dummy__value_8h.html" title=" " alt="" coords="2019,1167,2194,1208"/>
+<area shape="rect" id="node20" title=" " alt="" coords="3505,1263,3591,1290"/>
+<area shape="rect" id="node23" href="$symbolic__variable_8h.html" title=" " alt="" coords="6431,1077,6614,1119"/>
+<area shape="rect" id="node34" href="$symbolic__variables_8h.html" title=" " alt="" coords="7251,1077,7434,1119"/>
+<area shape="rect" id="node36" href="$symbolic__environment_8h.html" title=" " alt="" coords="5139,1077,5322,1119"/>
+<area shape="rect" id="node40" href="$symbolic__expression_8h.html" title=" " alt="" coords="4830,1077,5013,1119"/>
+<area shape="rect" id="node49" href="$symbolic__expression__visitor_8h.html" title=" " alt="" coords="8633,1167,8815,1208"/>
+<area shape="rect" id="node50" href="$symbolic__ldlt_8h.html" title="Eigen::LDLT is specialized for drake::symbolic::Expression, for certain matrix sizes." alt="" coords="5982,1167,6165,1208"/>
+<area shape="rect" id="node51" href="$symbolic__monomial_8h.html" title=" " alt="" coords="7045,1077,7227,1119"/>
+<area shape="rect" id="node52" href="$symbolic__monomial__util_8h.html" title=" " alt="" coords="6225,1077,6407,1119"/>
+<area shape="rect" id="node53" href="$symbolic__polynomial_8h.html" title=" " alt="" coords="5759,1077,5942,1119"/>
+<area shape="rect" id="node54" href="$symbolic__rational__function_8h.html" title=" " alt="" coords="5553,1077,5735,1119"/>
+<area shape="rect" id="node55" href="$symbolic__formula_8h.html" title=" " alt="" coords="5346,1077,5529,1119"/>
+<area shape="rect" id="node57" href="$symbolic__formula__visitor_8h.html" title=" " alt="" coords="4017,1167,4199,1208"/>
+<area shape="rect" id="node58" href="$symbolic__simplification_8h.html" title=" " alt="" coords="7458,1077,7641,1119"/>
+<area shape="rect" id="node59" href="$symbolic__codegen_8h.html" title=" " alt="" coords="6018,1077,6201,1119"/>
+<area shape="rect" id="node24" title=" " alt="" coords="8022,1263,8093,1290"/>
+<area shape="rect" id="node25" title=" " alt="" coords="12891,1353,12968,1379"/>
+<area shape="rect" id="node26" title=" " alt="" coords="9052,1353,9111,1379"/>
+<area shape="rect" id="node27" href="$hash_8h.html" title=" " alt="" coords="7875,1174,8042,1201"/>
+<area shape="rect" id="node28" title=" " alt="" coords="10299,1263,10379,1290"/>
+<area shape="rect" id="node29" title=" " alt="" coords="7248,1263,7299,1290"/>
+<area shape="rect" id="node30" title=" " alt="" coords="13424,1263,13499,1290"/>
+<area shape="rect" id="node31" title=" " alt="" coords="11312,1263,11355,1290"/>
+<area shape="rect" id="node32" title=" " alt="" coords="14510,1353,14573,1379"/>
+<area shape="rect" id="node33" href="$drake__throw_8h.html" title="Provides a convenient wrapper to throw an exception when a condition is unmet." alt="" coords="1157,1256,1318,1297"/>
+<area shape="rect" id="node35" title=" " alt="" coords="7638,1174,7749,1201"/>
+<area shape="rect" id="node37" title=" " alt="" coords="5073,1174,5197,1201"/>
+<area shape="rect" id="node38" href="$random_8h.html" title=" " alt="" coords="4427,1174,4613,1201"/>
+<area shape="rect" id="node39" title=" " alt="" coords="4429,1263,4501,1290"/>
+<area shape="rect" id="node41" title=" " alt="" coords="8421,1174,8507,1201"/>
+<area shape="rect" id="node42" title=" " alt="" coords="4941,1174,5048,1201"/>
+<area shape="rect" id="node43" href="$extract__double_8h.html" title=" " alt="" coords="10416,1167,10587,1208"/>
+<area shape="rect" id="node44" title=" " alt="" coords="10834,1263,10921,1290"/>
+<area shape="rect" id="node45" href="$nice__type__name_8h.html" title=" " alt="" coords="11675,1256,11861,1297"/>
+<area shape="rect" id="node46" title=" " alt="" coords="9803,1353,9879,1379"/>
+<area shape="rect" id="node47" href="$never__destroyed_8h.html" title=" " alt="" coords="3425,1345,3586,1387"/>
+<area shape="rect" id="node48" title=" " alt="" coords="3481,1442,3530,1469"/>
+<area shape="rect" id="node56" href="$drake__bool_8h.html" title=" " alt="" coords="3121,1167,3282,1208"/>
+<area shape="rect" id="node60" title=" " alt="" coords="7437,1174,7512,1201"/>
+<area shape="rect" id="node62" href="$unused_8h.html" title=" " alt="" coords="15166,638,15349,665"/>
+<area shape="rect" id="node63" href="$basic__vector_8h.html" title=" " alt="" coords="8417,720,8610,761"/>
+<area shape="rect" id="node67" href="$context_8h.html" title=" " alt="" coords="12710,452,12903,493"/>
+<area shape="rect" id="node88" href="$leaf__system_8h.html" title=" " alt="" coords="8197,184,8390,225"/>
+<area shape="rect" id="node64" title=" " alt="" coords="10621,995,10688,1022"/>
+<area shape="rect" id="node65" href="$vector__base_8h.html" title=" " alt="" coords="7809,809,8002,851"/>
+<area shape="rect" id="node66" href="$drake__deprecated_8h.html" title="Provides a portable macro for use in generating compile&#45;time warnings for use of code that is permitt..." alt="" coords="11590,899,11751,940"/>
+<area shape="rect" id="node68" href="$pointer__cast_8h.html" title=" " alt="" coords="13232,541,13403,583"/>
+<area shape="rect" id="node70" href="$value_8h.html" title=" " alt="" coords="10021,1085,10193,1111"/>
+<area shape="rect" id="node73" href="$context__base_8h.html" title=" " alt="" coords="11390,541,11583,583"/>
+<area shape="rect" id="node80" href="$parameters_8h.html" title=" " alt="" coords="12710,541,12903,583"/>
+<area shape="rect" id="node84" href="$state_8h.html" title=" " alt="" coords="12091,541,12285,583"/>
+<area shape="rect" id="node69" title=" " alt="" coords="13182,638,13287,665"/>
+<area shape="rect" id="node71" href="$copyable__unique__ptr_8h.html" title=" " alt="" coords="10006,1167,10189,1208"/>
+<area shape="rect" id="node72" href="$is__cloneable_8h.html" title=" " alt="" coords="9955,1263,10173,1290"/>
+<area shape="rect" id="node74" href="$reset__on__copy_8h.html" title=" " alt="" coords="10237,988,10395,1029"/>
+<area shape="rect" id="node75" href="$cache_8h.html" title="Declares CacheEntryValue and Cache, which is the container for cache entry values." alt="" coords="10814,899,11007,940"/>
+<area shape="rect" id="node78" href="$dependency__tracker_8h.html" title="Declares DependencyTracker and DependencyGraph which is the container for trackers." alt="" coords="10662,809,10855,851"/>
+<area shape="rect" id="node79" href="$fixed__input__port__value_8h.html" title=" " alt="" coords="10755,631,10949,672"/>
+<area shape="rect" id="node76" href="$framework__common_8h.html" title=" " alt="" coords="9531,988,9725,1029"/>
+<area shape="rect" id="node77" title=" " alt="" coords="8785,1085,8853,1111"/>
+<area shape="rect" id="node81" href="$abstract__values_8h.html" title=" " alt="" coords="11963,809,12157,851"/>
+<area shape="rect" id="node82" href="$discrete__values_8h.html" title=" " alt="" coords="9178,631,9371,672"/>
+<area shape="rect" id="node83" href="$scalar__conversion__traits_8h.html" title=" " alt="" coords="3778,899,3974,940"/>
+<area shape="rect" id="node85" href="$continuous__state_8h.html" title=" " alt="" coords="7555,631,7749,672"/>
+<area shape="rect" id="node86" title=" " alt="" coords="7045,727,7160,754"/>
+<area shape="rect" id="node87" href="$subvector_8h.html" title=" " alt="" coords="7590,720,7783,761"/>
+<area shape="rect" id="node89" href="$leaf__context_8h.html" title=" " alt="" coords="13199,363,13393,404"/>
+<area shape="rect" id="node90" href="$leaf__output__port_8h.html" title=" " alt="" coords="8399,273,8593,315"/>
+<area shape="rect" id="node93" href="$model__values_8h.html" title=" " alt="" coords="14289,631,14482,672"/>
+<area shape="rect" id="node94" href="$system_8h.html" title=" " alt="" coords="7859,273,8053,315"/>
+<area shape="rect" id="node98" href="$system__constraint_8h.html" title=" " alt="" coords="5290,363,5483,404"/>
+<area shape="rect" id="node99" href="$system__output_8h.html" title=" " alt="" coords="9395,631,9589,672"/>
+<area shape="rect" id="node100" href="$system__scalar__converter_8h.html" title=" " alt="" coords="5286,809,5487,851"/>
+<area shape="rect" id="node91" href="$cache__entry_8h.html" title=" " alt="" coords="11390,452,11583,493"/>
+<area shape="rect" id="node92" href="$output__port_8h.html" title=" " alt="" coords="9490,363,9683,404"/>
+<area shape="rect" id="node95" href="$event__collection_8h.html" title=" " alt="" coords="12091,363,12285,404"/>
+<area shape="rect" id="node96" href="$input__port_8h.html" title=" " alt="" coords="8214,363,8407,404"/>
+<area shape="rect" id="node97" href="$system__base_8h.html" title=" " alt="" coords="11737,363,11930,404"/>
+</map>

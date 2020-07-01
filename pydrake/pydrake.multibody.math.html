@@ -1,0 +1,1874 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pydrake.multibody.math &mdash; pydrake  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="pydrake  documentation" href="index.html"/>
+        <link rel="up" title="pydrake.multibody" href="pydrake.multibody.html"/>
+        <link rel="next" title="pydrake.multibody.parsing" href="pydrake.multibody.parsing.html"/>
+        <link rel="prev" title="pydrake.multibody.inverse_kinematics" href="pydrake.multibody.inverse_kinematics.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pydrake
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="pydrake.all.html">pydrake.all</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.autodiffutils.html">pydrake.autodiffutils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.common.html">pydrake.common</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.examples.html">pydrake.examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.forwarddiff.html">pydrake.forwarddiff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.geometry.html">pydrake.geometry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.lcm.html">pydrake.lcm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.manipulation.html">pydrake.manipulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.math.html">pydrake.math</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="pydrake.multibody.html">pydrake.multibody</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="pydrake.multibody.all.html">pydrake.multibody.all</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pydrake.multibody.benchmarks.html">pydrake.multibody.benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pydrake.multibody.inverse_kinematics.html">pydrake.multibody.inverse_kinematics</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">pydrake.multibody.math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pydrake.multibody.parsing.html">pydrake.multibody.parsing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pydrake.multibody.plant.html">pydrake.multibody.plant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pydrake.multibody.tree.html">pydrake.multibody.tree</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.perception.html">pydrake.perception</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.polynomial.html">pydrake.polynomial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.solvers.html">pydrake.solvers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.symbolic.html">pydrake.symbolic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.systems.html">pydrake.systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.trajectories.html">pydrake.trajectories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydrake.visualization.html">pydrake.visualization</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pydrake</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="pydrake.multibody.html">pydrake.multibody</a> &raquo;</li>
+        
+      <li>pydrake.multibody.math</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pydrake.multibody.math">
+<span id="pydrake-multibody-math"></span><h1>pydrake.multibody.math<a class="headerlink" href="#module-pydrake.multibody.math" title="Permalink to this headline">¶</a></h1>
+<p>Bindings for multibody math.</p>
+<dl class="attribute">
+<dt id="pydrake.multibody.math.SpatialAcceleration">
+<code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialAcceleration</code><a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#pydrake.multibody.math.SpatialAcceleration_[float]" title="pydrake.multibody.math.SpatialAcceleration_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.multibody.math.SpatialAcceleration_[float]</span></code></a></p>
+</dd></dl>
+
+<dl class="template">
+<dt id="pydrake.multibody.math.SpatialAcceleration_">
+<em class="property">template </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialAcceleration_</code><a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instantiations: <a class="reference internal" href="#pydrake.multibody.math.SpatialAcceleration_[float]" title="pydrake.multibody.math.SpatialAcceleration_[float]"><code class="xref py py-class docutils literal"><span class="pre">SpatialAcceleration_[float]</span></code></a>, <a class="reference internal" href="#pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd]" title="pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd]"><code class="xref py py-class docutils literal"><span class="pre">SpatialAcceleration_[AutoDiffXd]</span></code></a>, <a class="reference internal" href="#pydrake.multibody.math.SpatialAcceleration_[Expression]" title="pydrake.multibody.math.SpatialAcceleration_[Expression]"><code class="xref py py-class docutils literal"><span class="pre">SpatialAcceleration_[Expression]</span></code></a></p>
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float]">
+<em class="property">class </em><code class="descname">SpatialAcceleration_[float]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent a <em>spatial acceleration</em> that combines
+rotational (angular acceleration) and translational (linear
+acceleration) components. While a SpatialVelocity <code class="docutils literal"><span class="pre">V_XY</span></code> represents
+the motion of a “moving frame” Y measured with respect to a
+“measured-in” frame X, the SpatialAcceleration <code class="docutils literal"><span class="pre">A_XY</span></code> represents the
+rate of change of this spatial velocity <code class="docutils literal"><span class="pre">V_XY</span></code> in frame X. That is
+<span class="math">\(^XA^Y = \frac{^Xd}{dt}\,{^XV^Y}\)</span> where <span class="math">\(\frac{^Xd}{dt}\)</span>
+denotes the time derivative taken in frame X. That is, to compute an
+acceleration we need to specify in what frame the time derivative is
+taken, see [Mitiguy 2016, §6.1] for a more in depth discussion on
+this. Time derivatives can be taken in different frames, and they
+transform according to the “Transport Theorem”, which in Drake is
+implemented in drake::math::ConvertTimeDerivativeToOtherFrame(). In
+source code comments we write <code class="docutils literal"><span class="pre">A_XY</span> <span class="pre">=</span> <span class="pre">DtX(V_XY)</span></code>, where <code class="docutils literal"><span class="pre">DtX()</span></code> is
+the operator that takes the time derivative in the X frame. By
+convention, and unless otherwise stated, we assume that the frame in
+which the time derivative is taken is the “measured-in” frame, i.e.
+the time derivative used in <code class="docutils literal"><span class="pre">A_XY</span></code> is in frame X by default (i.e.
+DtX()). To perform numerical computations, we need to specify an
+“expressed-in” frame E (which may be distinct from either X or Y), so
+that components can be expressed as real numbers. Only the vector
+values are stored in a SpatialAcceleration object; the frames must be
+understood from context and it is the responsibility of the user to
+keep track of them. That is best accomplished through disciplined
+notation. In source code we use monogram notation where capital A is
+used to designate a spatial acceleration quantity. The same monogram
+notation rules for SpatialVelocity are also used for
+SpatialAcceleration. That is, the spatial acceleration of a frame Y
+measured in X and expressed in E is denoted with <code class="docutils literal"><span class="pre">A_XY_E</span></code>. For a
+more detailed introduction on spatial vectors and the monogram
+notation please refer to section multibody_spatial_vectors.</p>
+<p>[Mitiguy 2016] Mitiguy, P., 2016. Advanced Dynamics &amp; Motion
+Simulation.</p>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialAcceleration_[float]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial acceleration are left uninitialized resulting in a
+zero cost operation. However in Debug builds those entries are set to
+NaN so that operations using this uninitialized spatial acceleration
+fail fast, allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialAcceleration_[float], alpha: numpy.ndarray[numpy.float64[3, 1]], a: numpy.ndarray[numpy.float64[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialAcceleration constructor from an angular acceleration <code class="docutils literal"><span class="pre">alpha</span></code>
+and a linear acceleration <code class="docutils literal"><span class="pre">a</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialAcceleration_[float], A: numpy.ndarray[numpy.float64[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialAcceleration constructor from an Eigen expression that
+represents a six-dimensional vector. Under the hood, spatial
+accelerations are 6-element quantities that are pairs of ordinary
+3-vectors. Elements 0-2 constitute the angular acceleration component
+while elements 3-5 constitute the translational acceleration. The
+argument <code class="docutils literal"><span class="pre">A</span></code> in this constructor is the concatenation of the
+rotational 3D component followed by the translational 3D component.
+This constructor will assert the size of <code class="docutils literal"><span class="pre">A</span></code> is six (6) at
+compile-time for fixed sized Eigen expressions and at run-time for
+dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialAcceleration_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialAcceleration_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_.SpatialAcceleration_[float].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialAcceleration_[AutoDiffXd]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent a <em>spatial acceleration</em> that combines
+rotational (angular acceleration) and translational (linear
+acceleration) components. While a SpatialVelocity <code class="docutils literal"><span class="pre">V_XY</span></code> represents
+the motion of a “moving frame” Y measured with respect to a
+“measured-in” frame X, the SpatialAcceleration <code class="docutils literal"><span class="pre">A_XY</span></code> represents the
+rate of change of this spatial velocity <code class="docutils literal"><span class="pre">V_XY</span></code> in frame X. That is
+<span class="math">\(^XA^Y = \frac{^Xd}{dt}\,{^XV^Y}\)</span> where <span class="math">\(\frac{^Xd}{dt}\)</span>
+denotes the time derivative taken in frame X. That is, to compute an
+acceleration we need to specify in what frame the time derivative is
+taken, see [Mitiguy 2016, §6.1] for a more in depth discussion on
+this. Time derivatives can be taken in different frames, and they
+transform according to the “Transport Theorem”, which in Drake is
+implemented in drake::math::ConvertTimeDerivativeToOtherFrame(). In
+source code comments we write <code class="docutils literal"><span class="pre">A_XY</span> <span class="pre">=</span> <span class="pre">DtX(V_XY)</span></code>, where <code class="docutils literal"><span class="pre">DtX()</span></code> is
+the operator that takes the time derivative in the X frame. By
+convention, and unless otherwise stated, we assume that the frame in
+which the time derivative is taken is the “measured-in” frame, i.e.
+the time derivative used in <code class="docutils literal"><span class="pre">A_XY</span></code> is in frame X by default (i.e.
+DtX()). To perform numerical computations, we need to specify an
+“expressed-in” frame E (which may be distinct from either X or Y), so
+that components can be expressed as real numbers. Only the vector
+values are stored in a SpatialAcceleration object; the frames must be
+understood from context and it is the responsibility of the user to
+keep track of them. That is best accomplished through disciplined
+notation. In source code we use monogram notation where capital A is
+used to designate a spatial acceleration quantity. The same monogram
+notation rules for SpatialVelocity are also used for
+SpatialAcceleration. That is, the spatial acceleration of a frame Y
+measured in X and expressed in E is denoted with <code class="docutils literal"><span class="pre">A_XY_E</span></code>. For a
+more detailed introduction on spatial vectors and the monogram
+notation please refer to section multibody_spatial_vectors.</p>
+<p>[Mitiguy 2016] Mitiguy, P., 2016. Advanced Dynamics &amp; Motion
+Simulation.</p>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial acceleration are left uninitialized resulting in a
+zero cost operation. However in Debug builds those entries are set to
+NaN so that operations using this uninitialized spatial acceleration
+fail fast, allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd], alpha: numpy.ndarray[object[3, 1]], a: numpy.ndarray[object[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialAcceleration constructor from an angular acceleration <code class="docutils literal"><span class="pre">alpha</span></code>
+and a linear acceleration <code class="docutils literal"><span class="pre">a</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd], A: numpy.ndarray[object[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialAcceleration constructor from an Eigen expression that
+represents a six-dimensional vector. Under the hood, spatial
+accelerations are 6-element quantities that are pairs of ordinary
+3-vectors. Elements 0-2 constitute the angular acceleration component
+while elements 3-5 constitute the translational acceleration. The
+argument <code class="docutils literal"><span class="pre">A</span></code> in this constructor is the concatenation of the
+rotational 3D component followed by the translational 3D component.
+This constructor will assert the size of <code class="docutils literal"><span class="pre">A</span></code> is six (6) at
+compile-time for fixed sized Eigen expressions and at run-time for
+dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[AutoDiffXd].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[Expression]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialAcceleration_[Expression]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[Expression]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent a <em>spatial acceleration</em> that combines
+rotational (angular acceleration) and translational (linear
+acceleration) components. While a SpatialVelocity <code class="docutils literal"><span class="pre">V_XY</span></code> represents
+the motion of a “moving frame” Y measured with respect to a
+“measured-in” frame X, the SpatialAcceleration <code class="docutils literal"><span class="pre">A_XY</span></code> represents the
+rate of change of this spatial velocity <code class="docutils literal"><span class="pre">V_XY</span></code> in frame X. That is
+<span class="math">\(^XA^Y = \frac{^Xd}{dt}\,{^XV^Y}\)</span> where <span class="math">\(\frac{^Xd}{dt}\)</span>
+denotes the time derivative taken in frame X. That is, to compute an
+acceleration we need to specify in what frame the time derivative is
+taken, see [Mitiguy 2016, §6.1] for a more in depth discussion on
+this. Time derivatives can be taken in different frames, and they
+transform according to the “Transport Theorem”, which in Drake is
+implemented in drake::math::ConvertTimeDerivativeToOtherFrame(). In
+source code comments we write <code class="docutils literal"><span class="pre">A_XY</span> <span class="pre">=</span> <span class="pre">DtX(V_XY)</span></code>, where <code class="docutils literal"><span class="pre">DtX()</span></code> is
+the operator that takes the time derivative in the X frame. By
+convention, and unless otherwise stated, we assume that the frame in
+which the time derivative is taken is the “measured-in” frame, i.e.
+the time derivative used in <code class="docutils literal"><span class="pre">A_XY</span></code> is in frame X by default (i.e.
+DtX()). To perform numerical computations, we need to specify an
+“expressed-in” frame E (which may be distinct from either X or Y), so
+that components can be expressed as real numbers. Only the vector
+values are stored in a SpatialAcceleration object; the frames must be
+understood from context and it is the responsibility of the user to
+keep track of them. That is best accomplished through disciplined
+notation. In source code we use monogram notation where capital A is
+used to designate a spatial acceleration quantity. The same monogram
+notation rules for SpatialVelocity are also used for
+SpatialAcceleration. That is, the spatial acceleration of a frame Y
+measured in X and expressed in E is denoted with <code class="docutils literal"><span class="pre">A_XY_E</span></code>. For a
+more detailed introduction on spatial vectors and the monogram
+notation please refer to section multibody_spatial_vectors.</p>
+<p>[Mitiguy 2016] Mitiguy, P., 2016. Advanced Dynamics &amp; Motion
+Simulation.</p>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[Expression].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[Expression].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialAcceleration_[Expression]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial acceleration are left uninitialized resulting in a
+zero cost operation. However in Debug builds those entries are set to
+NaN so that operations using this uninitialized spatial acceleration
+fail fast, allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialAcceleration_[Expression], alpha: numpy.ndarray[object[3, 1]], a: numpy.ndarray[object[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialAcceleration constructor from an angular acceleration <code class="docutils literal"><span class="pre">alpha</span></code>
+and a linear acceleration <code class="docutils literal"><span class="pre">a</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialAcceleration_[Expression], A: numpy.ndarray[object[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialAcceleration constructor from an Eigen expression that
+represents a six-dimensional vector. Under the hood, spatial
+accelerations are 6-element quantities that are pairs of ordinary
+3-vectors. Elements 0-2 constitute the angular acceleration component
+while elements 3-5 constitute the translational acceleration. The
+argument <code class="docutils literal"><span class="pre">A</span></code> in this constructor is the concatenation of the
+rotational 3D component followed by the translational 3D component.
+This constructor will assert the size of <code class="docutils literal"><span class="pre">A</span></code> is six (6) at
+compile-time for fixed sized Eigen expressions and at run-time for
+dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[Expression].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[Expression].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[Expression].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[Expression].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[Expression].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[Expression]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialAcceleration_[Expression]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[Expression].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[Expression].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[Expression].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[Expression].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialAcceleration_[Expression]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[Expression].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[float]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialAcceleration_[float]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[float]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent a <em>spatial acceleration</em> that combines
+rotational (angular acceleration) and translational (linear
+acceleration) components. While a SpatialVelocity <code class="docutils literal"><span class="pre">V_XY</span></code> represents
+the motion of a “moving frame” Y measured with respect to a
+“measured-in” frame X, the SpatialAcceleration <code class="docutils literal"><span class="pre">A_XY</span></code> represents the
+rate of change of this spatial velocity <code class="docutils literal"><span class="pre">V_XY</span></code> in frame X. That is
+<span class="math">\(^XA^Y = \frac{^Xd}{dt}\,{^XV^Y}\)</span> where <span class="math">\(\frac{^Xd}{dt}\)</span>
+denotes the time derivative taken in frame X. That is, to compute an
+acceleration we need to specify in what frame the time derivative is
+taken, see [Mitiguy 2016, §6.1] for a more in depth discussion on
+this. Time derivatives can be taken in different frames, and they
+transform according to the “Transport Theorem”, which in Drake is
+implemented in drake::math::ConvertTimeDerivativeToOtherFrame(). In
+source code comments we write <code class="docutils literal"><span class="pre">A_XY</span> <span class="pre">=</span> <span class="pre">DtX(V_XY)</span></code>, where <code class="docutils literal"><span class="pre">DtX()</span></code> is
+the operator that takes the time derivative in the X frame. By
+convention, and unless otherwise stated, we assume that the frame in
+which the time derivative is taken is the “measured-in” frame, i.e.
+the time derivative used in <code class="docutils literal"><span class="pre">A_XY</span></code> is in frame X by default (i.e.
+DtX()). To perform numerical computations, we need to specify an
+“expressed-in” frame E (which may be distinct from either X or Y), so
+that components can be expressed as real numbers. Only the vector
+values are stored in a SpatialAcceleration object; the frames must be
+understood from context and it is the responsibility of the user to
+keep track of them. That is best accomplished through disciplined
+notation. In source code we use monogram notation where capital A is
+used to designate a spatial acceleration quantity. The same monogram
+notation rules for SpatialVelocity are also used for
+SpatialAcceleration. That is, the spatial acceleration of a frame Y
+measured in X and expressed in E is denoted with <code class="docutils literal"><span class="pre">A_XY_E</span></code>. For a
+more detailed introduction on spatial vectors and the monogram
+notation please refer to section multibody_spatial_vectors.</p>
+<p>[Mitiguy 2016] Mitiguy, P., 2016. Advanced Dynamics &amp; Motion
+Simulation.</p>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[float].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[float].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialAcceleration_[float]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial acceleration are left uninitialized resulting in a
+zero cost operation. However in Debug builds those entries are set to
+NaN so that operations using this uninitialized spatial acceleration
+fail fast, allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialAcceleration_[float], alpha: numpy.ndarray[numpy.float64[3, 1]], a: numpy.ndarray[numpy.float64[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialAcceleration constructor from an angular acceleration <code class="docutils literal"><span class="pre">alpha</span></code>
+and a linear acceleration <code class="docutils literal"><span class="pre">a</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialAcceleration_[float], A: numpy.ndarray[numpy.float64[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialAcceleration constructor from an Eigen expression that
+represents a six-dimensional vector. Under the hood, spatial
+accelerations are 6-element quantities that are pairs of ordinary
+3-vectors. Elements 0-2 constitute the angular acceleration component
+while elements 3-5 constitute the translational acceleration. The
+argument <code class="docutils literal"><span class="pre">A</span></code> in this constructor is the concatenation of the
+rotational 3D component followed by the translational 3D component.
+This constructor will assert the size of <code class="docutils literal"><span class="pre">A</span></code> is six (6) at
+compile-time for fixed sized Eigen expressions and at run-time for
+dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[float].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[float].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[float].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[float].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[float].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialAcceleration_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[float].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[float].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialAcceleration_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[float].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialAcceleration_[float].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialAcceleration_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialAcceleration_[float].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.multibody.math.SpatialForce">
+<code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialForce</code><a class="headerlink" href="#pydrake.multibody.math.SpatialForce" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#pydrake.multibody.math.SpatialForce_[float]" title="pydrake.multibody.math.SpatialForce_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.multibody.math.SpatialForce_[float]</span></code></a></p>
+</dd></dl>
+
+<dl class="template">
+<dt id="pydrake.multibody.math.SpatialForce_">
+<em class="property">template </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialForce_</code><a class="headerlink" href="#pydrake.multibody.math.SpatialForce_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instantiations: <a class="reference internal" href="#pydrake.multibody.math.SpatialForce_[float]" title="pydrake.multibody.math.SpatialForce_[float]"><code class="xref py py-class docutils literal"><span class="pre">SpatialForce_[float]</span></code></a>, <a class="reference internal" href="#pydrake.multibody.math.SpatialForce_[AutoDiffXd]" title="pydrake.multibody.math.SpatialForce_[AutoDiffXd]"><code class="xref py py-class docutils literal"><span class="pre">SpatialForce_[AutoDiffXd]</span></code></a>, <a class="reference internal" href="#pydrake.multibody.math.SpatialForce_[Expression]" title="pydrake.multibody.math.SpatialForce_[Expression]"><code class="xref py py-class docutils literal"><span class="pre">SpatialForce_[Expression]</span></code></a></p>
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialForce_.SpatialForce_[float]">
+<em class="property">class </em><code class="descname">SpatialForce_[float]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialForce_.SpatialForce_[float]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent a <em>spatial force</em> (also called a
+<em>wrench</em>) that combines both rotational (torque) and translational
+force components. Spatial forces are 6-element quantities that are
+pairs of ordinary 3-vectors. Elements 0-2 are the torque component
+while elements 3-5 are the force component. Both vectors must be
+expressed in the same frame, and the translational force is applied to
+a particular point of a body, but neither the frame nor the point are
+stored with a SpatialForce object; they must be understood from
+context. It is the responsibility of the user to keep track of the
+application point and the expressed-in frame. That is best
+accomplished through disciplined notation. In source code we use
+monogram notation where capital F is used to designate a spatial force
+quantity. We write a point P fixed to body (or frame) B as <span class="math">\(B_P\)</span>
+which appears in code and comments as <code class="docutils literal"><span class="pre">Bp</span></code>. Then we write a
+particular spatial force as <code class="docutils literal"><span class="pre">F_Bp_E</span></code> where the <code class="docutils literal"><span class="pre">_E</span></code> suffix
+indicates that the expressed-in frame is E. This symbol represents a
+torque applied to body B, and a force applied to point P on B, with
+both vectors expressed in E. Very often the application point will be
+the body origin <code class="docutils literal"><span class="pre">Bo</span></code>; if no point is shown the origin is understood,
+so <code class="docutils literal"><span class="pre">F_B_E</span></code> means <code class="docutils literal"><span class="pre">F_Bo_E</span></code>. For a more detailed introduction on
+spatial vectors and the monogram notation please refer to section
+multibody_spatial_vectors.</p>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_.SpatialForce_[float].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialForce_.SpatialForce_[float].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialForce_[float]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial force are left uninitialized resulting in a zero
+cost operation. However in Debug builds those entries are set to NaN
+so that operations using this uninitialized spatial force fail fast,
+allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialForce_[float], tau: numpy.ndarray[numpy.float64[3, 1]], f: numpy.ndarray[numpy.float64[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialForce constructor from a torque <code class="docutils literal"><span class="pre">tau</span></code> and a force <code class="docutils literal"><span class="pre">f</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialForce_[float], F: numpy.ndarray[numpy.float64[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialForce constructor from an Eigen expression that represents a
+six-dimensional vector. This constructor will assert the size of F is
+six (6) at compile-time for fixed sized Eigen expressions and at
+run-time for dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_.SpatialForce_[float].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_.SpatialForce_[float].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_.SpatialForce_[float].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_.SpatialForce_[float].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_.SpatialForce_[float].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialForce_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_.SpatialForce_[float].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_.SpatialForce_[float].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_.SpatialForce_[float].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialForce_.SpatialForce_[float].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialForce_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_.SpatialForce_[float].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialForce_[AutoDiffXd]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialForce_[AutoDiffXd]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[AutoDiffXd]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent a <em>spatial force</em> (also called a
+<em>wrench</em>) that combines both rotational (torque) and translational
+force components. Spatial forces are 6-element quantities that are
+pairs of ordinary 3-vectors. Elements 0-2 are the torque component
+while elements 3-5 are the force component. Both vectors must be
+expressed in the same frame, and the translational force is applied to
+a particular point of a body, but neither the frame nor the point are
+stored with a SpatialForce object; they must be understood from
+context. It is the responsibility of the user to keep track of the
+application point and the expressed-in frame. That is best
+accomplished through disciplined notation. In source code we use
+monogram notation where capital F is used to designate a spatial force
+quantity. We write a point P fixed to body (or frame) B as <span class="math">\(B_P\)</span>
+which appears in code and comments as <code class="docutils literal"><span class="pre">Bp</span></code>. Then we write a
+particular spatial force as <code class="docutils literal"><span class="pre">F_Bp_E</span></code> where the <code class="docutils literal"><span class="pre">_E</span></code> suffix
+indicates that the expressed-in frame is E. This symbol represents a
+torque applied to body B, and a force applied to point P on B, with
+both vectors expressed in E. Very often the application point will be
+the body origin <code class="docutils literal"><span class="pre">Bo</span></code>; if no point is shown the origin is understood,
+so <code class="docutils literal"><span class="pre">F_B_E</span></code> means <code class="docutils literal"><span class="pre">F_Bo_E</span></code>. For a more detailed introduction on
+spatial vectors and the monogram notation please refer to section
+multibody_spatial_vectors.</p>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[AutoDiffXd].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[AutoDiffXd].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialForce_[AutoDiffXd]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial force are left uninitialized resulting in a zero
+cost operation. However in Debug builds those entries are set to NaN
+so that operations using this uninitialized spatial force fail fast,
+allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialForce_[AutoDiffXd], tau: numpy.ndarray[object[3, 1]], f: numpy.ndarray[object[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialForce constructor from a torque <code class="docutils literal"><span class="pre">tau</span></code> and a force <code class="docutils literal"><span class="pre">f</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialForce_[AutoDiffXd], F: numpy.ndarray[object[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialForce constructor from an Eigen expression that represents a
+six-dimensional vector. This constructor will assert the size of F is
+six (6) at compile-time for fixed sized Eigen expressions and at
+run-time for dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[AutoDiffXd].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[AutoDiffXd].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[AutoDiffXd].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[AutoDiffXd].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[AutoDiffXd].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialForce_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[AutoDiffXd].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[AutoDiffXd].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[AutoDiffXd].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialForce_[AutoDiffXd].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialForce_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[AutoDiffXd].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialForce_[Expression]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialForce_[Expression]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[Expression]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent a <em>spatial force</em> (also called a
+<em>wrench</em>) that combines both rotational (torque) and translational
+force components. Spatial forces are 6-element quantities that are
+pairs of ordinary 3-vectors. Elements 0-2 are the torque component
+while elements 3-5 are the force component. Both vectors must be
+expressed in the same frame, and the translational force is applied to
+a particular point of a body, but neither the frame nor the point are
+stored with a SpatialForce object; they must be understood from
+context. It is the responsibility of the user to keep track of the
+application point and the expressed-in frame. That is best
+accomplished through disciplined notation. In source code we use
+monogram notation where capital F is used to designate a spatial force
+quantity. We write a point P fixed to body (or frame) B as <span class="math">\(B_P\)</span>
+which appears in code and comments as <code class="docutils literal"><span class="pre">Bp</span></code>. Then we write a
+particular spatial force as <code class="docutils literal"><span class="pre">F_Bp_E</span></code> where the <code class="docutils literal"><span class="pre">_E</span></code> suffix
+indicates that the expressed-in frame is E. This symbol represents a
+torque applied to body B, and a force applied to point P on B, with
+both vectors expressed in E. Very often the application point will be
+the body origin <code class="docutils literal"><span class="pre">Bo</span></code>; if no point is shown the origin is understood,
+so <code class="docutils literal"><span class="pre">F_B_E</span></code> means <code class="docutils literal"><span class="pre">F_Bo_E</span></code>. For a more detailed introduction on
+spatial vectors and the monogram notation please refer to section
+multibody_spatial_vectors.</p>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[Expression].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[Expression].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialForce_[Expression]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial force are left uninitialized resulting in a zero
+cost operation. However in Debug builds those entries are set to NaN
+so that operations using this uninitialized spatial force fail fast,
+allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialForce_[Expression], tau: numpy.ndarray[object[3, 1]], f: numpy.ndarray[object[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialForce constructor from a torque <code class="docutils literal"><span class="pre">tau</span></code> and a force <code class="docutils literal"><span class="pre">f</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialForce_[Expression], F: numpy.ndarray[object[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialForce constructor from an Eigen expression that represents a
+six-dimensional vector. This constructor will assert the size of F is
+six (6) at compile-time for fixed sized Eigen expressions and at
+run-time for dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[Expression].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[Expression].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[Expression].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[Expression].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[Expression].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[Expression]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialForce_[Expression]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[Expression].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[Expression].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[Expression].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialForce_[Expression].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialForce_[Expression]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[Expression].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialForce_[float]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialForce_[float]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[float]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent a <em>spatial force</em> (also called a
+<em>wrench</em>) that combines both rotational (torque) and translational
+force components. Spatial forces are 6-element quantities that are
+pairs of ordinary 3-vectors. Elements 0-2 are the torque component
+while elements 3-5 are the force component. Both vectors must be
+expressed in the same frame, and the translational force is applied to
+a particular point of a body, but neither the frame nor the point are
+stored with a SpatialForce object; they must be understood from
+context. It is the responsibility of the user to keep track of the
+application point and the expressed-in frame. That is best
+accomplished through disciplined notation. In source code we use
+monogram notation where capital F is used to designate a spatial force
+quantity. We write a point P fixed to body (or frame) B as <span class="math">\(B_P\)</span>
+which appears in code and comments as <code class="docutils literal"><span class="pre">Bp</span></code>. Then we write a
+particular spatial force as <code class="docutils literal"><span class="pre">F_Bp_E</span></code> where the <code class="docutils literal"><span class="pre">_E</span></code> suffix
+indicates that the expressed-in frame is E. This symbol represents a
+torque applied to body B, and a force applied to point P on B, with
+both vectors expressed in E. Very often the application point will be
+the body origin <code class="docutils literal"><span class="pre">Bo</span></code>; if no point is shown the origin is understood,
+so <code class="docutils literal"><span class="pre">F_B_E</span></code> means <code class="docutils literal"><span class="pre">F_Bo_E</span></code>. For a more detailed introduction on
+spatial vectors and the monogram notation please refer to section
+multibody_spatial_vectors.</p>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[float].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[float].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialForce_[float]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial force are left uninitialized resulting in a zero
+cost operation. However in Debug builds those entries are set to NaN
+so that operations using this uninitialized spatial force fail fast,
+allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialForce_[float], tau: numpy.ndarray[numpy.float64[3, 1]], f: numpy.ndarray[numpy.float64[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialForce constructor from a torque <code class="docutils literal"><span class="pre">tau</span></code> and a force <code class="docutils literal"><span class="pre">f</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialForce_[float], F: numpy.ndarray[numpy.float64[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialForce constructor from an Eigen expression that represents a
+six-dimensional vector. This constructor will assert the size of F is
+six (6) at compile-time for fixed sized Eigen expressions and at
+run-time for dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[float].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[float].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[float].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[float].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[float].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialForce_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[float].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialForce_[float].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialForce_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[float].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialForce_[float].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialForce_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialForce_[float].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.multibody.math.SpatialMomentum">
+<code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialMomentum</code><a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#pydrake.multibody.math.SpatialMomentum_[float]" title="pydrake.multibody.math.SpatialMomentum_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.multibody.math.SpatialMomentum_[float]</span></code></a></p>
+</dd></dl>
+
+<dl class="template">
+<dt id="pydrake.multibody.math.SpatialMomentum_">
+<em class="property">template </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialMomentum_</code><a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instantiations: <a class="reference internal" href="#pydrake.multibody.math.SpatialMomentum_[float]" title="pydrake.multibody.math.SpatialMomentum_[float]"><code class="xref py py-class docutils literal"><span class="pre">SpatialMomentum_[float]</span></code></a>, <a class="reference internal" href="#pydrake.multibody.math.SpatialMomentum_[AutoDiffXd]" title="pydrake.multibody.math.SpatialMomentum_[AutoDiffXd]"><code class="xref py py-class docutils literal"><span class="pre">SpatialMomentum_[AutoDiffXd]</span></code></a>, <a class="reference internal" href="#pydrake.multibody.math.SpatialMomentum_[Expression]" title="pydrake.multibody.math.SpatialMomentum_[Expression]"><code class="xref py py-class docutils literal"><span class="pre">SpatialMomentum_[Expression]</span></code></a></p>
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float]">
+<em class="property">class </em><code class="descname">SpatialMomentum_[float]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent the <em>spatial momentum</em> of a particle,
+system of particles or body (whether rigid or soft.) The linear
+momentum <code class="docutils literal"><span class="pre">l_NS</span></code> of a system of particles S in a reference frame N is
+defined by:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>l_NS = ∑l_NQi = ∑mᵢv_NQi
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">mᵢ</span></code> and <code class="docutils literal"><span class="pre">v_NQi</span></code> are the mass and linear velocity (in frame
+N) of the i-th particle in the system, respectively. Their product
+<code class="docutils literal"><span class="pre">l_NQi</span> <span class="pre">=</span> <span class="pre">mᵢv_NQi</span></code> is the linear momentum of the i-th particle in the
+N reference frame. The angular momentum <code class="docutils literal"><span class="pre">h_NSp</span></code> of a system of
+particles S in a reference frame N about an arbitrary point P is
+defined by:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>h_NSp = ∑ p_PQi x l_NQi
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">p_PQi</span></code> is the position vector from point P to the i-th
+particle position <code class="docutils literal"><span class="pre">Qi</span></code>. The definitions above extend to a continuum
+of particles as:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>h_NSp = ∫p_PQ(r) x v_NQ(r) ρ(r)d³r
+  l_NS = ∫v_NQ(r) ρ(r)d³r
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">ρ(r)</span></code> is the density of the body at each material location
+<code class="docutils literal"><span class="pre">r</span></code>. In particular, the continuum version above also applies to
+rigid bodies.</p>
+<p>Spatial momenta are elements of F⁶ (see [Featherstone 2008]) that
+combine both rotational (angular momentum) and translational (linear
+momentum) components. Spatial momenta are 6-element quantities that
+are pairs of ordinary 3-vectors. Elements 0-2 are the angular momentum
+component while elements 3-5 are the linear momentum component. As
+with any other spatial vector, both vector components must be
+expressed in the same frame.</p>
+<p>Neither the expressed-in frame nor the about-point are stored with a
+SpatialMomentum object; they must be understood from context. It is
+the responsibility of the user to keep track of the about-point and
+the expressed-in frame. That is best accomplished through disciplined
+notation. In source code we use monogram notation where L is used to
+designate a spatial momentum quantity. We write a point P fixed to
+body (or frame) B as <span class="math">\(B_P\)</span> which appears in code and comments as
+<code class="docutils literal"><span class="pre">Bp</span></code>. Then we write as <span class="math">\([^NL^{S/B_P}]_E\)</span>, which appears in
+code as <code class="docutils literal"><span class="pre">L_NBp_E</span></code>, the spatial momentum of a body B in a reference
+frame N, about a point P and, expressed in frame E. Very often the
+about-point will be the body origin <code class="docutils literal"><span class="pre">Bo</span></code>; if no point is shown the
+origin is understood, thus <code class="docutils literal"><span class="pre">L_NB_E</span></code> means <code class="docutils literal"><span class="pre">L_NBo_E</span></code>. For a more
+detailed introduction on spatial vectors and the monogram notation
+please refer to section multibody_spatial_vectors.</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>[Featherstone 2008] Featherstone, R., 2008. Rigid body dynamics</dt>
+<dd>algorithms. Springer.</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialMomentum_[float]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial momentum are left uninitialized resulting in a
+zero cost operation. However in Debug builds those entries are set to
+NaN so that operations using this uninitialized spatial momentum fail
+fast, allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialMomentum_[float], h: numpy.ndarray[numpy.float64[3, 1]], l: numpy.ndarray[numpy.float64[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialMomentum constructor from an angular momentum h and a linear
+momentum l.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialMomentum_[float], L: numpy.ndarray[numpy.float64[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialMomentum constructor from an Eigen expression that represents a
+six-dimensional vector. This constructor will assert the size of L is
+six (6) at compile-time for fixed sized Eigen expressions and at
+run-time for dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialMomentum_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialMomentum_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_.SpatialMomentum_[float].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialMomentum_[AutoDiffXd]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialMomentum_[AutoDiffXd]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[AutoDiffXd]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent the <em>spatial momentum</em> of a particle,
+system of particles or body (whether rigid or soft.) The linear
+momentum <code class="docutils literal"><span class="pre">l_NS</span></code> of a system of particles S in a reference frame N is
+defined by:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>l_NS = ∑l_NQi = ∑mᵢv_NQi
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">mᵢ</span></code> and <code class="docutils literal"><span class="pre">v_NQi</span></code> are the mass and linear velocity (in frame
+N) of the i-th particle in the system, respectively. Their product
+<code class="docutils literal"><span class="pre">l_NQi</span> <span class="pre">=</span> <span class="pre">mᵢv_NQi</span></code> is the linear momentum of the i-th particle in the
+N reference frame. The angular momentum <code class="docutils literal"><span class="pre">h_NSp</span></code> of a system of
+particles S in a reference frame N about an arbitrary point P is
+defined by:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>h_NSp = ∑ p_PQi x l_NQi
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">p_PQi</span></code> is the position vector from point P to the i-th
+particle position <code class="docutils literal"><span class="pre">Qi</span></code>. The definitions above extend to a continuum
+of particles as:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>h_NSp = ∫p_PQ(r) x v_NQ(r) ρ(r)d³r
+  l_NS = ∫v_NQ(r) ρ(r)d³r
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">ρ(r)</span></code> is the density of the body at each material location
+<code class="docutils literal"><span class="pre">r</span></code>. In particular, the continuum version above also applies to
+rigid bodies.</p>
+<p>Spatial momenta are elements of F⁶ (see [Featherstone 2008]) that
+combine both rotational (angular momentum) and translational (linear
+momentum) components. Spatial momenta are 6-element quantities that
+are pairs of ordinary 3-vectors. Elements 0-2 are the angular momentum
+component while elements 3-5 are the linear momentum component. As
+with any other spatial vector, both vector components must be
+expressed in the same frame.</p>
+<p>Neither the expressed-in frame nor the about-point are stored with a
+SpatialMomentum object; they must be understood from context. It is
+the responsibility of the user to keep track of the about-point and
+the expressed-in frame. That is best accomplished through disciplined
+notation. In source code we use monogram notation where L is used to
+designate a spatial momentum quantity. We write a point P fixed to
+body (or frame) B as <span class="math">\(B_P\)</span> which appears in code and comments as
+<code class="docutils literal"><span class="pre">Bp</span></code>. Then we write as <span class="math">\([^NL^{S/B_P}]_E\)</span>, which appears in
+code as <code class="docutils literal"><span class="pre">L_NBp_E</span></code>, the spatial momentum of a body B in a reference
+frame N, about a point P and, expressed in frame E. Very often the
+about-point will be the body origin <code class="docutils literal"><span class="pre">Bo</span></code>; if no point is shown the
+origin is understood, thus <code class="docutils literal"><span class="pre">L_NB_E</span></code> means <code class="docutils literal"><span class="pre">L_NBo_E</span></code>. For a more
+detailed introduction on spatial vectors and the monogram notation
+please refer to section multibody_spatial_vectors.</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>[Featherstone 2008] Featherstone, R., 2008. Rigid body dynamics</dt>
+<dd>algorithms. Springer.</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[AutoDiffXd].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[AutoDiffXd].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialMomentum_[AutoDiffXd]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial momentum are left uninitialized resulting in a
+zero cost operation. However in Debug builds those entries are set to
+NaN so that operations using this uninitialized spatial momentum fail
+fast, allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialMomentum_[AutoDiffXd], h: numpy.ndarray[object[3, 1]], l: numpy.ndarray[object[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialMomentum constructor from an angular momentum h and a linear
+momentum l.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialMomentum_[AutoDiffXd], L: numpy.ndarray[object[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialMomentum constructor from an Eigen expression that represents a
+six-dimensional vector. This constructor will assert the size of L is
+six (6) at compile-time for fixed sized Eigen expressions and at
+run-time for dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[AutoDiffXd].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[AutoDiffXd].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[AutoDiffXd].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[AutoDiffXd].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[AutoDiffXd].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialMomentum_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[AutoDiffXd].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[AutoDiffXd].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[AutoDiffXd].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialMomentum_[AutoDiffXd].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialMomentum_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[AutoDiffXd].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialMomentum_[Expression]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialMomentum_[Expression]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[Expression]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent the <em>spatial momentum</em> of a particle,
+system of particles or body (whether rigid or soft.) The linear
+momentum <code class="docutils literal"><span class="pre">l_NS</span></code> of a system of particles S in a reference frame N is
+defined by:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>l_NS = ∑l_NQi = ∑mᵢv_NQi
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">mᵢ</span></code> and <code class="docutils literal"><span class="pre">v_NQi</span></code> are the mass and linear velocity (in frame
+N) of the i-th particle in the system, respectively. Their product
+<code class="docutils literal"><span class="pre">l_NQi</span> <span class="pre">=</span> <span class="pre">mᵢv_NQi</span></code> is the linear momentum of the i-th particle in the
+N reference frame. The angular momentum <code class="docutils literal"><span class="pre">h_NSp</span></code> of a system of
+particles S in a reference frame N about an arbitrary point P is
+defined by:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>h_NSp = ∑ p_PQi x l_NQi
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">p_PQi</span></code> is the position vector from point P to the i-th
+particle position <code class="docutils literal"><span class="pre">Qi</span></code>. The definitions above extend to a continuum
+of particles as:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>h_NSp = ∫p_PQ(r) x v_NQ(r) ρ(r)d³r
+  l_NS = ∫v_NQ(r) ρ(r)d³r
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">ρ(r)</span></code> is the density of the body at each material location
+<code class="docutils literal"><span class="pre">r</span></code>. In particular, the continuum version above also applies to
+rigid bodies.</p>
+<p>Spatial momenta are elements of F⁶ (see [Featherstone 2008]) that
+combine both rotational (angular momentum) and translational (linear
+momentum) components. Spatial momenta are 6-element quantities that
+are pairs of ordinary 3-vectors. Elements 0-2 are the angular momentum
+component while elements 3-5 are the linear momentum component. As
+with any other spatial vector, both vector components must be
+expressed in the same frame.</p>
+<p>Neither the expressed-in frame nor the about-point are stored with a
+SpatialMomentum object; they must be understood from context. It is
+the responsibility of the user to keep track of the about-point and
+the expressed-in frame. That is best accomplished through disciplined
+notation. In source code we use monogram notation where L is used to
+designate a spatial momentum quantity. We write a point P fixed to
+body (or frame) B as <span class="math">\(B_P\)</span> which appears in code and comments as
+<code class="docutils literal"><span class="pre">Bp</span></code>. Then we write as <span class="math">\([^NL^{S/B_P}]_E\)</span>, which appears in
+code as <code class="docutils literal"><span class="pre">L_NBp_E</span></code>, the spatial momentum of a body B in a reference
+frame N, about a point P and, expressed in frame E. Very often the
+about-point will be the body origin <code class="docutils literal"><span class="pre">Bo</span></code>; if no point is shown the
+origin is understood, thus <code class="docutils literal"><span class="pre">L_NB_E</span></code> means <code class="docutils literal"><span class="pre">L_NBo_E</span></code>. For a more
+detailed introduction on spatial vectors and the monogram notation
+please refer to section multibody_spatial_vectors.</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>[Featherstone 2008] Featherstone, R., 2008. Rigid body dynamics</dt>
+<dd>algorithms. Springer.</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[Expression].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[Expression].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialMomentum_[Expression]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial momentum are left uninitialized resulting in a
+zero cost operation. However in Debug builds those entries are set to
+NaN so that operations using this uninitialized spatial momentum fail
+fast, allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialMomentum_[Expression], h: numpy.ndarray[object[3, 1]], l: numpy.ndarray[object[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialMomentum constructor from an angular momentum h and a linear
+momentum l.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialMomentum_[Expression], L: numpy.ndarray[object[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialMomentum constructor from an Eigen expression that represents a
+six-dimensional vector. This constructor will assert the size of L is
+six (6) at compile-time for fixed sized Eigen expressions and at
+run-time for dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[Expression].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[Expression].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[Expression].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[Expression].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[Expression].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[Expression]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialMomentum_[Expression]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[Expression].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[Expression].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[Expression].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialMomentum_[Expression].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialMomentum_[Expression]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[Expression].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialMomentum_[float]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialMomentum_[float]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[float]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent the <em>spatial momentum</em> of a particle,
+system of particles or body (whether rigid or soft.) The linear
+momentum <code class="docutils literal"><span class="pre">l_NS</span></code> of a system of particles S in a reference frame N is
+defined by:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>l_NS = ∑l_NQi = ∑mᵢv_NQi
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">mᵢ</span></code> and <code class="docutils literal"><span class="pre">v_NQi</span></code> are the mass and linear velocity (in frame
+N) of the i-th particle in the system, respectively. Their product
+<code class="docutils literal"><span class="pre">l_NQi</span> <span class="pre">=</span> <span class="pre">mᵢv_NQi</span></code> is the linear momentum of the i-th particle in the
+N reference frame. The angular momentum <code class="docutils literal"><span class="pre">h_NSp</span></code> of a system of
+particles S in a reference frame N about an arbitrary point P is
+defined by:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>h_NSp = ∑ p_PQi x l_NQi
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">p_PQi</span></code> is the position vector from point P to the i-th
+particle position <code class="docutils literal"><span class="pre">Qi</span></code>. The definitions above extend to a continuum
+of particles as:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>h_NSp = ∫p_PQ(r) x v_NQ(r) ρ(r)d³r
+  l_NS = ∫v_NQ(r) ρ(r)d³r
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">ρ(r)</span></code> is the density of the body at each material location
+<code class="docutils literal"><span class="pre">r</span></code>. In particular, the continuum version above also applies to
+rigid bodies.</p>
+<p>Spatial momenta are elements of F⁶ (see [Featherstone 2008]) that
+combine both rotational (angular momentum) and translational (linear
+momentum) components. Spatial momenta are 6-element quantities that
+are pairs of ordinary 3-vectors. Elements 0-2 are the angular momentum
+component while elements 3-5 are the linear momentum component. As
+with any other spatial vector, both vector components must be
+expressed in the same frame.</p>
+<p>Neither the expressed-in frame nor the about-point are stored with a
+SpatialMomentum object; they must be understood from context. It is
+the responsibility of the user to keep track of the about-point and
+the expressed-in frame. That is best accomplished through disciplined
+notation. In source code we use monogram notation where L is used to
+designate a spatial momentum quantity. We write a point P fixed to
+body (or frame) B as <span class="math">\(B_P\)</span> which appears in code and comments as
+<code class="docutils literal"><span class="pre">Bp</span></code>. Then we write as <span class="math">\([^NL^{S/B_P}]_E\)</span>, which appears in
+code as <code class="docutils literal"><span class="pre">L_NBp_E</span></code>, the spatial momentum of a body B in a reference
+frame N, about a point P and, expressed in frame E. Very often the
+about-point will be the body origin <code class="docutils literal"><span class="pre">Bo</span></code>; if no point is shown the
+origin is understood, thus <code class="docutils literal"><span class="pre">L_NB_E</span></code> means <code class="docutils literal"><span class="pre">L_NBo_E</span></code>. For a more
+detailed introduction on spatial vectors and the monogram notation
+please refer to section multibody_spatial_vectors.</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>[Featherstone 2008] Featherstone, R., 2008. Rigid body dynamics</dt>
+<dd>algorithms. Springer.</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[float].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[float].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialMomentum_[float]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial momentum are left uninitialized resulting in a
+zero cost operation. However in Debug builds those entries are set to
+NaN so that operations using this uninitialized spatial momentum fail
+fast, allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialMomentum_[float], h: numpy.ndarray[numpy.float64[3, 1]], l: numpy.ndarray[numpy.float64[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialMomentum constructor from an angular momentum h and a linear
+momentum l.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialMomentum_[float], L: numpy.ndarray[numpy.float64[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialMomentum constructor from an Eigen expression that represents a
+six-dimensional vector. This constructor will assert the size of L is
+six (6) at compile-time for fixed sized Eigen expressions and at
+run-time for dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[float].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[float].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[float].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[float].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[float].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialMomentum_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[float].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialMomentum_[float].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialMomentum_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[float].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialMomentum_[float].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialMomentum_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialMomentum_[float].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.multibody.math.SpatialVelocity">
+<code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialVelocity</code><a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#pydrake.multibody.math.SpatialVelocity_[float]" title="pydrake.multibody.math.SpatialVelocity_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.multibody.math.SpatialVelocity_[float]</span></code></a></p>
+</dd></dl>
+
+<dl class="template">
+<dt id="pydrake.multibody.math.SpatialVelocity_">
+<em class="property">template </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialVelocity_</code><a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instantiations: <a class="reference internal" href="#pydrake.multibody.math.SpatialVelocity_[float]" title="pydrake.multibody.math.SpatialVelocity_[float]"><code class="xref py py-class docutils literal"><span class="pre">SpatialVelocity_[float]</span></code></a>, <a class="reference internal" href="#pydrake.multibody.math.SpatialVelocity_[AutoDiffXd]" title="pydrake.multibody.math.SpatialVelocity_[AutoDiffXd]"><code class="xref py py-class docutils literal"><span class="pre">SpatialVelocity_[AutoDiffXd]</span></code></a>, <a class="reference internal" href="#pydrake.multibody.math.SpatialVelocity_[Expression]" title="pydrake.multibody.math.SpatialVelocity_[Expression]"><code class="xref py py-class docutils literal"><span class="pre">SpatialVelocity_[Expression]</span></code></a></p>
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float]">
+<em class="property">class </em><code class="descname">SpatialVelocity_[float]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent a <em>spatial velocity</em> (also called a
+<em>twist</em>) that combines rotational (angular) and translational (linear)
+velocity components. Spatial velocities are 6-element quantities that
+are pairs of ordinary 3-vectors. Elements 0-2 are the angular velocity
+component while elements 3-5 are the translational velocity. Spatial
+velocities represent the motion of a “moving frame” B measured with
+respect to a “measured-in” frame A. In addition, the two contained
+vectors must be expressed in the same “expressed-in” frame E, which
+may be distinct from either A or B. Finally, while angular velocity is
+identical for any frame fixed to a rigid body, translational velocity
+refers to a particular point. Only the vector values are stored in a
+SpatialVelocity object; the three frames and the point must be
+understood from context. It is the responsibility of the user to keep
+track of them. That is best accomplished through disciplined notation.
+In source code we use monogram notation where capital V is used to
+designate a spatial velocity quantity. We write a point P fixed to
+body (or frame) B as <span class="math">\(B_P\)</span> which appears in code and comments as
+<code class="docutils literal"><span class="pre">Bp</span></code>. Then we write a particular spatial velocity as <code class="docutils literal"><span class="pre">V_ABp_E</span></code>
+where the <code class="docutils literal"><span class="pre">_E</span></code> suffix indicates that the expressed-in frame is E.
+This symbol represents the angular velocity of frame B in frame A, and
+the translational velocity of point P in A, where P is fixed to frame
+B, with both vectors expressed in E. Very often the point of interest
+will be the body origin <code class="docutils literal"><span class="pre">Bo</span></code>; if no point is shown the origin is
+understood, so <code class="docutils literal"><span class="pre">V_AB_E</span></code> means <code class="docutils literal"><span class="pre">V_ABo_E</span></code>. For a more detailed
+introduction on spatial vectors and the monogram notation please refer
+to section multibody_spatial_vectors.</p>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialVelocity_[float]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial velocity are left uninitialized resulting in a
+zero cost operation. However in Debug builds those entries are set to
+NaN so that operations using this uninitialized spatial velocity fail
+fast, allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialVelocity_[float], w: numpy.ndarray[numpy.float64[3, 1]], v: numpy.ndarray[numpy.float64[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialVelocity constructor from an angular velocity <code class="docutils literal"><span class="pre">w</span></code> and a
+linear velocity <code class="docutils literal"><span class="pre">v</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialVelocity_[float], V: numpy.ndarray[numpy.float64[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialVelocity constructor from an Eigen expression that represents a
+six-dimensional vector. This constructor will assert the size of V is
+six (6) at compile-time for fixed sized Eigen expressions and at
+run-time for dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialVelocity_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialVelocity_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_.SpatialVelocity_[float].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialVelocity_[AutoDiffXd]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialVelocity_[AutoDiffXd]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[AutoDiffXd]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent a <em>spatial velocity</em> (also called a
+<em>twist</em>) that combines rotational (angular) and translational (linear)
+velocity components. Spatial velocities are 6-element quantities that
+are pairs of ordinary 3-vectors. Elements 0-2 are the angular velocity
+component while elements 3-5 are the translational velocity. Spatial
+velocities represent the motion of a “moving frame” B measured with
+respect to a “measured-in” frame A. In addition, the two contained
+vectors must be expressed in the same “expressed-in” frame E, which
+may be distinct from either A or B. Finally, while angular velocity is
+identical for any frame fixed to a rigid body, translational velocity
+refers to a particular point. Only the vector values are stored in a
+SpatialVelocity object; the three frames and the point must be
+understood from context. It is the responsibility of the user to keep
+track of them. That is best accomplished through disciplined notation.
+In source code we use monogram notation where capital V is used to
+designate a spatial velocity quantity. We write a point P fixed to
+body (or frame) B as <span class="math">\(B_P\)</span> which appears in code and comments as
+<code class="docutils literal"><span class="pre">Bp</span></code>. Then we write a particular spatial velocity as <code class="docutils literal"><span class="pre">V_ABp_E</span></code>
+where the <code class="docutils literal"><span class="pre">_E</span></code> suffix indicates that the expressed-in frame is E.
+This symbol represents the angular velocity of frame B in frame A, and
+the translational velocity of point P in A, where P is fixed to frame
+B, with both vectors expressed in E. Very often the point of interest
+will be the body origin <code class="docutils literal"><span class="pre">Bo</span></code>; if no point is shown the origin is
+understood, so <code class="docutils literal"><span class="pre">V_AB_E</span></code> means <code class="docutils literal"><span class="pre">V_ABo_E</span></code>. For a more detailed
+introduction on spatial vectors and the monogram notation please refer
+to section multibody_spatial_vectors.</p>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[AutoDiffXd].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[AutoDiffXd].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialVelocity_[AutoDiffXd]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial velocity are left uninitialized resulting in a
+zero cost operation. However in Debug builds those entries are set to
+NaN so that operations using this uninitialized spatial velocity fail
+fast, allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialVelocity_[AutoDiffXd], w: numpy.ndarray[object[3, 1]], v: numpy.ndarray[object[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialVelocity constructor from an angular velocity <code class="docutils literal"><span class="pre">w</span></code> and a
+linear velocity <code class="docutils literal"><span class="pre">v</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialVelocity_[AutoDiffXd], V: numpy.ndarray[object[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialVelocity constructor from an Eigen expression that represents a
+six-dimensional vector. This constructor will assert the size of V is
+six (6) at compile-time for fixed sized Eigen expressions and at
+run-time for dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[AutoDiffXd].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[AutoDiffXd].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[AutoDiffXd].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[AutoDiffXd].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[AutoDiffXd].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialVelocity_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[AutoDiffXd].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[AutoDiffXd].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[AutoDiffXd].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialVelocity_[AutoDiffXd].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialVelocity_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[AutoDiffXd].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialVelocity_[Expression]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialVelocity_[Expression]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[Expression]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent a <em>spatial velocity</em> (also called a
+<em>twist</em>) that combines rotational (angular) and translational (linear)
+velocity components. Spatial velocities are 6-element quantities that
+are pairs of ordinary 3-vectors. Elements 0-2 are the angular velocity
+component while elements 3-5 are the translational velocity. Spatial
+velocities represent the motion of a “moving frame” B measured with
+respect to a “measured-in” frame A. In addition, the two contained
+vectors must be expressed in the same “expressed-in” frame E, which
+may be distinct from either A or B. Finally, while angular velocity is
+identical for any frame fixed to a rigid body, translational velocity
+refers to a particular point. Only the vector values are stored in a
+SpatialVelocity object; the three frames and the point must be
+understood from context. It is the responsibility of the user to keep
+track of them. That is best accomplished through disciplined notation.
+In source code we use monogram notation where capital V is used to
+designate a spatial velocity quantity. We write a point P fixed to
+body (or frame) B as <span class="math">\(B_P\)</span> which appears in code and comments as
+<code class="docutils literal"><span class="pre">Bp</span></code>. Then we write a particular spatial velocity as <code class="docutils literal"><span class="pre">V_ABp_E</span></code>
+where the <code class="docutils literal"><span class="pre">_E</span></code> suffix indicates that the expressed-in frame is E.
+This symbol represents the angular velocity of frame B in frame A, and
+the translational velocity of point P in A, where P is fixed to frame
+B, with both vectors expressed in E. Very often the point of interest
+will be the body origin <code class="docutils literal"><span class="pre">Bo</span></code>; if no point is shown the origin is
+understood, so <code class="docutils literal"><span class="pre">V_AB_E</span></code> means <code class="docutils literal"><span class="pre">V_ABo_E</span></code>. For a more detailed
+introduction on spatial vectors and the monogram notation please refer
+to section multibody_spatial_vectors.</p>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[Expression].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[Expression].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialVelocity_[Expression]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial velocity are left uninitialized resulting in a
+zero cost operation. However in Debug builds those entries are set to
+NaN so that operations using this uninitialized spatial velocity fail
+fast, allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialVelocity_[Expression], w: numpy.ndarray[object[3, 1]], v: numpy.ndarray[object[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialVelocity constructor from an angular velocity <code class="docutils literal"><span class="pre">w</span></code> and a
+linear velocity <code class="docutils literal"><span class="pre">v</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialVelocity_[Expression], V: numpy.ndarray[object[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialVelocity constructor from an Eigen expression that represents a
+six-dimensional vector. This constructor will assert the size of V is
+six (6) at compile-time for fixed sized Eigen expressions and at
+run-time for dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[Expression].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[Expression].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[Expression].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[Expression].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[Expression].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[Expression]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialVelocity_[Expression]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[Expression].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[Expression].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[Expression].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialVelocity_[Expression].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialVelocity_[Expression]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[Expression].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.math.SpatialVelocity_[float]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.math.</code><code class="descname">SpatialVelocity_[float]</code><a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[float]" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to represent a <em>spatial velocity</em> (also called a
+<em>twist</em>) that combines rotational (angular) and translational (linear)
+velocity components. Spatial velocities are 6-element quantities that
+are pairs of ordinary 3-vectors. Elements 0-2 are the angular velocity
+component while elements 3-5 are the translational velocity. Spatial
+velocities represent the motion of a “moving frame” B measured with
+respect to a “measured-in” frame A. In addition, the two contained
+vectors must be expressed in the same “expressed-in” frame E, which
+may be distinct from either A or B. Finally, while angular velocity is
+identical for any frame fixed to a rigid body, translational velocity
+refers to a particular point. Only the vector values are stored in a
+SpatialVelocity object; the three frames and the point must be
+understood from context. It is the responsibility of the user to keep
+track of them. That is best accomplished through disciplined notation.
+In source code we use monogram notation where capital V is used to
+designate a spatial velocity quantity. We write a point P fixed to
+body (or frame) B as <span class="math">\(B_P\)</span> which appears in code and comments as
+<code class="docutils literal"><span class="pre">Bp</span></code>. Then we write a particular spatial velocity as <code class="docutils literal"><span class="pre">V_ABp_E</span></code>
+where the <code class="docutils literal"><span class="pre">_E</span></code> suffix indicates that the expressed-in frame is E.
+This symbol represents the angular velocity of frame B in frame A, and
+the translational velocity of point P in A, where P is fixed to frame
+B, with both vectors expressed in E. Very often the point of interest
+will be the body origin <code class="docutils literal"><span class="pre">Bo</span></code>; if no point is shown the origin is
+understood, so <code class="docutils literal"><span class="pre">V_AB_E</span></code> means <code class="docutils literal"><span class="pre">V_ABo_E</span></code>. For a more detailed
+introduction on spatial vectors and the monogram notation please refer
+to section multibody_spatial_vectors.</p>
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[float].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[float].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.multibody.math.SpatialVelocity_[float]) -&gt; None</li>
+</ol>
+<p>Default constructor. In Release builds the elements of the newly
+constructed spatial velocity are left uninitialized resulting in a
+zero cost operation. However in Debug builds those entries are set to
+NaN so that operations using this uninitialized spatial velocity fail
+fast, allowing fast bug detection.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.multibody.math.SpatialVelocity_[float], w: numpy.ndarray[numpy.float64[3, 1]], v: numpy.ndarray[numpy.float64[3, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialVelocity constructor from an angular velocity <code class="docutils literal"><span class="pre">w</span></code> and a
+linear velocity <code class="docutils literal"><span class="pre">v</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.multibody.math.SpatialVelocity_[float], V: numpy.ndarray[numpy.float64[6, 1]]) -&gt; None</li>
+</ol>
+<p>SpatialVelocity constructor from an Eigen expression that represents a
+six-dimensional vector. This constructor will assert the size of V is
+six (6) at compile-time for fixed sized Eigen expressions and at
+run-time for dynamic sized Eigen expressions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[float].get_coeffs">
+<code class="descname">get_coeffs</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[6, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[float].get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a constant reference to the underlying storage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[float].rotational">
+<code class="descname">rotational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[float].rotational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the rotational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[float].SetZero">
+<code class="descname">SetZero</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialVelocity_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[float].SetZero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets both rotational and translational components of <code class="docutils literal"><span class="pre">this</span></code>
+SpatialVector to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.math.SpatialVelocity_[float].translational">
+<code class="descname">translational</code><span class="sig-paren">(</span><em>self: pydrake.multibody.math.SpatialVelocity_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[float].translational" title="Permalink to this definition">¶</a></dt>
+<dd><p>Const access to the translational component of this spatial vector.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pydrake.multibody.math.SpatialVelocity_[float].Zero">
+<em class="property">static </em><code class="descname">Zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.multibody.math.SpatialVelocity_[float]<a class="headerlink" href="#pydrake.multibody.math.SpatialVelocity_[float].Zero" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory to create a <em>zero</em> SpatialVector, i.e. rotational and
+translational components are both zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pydrake.multibody.parsing.html" class="btn btn-neutral float-right" title="pydrake.multibody.parsing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pydrake.multibody.inverse_kinematics.html" class="btn btn-neutral" title="pydrake.multibody.inverse_kinematics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  false,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
