@@ -78,6 +78,7 @@ var NAVTREEINDEX0 =
 "brick__static__equilibrium__constraint_8h.html#a0e17e8c15421b3bf195f9ef1b724fc14":[4,0,0,3,11,0,1],
 "bspline__basis_8h.html":[4,0,0,7,3],
 "bspline__trajectory_8h.html":[4,0,0,1,2,0],
+"buffer__dim_8h.html":[4,0,0,4,2,0,0],
 "cache_8h.html":[4,0,0,11,3,3],
 "cache__doxygen_8h.html":[4,0,0,11,3,4],
 "cache__entry_8h.html":[4,0,0,11,3,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classdrake_1_1_random_generator.html":[3,0,0,40],
 "classdrake_1_1_random_generator.html#a0a528a94da8ddce6eea385b93757b3fa":[3,0,0,40,4],
 "classdrake_1_1_random_generator.html#a225b04ff27646e6105e31c25687fce3d":[3,0,0,40,3],
-"classdrake_1_1_random_generator.html#a229f4c6190dd60c0d2876fb702199101":[3,0,0,40,2],
-"classdrake_1_1_random_generator.html#a2cdcb3683599478b35326a45c926c35d":[3,0,0,40,1]
+"classdrake_1_1_random_generator.html#a229f4c6190dd60c0d2876fb702199101":[3,0,0,40,2]
 };

@@ -256,11 +256,8 @@ distance, saturate to this value.</p>
 <dt id="pydrake.geometry.render.MakeRenderEngineGl">
 <code class="descclassname">pydrake.geometry.render.</code><code class="descname">MakeRenderEngineGl</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pydrake.geometry.render.RenderEngine<a class="headerlink" href="#pydrake.geometry.render.MakeRenderEngineGl" title="Permalink to this definition">¶</a></dt>
 <dd><p>Constructs a RenderEngine implementation which uses a purely OpenGL
-renderer. Currently this uses a temporary dummy implementation. Due to
-the lack of support on Mac, this has been initially introduced to
-verify platform specific (i.e. Ubuntu only) conditionals for building
-and installing. The rest of the implementation will be ported over
-once the conditionalizing is no longer considered a risk.</p>
+renderer. The engine only works under Ubuntu. If called on a Mac, it
+will produce a “dummy” implementation.</p>
 </dd></dl>
 
 <dl class="function">

@@ -1,5 +1,17 @@
 var NAVTREEINDEX34 =
 {
+"classdrake_1_1trajectories_1_1_piecewise_quaternion_slerp.html#a97e610bb883f37a631873104d8f6209d":[3,0,0,15,3,0],
+"classdrake_1_1trajectories_1_1_piecewise_quaternion_slerp.html#a9aa1f1cfff6dcb352d5fbb15a80ee1a9":[3,0,0,15,3,16],
+"classdrake_1_1trajectories_1_1_piecewise_quaternion_slerp.html#a9efee334e7a31b81c6056b8a0bb2cad1":[3,0,0,15,3,1],
+"classdrake_1_1trajectories_1_1_piecewise_quaternion_slerp.html#adca8eca2ee324f57170dedfb4b06160b":[3,0,0,15,3,10],
+"classdrake_1_1trajectories_1_1_piecewise_quaternion_slerp.html#af217d7947b0e3aeaf40a34a935fc71dd":[3,0,0,15,3,15],
+"classdrake_1_1trajectories_1_1_piecewise_trajectory.html":[3,0,0,15,4],
+"classdrake_1_1trajectories_1_1_piecewise_trajectory.html#a0539f01602cd1ab9b25989206d302401":[3,0,0,15,4,21],
+"classdrake_1_1trajectories_1_1_piecewise_trajectory.html#a0a4ac30a258a47b6ea610f16f4accece":[3,0,0,15,4,17],
+"classdrake_1_1trajectories_1_1_piecewise_trajectory.html#a0f1bc48c32072f8a84aa295528a66440":[3,0,0,15,4,18],
+"classdrake_1_1trajectories_1_1_piecewise_trajectory.html#a1019f41dcfe440c98c91029f4b0b0bc0":[3,0,0,15,4,19],
+"classdrake_1_1trajectories_1_1_piecewise_trajectory.html#a205b86a6552919d515ba544c185c04c3":[3,0,0,15,4,4],
+"classdrake_1_1trajectories_1_1_piecewise_trajectory.html#a293c775020a0b5f25770dd398ea14f1d":[3,0,0,15,4,3],
 "classdrake_1_1trajectories_1_1_piecewise_trajectory.html#a3162d0b93cdd9f4259cc7d03b3370e56":[3,0,0,15,4,14],
 "classdrake_1_1trajectories_1_1_piecewise_trajectory.html#a326ae949f44158da731ef777bba601ec":[3,0,0,15,4,11],
 "classdrake_1_1trajectories_1_1_piecewise_trajectory.html#a43a07ba5dd1adae91520a5c386ee6c1b":[3,0,0,15,4,15],
@@ -237,17 +249,5 @@ var NAVTREEINDEX34 =
 "detail__tinyxml_8h.html":[4,0,0,8,6,5],
 "detail__urdf__geometry_8h.html":[4,0,0,8,6,6],
 "detail__urdf__parser_8h.html":[4,0,0,8,6,7],
-"diagram_8h.html":[4,0,0,11,3,10],
-"diagram__builder_8h.html":[4,0,0,11,3,11],
-"diagram__context_8h.html":[4,0,0,11,3,12],
-"diagram__continuous__state_8h.html":[4,0,0,11,3,13],
-"diagram__discrete__values_8h.html":[4,0,0,11,3,14],
-"diagram__output__port_8h.html":[4,0,0,11,3,15],
-"differential__inverse__kinematics_8h.html":[4,0,0,6,3,1],
-"differential__inverse__kinematics_8h.html#a0f13a0a8a0d6f3e8e800b27c50f6f7b8":[4,0,0,6,3,1,7],
-"differential__inverse__kinematics_8h.html#a1419d6264a35506905a455d205a3af13":[4,0,0,6,3,1,6],
-"differential__inverse__kinematics_8h.html#a3e0c356cf1d093efb3dfe64660296ab6":[4,0,0,6,3,1,3],
-"differential__inverse__kinematics_8h.html#a3e26d472253fc2fe452f8b4bb2d1bcdc":[4,0,0,6,3,1,2],
-"differential__inverse__kinematics_8h.html#a3e26d472253fc2fe452f8b4bb2d1bcdca2090aef3abe80df58a23b77aa3a10bc3":[4,0,0,6,3,1,2,2],
-"differential__inverse__kinematics_8h.html#a3e26d472253fc2fe452f8b4bb2d1bcdca7dbb41ec30548b5703863365ae83a5dc":[4,0,0,6,3,1,2,1]
+"diagram_8h.html":[4,0,0,11,3,10]
 };

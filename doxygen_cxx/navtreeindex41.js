@@ -1,5 +1,15 @@
 var NAVTREEINDEX41 =
 {
+"scene__graph__inspector_8h.html":[4,0,0,4,23],
+"schunk__wsg__constants_8h.html":[4,0,0,6,4,0],
+"schunk__wsg__constants_8h.html#a2d50206e40178bb516bf578b4418af0a":[4,0,0,6,4,0,7],
+"schunk__wsg__constants_8h.html#a2fbb9739d01b7281a1633aa49c419d6e":[4,0,0,6,4,0,4],
+"schunk__wsg__constants_8h.html#a4466f959f6516ddf231455e01f6ce3df":[4,0,0,6,4,0,3],
+"schunk__wsg__constants_8h.html#a6126372efa2dc4a18a1731c2853fdb5d":[4,0,0,6,4,0,8],
+"schunk__wsg__constants_8h.html#a61bd2a6df7e108de0e18d2cc85a1eb43":[4,0,0,6,4,0,1],
+"schunk__wsg__constants_8h.html#a711e5cc36bb4a36b15f109e28b623d28":[4,0,0,6,4,0,5],
+"schunk__wsg__constants_8h.html#a80a43febe2b6239f4d48a63094288d1b":[4,0,0,6,4,0,6],
+"schunk__wsg__constants_8h.html#a9d4acc482bc52a69383e884679887402":[4,0,0,6,4,0,2],
 "schunk__wsg__constants_8h.html#ad3478526c69fa04f5dff9ad3c2ebf055":[4,0,0,6,4,0,9],
 "schunk__wsg__controller_8h.html":[4,0,0,6,4,1],
 "schunk__wsg__lcm_8h.html":[4,0,0,6,4,2],
@@ -20,8 +30,8 @@ var NAVTREEINDEX41 =
 "setpoint_8h.html":[4,0,0,11,1,9],
 "setpoint_8h.html#aaba057485dc4c132a7a7d0f36d2c79a3":[4,0,0,11,1,9,3],
 "setpoint_8h.html#adb22f9d1fe222ce02c4af337253f7fe3":[4,0,0,11,1,9,2],
-"shader__program_8h.html":[4,0,0,4,2,0,5],
-"shape__meshes_8h.html":[4,0,0,4,2,0,6],
+"shader__program_8h.html":[4,0,0,4,2,0,6],
+"shape__meshes_8h.html":[4,0,0,4,2,0,7],
 "shape__specification_8h.html":[4,0,0,4,24],
 "shape__to__string_8h.html":[4,0,0,4,25],
 "signal__log_8h.html":[4,0,0,11,7,18],
@@ -239,15 +249,5 @@ var NAVTREEINDEX41 =
 "structdrake_1_1geometry_1_1render_1_1_camera_properties.html#a2474a5474cbff19523a51eb1de01cda4":[3,0,0,3,0,0,4],
 "structdrake_1_1geometry_1_1render_1_1_camera_properties.html#a447b42f56ec0921186385e6863a6548d":[3,0,0,3,0,0,3],
 "structdrake_1_1geometry_1_1render_1_1_camera_properties.html#a56882d40ccd7d7f7443d5d2ab7481613":[3,0,0,3,0,0,1],
-"structdrake_1_1geometry_1_1render_1_1_camera_properties.html#a811be55155a7bfff49314d44f3573b43":[3,0,0,3,0,0,0],
-"structdrake_1_1geometry_1_1render_1_1_camera_properties.html#ad12fc34ce789bce6c8a05d8a17138534":[3,0,0,3,0,0,2],
-"structdrake_1_1geometry_1_1render_1_1_depth_camera_properties.html":[3,0,0,3,0,1],
-"structdrake_1_1geometry_1_1render_1_1_depth_camera_properties.html#a341dc613bcd25a969c8f8a285e3affcd":[3,0,0,3,0,1,2],
-"structdrake_1_1geometry_1_1render_1_1_depth_camera_properties.html#a6a5b63d9b97df9b9e6c711584ce2f75a":[3,0,0,3,0,1,0],
-"structdrake_1_1geometry_1_1render_1_1_depth_camera_properties.html#afae8fde9f81370fb4851c9e1de452a7f":[3,0,0,3,0,1,1],
-"structdrake_1_1geometry_1_1render_1_1_render_engine_ospray_params.html":[3,0,0,3,0,5],
-"structdrake_1_1geometry_1_1render_1_1_render_engine_ospray_params.html#a0f29eef3bb2586b650629b5b63ddc911":[3,0,0,3,0,5,0],
-"structdrake_1_1geometry_1_1render_1_1_render_engine_ospray_params.html#a55aece3b83c62e47043df6580a644a8b":[3,0,0,3,0,5,2],
-"structdrake_1_1geometry_1_1render_1_1_render_engine_ospray_params.html#ab0128f21da79318f9d8a2da1d4d3a684":[3,0,0,3,0,5,1],
-"structdrake_1_1geometry_1_1render_1_1_render_engine_ospray_params.html#abf06475def6727f78151bbf258e61e39":[3,0,0,3,0,5,3]
+"structdrake_1_1geometry_1_1render_1_1_camera_properties.html#a811be55155a7bfff49314d44f3573b43":[3,0,0,3,0,0,0]
 };

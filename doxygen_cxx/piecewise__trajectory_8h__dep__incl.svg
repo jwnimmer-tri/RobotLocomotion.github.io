@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 2616;
+var viewWidth = 2307;
 var viewHeight = 396;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>drake/common/trajectories/piecewise_trajectory.h</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-392 2612,-392 2612,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-392 2302.5,-392 2302.5,4 -4,4"/>
 <!-- Node62 -->
 <g id="node1" class="node">
 <title>Node62</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="#000000" points="332,-357.5 332,-387.5 481,-387.5 481,-357.5 332,-357.5"/>
-<text text-anchor="start" x="340" y="-375.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/common/trajectories</text>
-<text text-anchor="middle" x="406.5" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/piecewise_trajectory.h</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="1199.5,-357.5 1199.5,-387.5 1348.5,-387.5 1348.5,-357.5 1199.5,-357.5"/>
+<text text-anchor="start" x="1207.5" y="-375.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/common/trajectories</text>
+<text text-anchor="middle" x="1274" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/piecewise_trajectory.h</text>
 </a>
 </g>
 </g>
@@ -69,606 +69,590 @@ var sectionId = 'dynsection-1';
 <g id="node2" class="node">
 <title>Node63</title>
 <g id="a_node2"><a xlink:href="piecewise__polynomial_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="595,-290.5 595,-320.5 744,-320.5 744,-290.5 595,-290.5"/>
-<text text-anchor="start" x="603" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/common/trajectories</text>
-<text text-anchor="middle" x="669.5" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/piecewise_polynomial.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="1451.5,-290.5 1451.5,-320.5 1600.5,-320.5 1600.5,-290.5 1451.5,-290.5"/>
+<text text-anchor="start" x="1459.5" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/common/trajectories</text>
+<text text-anchor="middle" x="1526" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/piecewise_polynomial.h</text>
 </a>
 </g>
 </g>
 <!-- Node62&#45;&gt;Node63 -->
 <g id="edge1" class="edge">
 <title>Node62&#45;&gt;Node63</title>
-<path fill="none" stroke="#191970" d="M475.3707,-354.955C517.2576,-344.2842 570.2055,-330.7955 610.2202,-320.6017"/>
-<polygon fill="#191970" stroke="#191970" points="474.3488,-351.6035 465.5223,-357.4639 476.0769,-358.3868 474.3488,-351.6035"/>
+<path fill="none" stroke="#191970" d="M1340.2444,-354.8874C1380.3391,-344.2273 1430.9394,-330.774 1469.1996,-320.6017"/>
+<polygon fill="#191970" stroke="#191970" points="1339.3186,-351.5119 1330.5537,-357.4639 1341.1173,-358.2768 1339.3186,-351.5119"/>
 </g>
-<!-- Node96 -->
-<g id="node35" class="node">
-<title>Node96</title>
-<g id="a_node35"><a xlink:href="piecewise__quaternion_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="249,-290.5 249,-320.5 398,-320.5 398,-290.5 249,-290.5"/>
-<text text-anchor="start" x="257" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/common/trajectories</text>
-<text text-anchor="middle" x="323.5" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/piecewise_quaternion.h</text>
+<!-- Node95 -->
+<g id="node34" class="node">
+<title>Node95</title>
+<g id="a_node34"><a xlink:href="piecewise__quaternion_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1116.5,-290.5 1116.5,-320.5 1265.5,-320.5 1265.5,-290.5 1116.5,-290.5"/>
+<text text-anchor="start" x="1124.5" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/common/trajectories</text>
+<text text-anchor="middle" x="1191" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/piecewise_quaternion.h</text>
 </a>
 </g>
 </g>
-<!-- Node62&#45;&gt;Node96 -->
-<g id="edge42" class="edge">
-<title>Node62&#45;&gt;Node96</title>
-<path fill="none" stroke="#191970" d="M379.5942,-350.7808C367.4012,-340.9383 353.2821,-329.541 342.2595,-320.6432"/>
-<polygon fill="#191970" stroke="#191970" points="377.6864,-353.7389 387.666,-357.2967 382.0832,-348.292 377.6864,-353.7389"/>
+<!-- Node62&#45;&gt;Node95 -->
+<g id="edge41" class="edge">
+<title>Node62&#45;&gt;Node95</title>
+<path fill="none" stroke="#191970" d="M1247.0942,-350.7808C1234.9012,-340.9383 1220.7821,-329.541 1209.7595,-320.6432"/>
+<polygon fill="#191970" stroke="#191970" points="1245.1864,-353.7389 1255.166,-357.2967 1249.5832,-348.292 1245.1864,-353.7389"/>
 </g>
 <!-- Node64 -->
 <g id="node3" class="node">
 <title>Node64</title>
 <g id="a_node3"><a xlink:href="discrete__time__trajectory_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1162,-218 1162,-248 1311,-248 1311,-218 1162,-218"/>
-<text text-anchor="start" x="1170" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/common/trajectories</text>
-<text text-anchor="middle" x="1236.5" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/discrete_time_trajectory.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="1974.5,-218 1974.5,-248 2123.5,-248 2123.5,-218 1974.5,-218"/>
+<text text-anchor="start" x="1982.5" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/common/trajectories</text>
+<text text-anchor="middle" x="2049" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/discrete_time_trajectory.h</text>
 </a>
 </g>
 </g>
 <!-- Node63&#45;&gt;Node64 -->
 <g id="edge2" class="edge">
 <title>Node63&#45;&gt;Node64</title>
-<path fill="none" stroke="#191970" d="M754.2202,-300.1401C851.2455,-293.1575 1014.7125,-278.8121 1153.5,-254 1162.718,-252.352 1172.4257,-250.2434 1181.8238,-248.0005"/>
-<polygon fill="#191970" stroke="#191970" points="753.8997,-296.6539 744.1729,-300.8539 754.3959,-303.6363 753.8997,-296.6539"/>
+<path fill="none" stroke="#191970" d="M1610.8326,-298.899C1699.8047,-291.2002 1843.462,-276.5722 1966,-254 1975.0631,-252.3305 1984.6046,-250.238 1993.8611,-248.0252"/>
+<polygon fill="#191970" stroke="#191970" points="1610.4588,-295.4181 1600.7938,-299.7583 1611.0559,-302.3926 1610.4588,-295.4181"/>
 </g>
 <!-- Node65 -->
 <g id="node4" class="node">
 <title>Node65</title>
 <g id="a_node4"><a xlink:href="exponential__plus__piecewise__polynomial_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="508,-212.5 508,-253.5 665,-253.5 665,-212.5 508,-212.5"/>
-<text text-anchor="start" x="516" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/common/trajectories</text>
-<text text-anchor="start" x="516" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/exponential_plus_piecewise</text>
-<text text-anchor="middle" x="586.5" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_polynomial.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="2141.5,-212.5 2141.5,-253.5 2298.5,-253.5 2298.5,-212.5 2141.5,-212.5"/>
+<text text-anchor="start" x="2149.5" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/common/trajectories</text>
+<text text-anchor="start" x="2149.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/exponential_plus_piecewise</text>
+<text text-anchor="middle" x="2220" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_polynomial.h</text>
 </a>
 </g>
 </g>
 <!-- Node63&#45;&gt;Node65 -->
 <g id="edge3" class="edge">
 <title>Node63&#45;&gt;Node65</title>
-<path fill="none" stroke="#191970" d="M644.681,-283.8207C633.6823,-274.2135 620.8084,-262.9681 609.9707,-253.5015"/>
-<polygon fill="#191970" stroke="#191970" points="642.4684,-286.5353 652.3023,-290.478 647.0735,-281.2633 642.4684,-286.5353"/>
+<path fill="none" stroke="#191970" d="M1610.7701,-302.3814C1728.5627,-297.1242 1948.1246,-283.9764 2133,-254 2135.7608,-253.5524 2138.5634,-253.0638 2141.3884,-252.5424"/>
+<polygon fill="#191970" stroke="#191970" points="1610.5705,-298.8867 1600.7334,-302.8212 1610.877,-305.88 1610.5705,-298.8867"/>
 </g>
 <!-- Node66 -->
 <g id="node5" class="node">
 <title>Node66</title>
 <g id="a_node5"><a xlink:href="zmp__planner_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="454,-145.5 454,-175.5 597,-175.5 597,-145.5 454,-145.5"/>
-<text text-anchor="start" x="462" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/controllers</text>
-<text text-anchor="middle" x="525.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/zmp_planner.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="2068.5,-145.5 2068.5,-175.5 2211.5,-175.5 2211.5,-145.5 2068.5,-145.5"/>
+<text text-anchor="start" x="2076.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/controllers</text>
+<text text-anchor="middle" x="2140" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/zmp_planner.h</text>
 </a>
 </g>
 </g>
 <!-- Node63&#45;&gt;Node66 -->
-<g id="edge37" class="edge">
+<g id="edge36" class="edge">
 <title>Node63&#45;&gt;Node66</title>
-<path fill="none" stroke="#191970" d="M584.767,-289.8343C547.4407,-281.0443 509.5352,-268.8482 498.5,-254 480.8628,-230.2685 499.9561,-195.2898 513.8042,-175.5307"/>
-<polygon fill="#191970" stroke="#191970" points="584.2122,-293.2976 594.7402,-292.1086 585.7687,-286.4728 584.2122,-293.2976"/>
+<path fill="none" stroke="#191970" d="M1561.6593,-284.8513C1575.7102,-276.0622 1591.647,-265.2485 1605,-254 1624.482,-237.5884 1621.2079,-223.3759 1644,-212 1648.7052,-209.6516 1932.2103,-181.1795 2068.4299,-167.6078"/>
+<polygon fill="#191970" stroke="#191970" points="1559.439,-282.1072 1552.7444,-290.319 1563.0987,-288.0744 1559.439,-282.1072"/>
 </g>
 <!-- Node67 -->
 <g id="node6" class="node">
 <title>Node67</title>
-<g id="a_node6"><a xlink:href="iiwa__common_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="139,-218 139,-248 286,-248 286,-218 139,-218"/>
-<text text-anchor="start" x="147" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/examples/kuka</text>
-<text text-anchor="middle" x="212.5" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_iiwa_arm/iiwa_common.h</text>
+<g id="a_node6"><a xlink:href="trajectory__utils_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="814.5,-218 814.5,-248 935.5,-248 935.5,-218 814.5,-218"/>
+<text text-anchor="start" x="822.5" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/manipulation</text>
+<text text-anchor="middle" x="875" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/util/trajectory_utils.h</text>
 </a>
 </g>
 </g>
 <!-- Node63&#45;&gt;Node67 -->
 <g id="edge5" class="edge">
 <title>Node63&#45;&gt;Node67</title>
-<path fill="none" stroke="#191970" d="M584.6938,-296.6536C508.3888,-288.0305 393.401,-273.3895 294.5,-254 285.8474,-252.3037 276.7463,-250.2489 267.8822,-248.0969"/>
-<polygon fill="#191970" stroke="#191970" points="584.4052,-300.143 594.7328,-297.7785 585.1848,-293.1866 584.4052,-300.143"/>
+<path fill="none" stroke="#191970" d="M1441.1979,-300.1096C1303.5893,-291.0041 1037.7097,-271.8235 945,-254 936.9012,-252.443 928.4023,-250.3228 920.2285,-248.0258"/>
+<polygon fill="#191970" stroke="#191970" points="1441.0747,-303.6089 1451.2832,-300.774 1441.5349,-296.6241 1441.0747,-303.6089"/>
 </g>
 <!-- Node68 -->
 <g id="node7" class="node">
 <title>Node68</title>
-<g id="a_node7"><a xlink:href="trajectory__utils_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="0,-218 0,-248 121,-248 121,-218 0,-218"/>
-<text text-anchor="start" x="8" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/manipulation</text>
-<text text-anchor="middle" x="60.5" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/util/trajectory_utils.h</text>
+<g id="a_node7"><a xlink:href="hermitian__dense__output_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1252.5,-218 1252.5,-248 1399.5,-248 1399.5,-218 1252.5,-218"/>
+<text text-anchor="start" x="1260.5" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="1326" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/hermitian_dense_output.h</text>
 </a>
 </g>
 </g>
 <!-- Node63&#45;&gt;Node68 -->
 <g id="edge6" class="edge">
 <title>Node63&#45;&gt;Node68</title>
-<path fill="none" stroke="#191970" d="M584.5589,-299.4865C455.0398,-289.9625 214.2777,-270.7675 129.5,-254 121.6384,-252.4451 113.3951,-250.3552 105.4523,-248.0949"/>
-<polygon fill="#191970" stroke="#191970" points="584.6026,-302.9989 594.8315,-300.2387 585.1139,-296.0176 584.6026,-302.9989"/>
+<path fill="none" stroke="#191970" d="M1474.9847,-287.0069C1441.6282,-274.9152 1398.6148,-259.3228 1367.387,-248.0028"/>
+<polygon fill="#191970" stroke="#191970" points="1473.9657,-290.3604 1484.5599,-290.478 1476.3513,-283.7794 1473.9657,-290.3604"/>
 </g>
 <!-- Node69 -->
 <g id="node8" class="node">
 <title>Node69</title>
-<g id="a_node8"><a xlink:href="hermitian__dense__output_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="304,-218 304,-248 451,-248 451,-218 304,-218"/>
-<text text-anchor="start" x="312" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="377.5" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/hermitian_dense_output.h</text>
+<g id="a_node8"><a xlink:href="integrator__base_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="954,-218 954,-248 1086,-248 1086,-218 954,-218"/>
+<text text-anchor="start" x="962" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="1020" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/integrator_base.h</text>
 </a>
 </g>
 </g>
 <!-- Node63&#45;&gt;Node69 -->
 <g id="edge7" class="edge">
 <title>Node63&#45;&gt;Node69</title>
-<path fill="none" stroke="#191970" d="M599.0598,-288.0106C549.8344,-275.7885 484.7894,-259.6386 437.9251,-248.0028"/>
-<polygon fill="#191970" stroke="#191970" points="598.4487,-291.465 608.9974,-290.478 600.1355,-284.6713 598.4487,-291.465"/>
+<path fill="none" stroke="#191970" d="M1441.2693,-293.3597C1341.287,-279.0342 1177.1628,-255.5184 1086.0938,-242.47"/>
+<polygon fill="#191970" stroke="#191970" points="1440.9426,-296.8486 1451.338,-294.8024 1441.9355,-289.9194 1440.9426,-296.8486"/>
 </g>
-<!-- Node70 -->
-<g id="node9" class="node">
-<title>Node70</title>
-<g id="a_node9"><a xlink:href="integrator__base_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1477.5,-218 1477.5,-248 1609.5,-248 1609.5,-218 1477.5,-218"/>
-<text text-anchor="start" x="1485.5" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="1543.5" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/integrator_base.h</text>
+<!-- Node90 -->
+<g id="node29" class="node">
+<title>Node90</title>
+<g id="a_node29"><a xlink:href="direct__transcription_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1579,-145.5 1579,-175.5 1769,-175.5 1769,-145.5 1579,-145.5"/>
+<text text-anchor="start" x="1587" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/trajectory</text>
+<text text-anchor="middle" x="1674" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_optimization/direct_transcription.h</text>
 </a>
 </g>
 </g>
-<!-- Node63&#45;&gt;Node70 -->
-<g id="edge8" class="edge">
-<title>Node63&#45;&gt;Node70</title>
-<path fill="none" stroke="#191970" d="M754.3258,-300.0414C883.5311,-291.5151 1137.3515,-273.933 1352.5,-254 1394.0216,-250.1531 1440.5327,-245.0562 1477.2613,-240.8471"/>
-<polygon fill="#191970" stroke="#191970" points="753.8546,-296.5648 744.1061,-300.7141 754.3145,-303.5496 753.8546,-296.5648"/>
+<!-- Node63&#45;&gt;Node90 -->
+<g id="edge37" class="edge">
+<title>Node63&#45;&gt;Node90</title>
+<path fill="none" stroke="#191970" d="M1479.0322,-285.4304C1466.3468,-277.5771 1454.161,-267.2164 1447,-254 1438.1074,-237.5876 1435.352,-226.5866 1447,-212 1455.9046,-200.8489 1524.09,-186.3247 1583.428,-175.5445"/>
+<polygon fill="#191970" stroke="#191970" points="1477.421,-288.5409 1487.8386,-290.471 1480.8984,-282.4657 1477.421,-288.5409"/>
 </g>
 <!-- Node91 -->
 <g id="node30" class="node">
 <title>Node91</title>
-<g id="a_node30"><a xlink:href="direct__transcription_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="838.5,-145.5 838.5,-175.5 1028.5,-175.5 1028.5,-145.5 838.5,-145.5"/>
-<text text-anchor="start" x="846.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/trajectory</text>
-<text text-anchor="middle" x="933.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_optimization/direct_transcription.h</text>
+<g id="a_node30"><a xlink:href="finite__horizon__linear__quadratic__regulator_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1652.5,-212.5 1652.5,-253.5 1795.5,-253.5 1795.5,-212.5 1652.5,-212.5"/>
+<text text-anchor="start" x="1660.5" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/controllers</text>
+<text text-anchor="start" x="1660.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/finite_horizon_linear</text>
+<text text-anchor="middle" x="1724" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_quadratic_regulator.h</text>
 </a>
 </g>
 </g>
 <!-- Node63&#45;&gt;Node91 -->
-<g id="edge38" class="edge">
+<g id="edge34" class="edge">
 <title>Node63&#45;&gt;Node91</title>
-<path fill="none" stroke="#191970" d="M754.0833,-301.8308C925.9758,-293.9633 1301.546,-274.5126 1320.5,-254 1469.0598,-93.2236 1644.8565,-257.8264 1042.5,-176 1037.9544,-175.3825 1033.3031,-174.7446 1028.6058,-174.0954"/>
-<polygon fill="#191970" stroke="#191970" points="753.8883,-298.3359 744.0578,-302.2871 754.2066,-305.3287 753.8883,-298.3359"/>
+<path fill="none" stroke="#191970" d="M1576.5987,-286.9727C1604.5262,-276.7467 1639.2694,-264.0251 1668.0097,-253.5015"/>
+<polygon fill="#191970" stroke="#191970" points="1575.2126,-283.7529 1567.0257,-290.478 1577.6195,-290.3261 1575.2126,-283.7529"/>
 </g>
 <!-- Node92 -->
 <g id="node31" class="node">
 <title>Node92</title>
-<g id="a_node31"><a xlink:href="finite__horizon__linear__quadratic__regulator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="840,-212.5 840,-253.5 983,-253.5 983,-212.5 840,-212.5"/>
-<text text-anchor="start" x="848" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/controllers</text>
-<text text-anchor="start" x="848" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/finite_horizon_linear</text>
-<text text-anchor="middle" x="911.5" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_quadratic_regulator.h</text>
+<g id="a_node31"><a xlink:href="linear__model__predictive__controller_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1813.5,-212.5 1813.5,-253.5 1956.5,-253.5 1956.5,-212.5 1813.5,-212.5"/>
+<text text-anchor="start" x="1821.5" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/controllers</text>
+<text text-anchor="start" x="1821.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/linear_model_predictive</text>
+<text text-anchor="middle" x="1885" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_controller.h</text>
 </a>
 </g>
 </g>
 <!-- Node63&#45;&gt;Node92 -->
 <g id="edge35" class="edge">
 <title>Node63&#45;&gt;Node92</title>
-<path fill="none" stroke="#191970" d="M729.5619,-287.5062C763.9907,-277.1918 807.3268,-264.2089 843.0674,-253.5015"/>
-<polygon fill="#191970" stroke="#191970" points="728.2174,-284.2553 719.6426,-290.478 730.2264,-290.9608 728.2174,-284.2553"/>
+<path fill="none" stroke="#191970" d="M1610.7497,-291.5388C1666.221,-281.9873 1740.1709,-268.4712 1805,-254 1807.6628,-253.4056 1810.3709,-252.7838 1813.1031,-252.1419"/>
+<polygon fill="#191970" stroke="#191970" points="1609.8787,-288.137 1600.6134,-293.2755 1611.0608,-295.0364 1609.8787,-288.137"/>
 </g>
 <!-- Node93 -->
 <g id="node32" class="node">
 <title>Node93</title>
-<g id="a_node32"><a xlink:href="linear__model__predictive__controller_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1001,-212.5 1001,-253.5 1144,-253.5 1144,-212.5 1001,-212.5"/>
-<text text-anchor="start" x="1009" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/controllers</text>
-<text text-anchor="start" x="1009" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/linear_model_predictive</text>
-<text text-anchor="middle" x="1072.5" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_controller.h</text>
+<g id="a_node32"><a xlink:href="multiple__shooting_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1456.5,-212.5 1456.5,-253.5 1595.5,-253.5 1595.5,-212.5 1456.5,-212.5"/>
+<text text-anchor="start" x="1464.5" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/trajectory</text>
+<text text-anchor="start" x="1464.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_optimization/multiple</text>
+<text text-anchor="middle" x="1526" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_shooting.h</text>
 </a>
 </g>
 </g>
 <!-- Node63&#45;&gt;Node93 -->
-<g id="edge36" class="edge">
+<g id="edge38" class="edge">
 <title>Node63&#45;&gt;Node93</title>
-<path fill="none" stroke="#191970" d="M754.5463,-294.2758C819.9253,-285.0841 912.3263,-270.8715 992.5,-254 995.1698,-253.4382 997.884,-252.8441 1000.6213,-252.2256"/>
-<polygon fill="#191970" stroke="#191970" points="753.7114,-290.8584 744.2914,-295.7076 754.6793,-297.7911 753.7114,-290.8584"/>
-</g>
-<!-- Node94 -->
-<g id="node33" class="node">
-<title>Node94</title>
-<g id="a_node33"><a xlink:href="multiple__shooting_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="683,-212.5 683,-253.5 822,-253.5 822,-212.5 683,-212.5"/>
-<text text-anchor="start" x="691" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/trajectory</text>
-<text text-anchor="start" x="691" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_optimization/multiple</text>
-<text text-anchor="middle" x="752.5" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_shooting.h</text>
-</a>
-</g>
-</g>
-<!-- Node63&#45;&gt;Node94 -->
-<g id="edge39" class="edge">
-<title>Node63&#45;&gt;Node94</title>
-<path fill="none" stroke="#191970" d="M694.319,-283.8207C705.3177,-274.2135 718.1916,-262.9681 729.0293,-253.5015"/>
-<polygon fill="#191970" stroke="#191970" points="691.9265,-281.2633 686.6977,-290.478 696.5316,-286.5353 691.9265,-281.2633"/>
+<path fill="none" stroke="#191970" d="M1526,-280.4016C1526,-271.6173 1526,-261.8652 1526,-253.5015"/>
+<polygon fill="#191970" stroke="#191970" points="1522.5001,-280.4779 1526,-290.478 1529.5001,-280.478 1522.5001,-280.4779"/>
 </g>
 <!-- Node65&#45;&gt;Node66 -->
 <g id="edge4" class="edge">
 <title>Node65&#45;&gt;Node66</title>
-<path fill="none" stroke="#191970" d="M562.689,-204.7C554.3398,-194.7768 545.2872,-184.0176 538.2041,-175.5991"/>
-<polygon fill="#191970" stroke="#191970" points="560.0667,-207.0198 569.183,-212.4183 565.423,-202.5131 560.0667,-207.0198"/>
+<path fill="none" stroke="#191970" d="M2189.7456,-205.582C2178.5302,-195.418 2166.2264,-184.2677 2156.6611,-175.5991"/>
+<polygon fill="#191970" stroke="#191970" points="2187.529,-208.2966 2197.2892,-212.4183 2192.2296,-203.1096 2187.529,-208.2966"/>
+</g>
+<!-- Node70 -->
+<g id="node9" class="node">
+<title>Node70</title>
+<g id="a_node9"><a xlink:href="bogacki__shampine3__integrator_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="749.5,-145.5 749.5,-175.5 928.5,-175.5 928.5,-145.5 749.5,-145.5"/>
+<text text-anchor="start" x="757.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="839" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/bogacki_shampine3_integrator.h</text>
+</a>
+</g>
+</g>
+<!-- Node69&#45;&gt;Node70 -->
+<g id="edge8" class="edge">
+<title>Node69&#45;&gt;Node70</title>
+<path fill="none" stroke="#191970" d="M973.0519,-214.1948C942.976,-202.1478 904.4738,-186.7257 876.4553,-175.5028"/>
+<polygon fill="#191970" stroke="#191970" points="971.9122,-217.5086 982.4967,-217.978 974.5151,-211.0105 971.9122,-217.5086"/>
+</g>
+<!-- Node72 -->
+<g id="node11" class="node">
+<title>Node72</title>
+<g id="a_node11"><a xlink:href="explicit__euler__integrator_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1261,-145.5 1261,-175.5 1409,-175.5 1409,-145.5 1261,-145.5"/>
+<text text-anchor="start" x="1269" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="1335" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/explicit_euler_integrator.h</text>
+</a>
+</g>
+</g>
+<!-- Node69&#45;&gt;Node72 -->
+<g id="edge10" class="edge">
+<title>Node69&#45;&gt;Node72</title>
+<path fill="none" stroke="#191970" d="M1095.3243,-215.6635C1148.5051,-203.4234 1219.0486,-187.1872 1269.8154,-175.5028"/>
+<polygon fill="#191970" stroke="#191970" points="1094.2284,-212.3241 1085.2682,-217.978 1095.7985,-219.1458 1094.2284,-212.3241"/>
+</g>
+<!-- Node73 -->
+<g id="node12" class="node">
+<title>Node73</title>
+<g id="a_node12"><a xlink:href="implicit__integrator_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1111,-145.5 1111,-175.5 1243,-175.5 1243,-145.5 1111,-145.5"/>
+<text text-anchor="start" x="1119" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="1177" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/implicit_integrator.h</text>
+</a>
+</g>
+</g>
+<!-- Node69&#45;&gt;Node73 -->
+<g id="edge11" class="edge">
+<title>Node69&#45;&gt;Node73</title>
+<path fill="none" stroke="#191970" d="M1061.7431,-213.7237C1087.6768,-201.748 1120.5235,-186.5799 1144.5112,-175.5028"/>
+<polygon fill="#191970" stroke="#191970" points="1060.1419,-210.6079 1052.5305,-217.978 1063.0766,-216.963 1060.1419,-210.6079"/>
+</g>
+<!-- Node77 -->
+<g id="node16" class="node">
+<title>Node77</title>
+<g id="a_node16"><a xlink:href="initial__value__problem_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1427,-145.5 1427,-175.5 1561,-175.5 1561,-145.5 1427,-145.5"/>
+<text text-anchor="start" x="1435" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="1494" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/initial_value_problem.h</text>
+</a>
+</g>
+</g>
+<!-- Node69&#45;&gt;Node77 -->
+<g id="edge16" class="edge">
+<title>Node69&#45;&gt;Node77</title>
+<path fill="none" stroke="#191970" d="M1096.0524,-223.4632C1176.305,-213.0831 1306.3716,-195.3593 1418,-176 1420.919,-175.4938 1423.8975,-174.9601 1426.9038,-174.4074"/>
+<polygon fill="#191970" stroke="#191970" points="1095.5045,-220.0048 1086.0339,-224.7543 1096.3993,-226.9473 1095.5045,-220.0048"/>
+</g>
+<!-- Node80 -->
+<g id="node19" class="node">
+<title>Node80</title>
+<g id="a_node19"><a xlink:href="runge__kutta2__integrator_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="947,-145.5 947,-175.5 1093,-175.5 1093,-145.5 947,-145.5"/>
+<text text-anchor="start" x="955" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="1020" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/runge_kutta2_integrator.h</text>
+</a>
+</g>
+</g>
+<!-- Node69&#45;&gt;Node80 -->
+<g id="edge19" class="edge">
+<title>Node69&#45;&gt;Node80</title>
+<path fill="none" stroke="#191970" d="M1020,-207.8409C1020,-197.0601 1020,-184.8309 1020,-175.5028"/>
+<polygon fill="#191970" stroke="#191970" points="1016.5001,-207.9779 1020,-217.978 1023.5001,-207.978 1016.5001,-207.9779"/>
+</g>
+<!-- Node81 -->
+<g id="node20" class="node">
+<title>Node81</title>
+<g id="a_node20"><a xlink:href="runge__kutta3__integrator_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="0,-145.5 0,-175.5 146,-175.5 146,-145.5 0,-145.5"/>
+<text text-anchor="start" x="8" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="73" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/runge_kutta3_integrator.h</text>
+</a>
+</g>
+</g>
+<!-- Node69&#45;&gt;Node81 -->
+<g id="edge22" class="edge">
+<title>Node69&#45;&gt;Node81</title>
+<path fill="none" stroke="#191970" d="M961.753,-215.4895C955.7961,-214.1253 949.8027,-212.9221 944,-212 597.3185,-156.9088 503.6639,-216.7009 155,-176 152.1219,-175.664 149.193,-175.2859 146.2389,-174.8744"/>
+<polygon fill="#191970" stroke="#191970" points="961.1591,-218.9472 971.7036,-217.916 962.8175,-212.1465 961.1591,-218.9472"/>
+</g>
+<!-- Node82 -->
+<g id="node21" class="node">
+<title>Node82</title>
+<g id="a_node21"><a xlink:href="runge__kutta5__integrator_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="164,-145.5 164,-175.5 310,-175.5 310,-145.5 164,-145.5"/>
+<text text-anchor="start" x="172" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="237" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/runge_kutta5_integrator.h</text>
+</a>
+</g>
+</g>
+<!-- Node69&#45;&gt;Node82 -->
+<g id="edge23" class="edge">
+<title>Node69&#45;&gt;Node82</title>
+<path fill="none" stroke="#191970" d="M961.4747,-215.4999C955.608,-214.1464 949.7106,-212.9425 944,-212 669.4753,-166.6932 595.1641,-209.9102 319,-176 316.124,-175.6469 313.1968,-175.2543 310.2441,-174.8306"/>
+<polygon fill="#191970" stroke="#191970" points="960.7353,-218.9221 971.2806,-217.8988 962.3988,-212.1226 960.7353,-218.9221"/>
+</g>
+<!-- Node83 -->
+<g id="node22" class="node">
+<title>Node83</title>
+<g id="a_node22"><a xlink:href="semi__explicit__euler__integrator_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="328.5,-145.5 328.5,-175.5 505.5,-175.5 505.5,-145.5 328.5,-145.5"/>
+<text text-anchor="start" x="336.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="417" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/semi_explicit_euler_integrator.h</text>
+</a>
+</g>
+</g>
+<!-- Node69&#45;&gt;Node83 -->
+<g id="edge24" class="edge">
+<title>Node69&#45;&gt;Node83</title>
+<path fill="none" stroke="#191970" d="M960.7581,-215.4984C955.1249,-214.1769 949.4742,-212.9794 944,-212 757.3979,-178.6132 707.2548,-198.252 519,-176 514.642,-175.4849 510.1839,-174.9264 505.6848,-174.3375"/>
+<polygon fill="#191970" stroke="#191970" points="960.2896,-218.9879 970.8374,-217.991 961.9701,-212.1926 960.2896,-218.9879"/>
+</g>
+<!-- Node84 -->
+<g id="node23" class="node">
+<title>Node84</title>
+<g id="a_node23"><a xlink:href="simulator_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="561,-145.5 561,-175.5 693,-175.5 693,-145.5 561,-145.5"/>
+<text text-anchor="start" x="569" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="627" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/simulator.h</text>
+</a>
+</g>
+</g>
+<!-- Node69&#45;&gt;Node84 -->
+<g id="edge25" class="edge">
+<title>Node69&#45;&gt;Node84</title>
+<path fill="none" stroke="#191970" d="M958.9975,-215.4643C953.9418,-214.2184 948.8949,-213.0442 944,-212 839.8028,-189.7729 811.9866,-194.1365 707,-176 702.539,-175.2294 697.9432,-174.4092 693.3161,-173.5639"/>
+<polygon fill="#191970" stroke="#191970" points="958.1387,-218.8573 968.6932,-217.9332 959.8661,-212.0737 958.1387,-218.8573"/>
+</g>
+<!-- Node86 -->
+<g id="node25" class="node">
+<title>Node86</title>
+<g id="a_node25"><a xlink:href="simulator__flags_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="105,-73 105,-103 237,-103 237,-73 105,-73"/>
+<text text-anchor="start" x="113" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="171" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/simulator_flags.h</text>
+</a>
+</g>
+</g>
+<!-- Node69&#45;&gt;Node86 -->
+<g id="edge31" class="edge">
+<title>Node69&#45;&gt;Node86</title>
+<path fill="none" stroke="#191970" d="M960.4908,-215.4782C954.9452,-214.1722 949.3865,-212.9834 944,-212 771.8896,-180.5772 713.9547,-242.1821 552,-176 531.8237,-167.755 533.9989,-153.6663 514,-145 403.7275,-97.2147 363.7066,-133.2612 246,-109 237.9216,-107.3349 229.4348,-105.271 221.1927,-103.0929"/>
+<polygon fill="#191970" stroke="#191970" points="959.8705,-218.9303 970.4186,-217.9365 961.553,-212.1355 959.8705,-218.9303"/>
+</g>
+<!-- Node87 -->
+<g id="node26" class="node">
+<title>Node87</title>
+<g id="a_node26"><a xlink:href="simulator__gflags_8h.html" target="_top" xlink:title="This file defines gflags settings to control Simulator settings.">
+<polygon fill="#ffffff" stroke="#000000" points="717,-73 717,-103 849,-103 849,-73 717,-73"/>
+<text text-anchor="start" x="725" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="783" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/simulator_gflags.h</text>
+</a>
+</g>
+</g>
+<!-- Node69&#45;&gt;Node87 -->
+<g id="edge32" class="edge">
+<title>Node69&#45;&gt;Node87</title>
+<path fill="none" stroke="#191970" d="M958.3349,-215.4334C953.4981,-214.217 948.6776,-213.0565 944,-212 899.0972,-201.8584 769.5875,-211.266 740,-176 721.3112,-153.7244 746.7753,-121.9435 765.7454,-103.2949"/>
+<polygon fill="#191970" stroke="#191970" points="957.6877,-218.8811 968.2452,-217.9932 959.4383,-212.1035 957.6877,-218.8811"/>
+</g>
+<!-- Node69&#45;&gt;Node90 -->
+<g id="edge33" class="edge">
+<title>Node69&#45;&gt;Node90</title>
+<path fill="none" stroke="#191970" d="M1096.5348,-225.4956C1225.4015,-212.788 1480.3997,-187.3141 1570,-176 1572.8978,-175.6341 1575.8396,-175.2534 1578.8086,-174.8611"/>
+<polygon fill="#191970" stroke="#191970" points="1095.957,-222.0355 1086.3485,-226.4994 1096.6435,-229.0017 1095.957,-222.0355"/>
 </g>
 <!-- Node71 -->
 <g id="node10" class="node">
 <title>Node71</title>
-<g id="a_node10"><a xlink:href="bogacki__shampine3__integrator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1273,-145.5 1273,-175.5 1452,-175.5 1452,-145.5 1273,-145.5"/>
-<text text-anchor="start" x="1281" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="1362.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/bogacki_shampine3_integrator.h</text>
+<g id="a_node10"><a xlink:href="radau__integrator_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="867,-73 867,-103 999,-103 999,-73 867,-73"/>
+<text text-anchor="start" x="875" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="933" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/radau_integrator.h</text>
 </a>
 </g>
 </g>
 <!-- Node70&#45;&gt;Node71 -->
 <g id="edge9" class="edge">
 <title>Node70&#45;&gt;Node71</title>
-<path fill="none" stroke="#191970" d="M1496.5519,-214.1948C1466.476,-202.1478 1427.9738,-186.7257 1399.9553,-175.5028"/>
-<polygon fill="#191970" stroke="#191970" points="1495.4122,-217.5086 1505.9967,-217.978 1498.0151,-211.0105 1495.4122,-217.5086"/>
+<path fill="none" stroke="#191970" d="M866.4773,-139.3074C881.5753,-127.6627 899.9419,-113.4969 913.5481,-103.0028"/>
+<polygon fill="#191970" stroke="#191970" points="864.2577,-136.5992 858.4769,-145.478 868.5328,-142.1421 864.2577,-136.5992"/>
 </g>
-<!-- Node73 -->
-<g id="node12" class="node">
-<title>Node73</title>
-<g id="a_node12"><a xlink:href="explicit__euler__integrator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1784.5,-145.5 1784.5,-175.5 1932.5,-175.5 1932.5,-145.5 1784.5,-145.5"/>
-<text text-anchor="start" x="1792.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="1858.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/explicit_euler_integrator.h</text>
-</a>
-</g>
-</g>
-<!-- Node70&#45;&gt;Node73 -->
-<g id="edge11" class="edge">
-<title>Node70&#45;&gt;Node73</title>
-<path fill="none" stroke="#191970" d="M1618.8243,-215.6635C1672.0051,-203.4234 1742.5486,-187.1872 1793.3154,-175.5028"/>
-<polygon fill="#191970" stroke="#191970" points="1617.7284,-212.3241 1608.7682,-217.978 1619.2985,-219.1458 1617.7284,-212.3241"/>
+<!-- Node73&#45;&gt;Node71 -->
+<g id="edge13" class="edge">
+<title>Node73&#45;&gt;Node71</title>
+<path fill="none" stroke="#191970" d="M1116.8466,-142.6266C1075.8724,-130.4518 1022.244,-114.5172 983.4922,-103.0028"/>
+<polygon fill="#191970" stroke="#191970" points="1115.8603,-145.9847 1126.443,-145.478 1117.8541,-139.2746 1115.8603,-145.9847"/>
 </g>
 <!-- Node74 -->
 <g id="node13" class="node">
 <title>Node74</title>
-<g id="a_node13"><a xlink:href="implicit__integrator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1634.5,-145.5 1634.5,-175.5 1766.5,-175.5 1766.5,-145.5 1634.5,-145.5"/>
-<text text-anchor="start" x="1642.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="1700.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/implicit_integrator.h</text>
+<g id="a_node13"><a xlink:href="implicit__euler__integrator_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1017.5,-73 1017.5,-103 1166.5,-103 1166.5,-73 1017.5,-73"/>
+<text text-anchor="start" x="1025.5" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="1092" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/implicit_euler_integrator.h</text>
 </a>
 </g>
 </g>
-<!-- Node70&#45;&gt;Node74 -->
+<!-- Node73&#45;&gt;Node74 -->
 <g id="edge12" class="edge">
-<title>Node70&#45;&gt;Node74</title>
-<path fill="none" stroke="#191970" d="M1585.2431,-213.7237C1611.1768,-201.748 1644.0235,-186.5799 1668.0112,-175.5028"/>
-<polygon fill="#191970" stroke="#191970" points="1583.6419,-210.6079 1576.0305,-217.978 1586.5766,-216.963 1583.6419,-210.6079"/>
-</g>
-<!-- Node78 -->
-<g id="node17" class="node">
-<title>Node78</title>
-<g id="a_node17"><a xlink:href="initial__value__problem_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1950.5,-145.5 1950.5,-175.5 2084.5,-175.5 2084.5,-145.5 1950.5,-145.5"/>
-<text text-anchor="start" x="1958.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="2017.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/initial_value_problem.h</text>
-</a>
-</g>
-</g>
-<!-- Node70&#45;&gt;Node78 -->
-<g id="edge17" class="edge">
-<title>Node70&#45;&gt;Node78</title>
-<path fill="none" stroke="#191970" d="M1619.5524,-223.4632C1699.805,-213.0831 1829.8716,-195.3593 1941.5,-176 1944.419,-175.4938 1947.3975,-174.9601 1950.4038,-174.4074"/>
-<polygon fill="#191970" stroke="#191970" points="1619.0045,-220.0048 1609.5339,-224.7543 1619.8993,-226.9473 1619.0045,-220.0048"/>
-</g>
-<!-- Node81 -->
-<g id="node20" class="node">
-<title>Node81</title>
-<g id="a_node20"><a xlink:href="runge__kutta2__integrator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1470.5,-145.5 1470.5,-175.5 1616.5,-175.5 1616.5,-145.5 1470.5,-145.5"/>
-<text text-anchor="start" x="1478.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="1543.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/runge_kutta2_integrator.h</text>
-</a>
-</g>
-</g>
-<!-- Node70&#45;&gt;Node81 -->
-<g id="edge20" class="edge">
-<title>Node70&#45;&gt;Node81</title>
-<path fill="none" stroke="#191970" d="M1543.5,-207.8409C1543.5,-197.0601 1543.5,-184.8309 1543.5,-175.5028"/>
-<polygon fill="#191970" stroke="#191970" points="1540.0001,-207.9779 1543.5,-217.978 1547.0001,-207.978 1540.0001,-207.9779"/>
-</g>
-<!-- Node82 -->
-<g id="node21" class="node">
-<title>Node82</title>
-<g id="a_node21"><a xlink:href="runge__kutta3__integrator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="2102.5,-145.5 2102.5,-175.5 2248.5,-175.5 2248.5,-145.5 2102.5,-145.5"/>
-<text text-anchor="start" x="2110.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="2175.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/runge_kutta3_integrator.h</text>
-</a>
-</g>
-</g>
-<!-- Node70&#45;&gt;Node82 -->
-<g id="edge23" class="edge">
-<title>Node70&#45;&gt;Node82</title>
-<path fill="none" stroke="#191970" d="M1619.7628,-227.1233C1726.1769,-218.4626 1925.1014,-200.5979 2093.5,-176 2096.3672,-175.5812 2099.2869,-175.1332 2102.2334,-174.6632"/>
-<polygon fill="#191970" stroke="#191970" points="1619.4428,-223.6377 1609.7576,-227.9327 1620.0073,-230.6149 1619.4428,-223.6377"/>
-</g>
-<!-- Node83 -->
-<g id="node22" class="node">
-<title>Node83</title>
-<g id="a_node22"><a xlink:href="runge__kutta5__integrator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="2266.5,-145.5 2266.5,-175.5 2412.5,-175.5 2412.5,-145.5 2266.5,-145.5"/>
-<text text-anchor="start" x="2274.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="2339.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/runge_kutta5_integrator.h</text>
-</a>
-</g>
-</g>
-<!-- Node70&#45;&gt;Node83 -->
-<g id="edge24" class="edge">
-<title>Node70&#45;&gt;Node83</title>
-<path fill="none" stroke="#191970" d="M1620.0261,-229.5862C1751.0313,-223.1406 2026.4986,-206.9624 2257.5,-176 2260.372,-175.6151 2263.2957,-175.1957 2266.2455,-174.7495"/>
-<polygon fill="#191970" stroke="#191970" points="1619.5224,-226.1065 1609.7044,-230.0885 1619.8627,-233.0982 1619.5224,-226.1065"/>
-</g>
-<!-- Node84 -->
-<g id="node23" class="node">
-<title>Node84</title>
-<g id="a_node23"><a xlink:href="semi__explicit__euler__integrator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="2431,-145.5 2431,-175.5 2608,-175.5 2608,-145.5 2431,-145.5"/>
-<text text-anchor="start" x="2439" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="2519.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/semi_explicit_euler_integrator.h</text>
-</a>
-</g>
-</g>
-<!-- Node70&#45;&gt;Node84 -->
-<g id="edge25" class="edge">
-<title>Node70&#45;&gt;Node84</title>
-<path fill="none" stroke="#191970" d="M1619.9736,-230.4046C1772.698,-224.6986 2126.1759,-208.8704 2421.5,-176 2424.5815,-175.657 2427.7142,-175.2856 2430.8757,-174.8915"/>
-<polygon fill="#191970" stroke="#191970" points="1619.6311,-226.9148 1609.7673,-230.782 1619.8898,-233.91 1619.6311,-226.9148"/>
-</g>
-<!-- Node85 -->
-<g id="node24" class="node">
-<title>Node85</title>
-<g id="a_node24"><a xlink:href="simulator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1084.5,-145.5 1084.5,-175.5 1216.5,-175.5 1216.5,-145.5 1084.5,-145.5"/>
-<text text-anchor="start" x="1092.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="1150.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/simulator.h</text>
-</a>
-</g>
-</g>
-<!-- Node70&#45;&gt;Node85 -->
-<g id="edge26" class="edge">
-<title>Node70&#45;&gt;Node85</title>
-<path fill="none" stroke="#191970" d="M1467.2901,-219.3686C1403.8836,-207.968 1311.2689,-191.1783 1230.5,-176 1226.0508,-175.1639 1221.4639,-174.2946 1216.8432,-173.4135"/>
-<polygon fill="#191970" stroke="#191970" points="1466.7479,-222.8272 1477.2093,-221.151 1467.986,-215.9375 1466.7479,-222.8272"/>
-</g>
-<!-- Node87 -->
-<g id="node26" class="node">
-<title>Node87</title>
-<g id="a_node26"><a xlink:href="simulator__flags_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="622.5,-73 622.5,-103 754.5,-103 754.5,-73 622.5,-73"/>
-<text text-anchor="start" x="630.5" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="688.5" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/simulator_flags.h</text>
-</a>
-</g>
-</g>
-<!-- Node70&#45;&gt;Node87 -->
-<g id="edge32" class="edge">
-<title>Node70&#45;&gt;Node87</title>
-<path fill="none" stroke="#191970" d="M1466.7075,-224.1981C1336.231,-209.1671 1084.4125,-179.797 1075.5,-176 1055.448,-167.4572 1057.5114,-153.6374 1037.5,-145 924.7315,-96.3266 883.8314,-133.6209 763.5,-109 755.2868,-107.3195 746.6527,-105.2212 738.2834,-103.0061"/>
-<polygon fill="#191970" stroke="#191970" points="1466.6989,-227.7201 1477.0337,-225.3869 1467.4996,-220.7661 1466.6989,-227.7201"/>
-</g>
-<!-- Node88 -->
-<g id="node27" class="node">
-<title>Node88</title>
-<g id="a_node27"><a xlink:href="simulator__gflags_8h.html" target="_top" xlink:title="This file defines gflags settings to control Simulator settings.">
-<polygon fill="#ffffff" stroke="#000000" points="1234.5,-73 1234.5,-103 1366.5,-103 1366.5,-73 1234.5,-73"/>
-<text text-anchor="start" x="1242.5" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="1300.5" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/simulator_gflags.h</text>
-</a>
-</g>
-</g>
-<!-- Node70&#45;&gt;Node88 -->
-<g id="edge33" class="edge">
-<title>Node70&#45;&gt;Node88</title>
-<path fill="none" stroke="#191970" d="M1467.135,-222.4192C1389.0403,-210.8196 1277.3659,-191.7602 1264.5,-176 1246.5454,-154.0064 1268.9683,-121.8421 1285.6164,-103.1022"/>
-<polygon fill="#191970" stroke="#191970" points="1467.0357,-225.9423 1477.4388,-223.9356 1468.0549,-219.0168 1467.0357,-225.9423"/>
-</g>
-<!-- Node70&#45;&gt;Node91 -->
-<g id="edge34" class="edge">
-<title>Node70&#45;&gt;Node91</title>
-<path fill="none" stroke="#191970" d="M1467.0632,-224.5689C1347.7613,-211.3646 1122.6545,-186.2567 1042.5,-176 1037.9497,-175.4177 1033.2947,-174.8084 1028.5944,-174.1822"/>
-<polygon fill="#191970" stroke="#191970" points="1466.8946,-228.0715 1477.2188,-225.6924 1467.6644,-221.1139 1466.8946,-228.0715"/>
-</g>
-<!-- Node72 -->
-<g id="node11" class="node">
-<title>Node72</title>
-<g id="a_node11"><a xlink:href="radau__integrator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1384.5,-73 1384.5,-103 1516.5,-103 1516.5,-73 1384.5,-73"/>
-<text text-anchor="start" x="1392.5" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="1450.5" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/radau_integrator.h</text>
-</a>
-</g>
-</g>
-<!-- Node71&#45;&gt;Node72 -->
-<g id="edge10" class="edge">
-<title>Node71&#45;&gt;Node72</title>
-<path fill="none" stroke="#191970" d="M1388.6169,-138.9833C1402.6758,-127.4007 1419.67,-113.3998 1432.2897,-103.0028"/>
-<polygon fill="#191970" stroke="#191970" points="1386.2262,-136.418 1380.7337,-145.478 1390.6772,-141.8206 1386.2262,-136.418"/>
-</g>
-<!-- Node74&#45;&gt;Node72 -->
-<g id="edge14" class="edge">
-<title>Node74&#45;&gt;Node72</title>
-<path fill="none" stroke="#191970" d="M1638.8675,-142.6266C1596.8856,-130.4518 1541.9386,-114.5172 1502.2338,-103.0028"/>
-<polygon fill="#191970" stroke="#191970" points="1638.1207,-146.0541 1648.6998,-145.478 1640.0704,-139.3311 1638.1207,-146.0541"/>
+<title>Node73&#45;&gt;Node74</title>
+<path fill="none" stroke="#191970" d="M1151.7735,-138.9833C1138.1939,-127.4007 1121.779,-113.3998 1109.5895,-103.0028"/>
+<polygon fill="#191970" stroke="#191970" points="1149.5083,-141.6514 1159.3879,-145.478 1154.0509,-136.3255 1149.5083,-141.6514"/>
 </g>
 <!-- Node75 -->
 <g id="node14" class="node">
 <title>Node75</title>
-<g id="a_node14"><a xlink:href="implicit__euler__integrator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1535,-73 1535,-103 1684,-103 1684,-73 1535,-73"/>
-<text text-anchor="start" x="1543" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="1609.5" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/implicit_euler_integrator.h</text>
+<g id="a_node14"><a xlink:href="implicit__integrator__test_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1335,-67.5 1335,-108.5 1467,-108.5 1467,-67.5 1335,-67.5"/>
+<text text-anchor="start" x="1343" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="start" x="1343" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/test_utilities/implicit</text>
+<text text-anchor="middle" x="1401" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_integrator_test.h</text>
 </a>
 </g>
 </g>
-<!-- Node74&#45;&gt;Node75 -->
-<g id="edge13" class="edge">
-<title>Node74&#45;&gt;Node75</title>
-<path fill="none" stroke="#191970" d="M1673.4928,-138.9833C1658.9546,-127.4007 1641.3811,-113.3998 1628.3311,-103.0028"/>
-<polygon fill="#191970" stroke="#191970" points="1671.6425,-141.9841 1681.6447,-145.478 1676.0044,-136.5093 1671.6425,-141.9841"/>
+<!-- Node73&#45;&gt;Node75 -->
+<g id="edge14" class="edge">
+<title>Node73&#45;&gt;Node75</title>
+<path fill="none" stroke="#191970" d="M1233.0053,-142.3733C1264.8067,-132.0804 1304.7172,-119.163 1337.6574,-108.5015"/>
+<polygon fill="#191970" stroke="#191970" points="1231.8492,-139.0686 1223.4129,-145.478 1234.0048,-145.7285 1231.8492,-139.0686"/>
 </g>
 <!-- Node76 -->
 <g id="node15" class="node">
 <title>Node76</title>
-<g id="a_node15"><a xlink:href="implicit__integrator__test_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1852.5,-67.5 1852.5,-108.5 1984.5,-108.5 1984.5,-67.5 1852.5,-67.5"/>
-<text text-anchor="start" x="1860.5" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="start" x="1860.5" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/test_utilities/implicit</text>
-<text text-anchor="middle" x="1918.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_integrator_test.h</text>
+<g id="a_node15"><a xlink:href="velocity__implicit__euler__integrator_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1185,-67.5 1185,-108.5 1317,-108.5 1317,-67.5 1185,-67.5"/>
+<text text-anchor="start" x="1193" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="start" x="1193" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/velocity_implicit_euler</text>
+<text text-anchor="middle" x="1251" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_integrator.h</text>
 </a>
 </g>
 </g>
-<!-- Node74&#45;&gt;Node76 -->
+<!-- Node73&#45;&gt;Node76 -->
 <g id="edge15" class="edge">
-<title>Node74&#45;&gt;Node76</title>
-<path fill="none" stroke="#191970" d="M1755.4058,-142.24C1786.2894,-131.9691 1824.9344,-119.117 1856.8541,-108.5015"/>
-<polygon fill="#191970" stroke="#191970" points="1754.0542,-139.001 1745.6697,-145.478 1756.2633,-145.6433 1754.0542,-139.001"/>
+<title>Node73&#45;&gt;Node76</title>
+<path fill="none" stroke="#191970" d="M1199.7009,-138.2593C1209.3789,-128.7774 1220.5995,-117.7843 1230.0743,-108.5015"/>
+<polygon fill="#191970" stroke="#191970" points="1197.0266,-135.9795 1192.3328,-145.478 1201.9254,-140.9797 1197.0266,-135.9795"/>
 </g>
-<!-- Node77 -->
-<g id="node16" class="node">
-<title>Node77</title>
-<g id="a_node16"><a xlink:href="velocity__implicit__euler__integrator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1702.5,-67.5 1702.5,-108.5 1834.5,-108.5 1834.5,-67.5 1702.5,-67.5"/>
-<text text-anchor="start" x="1710.5" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="start" x="1710.5" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/velocity_implicit_euler</text>
-<text text-anchor="middle" x="1768.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_integrator.h</text>
+<!-- Node78 -->
+<g id="node17" class="node">
+<title>Node78</title>
+<g id="a_node17"><a xlink:href="scalar__initial__value__problem_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1485,-67.5 1485,-108.5 1617,-108.5 1617,-67.5 1485,-67.5"/>
+<text text-anchor="start" x="1493" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="start" x="1493" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/scalar_initial_value</text>
+<text text-anchor="middle" x="1551" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_problem.h</text>
 </a>
 </g>
 </g>
-<!-- Node74&#45;&gt;Node77 -->
-<g id="edge16" class="edge">
-<title>Node74&#45;&gt;Node77</title>
-<path fill="none" stroke="#191970" d="M1721.6249,-137.9772C1730.4576,-128.5599 1740.6506,-117.6924 1749.271,-108.5015"/>
-<polygon fill="#191970" stroke="#191970" points="1718.8779,-135.7897 1714.5896,-145.478 1723.9836,-140.5785 1718.8779,-135.7897"/>
+<!-- Node77&#45;&gt;Node78 -->
+<g id="edge17" class="edge">
+<title>Node77&#45;&gt;Node78</title>
+<path fill="none" stroke="#191970" d="M1512.1532,-137.4104C1519.4528,-128.1259 1527.8001,-117.5086 1534.8816,-108.5015"/>
+<polygon fill="#191970" stroke="#191970" points="1509.2396,-135.4534 1505.8104,-145.478 1514.7425,-139.7799 1509.2396,-135.4534"/>
 </g>
 <!-- Node79 -->
 <g id="node18" class="node">
 <title>Node79</title>
-<g id="a_node18"><a xlink:href="scalar__initial__value__problem_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="2002.5,-67.5 2002.5,-108.5 2134.5,-108.5 2134.5,-67.5 2002.5,-67.5"/>
-<text text-anchor="start" x="2010.5" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="start" x="2010.5" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/scalar_initial_value</text>
-<text text-anchor="middle" x="2068.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_problem.h</text>
+<g id="a_node18"><a xlink:href="antiderivative__function_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1480,-.5 1480,-30.5 1622,-30.5 1622,-.5 1480,-.5"/>
+<text text-anchor="start" x="1488" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="1551" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/antiderivative_function.h</text>
 </a>
 </g>
 </g>
 <!-- Node78&#45;&gt;Node79 -->
 <g id="edge18" class="edge">
 <title>Node78&#45;&gt;Node79</title>
-<path fill="none" stroke="#191970" d="M2033.9425,-137.1258C2040.4258,-127.9094 2047.8069,-117.4167 2054.0782,-108.5015"/>
-<polygon fill="#191970" stroke="#191970" points="2030.9581,-135.2851 2028.0672,-145.478 2036.6835,-139.3126 2030.9581,-135.2851"/>
+<path fill="none" stroke="#191970" d="M1551,-57.3279C1551,-48.0871 1551,-38.3508 1551,-30.5991"/>
+<polygon fill="#191970" stroke="#191970" points="1547.5001,-57.4183 1551,-67.4183 1554.5001,-57.4184 1547.5001,-57.4183"/>
 </g>
-<!-- Node80 -->
-<g id="node19" class="node">
-<title>Node80</title>
-<g id="a_node19"><a xlink:href="antiderivative__function_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1997.5,-.5 1997.5,-30.5 2139.5,-30.5 2139.5,-.5 1997.5,-.5"/>
-<text text-anchor="start" x="2005.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="2068.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/antiderivative_function.h</text>
-</a>
-</g>
-</g>
-<!-- Node79&#45;&gt;Node80 -->
-<g id="edge19" class="edge">
-<title>Node79&#45;&gt;Node80</title>
-<path fill="none" stroke="#191970" d="M2068.5,-57.3279C2068.5,-48.0871 2068.5,-38.3508 2068.5,-30.5991"/>
-<polygon fill="#191970" stroke="#191970" points="2065.0001,-57.4183 2068.5,-67.4183 2072.0001,-57.4184 2065.0001,-57.4183"/>
-</g>
-<!-- Node81&#45;&gt;Node72 -->
-<g id="edge22" class="edge">
-<title>Node81&#45;&gt;Node72</title>
-<path fill="none" stroke="#191970" d="M1516.315,-139.3074C1501.3776,-127.6627 1483.2064,-113.4969 1469.745,-103.0028"/>
-<polygon fill="#191970" stroke="#191970" points="1514.1918,-142.09 1524.2303,-145.478 1518.4955,-136.5694 1514.1918,-142.09"/>
-</g>
-<!-- Node81&#45;&gt;Node75 -->
+<!-- Node80&#45;&gt;Node71 -->
 <g id="edge21" class="edge">
-<title>Node81&#45;&gt;Node75</title>
-<path fill="none" stroke="#191970" d="M1563.9796,-138.0035C1574.3439,-126.6184 1586.6428,-113.1083 1595.8423,-103.0028"/>
-<polygon fill="#191970" stroke="#191970" points="1561.3189,-135.727 1557.1752,-145.478 1566.4953,-140.4393 1561.3189,-135.727"/>
+<title>Node80&#45;&gt;Node71</title>
+<path fill="none" stroke="#191970" d="M994.1799,-138.9833C980.2808,-127.4007 963.4797,-113.3998 951.0034,-103.0028"/>
+<polygon fill="#191970" stroke="#191970" points="992.0507,-141.7649 1001.9735,-145.478 996.532,-136.3873 992.0507,-141.7649"/>
 </g>
-<!-- Node86 -->
-<g id="node25" class="node">
-<title>Node86</title>
-<g id="a_node25"><a xlink:href="monte__carlo_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1084.5,-73 1084.5,-103 1216.5,-103 1216.5,-73 1084.5,-73"/>
-<text text-anchor="start" x="1092.5" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="1150.5" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/monte_carlo.h</text>
+<!-- Node80&#45;&gt;Node74 -->
+<g id="edge20" class="edge">
+<title>Node80&#45;&gt;Node74</title>
+<path fill="none" stroke="#191970" d="M1042.0158,-138.3313C1053.3896,-126.8785 1066.9684,-113.2054 1077.1007,-103.0028"/>
+<polygon fill="#191970" stroke="#191970" points="1039.4816,-135.9161 1034.9184,-145.478 1044.4485,-140.8487 1039.4816,-135.9161"/>
+</g>
+<!-- Node85 -->
+<g id="node24" class="node">
+<title>Node85</title>
+<g id="a_node24"><a xlink:href="monte__carlo_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="255,-73 255,-103 387,-103 387,-73 255,-73"/>
+<text text-anchor="start" x="263" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="321" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/monte_carlo.h</text>
 </a>
 </g>
 </g>
-<!-- Node85&#45;&gt;Node86 -->
+<!-- Node84&#45;&gt;Node85 -->
+<g id="edge26" class="edge">
+<title>Node84&#45;&gt;Node85</title>
+<path fill="none" stroke="#191970" d="M550.8021,-144.5877C505.6554,-134.8922 447.4041,-121.9168 396,-109 388.6562,-107.1547 380.9364,-105.1118 373.3566,-103.0461"/>
+<polygon fill="#191970" stroke="#191970" points="550.3009,-148.0596 560.8119,-146.7298 551.7658,-141.2146 550.3009,-148.0596"/>
+</g>
+<!-- Node84&#45;&gt;Node86 -->
 <g id="edge27" class="edge">
-<title>Node85&#45;&gt;Node86</title>
-<path fill="none" stroke="#191970" d="M1150.5,-135.3409C1150.5,-124.5601 1150.5,-112.3309 1150.5,-103.0028"/>
-<polygon fill="#191970" stroke="#191970" points="1147.0001,-135.4779 1150.5,-145.478 1154.0001,-135.478 1147.0001,-135.4779"/>
+<title>Node84&#45;&gt;Node86</title>
+<path fill="none" stroke="#191970" d="M550.8028,-145.6058C549.5263,-145.399 548.2579,-145.1968 547,-145 413.8883,-124.1726 378.151,-135.2415 246,-109 237.7771,-107.3672 229.1381,-105.2935 220.7668,-103.0883"/>
+<polygon fill="#191970" stroke="#191970" points="550.2684,-149.065 560.7107,-147.2734 551.4303,-142.1621 550.2684,-149.065"/>
 </g>
-<!-- Node85&#45;&gt;Node87 -->
+<!-- Node84&#45;&gt;Node87 -->
 <g id="edge28" class="edge">
-<title>Node85&#45;&gt;Node87</title>
-<path fill="none" stroke="#191970" d="M1074.3034,-145.6018C1073.0267,-145.3962 1071.7582,-145.1954 1070.5,-145 934.7476,-123.9197 898.2792,-135.602 763.5,-109 755.2753,-107.3766 746.6353,-105.3079 738.2636,-103.1046"/>
-<polygon fill="#191970" stroke="#191970" points="1073.7717,-149.0614 1084.2125,-147.2616 1074.9282,-142.1576 1073.7717,-149.0614"/>
+<title>Node84&#45;&gt;Node87</title>
+<path fill="none" stroke="#191970" d="M668.4772,-141.2237C694.2457,-129.248 726.8832,-114.0799 750.7181,-103.0028"/>
+<polygon fill="#191970" stroke="#191970" points="666.9167,-138.0894 659.3233,-145.478 669.8669,-144.4373 666.9167,-138.0894"/>
 </g>
-<!-- Node85&#45;&gt;Node88 -->
+<!-- Node88 -->
+<g id="node27" class="node">
+<title>Node88</title>
+<g id="a_node27"><a xlink:href="simulator__print__stats_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="405,-73 405,-103 537,-103 537,-73 405,-73"/>
+<text text-anchor="start" x="413" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
+<text text-anchor="middle" x="471" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/simulator_print_stats.h</text>
+</a>
+</g>
+</g>
+<!-- Node84&#45;&gt;Node88 -->
 <g id="edge29" class="edge">
-<title>Node85&#45;&gt;Node88</title>
-<path fill="none" stroke="#191970" d="M1190.7083,-141.066C1215.4345,-129.115 1246.642,-114.0313 1269.4597,-103.0028"/>
-<polygon fill="#191970" stroke="#191970" points="1189.0605,-137.975 1181.5801,-145.478 1192.1067,-144.2774 1189.0605,-137.975"/>
+<title>Node84&#45;&gt;Node88</title>
+<path fill="none" stroke="#191970" d="M585.5228,-141.2237C559.7543,-129.248 527.1168,-114.0799 503.2819,-103.0028"/>
+<polygon fill="#191970" stroke="#191970" points="584.1331,-144.4373 594.6767,-145.478 587.0833,-138.0894 584.1331,-144.4373"/>
 </g>
 <!-- Node89 -->
 <g id="node28" class="node">
 <title>Node89</title>
-<g id="a_node28"><a xlink:href="simulator__print__stats_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="772.5,-73 772.5,-103 904.5,-103 904.5,-73 772.5,-73"/>
-<text text-anchor="start" x="780.5" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
-<text text-anchor="middle" x="838.5" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/simulator_print_stats.h</text>
+<g id="a_node28"><a xlink:href="dynamic__programming_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="555.5,-73 555.5,-103 698.5,-103 698.5,-73 555.5,-73"/>
+<text text-anchor="start" x="563.5" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/controllers</text>
+<text text-anchor="middle" x="627" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/dynamic_programming.h</text>
 </a>
 </g>
 </g>
-<!-- Node85&#45;&gt;Node89 -->
+<!-- Node84&#45;&gt;Node89 -->
 <g id="edge30" class="edge">
-<title>Node85&#45;&gt;Node89</title>
-<path fill="none" stroke="#191970" d="M1074.3427,-145.1436C1027.7401,-135.4513 966.9892,-122.2878 913.5,-109 906.1513,-107.1744 898.4287,-105.1427 890.8476,-103.0823"/>
-<polygon fill="#191970" stroke="#191970" points="1073.862,-148.6183 1084.3641,-147.2198 1075.2821,-141.7639 1073.862,-148.6183"/>
+<title>Node84&#45;&gt;Node89</title>
+<path fill="none" stroke="#191970" d="M627,-135.3409C627,-124.5601 627,-112.3309 627,-103.0028"/>
+<polygon fill="#191970" stroke="#191970" points="623.5001,-135.4779 627,-145.478 630.5001,-135.478 623.5001,-135.4779"/>
 </g>
-<!-- Node90 -->
-<g id="node29" class="node">
-<title>Node90</title>
-<g id="a_node29"><a xlink:href="dynamic__programming_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="923,-73 923,-103 1066,-103 1066,-73 923,-73"/>
-<text text-anchor="start" x="931" y="-91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/controllers</text>
-<text text-anchor="middle" x="994.5" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">/dynamic_programming.h</text>
-</a>
-</g>
-</g>
-<!-- Node85&#45;&gt;Node90 -->
-<g id="edge31" class="edge">
-<title>Node85&#45;&gt;Node90</title>
-<path fill="none" stroke="#191970" d="M1109.0228,-141.2237C1083.2543,-129.248 1050.6168,-114.0799 1026.7819,-103.0028"/>
-<polygon fill="#191970" stroke="#191970" points="1107.6331,-144.4373 1118.1767,-145.478 1110.5833,-138.0894 1107.6331,-144.4373"/>
-</g>
-<!-- Node94&#45;&gt;Node91 -->
-<g id="edge41" class="edge">
-<title>Node94&#45;&gt;Node91</title>
-<path fill="none" stroke="#191970" d="M813.3491,-208.6267C840.6411,-197.6948 871.9778,-185.1429 895.8043,-175.5991"/>
-<polygon fill="#191970" stroke="#191970" points="811.8648,-205.4509 803.8832,-212.4183 814.4676,-211.949 811.8648,-205.4509"/>
-</g>
-<!-- Node95 -->
-<g id="node34" class="node">
-<title>Node95</title>
-<g id="a_node34"><a xlink:href="direct__collocation_8h.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="638.5,-145.5 638.5,-175.5 820.5,-175.5 820.5,-145.5 638.5,-145.5"/>
-<text text-anchor="start" x="646.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/trajectory</text>
-<text text-anchor="middle" x="729.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_optimization/direct_collocation.h</text>
-</a>
-</g>
-</g>
-<!-- Node94&#45;&gt;Node95 -->
+<!-- Node93&#45;&gt;Node90 -->
 <g id="edge40" class="edge">
-<title>Node94&#45;&gt;Node95</title>
-<path fill="none" stroke="#191970" d="M742.864,-202.6258C739.9045,-193.2967 736.7757,-183.4342 734.2901,-175.5991"/>
-<polygon fill="#191970" stroke="#191970" points="739.6105,-203.9449 745.9706,-212.4183 746.2828,-201.8281 739.6105,-203.9449"/>
+<title>Node93&#45;&gt;Node90</title>
+<path fill="none" stroke="#191970" d="M1577.2214,-207.9084C1599.1872,-197.1482 1624.12,-184.9345 1643.177,-175.5991"/>
+<polygon fill="#191970" stroke="#191970" points="1575.4556,-204.876 1568.015,-212.4183 1578.5351,-211.1622 1575.4556,-204.876"/>
 </g>
-<!-- Node96&#45;&gt;Node68 -->
-<g id="edge43" class="edge">
-<title>Node96&#45;&gt;Node68</title>
-<path fill="none" stroke="#191970" d="M255.0346,-287.9664C217.8166,-278.2738 171.0329,-265.8288 129.5,-254 122.8765,-252.1136 115.9141,-250.0684 109.0642,-248.0198"/>
-<polygon fill="#191970" stroke="#191970" points="254.2136,-291.3692 264.7724,-290.4965 255.9739,-284.5942 254.2136,-291.3692"/>
+<!-- Node94 -->
+<g id="node33" class="node">
+<title>Node94</title>
+<g id="a_node33"><a xlink:href="direct__collocation_8h.html" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="1787,-145.5 1787,-175.5 1969,-175.5 1969,-145.5 1787,-145.5"/>
+<text text-anchor="start" x="1795" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/trajectory</text>
+<text text-anchor="middle" x="1878" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_optimization/direct_collocation.h</text>
+</a>
+</g>
+</g>
+<!-- Node93&#45;&gt;Node94 -->
+<g id="edge39" class="edge">
+<title>Node93&#45;&gt;Node94</title>
+<path fill="none" stroke="#191970" d="M1605.5593,-212.9919C1607.0508,-212.6552 1608.5322,-212.3243 1610,-212 1671.0681,-198.5097 1740.4126,-185.239 1793.2624,-175.5481"/>
+<polygon fill="#191970" stroke="#191970" points="1604.5612,-209.6301 1595.6021,-215.2856 1606.1326,-216.4514 1604.5612,-209.6301"/>
+</g>
+<!-- Node95&#45;&gt;Node67 -->
+<g id="edge42" class="edge">
+<title>Node95&#45;&gt;Node67</title>
+<path fill="none" stroke="#191970" d="M1106.3794,-289.6324C1058.7441,-280.2386 998.2995,-267.5479 945,-254 937.8678,-252.1871 930.3743,-250.1178 923.0492,-248.0012"/>
+<polygon fill="#191970" stroke="#191970" points="1105.856,-293.0964 1116.3427,-291.586 1107.203,-286.2272 1105.856,-293.0964"/>
 </g>
 </g>
 </svg>

@@ -205,7 +205,7 @@ var searchData=
   ['appendgroup',['AppendGroup',['../classdrake_1_1systems_1_1_discrete_values.html#a1921190f40a3b6421e6a7b4311b03623',1,'drake::systems::DiscreteValues']]],
   ['appendtotrackerpointermap',['AppendToTrackerPointerMap',['../classdrake_1_1systems_1_1_dependency_graph.html#a32f801ebc60ebd200bf0f9dd9ae6ce32',1,'drake::systems::DependencyGraph']]],
   ['applydiscretevariableupdate',['ApplyDiscreteVariableUpdate',['../classdrake_1_1systems_1_1_system.html#a3873890578a88001255c795f20f01e3f',1,'drake::systems::System']]],
-  ['applyjointvelocitylimits',['ApplyJointVelocityLimits',['../namespacedrake_1_1examples_1_1kuka__iiwa__arm.html#ae2943a7d6e3040f507c019936c6f425b',1,'drake::examples::kuka_iiwa_arm::ApplyJointVelocityLimits()'],['../namespacedrake_1_1manipulation_1_1util.html#a03defeaacd8e6e4a43260eb910c1913c',1,'drake::manipulation::util::ApplyJointVelocityLimits()']]],
+  ['applyjointvelocitylimits',['ApplyJointVelocityLimits',['../namespacedrake_1_1manipulation_1_1util.html#a03defeaacd8e6e4a43260eb910c1913c',1,'drake::manipulation::util']]],
   ['applyunrestrictedupdate',['ApplyUnrestrictedUpdate',['../classdrake_1_1systems_1_1_system.html#a1bc3701622107a616b3e45f9f0735233',1,'drake::systems::System']]],
   ['approach',['approach',['../classdrake_1_1solvers_1_1_mixed_integer_rotation_constraint_generator.html#ad48cd766fd69e534747352670b320229',1,'drake::solvers::MixedIntegerRotationConstraintGenerator']]],
   ['area',['area',['../classdrake_1_1geometry_1_1_surface_mesh.html#a3140454e38db89c3828b2a7403b7d31b',1,'drake::geometry::SurfaceMesh']]],
