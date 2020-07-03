@@ -112,5 +112,6 @@ var searchData=
   ['systemoutput_3c_20drake_3a_3asymbolic_3a_3aexpression_20_3e',['SystemOutput&lt; drake::symbolic::Expression &gt;',['../classdrake_1_1systems_1_1_system_output.html',1,'drake::systems']]],
   ['systemscalarconverter',['SystemScalarConverter',['../classdrake_1_1systems_1_1_system_scalar_converter.html',1,'drake::systems']]],
   ['systemsymbolicinspector',['SystemSymbolicInspector',['../classdrake_1_1systems_1_1_system_symbolic_inspector.html',1,'drake::systems']]],
-  ['systemtypetag',['SystemTypeTag',['../structdrake_1_1systems_1_1_system_type_tag.html',1,'drake::systems']]]
+  ['systemtypetag',['SystemTypeTag',['../structdrake_1_1systems_1_1_system_type_tag.html',1,'drake::systems']]],
+  ['systemvisitor',['SystemVisitor',['../classdrake_1_1systems_1_1_system_visitor.html',1,'drake::systems']]]
 ];

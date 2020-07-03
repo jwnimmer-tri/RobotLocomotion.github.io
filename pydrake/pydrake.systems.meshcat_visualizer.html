@@ -222,6 +222,39 @@ one they are bound in meshcat-python.
 </table>
 </dd></dl>
 
+<dl class="function">
+<dt id="pydrake.systems.meshcat_visualizer.ConnectMeshcatVisualizer">
+<code class="descclassname">pydrake.systems.meshcat_visualizer.</code><code class="descname">ConnectMeshcatVisualizer</code><span class="sig-paren">(</span><em>builder</em>, <em>scene_graph</em>, <em>output_port=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.meshcat_visualizer.ConnectMeshcatVisualizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an instance of MeshcatVisualizer, adds it to the
+diagram, and wires the scene_graph pose bundle output port to the input
+port of the visualizer.  Provides an interface comparable to
+ConnectDrakeVisualizer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>builder</strong> – The diagram builder used to construct the Diagram.</li>
+<li><strong>scene_graph</strong> – The SceneGraph in builder containing the geometry to be
+visualized.</li>
+<li><strong>output_port</strong> – (optional) If not None, then output_port will be connected
+to the visualizer input port instead of the scene_graph.
+get_pose_bundle_output_port().  This is required, for instance,
+when the SceneGraph is inside a Diagram, and we must connect the
+exposed port to the visualizer instead of the original SceneGraph
+port.</li>
+<li><strong>kwargs are passed through to the MeshcatVisualizer</strong> (<em>Additional</em>) – </li>
+<li><strong>constructor.</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The newly created MeshcatVisualizer object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 <dl class="class">
 <dt id="pydrake.systems.meshcat_visualizer.MeshcatContactVisualizer">
 <em class="property">class </em><code class="descclassname">pydrake.systems.meshcat_visualizer.</code><code class="descname">MeshcatContactVisualizer</code><span class="sig-paren">(</span><em>meshcat_viz</em>, <em>force_threshold=0.01</em>, <em>contact_force_scale=10</em>, <em>plant=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.meshcat_visualizer.MeshcatContactVisualizer" title="Permalink to this definition">¶</a></dt>

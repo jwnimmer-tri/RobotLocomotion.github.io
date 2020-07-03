@@ -1,13 +1,9 @@
 var classdrake_1_1solvers_1_1_csdp_solver =
 [
     [ "Details", "classdrake_1_1solvers_1_1_csdp_solver.html#a00d171013db74e01b6e6ce6e7f1b1dd7", null ],
-    [ "RemoveFreeVariableMethod", "classdrake_1_1solvers_1_1_csdp_solver.html#a121673ddbdadd10b2e3ceab52a93f5d3", [
-      [ "kTwoSlackVariables", "classdrake_1_1solvers_1_1_csdp_solver.html#a121673ddbdadd10b2e3ceab52a93f5d3a50417c3a19d7eff60f378f731199ac05", null ],
-      [ "kNullspace", "classdrake_1_1solvers_1_1_csdp_solver.html#a121673ddbdadd10b2e3ceab52a93f5d3a9e96477b8ebf1aacd93a4538244a2f8f", null ]
-    ] ],
     [ "CsdpSolver", "classdrake_1_1solvers_1_1_csdp_solver.html#ab4e0d8d9552154536e669d5621f8cc98", null ],
     [ "CsdpSolver", "classdrake_1_1solvers_1_1_csdp_solver.html#a3c710e5fed7041dda0e3391dd5d3171b", null ],
-    [ "CsdpSolver", "classdrake_1_1solvers_1_1_csdp_solver.html#aad23afaef2c3ea044bc3c7161969f2f8", null ],
+    [ "CsdpSolver", "classdrake_1_1solvers_1_1_csdp_solver.html#a6262e61690fa2ac35515c9bfdecb51fd", null ],
     [ "~CsdpSolver", "classdrake_1_1solvers_1_1_csdp_solver.html#aac182c9c5dee71253ce7e5454e779b8c", null ],
     [ "id", "classdrake_1_1solvers_1_1_csdp_solver.html#a4dc451b7db72a168d9f0da1746011b45", null ],
     [ "is_available", "classdrake_1_1solvers_1_1_csdp_solver.html#a277134785588d69bb461a4a402877e7a", null ],

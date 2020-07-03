@@ -6,6 +6,7 @@ var searchData=
   ['random_5frotation_2eh',['random_rotation.h',['../random__rotation_8h.html',1,'']]],
   ['random_5fsource_2eh',['random_source.h',['../random__source_8h.html',1,'']]],
   ['region_5fof_5fattraction_2eh',['region_of_attraction.h',['../region__of__attraction_8h.html',1,'']]],
+  ['render_5fcamera_2eh',['render_camera.h',['../render__camera_8h.html',1,'']]],
   ['render_5fdoxygen_2eh',['render_doxygen.h',['../render__doxygen_8h.html',1,'']]],
   ['render_5fengine_2eh',['render_engine.h',['../render__engine_8h.html',1,'']]],
   ['render_5fengine_5fgl_2eh',['render_engine_gl.h',['../render__engine__gl_8h.html',1,'']]],

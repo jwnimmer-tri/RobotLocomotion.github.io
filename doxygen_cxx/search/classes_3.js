@@ -12,6 +12,8 @@ var searchData=
   ['dependencytracker',['DependencyTracker',['../classdrake_1_1systems_1_1_dependency_tracker.html',1,'drake::systems']]],
   ['depthcameraproperties',['DepthCameraProperties',['../structdrake_1_1geometry_1_1render_1_1_depth_camera_properties.html',1,'drake::geometry::render']]],
   ['depthimagetopointcloud',['DepthImageToPointCloud',['../classdrake_1_1perception_1_1_depth_image_to_point_cloud.html',1,'drake::perception']]],
+  ['depthrange',['DepthRange',['../classdrake_1_1geometry_1_1render_1_1_depth_range.html',1,'drake::geometry::render']]],
+  ['depthrendercamera',['DepthRenderCamera',['../classdrake_1_1geometry_1_1render_1_1_depth_render_camera.html',1,'drake::geometry::render']]],
   ['descriptortype',['DescriptorType',['../classdrake_1_1perception_1_1pc__flags_1_1_descriptor_type.html',1,'drake::perception::pc_flags']]],
   ['diagram',['Diagram',['../classdrake_1_1systems_1_1_diagram.html',1,'drake::systems']]],
   ['diagram_3c_20double_20_3e',['Diagram&lt; double &gt;',['../classdrake_1_1systems_1_1_diagram.html',1,'drake::systems']]],

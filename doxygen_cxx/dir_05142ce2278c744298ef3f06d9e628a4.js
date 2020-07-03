@@ -6,6 +6,13 @@ var dir_05142ce2278c744298ef3f06d9e628a4 =
       [ "CameraProperties", "structdrake_1_1geometry_1_1render_1_1_camera_properties.html", "structdrake_1_1geometry_1_1render_1_1_camera_properties" ],
       [ "DepthCameraProperties", "structdrake_1_1geometry_1_1render_1_1_depth_camera_properties.html", "structdrake_1_1geometry_1_1render_1_1_depth_camera_properties" ]
     ] ],
+    [ "render_camera.h", "render__camera_8h.html", [
+      [ "ClippingRange", "classdrake_1_1geometry_1_1render_1_1_clipping_range.html", "classdrake_1_1geometry_1_1render_1_1_clipping_range" ],
+      [ "RenderCameraCore", "classdrake_1_1geometry_1_1render_1_1_render_camera_core.html", "classdrake_1_1geometry_1_1render_1_1_render_camera_core" ],
+      [ "ColorRenderCamera", "classdrake_1_1geometry_1_1render_1_1_color_render_camera.html", "classdrake_1_1geometry_1_1render_1_1_color_render_camera" ],
+      [ "DepthRange", "classdrake_1_1geometry_1_1render_1_1_depth_range.html", "classdrake_1_1geometry_1_1render_1_1_depth_range" ],
+      [ "DepthRenderCamera", "classdrake_1_1geometry_1_1render_1_1_depth_render_camera.html", "classdrake_1_1geometry_1_1render_1_1_depth_render_camera" ]
+    ] ],
     [ "render_doxygen.h", "render__doxygen_8h.html", null ],
     [ "render_engine.h", "render__engine_8h.html", [
       [ "RenderEngine", "classdrake_1_1geometry_1_1render_1_1_render_engine.html", "classdrake_1_1geometry_1_1render_1_1_render_engine" ]

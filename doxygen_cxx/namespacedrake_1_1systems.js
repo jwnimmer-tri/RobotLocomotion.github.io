@@ -113,6 +113,7 @@ var namespacedrake_1_1systems =
     [ "SystemScalarConverter", "classdrake_1_1systems_1_1_system_scalar_converter.html", "classdrake_1_1systems_1_1_system_scalar_converter" ],
     [ "SystemSymbolicInspector", "classdrake_1_1systems_1_1_system_symbolic_inspector.html", "classdrake_1_1systems_1_1_system_symbolic_inspector" ],
     [ "SystemTypeTag", "structdrake_1_1systems_1_1_system_type_tag.html", "structdrake_1_1systems_1_1_system_type_tag" ],
+    [ "SystemVisitor", "classdrake_1_1systems_1_1_system_visitor.html", "classdrake_1_1systems_1_1_system_visitor" ],
     [ "TimeVaryingAffineSystem", "classdrake_1_1systems_1_1_time_varying_affine_system.html", "classdrake_1_1systems_1_1_time_varying_affine_system" ],
     [ "TimeVaryingLinearSystem", "classdrake_1_1systems_1_1_time_varying_linear_system.html", "classdrake_1_1systems_1_1_time_varying_linear_system" ],
     [ "TrajectoryAffineSystem", "classdrake_1_1systems_1_1_trajectory_affine_system.html", "classdrake_1_1systems_1_1_trajectory_affine_system" ],

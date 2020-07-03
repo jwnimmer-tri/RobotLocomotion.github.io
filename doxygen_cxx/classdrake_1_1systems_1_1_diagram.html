@@ -117,7 +117,7 @@ class drake::systems::Diagram&lt; T &gt;</h3>
   </dd>
 </dl>
 </div>
-<p><code>#include &lt;drake/systems/framework/diagram.h&gt;</code></p>
+<p><code>#include &lt;drake/systems/framework/system_visitor.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -137,6 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a30e039e90d2f3028dc704661cd7b8f32"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classdrake_1_1systems_1_1_system.html">systems::System</a>&lt; T &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram.html#a30e039e90d2f3028dc704661cd7b8f32">GetSystems</a> () const</td></tr>
 <tr class="memdesc:a30e039e90d2f3028dc704661cd7b8f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of contained Systems.  <a href="#a30e039e90d2f3028dc704661cd7b8f32">More...</a><br /></td></tr>
 <tr class="separator:a30e039e90d2f3028dc704661cd7b8f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ae7c5586621d54d7b87de44171beb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram.html#af1ae7c5586621d54d7b87de44171beb4">Accept</a> (<a class="el" href="classdrake_1_1systems_1_1_system_visitor.html">SystemVisitor</a>&lt; T &gt; *v) const final</td></tr>
+<tr class="memdesc:af1ae7c5586621d54d7b87de44171beb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a visitor pattern.  <a href="#af1ae7c5586621d54d7b87de44171beb4">More...</a><br /></td></tr>
+<tr class="separator:af1ae7c5586621d54d7b87de44171beb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83479e1867e83638b90266c1aed0b6a3"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; <a class="el" href="classint.html">int</a>, <a class="el" href="classint.html">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram.html#a83479e1867e83638b90266c1aed0b6a3">GetDirectFeedthroughs</a> () const final</td></tr>
 <tr class="memdesc:a83479e1867e83638b90266c1aed0b6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports all direct feedthroughs from input ports to output ports.  <a href="#a83479e1867e83638b90266c1aed0b6a3">More...</a><br /></td></tr>
 <tr class="separator:a83479e1867e83638b90266c1aed0b6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1167,6 +1170,37 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af1ae7c5586621d54d7b87de44171beb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ae7c5586621d54d7b87de44171beb4">&#9670;&nbsp;</a></span>Accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Accept </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1systems_1_1_system_visitor.html">SystemVisitor</a>&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements a visitor pattern. </p>
+<dl class="section see"><dt>See also</dt><dd>SystemVisitor&lt;T&gt;. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classdrake_1_1systems_1_1_system.html#a8cb9e835ba22d40ee92cafd4ebee5813">System&lt; T &gt;</a>.</p>
+
+</div>
+</div>
 <a id="af3167bd30bfa014aa61d55fb50ed36f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3167bd30bfa014aa61d55fb50ed36f9">&#9670;&nbsp;</a></span>AddTriggeredWitnessFunctionToCompositeEventCollection()</h2>
 
@@ -2322,8 +2356,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a4b83dd5f96c886cc1b1a63583b943c39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b83dd5f96c886cc1b1a63583b943c39">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="a268013bacd119a14d00b1b14028cbd5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a268013bacd119a14d00b1b14028cbd5c">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2334,7 +2368,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1systems_1_1_diagram.html">Diagram</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1systems_1_1_diagram.html">Diagram</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1systems_1_1_diagram.html">Diagram</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -2348,8 +2382,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a268013bacd119a14d00b1b14028cbd5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a268013bacd119a14d00b1b14028cbd5c">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="a4b83dd5f96c886cc1b1a63583b943c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b83dd5f96c886cc1b1a63583b943c39">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2360,7 +2394,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1systems_1_1_diagram.html">Diagram</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1systems_1_1_diagram.html">Diagram</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1systems_1_1_diagram.html">Diagram</a>&lt; T &gt; &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

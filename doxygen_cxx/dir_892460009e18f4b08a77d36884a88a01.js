@@ -1,7 +1,9 @@
 var dir_892460009e18f4b08a77d36884a88a01 =
 [
     [ "accelerometer_sensor.h", "accelerometer__sensor_8h.html", null ],
-    [ "beam_model.h", "beam__model_8h.html", null ],
+    [ "beam_model.h", "beam__model_8h.html", [
+      [ "Traits< sensors::BeamModel >", "structdrake_1_1systems_1_1scalar__conversion_1_1_traits_3_01sensors_1_1_beam_model_01_4.html", null ]
+    ] ],
     [ "camera_info.h", "camera__info_8h.html", [
       [ "CameraInfo", "classdrake_1_1systems_1_1sensors_1_1_camera_info.html", "classdrake_1_1systems_1_1sensors_1_1_camera_info" ]
     ] ],

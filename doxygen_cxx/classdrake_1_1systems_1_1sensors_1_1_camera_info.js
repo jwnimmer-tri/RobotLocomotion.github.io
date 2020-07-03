@@ -8,6 +8,8 @@ var classdrake_1_1systems_1_1sensors_1_1_camera_info =
     [ "center_y", "classdrake_1_1systems_1_1sensors_1_1_camera_info.html#ae03e1d5e4c7f223bcee8712aba25c40c", null ],
     [ "focal_x", "classdrake_1_1systems_1_1sensors_1_1_camera_info.html#a5260647c6d73b9af547424968d24da09", null ],
     [ "focal_y", "classdrake_1_1systems_1_1sensors_1_1_camera_info.html#aa1d16b9fcf585fe75becb5357c74ba72", null ],
+    [ "fov_x", "classdrake_1_1systems_1_1sensors_1_1_camera_info.html#abf26f8c02fcada355b0278b7934b5321", null ],
+    [ "fov_y", "classdrake_1_1systems_1_1sensors_1_1_camera_info.html#abc9ba081bfe31e8224d9e40b96f0f717", null ],
     [ "height", "classdrake_1_1systems_1_1sensors_1_1_camera_info.html#ad3774f6419003470f54fd495124ef51f", null ],
     [ "intrinsic_matrix", "classdrake_1_1systems_1_1sensors_1_1_camera_info.html#aca5377a1606d0d69d2a9365fafd51476", null ],
     [ "operator=", "classdrake_1_1systems_1_1sensors_1_1_camera_info.html#a91be32204a8f6bb1a73d2cebccac0035", null ],
