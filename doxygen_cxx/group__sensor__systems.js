@@ -3,15 +3,18 @@ var group__sensor__systems =
     [ "Accelerometer", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html", [
       [ "Accelerometer", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#a08fa1fe06c423a4a86f8f6b781da1ea6", null ],
       [ "Accelerometer", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#a557f015ddaa0c0fe7db08dd264dbe08e", null ],
-      [ "Accelerometer", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#a63c563fcef6e2f452324bde139b7a1ae", null ],
+      [ "Accelerometer", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#af5f6fd2ec4a6de39d041fd90383a051f", null ],
       [ "Accelerometer", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#a8e45a59ae3d2c66255454b658fbd4011", null ],
-      [ "AddToDiagram", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#a5b225994861b72734962b3767aafefcd", null ],
+      [ "AddToDiagram", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#a1c447e9db1fb676e2f88b9500f925342", null ],
+      [ "body_index", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#ad43a45a9bfeee26aafe9eef51139485a", null ],
       [ "get_body_accelerations_input_port", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#acdf7e0b5ab9acb099133124fa05833b8", null ],
       [ "get_body_poses_input_port", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#ac951e9461fe35f8b40719a8ba37acea6", null ],
       [ "get_body_velocities_input_port", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#ac65edc397e5ac441462d19a1873c8a07", null ],
-      [ "operator=", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#abc9352751f9c39de9135dff8a93b1555", null ],
+      [ "get_measurement_output_port", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#a5609ecc9abeb6eb02d34938bf4ad7106", null ],
+      [ "gravity_vector", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#a2a175742b79c5106a497a2f943c55da3", null ],
       [ "operator=", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#ac0926d674dddedc1dd650f2f5d78bc5a", null ],
-      [ "Accelerometer", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#a484cca997ebf86e66bada8fafea43d65", null ]
+      [ "operator=", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#abc9352751f9c39de9135dff8a93b1555", null ],
+      [ "pose", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html#ac00966c8749aec375110e166e0b7eea2", null ]
     ] ],
     [ "BeamModel", "classdrake_1_1systems_1_1sensors_1_1_beam_model.html", [
       [ "BeamModel", "classdrake_1_1systems_1_1sensors_1_1_beam_model.html#a20d05d184f723deb7a9d9447114a8b1a", null ],
@@ -27,6 +30,20 @@ var group__sensor__systems =
       [ "max_range", "classdrake_1_1systems_1_1sensors_1_1_beam_model.html#ad5dd463d80e310948143e675e71197de", null ],
       [ "operator=", "classdrake_1_1systems_1_1sensors_1_1_beam_model.html#a23a62490645a6a4b334b019c6894c597", null ],
       [ "operator=", "classdrake_1_1systems_1_1sensors_1_1_beam_model.html#afab4d0f4a234cdb8f46a1ba19cc3fec3", null ]
+    ] ],
+    [ "Gyroscope", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html", [
+      [ "Gyroscope", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#ac027638872e51adb5d3fee6cd9203021", null ],
+      [ "Gyroscope", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#aacf63e458daa370f3a050109aebc14fb", null ],
+      [ "Gyroscope", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#aaa70f40798dfe5ff556290a55d8e708d", null ],
+      [ "Gyroscope", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#a881f5c187422f03f5159f7e515899ede", null ],
+      [ "AddToDiagram", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#a7ebb2e7c789b9c1a93f11584569f965f", null ],
+      [ "body_index", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#ad43a45a9bfeee26aafe9eef51139485a", null ],
+      [ "get_body_poses_input_port", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#ac951e9461fe35f8b40719a8ba37acea6", null ],
+      [ "get_body_velocities_input_port", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#ac65edc397e5ac441462d19a1873c8a07", null ],
+      [ "get_measurement_output_port", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#a5609ecc9abeb6eb02d34938bf4ad7106", null ],
+      [ "operator=", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#a9138e7b7ef3459968b28c912cc953aba", null ],
+      [ "operator=", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#ad75f0fc988a8d82c3b45614c4e296ab2", null ],
+      [ "pose", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#ac00966c8749aec375110e166e0b7eea2", null ]
     ] ],
     [ "RgbdSensor", "classdrake_1_1systems_1_1sensors_1_1_rgbd_sensor.html", [
       [ "CameraPoses", "structdrake_1_1systems_1_1sensors_1_1_rgbd_sensor_1_1_camera_poses.html", [

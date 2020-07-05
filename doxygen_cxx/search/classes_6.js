@@ -26,5 +26,6 @@ var searchData=
   ['gripperstatusdecoder',['GripperStatusDecoder',['../classdrake_1_1examples_1_1planar__gripper_1_1_gripper_status_decoder.html',1,'drake::examples::planar_gripper']]],
   ['gripperstatusencoder',['GripperStatusEncoder',['../classdrake_1_1examples_1_1planar__gripper_1_1_gripper_status_encoder.html',1,'drake::examples::planar_gripper']]],
   ['gurobisolver',['GurobiSolver',['../classdrake_1_1solvers_1_1_gurobi_solver.html',1,'drake::solvers']]],
-  ['gurobisolverdetails',['GurobiSolverDetails',['../structdrake_1_1solvers_1_1_gurobi_solver_details.html',1,'drake::solvers']]]
+  ['gurobisolverdetails',['GurobiSolverDetails',['../structdrake_1_1solvers_1_1_gurobi_solver_details.html',1,'drake::solvers']]],
+  ['gyroscope',['Gyroscope',['../classdrake_1_1systems_1_1sensors_1_1_gyroscope.html',1,'drake::systems::sensors']]]
 ];

@@ -22,5 +22,6 @@ var searchData=
   ['gripper_5fbrick_2eh',['gripper_brick.h',['../gripper__brick_8h.html',1,'']]],
   ['gripper_5fbrick_5fplanning_5fconstraint_5fhelper_2eh',['gripper_brick_planning_constraint_helper.h',['../gripper__brick__planning__constraint__helper_8h.html',1,'']]],
   ['gurobi_5fqp_2eh',['gurobi_qp.h',['../gurobi__qp_8h.html',1,'']]],
-  ['gurobi_5fsolver_2eh',['gurobi_solver.h',['../gurobi__solver_8h.html',1,'']]]
+  ['gurobi_5fsolver_2eh',['gurobi_solver.h',['../gurobi__solver_8h.html',1,'']]],
+  ['gyroscope_5fsensor_2eh',['gyroscope_sensor.h',['../gyroscope__sensor_8h.html',1,'']]]
 ];

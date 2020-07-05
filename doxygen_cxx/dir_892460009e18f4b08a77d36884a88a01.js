@@ -8,6 +8,7 @@ var dir_892460009e18f4b08a77d36884a88a01 =
       [ "CameraInfo", "classdrake_1_1systems_1_1sensors_1_1_camera_info.html", "classdrake_1_1systems_1_1sensors_1_1_camera_info" ]
     ] ],
     [ "color_palette.h", "color__palette_8h.html", "color__palette_8h" ],
+    [ "gyroscope_sensor.h", "gyroscope__sensor_8h.html", null ],
     [ "image.h", "image_8h.html", "image_8h" ],
     [ "image_to_lcm_image_array_t.h", "image__to__lcm__image__array__t_8h.html", [
       [ "ImageToLcmImageArrayT", "classdrake_1_1systems_1_1sensors_1_1_image_to_lcm_image_array_t.html", "classdrake_1_1systems_1_1sensors_1_1_image_to_lcm_image_array_t" ]

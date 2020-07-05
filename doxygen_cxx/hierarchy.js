@@ -528,8 +528,8 @@ var hierarchy =
     ] ],
     [ "PoseBundle< T >", "classdrake_1_1systems_1_1rendering_1_1_pose_bundle.html", null ],
     [ "PoseVelocityInputPorts< T >", "structdrake_1_1systems_1_1rendering_1_1_pose_velocity_input_ports.html", null ],
-    [ "Polynomial< T >::Product< Rhs, Lhs >", "structdrake_1_1_polynomial_1_1_product.html", null ],
     [ "TrigPoly< T >::Product< Rhs, Lhs >", "structdrake_1_1_trig_poly_1_1_product.html", null ],
+    [ "Polynomial< T >::Product< Rhs, Lhs >", "structdrake_1_1_polynomial_1_1_product.html", null ],
     [ "PropellerInfo", "structdrake_1_1multibody_1_1_propeller_info.html", null ],
     [ "FBstabDense::QPData", "structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_dense_1_1_q_p_data.html", null ],
     [ "FBstabMpc::QPData", "structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_data.html", null ],
@@ -736,6 +736,7 @@ var hierarchy =
             [ "Saturation< T >", "classdrake_1_1systems_1_1_saturation.html", null ],
             [ "Accelerometer< T >", "classdrake_1_1systems_1_1sensors_1_1_accelerometer.html", null ],
             [ "BeamModel< T >", "classdrake_1_1systems_1_1sensors_1_1_beam_model.html", null ],
+            [ "Gyroscope< T >", "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html", null ],
             [ "SignalLogger< T >", "classdrake_1_1systems_1_1_signal_logger.html", null ],
             [ "Sine< T >", "classdrake_1_1systems_1_1_sine.html", null ],
             [ "SingleOutputVectorSource< T >", "classdrake_1_1systems_1_1_single_output_vector_source.html", [
