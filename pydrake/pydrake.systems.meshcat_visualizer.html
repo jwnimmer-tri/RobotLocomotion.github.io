@@ -446,9 +446,22 @@ fully constructed diagram (e.g. via <code class="docutils literal"><span class="
 
 <dl class="method">
 <dt id="pydrake.systems.meshcat_visualizer.MeshcatVisualizer.publish_recording">
-<code class="descname">publish_recording</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.meshcat_visualizer.MeshcatVisualizer.publish_recording" title="Permalink to this definition">¶</a></dt>
+<code class="descname">publish_recording</code><span class="sig-paren">(</span><em>play=True</em>, <em>repetitions=1</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.meshcat_visualizer.MeshcatVisualizer.publish_recording" title="Permalink to this definition">¶</a></dt>
 <dd><p>Publish any recorded animation to Meshcat.  Use the controls dialog
 in the browser to review it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>play</strong> – boolean that determines whether the animation will play
+automatically.</li>
+<li><strong>repetitions</strong> – number of times that the animation should play.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
