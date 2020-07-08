@@ -19,7 +19,7 @@ var searchData=
   ['gemvgt',['gemvGT',['../classdrake_1_1solvers_1_1fbstab_1_1_mpc_data.html#aee6fbe0c622e5bfb458ce0988b256116',1,'drake::solvers::fbstab::MpcData']]],
   ['gemvh',['gemvH',['../classdrake_1_1solvers_1_1fbstab_1_1_mpc_data.html#a58762f01dfd79c9cd411b6943c965ef3',1,'drake::solvers::fbstab::MpcData']]],
   ['generalized_5fforces',['generalized_forces',['../classdrake_1_1multibody_1_1_multibody_forces.html#a8823f94494d680a558889504d46a6f6e',1,'drake::multibody::MultibodyForces']]],
-  ['generatesdpa',['GenerateSDPA',['../namespacedrake_1_1solvers.html#a07321316ed888174be09bafe4c6580ce',1,'drake::solvers']]],
+  ['generatesdpa',['GenerateSDPA',['../namespacedrake_1_1solvers.html#aeb2470f8cacd8e5f5a473b10d0acf6cc',1,'drake::solvers']]],
   ['generator_5fsnapshot',['generator_snapshot',['../structdrake_1_1systems_1_1analysis_1_1_random_simulation_result.html#afbdcd9f95b1b2e3c6f22f07019e1cb62',1,'drake::systems::analysis::RandomSimulationResult']]],
   ['generic_5fconstraints',['generic_constraints',['../classdrake_1_1solvers_1_1_mathematical_program.html#a63a221ef50ba7ccdff7222a5a0fb38b7',1,'drake::solvers::MathematicalProgram']]],
   ['generic_5fcosts',['generic_costs',['../classdrake_1_1solvers_1_1_mathematical_program.html#a76eeecc02d2b6d3f2c11b407e70baf86',1,'drake::solvers::MathematicalProgram']]],

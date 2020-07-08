@@ -188,7 +188,7 @@
 <p>SdpaFreeFormat bindings for MathematicalProgram</p>
 <dl class="function">
 <dt id="pydrake.solvers.sdpa_free_format.GenerateSDPA">
-<code class="descclassname">pydrake.solvers.sdpa_free_format.</code><code class="descname">GenerateSDPA</code><span class="sig-paren">(</span><em>prog: pydrake.solvers.mathematicalprogram.MathematicalProgram</em>, <em>file_name: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#pydrake.solvers.sdpa_free_format.GenerateSDPA" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">pydrake.solvers.sdpa_free_format.</code><code class="descname">GenerateSDPA</code><span class="sig-paren">(</span><em>prog: pydrake.solvers.mathematicalprogram.MathematicalProgram</em>, <em>file_name: str</em>, <em>method: pydrake.solvers.sdpa_free_format.RemoveFreeVariableMethod = RemoveFreeVariableMethod.kNullspace</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#pydrake.solvers.sdpa_free_format.GenerateSDPA" title="Permalink to this definition">¶</a></dt>
 <dd><p>SDPA is a format to record an SDP problem</p>
 <p>max tr(C*X) s.t tr(Aᵢ*X) = gᵢ X ≽ 0 or the dual of the problem</p>
 <p>min gᵀy s.t ∑ᵢ yᵢAᵢ - C ≽ 0 where X is a symmetric block diagonal
@@ -203,6 +203,12 @@ above, and write an SDPA file.</p>
 <dt>Parameter <code class="docutils literal"><span class="pre">file_name</span></code>:</dt>
 <dd>The name of the file, note that the extension will be added
 automatically.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">method</span></code>:</dt>
+<dd>If <code class="docutils literal"><span class="pre">prog</span></code> contains free variables (i.e., variables without
+bounds), then we need to remove these free variables to write the
+program in the SDPA format. Please refer to
+RemoveFreeVariableMethod for details on how to remove the free
+variables. $*Default:* is RemoveFreeVariableMethod::kNullspace.</dd>
 <dt>Returns <code class="docutils literal"><span class="pre">is_success</span></code>:</dt>
 <dd>. Returns true if we can generate the SDPA file. The failure could
 be 1. <code class="docutils literal"><span class="pre">prog</span></code> cannot be captured by the formulation above. 2.

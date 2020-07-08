@@ -572,9 +572,9 @@ Choice" model.  <a href="#a81f7d44186352e1090de1343d468cad2">More...</a><br /></
 <tr class="memitem:a6304aed086cdd57240ad1f57b66a7986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1solvers.html#a6304aed086cdd57240ad1f57b66a7986">AddRotationMatrixOrthonormalSocpConstraint</a> (<a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> *prog, const Eigen::Ref&lt; const <a class="el" href="namespacedrake_1_1solvers.html#acf84184cb10b49233b007295d1880e17">MatrixDecisionVariable</a>&lt; 3, 3 &gt;&gt; &amp;R)</td></tr>
 <tr class="memdesc:a6304aed086cdd57240ad1f57b66a7986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a set of convex constraints which approximate the set of orthogonal matrices, O(3).  <a href="#a6304aed086cdd57240ad1f57b66a7986">More...</a><br /></td></tr>
 <tr class="separator:a6304aed086cdd57240ad1f57b66a7986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07321316ed888174be09bafe4c6580ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1solvers.html#a07321316ed888174be09bafe4c6580ce">GenerateSDPA</a> (const <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;prog, const std::string &amp;file_name)</td></tr>
-<tr class="memdesc:a07321316ed888174be09bafe4c6580ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDPA is a format to record an SDP problem.  <a href="#a07321316ed888174be09bafe4c6580ce">More...</a><br /></td></tr>
-<tr class="separator:a07321316ed888174be09bafe4c6580ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb2470f8cacd8e5f5a473b10d0acf6cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1solvers.html#aeb2470f8cacd8e5f5a473b10d0acf6cc">GenerateSDPA</a> (const <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;prog, const std::string &amp;file_name, <a class="el" href="namespacedrake_1_1solvers.html#a121673ddbdadd10b2e3ceab52a93f5d3">RemoveFreeVariableMethod</a> method=<a class="el" href="namespacedrake_1_1solvers.html#a121673ddbdadd10b2e3ceab52a93f5d3a54b9d7601ece96fc42e2ffd67aae2690">RemoveFreeVariableMethod::kNullspace</a>)</td></tr>
+<tr class="memdesc:aeb2470f8cacd8e5f5a473b10d0acf6cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDPA is a format to record an SDP problem.  <a href="#aeb2470f8cacd8e5f5a473b10d0acf6cc">More...</a><br /></td></tr>
+<tr class="separator:aeb2470f8cacd8e5f5a473b10d0acf6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb1201a087105dc635e2bd748486171c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1solvers.html#acb1201a087105dc635e2bd748486171c">to_string</a> (<a class="el" href="namespacedrake_1_1solvers.html#a331f41a3139a87d16e1422bc818c136f">SolutionResult</a> solution_result)</td></tr>
 <tr class="separator:acb1201a087105dc635e2bd748486171c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a269b7066a168f80390ed6c496829ffcd"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1solvers.html#a269b7066a168f80390ed6c496829ffcd">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="namespacedrake_1_1solvers.html#a331f41a3139a87d16e1422bc818c136f">SolutionResult</a> solution_result)</td></tr>
@@ -2299,8 +2299,8 @@ Kinematics" by Hongkai Dai, Andres Valenzuela and Russ Tedrake, IEEE-RAS Interna
 
 </div>
 </div>
-<a id="a07321316ed888174be09bafe4c6580ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07321316ed888174be09bafe4c6580ce">&#9670;&nbsp;</a></span>GenerateSDPA()</h2>
+<a id="aeb2470f8cacd8e5f5a473b10d0acf6cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb2470f8cacd8e5f5a473b10d0acf6cc">&#9670;&nbsp;</a></span>GenerateSDPA()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2315,7 +2315,13 @@ Kinematics" by Hongkai Dai, Andres Valenzuela and Russ Tedrake, IEEE-RAS Interna
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>file_name</em>&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1solvers.html#a121673ddbdadd10b2e3ceab52a93f5d3">RemoveFreeVariableMethod</a>&#160;</td>
+          <td class="paramname"><em>method</em> = <code><a class="el" href="namespacedrake_1_1solvers.html#a121673ddbdadd10b2e3ceab52a93f5d3a54b9d7601ece96fc42e2ffd67aae2690">RemoveFreeVariableMethod::kNullspace</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2335,6 +2341,8 @@ s.t ∑ᵢ yᵢAᵢ - C ≽ 0
   <table class="params">
     <tr><td class="paramname">prog</td><td>a program that contains an optimization program. </td></tr>
     <tr><td class="paramname">file_name</td><td>The name of the file, note that the extension will be added automatically. </td></tr>
+    <tr><td class="paramname">method</td><td>If <code>prog</code> contains free variables (i.e., variables without bounds), then we need to remove these free variables to write the program in the SDPA format. Please refer to RemoveFreeVariableMethod for details on how to remove the free variables. <br />
+ <em>Default:</em> is <a class="el" href="namespacedrake_1_1solvers.html#a121673ddbdadd10b2e3ceab52a93f5d3a54b9d7601ece96fc42e2ffd67aae2690" title="Approach 2, reformulate the dual problem by considering the nullspace of the linear constraint in the...">RemoveFreeVariableMethod::kNullspace</a>. </td></tr>
   </table>
   </dd>
 </dl>
