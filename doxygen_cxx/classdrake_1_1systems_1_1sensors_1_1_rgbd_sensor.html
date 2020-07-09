@@ -159,7 +159,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a76c59213dcf1932652ace446dca1e40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an RgbdSensor in the same way as the above overload, but using the <code>CameraProperties</code> portion of <code>properties</code> for color (and label) properties, and all of <code>properties</code> for depth properties.  <a href="#a76c59213dcf1932652ace446dca1e40b">More...</a><br /></td></tr>
 <tr class="separator:a76c59213dcf1932652ace446dca1e40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab40d8904907330979955091b2b778a5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1sensors_1_1_rgbd_sensor.html#ab40d8904907330979955091b2b778a5e">RgbdSensor</a> (<a class="el" href="namespacedrake_1_1geometry.html#a43b41363b37fadf8cce0977d500e13cb">geometry::FrameId</a> parent_id, const math::RigidTransformd &amp;X_PB, <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">geometry::render::ColorRenderCamera</a> color_camera, <a class="el" href="classdrake_1_1geometry_1_1render_1_1_depth_render_camera.html">geometry::render::DepthRenderCamera</a> depth_camera)</td></tr>
-<tr class="memdesc:ab40d8904907330979955091b2b778a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an RgbdSensor with a fully specified render camera model for both color/label and depth cameras.  <a href="#ab40d8904907330979955091b2b778a5e">More...</a><br /></td></tr>
+<tr class="memdesc:ab40d8904907330979955091b2b778a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an RgbdSensor with fully specified render camera models for both color/label and depth cameras.  <a href="#ab40d8904907330979955091b2b778a5e">More...</a><br /></td></tr>
 <tr class="separator:ab40d8904907330979955091b2b778a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fb071bc0c53a418967bb936b59a9f9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1sensors_1_1_rgbd_sensor.html#a3fb071bc0c53a418967bb936b59a9f9e">~RgbdSensor</a> ()=default</td></tr>
 <tr class="separator:a3fb071bc0c53a418967bb936b59a9f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1419,8 +1419,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs an RgbdSensor with a fully specified render camera model for both color/label and depth cameras. </p>
-<dl class="section warning"><dt>Warning</dt><dd>Currently, only "simple" cameras are supported. If the camera intrinsics is not compatible with a simple camera model, a warning will be printed and the camera will be "simplified". </dd></dl>
+<p>Constructs an RgbdSensor with fully specified render camera models for both color/label and depth cameras. </p>
 
 </div>
 </div>

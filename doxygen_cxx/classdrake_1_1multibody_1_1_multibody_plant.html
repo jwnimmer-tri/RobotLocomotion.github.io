@@ -1388,7 +1388,7 @@ Related Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates abias_ACcm_E, point Ccm's translational "bias" acceleration term in frame A with respect to "speeds" 𝑠, expressed in frame E, where point Ccm is the composite center of mass of the system of all bodies (except <a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a29ef779ddfeea96c5d80c27d68a4f864" title="Returns a constant reference to the world body.">world_body()</a>) in the <a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html" title="MultibodyPlant is a Drake system framework representation (see systems::System) for the model of a ph...">MultibodyPlant</a>. </p>
-<p>abias_ACcm is the part of a_ACcm (Ccm's translational acceleration) that does not multiply ṡ, equal to abias_ACcm = J̇𝑠_v_ACcm * s. This allows a_ACcm to be written as a_ACcm = J̇𝑠_v_ACcm * s + abias_ACcm.</p>
+<p>abias_ACcm is the part of a_ACcm (Ccm's translational acceleration) that does not multiply ṡ, equal to abias_ACcm = J̇𝑠_v_ACcm ⋅ s. This allows a_ACcm to be written as a_ACcm = J𝑠_v_ACcm ⋅ ṡ + abias_ACcm.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The state of the multibody system. </td></tr>

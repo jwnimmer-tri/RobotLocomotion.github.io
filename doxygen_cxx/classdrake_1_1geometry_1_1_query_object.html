@@ -201,12 +201,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa910471b2f2238ebdccbb49ea47295cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_query_object.html#aa910471b2f2238ebdccbb49ea47295cc">RenderColorImage</a> (const <a class="el" href="structdrake_1_1geometry_1_1render_1_1_camera_properties.html">render::CameraProperties</a> &amp;camera, <a class="el" href="namespacedrake_1_1geometry.html#a43b41363b37fadf8cce0977d500e13cb">FrameId</a> parent_frame, const math::RigidTransformd &amp;X_PC, bool show_window, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af5afae0f791341ac7ad11eb6bcb092bd">systems::sensors::ImageRgba8U</a> *color_image_out) const</td></tr>
 <tr class="memdesc:aa910471b2f2238ebdccbb49ea47295cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders an RGB image for the given <code>camera</code> posed with respect to the indicated parent frame P.  <a href="#aa910471b2f2238ebdccbb49ea47295cc">More...</a><br /></td></tr>
 <tr class="separator:aa910471b2f2238ebdccbb49ea47295cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cfc105838770263cb1e1ca3a6934945"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_query_object.html#a4cfc105838770263cb1e1ca3a6934945">RenderColorImage</a> (const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">render::ColorRenderCamera</a> &amp;camera, <a class="el" href="namespacedrake_1_1geometry.html#a43b41363b37fadf8cce0977d500e13cb">FrameId</a> parent_frame, const math::RigidTransformd &amp;X_PC, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af5afae0f791341ac7ad11eb6bcb092bd">systems::sensors::ImageRgba8U</a> *color_image_out) const</td></tr>
+<tr class="separator:a4cfc105838770263cb1e1ca3a6934945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02f26d9dc01ca23447f25adfa777eecd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_query_object.html#a02f26d9dc01ca23447f25adfa777eecd">RenderDepthImage</a> (const <a class="el" href="structdrake_1_1geometry_1_1render_1_1_depth_camera_properties.html">render::DepthCameraProperties</a> &amp;camera, <a class="el" href="namespacedrake_1_1geometry.html#a43b41363b37fadf8cce0977d500e13cb">FrameId</a> parent_frame, const math::RigidTransformd &amp;X_PC, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a0558960d25000bd7cc8607cef2fd223b">systems::sensors::ImageDepth32F</a> *depth_image_out) const</td></tr>
 <tr class="memdesc:a02f26d9dc01ca23447f25adfa777eecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a depth image for the given <code>camera</code> posed with respect to the indicated parent frame P.  <a href="#a02f26d9dc01ca23447f25adfa777eecd">More...</a><br /></td></tr>
 <tr class="separator:a02f26d9dc01ca23447f25adfa777eecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa611fe62e12ad13ca9ef218844542210"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_query_object.html#aa611fe62e12ad13ca9ef218844542210">RenderDepthImage</a> (const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_depth_render_camera.html">render::DepthRenderCamera</a> &amp;camera, <a class="el" href="namespacedrake_1_1geometry.html#a43b41363b37fadf8cce0977d500e13cb">FrameId</a> parent_frame, const math::RigidTransformd &amp;X_PC, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a0558960d25000bd7cc8607cef2fd223b">systems::sensors::ImageDepth32F</a> *depth_image_out) const</td></tr>
+<tr class="separator:aa611fe62e12ad13ca9ef218844542210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab68c99e7acc9485b1f50162af507e67e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_query_object.html#ab68c99e7acc9485b1f50162af507e67e">RenderLabelImage</a> (const <a class="el" href="structdrake_1_1geometry_1_1render_1_1_camera_properties.html">render::CameraProperties</a> &amp;camera, <a class="el" href="namespacedrake_1_1geometry.html#a43b41363b37fadf8cce0977d500e13cb">FrameId</a> parent_frame, const math::RigidTransformd &amp;X_PC, bool show_window, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af9f2ff2c09bd6626d594951724ed1d9a">systems::sensors::ImageLabel16I</a> *label_image_out) const</td></tr>
 <tr class="memdesc:ab68c99e7acc9485b1f50162af507e67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a label image for the given <code>camera</code> posed with respect to the indicated parent frame P.  <a href="#ab68c99e7acc9485b1f50162af507e67e">More...</a><br /></td></tr>
 <tr class="separator:ab68c99e7acc9485b1f50162af507e67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba077b59ee3574bbe9a0a602c14293c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_query_object.html#aba077b59ee3574bbe9a0a602c14293c3">RenderLabelImage</a> (const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">render::ColorRenderCamera</a> &amp;camera, <a class="el" href="namespacedrake_1_1geometry.html#a43b41363b37fadf8cce0977d500e13cb">FrameId</a> parent_frame, const math::RigidTransformd &amp;X_PC, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af9f2ff2c09bd6626d594951724ed1d9a">systems::sensors::ImageLabel16I</a> *label_image_out) const</td></tr>
+<tr class="separator:aba077b59ee3574bbe9a0a602c14293c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a998dab91802cb89dc5dd460083726203"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html">render::RenderEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_query_object.html#a998dab91802cb89dc5dd460083726203">GetRenderEngineByName</a> (const std::string &amp;name) const</td></tr>
 <tr class="memdesc:a998dab91802cb89dc5dd460083726203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the named render engine, if it exists.  <a href="#a998dab91802cb89dc5dd460083726203">More...</a><br /></td></tr>
 <tr class="separator:a998dab91802cb89dc5dd460083726203"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -671,7 +677,7 @@ For a convex object, outside the object at positive distance from the boundary, 
 </div>
 </div>
 <a id="aa910471b2f2238ebdccbb49ea47295cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa910471b2f2238ebdccbb49ea47295cc">&#9670;&nbsp;</a></span>RenderColorImage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa910471b2f2238ebdccbb49ea47295cc">&#9670;&nbsp;</a></span>RenderColorImage() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -728,8 +734,48 @@ For a convex object, outside the object at positive distance from the boundary, 
 
 </div>
 </div>
+<a id="a4cfc105838770263cb1e1ca3a6934945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cfc105838770263cb1e1ca3a6934945">&#9670;&nbsp;</a></span>RenderColorImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RenderColorImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">render::ColorRenderCamera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1geometry.html#a43b41363b37fadf8cce0977d500e13cb">FrameId</a>&#160;</td>
+          <td class="paramname"><em>parent_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const math::RigidTransformd &amp;&#160;</td>
+          <td class="paramname"><em>X_PC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af5afae0f791341ac7ad11eb6bcb092bd">systems::sensors::ImageRgba8U</a> *&#160;</td>
+          <td class="paramname"><em>color_image_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a02f26d9dc01ca23447f25adfa777eecd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02f26d9dc01ca23447f25adfa777eecd">&#9670;&nbsp;</a></span>RenderDepthImage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02f26d9dc01ca23447f25adfa777eecd">&#9670;&nbsp;</a></span>RenderDepthImage() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -780,8 +826,48 @@ For a convex object, outside the object at positive distance from the boundary, 
 
 </div>
 </div>
+<a id="aa611fe62e12ad13ca9ef218844542210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa611fe62e12ad13ca9ef218844542210">&#9670;&nbsp;</a></span>RenderDepthImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RenderDepthImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_depth_render_camera.html">render::DepthRenderCamera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1geometry.html#a43b41363b37fadf8cce0977d500e13cb">FrameId</a>&#160;</td>
+          <td class="paramname"><em>parent_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const math::RigidTransformd &amp;&#160;</td>
+          <td class="paramname"><em>X_PC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a0558960d25000bd7cc8607cef2fd223b">systems::sensors::ImageDepth32F</a> *&#160;</td>
+          <td class="paramname"><em>depth_image_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab68c99e7acc9485b1f50162af507e67e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab68c99e7acc9485b1f50162af507e67e">&#9670;&nbsp;</a></span>RenderLabelImage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68c99e7acc9485b1f50162af507e67e">&#9670;&nbsp;</a></span>RenderLabelImage() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -835,6 +921,46 @@ For a convex object, outside the object at positive distance from the boundary, 
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aba077b59ee3574bbe9a0a602c14293c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba077b59ee3574bbe9a0a602c14293c3">&#9670;&nbsp;</a></span>RenderLabelImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RenderLabelImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">render::ColorRenderCamera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1geometry.html#a43b41363b37fadf8cce0977d500e13cb">FrameId</a>&#160;</td>
+          <td class="paramname"><em>parent_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const math::RigidTransformd &amp;&#160;</td>
+          <td class="paramname"><em>X_PC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af9f2ff2c09bd6626d594951724ed1d9a">systems::sensors::ImageLabel16I</a> *&#160;</td>
+          <td class="paramname"><em>label_image_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

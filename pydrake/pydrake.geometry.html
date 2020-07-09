@@ -396,7 +396,7 @@ with only one polyhedron. We assume that the polyhedron is convex.</dd>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
-<li>RuntimeError if <a href="#id1"><span class="problematic" id="id2">|scale|</span></a> &lt; 1e-8. Note that a negative scale is</li>
+<li>RuntimeError if <a href="#id4"><span class="problematic" id="id5">|scale|</span></a> &lt; 1e-8. Note that a negative scale is</li>
 <li>considered valid. We want to preclude scales near zero but</li>
 <li>recognise that scale is a convenience tool for “tweaking” models.</li>
 <li>8 orders of magnitude should be plenty without considering</li>
@@ -624,7 +624,7 @@ values for KinematicsValue are supported.</p>
 <p>Currently, the following data types with the following scalar types
 are supported:</p>
 <p>Alias | Instantiation | Scalar types
-—————–<a href="#id3"><span class="problematic" id="id4">|-----------------------------------------------|</span></a>————-
+—————–<a href="#id6"><span class="problematic" id="id7">|-----------------------------------------------|</span></a>————-
 FramePoseVector | FrameKinematicsVector&lt;RigidTransform&lt;Scalar&gt;&gt; |
 double FramePoseVector | FrameKinematicsVector&lt;RigidTransform&lt;Scalar&gt;&gt;
 | AutoDiffXd FramePoseVector |
@@ -756,7 +756,7 @@ values for KinematicsValue are supported.</p>
 <p>Currently, the following data types with the following scalar types
 are supported:</p>
 <p>Alias | Instantiation | Scalar types
-—————–<a href="#id5"><span class="problematic" id="id6">|-----------------------------------------------|</span></a>————-
+—————–<a href="#id8"><span class="problematic" id="id9">|-----------------------------------------------|</span></a>————-
 FramePoseVector | FrameKinematicsVector&lt;RigidTransform&lt;Scalar&gt;&gt; |
 double FramePoseVector | FrameKinematicsVector&lt;RigidTransform&lt;Scalar&gt;&gt;
 | AutoDiffXd FramePoseVector |
@@ -886,7 +886,7 @@ values for KinematicsValue are supported.</p>
 <p>Currently, the following data types with the following scalar types
 are supported:</p>
 <p>Alias | Instantiation | Scalar types
-—————–<a href="#id7"><span class="problematic" id="id8">|-----------------------------------------------|</span></a>————-
+—————–<a href="#id10"><span class="problematic" id="id11">|-----------------------------------------------|</span></a>————-
 FramePoseVector | FrameKinematicsVector&lt;RigidTransform&lt;Scalar&gt;&gt; |
 double FramePoseVector | FrameKinematicsVector&lt;RigidTransform&lt;Scalar&gt;&gt;
 | AutoDiffXd FramePoseVector |
@@ -1423,8 +1423,8 @@ work with AbstractValue.</p>
 <dl class="method">
 <dt id="pydrake.geometry.GeometryProperties.AddProperty">
 <code class="descname">AddProperty</code><span class="sig-paren">(</span><em>self: pydrake.geometry.GeometryProperties</em>, <em>group_name: str</em>, <em>name: str</em>, <em>value: object</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.geometry.GeometryProperties.AddProperty" title="Permalink to this definition">¶</a></dt>
-<dd><p>Adds a property with the given <code class="docutils literal"><span class="pre">name</span></code> and <code class="docutils literal"><span class="pre">value</span></code> to the the named
-property group. Adds the group if it doesn’t already exist.</p>
+<dd><p>Adds the named property (<code class="docutils literal"><span class="pre">group_name</span></code>, <cite>name</cite>) with the given
+<code class="docutils literal"><span class="pre">value</span></code>. Adds the group if it doesn’t already exist.</p>
 <dl class="docutils">
 <dt>Parameter <code class="docutils literal"><span class="pre">group_name</span></code>:</dt>
 <dd>The group name.</dd>
@@ -1437,11 +1437,7 @@ property group. Adds the group if it doesn’t already exist.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
-<li>RuntimeError if <code class="docutils literal"><span class="pre">name</span></code> already exists in the group</li>
-<li><code class="docutils literal"><span class="pre">group_name</span></code>.</li>
-</ul>
-</td>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">RuntimeError if the property already exists.</td>
 </tr>
 </tbody>
 </table>
@@ -1484,7 +1480,8 @@ for as long as this instance.</p>
 <dl class="method">
 <dt id="pydrake.geometry.GeometryProperties.GetProperty">
 <code class="descname">GetProperty</code><span class="sig-paren">(</span><em>self: pydrake.geometry.GeometryProperties</em>, <em>group_name: str</em>, <em>name: str</em><span class="sig-paren">)</span> &#x2192; object<a class="headerlink" href="#pydrake.geometry.GeometryProperties.GetProperty" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieves the typed value from this set of properties.</p>
+<dd><p>Retrieves the typed value for the property (<code class="docutils literal"><span class="pre">group_name</span></code>, <cite>name</cite>)
+from this set of properties.</p>
 <dl class="docutils">
 <dt>Parameter <code class="docutils literal"><span class="pre">group_name</span></code>:</dt>
 <dd>The name of the group to which the property belongs.</dd>
@@ -1521,11 +1518,12 @@ the return type will be a copy translated from Rgba.</td>
 <dl class="method">
 <dt id="pydrake.geometry.GeometryProperties.GetPropertyOrDefault">
 <code class="descname">GetPropertyOrDefault</code><span class="sig-paren">(</span><em>self: pydrake.geometry.GeometryProperties</em>, <em>group_name: str</em>, <em>name: str</em>, <em>default_value: object</em><span class="sig-paren">)</span> &#x2192; object<a class="headerlink" href="#pydrake.geometry.GeometryProperties.GetPropertyOrDefault" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieves the typed value from the set of properties (if it exists),
-otherwise returns the given default value. The given <code class="docutils literal"><span class="pre">default_value</span></code>
-is returned only if the group or property are missing. If the property
-exists and is of a <em>different</em> type, an exception will be thrown. If
-it is of the expected type, the stored value will be returned.</p>
+<dd><p>Retrieves the typed value for the property (<code class="docutils literal"><span class="pre">group_name</span></code>, <cite>name</cite>)
+from the set of properties (if it exists), otherwise returns the given
+default value. The given <code class="docutils literal"><span class="pre">default_value</span></code> is returned only if the
+property is missing. If the property exists and is of a <em>different</em>
+type, an exception will be thrown. If it is of the expected type, the
+stored value will be returned.</p>
 <p>Generally, it is unnecessary to explicitly declare the <code class="docutils literal"><span class="pre">ValueType</span></code>
 of the property value; it will be inferred from the provided default
 value. Sometimes it is convenient to provide the default value in a
@@ -1567,7 +1565,7 @@ compiler does not infer the wrong type, e.g.:</p>
 <dl class="method">
 <dt id="pydrake.geometry.GeometryProperties.HasProperty">
 <code class="descname">HasProperty</code><span class="sig-paren">(</span><em>self: pydrake.geometry.GeometryProperties</em>, <em>group_name: str</em>, <em>name: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#pydrake.geometry.GeometryProperties.HasProperty" title="Permalink to this definition">¶</a></dt>
-<dd><p>Reports if the property exists in the group.</p>
+<dd><p>Reports if the property (<code class="docutils literal"><span class="pre">group_name</span></code>, <cite>name</cite>) exists in the group.</p>
 <dl class="docutils">
 <dt>Parameter <code class="docutils literal"><span class="pre">group_name</span></code>:</dt>
 <dd>The name of the group to which the tested property should belong.</dd>
@@ -1589,6 +1587,51 @@ exists in that group.</td>
 <dt id="pydrake.geometry.GeometryProperties.num_groups">
 <code class="descname">num_groups</code><span class="sig-paren">(</span><em>self: pydrake.geometry.GeometryProperties</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#pydrake.geometry.GeometryProperties.num_groups" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reports the number of property groups in this set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.geometry.GeometryProperties.RemoveProperty">
+<code class="descname">RemoveProperty</code><span class="sig-paren">(</span><em>self: pydrake.geometry.GeometryProperties</em>, <em>group_name: str</em>, <em>name: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#pydrake.geometry.GeometryProperties.RemoveProperty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the (<code class="docutils literal"><span class="pre">group_name</span></code>, <cite>name</cite>) property (if it exists). Upon
+completion the property will not be in the set.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal"><span class="pre">True</span></code> if the property existed prior to the call.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.geometry.GeometryProperties.UpdateProperty">
+<code class="descname">UpdateProperty</code><span class="sig-paren">(</span><em>self: pydrake.geometry.GeometryProperties</em>, <em>group_name: str</em>, <em>name: str</em>, <em>value: object</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.geometry.GeometryProperties.UpdateProperty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the named property (<code class="docutils literal"><span class="pre">group_name</span></code>, <cite>name</cite>) with the given
+<code class="docutils literal"><span class="pre">value</span></code>. If the property doesn’t already exist, it is equivalent to
+calling <code class="docutils literal"><span class="pre">AddProperty</span></code>. If the property does exist, its value (which
+must have the same type as <code class="docutils literal"><span class="pre">value</span></code>) will be replaced.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">group_name</span></code>:</dt>
+<dd>The group name.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">name</span></code>:</dt>
+<dd>The name of the property – must be unique in the group.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">value</span></code>:</dt>
+<dd>The value to assign to the property.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">RuntimeError if the property exists with a different type.</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Template parameter <code class="docutils literal"><span class="pre">ValueType</span></code>:</dt>
+<dd>The type of data to store with the attribute – must be copy
+constructible or cloneable (see Value).</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
@@ -1715,7 +1758,7 @@ scale factor.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
-<li>RuntimeError if <a href="#id9"><span class="problematic" id="id10">|scale|</span></a> &lt; 1e-8. Note that a negative scale is</li>
+<li>RuntimeError if <a href="#id12"><span class="problematic" id="id13">|scale|</span></a> &lt; 1e-8. Note that a negative scale is</li>
 <li>considered valid. We want to preclude scales near zero but</li>
 <li>recognise that scale is a convenience tool for “tweaking” models.</li>
 <li>8 orders of magnitude should be plenty without considering</li>
@@ -2088,7 +2131,7 @@ geometries and penetrating geometries.</p>
 and B.</p>
 <p>If the objects do not overlap (i.e., A ⋂ B = ∅), φ &gt; 0 and represents
 the minimal distance between the two objects. More formally: φ =
-min(<a href="#id11"><span class="problematic" id="id12">|Aₚ - Bₚ|</span></a>) ∀ Aₚ ∈ A and Bₚ ∈ B.</p>
+min(<a href="#id14"><span class="problematic" id="id15">|Aₚ - Bₚ|</span></a>) ∀ Aₚ ∈ A and Bₚ ∈ B.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The pair (Aₚ, Bₚ) is a “witness” of the distance. The pair need
@@ -2098,7 +2141,7 @@ not be unique (think of two parallel planes).</p>
 interpreted as the negative penetration depth. It is the smallest
 length of the vector v, such that by shifting one object along that
 vector relative to the other, the two objects will no longer be
-overlapping. More formally, φ(A, B) = -min <a href="#id13"><span class="problematic" id="id14">|v|</span></a>. s.t (Tᵥ · A) ⋂ B = ∅
+overlapping. More formally, φ(A, B) = -min <a href="#id16"><span class="problematic" id="id17">|v|</span></a>. s.t (Tᵥ · A) ⋂ B = ∅
 where Tᵥ is a rigid transformation that displaces A by the vector v,
 namely Tᵥ · A = {u + v | ∀ u ∈ A}. By implication, there exist points
 Aₚ and Bₚ on the surfaces of objects A and B, respectively, such that
@@ -2161,8 +2204,8 @@ outside Gᵢ, then ∇φᵢ(p) equals the unit vector in the direction from
 the nearest point Nᵢ on Gᵢ’s surface to p. If p is inside Gᵢ, then
 ∇φᵢ(p) is in the direction from p to Nᵢ. This observation is written
 formally as:</p>
-<p>∇φᵢ(p) = (p - Nᵢ)/<a href="#id15"><span class="problematic" id="id16">|p - Nᵢ|</span></a> if p is outside Gᵢ</p>
-<p>∇φᵢ(p) = -(p - Nᵢ)/<a href="#id17"><span class="problematic" id="id18">|p - Nᵢ|</span></a> if p is inside Gᵢ</p>
+<p>∇φᵢ(p) = (p - Nᵢ)/<a href="#id18"><span class="problematic" id="id19">|p - Nᵢ|</span></a> if p is outside Gᵢ</p>
+<p>∇φᵢ(p) = -(p - Nᵢ)/<a href="#id20"><span class="problematic" id="id21">|p - Nᵢ|</span></a> if p is inside Gᵢ</p>
 <p>Note that ∇φᵢ(p) is also defined on Gᵢ’s surface, but we cannot use
 the above formula.</p>
 <p><strong>Scalar support</strong></p>
@@ -2494,7 +2537,7 @@ geometries and penetrating geometries.</p>
 and B.</p>
 <p>If the objects do not overlap (i.e., A ⋂ B = ∅), φ &gt; 0 and represents
 the minimal distance between the two objects. More formally: φ =
-min(<a href="#id19"><span class="problematic" id="id20">|Aₚ - Bₚ|</span></a>) ∀ Aₚ ∈ A and Bₚ ∈ B.</p>
+min(<a href="#id22"><span class="problematic" id="id23">|Aₚ - Bₚ|</span></a>) ∀ Aₚ ∈ A and Bₚ ∈ B.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The pair (Aₚ, Bₚ) is a “witness” of the distance. The pair need
@@ -2504,7 +2547,7 @@ not be unique (think of two parallel planes).</p>
 interpreted as the negative penetration depth. It is the smallest
 length of the vector v, such that by shifting one object along that
 vector relative to the other, the two objects will no longer be
-overlapping. More formally, φ(A, B) = -min <a href="#id21"><span class="problematic" id="id22">|v|</span></a>. s.t (Tᵥ · A) ⋂ B = ∅
+overlapping. More formally, φ(A, B) = -min <a href="#id24"><span class="problematic" id="id25">|v|</span></a>. s.t (Tᵥ · A) ⋂ B = ∅
 where Tᵥ is a rigid transformation that displaces A by the vector v,
 namely Tᵥ · A = {u + v | ∀ u ∈ A}. By implication, there exist points
 Aₚ and Bₚ on the surfaces of objects A and B, respectively, such that
@@ -2567,8 +2610,8 @@ outside Gᵢ, then ∇φᵢ(p) equals the unit vector in the direction from
 the nearest point Nᵢ on Gᵢ’s surface to p. If p is inside Gᵢ, then
 ∇φᵢ(p) is in the direction from p to Nᵢ. This observation is written
 formally as:</p>
-<p>∇φᵢ(p) = (p - Nᵢ)/<a href="#id23"><span class="problematic" id="id24">|p - Nᵢ|</span></a> if p is outside Gᵢ</p>
-<p>∇φᵢ(p) = -(p - Nᵢ)/<a href="#id25"><span class="problematic" id="id26">|p - Nᵢ|</span></a> if p is inside Gᵢ</p>
+<p>∇φᵢ(p) = (p - Nᵢ)/<a href="#id26"><span class="problematic" id="id27">|p - Nᵢ|</span></a> if p is outside Gᵢ</p>
+<p>∇φᵢ(p) = -(p - Nᵢ)/<a href="#id28"><span class="problematic" id="id29">|p - Nᵢ|</span></a> if p is inside Gᵢ</p>
 <p>Note that ∇φᵢ(p) is also defined on Gᵢ’s surface, but we cannot use
 the above formula.</p>
 <p><strong>Scalar support</strong></p>
@@ -2898,7 +2941,7 @@ geometries and penetrating geometries.</p>
 and B.</p>
 <p>If the objects do not overlap (i.e., A ⋂ B = ∅), φ &gt; 0 and represents
 the minimal distance between the two objects. More formally: φ =
-min(<a href="#id27"><span class="problematic" id="id28">|Aₚ - Bₚ|</span></a>) ∀ Aₚ ∈ A and Bₚ ∈ B.</p>
+min(<a href="#id30"><span class="problematic" id="id31">|Aₚ - Bₚ|</span></a>) ∀ Aₚ ∈ A and Bₚ ∈ B.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The pair (Aₚ, Bₚ) is a “witness” of the distance. The pair need
@@ -2908,7 +2951,7 @@ not be unique (think of two parallel planes).</p>
 interpreted as the negative penetration depth. It is the smallest
 length of the vector v, such that by shifting one object along that
 vector relative to the other, the two objects will no longer be
-overlapping. More formally, φ(A, B) = -min <a href="#id29"><span class="problematic" id="id30">|v|</span></a>. s.t (Tᵥ · A) ⋂ B = ∅
+overlapping. More formally, φ(A, B) = -min <a href="#id32"><span class="problematic" id="id33">|v|</span></a>. s.t (Tᵥ · A) ⋂ B = ∅
 where Tᵥ is a rigid transformation that displaces A by the vector v,
 namely Tᵥ · A = {u + v | ∀ u ∈ A}. By implication, there exist points
 Aₚ and Bₚ on the surfaces of objects A and B, respectively, such that
@@ -2971,8 +3014,8 @@ outside Gᵢ, then ∇φᵢ(p) equals the unit vector in the direction from
 the nearest point Nᵢ on Gᵢ’s surface to p. If p is inside Gᵢ, then
 ∇φᵢ(p) is in the direction from p to Nᵢ. This observation is written
 formally as:</p>
-<p>∇φᵢ(p) = (p - Nᵢ)/<a href="#id31"><span class="problematic" id="id32">|p - Nᵢ|</span></a> if p is outside Gᵢ</p>
-<p>∇φᵢ(p) = -(p - Nᵢ)/<a href="#id33"><span class="problematic" id="id34">|p - Nᵢ|</span></a> if p is inside Gᵢ</p>
+<p>∇φᵢ(p) = (p - Nᵢ)/<a href="#id34"><span class="problematic" id="id35">|p - Nᵢ|</span></a> if p is outside Gᵢ</p>
+<p>∇φᵢ(p) = -(p - Nᵢ)/<a href="#id36"><span class="problematic" id="id37">|p - Nᵢ|</span></a> if p is inside Gᵢ</p>
 <p>Note that ∇φᵢ(p) is also defined on Gᵢ’s surface, but we cannot use
 the above formula.</p>
 <p><strong>Scalar support</strong></p>
@@ -3198,7 +3241,7 @@ the world frame.</p>
 scales coordinates by the given scale factor. Polygons will be
 triangulated if they are not triangles already. All objects in the
 .obj file will be merged into the surface mesh. See
-<a class="reference external" href="https://en.wikipedia.org/wiki/">https://en.wikipedia.org/wiki/</a><a href="#id41"><span class="problematic" id="id42">Wavefront_</span></a>.obj_file for the file format.</p>
+<a class="reference external" href="https://en.wikipedia.org/wiki/">https://en.wikipedia.org/wiki/</a><a href="#id44"><span class="problematic" id="id45">Wavefront_</span></a>.obj_file for the file format.</p>
 <dl class="docutils">
 <dt>Parameter <code class="docutils literal"><span class="pre">filename</span></code>:</dt>
 <dd>A valid file name with absolute path or relative path.</dd>
@@ -3589,6 +3632,16 @@ it modifies the copy of the model stored in the provided context.</p>
 </ol>
 <p>Assigns the illustration role to the geometry indicated by
 <code class="docutils literal"><span class="pre">geometry_id</span></code>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">When changing illustration properties (<code class="docutils literal"><span class="pre">assign</span> <span class="pre">=</span>
+<span class="pre">RoleAssign::kReplace</span></code>), there is no guarantee that these changes
+will affect the visualization. The visualizer needs to be able to
+“initialize” itself after changes to properties that will affect
+how a geometry appears. If changing a geometry’s illustration
+properties doesn’t seem to be affecting the visualization,
+retrigger its initialization action.</p>
+</div>
 <ol class="arabic simple" start="6">
 <li>AssignRole(self: pydrake.geometry.SceneGraph_[float], context: pydrake.systems.framework.Context_[float], source_id: pydrake.geometry.SourceId, geometry_id: pydrake.geometry.GeometryId, properties: pydrake.geometry.IllustrationProperties, assign: pydrake.geometry.RoleAssign = RoleAssign.kNew) -&gt; None</li>
 </ol>
@@ -3596,6 +3649,24 @@ it modifies the copy of the model stored in the provided context.</p>
 AssignRole(SourceId,GeometryId,IllustrationProperties) “AssignRole()”
 for illustration properties. Rather than modifying SceneGraph’s model,
 it modifies the copy of the model stored in the provided context.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">When changing illustration properties (<code class="docutils literal"><span class="pre">assign</span> <span class="pre">=</span>
+<span class="pre">RoleAssign::kReplace</span></code>), there is no guarantee that these changes
+will affect the visualization. The visualizer needs to be able to
+“initialize” itself after changes to properties that will affect
+how a geometry appears. If changing a geometry’s illustration
+properties doesn’t seem to be affecting the visualization,
+retrigger its initialization action.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Due to a bug (see issue <a class="reference external" href="https://github.com/RobotLocomotion/drake/issues/13597">#13597</a>),
+changing the illustration roles or properties in a
+systems::Context will not have any apparent effect in, at least,
+drake_visualizer. Please change the illustration role in the model
+prior to allocating the context.</p>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -4174,6 +4245,16 @@ it modifies the copy of the model stored in the provided context.</p>
 </ol>
 <p>Assigns the illustration role to the geometry indicated by
 <code class="docutils literal"><span class="pre">geometry_id</span></code>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">When changing illustration properties (<code class="docutils literal"><span class="pre">assign</span> <span class="pre">=</span>
+<span class="pre">RoleAssign::kReplace</span></code>), there is no guarantee that these changes
+will affect the visualization. The visualizer needs to be able to
+“initialize” itself after changes to properties that will affect
+how a geometry appears. If changing a geometry’s illustration
+properties doesn’t seem to be affecting the visualization,
+retrigger its initialization action.</p>
+</div>
 <ol class="arabic simple" start="6">
 <li>AssignRole(self: pydrake.geometry.SceneGraph_[AutoDiffXd], context: pydrake.systems.framework.Context_[AutoDiffXd], source_id: pydrake.geometry.SourceId, geometry_id: pydrake.geometry.GeometryId, properties: pydrake.geometry.IllustrationProperties, assign: pydrake.geometry.RoleAssign = RoleAssign.kNew) -&gt; None</li>
 </ol>
@@ -4181,6 +4262,24 @@ it modifies the copy of the model stored in the provided context.</p>
 AssignRole(SourceId,GeometryId,IllustrationProperties) “AssignRole()”
 for illustration properties. Rather than modifying SceneGraph’s model,
 it modifies the copy of the model stored in the provided context.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">When changing illustration properties (<code class="docutils literal"><span class="pre">assign</span> <span class="pre">=</span>
+<span class="pre">RoleAssign::kReplace</span></code>), there is no guarantee that these changes
+will affect the visualization. The visualizer needs to be able to
+“initialize” itself after changes to properties that will affect
+how a geometry appears. If changing a geometry’s illustration
+properties doesn’t seem to be affecting the visualization,
+retrigger its initialization action.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Due to a bug (see issue <a class="reference external" href="https://github.com/RobotLocomotion/drake/issues/13597">#13597</a>),
+changing the illustration roles or properties in a
+systems::Context will not have any apparent effect in, at least,
+drake_visualizer. Please change the illustration role in the model
+prior to allocating the context.</p>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -4757,6 +4856,16 @@ it modifies the copy of the model stored in the provided context.</p>
 </ol>
 <p>Assigns the illustration role to the geometry indicated by
 <code class="docutils literal"><span class="pre">geometry_id</span></code>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">When changing illustration properties (<code class="docutils literal"><span class="pre">assign</span> <span class="pre">=</span>
+<span class="pre">RoleAssign::kReplace</span></code>), there is no guarantee that these changes
+will affect the visualization. The visualizer needs to be able to
+“initialize” itself after changes to properties that will affect
+how a geometry appears. If changing a geometry’s illustration
+properties doesn’t seem to be affecting the visualization,
+retrigger its initialization action.</p>
+</div>
 <ol class="arabic simple" start="6">
 <li>AssignRole(self: pydrake.geometry.SceneGraph_[float], context: pydrake.systems.framework.Context_[float], source_id: pydrake.geometry.SourceId, geometry_id: pydrake.geometry.GeometryId, properties: pydrake.geometry.IllustrationProperties, assign: pydrake.geometry.RoleAssign = RoleAssign.kNew) -&gt; None</li>
 </ol>
@@ -4764,6 +4873,24 @@ it modifies the copy of the model stored in the provided context.</p>
 AssignRole(SourceId,GeometryId,IllustrationProperties) “AssignRole()”
 for illustration properties. Rather than modifying SceneGraph’s model,
 it modifies the copy of the model stored in the provided context.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">When changing illustration properties (<code class="docutils literal"><span class="pre">assign</span> <span class="pre">=</span>
+<span class="pre">RoleAssign::kReplace</span></code>), there is no guarantee that these changes
+will affect the visualization. The visualizer needs to be able to
+“initialize” itself after changes to properties that will affect
+how a geometry appears. If changing a geometry’s illustration
+properties doesn’t seem to be affecting the visualization,
+retrigger its initialization action.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Due to a bug (see issue <a class="reference external" href="https://github.com/RobotLocomotion/drake/issues/13597">#13597</a>),
+changing the illustration roles or properties in a
+systems::Context will not have any apparent effect in, at least,
+drake_visualizer. Please change the illustration role in the model
+prior to allocating the context.</p>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -6547,7 +6674,7 @@ query point Q, expressed in world frame W.</dd>
 <p class="last">grad_W is not well defined everywhere. For example, when computing
 the distance from a point to a sphere, and the point coincides
 with the center of the sphere, grad_W is not well defined (as it
-can be computed as p_GQ / <a href="#id35"><span class="problematic" id="id36">|p_GQ|</span></a>, but the denominator is 0). When
+can be computed as p_GQ / <a href="#id38"><span class="problematic" id="id39">|p_GQ|</span></a>, but the denominator is 0). When
 grad_W is not well defined, and we instantiate
 SignedDistanceToPoint&lt;T&gt; with T being an AutoDiffScalar (like
 AutoDiffXd), the gradient of the query result is not well defined
@@ -6636,7 +6763,7 @@ query point Q, expressed in world frame W.</dd>
 <p class="last">grad_W is not well defined everywhere. For example, when computing
 the distance from a point to a sphere, and the point coincides
 with the center of the sphere, grad_W is not well defined (as it
-can be computed as p_GQ / <a href="#id37"><span class="problematic" id="id38">|p_GQ|</span></a>, but the denominator is 0). When
+can be computed as p_GQ / <a href="#id40"><span class="problematic" id="id41">|p_GQ|</span></a>, but the denominator is 0). When
 grad_W is not well defined, and we instantiate
 SignedDistanceToPoint&lt;T&gt; with T being an AutoDiffScalar (like
 AutoDiffXd), the gradient of the query result is not well defined
@@ -6723,7 +6850,7 @@ query point Q, expressed in world frame W.</dd>
 <p class="last">grad_W is not well defined everywhere. For example, when computing
 the distance from a point to a sphere, and the point coincides
 with the center of the sphere, grad_W is not well defined (as it
-can be computed as p_GQ / <a href="#id39"><span class="problematic" id="id40">|p_GQ|</span></a>, but the denominator is 0). When
+can be computed as p_GQ / <a href="#id42"><span class="problematic" id="id43">|p_GQ|</span></a>, but the denominator is 0). When
 grad_W is not well defined, and we instantiate
 SignedDistanceToPoint&lt;T&gt; with T being an AutoDiffScalar (like
 AutoDiffXd), the gradient of the query result is not well defined

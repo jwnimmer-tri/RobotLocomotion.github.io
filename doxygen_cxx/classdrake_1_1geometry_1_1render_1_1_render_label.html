@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('classdrake_1_1geometry_1_1render_1_1_r
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class representing object "labels" for rendering. </p>
-<p>In a "label image" (see <a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#af8066f38e4ed9176983bcda9b7834c90" title="Renders the registered geometry into the given label image.">RenderEngine::RenderLabelImage()</a> for details) each pixel value indicates the classification of the object that rendered into that pixel. The RenderLabel class provides that value and one label is associated with each rendered geometry.</p>
+<p>In a "label image" (see <a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#af8066f38e4ed9176983bcda9b7834c90" title="Renders the registered geometry into the given label image based on a simplified camera model.">RenderEngine::RenderLabelImage()</a> for details) each pixel value indicates the classification of the object that rendered into that pixel. The RenderLabel class provides that value and one label is associated with each rendered geometry.</p>
 <p>The labels could be unique for each geometry, or multiple geometries could all share the same label (becoming indistinguishable in the label image). Ultimately, it is the user's responsibility to assign labels in a manner that is meaningful for their application.</p>
 <p><a class="anchor" id="reserved_render_label"></a></p><h3>Reserved labels</h3>
 <p>There are several RenderLabels that are reserved. They have specific meaning in the context of the rendering ecosystem and are globally available to all applications. They are:</p>

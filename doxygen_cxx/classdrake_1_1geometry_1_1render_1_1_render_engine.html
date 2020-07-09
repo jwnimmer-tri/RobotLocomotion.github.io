@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('classdrake_1_1geometry_1_1render_1_1_r
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classdrake_1_1geometry_1_1render_1_1_render_engine-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -148,18 +149,37 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8ba2ce2694d81160bab17d55011bb71"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#ad8ba2ce2694d81160bab17d55011bb71">UpdateViewpoint</a> (const math::RigidTransformd &amp;X_WR)=0</td></tr>
 <tr class="memdesc:ad8ba2ce2694d81160bab17d55011bb71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the renderer's viewpoint with given pose X_WR.  <a href="#ad8ba2ce2694d81160bab17d55011bb71">More...</a><br /></td></tr>
 <tr class="separator:ad8ba2ce2694d81160bab17d55011bb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49cf86d2bcf1ecac8c73f2e9e782168b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#a49cf86d2bcf1ecac8c73f2e9e782168b">RenderColorImage</a> (const <a class="el" href="structdrake_1_1geometry_1_1render_1_1_camera_properties.html">CameraProperties</a> &amp;camera, bool show_window, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af5afae0f791341ac7ad11eb6bcb092bd">systems::sensors::ImageRgba8U</a> *color_image_out) const =0</td></tr>
-<tr class="memdesc:a49cf86d2bcf1ecac8c73f2e9e782168b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the registered geometry into the given color (rgb) image.  <a href="#a49cf86d2bcf1ecac8c73f2e9e782168b">More...</a><br /></td></tr>
-<tr class="separator:a49cf86d2bcf1ecac8c73f2e9e782168b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c065e3e5ce15a9585af6dc77b6ea20a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#a5c065e3e5ce15a9585af6dc77b6ea20a">RenderDepthImage</a> (const <a class="el" href="structdrake_1_1geometry_1_1render_1_1_depth_camera_properties.html">DepthCameraProperties</a> &amp;camera, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a0558960d25000bd7cc8607cef2fd223b">systems::sensors::ImageDepth32F</a> *depth_image_out) const =0</td></tr>
-<tr class="memdesc:a5c065e3e5ce15a9585af6dc77b6ea20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the registered geometry into the given depth image.  <a href="#a5c065e3e5ce15a9585af6dc77b6ea20a">More...</a><br /></td></tr>
-<tr class="separator:a5c065e3e5ce15a9585af6dc77b6ea20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8066f38e4ed9176983bcda9b7834c90"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#af8066f38e4ed9176983bcda9b7834c90">RenderLabelImage</a> (const <a class="el" href="structdrake_1_1geometry_1_1render_1_1_camera_properties.html">CameraProperties</a> &amp;camera, bool show_window, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af9f2ff2c09bd6626d594951724ed1d9a">systems::sensors::ImageLabel16I</a> *label_image_out) const =0</td></tr>
-<tr class="memdesc:af8066f38e4ed9176983bcda9b7834c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the registered geometry into the given label image.  <a href="#af8066f38e4ed9176983bcda9b7834c90">More...</a><br /></td></tr>
-<tr class="separator:af8066f38e4ed9176983bcda9b7834c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88a7096a316e3d2340941ddcc0a89832"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_label.html">RenderLabel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#a88a7096a316e3d2340941ddcc0a89832">default_render_label</a> () const</td></tr>
 <tr class="memdesc:a88a7096a316e3d2340941ddcc0a89832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports the render label value this render engine has been configured to use.  <a href="#a88a7096a316e3d2340941ddcc0a89832">More...</a><br /></td></tr>
 <tr class="separator:a88a7096a316e3d2340941ddcc0a89832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Rendering using simple camera models</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>These methods use a simplified camera model.</p>
+<p>They allow specification of the camera image size and the the focal length in the y-direction (via the given field-of-view value). However, it assumes that the focal length in the x direction is the same and further assumes that camera's principal point projects onto the <em>center</em> of the image.</p>
+<p>For RenderEngine implementations that also depend on near and far clipping planes, those planes are set arbitrarily by the implementation.</p>
+<p>For full control over the camera model (and related rendering properties), use the fully-specified variants defined below. </p>
+</div></td></tr>
+<tr class="memitem:a49cf86d2bcf1ecac8c73f2e9e782168b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#a49cf86d2bcf1ecac8c73f2e9e782168b">RenderColorImage</a> (const <a class="el" href="structdrake_1_1geometry_1_1render_1_1_camera_properties.html">CameraProperties</a> &amp;camera, bool show_window, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af5afae0f791341ac7ad11eb6bcb092bd">systems::sensors::ImageRgba8U</a> *color_image_out) const =0</td></tr>
+<tr class="memdesc:a49cf86d2bcf1ecac8c73f2e9e782168b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the registered geometry into the given color (rgb) image based on a simplified camera model.  <a href="#a49cf86d2bcf1ecac8c73f2e9e782168b">More...</a><br /></td></tr>
+<tr class="separator:a49cf86d2bcf1ecac8c73f2e9e782168b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c065e3e5ce15a9585af6dc77b6ea20a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#a5c065e3e5ce15a9585af6dc77b6ea20a">RenderDepthImage</a> (const <a class="el" href="structdrake_1_1geometry_1_1render_1_1_depth_camera_properties.html">DepthCameraProperties</a> &amp;camera, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a0558960d25000bd7cc8607cef2fd223b">systems::sensors::ImageDepth32F</a> *depth_image_out) const =0</td></tr>
+<tr class="memdesc:a5c065e3e5ce15a9585af6dc77b6ea20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the registered geometry into the given depth image based on a simplified camera model.  <a href="#a5c065e3e5ce15a9585af6dc77b6ea20a">More...</a><br /></td></tr>
+<tr class="separator:a5c065e3e5ce15a9585af6dc77b6ea20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8066f38e4ed9176983bcda9b7834c90"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#af8066f38e4ed9176983bcda9b7834c90">RenderLabelImage</a> (const <a class="el" href="structdrake_1_1geometry_1_1render_1_1_camera_properties.html">CameraProperties</a> &amp;camera, bool show_window, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af9f2ff2c09bd6626d594951724ed1d9a">systems::sensors::ImageLabel16I</a> *label_image_out) const =0</td></tr>
+<tr class="memdesc:af8066f38e4ed9176983bcda9b7834c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the registered geometry into the given label image based on a simplified camera model.  <a href="#af8066f38e4ed9176983bcda9b7834c90">More...</a><br /></td></tr>
+<tr class="separator:af8066f38e4ed9176983bcda9b7834c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Rendering using fully-specified camera models</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>These methods allow for full specification of the camera model &ndash; its intrinsics and render engine parameters.</p>
+<p>See the documentation of <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html" title="Collection of camera properties for cameras to be used with color/label images.">ColorRenderCamera</a> and <a class="el" href="classdrake_1_1geometry_1_1render_1_1_depth_render_camera.html" title="Collection of camera properties for cameras to be used with depth images.">DepthRenderCamera</a> for the full details. </p>
+</div></td></tr>
+<tr class="memitem:a9cb220048250527c21a2c28cf082225d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#a9cb220048250527c21a2c28cf082225d">RenderColorImage</a> (const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">ColorRenderCamera</a> &amp;camera, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af5afae0f791341ac7ad11eb6bcb092bd">systems::sensors::ImageRgba8U</a> *color_image_out) const</td></tr>
+<tr class="memdesc:a9cb220048250527c21a2c28cf082225d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the registered geometry into the given color (rgb) image based on a <em>fully</em> specified camera.  <a href="#a9cb220048250527c21a2c28cf082225d">More...</a><br /></td></tr>
+<tr class="separator:a9cb220048250527c21a2c28cf082225d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb486ce4bf7773a6f1413415b378645"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#a4cb486ce4bf7773a6f1413415b378645">RenderDepthImage</a> (const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_depth_render_camera.html">DepthRenderCamera</a> &amp;camera, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a0558960d25000bd7cc8607cef2fd223b">systems::sensors::ImageDepth32F</a> *depth_image_out) const</td></tr>
+<tr class="memdesc:a4cb486ce4bf7773a6f1413415b378645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the registered geometry into the given depth image based on a <em>fully</em> specified camera.  <a href="#a4cb486ce4bf7773a6f1413415b378645">More...</a><br /></td></tr>
+<tr class="separator:a4cb486ce4bf7773a6f1413415b378645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24b8e9eafdf8078a1668854573fdd70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#ae24b8e9eafdf8078a1668854573fdd70">RenderLabelImage</a> (const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">ColorRenderCamera</a> &amp;camera, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af9f2ff2c09bd6626d594951724ed1d9a">systems::sensors::ImageLabel16I</a> *label_image_out) const</td></tr>
+<tr class="memdesc:ae24b8e9eafdf8078a1668854573fdd70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the registered geometry into the given label image based on a <em>fully</em> specified camera.  <a href="#ae24b8e9eafdf8078a1668854573fdd70">More...</a><br /></td></tr>
+<tr class="separator:ae24b8e9eafdf8078a1668854573fdd70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdrake_1_1geometry_1_1_shape_reifier"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdrake_1_1geometry_1_1_shape_reifier')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdrake_1_1geometry_1_1_shape_reifier.html">ShapeReifier</a></td></tr>
 <tr class="memitem:a41c0198c16c8665d118ea925a895a3f9 inherit pub_methods_classdrake_1_1geometry_1_1_shape_reifier"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_shape_reifier.html#a41c0198c16c8665d118ea925a895a3f9">~ShapeReifier</a> ()=default</td></tr>
 <tr class="separator:a41c0198c16c8665d118ea925a895a3f9 inherit pub_methods_classdrake_1_1geometry_1_1_shape_reifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,6 +214,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9db015dacce22c75992bd3c0a0b39af7"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html">RenderEngine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#a9db015dacce22c75992bd3c0a0b39af7">DoClone</a> () const =0</td></tr>
 <tr class="memdesc:a9db015dacce22c75992bd3c0a0b39af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The NVI-function for cloning this render engine.  <a href="#a9db015dacce22c75992bd3c0a0b39af7">More...</a><br /></td></tr>
 <tr class="separator:a9db015dacce22c75992bd3c0a0b39af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a05e57a0c1352d5b7bf21ec5b040848"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#a3a05e57a0c1352d5b7bf21ec5b040848">DoRenderColorImage</a> (const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">ColorRenderCamera</a> &amp;camera, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af5afae0f791341ac7ad11eb6bcb092bd">systems::sensors::ImageRgba8U</a> *color_image_out) const</td></tr>
+<tr class="memdesc:a3a05e57a0c1352d5b7bf21ec5b040848"><td class="mdescLeft">&#160;</td><td class="mdescRight">The NVI-function for rendering color with a fully-specified camera.  <a href="#a3a05e57a0c1352d5b7bf21ec5b040848">More...</a><br /></td></tr>
+<tr class="separator:a3a05e57a0c1352d5b7bf21ec5b040848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac033875c5794ef9811501fbebf0f40a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#ac033875c5794ef9811501fbebf0f40a7">DoRenderDepthImage</a> (const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_depth_render_camera.html">DepthRenderCamera</a> &amp;camera, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a0558960d25000bd7cc8607cef2fd223b">systems::sensors::ImageDepth32F</a> *depth_image_out) const</td></tr>
+<tr class="memdesc:ac033875c5794ef9811501fbebf0f40a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The NVI-function for rendering depth with a fully-specified camera.  <a href="#ac033875c5794ef9811501fbebf0f40a7">More...</a><br /></td></tr>
+<tr class="separator:ac033875c5794ef9811501fbebf0f40a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37016bd327ce6e07ba719d9b1bf5e1e6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#a37016bd327ce6e07ba719d9b1bf5e1e6">DoRenderLabelImage</a> (const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">ColorRenderCamera</a> &amp;camera, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af9f2ff2c09bd6626d594951724ed1d9a">systems::sensors::ImageLabel16I</a> *label_image_out) const</td></tr>
+<tr class="memdesc:a37016bd327ce6e07ba719d9b1bf5e1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The NVI-function for rendering label with a fully-specified camera.  <a href="#a37016bd327ce6e07ba719d9b1bf5e1e6">More...</a><br /></td></tr>
+<tr class="separator:a37016bd327ce6e07ba719d9b1bf5e1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c415672a3c1670e863d36f84de069a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_label.html">RenderLabel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#a6c415672a3c1670e863d36f84de069a7">GetRenderLabelOrThrow</a> (const <a class="el" href="classdrake_1_1geometry_1_1_perception_properties.html">PerceptionProperties</a> &amp;properties) const</td></tr>
 <tr class="memdesc:a6c415672a3c1670e863d36f84de069a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the <code>(label, id)</code> <a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_label.html" title="Class representing object &quot;labels&quot; for rendering.">RenderLabel</a> property from the given <code>properties</code> and validates it (or the configured default if no such property is defined).  <a href="#a6c415672a3c1670e863d36f84de069a7">More...</a><br /></td></tr>
 <tr class="separator:a6c415672a3c1670e863d36f84de069a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,6 +255,9 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a705b66eae3ecd3c09aeb4d902e4202a9"><td class="memTemplParams" colspan="2">template&lt;typename ImageType &gt; </td></tr>
+<tr class="memitem:a705b66eae3ecd3c09aeb4d902e4202a9"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine.html#a705b66eae3ecd3c09aeb4d902e4202a9">ThrowIfInvalid</a> (const <a class="el" href="classdrake_1_1systems_1_1sensors_1_1_camera_info.html">systems::sensors::CameraInfo</a> &amp;intrinsics, const ImageType *image, const char *image_type)</td></tr>
+<tr class="separator:a705b66eae3ecd3c09aeb4d902e4202a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">RenderLabel-Color Utilities</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Some rasterization pipelines don't support channels of <a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_label.html#ab552a96bb39383157f123f0c25dfe54a">RenderLabel::ValueType</a>; typically, they operate in RGB color space.</p>
 <p>The following utilities support those pipelines by providing conversions between labels and colors. The mapping does <em>not</em> produce colors that are useful to humans &ndash; two labels with "near by" values will produces colors that most humans cannot distinguish, but the computer can. Do not use these utilities to produce the prototypical "colored label" images.</p>
@@ -510,6 +542,126 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the geometry was registered with this RenderEngine and removed, false if it wasn't registered in the first place. </dd></dl>
+
+</div>
+</div>
+<a id="a3a05e57a0c1352d5b7bf21ec5b040848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a05e57a0c1352d5b7bf21ec5b040848">&#9670;&nbsp;</a></span>DoRenderColorImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DoRenderColorImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">ColorRenderCamera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af5afae0f791341ac7ad11eb6bcb092bd">systems::sensors::ImageRgba8U</a> *&#160;</td>
+          <td class="paramname"><em>color_image_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The NVI-function for rendering color with a fully-specified camera. </p>
+<p>When RenderColorImage calls this, it has already confirmed that <code>color_image_out</code> is not <code>nullptr</code> and its size is consistent with the camera intrinsics.</p>
+<p>The default implementation strips out intrinsics unsupported by the simple render API and prints a warning. </p>
+
+</div>
+</div>
+<a id="ac033875c5794ef9811501fbebf0f40a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac033875c5794ef9811501fbebf0f40a7">&#9670;&nbsp;</a></span>DoRenderDepthImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DoRenderDepthImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_depth_render_camera.html">DepthRenderCamera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a0558960d25000bd7cc8607cef2fd223b">systems::sensors::ImageDepth32F</a> *&#160;</td>
+          <td class="paramname"><em>depth_image_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The NVI-function for rendering depth with a fully-specified camera. </p>
+<p>When RenderDepthImage calls this, it has already confirmed that <code>depth_image_out</code> is not <code>nullptr</code> and its size is consistent with the camera intrinsics.</p>
+<p>The default implementation strips out intrinsics unsupported by the simple render API and prints a warning. </p>
+
+</div>
+</div>
+<a id="a37016bd327ce6e07ba719d9b1bf5e1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37016bd327ce6e07ba719d9b1bf5e1e6">&#9670;&nbsp;</a></span>DoRenderLabelImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DoRenderLabelImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">ColorRenderCamera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af9f2ff2c09bd6626d594951724ed1d9a">systems::sensors::ImageLabel16I</a> *&#160;</td>
+          <td class="paramname"><em>label_image_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The NVI-function for rendering label with a fully-specified camera. </p>
+<p>When RenderLabelImage calls this, it has already confirmed that <code>label_image_out</code> is not <code>nullptr</code> and its size is consistent with the camera intrinsics.</p>
+<p>The default implementation strips out intrinsics unsupported by the simple render API and prints a warning. </p>
 
 </div>
 </div>
@@ -843,7 +995,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a49cf86d2bcf1ecac8c73f2e9e782168b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49cf86d2bcf1ecac8c73f2e9e782168b">&#9670;&nbsp;</a></span>RenderColorImage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a49cf86d2bcf1ecac8c73f2e9e782168b">&#9670;&nbsp;</a></span>RenderColorImage() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -882,7 +1034,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Renders the registered geometry into the given color (rgb) image. </p>
+<p>Renders the registered geometry into the given color (rgb) image based on a simplified camera model. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">camera</td><td>The intrinsic properties of the camera. </td></tr>
@@ -896,8 +1048,51 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a9cb220048250527c21a2c28cf082225d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb220048250527c21a2c28cf082225d">&#9670;&nbsp;</a></span>RenderColorImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RenderColorImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">ColorRenderCamera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af5afae0f791341ac7ad11eb6bcb092bd">systems::sensors::ImageRgba8U</a> *&#160;</td>
+          <td class="paramname"><em>color_image_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renders the registered geometry into the given color (rgb) image based on a <em>fully</em> specified camera. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">camera</td><td>The <em>render engine</em> camera properties. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">color_image_out</td><td>The rendered color image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>if <code>color_image_out</code> is <code>nullptr</code> or the size of the given input image doesn't match the size declared in <code>camera</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5c065e3e5ce15a9585af6dc77b6ea20a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c065e3e5ce15a9585af6dc77b6ea20a">&#9670;&nbsp;</a></span>RenderDepthImage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c065e3e5ce15a9585af6dc77b6ea20a">&#9670;&nbsp;</a></span>RenderDepthImage() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -930,7 +1125,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Renders the registered geometry into the given depth image. </p>
+<p>Renders the registered geometry into the given depth image based on a simplified camera model. </p>
 <p>In contrast to the other rendering operations, depth images don't have an option to display the window; generally, basic depth images are not readily communicative to humans.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -944,8 +1139,52 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a4cb486ce4bf7773a6f1413415b378645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb486ce4bf7773a6f1413415b378645">&#9670;&nbsp;</a></span>RenderDepthImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RenderDepthImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_depth_render_camera.html">DepthRenderCamera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a0558960d25000bd7cc8607cef2fd223b">systems::sensors::ImageDepth32F</a> *&#160;</td>
+          <td class="paramname"><em>depth_image_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renders the registered geometry into the given depth image based on a <em>fully</em> specified camera. </p>
+<p>In contrast to the other rendering operations, depth images don't have an option to display the window; generally, basic depth images are not readily communicative to humans.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">camera</td><td>The <em>render engine</em> camera properties. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">depth_image_out</td><td>The rendered depth image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>if <code>depth_image_out</code> is <code>nullptr</code> or the size of the given input image doesn't match the size declared in <code>camera</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af8066f38e4ed9176983bcda9b7834c90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8066f38e4ed9176983bcda9b7834c90">&#9670;&nbsp;</a></span>RenderLabelImage()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af8066f38e4ed9176983bcda9b7834c90">&#9670;&nbsp;</a></span>RenderLabelImage() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -984,7 +1223,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Renders the registered geometry into the given label image. </p>
+<p>Renders the registered geometry into the given label image based on a simplified camera model. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">camera</td><td>The intrinsic properties of the camera. </td></tr>
@@ -995,6 +1234,50 @@ Friends</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#ae73dde1043b9c0c6f8da21085017d301">RenderEngineVtk</a>, <a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine_ospray.html#ab240d3845e6edcb84c5b1b90335d5997">RenderEngineOspray</a>, and <a class="el" href="classdrake_1_1geometry_1_1render_1_1_render_engine_gl.html#ab240d3845e6edcb84c5b1b90335d5997">RenderEngineGl</a>.</p>
+
+</div>
+</div>
+<a id="ae24b8e9eafdf8078a1668854573fdd70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24b8e9eafdf8078a1668854573fdd70">&#9670;&nbsp;</a></span>RenderLabelImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RenderLabelImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html">ColorRenderCamera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1systems_1_1sensors.html#af9f2ff2c09bd6626d594951724ed1d9a">systems::sensors::ImageLabel16I</a> *&#160;</td>
+          <td class="paramname"><em>label_image_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renders the registered geometry into the given label image based on a <em>fully</em> specified camera. </p>
+<dl class="section note"><dt>Note</dt><dd>This uses the <a class="el" href="classdrake_1_1geometry_1_1render_1_1_color_render_camera.html" title="Collection of camera properties for cameras to be used with color/label images.">ColorRenderCamera</a> as label images are typically rendered to be exactly registered with a corresponding color image.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">camera</td><td>The <em>render engine</em> camera properties. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">label_image_out</td><td>The rendered label image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>if <code>label_image_out</code> is <code>nullptr</code> or the size of the given input image doesn't match the size declared in <code>camera</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1029,6 +1312,48 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a705b66eae3ecd3c09aeb4d902e4202a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a705b66eae3ecd3c09aeb4d902e4202a9">&#9670;&nbsp;</a></span>ThrowIfInvalid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ThrowIfInvalid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1systems_1_1sensors_1_1_camera_info.html">systems::sensors::CameraInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>intrinsics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ImageType *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>image_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

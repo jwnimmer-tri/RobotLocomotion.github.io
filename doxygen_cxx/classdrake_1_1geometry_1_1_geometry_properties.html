@@ -106,11 +106,11 @@ $(document).ready(function(){initNavTree('classdrake_1_1geometry_1_1_geometry_pr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for defining a set of geometry properties. </p>
 <p>Each property consists of a <code>(group, property)</code> name-pair and a typed value. The name pair allows for reuse of common property names (e.g., "diffuse") to be differentiated in interpretation by associating them with different groups. The only restriction on the value type is that it must be either cloneable or copy-constructible.</p>
-<p>A set of geometry property values are defined when geometry is registered with <a class="el" href="classdrake_1_1geometry_1_1_scene_graph.html" title="SceneGraph serves as the nexus for all geometry (and geometry-based operations) in a Diagram.">SceneGraph</a> by an instantiator and accessed by some downstream consumer entity. Each consumer specifies what properties it expects to find and what default values (if any) it provides. For example, the consumer could document that a particular property is always required and its absence would throw an exception. Alternatively, it could indicate that a property is optional and a default value will be used in its absence. It is the responsibility of the instantiator to make sure that the geometry property values are <em>correctly</em> defined according to the expected consumer's specification. Correctness includes such issues as key-value pairs placed into a <em>correctly</em>-spelled group, property keys being likewise correctly spelled, and values of the expected type. Correct spelling includes correct case. The instantiator uses the <a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#a5c36bb4c5566a8316bc8b52601e49d27" title="Adds a property with the given name and value to the the named property group.">AddProperty()</a> method to add new properties to the set.</p>
+<p>A set of geometry property values are defined when geometry is registered with <a class="el" href="classdrake_1_1geometry_1_1_scene_graph.html" title="SceneGraph serves as the nexus for all geometry (and geometry-based operations) in a Diagram.">SceneGraph</a> by an instantiator and accessed by some downstream consumer entity. Each consumer specifies what properties it expects to find and what default values (if any) it provides. For example, the consumer could document that a particular property is always required and its absence would throw an exception. Alternatively, it could indicate that a property is optional and a default value will be used in its absence. It is the responsibility of the instantiator to make sure that the geometry property values are <em>correctly</em> defined according to the expected consumer's specification. Correctness includes such issues as key-value pairs placed into a <em>correctly</em>-spelled group, property keys being likewise correctly spelled, and values of the expected type. Correct spelling includes correct case. The instantiator uses the <a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#a5c36bb4c5566a8316bc8b52601e49d27" title="Adds the named property (group_name, name) with the given value.">AddProperty()</a> method to add new properties to the set.</p>
 <p>To read the property (<code>some_group</code>, <code>some_property</code>) from a property set:</p>
 <ol type="1">
-<li>Optionally test to see if the property exists by confirming the group <code>some_group</code> is in the set via <a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#ad4a46edb0e7b07e1aa49ddb946ddecc0" title="Reports if the given named group is part of this property set.">HasGroup()</a> and that the property <code>some_property</code> is in <code>some_group</code> via <a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#ace6a963ab7442bf3f29d9ebacdc849ca" title="Reports if the property exists in the group.">HasProperty()</a>. Attempting to access a property with a non-existent (group, property) pair may lead to an exception (see API documentation below).</li>
-<li>Acquire a property value via the <a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#aaaa9388bc0cffeef445272cc5234b087" title="Retrieves the typed value from this set of properties.">GetProperty()</a> or <a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#a7b425641c9937dea89f553cabba9b186" title="Retrieves the typed value from the set of properties (if it exists), otherwise returns the given defa...">GetPropertyOrDefault()</a> methods. NOTE: Reading a property requires a compile-time declaration of the <em>type</em> of value being read. If the stored value is of a different type, an exception will be thrown.</li>
+<li>Optionally test to see if the property exists by confirming the group <code>some_group</code> is in the set via <a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#ad4a46edb0e7b07e1aa49ddb946ddecc0" title="Reports if the given named group is part of this property set.">HasGroup()</a> and that the property <code>some_property</code> is in <code>some_group</code> via <a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#ace6a963ab7442bf3f29d9ebacdc849ca" title="Reports if the property (group_name, name) exists in the group.">HasProperty()</a>. Attempting to access a property with a non-existent (group, property) pair may lead to an exception (see API documentation below).</li>
+<li>Acquire a property value via the <a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#aaaa9388bc0cffeef445272cc5234b087" title="Retrieves the typed value for the property (group_name, name) from this set of properties.">GetProperty()</a> or <a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#a7b425641c9937dea89f553cabba9b186" title="Retrieves the typed value for the property (group_name, name) from the set of properties (if it exist...">GetPropertyOrDefault()</a> methods. NOTE: Reading a property requires a compile-time declaration of the <em>type</em> of value being read. If the stored value is of a different type, an exception will be thrown.</li>
 </ol>
 <h2>Common workflows</h2>
 <p>The following examples outline a number of ways to create and consume geometry properties. By design, GeometryProperties cannot be constructed, copied, or moved directly. Only derived classes can do so. This facilitates <em>strongly typed</em> sets of properties associated with particular geometry roles. So, for these examples we'll exercise the derived class associated with proximity queries: <a class="el" href="classdrake_1_1geometry_1_1_proximity_properties.html" title="The set of properties for geometry used in a proximity role.">ProximityProperties</a>.</p>
@@ -122,13 +122,13 @@ $(document).ready(function(){initNavTree('classdrake_1_1geometry_1_1_geometry_pr
 <p>Similar to the previous examples, the properties are added to the default group. Just be aware that if multiple sites in your code add properties to the default group, the possibility that names get repeated increases. Property names <em>must</em> be unique within a single group, including the default group.</p>
 <div class="fragment"><div class="line">ProximityProperties properties;</div><div class="line">properties.AddProperty(<a class="code" href="classdrake_1_1geometry_1_1_geometry_properties.html#aa9fbb361a1fc07d3f00cd10905d27e23">ProximityProperties::default_group_name</a>(), <span class="stringliteral">&quot;count&quot;</span>, 7);</div><div class="line">properties.AddProperty(<a class="code" href="classdrake_1_1geometry_1_1_geometry_properties.html#aa9fbb361a1fc07d3f00cd10905d27e23">ProximityProperties::default_group_name</a>(), <span class="stringliteral">&quot;width&quot;</span>, 7.);</div><div class="line">properties.AddProperty(<a class="code" href="classdrake_1_1geometry_1_1_geometry_properties.html#aa9fbb361a1fc07d3f00cd10905d27e23">ProximityProperties::default_group_name</a>(), <span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;7&quot;</span>);</div></div><!-- fragment --><h4>Aggregate properties in a struct</h4>
 <p>In some cases, there is a set of values that will <em>always</em> be accessed together (specified with coordinated semantics). In these cases, it makes sense to aggregate them into a struct and store that as a single value. This reduces the number of lookups required.</p>
-<p>It's worth noting, that if the data value is a struct, calls to <a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#a7b425641c9937dea89f553cabba9b186" title="Retrieves the typed value from the set of properties (if it exists), otherwise returns the given defa...">GetPropertyOrDefault()</a> still operate as an "all-or-nothing" basis. If the property <em>struct</em> exists, it will be returned, if it's missing the default struct will be returned. There is no concept of a "partial" struct in which some undefined values in the struct will be replaced with their corresponding values in the default struct.</p>
+<p>It's worth noting, that if the data value is a struct, calls to <a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#a7b425641c9937dea89f553cabba9b186" title="Retrieves the typed value for the property (group_name, name) from the set of properties (if it exist...">GetPropertyOrDefault()</a> still operate as an "all-or-nothing" basis. If the property <em>struct</em> exists, it will be returned, if it's missing the default struct will be returned. There is no concept of a "partial" struct in which some undefined values in the struct will be replaced with their corresponding values in the default struct.</p>
 <div class="fragment"><div class="line"><span class="keyword">struct </span>MyData {</div><div class="line">   <span class="keywordtype">int</span> i{};</div><div class="line">   <span class="keywordtype">double</span> d{};</div><div class="line">   std::string s;</div><div class="line">};</div><div class="line"></div><div class="line">ProximityProperties properties;</div><div class="line"><span class="keyword">const</span> std::string group_name(<span class="stringliteral">&quot;my_group&quot;</span>);</div><div class="line">MyData data{7, 7., <span class="stringliteral">&quot;7&quot;</span>};</div><div class="line">properties.AddProperty(group_name, <span class="stringliteral">&quot;data1&quot;</span>, data);</div><div class="line"><span class="comment">// These alternate forms are also acceptable (but not in succession, as the</span></div><div class="line"><span class="comment">// property name has already been used by the first invocation).</span></div><div class="line">properties.AddProperty(group_name, <span class="stringliteral">&quot;data2&quot;</span>, MyData{6, 6., <span class="stringliteral">&quot;6&quot;</span>});</div><div class="line">properties.AddProperty&lt;MyData&gt;(group_name, <span class="stringliteral">&quot;data2&quot;</span>, {6, 6., <span class="stringliteral">&quot;6&quot;</span>});</div></div><!-- fragment --><h3>Reading properties</h3>
 <p>This section describes how to read properties under several different scenarios: (a) when specific properties are required, (b) when the consumer provides a default value for missing properties, and (c) when the consumer needs to inspect what properties are available.</p>
 <h4>Look up specific, <em>required</em> properties</h4>
 <p>In this case, the consumer of the properties is looking for one or more specific properties. It will ignore any other properties. More particularly, if those properties are missing, it is considered a runtime error and an exception is thrown.</p>
 <p>The error can be handled in one of two ways: simply let the generic exception generated by GeometryProperties propagate upward, or detect the missing property and throw an exception with a custom message. The example below shows both approaches.</p>
-<div class="fragment"><div class="line"><span class="keyword">const</span> IllustrationProperties&amp; properties = FunctionThatReturnsProperties();</div><div class="line"><span class="comment">// Looking for a Rgba of rgba colors named &quot;rgba&quot; - send generic error that</span></div><div class="line"><span class="comment">// the property set is missing the required property.</span></div><div class="line"><span class="keyword">const</span> Rgba rgba =</div><div class="line">    properties.GetProperty&lt;Rgba&gt;(<span class="stringliteral">&quot;MyGroup&quot;</span>, <span class="stringliteral">&quot;rgba&quot;</span>);</div><div class="line"></div><div class="line"><span class="comment">// Explicitly detect missing property and throw exception with custom message.</span></div><div class="line"><span class="keywordflow">if</span> (!properties.HasProperty(<span class="stringliteral">&quot;MyGroup&quot;</span>, <span class="stringliteral">&quot;rgba&quot;</span>)) {</div><div class="line">  <span class="keywordflow">throw</span> std::logic_error(</div><div class="line">      <span class="stringliteral">&quot;ThisClass: Missing the necessary &#39;rgba&#39; property; the object cannot be &quot;</span></div><div class="line">      <span class="stringliteral">&quot;rendered&quot;</span>);</div><div class="line">}</div><div class="line"><span class="comment">// Otherwise acquire value, confident that no exception will be thrown.</span></div><div class="line"><span class="keyword">const</span> Rgba rgba =</div><div class="line">    properties.GetProperty&lt;Rgba&gt;(<span class="stringliteral">&quot;MyGroup&quot;</span>, <span class="stringliteral">&quot;rgba&quot;</span>);</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>calls to <code><a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#aaaa9388bc0cffeef445272cc5234b087" title="Retrieves the typed value from this set of properties.">GetProperty()</a></code> always require the return type template value (e.g., <code><a class="el" href="classdrake_1_1geometry_1_1_rgba.html" title="Defines RGBA (red, green, blue, alpha) values on the range [0, 1].">Rgba</a></code>) to be specified in the call.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">const</span> IllustrationProperties&amp; properties = FunctionThatReturnsProperties();</div><div class="line"><span class="comment">// Looking for a Rgba of rgba colors named &quot;rgba&quot; - send generic error that</span></div><div class="line"><span class="comment">// the property set is missing the required property.</span></div><div class="line"><span class="keyword">const</span> Rgba rgba =</div><div class="line">    properties.GetProperty&lt;Rgba&gt;(<span class="stringliteral">&quot;MyGroup&quot;</span>, <span class="stringliteral">&quot;rgba&quot;</span>);</div><div class="line"></div><div class="line"><span class="comment">// Explicitly detect missing property and throw exception with custom message.</span></div><div class="line"><span class="keywordflow">if</span> (!properties.HasProperty(<span class="stringliteral">&quot;MyGroup&quot;</span>, <span class="stringliteral">&quot;rgba&quot;</span>)) {</div><div class="line">  <span class="keywordflow">throw</span> std::logic_error(</div><div class="line">      <span class="stringliteral">&quot;ThisClass: Missing the necessary &#39;rgba&#39; property; the object cannot be &quot;</span></div><div class="line">      <span class="stringliteral">&quot;rendered&quot;</span>);</div><div class="line">}</div><div class="line"><span class="comment">// Otherwise acquire value, confident that no exception will be thrown.</span></div><div class="line"><span class="keyword">const</span> Rgba rgba =</div><div class="line">    properties.GetProperty&lt;Rgba&gt;(<span class="stringliteral">&quot;MyGroup&quot;</span>, <span class="stringliteral">&quot;rgba&quot;</span>);</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>calls to <code><a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#aaaa9388bc0cffeef445272cc5234b087" title="Retrieves the typed value for the property (group_name, name) from this set of properties.">GetProperty()</a></code> always require the return type template value (e.g., <code><a class="el" href="classdrake_1_1geometry_1_1_rgba.html" title="Defines RGBA (red, green, blue, alpha) values on the range [0, 1].">Rgba</a></code>) to be specified in the call.</dd></dl>
 <h4>Look up specific properties with default property values</h4>
 <p>As with the previous case, the consumer is looking for one or more specific properties. However, in this case, the consumer provides a default value to use in case the target property is not defined. In this invocation, the template parameter need not be explicitly declared &ndash; the inferred return type will be the same as the default value.</p>
 <div class="fragment"><div class="line"><span class="keyword">const</span> IllustrationProperties&amp; properties = FunctionThatReturnsProperties();</div><div class="line"><span class="comment">// Looking for a Rgba of rgba colors named &quot;rgba&quot;.</span></div><div class="line"><span class="keyword">const</span> Rgba default_color{0.9, 0.9, 0.9};</div><div class="line"><span class="keyword">const</span> Rgba rgba =</div><div class="line">    properties.GetPropertyOrDefault(<span class="stringliteral">&quot;MyGroup&quot;</span>, <span class="stringliteral">&quot;rgba&quot;</span>, default_color);</div></div><!-- fragment --><p>Alternatively, the default value can be provided in one of the following forms:</p>
@@ -166,25 +166,35 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a228de14aac3d5f432178df9d0cc8aa43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c36bb4c5566a8316bc8b52601e49d27"><td class="memTemplParams" colspan="2">template&lt;typename ValueType &gt; </td></tr>
 <tr class="memitem:a5c36bb4c5566a8316bc8b52601e49d27"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#a5c36bb4c5566a8316bc8b52601e49d27">AddProperty</a> (const std::string &amp;group_name, const std::string &amp;name, const ValueType &amp;value)</td></tr>
-<tr class="memdesc:a5c36bb4c5566a8316bc8b52601e49d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a property with the given <code>name</code> and <code>value</code> to the the named property group.  <a href="#a5c36bb4c5566a8316bc8b52601e49d27">More...</a><br /></td></tr>
+<tr class="memdesc:a5c36bb4c5566a8316bc8b52601e49d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the named property (<code>group_name</code>, <code>name</code>) with the given <code>value</code>.  <a href="#a5c36bb4c5566a8316bc8b52601e49d27">More...</a><br /></td></tr>
 <tr class="separator:a5c36bb4c5566a8316bc8b52601e49d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad519098cc972ba24c36302f3290d2b06"><td class="memTemplParams" colspan="2">template&lt;typename ValueType &gt; </td></tr>
+<tr class="memitem:ad519098cc972ba24c36302f3290d2b06"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#ad519098cc972ba24c36302f3290d2b06">UpdateProperty</a> (const std::string &amp;group_name, const std::string &amp;name, const ValueType &amp;value)</td></tr>
+<tr class="memdesc:ad519098cc972ba24c36302f3290d2b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the named property (<code>group_name</code>, <code>name</code>) with the given <code>value</code>.  <a href="#ad519098cc972ba24c36302f3290d2b06">More...</a><br /></td></tr>
+<tr class="separator:ad519098cc972ba24c36302f3290d2b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa944be9be3bd2cdefdad5f3d56648408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#aa944be9be3bd2cdefdad5f3d56648408">AddPropertyAbstract</a> (const std::string &amp;group_name, const std::string &amp;name, const <a class="el" href="classdrake_1_1_abstract_value.html">AbstractValue</a> &amp;value)</td></tr>
-<tr class="memdesc:aa944be9be3bd2cdefdad5f3d56648408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a property with the given <code>name</code> and type-erased <code>value</code> to the the named property group.  <a href="#aa944be9be3bd2cdefdad5f3d56648408">More...</a><br /></td></tr>
+<tr class="memdesc:aa944be9be3bd2cdefdad5f3d56648408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the named property (<code>group_name</code>, <code>name</code>) with the given type-erased <code>value</code>.  <a href="#aa944be9be3bd2cdefdad5f3d56648408">More...</a><br /></td></tr>
 <tr class="separator:aa944be9be3bd2cdefdad5f3d56648408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c4c3542d53e235c4624e4f753692f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#ad9c4c3542d53e235c4624e4f753692f4">UpdatePropertyAbstract</a> (const std::string &amp;group_name, const std::string &amp;name, const <a class="el" href="classdrake_1_1_abstract_value.html">AbstractValue</a> &amp;value)</td></tr>
+<tr class="memdesc:ad9c4c3542d53e235c4624e4f753692f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the named property (<code>group_name</code>, <code>name</code>) with the given type-erased <code>value</code>.  <a href="#ad9c4c3542d53e235c4624e4f753692f4">More...</a><br /></td></tr>
+<tr class="separator:ad9c4c3542d53e235c4624e4f753692f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace6a963ab7442bf3f29d9ebacdc849ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#ace6a963ab7442bf3f29d9ebacdc849ca">HasProperty</a> (const std::string &amp;group_name, const std::string &amp;name) const</td></tr>
-<tr class="memdesc:ace6a963ab7442bf3f29d9ebacdc849ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports if the property exists in the group.  <a href="#ace6a963ab7442bf3f29d9ebacdc849ca">More...</a><br /></td></tr>
+<tr class="memdesc:ace6a963ab7442bf3f29d9ebacdc849ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports if the property (<code>group_name</code>, <code>name</code>) exists in the group.  <a href="#ace6a963ab7442bf3f29d9ebacdc849ca">More...</a><br /></td></tr>
 <tr class="separator:ace6a963ab7442bf3f29d9ebacdc849ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaa9388bc0cffeef445272cc5234b087"><td class="memTemplParams" colspan="2">template&lt;typename ValueType &gt; </td></tr>
 <tr class="memitem:aaaa9388bc0cffeef445272cc5234b087"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#aaaa9388bc0cffeef445272cc5234b087">GetProperty</a> (const std::string &amp;group_name, const std::string &amp;name) const</td></tr>
-<tr class="memdesc:aaaa9388bc0cffeef445272cc5234b087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the typed value from this set of properties.  <a href="#aaaa9388bc0cffeef445272cc5234b087">More...</a><br /></td></tr>
+<tr class="memdesc:aaaa9388bc0cffeef445272cc5234b087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the typed value for the property (<code>group_name</code>, <code>name</code>) from this set of properties.  <a href="#aaaa9388bc0cffeef445272cc5234b087">More...</a><br /></td></tr>
 <tr class="separator:aaaa9388bc0cffeef445272cc5234b087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73e2f97729521683e525ce0090c6c9b0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1_abstract_value.html">AbstractValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#a73e2f97729521683e525ce0090c6c9b0">GetPropertyAbstract</a> (const std::string &amp;group_name, const std::string &amp;name) const</td></tr>
-<tr class="memdesc:a73e2f97729521683e525ce0090c6c9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves that type-erased value from this set of properties.  <a href="#a73e2f97729521683e525ce0090c6c9b0">More...</a><br /></td></tr>
+<tr class="memdesc:a73e2f97729521683e525ce0090c6c9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the type-erased value for the property (<code>group_name</code>, <code>name</code>) from this set of properties.  <a href="#a73e2f97729521683e525ce0090c6c9b0">More...</a><br /></td></tr>
 <tr class="separator:a73e2f97729521683e525ce0090c6c9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b425641c9937dea89f553cabba9b186"><td class="memTemplParams" colspan="2">template&lt;typename ValueType &gt; </td></tr>
 <tr class="memitem:a7b425641c9937dea89f553cabba9b186"><td class="memTemplItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#a7b425641c9937dea89f553cabba9b186">GetPropertyOrDefault</a> (const std::string &amp;group_name, const std::string &amp;name, ValueType default_value) const</td></tr>
-<tr class="memdesc:a7b425641c9937dea89f553cabba9b186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the typed value from the set of properties (if it exists), otherwise returns the given default value.  <a href="#a7b425641c9937dea89f553cabba9b186">More...</a><br /></td></tr>
+<tr class="memdesc:a7b425641c9937dea89f553cabba9b186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the typed value for the property (<code>group_name</code>, <code>name</code>) from the set of properties (if it exists), otherwise returns the given default value.  <a href="#a7b425641c9937dea89f553cabba9b186">More...</a><br /></td></tr>
 <tr class="separator:a7b425641c9937dea89f553cabba9b186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221c35662fe3549e2fd6ca5457d70c0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1geometry_1_1_geometry_properties.html#a221c35662fe3549e2fd6ca5457d70c0c">RemoveProperty</a> (const std::string &amp;group_name, const std::string &amp;name)</td></tr>
+<tr class="memdesc:a221c35662fe3549e2fd6ca5457d70c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the (<code>group_name</code>, <code>name</code>) property (if it exists).  <a href="#a221c35662fe3549e2fd6ca5457d70c0c">More...</a><br /></td></tr>
+<tr class="separator:a221c35662fe3549e2fd6ca5457d70c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -368,7 +378,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a property with the given <code>name</code> and <code>value</code> to the the named property group. </p>
+<p>Adds the named property (<code>group_name</code>, <code>name</code>) with the given <code>value</code>. </p>
 <p>Adds the group if it doesn't already exist.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -380,7 +390,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::logic_error</td><td>if <code>name</code> already exists in the group <code>group_name</code>. </td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>if the property already exists. </td></tr>
   </table>
   </dd>
 </dl>
@@ -425,7 +435,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a property with the given <code>name</code> and type-erased <code>value</code> to the the named property group. </p>
+<p>Adds the named property (<code>group_name</code>, <code>name</code>) with the given type-erased <code>value</code>. </p>
 <p>Adds the group if it doesn't already exist.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -437,7 +447,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::logic_error</td><td>if <code>name</code> already exists in the group <code>group_name</code>. </td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>if the property already exists. </td></tr>
   </table>
   </dd>
 </dl>
@@ -543,7 +553,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the typed value from this set of properties. </p>
+<p>Retrieves the typed value for the property (<code>group_name</code>, <code>name</code>) from this set of properties. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group_name</td><td>The name of the group to which the property belongs. </td></tr>
@@ -593,7 +603,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves that type-erased value from this set of properties. </p>
+<p>Retrieves the type-erased value for the property (<code>group_name</code>, <code>name</code>) from this set of properties. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group_name</td><td>The name of the group to which the property belongs. </td></tr>
@@ -642,8 +652,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the typed value from the set of properties (if it exists), otherwise returns the given default value. </p>
-<p>The given <code>default_value</code> is returned only if the group or property are missing. If the property exists and is of a <em>different</em> type, an exception will be thrown. If it is of the expected type, the stored value will be returned.</p>
+<p>Retrieves the typed value for the property (<code>group_name</code>, <code>name</code>) from the set of properties (if it exists), otherwise returns the given default value. </p>
+<p>The given <code>default_value</code> is returned only if the property is missing. If the property exists and is of a <em>different</em> type, an exception will be thrown. If it is of the expected type, the stored value will be returned.</p>
 <p>Generally, it is unnecessary to explicitly declare the <code>ValueType</code> of the property value; it will be inferred from the provided default value. Sometimes it is convenient to provide the default value in a form that can be implicitly converted to the final type. In that case, it is necessary to explicitly declare the desired <code>ValueType</code> so the compiler does not infer the wrong type, e.g.:</p>
 <div class="fragment"><div class="line"><span class="comment">// Note the _integer_ value as default value.</span></div><div class="line"><span class="keyword">const</span> <span class="keywordtype">double</span> my_value = properties.GetPropertyOrDefault&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;g&quot;</span>, <span class="stringliteral">&quot;p&quot;</span>, 2);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -708,7 +718,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reports if the property exists in the group. </p>
+<p>Reports if the property (<code>group_name</code>, <code>name</code>) exists in the group. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group_name</td><td>The name of the group to which the tested property should belong. </td></tr>
@@ -788,6 +798,145 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a221c35662fe3549e2fd6ca5457d70c0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a221c35662fe3549e2fd6ca5457d70c0c">&#9670;&nbsp;</a></span>RemoveProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RemoveProperty </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>group_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the (<code>group_name</code>, <code>name</code>) property (if it exists). </p>
+<p>Upon completion the property will not be in the set. </p><dl class="section return"><dt>Returns</dt><dd><code>true</code> if the property existed prior to the call. </dd></dl>
+
+</div>
+</div>
+<a id="ad519098cc972ba24c36302f3290d2b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad519098cc972ba24c36302f3290d2b06">&#9670;&nbsp;</a></span>UpdateProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UpdateProperty </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>group_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ValueType &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the named property (<code>group_name</code>, <code>name</code>) with the given <code>value</code>. </p>
+<p>If the property doesn't already exist, it is equivalent to calling <code>AddProperty</code>. If the property does exist, its value (which must have the same type as <code>value</code>) will be replaced.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group_name</td><td>The group name. </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the property &ndash; must be unique in the group. </td></tr>
+    <tr><td class="paramname">value</td><td>The value to assign to the property. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>if the property exists with a different type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ValueType</td><td>The type of data to store with the attribute &ndash; must be copy constructible or cloneable (see <a class="el" href="classdrake_1_1_value.html" title="A container class for an arbitrary type T (with some restrictions).">Value</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad9c4c3542d53e235c4624e4f753692f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c4c3542d53e235c4624e4f753692f4">&#9670;&nbsp;</a></span>UpdatePropertyAbstract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UpdatePropertyAbstract </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>group_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1_abstract_value.html">AbstractValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the named property (<code>group_name</code>, <code>name</code>) with the given type-erased <code>value</code>. </p>
+<p>If the property doesn't already exist, it is equivalent to calling <code>AddPropertyAbstract</code>. If the property does exist, its value (which must have the same type as <code>value</code>) will be replaced.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group_name</td><td>The group name. </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the property &ndash; must be unique in the group. </td></tr>
+    <tr><td class="paramname">value</td><td>The value to assign to the property. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>if the property exists with a different type. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
