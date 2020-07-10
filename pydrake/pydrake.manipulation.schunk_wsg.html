@@ -205,9 +205,7 @@ abstract values.</p>
 represented as the desired distance between the fingers in meters, and
 one for the commanded force limit. The commanded position and force
 limit are scalars (BasicVector&lt;double&gt; of size 1).</p>
-<p>&#64;system{ SchunkWsgCommandReceiver, &#64;input_port{command_message},
-&#64;output_port{position} &#64;output_port{force_limit} }</p>
-<dl class="method">
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">command_message&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>SchunkWsgCommandReceiver</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; position</td></tr><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; force_limit</td></tr></table></td></tr></table><dl class="method">
 <dt id="pydrake.manipulation.schunk_wsg.SchunkWsgCommandReceiver.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.manipulation.schunk_wsg.SchunkWsgCommandReceiver</em>, <em>initial_position: float = 0.02</em>, <em>initial_force: float = 40.0</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.manipulation.schunk_wsg.SchunkWsgCommandReceiver.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
@@ -241,9 +239,7 @@ two input ports: one for the commanded finger position represented as
 the desired signed distance between the fingers in meters, and one for
 the commanded force limit. The commanded position and force limit are
 scalars (BasicVector&lt;double&gt; of size 1).</p>
-<p>&#64;system{ SchunkWsgCommandSender, &#64;input_port{position}
-&#64;input_port{force_limit}, &#64;output_port{lcmt_schunk_wsg_command} }</p>
-<dl class="method">
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">position&rarr;</td></tr><tr><td align=right style="padding:5px 0px 5px 0px">force_limit&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>SchunkWsgCommandSender</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; lcmt_schunk_wsg_command</td></tr></table></td></tr></table><dl class="method">
 <dt id="pydrake.manipulation.schunk_wsg.SchunkWsgCommandSender.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.manipulation.schunk_wsg.SchunkWsgCommandSender</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.manipulation.schunk_wsg.SchunkWsgCommandSender.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -273,10 +269,7 @@ scalars (BasicVector&lt;double&gt; of size 1).</p>
 position control mode adding a discrete-derivative to estimate the
 desired velocity from the desired position commands. It is a thin
 wrapper around SchunkWsgPdController.</p>
-<p>&#64;system{ SchunkWSGPositionController, &#64;input_port{desired_position}
-&#64;input_port{force_limit} &#64;input_port{state},
-&#64;output_port{generalized_force} &#64;output_port{grip_force} }</p>
-<div class="admonition seealso">
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">desired_position&rarr;</td></tr><tr><td align=right style="padding:5px 0px 5px 0px">force_limit&rarr;</td></tr><tr><td align=right style="padding:5px 0px 5px 0px">state&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>SchunkWSGPositionController</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; generalized_force</td></tr><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; grip_force</td></tr></table></td></tr></table><div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <p class="last">SchunkWsgPdController</p>
 </div>
@@ -327,9 +320,7 @@ limited tuning in simulation with a kuka picking up small objects.</p>
 Has two output ports: one for the measured state of the gripper,
 represented as the signed distance between the fingers in meters and
 its corresponding velocity, and one for the measured force.</p>
-<p>&#64;system{ SchunkWsgStatusReceiver, &#64;input_port{lcmt_schunk_wsg_status},
-&#64;output_port{state} &#64;output_port{force} }</p>
-<dl class="method">
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">lcmt_schunk_wsg_status&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>SchunkWsgStatusReceiver</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; state</td></tr><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; force</td></tr></table></td></tr></table><dl class="method">
 <dt id="pydrake.manipulation.schunk_wsg.SchunkWsgStatusReceiver.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.manipulation.schunk_wsg.SchunkWsgStatusReceiver</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.manipulation.schunk_wsg.SchunkWsgStatusReceiver.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -358,9 +349,7 @@ its corresponding velocity, and one for the measured force.</p>
 <p>Sends lcmt_schunk_wsg_status messages for a Schunk WSG. This system
 has one input port for the current state of the WSG, and one optional
 input port for the measured gripping force.</p>
-<p>&#64;system{ SchunkStatusSender, &#64;input_port{state} &#64;input_port{force},
-&#64;output_port{lcmt_schunk_wsg_status} }</p>
-<p>The state input is a BasicVector&lt;double&gt; of size 2 – with one
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">state&rarr;</td></tr><tr><td align=right style="padding:5px 0px 5px 0px">force&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>SchunkStatusSender</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; lcmt_schunk_wsg_status</td></tr></table></td></tr></table><p>The state input is a BasicVector&lt;double&gt; of size 2 – with one
 position and one velocity – representing the distance between the
 fingers (positive implies non-penetration).</p>
 <dl class="method">

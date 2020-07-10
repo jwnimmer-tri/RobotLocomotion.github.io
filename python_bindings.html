@@ -67,12 +67,6 @@ installed as a single package called <code class="docutils literal"><span class=
 Please uninstall Anaconda or remove the Anaconda <code class="docutils literal"><span class="pre">bin</span></code> directory from the
 <code class="docutils literal"><span class="pre">PATH</span></code> before building or using the Drake Python bindings.</p>
 </div>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">On macOS, Drake only supports Python 3.8, which is located at
-<code class="docutils literal"><span class="pre">/usr/local/opt/python&#64;3.8/bin/python3</span></code> and is not usually on the
-<code class="docutils literal"><span class="pre">PATH</span></code>.</p>
-</div>
 <div class="section" id="installation">
 <span id="python-bindings-binary"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Before attempting installation, please review the
@@ -95,6 +89,10 @@ tar -xvzf drake.tar.gz -C /opt
 <p>Next, ensure that your <code class="docutils literal"><span class="pre">PYTHONPATH</span></code> is properly configured.</p>
 <p><em>Ubuntu 18.04 (Bionic):</em></p>
 <div class="highlight-shell"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span>/opt/drake/lib/python3.6/site-packages:<span class="si">${</span><span class="nv">PYTHONPATH</span><span class="si">}</span>
+</pre></div>
+</div>
+<p><em>Ubuntu 20.04 (Focal):</em></p>
+<div class="highlight-shell"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span>/opt/drake/lib/python3.8/site-packages:<span class="si">${</span><span class="nv">PYTHONPATH</span><span class="si">}</span>
 </pre></div>
 </div>
 <p><em>macOS:</em></p>
@@ -165,6 +163,11 @@ MOSEK, without building tests:</p>
 <span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span><span class="si">${</span><span class="nv">PWD</span><span class="si">}</span>/install/lib/python3.6/site-packages:<span class="si">${</span><span class="nv">PYTHONPATH</span><span class="si">}</span>
 </pre></div>
 </div>
+<p><em>Ubuntu 20.04 (Focal):</em></p>
+<div class="highlight-shell"><div class="highlight"><pre><span></span><span class="nb">cd</span> drake-build
+<span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span><span class="si">${</span><span class="nv">PWD</span><span class="si">}</span>/install/lib/python3.8/site-packages:<span class="si">${</span><span class="nv">PYTHONPATH</span><span class="si">}</span>
+</pre></div>
+</div>
 <p><em>macOS:</em></p>
 <div class="highlight-shell"><div class="highlight"><pre><span></span><span class="nb">cd</span> drake-build
 <span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span><span class="si">${</span><span class="nv">PWD</span><span class="si">}</span>/install/lib/python3.8/site-packages:<span class="si">${</span><span class="nv">PYTHONPATH</span><span class="si">}</span>
@@ -178,12 +181,7 @@ MOSEK, without building tests:</p>
 <h3>Check Installation<a class="headerlink" href="#check-installation" title="Permalink to this headline">¶</a></h3>
 <p>After following the above install steps, check to ensure you can import
 <code class="docutils literal"><span class="pre">pydrake</span></code>.</p>
-<p><em>Ubuntu 18.04 (Bionic):</em></p>
 <div class="highlight-shell"><div class="highlight"><pre><span></span>python3 -c <span class="s1">&#39;import pydrake; print(pydrake.__file__)&#39;</span>
-</pre></div>
-</div>
-<p><em>macOS:</em></p>
-<div class="highlight-shell"><div class="highlight"><pre><span></span>/usr/local/opt/python@3.8/bin/python3 -c <span class="s1">&#39;import pydrake; print(pydrake.__file__)&#39;</span>
 </pre></div>
 </div>
 <div class="admonition note" id="using-python-mac-os-path">

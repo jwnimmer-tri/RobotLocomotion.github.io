@@ -249,5 +249,6 @@ var group__systems =
       [ "AddMultibodyPlantSceneGraph", "classdrake_1_1multibody_1_1_multibody_plant.html#aad665c93a561c6ccbe2bba07d1d6193a", null ],
       [ "MultibodyPlant", "classdrake_1_1multibody_1_1_multibody_plant.html#a47a63154823dffd5838329527aafbd58", null ],
       [ "MultibodyPlantTester", "classdrake_1_1multibody_1_1_multibody_plant.html#a42efef893a4d8eed1d593caff328f599", null ]
-    ] ]
+    ] ],
+    [ "GenerateHtml", "group__systems.html#ga3e4e6a211dd145828511de57c117c5aa", null ]
 ];

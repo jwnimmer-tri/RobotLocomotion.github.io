@@ -105,12 +105,25 @@ $(document).ready(function(){initNavTree('classdrake_1_1manipulation_1_1kinova__
 <p>This system has many vector-valued input ports. State input ports (q, v) will have (num_joints + num_fingers) * 2 elements. Torque, torque external and current input ports will have num_joints + num_fingers elements. If the torque, torque_external, or current input ports are not connected, the output message will use zeros. Finger velocities will be translated to the values used by the Kinova SDK from values appropriate for the finger joints in the Jaco description (see <a class="el" href="jaco__constants_8h.html">jaco_constants.h</a>).</p>
 <p>This system has one abstract-valued output port of type lcmt_jaco_status.</p>
 <p>This system is presently only used in simulation. The robot hardware drivers publish directly to LCM and do not make use of this system.</p>
-<p>@system { <a class="el" href="classdrake_1_1manipulation_1_1kinova__jaco_1_1_jaco_status_sender.html" title="Creates and outputs lcmt_jaco_status messages.">JacoStatusSender</a>, </p>
-<p>state &rarr; </p>
-<p>torque (optional) &rarr; </p>
-<p>torque_external (optional) &rarr; </p>
-<p>current (optional) &rarr; </p>
-<p>&rarr; lcmt_jaco_status } </p><dl class="section see"><dt>See also</dt><dd><code>lcmt_jaco_status.lcm</code> for additional documentation. </dd></dl>
+<table align="center" cellpadding="0" cellspacing="0">
+<tr align="center">
+<td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
+<tr>
+<td align="right" style="padding:5px 0px 5px 0px">state&rarr;</td></tr>
+<tr>
+<td align="right" style="padding:5px 0px 5px 0px">torque (optional)&rarr;</td></tr>
+<tr>
+<td align="right" style="padding:5px 0px 5px 0px">torque_external (optional)&rarr;</td></tr>
+<tr>
+<td align="right" style="padding:5px 0px 5px 0px">current (optional)&rarr;</td></tr>
+</table>
+</td><td align="center" style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor="#F0F0F0"><a class="el" href="classdrake_1_1manipulation_1_1kinova__jaco_1_1_jaco_status_sender.html" title="Creates and outputs lcmt_jaco_status messages.">JacoStatusSender</a></td><td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" style="padding:5px 0px 5px 0px">&rarr; lcmt_jaco_status</td></tr>
+</table>
+</td></tr>
+</table>
+<dl class="section see"><dt>See also</dt><dd><code>lcmt_jaco_status.lcm</code> for additional documentation. </dd></dl>
 </div>
 <p><code>#include &lt;drake/manipulation/kinova_jaco/jaco_status_sender.h&gt;</code></p>
 <table class="memberdecls">

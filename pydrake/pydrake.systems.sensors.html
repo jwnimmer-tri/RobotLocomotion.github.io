@@ -1265,11 +1265,7 @@ the color/depth/label constructor is used.</p>
 <p>A meta-sensor that houses RGB, depth, and label cameras, producing
 their corresponding images based on the contents of the
 geometry::SceneGraph.</p>
-<p>&#64;system{RgbdSensor, &#64;input_port{geometry_query},
-&#64;output_port{color_image} &#64;output_port{depth_image_32f}
-&#64;output_port{depth_image_16u} &#64;output_port{label_image}
-&#64;output_port{X_WB} }</p>
-<p>The following text uses terminology and conventions from CameraInfo.
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">geometry_query&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>RgbdSensor</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; color_image</td></tr><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; depth_image_32f</td></tr><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; depth_image_16u</td></tr><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; label_image</td></tr><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; X_WB</td></tr></table></td></tr></table><p>The following text uses terminology and conventions from CameraInfo.
 Please review its documentation.</p>
 <p>This class uses the following frames:</p>
 <ul class="simple">
@@ -1328,7 +1324,7 @@ object’s surface.</p>
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.sensors.RgbdSensor.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>__init__(self: pydrake.systems.sensors.RgbdSensor, parent_id: pydrake.geometry.FrameId, X_PB: pydrake.math.RigidTransform_[float], color_properties: pydrake.geometry.render.CameraProperties, depth_properties: pydrake.geometry.render.DepthCameraProperties, camera_poses: pydrake.systems.sensors.RgbdSensor.CameraPoses = &lt;pydrake.systems.sensors.RgbdSensor.CameraPoses object at 0x7f8069e1f570&gt;, show_window: bool = False) -&gt; None</li>
+<li>__init__(self: pydrake.systems.sensors.RgbdSensor, parent_id: pydrake.geometry.FrameId, X_PB: pydrake.math.RigidTransform_[float], color_properties: pydrake.geometry.render.CameraProperties, depth_properties: pydrake.geometry.render.DepthCameraProperties, camera_poses: pydrake.systems.sensors.RgbdSensor.CameraPoses = &lt;pydrake.systems.sensors.RgbdSensor.CameraPoses object at 0x7fc8c56975b0&gt;, show_window: bool = False) -&gt; None</li>
 </ol>
 <p>Constructs an RgbdSensor whose frame <code class="docutils literal"><span class="pre">B</span></code> is rigidly affixed to the
 frame P, indicated by <code class="docutils literal"><span class="pre">parent_id</span></code>, and with the given “simple”
@@ -1357,7 +1353,7 @@ be aligned and coincident.</dd>
 rendering is executed. The default is false.</dd>
 </dl>
 <ol class="arabic simple" start="2">
-<li>__init__(self: pydrake.systems.sensors.RgbdSensor, parent_id: pydrake.geometry.FrameId, X_PB: pydrake.math.RigidTransform_[float], properties: pydrake.geometry.render.DepthCameraProperties, camera_poses: pydrake.systems.sensors.RgbdSensor.CameraPoses = &lt;pydrake.systems.sensors.RgbdSensor.CameraPoses object at 0x7f8069e1f5b0&gt;, show_window: bool = False) -&gt; None</li>
+<li>__init__(self: pydrake.systems.sensors.RgbdSensor, parent_id: pydrake.geometry.FrameId, X_PB: pydrake.math.RigidTransform_[float], properties: pydrake.geometry.render.DepthCameraProperties, camera_poses: pydrake.systems.sensors.RgbdSensor.CameraPoses = &lt;pydrake.systems.sensors.RgbdSensor.CameraPoses object at 0x7fc8c56975f0&gt;, show_window: bool = False) -&gt; None</li>
 </ol>
 <p>Constructs an RgbdSensor in the same way as the above overload, but
 using the <code class="docutils literal"><span class="pre">CameraProperties</span></code> portion of <code class="docutils literal"><span class="pre">properties</span></code> for color
@@ -1464,11 +1460,7 @@ for <code class="docutils literal"><span class="pre">X_WB</span></code>.</p>
 <dd><p>Bases: <a class="reference internal" href="pydrake.systems.framework.html#pydrake.systems.framework.Diagram_[float]" title="pydrake.systems.framework.Diagram_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.systems.framework.Diagram_[float]</span></code></a></p>
 <p>Wraps a continuous RgbdSensor with a zero-order hold to create a
 discrete sensor.</p>
-<p>&#64;system{%RgbdSensorDiscrete, &#64;input_port{geometry_query},
-&#64;output_port{color_image} &#64;output_port{depth_image_32f}
-&#64;output_port{depth_image_16u} &#64;output_port{label_image}
-&#64;output_port{X_WB} }</p>
-<dl class="method">
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">geometry_query&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>RgbdSensorDiscrete</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; color_image</td></tr><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; depth_image_32f</td></tr><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; depth_image_16u</td></tr><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; label_image</td></tr><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; X_WB</td></tr></table></td></tr></table><dl class="method">
 <dt id="pydrake.systems.sensors.RgbdSensorDiscrete.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.systems.sensors.RgbdSensorDiscrete</em>, <em>sensor: pydrake.systems.sensors.RgbdSensor</em>, <em>period: float = 0.03333333333333333</em>, <em>render_label_image: bool = True</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.systems.sensors.RgbdSensorDiscrete.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Constructs a diagram containing a (non-registered) RgbdSensor that

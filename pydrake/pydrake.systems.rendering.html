@@ -244,9 +244,7 @@ derivatives of x-y-z rotation.</p>
 <p>A direct-feedthrough system that converts a vector of joint positions
 directly to a geometry::FramePoseVector&lt;T&gt; to behave like a
 MultibodyPlant::get_geometry_pose_output_port().</p>
-<p>&#64;system{ MultibodyPositionToGeometryPose, &#64;input_port{position},
-&#64;output_port{geometry_pose} }</p>
-<p>The position input must be a vector whose length matches either the
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">position&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>MultibodyPositionToGeometryPose</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; geometry_pose</td></tr></table></td></tr></table><p>The position input must be a vector whose length matches either the
 number of positions in the MultibodyPlant or the number of states
 (based on the optional argument in the constructor). This option to
 pass the full state vector is provided only for convenience – only

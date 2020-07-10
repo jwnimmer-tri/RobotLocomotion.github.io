@@ -110,15 +110,19 @@ class drake::systems::PortSwitch&lt; T &gt;</h3>
 architecture", this means that entire sub-diagrams can potentially be added with minimal runtime cost (their outputs will not be evaluated until they are selected). Just remember that their state dynamics <em>will</em> still be evaluated when the diagram's dynamics are evaluated (e.g. during simulation), and their output ports could be evaluated via other connections.</p>
 <table align="center" cellpadding="0" cellspacing="0">
 <tr align="center">
-<td><table cellspacing="0" cellpadding="0">
+<td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
 <tr>
-<td align="right" style="padding:5px 0px 5px 0px">port_selector &rarr; </td></tr>
+<td align="right" style="padding:5px 0px 5px 0px">port_selector&rarr;</td></tr>
 <tr>
-<td align="right" style="padding:5px 0px 5px 0px">value0 (with assigned port name) &rarr; @inputport{...} @inputport{valueN (with assigned port name)}</td></tr>
+<td align="right" style="padding:5px 0px 5px 0px">value0 (with assigned port name)&rarr;</td></tr>
+<tr>
+<td align="right" style="padding:5px 0px 5px 0px">...&rarr;</td></tr>
+<tr>
+<td align="right" style="padding:5px 0px 5px 0px">valueN (with assigned port name)&rarr;</td></tr>
 </table>
-</td><td align="center" style="border:solid;padding-left:20px;padding-right:20px" bgcolor="#F0F0F0"><a class="el" href="classdrake_1_1systems_1_1_port_switch.html" title="A simple system that passes through the value from just one of its input ports to the output.">PortSwitch</a></td><td><table cellspacing="0" cellpadding="0">
+</td><td align="center" style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor="#F0F0F0"><a class="el" href="classdrake_1_1systems_1_1_port_switch.html" title="A simple system that passes through the value from just one of its input ports to the output.">PortSwitch</a></td><td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
 <tr>
-<td align="left" style="padding:5px 0px 5px 0px">&rarr; value </td></tr>
+<td align="left" style="padding:5px 0px 5px 0px">&rarr; value</td></tr>
 </table>
 </td></tr>
 </table>

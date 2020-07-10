@@ -1,5 +1,10 @@
 var NAVTREEINDEX34 =
 {
+"classdrake_1_1trajectories_1_1_bspline_trajectory.html#afb31b9e4198667d6209f223d4da81d6e":[3,0,0,15,0,11],
+"classdrake_1_1trajectories_1_1_bspline_trajectory.html#aff77c2afe03fcd56388b20d75726e9fe":[3,0,0,15,0,15],
+"classdrake_1_1trajectories_1_1_exponential_plus_piecewise_polynomial.html":[3,0,0,15,1],
+"classdrake_1_1trajectories_1_1_exponential_plus_piecewise_polynomial.html#a19b632df0f98f9aaf224e534fac69ec8":[3,0,0,15,1,13],
+"classdrake_1_1trajectories_1_1_exponential_plus_piecewise_polynomial.html#a1b0dc2e082a27d735c084f0c39c47bad":[3,0,0,15,1,10],
 "classdrake_1_1trajectories_1_1_exponential_plus_piecewise_polynomial.html#a489f89c546fea3e35bac6689e00be0db":[3,0,0,15,1,1],
 "classdrake_1_1trajectories_1_1_exponential_plus_piecewise_polynomial.html#a518b6f39638b5dcca07dd2f721c7ac70":[3,0,0,15,1,3],
 "classdrake_1_1trajectories_1_1_exponential_plus_piecewise_polynomial.html#a8743b4bccdaf5d24987b1f76403bbe41":[3,0,0,15,1,6],
@@ -244,10 +249,5 @@ var NAVTREEINDEX34 =
 "constants_8h.html#af8777bc10296f9d39d52753861110e26abab0767e88027de9944aa55c24c8387a":[4,0,0,1,9,0,0],
 "constants_8h.html#af8777bc10296f9d39d52753861110e26af460a96ab20647996c15854794763384":[4,0,0,1,9,0,1],
 "constraint_8h.html":[4,0,0,10,7],
-"constraint__doxygen_8h.html":[4,0,0,8,1,0],
-"constraint__problem__data_8h.html":[4,0,0,8,1,1],
-"constraint__relaxing__ik_8h.html":[4,0,0,6,3,0],
-"constraint__solver_8h.html":[4,0,0,8,1,2],
-"contact__jacobians_8h.html":[4,0,0,8,7,1],
-"contact__model__doxygen_8h.html":[4,0,0,8,7,2]
+"constraint__doxygen_8h.html":[4,0,0,8,1,0]
 };

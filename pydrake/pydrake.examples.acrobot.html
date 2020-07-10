@@ -188,9 +188,7 @@
 <em class="property">class </em><code class="descclassname">pydrake.examples.acrobot.</code><code class="descname">AcrobotGeometry</code><a class="headerlink" href="#pydrake.examples.acrobot.AcrobotGeometry" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydrake.systems.framework.html#pydrake.systems.framework.LeafSystem_[float]" title="pydrake.systems.framework.LeafSystem_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.systems.framework.LeafSystem_[float]</span></code></a></p>
 <p>Expresses an AcrobotPlant’s geometry to a SceneGraph.</p>
-<p>&#64;system{AcrobotGeometry, &#64;input_port{state},
-&#64;output_port{geometry_pose} }</p>
-<p>This class has no public constructor; instead use the AddToBuilder()
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">state&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>AcrobotGeometry</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; geometry_pose</td></tr></table></td></tr></table><p>This class has no public constructor; instead use the AddToBuilder()
 static method to create and add it to a DiagramBuilder directly.</p>
 <dl class="attribute">
 <dt id="pydrake.examples.acrobot.AcrobotGeometry.__init__">
@@ -497,9 +495,7 @@ AcrobotGeometry system that is owned by the <code class="docutils literal"><span
 <p>The Acrobot - a canonical underactuated system as described in &lt;a
 href=”<a class="reference external" href="http://underactuated.mit.edu/underactuated.html?chapter=3">http://underactuated.mit.edu/underactuated.html?chapter=3</a>”&gt;Chapter
 3 of Underactuated Robotics&lt;/a&gt;.</p>
-<p>&#64;system{ AcrobotPlant, &#64;input_port{elbow_torque},
-&#64;output_port{acrobot_state} }</p>
-<dl class="method">
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">elbow_torque&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>AcrobotPlant</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; acrobot_state</td></tr></table></td></tr></table><dl class="method">
 <dt id="pydrake.examples.acrobot.AcrobotPlant.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.examples.acrobot.AcrobotPlant</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.examples.acrobot.AcrobotPlant.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Constructs the plant. The parameters of the system are stored as
@@ -511,14 +507,10 @@ Parameters in the Context (see acrobot_params_named_vector.yaml).</p>
 <code class="descname">DynamicsBiasTerm</code><span class="sig-paren">(</span><em>self: pydrake.examples.acrobot.AcrobotPlant, arg0: pydrake.systems.framework.Context_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[2, 1]]<a class="headerlink" href="#pydrake.examples.acrobot.AcrobotPlant.DynamicsBiasTerm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manipulator equation of Acrobot: M(q)q̈ + bias(q,q̇) = B*u.</p>
 <ul class="simple">
-<li>M[2x2] is the mass matrix.</li>
+<li>M[2x2] is the mass matrix. - bias[2x1] includes the Coriolis term,</li>
 </ul>
-<blockquote>
-<div><ul class="simple">
-<li>bias[2x1] includes the Coriolis term, gravity term and the damping term,
-i.e. bias[2x1] = C(q,v)*v - τ_g(q) + [b1*q̇₁;b2*q̇₂].</li>
-</ul>
-</div></blockquote>
+<p>gravity term and the damping term, i.e. bias[2x1] = C(q,v)*v - τ_g(q)
++ [b1*q̇₁;b2*q̇₂].</p>
 </dd></dl>
 
 <dl class="method">
@@ -567,9 +559,7 @@ parameters, which Spong used in his paper. In contrast, it is
 difficult to find a functional set of gains to stabilize the robot
 about its upright fixed point using the parameters of the physical
 robot we have in lab.</p>
-<p>&#64;system{ AcrobotSpongController, &#64;input_port{acrobot_state},
-&#64;output_port{elbow_torque} }</p>
-<dl class="method">
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">acrobot_state&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>AcrobotSpongController</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; elbow_torque</td></tr></table></td></tr></table><dl class="method">
 <dt id="pydrake.examples.acrobot.AcrobotSpongController.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.examples.acrobot.AcrobotSpongController</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.examples.acrobot.AcrobotSpongController.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>

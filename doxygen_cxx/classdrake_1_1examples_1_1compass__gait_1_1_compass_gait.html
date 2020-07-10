@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('classdrake_1_1examples_1_1compass__gai
 class drake::examples::compass_gait::CompassGait&lt; T &gt;</h3>
 
 <p>Dynamical representation of the idealized hybrid dynamics of a "compass
-   gait", as described in <a href="http://underactuated.mit.edu/underactuated.html?chapter=simple_legs">http://underactuated.mit.edu/underactuated.html?chapter=simple_legs</a> . </p>
+gait", as described in <a href="http://underactuated.mit.edu/underactuated.html?chapter=simple_legs">http://underactuated.mit.edu/underactuated.html?chapter=simple_legs</a> . </p>
 <p>This implementation has two additional state variables that are not required in the mathematical model:</p>
 <ul>
 <li>a discrete state for the position of the stance toe along the ramp</li>
@@ -113,16 +113,18 @@ class drake::examples::compass_gait::CompassGait&lt; T &gt;</h3>
 </ul>
 <p>These are helpful for outputting the floating-base model coordinate, e.g. for visualization.</p>
 <dl class="section note"><dt>Note</dt><dd>This model only supports walking downhill on the ramp, because that restriction enables a clean / numerically robust implementation of the foot collision witness function that avoids fall detection on the "foot
-   scuffing" collision.</dd></dl>
+scuffing" collision.</dd></dl>
 <table align="center" cellpadding="0" cellspacing="0">
 <tr align="center">
-<td><table cellspacing="0" cellpadding="0">
+<td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
 <tr>
-<td align="right" style="padding:5px 0px 5px 0px">hip_torque &rarr;</td></tr>
+<td align="right" style="padding:5px 0px 5px 0px">hip_torque&rarr;</td></tr>
 </table>
-</td><td align="center" style="border:solid;padding-left:20px;padding-right:20px" bgcolor="#F0F0F0"><a class="el" href="classdrake_1_1examples_1_1compass__gait_1_1_compass_gait.html" title="Dynamical representation of the idealized hybrid dynamics of a &quot;compass    gait&quot;, as described in htt...">CompassGait</a></td><td><table cellspacing="0" cellpadding="0">
+</td><td align="center" style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor="#F0F0F0"><a class="el" href="classdrake_1_1examples_1_1compass__gait_1_1_compass_gait.html" title="Dynamical representation of the idealized hybrid dynamics of a &quot;compass gait&quot;, as described in http:/...">CompassGait</a></td><td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
 <tr>
-<td align="left" style="padding:5px 0px 5px 0px">&rarr; minimal_state, floating_base_state </td></tr>
+<td align="left" style="padding:5px 0px 5px 0px">&rarr; minimal_state</td></tr>
+<tr>
+<td align="left" style="padding:5px 0px 5px 0px">&rarr; floating_base_state</td></tr>
 </table>
 </td></tr>
 </table>
@@ -1348,7 +1350,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Manipulator equation of <a class="el" href="classdrake_1_1examples_1_1compass__gait_1_1_compass_gait.html" title="Dynamical representation of the idealized hybrid dynamics of a &quot;compass    gait&quot;, as described in htt...">CompassGait</a>: M(q)v̇ + bias(q,v) = 0.</p>
+<p>Manipulator equation of <a class="el" href="classdrake_1_1examples_1_1compass__gait_1_1_compass_gait.html" title="Dynamical representation of the idealized hybrid dynamics of a &quot;compass gait&quot;, as described in http:/...">CompassGait</a>: M(q)v̇ + bias(q,v) = 0.</p>
 <ul>
 <li>M is the 2x2 mass matrix.</li>
 <li>bias is a 2x1 vector that includes the Coriolis term and gravity term, i.e. bias = C(q,v)*v - τ_g(q). </li>

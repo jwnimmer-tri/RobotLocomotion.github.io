@@ -189,9 +189,10 @@ MultibodyPlant.  Any positions that are not associated with joints (e.g.
 floating-base “mobilizers”) are held constant at the default value
 obtained from robot.CreateDefaultContext().</p>
 <dl class="docutils">
-<dt>&#64;system{ JointSliders,</dt>
-<dd>, # no input ports
-&#64;output_port{positions} }</dd>
+<dt>System YAML</dt>
+<dd>name: JointSliders
+output_ports:
+- positions</dd>
 </dl>
 <dl class="method">
 <dt id="pydrake.manipulation.simple_ui.JointSliders.__init__">
@@ -285,10 +286,11 @@ values in q.</p>
 <p>Adds buttons to open/close the Schunk WSG gripper to an existing Tkinter
 window.</p>
 <dl class="docutils">
-<dt>&#64;system{ SchunkWsgButtons,</dt>
-<dd>, # no input ports
-&#64;output_port{position}
-&#64;output_port{max_force} }</dd>
+<dt>System YAML</dt>
+<dd>name: SchunkWsgButtons
+output_ports:
+- position
+- max_force</dd>
 </dl>
 <dl class="method">
 <dt id="pydrake.manipulation.simple_ui.SchunkWsgButtons.__init__">

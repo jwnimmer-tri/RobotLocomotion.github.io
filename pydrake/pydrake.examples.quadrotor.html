@@ -188,9 +188,7 @@
 <em class="property">class </em><code class="descclassname">pydrake.examples.quadrotor.</code><code class="descname">QuadrotorGeometry</code><a class="headerlink" href="#pydrake.examples.quadrotor.QuadrotorGeometry" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydrake.systems.framework.html#pydrake.systems.framework.LeafSystem_[float]" title="pydrake.systems.framework.LeafSystem_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.systems.framework.LeafSystem_[float]</span></code></a></p>
 <p>Expresses a QuadrotorPlant’s geometry to a SceneGraph.</p>
-<p>&#64;system{QuadrotorGeometry, &#64;input_port{state},
-&#64;output_port{geometry_pose} }</p>
-<p>This class has no public constructor; instead use the AddToBuilder()
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">state&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>QuadrotorGeometry</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; geometry_pose</td></tr></table></td></tr></table><p>This class has no public constructor; instead use the AddToBuilder()
 static method to create and add it to a DiagramBuilder directly.</p>
 <dl class="attribute">
 <dt id="pydrake.examples.quadrotor.QuadrotorGeometry.__init__">
@@ -219,9 +217,7 @@ QuadrotorGeometry system that is owned by the <code class="docutils literal"><sp
 <p>The Quadrotor - an underactuated aerial vehicle. This version of the
 Quadrotor is implemented to match the dynamics of the plant specified
 in the <code class="docutils literal"><span class="pre">quadrotor.urdf</span></code> model file.</p>
-<p>&#64;system{QuadrotorPlant, &#64;input_port{propellor_force},
-&#64;output_port{state} }</p>
-<dl class="method">
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">propellor_force&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>QuadrotorPlant</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; state</td></tr></table></td></tr></table><dl class="method">
 <dt id="pydrake.examples.quadrotor.QuadrotorPlant.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.examples.quadrotor.QuadrotorPlant.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>

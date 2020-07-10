@@ -194,6 +194,18 @@
 <dt id="pydrake.systems.perception.PointCloudConcatenation">
 <em class="property">class </em><code class="descclassname">pydrake.systems.perception.</code><code class="descname">PointCloudConcatenation</code><span class="sig-paren">(</span><em>id_list, default_rgb=[255.0, 255.0, 255.0]</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.perception.PointCloudConcatenation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydrake.systems.framework.html#pydrake.systems.framework.LeafSystem_[float]" title="pydrake.systems.framework.LeafSystem_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.systems.framework.LeafSystem_[float]</span></code></a></p>
+<dl class="docutils">
+<dt>System YAML</dt>
+<dd>name: PointCloudConcatenation
+input_ports:
+- point_cloud_CiSi_id0
+- X_FCi_id0
+- …
+- point_cloud_CiSi_idN
+- X_FCi_idN
+output_ports:
+- point_cloud_FS</dd>
+</dl>
 <dl class="method">
 <dt id="pydrake.systems.perception.PointCloudConcatenation.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>id_list, default_rgb=[255.0, 255.0, 255.0]</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.perception.PointCloudConcatenation.__init__" title="Permalink to this definition">¶</a></dt>
@@ -210,17 +222,7 @@ real camera.</dd>
 <dt>&#64;param default_rgb A list of length 3 containing the RGB values to use</dt>
 <dd>in the absence of PointCloud.rgbs. Values should be between 0 and
 255. The default is white.</dd>
-<dt>&#64;system{</dt>
-<dd>&#64;input_port{point_cloud_CiSi_id0}
-&#64;input_port{X_FCi_id0}
-.
-.
-.
-&#64;input_port{point_cloud_CiSi_idN}
-&#64;input_port{X_FCi_idN}
-&#64;output_port{point_cloud_FS}</dd>
 </dl>
-<p>}</p>
 </dd></dl>
 
 <dl class="method">

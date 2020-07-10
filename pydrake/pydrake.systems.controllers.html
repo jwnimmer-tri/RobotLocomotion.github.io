@@ -296,16 +296,16 @@ has run once), not zero.</p>
 
 <dl class="function">
 <dt id="pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulator">
-<code class="descclassname">pydrake.systems.controllers.</code><code class="descname">FiniteHorizonLinearQuadraticRegulator</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], t0: float, tf: float, Q: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], R: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], options: pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions = &lt;pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions object at 0x7f806611cf70&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorResult<a class="headerlink" href="#pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulator" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">pydrake.systems.controllers.</code><code class="descname">FiniteHorizonLinearQuadraticRegulator</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], t0: float, tf: float, Q: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], R: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], options: pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions = &lt;pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions object at 0x7fc8c192cef0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorResult<a class="headerlink" href="#pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Solves the differential Riccati equation to compute the optimal
 controller and optimal cost-to-go for the finite-horizon linear
 quadratic regulator:</p>
 <div class="math">
-\[\min_u (x(t_f)-x_d(t_f))'Q_f(x(t_f)-x_d(t_f)) +\]</div>
-<p>int_{t_0}^{t_f} (x(t)-x_d(t))’Q(x(t)-x_d(t)) dt + int_{t_0}^{t_f}
+\[\min_u (x(t_f)-x_d(t_f))'Q_f(x(t_f)-x_d(t_f)) + \int_{t_0}^{t_f}\]</div>
+<p>(x(t)-x_d(t))’Q(x(t)-x_d(t)) dt + int_{t_0}^{t_f}
 (u(t)-u_d(t))’R(u(t)-u_d(t)) dt + int_{t_0}^{t_f}
-2(x(t)-x_d(t))’N(u(t)-u_d(t)) dt text{s.t. } dot{x} - dot{x}_0(t)
-= A(t)(x(t) - x_0(t)) + B(t)(u(t) - u_0(t)) + c(t)</p>
+2(x(t)-x_d(t))’N(u(t)-u_d(t)) dt text{s.t. } dot{x} - dot{x}_0(t) = A(t)(x(t) - x_0(t)) + B(t)(u(t) -
+u_0(t)) + c(t)</p>
 <p>where A(t), B(t), and c(t) are taken from the gradients of the
 continuous-time dynamics ẋ = f(t,x,u), as A(t) = dfdx(t, x0(t),
 u0(t)), B(t) = dfdu(t, x0(t), u0(t)), and c(t) = f(t, x0(t), u0(t)) -
@@ -863,8 +863,7 @@ System which implements that regulator in the original System’s
 coordinates. If <code class="docutils literal"><span class="pre">system</span></code> is a continuous-time system, then solves
 the continuous-time LQR problem:</p>
 <div class="math">
-\[\min_u \int_0^\infty (x-x_0)^TQ(x-x_0) + (u-u_0)^TR(u-u_0)\]</div>
-<p>dt.</p>
+\[\min_u \int_0^\infty (x-x_0)^TQ(x-x_0) + (u-u_0)^TR(u-u_0) dt.\]</div>
 <p>If <code class="docutils literal"><span class="pre">system</span></code> is a discrete-time system, then solves the discrete-time
 LQR problem:</p>
 <div class="math">
@@ -908,7 +907,7 @@ system coordinates.</td>
 
 <dl class="function">
 <dt id="pydrake.systems.controllers.MakeFiniteHorizonLinearQuadraticRegulator">
-<code class="descclassname">pydrake.systems.controllers.</code><code class="descname">MakeFiniteHorizonLinearQuadraticRegulator</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], t0: float, tf: float, Q: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], R: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], options: pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions = &lt;pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions object at 0x7f806611cfb0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.System_[float]<a class="headerlink" href="#pydrake.systems.controllers.MakeFiniteHorizonLinearQuadraticRegulator" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">pydrake.systems.controllers.</code><code class="descname">MakeFiniteHorizonLinearQuadraticRegulator</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], t0: float, tf: float, Q: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], R: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], options: pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions = &lt;pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions object at 0x7fc8c192cf30&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.System_[float]<a class="headerlink" href="#pydrake.systems.controllers.MakeFiniteHorizonLinearQuadraticRegulator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Variant of FiniteHorizonLinearQuadraticRegulator that returns a System
 implementing the regulator (controller) as a System, with a single
 “plant_state” input for the estimated plant state, and a single
@@ -1108,9 +1107,7 @@ The output of this controller is:</p>
 </pre></div>
 </div>
 <p>where <code class="docutils literal"><span class="pre">P_y</span></code> is the output projection matrix.</p>
-<p>&#64;system{PidController, &#64;input_port{estimated_state, desired_state},
-&#64;output_port{control} }</p>
-<p>This system has one continuous state, which is the integral of
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">estimated_state&rarr;</td></tr><tr><td align=right style="padding:5px 0px 5px 0px">desired_state&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>PidController</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; control</td></tr></table></td></tr></table><p>This system has one continuous state, which is the integral of
 position error, two input ports: estimated state <code class="docutils literal"><span class="pre">x_in</span></code> and desired
 state <code class="docutils literal"><span class="pre">x_d</span></code>, and one output port <code class="docutils literal"><span class="pre">y</span></code>. Note that this class assumes
 <code class="docutils literal"><span class="pre">|q_c|</span> <span class="pre">=</span> <span class="pre">|v_c|</span></code> and <code class="docutils literal"><span class="pre">|q_d|</span> <span class="pre">=</span> <span class="pre">|v_d|</span></code>. However, <code class="docutils literal"><span class="pre">|q_c|</span></code> does not

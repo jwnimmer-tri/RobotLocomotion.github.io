@@ -313,12 +313,12 @@ PointCloud in meshcat. The PointCloud:</p>
 <span class="n">pc_viz</span> <span class="o">=</span> <span class="n">builder</span><span class="o">.</span><span class="n">AddSystem</span><span class="p">(</span><span class="n">MeshcatPointCloudVisualizer</span><span class="p">(</span><span class="n">viz</span><span class="p">))</span>
 </pre></div>
 </div>
-<p>System ports:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@system</span><span class="p">{</span>
-    <span class="nd">@input_port</span><span class="p">{</span><span class="n">point_cloud_P</span><span class="p">},</span>
-<span class="p">}</span>
-</pre></div>
-</div>
+<dl class="docutils">
+<dt>System YAML</dt>
+<dd>name: MeshcatPointCloudVisualizer
+input_ports:
+- point_cloud_P</dd>
+</dl>
 <dl class="method">
 <dt id="pydrake.systems.meshcat_visualizer.MeshcatPointCloudVisualizer.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>meshcat_viz, draw_period=0.03333333333333333, name='point_cloud', X_WP=&lt;pydrake.common.eigen_geometry.Isometry3_[float] object&gt;, default_rgb=[255.0, 255.0, 255.0]</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.meshcat_visualizer.MeshcatPointCloudVisualizer.__init__" title="Permalink to this definition">¶</a></dt>

@@ -188,9 +188,7 @@
 <em class="property">class </em><code class="descclassname">pydrake.examples.pendulum.</code><code class="descname">PendulumGeometry</code><a class="headerlink" href="#pydrake.examples.pendulum.PendulumGeometry" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydrake.systems.framework.html#pydrake.systems.framework.LeafSystem_[float]" title="pydrake.systems.framework.LeafSystem_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.systems.framework.LeafSystem_[float]</span></code></a></p>
 <p>Expresses a PendulumPlants’s geometry to a SceneGraph.</p>
-<p>&#64;system{PendulumGeometry, &#64;input_port{state},
-&#64;output_port{geometry_pose} }</p>
-<p>This class has no public constructor; instead use the AddToBuilder()
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">state&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>PendulumGeometry</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; geometry_pose</td></tr></table></td></tr></table><p>This class has no public constructor; instead use the AddToBuilder()
 static method to create and add it to a DiagramBuilder directly.</p>
 <dl class="attribute">
 <dt id="pydrake.examples.pendulum.PendulumGeometry.__init__">
@@ -385,7 +383,15 @@ mass set to a new value.</p>
 <p>A model of a simple pendulum</p>
 <div class="math">
 \[ml^2 \ddot\theta + b\dot\theta + mgl\sin\theta = \tau\]</div>
-<p>&#64;system{PendulumPlant, &#64;input_port{tau}, &#64;output_port{state} }</p>
+<p>&lt;table align=center cellpadding=0 cellspacing=0&gt;&lt;tr align=center&gt;&lt;td
+style=”vertical-align:middle”&gt;&lt;table cellspacing=0
+cellpadding=0&gt;&lt;tr&gt;&lt;td align=right style=”padding:5px 0px 5px
+0px”&gt;tau&amp;rarr;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;td align=center
+style=”border:solid;padding-left:20px;padding-right:20px;vertical-align:middle”
+bgcolor=#F0F0F0&gt;PendulumPlant&lt;/td&gt;&lt;td
+style=”vertical-align:middle”&gt;&lt;table cellspacing=0
+cellpadding=0&gt;&lt;tr&gt;&lt;td align=left style=”padding:5px 0px 5px
+0px”&gt;&amp;rarr; state&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</p>
 <dl class="method">
 <dt id="pydrake.examples.pendulum.PendulumPlant.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.examples.pendulum.PendulumPlant</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.examples.pendulum.PendulumPlant.__init__" title="Permalink to this definition">¶</a></dt>

@@ -120,13 +120,13 @@ class drake::systems::DiscreteDerivative&lt; T &gt;</h3>
 </pre><dl class="section note"><dt>Note</dt><dd>For dynamical systems, a derivative should not be computed in continuous-time, i.e. <code>y(t) = (u(t) - u[n])/(t-n*h)</code>. This is numerically unstable since the time interval <code>t-n*h</code> could be arbitrarily close to zero. Prefer the discrete-time implementation for robustness.</dd></dl>
 <table align="center" cellpadding="0" cellspacing="0">
 <tr align="center">
-<td><table cellspacing="0" cellpadding="0">
+<td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
 <tr>
-<td align="right" style="padding:5px 0px 5px 0px">u &rarr;</td></tr>
+<td align="right" style="padding:5px 0px 5px 0px">u&rarr;</td></tr>
 </table>
-</td><td align="center" style="border:solid;padding-left:20px;padding-right:20px" bgcolor="#F0F0F0"><a class="el" href="classdrake_1_1systems_1_1_discrete_derivative.html" title="System that outputs the discrete-time derivative of its input: y(t) = (u[n] - u[n-1])/h,...">DiscreteDerivative</a></td><td><table cellspacing="0" cellpadding="0">
+</td><td align="center" style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor="#F0F0F0"><a class="el" href="classdrake_1_1systems_1_1_discrete_derivative.html" title="System that outputs the discrete-time derivative of its input: y(t) = (u[n] - u[n-1])/h,...">DiscreteDerivative</a></td><td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
 <tr>
-<td align="left" style="padding:5px 0px 5px 0px">&rarr; dudt </td></tr>
+<td align="left" style="padding:5px 0px 5px 0px">&rarr; dudt</td></tr>
 </table>
 </td></tr>
 </table>

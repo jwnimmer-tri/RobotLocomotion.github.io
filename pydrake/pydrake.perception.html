@@ -218,10 +218,7 @@
 <em class="property">class </em><code class="descclassname">pydrake.perception.</code><code class="descname">DepthImageToPointCloud</code><a class="headerlink" href="#pydrake.perception.DepthImageToPointCloud" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydrake.systems.framework.html#pydrake.systems.framework.LeafSystem_[float]" title="pydrake.systems.framework.LeafSystem_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.systems.framework.LeafSystem_[float]</span></code></a></p>
 <p>Converts a depth image to a point cloud.</p>
-<p>&#64;system{ DepthImageToPointCloud, &#64;input_port{depth_image}
-&#64;input_port{color_image (optional)} &#64;input_port{camera_pose
-(optional)}, &#64;output_port{point_cloud} }</p>
-<p>The system has an input port that takes a depth image, an optional
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">depth_image&rarr;</td></tr><tr><td align=right style="padding:5px 0px 5px 0px">color_image (optional)&rarr;</td></tr><tr><td align=right style="padding:5px 0px 5px 0px">camera_pose (optional)&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>DepthImageToPointCloud</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; point_cloud</td></tr></table></td></tr></table><p>The system has an input port that takes a depth image, an optional
 input port that takes a color image, and an additional optional input
 port that takes the camera_pose, X_PC. If the camera_pose input is
 connected, then the point cloud is represented in the parent frame
@@ -381,7 +378,7 @@ and Trends® in Robotics 4.1 (2015): 1-104.</p>
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.perception.PointCloud.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>__init__(self: pydrake.perception.PointCloud, new_size: int = 0, fields: pydrake.perception.Fields = &lt;pydrake.perception.Fields object at 0x7f8069e7a230&gt;) -&gt; None</li>
+<li>__init__(self: pydrake.perception.PointCloud, new_size: int = 0, fields: pydrake.perception.Fields = &lt;pydrake.perception.Fields object at 0x7fc8c56f22b0&gt;) -&gt; None</li>
 </ol>
 <p>Constructs a point cloud of a given <code class="docutils literal"><span class="pre">new_size</span></code>, with the prescribed
 <code class="docutils literal"><span class="pre">fields</span></code>. If <code class="docutils literal"><span class="pre">kDescriptors</span></code> is one of the fields, then

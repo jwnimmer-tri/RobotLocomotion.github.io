@@ -122,6 +122,7 @@ var dir_2186f45272e5c29e3ac18ec762ab7501 =
       [ "ContextSizes", "structdrake_1_1systems_1_1_system_base_1_1_context_sizes.html", "structdrake_1_1systems_1_1_system_base_1_1_context_sizes" ]
     ] ],
     [ "system_constraint.h", "system__constraint_8h.html", "system__constraint_8h" ],
+    [ "system_html.h", "system__html_8h.html", "system__html_8h" ],
     [ "system_output.h", "system__output_8h.html", [
       [ "System", "classdrake_1_1systems_1_1_system.html", "classdrake_1_1systems_1_1_system" ],
       [ "SystemOutput", "classdrake_1_1systems_1_1_system_output.html", "classdrake_1_1systems_1_1_system_output" ]

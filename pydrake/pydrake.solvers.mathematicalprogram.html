@@ -1275,14 +1275,8 @@ comparison between two Eigen matrices, using <code class="docutils literal"><spa
 </div>
 <p>A formula in <code class="docutils literal"><span class="pre">formulas</span></code> can be of the following forms:</p>
 <ol class="arabic simple">
-<li>e1 &lt;= e2</li>
+<li>e1 &lt;= e2 2. e1 &gt;= e2 3. e1 == e2</li>
 </ol>
-<blockquote>
-<div><ol class="arabic simple" start="2">
-<li>e1 &gt;= e2</li>
-<li>e1 == e2</li>
-</ol>
-</div></blockquote>
 <p>It throws an exception if AddLinearConstraint(const symbolic::Formula&amp;
 f) throws an exception for f ∈ <code class="docutils literal"><span class="pre">formulas</span></code>.</p>
 <dl class="docutils">
@@ -1586,13 +1580,9 @@ of constraint bindings expressing:</p>
 MathematicalProgram’s indeterminates if necessary.</p>
 </div>
 <ul class="simple">
-<li>The coefficients matrix Q, which is positive semidefinite.</li>
+<li>The coefficients matrix Q, which is positive semidefinite. - The</li>
 </ul>
-<blockquote>
-<div><ul class="simple">
-<li>The monomial basis m.</li>
-</ul>
-</div></blockquote>
+<p>monomial basis m.</p>
 <ol class="arabic simple" start="3">
 <li>AddSosConstraint(self: pydrake.solvers.mathematicalprogram.MathematicalProgram, arg0: pydrake.symbolic.Expression, arg1: numpy.ndarray[object[m, 1]]) -&gt; numpy.ndarray[object[m, n]]</li>
 </ol>
@@ -1611,13 +1601,9 @@ Note that it decomposes <code class="docutils literal"><span class="pre">e</span
 <code class="docutils literal"><span class="pre">indeterminates()</span></code> in this mathematical program. It returns a pair
 expressing:</p>
 <ul class="simple">
-<li>The coefficients matrix Q, which is positive semidefinite.</li>
+<li>The coefficients matrix Q, which is positive semidefinite. - The</li>
 </ul>
-<blockquote>
-<div><ul class="simple">
-<li>The monomial basis m.</li>
-</ul>
-</div></blockquote>
+<p>monomial basis m.</p>
 </dd></dl>
 
 <dl class="method">
@@ -2144,6 +2130,24 @@ readability.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="pydrake.solvers.mathematicalprogram.MathematicalProgram.NewEvenDegreeFreePolynomial">
+<code class="descname">NewEvenDegreeFreePolynomial</code><span class="sig-paren">(</span><em>self: pydrake.solvers.mathematicalprogram.MathematicalProgram</em>, <em>indeterminates: pydrake.symbolic.Variables</em>, <em>degree: int</em>, <em>coeff_name: str = 'a'</em><span class="sig-paren">)</span> &#x2192; pydrake.symbolic.Polynomial<a class="headerlink" href="#pydrake.solvers.mathematicalprogram.MathematicalProgram.NewEvenDegreeFreePolynomial" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a free polynomial that only contains even degree monomials. A
+monomial is even degree if its total degree (sum of all variables’
+degree) is even. For example, xy is an even degree monomial (degree 2)
+while x²y is not (degree 3).</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">indeterminates</span></code>:</dt>
+<dd>The monomial basis is over these indeterminates.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">degree</span></code>:</dt>
+<dd>The highest degree of the polynomial.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">coeff_name</span></code>:</dt>
+<dd>The coefficients of the polynomial are decision variables with
+this name as a base. The variable name would be “a1”, “a2”, etc.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
 <dt id="pydrake.solvers.mathematicalprogram.MathematicalProgram.NewFreePolynomial">
 <code class="descname">NewFreePolynomial</code><span class="sig-paren">(</span><em>self: pydrake.solvers.mathematicalprogram.MathematicalProgram</em>, <em>indeterminates: pydrake.symbolic.Variables</em>, <em>deg: int</em>, <em>coeff_name: str = 'a'</em><span class="sig-paren">)</span> &#x2192; pydrake.symbolic.Polynomial<a class="headerlink" href="#pydrake.solvers.mathematicalprogram.MathematicalProgram.NewFreePolynomial" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a free polynomial in a monomial basis over <code class="docutils literal"><span class="pre">indeterminates</span></code>
@@ -2178,6 +2182,24 @@ std::vector&lt;std::string&gt;&amp; names);</p>
 <p class="last">NewIndeterminates(int rows, int cols, const
 std::vector&lt;std::string&gt;&amp; names);</p>
 </div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.solvers.mathematicalprogram.MathematicalProgram.NewOddDegreeFreePolynomial">
+<code class="descname">NewOddDegreeFreePolynomial</code><span class="sig-paren">(</span><em>self: pydrake.solvers.mathematicalprogram.MathematicalProgram</em>, <em>indeterminates: pydrake.symbolic.Variables</em>, <em>degree: int</em>, <em>coeff_name: str = 'a'</em><span class="sig-paren">)</span> &#x2192; pydrake.symbolic.Polynomial<a class="headerlink" href="#pydrake.solvers.mathematicalprogram.MathematicalProgram.NewOddDegreeFreePolynomial" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a free polynomial that only contains odd degree monomials. A
+monomial is odd degree if its total degree (sum of all variables’
+degree) is even. For example, xy is not an odd degree monomial (degree
+2) while x²y is (degree 3).</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">indeterminates</span></code>:</dt>
+<dd>The monomial basis is over these indeterminates.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">degree</span></code>:</dt>
+<dd>The highest degree of the polynomial.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">coeff_name</span></code>:</dt>
+<dd>The coefficients of the polynomial are decision variables with
+this name as a base. The variable name would be “a1”, “a2”, etc.</dd>
+</dl>
 </dd></dl>
 
 <dl class="method">
@@ -2739,7 +2761,9 @@ status.</p>
 <dd><p>Bases: <a class="reference internal" href="#pydrake.solvers.mathematicalprogram.Constraint" title="pydrake.solvers.mathematicalprogram.Constraint"><code class="xref py py-class docutils literal"><span class="pre">pydrake.solvers.mathematicalprogram.Constraint</span></code></a></p>
 <p>Implements a positive semidefinite constraint on a symmetric matrix S</p>
 <div class="math">
-\[\text{ S is p.s.d }\]</div>
+\[\text{
+S is p.s.d\]</div>
+<p>}</p>
 <p>namely, all eigen values of S are non-negative.</p>
 <dl class="attribute">
 <dt id="pydrake.solvers.mathematicalprogram.PositiveSemidefiniteConstraint.__init__">

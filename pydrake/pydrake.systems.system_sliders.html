@@ -204,9 +204,10 @@ advancing time.</p>
 <p>&#64;warning: Do not close the slider GUI while running a simulation. It will
 cause the simulation to crash.</p>
 <dl class="docutils">
-<dt>&#64;system{ SystemSliders,</dt>
-<dd>, # no input ports
-&#64;output_port{slider_positions} }</dd>
+<dt>System YAML</dt>
+<dd>name: SystemSliders
+output_ports:
+- slider_positions</dd>
 </dl>
 <dl class="method">
 <dt id="pydrake.systems.system_sliders.SystemSliders.__init__">

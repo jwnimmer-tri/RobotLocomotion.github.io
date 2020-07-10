@@ -140,6 +140,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af1ae7c5586621d54d7b87de44171beb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram.html#af1ae7c5586621d54d7b87de44171beb4">Accept</a> (<a class="el" href="classdrake_1_1systems_1_1_system_visitor.html">SystemVisitor</a>&lt; T &gt; *v) const final</td></tr>
 <tr class="memdesc:af1ae7c5586621d54d7b87de44171beb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a visitor pattern.  <a href="#af1ae7c5586621d54d7b87de44171beb4">More...</a><br /></td></tr>
 <tr class="separator:af1ae7c5586621d54d7b87de44171beb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc3f35c7cd5f2a99c88deb5829655c6"><td class="memItemLeft" align="right" valign="top">const std::map&lt; <a class="el" href="classdrake_1_1systems_1_1_diagram.html#a21d7fa5adcb9feb95f3d52d9ab400d02">InputPortLocator</a>, <a class="el" href="classdrake_1_1systems_1_1_diagram.html#abb81c12f1c6e0a1457361f35d5ad3426">OutputPortLocator</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram.html#adbc3f35c7cd5f2a99c88deb5829655c6">connection_map</a> () const</td></tr>
+<tr class="memdesc:adbc3f35c7cd5f2a99c88deb5829655c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the map of connections between Systems.  <a href="#adbc3f35c7cd5f2a99c88deb5829655c6">More...</a><br /></td></tr>
+<tr class="separator:adbc3f35c7cd5f2a99c88deb5829655c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd950a76de18d7e560235d5791d94a3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_diagram.html#a21d7fa5adcb9feb95f3d52d9ab400d02">InputPortLocator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram.html#affd950a76de18d7e560235d5791d94a3">get_input_port_locator</a> (<a class="el" href="namespacedrake_1_1systems.html#aa53feaf560f7ff6cfa4add8dc6ff0db0">InputPortIndex</a> port_index) const</td></tr>
+<tr class="memdesc:affd950a76de18d7e560235d5791d94a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the "locator" for the subsystem input port that was exported as the <code>port_index</code> input port for the <a class="el" href="classdrake_1_1systems_1_1_diagram.html" title="Diagram is a System composed of one or more constituent Systems, arranged in a directed graph where t...">Diagram</a>.  <a href="#affd950a76de18d7e560235d5791d94a3">More...</a><br /></td></tr>
+<tr class="separator:affd950a76de18d7e560235d5791d94a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa1d40ab4e1efaefce88bbca610bc69"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_diagram.html#abb81c12f1c6e0a1457361f35d5ad3426">OutputPortLocator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram.html#aaaa1d40ab4e1efaefce88bbca610bc69">get_output_port_locator</a> (<a class="el" href="namespacedrake_1_1systems.html#afb427ae7d4f36f7a3cfe34eb5a3d51aa">OutputPortIndex</a> port_index) const</td></tr>
+<tr class="memdesc:aaaa1d40ab4e1efaefce88bbca610bc69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the "locator" for the subsystem output port that was exported as the <code>port_index</code> output port for the <a class="el" href="classdrake_1_1systems_1_1_diagram.html" title="Diagram is a System composed of one or more constituent Systems, arranged in a directed graph where t...">Diagram</a>.  <a href="#aaaa1d40ab4e1efaefce88bbca610bc69">More...</a><br /></td></tr>
+<tr class="separator:aaaa1d40ab4e1efaefce88bbca610bc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83479e1867e83638b90266c1aed0b6a3"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; <a class="el" href="classint.html">int</a>, <a class="el" href="classint.html">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram.html#a83479e1867e83638b90266c1aed0b6a3">GetDirectFeedthroughs</a> () const final</td></tr>
 <tr class="memdesc:a83479e1867e83638b90266c1aed0b6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports all direct feedthroughs from input ports to output ports.  <a href="#a83479e1867e83638b90266c1aed0b6a3">More...</a><br /></td></tr>
 <tr class="separator:a83479e1867e83638b90266c1aed0b6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1363,6 +1372,25 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="adbc3f35c7cd5f2a99c88deb5829655c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc3f35c7cd5f2a99c88deb5829655c6">&#9670;&nbsp;</a></span>connection_map()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::map&lt;<a class="el" href="classdrake_1_1systems_1_1_diagram.html#a21d7fa5adcb9feb95f3d52d9ab400d02">InputPortLocator</a>, <a class="el" href="classdrake_1_1systems_1_1_diagram.html#abb81c12f1c6e0a1457361f35d5ad3426">OutputPortLocator</a>&gt;&amp; connection_map </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the map of connections between Systems. </p>
+
+</div>
+</div>
 <a id="a0eec476d9e1a96bf9c6fe98cee4d0dd1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0eec476d9e1a96bf9c6fe98cee4d0dd1">&#9670;&nbsp;</a></span>DoCalcImplicitTimeDerivativesResidual()</h2>
 
@@ -1899,6 +1927,46 @@ Additional Inherited Members</h2></td></tr>
 <p>The <code>generalized_velocity</code> vector must have the same size and ordering as the generalized velocity in the <a class="el" href="classdrake_1_1systems_1_1_continuous_state.html" title="ContinuousState is a view of, and optionally a container for, all the continuous state variables xc o...">ContinuousState</a> that this <a class="el" href="classdrake_1_1systems_1_1_diagram.html" title="Diagram is a System composed of one or more constituent Systems, arranged in a directed graph where t...">Diagram</a> reserves in its context. </p>
 
 <p>Reimplemented from <a class="el" href="classdrake_1_1systems_1_1_system.html#aa2922fc55384af89c4a3734a476af08f">System&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="affd950a76de18d7e560235d5791d94a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd950a76de18d7e560235d5791d94a3">&#9670;&nbsp;</a></span>get_input_port_locator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdrake_1_1systems_1_1_diagram.html#a21d7fa5adcb9feb95f3d52d9ab400d02">InputPortLocator</a>&amp; get_input_port_locator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1systems.html#aa53feaf560f7ff6cfa4add8dc6ff0db0">InputPortIndex</a>&#160;</td>
+          <td class="paramname"><em>port_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the "locator" for the subsystem input port that was exported as the <code>port_index</code> input port for the <a class="el" href="classdrake_1_1systems_1_1_diagram.html" title="Diagram is a System composed of one or more constituent Systems, arranged in a directed graph where t...">Diagram</a>. </p>
+
+</div>
+</div>
+<a id="aaaa1d40ab4e1efaefce88bbca610bc69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa1d40ab4e1efaefce88bbca610bc69">&#9670;&nbsp;</a></span>get_output_port_locator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdrake_1_1systems_1_1_diagram.html#abb81c12f1c6e0a1457361f35d5ad3426">OutputPortLocator</a>&amp; get_output_port_locator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedrake_1_1systems.html#afb427ae7d4f36f7a3cfe34eb5a3d51aa">OutputPortIndex</a>&#160;</td>
+          <td class="paramname"><em>port_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the "locator" for the subsystem output port that was exported as the <code>port_index</code> output port for the <a class="el" href="classdrake_1_1systems_1_1_diagram.html" title="Diagram is a System composed of one or more constituent Systems, arranged in a directed graph where t...">Diagram</a>. </p>
 
 </div>
 </div>

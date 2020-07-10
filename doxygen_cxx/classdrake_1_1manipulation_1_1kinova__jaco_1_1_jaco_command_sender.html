@@ -104,9 +104,18 @@ $(document).ready(function(){initNavTree('classdrake_1_1manipulation_1_1kinova__
 <p>Note that this system does not actually send the message to an LCM channel. To send the message, the output of this system should be connected to a <a class="el" href="classdrake_1_1systems_1_1lcm_1_1_lcm_publisher_system.html#ad52e88e4200c2cf0a094a08faff8583c" title="A factory method that returns an LcmPublisherSystem that takes Value&lt;LcmMessage&gt; message objects on i...">systems::lcm::LcmPublisherSystem::Make&lt;lcmt_jaco_command&gt;()</a>.</p>
 <p>This system has one vector-valued input port containing the desired position and velocity. Finger velocities will be translated to the values used by the Kinova SDK from values appropriate for the finger joints in the Jaco description (see <a class="el" href="jaco__constants_8h.html">jaco_constants.h</a>).</p>
 <p>This system has one abstract-valued output port of type lcmt_jaco_command.</p>
-<p>@system { </p>
-<p>state &rarr; </p>
-<p>&rarr; lcmt_jaco_command }</p>
+<table align="center" cellpadding="0" cellspacing="0">
+<tr align="center">
+<td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
+<tr>
+<td align="right" style="padding:5px 0px 5px 0px">state&rarr;</td></tr>
+</table>
+</td><td align="center" style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor="#F0F0F0"><a class="el" href="classdrake_1_1manipulation_1_1kinova__jaco_1_1_jaco_command_sender.html" title="Creates and outputs lcmt_jaco_command messages.">JacoCommandSender</a></td><td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" style="padding:5px 0px 5px 0px">&rarr; lcmt_jaco_command</td></tr>
+</table>
+</td></tr>
+</table>
 <dl class="section see"><dt>See also</dt><dd><code>lcmt_jaco_command.lcm</code> for additional documentation. </dd></dl>
 </div>
 <p><code>#include &lt;drake/manipulation/kinova_jaco/jaco_command_sender.h&gt;</code></p>

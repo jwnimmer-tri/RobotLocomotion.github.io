@@ -1,5 +1,11 @@
 var NAVTREEINDEX38 =
 {
+"hash_8h.html#a746d15e267a6399643c2ffe878f4680c":[4,0,0,1,31,8],
+"hash_8h.html#a820665bdf5332e913c6bf67e38549d6b":[4,0,0,1,31,4],
+"hash_8h.html#a8ec36c65f95147192214391781b75b08":[4,0,0,1,31,10],
+"hash_8h.html#ad7f077927b3589bef8694c7d92e53710":[4,0,0,1,31,6],
+"hermitian__dense__output_8h.html":[4,0,0,11,0,5],
+"hierarchy.html":[3,2],
 "hopf__coordinate_8h.html":[4,0,0,7,17],
 "hopf__coordinate_8h.html#a82d0a7052d08481add2e9086b98144dd":[4,0,0,7,17,0],
 "hopf__coordinate_8h.html#ab948fdacb210871495edea82aa001473":[4,0,0,7,17,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX38 =
 "mesh__field__linear_8h.html#aeb8521ca427b948bf56882cae0363bd4":[4,0,0,4,0,20,1],
 "mesh__half__space__intersection_8h.html":[4,0,0,4,0,21],
 "mesh__intersection_8h.html":[4,0,0,4,0,22],
-"mesh__plane__intersection_8h.html":[4,0,0,4,0,23],
-"mesh__to__vtk_8h.html":[4,0,0,4,0,24],
-"minimum__distance__constraint_8h.html":[4,0,0,8,3,6],
-"minimum__distance__constraint_8h.html#a9b7dce3eb33772802af322ca25ef4864":[4,0,0,8,3,6,1],
-"minimum__value__constraint_8h.html":[4,0,0,10,29],
-"minimum__value__constraint_8h.html#a0d06c693e90f6849f70d4b549f015e1e":[4,0,0,10,29,2],
-"minimum__value__constraint_8h.html#a5c445985c8e0f84a2f88f2e70c8f9983":[4,0,0,10,29,3]
+"mesh__plane__intersection_8h.html":[4,0,0,4,0,23]
 };

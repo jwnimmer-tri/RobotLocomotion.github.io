@@ -1,5 +1,11 @@
 var NAVTREEINDEX44 =
 {
+"structdrake_1_1systems_1_1scalar__conversion_1_1_traits_3_01_trajectory_affine_system_01_4.html":[3,0,0,13,7,7],
+"structdrake_1_1systems_1_1scalar__conversion_1_1_traits_3_01_trajectory_linear_system_01_4.html":[3,0,0,13,7,8],
+"structdrake_1_1systems_1_1scalar__conversion_1_1_traits_3_01examples_1_1quadrotor_1_1_quadrotor_plant_01_4.html":[3,0,0,13,7,3],
+"structdrake_1_1systems_1_1scalar__conversion_1_1_traits_3_01examples_1_1rimless__wheel_1_1_rimless_wheel_01_4.html":[3,0,0,13,7,4],
+"structdrake_1_1systems_1_1scalar__conversion_1_1_traits_3_01geometry_1_1_scene_graph_01_4.html":[3,0,0,13,7,5],
+"structdrake_1_1systems_1_1scalar__conversion_1_1_traits_3_01geometry_1_1_scene_graph_01_4.html#a787e3060a054d77e9da64878567dc862":[3,0,0,13,7,5,0],
 "structdrake_1_1systems_1_1scalar__conversion_1_1_traits_3_01sensors_1_1_beam_model_01_4.html":[3,0,0,13,7,6],
 "structdrake_1_1systems_1_1scalar__conversion_1_1_value_converter.html":[3,0,0,13,7,9],
 "structdrake_1_1systems_1_1scalar__conversion_1_1_value_converter.html#a8a63ad999f7b515a27e608907704a113":[3,0,0,13,7,9,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX44 =
 "symbolic__expression_8h.html#ab1ebc87f878cdb6a3f0339711d591a26":[4,0,0,1,53,42],
 "symbolic__expression_8h.html#ab24b40e467980140b850478ea0b9e766":[4,0,0,1,53,20],
 "symbolic__expression_8h.html#ab5beb575f1104a060ab02a89544fef1d":[4,0,0,1,53,16],
-"symbolic__expression_8h.html#ab6702577f951bca3006ab02f3313484e":[4,0,0,1,53,81],
-"symbolic__expression_8h.html#ab6c97ad4e8b82b5c045695eb76fc1256":[4,0,0,1,53,74],
-"symbolic__expression_8h.html#ab8d3a7da7b3275333a0f2d67d649ead8":[4,0,0,1,53,101],
-"symbolic__expression_8h.html#ab9900f71e1c1ceb9d59553adfa2db2b5":[4,0,0,1,53,119],
-"symbolic__expression_8h.html#abc7a6656f58842adedcc8024b14bc06c":[4,0,0,1,53,58],
-"symbolic__expression_8h.html#abd312bc518c0dd20a656021aef3e3c37":[4,0,0,1,53,38],
-"symbolic__expression_8h.html#ac085a32409b678f96a69f5e50fc00ed7":[4,0,0,1,53,23]
+"symbolic__expression_8h.html#ab6702577f951bca3006ab02f3313484e":[4,0,0,1,53,81]
 };

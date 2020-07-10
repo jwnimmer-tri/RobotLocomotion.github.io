@@ -107,19 +107,19 @@ $(document).ready(function(){initNavTree('classdrake_1_1manipulation_1_1schunk__
 <p>The physical gripper mechanically imposes that -q₀ = q₁, and implements a controller to track -q₀ = q₁ = q_d/2 (q_d is the desired position, which is the signed distance between the two fingers). We model that here with two PD controllers &ndash; one that implements the physical constraint (keeping the fingers centered): f₀+f₁ = -kp_constraint*(q₀+q₁) - kd_constraint*(v₀+v₁), and another to implement the controller (opening/closing the fingers): -f₀+f₁ = sat(kp_command*(q_d + q₀ - q₁) + kd_command*(v_d + v₀ - v₁)), where sat() saturates the command to be in the range [-force_limit, force_limit]. The expectation is that kp_constraint ≫ kp_command.</p>
 <table align="center" cellpadding="0" cellspacing="0">
 <tr align="center">
-<td><table cellspacing="0" cellpadding="0">
+<td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
 <tr>
-<td align="right" style="padding:5px 0px 5px 0px">desired_state &rarr; </td></tr>
+<td align="right" style="padding:5px 0px 5px 0px">desired_state&rarr;</td></tr>
 <tr>
-<td align="right" style="padding:5px 0px 5px 0px">force_limit &rarr; </td></tr>
+<td align="right" style="padding:5px 0px 5px 0px">force_limit&rarr;</td></tr>
 <tr>
-<td align="right" style="padding:5px 0px 5px 0px">state &rarr;</td></tr>
+<td align="right" style="padding:5px 0px 5px 0px">state&rarr;</td></tr>
 </table>
-</td><td align="center" style="border:solid;padding-left:20px;padding-right:20px" bgcolor="#F0F0F0">SchunkWSGPdController</td><td><table cellspacing="0" cellpadding="0">
+</td><td align="center" style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor="#F0F0F0">SchunkWSGPdController</td><td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
 <tr>
-<td align="left" style="padding:5px 0px 5px 0px">&rarr; generalized_force </td></tr>
+<td align="left" style="padding:5px 0px 5px 0px">&rarr; generalized_force</td></tr>
 <tr>
-<td align="left" style="padding:5px 0px 5px 0px">&rarr; grip_force </td></tr>
+<td align="left" style="padding:5px 0px 5px 0px">&rarr; grip_force</td></tr>
 </table>
 </td></tr>
 </table>

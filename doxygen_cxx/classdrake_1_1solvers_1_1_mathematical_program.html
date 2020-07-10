@@ -163,6 +163,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6a71c1f6466e5dedbd2cd73372dfcd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#ae6a71c1f6466e5dedbd2cd73372dfcd5">NewFreePolynomial</a> (const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;<a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#ac236784fdf749e0e3b7921f1d75de1ff">indeterminates</a>, <a class="el" href="classint.html">int</a> degree, const std::string &amp;coeff_name=&quot;a&quot;)</td></tr>
 <tr class="memdesc:ae6a71c1f6466e5dedbd2cd73372dfcd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a free polynomial in a monomial basis over <code>indeterminates</code> of a given <code>degree</code>.  <a href="#ae6a71c1f6466e5dedbd2cd73372dfcd5">More...</a><br /></td></tr>
 <tr class="separator:ae6a71c1f6466e5dedbd2cd73372dfcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4892d2259256cc4aff04a354391eae77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#a4892d2259256cc4aff04a354391eae77">NewEvenDegreeFreePolynomial</a> (const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;<a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#ac236784fdf749e0e3b7921f1d75de1ff">indeterminates</a>, <a class="el" href="classint.html">int</a> degree, const std::string &amp;coeff_name=&quot;a&quot;)</td></tr>
+<tr class="memdesc:a4892d2259256cc4aff04a354391eae77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a free polynomial that only contains even degree monomials.  <a href="#a4892d2259256cc4aff04a354391eae77">More...</a><br /></td></tr>
+<tr class="separator:a4892d2259256cc4aff04a354391eae77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65f91d84b3f2f0a5354def05ddb51e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#aa65f91d84b3f2f0a5354def05ddb51e4">NewOddDegreeFreePolynomial</a> (const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;<a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#ac236784fdf749e0e3b7921f1d75de1ff">indeterminates</a>, <a class="el" href="classint.html">int</a> degree, const std::string &amp;coeff_name=&quot;a&quot;)</td></tr>
+<tr class="memdesc:aa65f91d84b3f2f0a5354def05ddb51e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a free polynomial that only contains odd degree monomials.  <a href="#aa65f91d84b3f2f0a5354def05ddb51e4">More...</a><br /></td></tr>
+<tr class="separator:aa65f91d84b3f2f0a5354def05ddb51e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a903fd7b5970fb835030958fe57d8cd6e"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#a903fd7b5970fb835030958fe57d8cd6e">NewNonnegativePolynomial</a> (const Eigen::Ref&lt; const <a class="el" href="namespacedrake.html#a77dd228fb4dd66a2c17dd3f7f38ffd85">VectorX</a>&lt; <a class="el" href="classdrake_1_1symbolic_1_1_monomial.html">symbolic::Monomial</a> &gt;&gt; &amp;monomial_basis, <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#a407fb21fc13a5122994e71a05a6a0818">NonnegativePolynomial</a> type)</td></tr>
 <tr class="memdesc:a903fd7b5970fb835030958fe57d8cd6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pair of nonnegative polynomial p = mᵀQm and the Grammian matrix Q, where m is <code>monomial_basis</code>.  <a href="#a903fd7b5970fb835030958fe57d8cd6e">More...</a><br /></td></tr>
 <tr class="separator:a903fd7b5970fb835030958fe57d8cd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5543,6 +5549,50 @@ Alternatives to Sum of Squares and Semidefinite Optimization" by Amir Ali Ahmadi
 
 </div>
 </div>
+<a id="a4892d2259256cc4aff04a354391eae77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4892d2259256cc4aff04a354391eae77">&#9670;&nbsp;</a></span>NewEvenDegreeFreePolynomial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a> NewEvenDegreeFreePolynomial </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;&#160;</td>
+          <td class="paramname"><em>indeterminates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>coeff_name</em> = <code>&quot;a&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a free polynomial that only contains even degree monomials. </p>
+<p>A monomial is even degree if its total degree (sum of all variables' degree) is even. For example, xy is an even degree monomial (degree 2) while x²y is not (degree 3). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indeterminates</td><td>The monomial basis is over these indeterminates. </td></tr>
+    <tr><td class="paramname">degree</td><td>The highest degree of the polynomial. </td></tr>
+    <tr><td class="paramname">coeff_name</td><td>The coefficients of the polynomial are decision variables with this name as a base. The variable name would be "a1", "a2", etc. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae6a71c1f6466e5dedbd2cd73372dfcd5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6a71c1f6466e5dedbd2cd73372dfcd5">&#9670;&nbsp;</a></span>NewFreePolynomial()</h2>
 
@@ -5980,6 +6030,50 @@ Alternatives to Sum of Squares and Semidefinite Optimization" by Amir Ali Ahmadi
 
 </div>
 </div>
+<a id="aa65f91d84b3f2f0a5354def05ddb51e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa65f91d84b3f2f0a5354def05ddb51e4">&#9670;&nbsp;</a></span>NewOddDegreeFreePolynomial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a> NewOddDegreeFreePolynomial </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;&#160;</td>
+          <td class="paramname"><em>indeterminates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>coeff_name</em> = <code>&quot;a&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a free polynomial that only contains odd degree monomials. </p>
+<p>A monomial is odd degree if its total degree (sum of all variables' degree) is even. For example, xy is not an odd degree monomial (degree 2) while x²y is (degree 3). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indeterminates</td><td>The monomial basis is over these indeterminates. </td></tr>
+    <tr><td class="paramname">degree</td><td>The highest degree of the polynomial. </td></tr>
+    <tr><td class="paramname">coeff_name</td><td>The coefficients of the polynomial are decision variables with this name as a base. The variable name would be "a1", "a2", etc. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a90b5ad1d24f929dd5d647b00068802fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90b5ad1d24f929dd5d647b00068802fb">&#9670;&nbsp;</a></span>NewSosPolynomial() <span class="overload">[1/2]</span></h2>
 
@@ -6158,8 +6252,8 @@ Symmetric(rows-1,0) Symmetric(rows-1,1) ... Symmetric(rows-1, rows-1)
 
 </div>
 </div>
-<a id="a751cdda7529e03736fc7530fad6bd7fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a751cdda7529e03736fc7530fad6bd7fa">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="ad6bf33171369a5b673c956f7e21e1c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6bf33171369a5b673c956f7e21e1c5f">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6170,7 +6264,7 @@ Symmetric(rows-1,0) Symmetric(rows-1,1) ... Symmetric(rows-1, rows-1)
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -6184,8 +6278,8 @@ Symmetric(rows-1,0) Symmetric(rows-1,1) ... Symmetric(rows-1, rows-1)
 
 </div>
 </div>
-<a id="ad6bf33171369a5b673c956f7e21e1c5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6bf33171369a5b673c956f7e21e1c5f">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="a751cdda7529e03736fc7530fad6bd7fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751cdda7529e03736fc7530fad6bd7fa">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6196,7 +6290,7 @@ Symmetric(rows-1,0) Symmetric(rows-1,1) ... Symmetric(rows-1, rows-1)
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;&amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

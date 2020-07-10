@@ -104,9 +104,18 @@ $(document).ready(function(){initNavTree('classdrake_1_1manipulation_1_1kinova__
 <p>Note that this system does not actually subscribe to an LCM channel. To receive the message, the input of this system should be connected to a LcmSubscriberSystem::Make&lt;drake::lcmt_jaco_command&gt;().</p>
 <p>It has one input port, "lcmt_jaco_command".</p>
 <p>This system has a single output port which contains the commanded position and velocity for each joint. Finger velocities will be translated from the values used by the Kinova SDK to values appropriate for the finger joints in the Jaco description (see <a class="el" href="jaco__constants_8h.html">jaco_constants.h</a>).</p>
-<p>@system { <a class="el" href="classdrake_1_1manipulation_1_1kinova__jaco_1_1_jaco_command_receiver.html" title="Handles lcmt_jaco_command message from a LcmSubscriberSystem.">JacoCommandReceiver</a>, </p>
-<p>lcmt_jaco_command &rarr; </p>
-<p>&rarr; state } </p>
+<table align="center" cellpadding="0" cellspacing="0">
+<tr align="center">
+<td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
+<tr>
+<td align="right" style="padding:5px 0px 5px 0px">lcmt_jaco_command&rarr;</td></tr>
+</table>
+</td><td align="center" style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor="#F0F0F0"><a class="el" href="classdrake_1_1manipulation_1_1kinova__jaco_1_1_jaco_command_receiver.html" title="Handles lcmt_jaco_command message from a LcmSubscriberSystem.">JacoCommandReceiver</a></td><td style="vertical-align:middle"><table cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" style="padding:5px 0px 5px 0px">&rarr; state</td></tr>
+</table>
+</td></tr>
+</table>
 </div>
 <p><code>#include &lt;drake/manipulation/kinova_jaco/jaco_command_receiver.h&gt;</code></p>
 <table class="memberdecls">
