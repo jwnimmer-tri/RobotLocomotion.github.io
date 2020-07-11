@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('text__logging_8h.html','');});
 </pre><p> If you want to log objects that are expensive to serialize, these macros will not be compiled if debugging is turned off (-DNDEBUG is set): </p><pre>
   DRAKE_LOGGER_TRACE("message: {}", something_conditionally_compiled);
   DRAKE_LOGGER_DEBUG("message: {}", something_conditionally_compiled);
-</pre><p>The format string syntax is fmtlib; see <a href="https://fmt.dev/6.2.1/syntax.html">https://fmt.dev/6.2.1/syntax.html</a>. In particular, any class that overloads <code>operator&lt;&lt;</code> for <code>ostream</code> can be printed without any special handling. </p>
+</pre><p>The format string syntax is fmtlib; see <a href="https://fmt.dev/7.0.1/syntax.html">https://fmt.dev/7.0.1/syntax.html</a>. In particular, any class that overloads <code>operator&lt;&lt;</code> for <code>ostream</code> can be printed without any special handling. </p>
 </div><div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &quot;<a class="el" href="drake__copyable_8h.html">drake/common/drake_copyable.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
