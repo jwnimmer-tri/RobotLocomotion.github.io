@@ -86,16 +86,16 @@ typical examples below; for more reading about target patterns, see:
 <a class="reference external" href="https://docs.bazel.build/versions/master/user-manual.html#target-patterns">https://docs.bazel.build/versions/master/user-manual.html#target-patterns</a>.</p>
 <p>On Ubuntu, the default compiler is the first <code class="docutils literal"><span class="pre">gcc</span></code> compiler in the
 <code class="docutils literal"><span class="pre">PATH</span></code>, usually GCC 7.5 on Bionic and GCC 9.3 on Focal. On macOS, the default
-compiler is the Apple LLVM compiler. To use Clang 6.0 on Ubuntu 18.04 (Bionic),
-set the <code class="docutils literal"><span class="pre">CC</span></code> and <code class="docutils literal"><span class="pre">CXX</span></code> environment variables before running <strong>bazel build</strong>,
-<strong>bazel test</strong> or any other <strong>bazel</strong> commands.</p>
+compiler is the Apple LLVM compiler. To use Clang 9 on Ubuntu, set the <code class="docutils literal"><span class="pre">CC</span></code>
+and <code class="docutils literal"><span class="pre">CXX</span></code> environment variables before running <strong>bazel build</strong>, <strong>bazel test</strong>
+or any other <strong>bazel</strong> commands.</p>
 <p>Cheat sheet for operating on the entire project:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">drake</span>
 <span class="n">bazel</span> <span class="n">build</span> <span class="o">//...</span>                               <span class="c1"># Build the entire project.</span>
 <span class="n">bazel</span> <span class="n">test</span> <span class="o">//...</span>                                <span class="c1"># Build and test the entire project.</span>
 
-<span class="n">CC</span><span class="o">=</span><span class="n">clang</span> <span class="n">CXX</span><span class="o">=</span><span class="n">clang</span><span class="o">++</span> <span class="n">bazel</span> <span class="n">build</span> <span class="o">//...</span>          <span class="c1"># Build using Clang 6.0 on Bionic.</span>
-<span class="n">CC</span><span class="o">=</span><span class="n">clang</span> <span class="n">CXX</span><span class="o">=</span><span class="n">clang</span><span class="o">++</span> <span class="n">bazel</span> <span class="n">test</span> <span class="o">//...</span>           <span class="c1"># Build and test using Clang 6.0 on Bionic.</span>
+<span class="n">CC</span><span class="o">=</span><span class="n">clang</span><span class="o">-</span><span class="mi">9</span> <span class="n">CXX</span><span class="o">=</span><span class="n">clang</span><span class="o">++-</span><span class="mi">9</span> <span class="n">bazel</span> <span class="n">build</span> <span class="o">//...</span>      <span class="c1"># Build using Clang 9 on Ubuntu.</span>
+<span class="n">CC</span><span class="o">=</span><span class="n">clang</span><span class="o">-</span><span class="mi">9</span> <span class="n">CXX</span><span class="o">=</span><span class="n">clang</span><span class="o">++-</span><span class="mi">9</span> <span class="n">bazel</span> <span class="n">test</span> <span class="o">//...</span>       <span class="c1"># Build and test using Clang 9 on Ubuntu.</span>
 </pre></div>
 </div>
 <ul class="simple">
