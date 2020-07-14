@@ -676,6 +676,32 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1935f9e12a11b66c67eda33fd165b4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6bf33171369a5b673c956f7e21e1c5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#ad6bf33171369a5b673c956f7e21e1c5f">operator=</a> (<a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:ad6bf33171369a5b673c956f7e21e1c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Creating even-degree nonnegative polynomials</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="even_degree_nonnegative_polynomial"></a> Creates a nonnegative polynomial p = m(x)ᵀQm(x) of a given degree, and p only contains even-degree monomials. If we partition the monomials m(x) to odd degree monomials m_o(x) and even degree monomials m_e(x), then we can write p(x) as </p><pre>
+⌈m_o(x)⌉ᵀ * ⌈Q_oo Q_oeᵀ⌉ * ⌈m_o(x)⌉
+⌊m_e(x)⌋    ⌊Q_oe Q_ee ⌋   ⌊m_e(x)⌋
+</pre><p> Since p(x) doesn't contain any odd degree monomials, and p(x) contains terms m_e(x)ᵀ*Q_oe * m_o(x) which has odd degree, we know that the off-diagonal block Q_oe has to be zero. So the constraint that Q is psd can be simplified as Q_oo and Q_ee has to be psd. Since both Q_oo and Q_ee have smaller size than Q, these PSD constraints are easier to solve than requiring Q to be PSD. One use case for even-degree polynomial, is for polynomials that are even functions, namely p(x) = p(-x). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indeterminates</td><td>The set of indeterminates x </td></tr>
+    <tr><td class="paramname">degree</td><td>The total degree of the polynomial p. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>This must be an even number. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>(p(x), Q_oo, Q_ee). p(x) is the newly added non-negative polynomial. p(x) = m_o(x)ᵀ*Q_oo*m_o(x) + m_e(x)ᵀ*Q_ee*m_e(x) where m_o(x) and m_e(x) contain all the even/odd monomials of x respectively. The returned non-negative polynomial can be of different types, including Sum-of-squares (SOS), diagonally-dominant-sum-of-squares (dsos), and scaled-diagonally-dominant-sum-of-squares (sdsos). </dd></dl>
+</div></td></tr>
+<tr class="memitem:ab5aa9886afdbee42b4eab1077318f961"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#ab5aa9886afdbee42b4eab1077318f961">NewEvenDegreeNonnegativePolynomial</a> (const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;<a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#ac236784fdf749e0e3b7921f1d75de1ff">indeterminates</a>, <a class="el" href="classint.html">int</a> degree, <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#a407fb21fc13a5122994e71a05a6a0818">NonnegativePolynomial</a> type)</td></tr>
+<tr class="memdesc:ab5aa9886afdbee42b4eab1077318f961"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#even_degree_nonnegative_polynomial">even_degree_nonnegative_polynomial</a> for more details.  <a href="#ab5aa9886afdbee42b4eab1077318f961">More...</a><br /></td></tr>
+<tr class="separator:ab5aa9886afdbee42b4eab1077318f961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b568d2ab99871d864e445960ac8dc18"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#a3b568d2ab99871d864e445960ac8dc18">NewEvenDegreeSosPolynomial</a> (const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;<a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#ac236784fdf749e0e3b7921f1d75de1ff">indeterminates</a>, <a class="el" href="classint.html">int</a> degree)</td></tr>
+<tr class="memdesc:a3b568d2ab99871d864e445960ac8dc18"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#even_degree_nonnegative_polynomial">even_degree_nonnegative_polynomial</a> for more details.  <a href="#a3b568d2ab99871d864e445960ac8dc18">More...</a><br /></td></tr>
+<tr class="separator:a3b568d2ab99871d864e445960ac8dc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3787e8a9fcc4e09304d6e1fa697d2d7f"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#a3787e8a9fcc4e09304d6e1fa697d2d7f">NewEvenDegreeSdsosPolynomial</a> (const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;<a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#ac236784fdf749e0e3b7921f1d75de1ff">indeterminates</a>, <a class="el" href="classint.html">int</a> degree)</td></tr>
+<tr class="memdesc:a3787e8a9fcc4e09304d6e1fa697d2d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">see <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#even_degree_nonnegative_polynomial">even_degree_nonnegative_polynomial</a> for details.  <a href="#a3787e8a9fcc4e09304d6e1fa697d2d7f">More...</a><br /></td></tr>
+<tr class="separator:a3787e8a9fcc4e09304d6e1fa697d2d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7be7b407fbcebb6fc7100759492a3d9"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#af7be7b407fbcebb6fc7100759492a3d9">NewEvenDegreeDsosPolynomial</a> (const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;<a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#ac236784fdf749e0e3b7921f1d75de1ff">indeterminates</a>, <a class="el" href="classint.html">int</a> degree)</td></tr>
+<tr class="memdesc:af7be7b407fbcebb6fc7100759492a3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">see <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#even_degree_nonnegative_polynomial">even_degree_nonnegative_polynomial</a> for details.  <a href="#af7be7b407fbcebb6fc7100759492a3d9">More...</a><br /></td></tr>
+<tr class="separator:af7be7b407fbcebb6fc7100759492a3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Maximize geometric mean</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="maximize_geometric_mean"></a> Adds the cost to maximize the geometric mean of z = Ax+b, i.e. power(∏ᵢz(i), 1/n), where z ∈ ℝⁿ, z(i) &gt;= 0. Mathematically, the cost we add is -power(∏ᵢz(i), 1/r), where r = power(2, ceil(log₂n)), namely r is the smallest power of 2 that is no smaller than the size of z. For example, if z ∈ ℝ², then the added cost is -power(z(0)*z(1), 1/2) if z ∈ ℝ³, then the added cost is -power(z(0)*z(1)*z(2), 1/4).</p>
 <p>In order to add this cost, we need to introduce a set of second-order cone constraints. For example, to maximize power(z(0) * z(1), 1/2), we introduce the slack variable w(0), together with the second order cone constraint w(0)² ≤ z(0) * z(1), z(0) ≥ 0, z(1) ≥ 0, and we maximize w(0).</p>
@@ -5549,6 +5575,37 @@ Alternatives to Sum of Squares and Semidefinite Optimization" by Amir Ali Ahmadi
 
 </div>
 </div>
+<a id="af7be7b407fbcebb6fc7100759492a3d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7be7b407fbcebb6fc7100759492a3d9">&#9670;&nbsp;</a></span>NewEvenDegreeDsosPolynomial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt;<a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a>&gt; NewEvenDegreeDsosPolynomial </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;&#160;</td>
+          <td class="paramname"><em>indeterminates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
+          <td class="paramname"><em>degree</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>see <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#even_degree_nonnegative_polynomial">even_degree_nonnegative_polynomial</a> for details. </p>
+<p>Variant that produces a DSOS polynomial. Same as NewEvenDegreeSosPolynomial, except the returned polynomial is diagonally dominant sum of squares (dsos). </p>
+
+</div>
+</div>
 <a id="a4892d2259256cc4aff04a354391eae77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4892d2259256cc4aff04a354391eae77">&#9670;&nbsp;</a></span>NewEvenDegreeFreePolynomial()</h2>
 
@@ -5590,6 +5647,110 @@ Alternatives to Sum of Squares and Semidefinite Optimization" by Amir Ali Ahmadi
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab5aa9886afdbee42b4eab1077318f961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5aa9886afdbee42b4eab1077318f961">&#9670;&nbsp;</a></span>NewEvenDegreeNonnegativePolynomial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt;<a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a>&gt; NewEvenDegreeNonnegativePolynomial </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;&#160;</td>
+          <td class="paramname"><em>indeterminates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#a407fb21fc13a5122994e71a05a6a0818">NonnegativePolynomial</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>See <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#even_degree_nonnegative_polynomial">even_degree_nonnegative_polynomial</a> for more details. </p>
+<p>Variant that produces different non-negative polynomials depending on <code>type</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The returned polynomial p(x) can be either SOS, SDSOS or DSOS, depending on <code>type</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3787e8a9fcc4e09304d6e1fa697d2d7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3787e8a9fcc4e09304d6e1fa697d2d7f">&#9670;&nbsp;</a></span>NewEvenDegreeSdsosPolynomial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt;<a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a>&gt; NewEvenDegreeSdsosPolynomial </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;&#160;</td>
+          <td class="paramname"><em>indeterminates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
+          <td class="paramname"><em>degree</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>see <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#even_degree_nonnegative_polynomial">even_degree_nonnegative_polynomial</a> for details. </p>
+<p>Variant that produces an SDSOS polynomial. </p>
+
+</div>
+</div>
+<a id="a3b568d2ab99871d864e445960ac8dc18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b568d2ab99871d864e445960ac8dc18">&#9670;&nbsp;</a></span>NewEvenDegreeSosPolynomial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt;<a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a>, <a class="el" href="namespacedrake_1_1solvers.html#ac04cfbe6b8d63ecb463fc087385ce061">MatrixXDecisionVariable</a>&gt; NewEvenDegreeSosPolynomial </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1symbolic_1_1_variables.html">symbolic::Variables</a> &amp;&#160;</td>
+          <td class="paramname"><em>indeterminates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
+          <td class="paramname"><em>degree</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>See <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html#even_degree_nonnegative_polynomial">even_degree_nonnegative_polynomial</a> for more details. </p>
+<p>Variant that produces a SOS polynomial. </p>
 
 </div>
 </div>
@@ -6252,8 +6413,8 @@ Symmetric(rows-1,0) Symmetric(rows-1,1) ... Symmetric(rows-1, rows-1)
 
 </div>
 </div>
-<a id="ad6bf33171369a5b673c956f7e21e1c5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6bf33171369a5b673c956f7e21e1c5f">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="a751cdda7529e03736fc7530fad6bd7fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751cdda7529e03736fc7530fad6bd7fa">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6264,7 +6425,7 @@ Symmetric(rows-1,0) Symmetric(rows-1,1) ... Symmetric(rows-1, rows-1)
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;&amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -6278,8 +6439,8 @@ Symmetric(rows-1,0) Symmetric(rows-1,1) ... Symmetric(rows-1, rows-1)
 
 </div>
 </div>
-<a id="a751cdda7529e03736fc7530fad6bd7fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a751cdda7529e03736fc7530fad6bd7fa">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="ad6bf33171369a5b673c956f7e21e1c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6bf33171369a5b673c956f7e21e1c5f">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6290,7 +6451,7 @@ Symmetric(rows-1,0) Symmetric(rows-1,1) ... Symmetric(rows-1, rows-1)
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

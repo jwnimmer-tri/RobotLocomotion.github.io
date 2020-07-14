@@ -1,5 +1,9 @@
 var NAVTREEINDEX33 =
 {
+"classdrake_1_1systems_1_1sensors_1_1_color_palette.html#acefac0850fc505cbb0f4a9ff782ccc79":[3,0,0,13,8,4,9],
+"classdrake_1_1systems_1_1sensors_1_1_color_palette.html#adacf846f73624ee81f656d6a2c0044d3":[3,0,0,13,8,4,8],
+"classdrake_1_1systems_1_1sensors_1_1_gyroscope.html":[1,2,4,2],
+"classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#a5609ecc9abeb6eb02d34938bf4ad7106":[1,2,4,2,8],
 "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#a7ebb2e7c789b9c1a93f11584569f965f":[1,2,4,2,4],
 "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#a881f5c187422f03f5159f7e515899ede":[1,2,4,2,3],
 "classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#a9138e7b7ef3459968b28c912cc953aba":[1,2,4,2,9],
@@ -245,9 +249,5 @@ var NAVTREEINDEX33 =
 "classdrake_1_1trajectories_1_1_bspline_trajectory.html#a9aa1f1cfff6dcb352d5fbb15a80ee1a9":[3,0,0,15,0,20],
 "classdrake_1_1trajectories_1_1_bspline_trajectory.html#aa60dd7fd9939516ab657b3ad5a305e63":[3,0,0,15,0,13],
 "classdrake_1_1trajectories_1_1_bspline_trajectory.html#aba5bc39050417dea169199678e0273c5":[3,0,0,15,0,1],
-"classdrake_1_1trajectories_1_1_bspline_trajectory.html#ac9bec40ee20228e889951338227f5db7":[3,0,0,15,0,0],
-"classdrake_1_1trajectories_1_1_bspline_trajectory.html#acbd23484e581d27a21f383141f164980":[3,0,0,15,0,2],
-"classdrake_1_1trajectories_1_1_bspline_trajectory.html#acc1fbdce99e21637c6739f65cdb081c7":[3,0,0,15,0,18],
-"classdrake_1_1trajectories_1_1_bspline_trajectory.html#adca8eca2ee324f57170dedfb4b06160b":[3,0,0,15,0,7],
-"classdrake_1_1trajectories_1_1_bspline_trajectory.html#ae09cf8e8ad481f69f3cc1969ef491d60":[3,0,0,15,0,21]
+"classdrake_1_1trajectories_1_1_bspline_trajectory.html#ac9bec40ee20228e889951338227f5db7":[3,0,0,15,0,0]
 };

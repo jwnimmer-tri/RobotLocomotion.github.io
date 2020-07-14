@@ -1,5 +1,9 @@
 var NAVTREEINDEX32 =
 {
+"classdrake_1_1systems_1_1controllers_1_1_z_m_p_planner.html#ae044d1635713f78183db74d7f890f4ed":[3,0,0,13,2,12,20],
+"classdrake_1_1systems_1_1controllers_1_1_z_m_p_planner.html#ae24da0d2f02398a5736a6d30e7fc7816":[3,0,0,13,2,12,26],
+"classdrake_1_1systems_1_1controllers_1_1_z_m_p_planner.html#ae2ae07d986ada1331a7c587b18f35454":[3,0,0,13,2,12,19],
+"classdrake_1_1systems_1_1controllers_1_1_z_m_p_planner.html#ae41c5a002b84ba0ef89cb2c3022a2368":[3,0,0,13,2,12,12],
 "classdrake_1_1systems_1_1controllers_1_1_z_m_p_planner.html#aee66491db467d41bd5a9f765c106c15d":[3,0,0,13,2,12,2],
 "classdrake_1_1systems_1_1controllers_1_1_z_m_p_planner.html#af6a6dfd04b282d5703c7b6d357621085":[3,0,0,13,2,12,1],
 "classdrake_1_1systems_1_1estimators_1_1_luenberger_observer.html":[1,2,3,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX32 =
 "classdrake_1_1systems_1_1sensors_1_1_color_palette.html#a4eaba3244f893af6b6cf6863832a9041":[3,0,0,13,8,4,0],
 "classdrake_1_1systems_1_1sensors_1_1_color_palette.html#a53509ac0b40f94e8384c1de22d2c949b":[3,0,0,13,8,4,7],
 "classdrake_1_1systems_1_1sensors_1_1_color_palette.html#a7f7f1b899a73a10ee66389c12ea84f3e":[3,0,0,13,8,4,6],
-"classdrake_1_1systems_1_1sensors_1_1_color_palette.html#ac7be8892d7c204872030e83baa420b66":[3,0,0,13,8,4,10],
-"classdrake_1_1systems_1_1sensors_1_1_color_palette.html#acefac0850fc505cbb0f4a9ff782ccc79":[3,0,0,13,8,4,9],
-"classdrake_1_1systems_1_1sensors_1_1_color_palette.html#adacf846f73624ee81f656d6a2c0044d3":[3,0,0,13,8,4,8],
-"classdrake_1_1systems_1_1sensors_1_1_gyroscope.html":[1,2,4,2],
-"classdrake_1_1systems_1_1sensors_1_1_gyroscope.html#a5609ecc9abeb6eb02d34938bf4ad7106":[1,2,4,2,8]
+"classdrake_1_1systems_1_1sensors_1_1_color_palette.html#ac7be8892d7c204872030e83baa420b66":[3,0,0,13,8,4,10]
 };

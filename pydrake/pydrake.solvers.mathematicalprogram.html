@@ -2130,6 +2130,14 @@ readability.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="pydrake.solvers.mathematicalprogram.MathematicalProgram.NewEvenDegreeDsosPolynomial">
+<code class="descname">NewEvenDegreeDsosPolynomial</code><span class="sig-paren">(</span><em>self: pydrake.solvers.mathematicalprogram.MathematicalProgram</em>, <em>indeterminates: pydrake.symbolic.Variables</em>, <em>degree: int</em><span class="sig-paren">)</span> &#x2192; Tuple[pydrake.symbolic.Polynomial, numpy.ndarray[object[m, n]], numpy.ndarray[object[m, n]]]<a class="headerlink" href="#pydrake.solvers.mathematicalprogram.MathematicalProgram.NewEvenDegreeDsosPolynomial" title="Permalink to this definition">¶</a></dt>
+<dd><p>see even_degree_nonnegative_polynomial for details. Variant that
+produces a DSOS polynomial. Same as NewEvenDegreeSosPolynomial, except
+the returned polynomial is diagonally dominant sum of squares (dsos).</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="pydrake.solvers.mathematicalprogram.MathematicalProgram.NewEvenDegreeFreePolynomial">
 <code class="descname">NewEvenDegreeFreePolynomial</code><span class="sig-paren">(</span><em>self: pydrake.solvers.mathematicalprogram.MathematicalProgram</em>, <em>indeterminates: pydrake.symbolic.Variables</em>, <em>degree: int</em>, <em>coeff_name: str = 'a'</em><span class="sig-paren">)</span> &#x2192; pydrake.symbolic.Polynomial<a class="headerlink" href="#pydrake.solvers.mathematicalprogram.MathematicalProgram.NewEvenDegreeFreePolynomial" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a free polynomial that only contains even degree monomials. A
@@ -2145,6 +2153,20 @@ while x²y is not (degree 3).</p>
 <dd>The coefficients of the polynomial are decision variables with
 this name as a base. The variable name would be “a1”, “a2”, etc.</dd>
 </dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.solvers.mathematicalprogram.MathematicalProgram.NewEvenDegreeSdsosPolynomial">
+<code class="descname">NewEvenDegreeSdsosPolynomial</code><span class="sig-paren">(</span><em>self: pydrake.solvers.mathematicalprogram.MathematicalProgram</em>, <em>indeterminates: pydrake.symbolic.Variables</em>, <em>degree: int</em><span class="sig-paren">)</span> &#x2192; Tuple[pydrake.symbolic.Polynomial, numpy.ndarray[object[m, n]], numpy.ndarray[object[m, n]]]<a class="headerlink" href="#pydrake.solvers.mathematicalprogram.MathematicalProgram.NewEvenDegreeSdsosPolynomial" title="Permalink to this definition">¶</a></dt>
+<dd><p>see even_degree_nonnegative_polynomial for details. Variant that
+produces an SDSOS polynomial.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.solvers.mathematicalprogram.MathematicalProgram.NewEvenDegreeSosPolynomial">
+<code class="descname">NewEvenDegreeSosPolynomial</code><span class="sig-paren">(</span><em>self: pydrake.solvers.mathematicalprogram.MathematicalProgram</em>, <em>indeterminates: pydrake.symbolic.Variables</em>, <em>degree: int</em><span class="sig-paren">)</span> &#x2192; Tuple[pydrake.symbolic.Polynomial, numpy.ndarray[object[m, n]], numpy.ndarray[object[m, n]]]<a class="headerlink" href="#pydrake.solvers.mathematicalprogram.MathematicalProgram.NewEvenDegreeSosPolynomial" title="Permalink to this definition">¶</a></dt>
+<dd><p>See even_degree_nonnegative_polynomial for more details. Variant that
+produces a SOS polynomial.</p>
 </dd></dl>
 
 <dl class="method">

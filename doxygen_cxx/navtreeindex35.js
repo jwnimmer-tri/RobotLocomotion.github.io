@@ -1,5 +1,9 @@
 var NAVTREEINDEX35 =
 {
+"constants_8h.html#af8777bc10296f9d39d52753861110e26abab0767e88027de9944aa55c24c8387a":[4,0,0,1,9,0,0],
+"constants_8h.html#af8777bc10296f9d39d52753861110e26af460a96ab20647996c15854794763384":[4,0,0,1,9,0,1],
+"constraint_8h.html":[4,0,0,10,7],
+"constraint__doxygen_8h.html":[4,0,0,8,1,0],
 "constraint__problem__data_8h.html":[4,0,0,8,1,1],
 "constraint__relaxing__ik_8h.html":[4,0,0,6,3,0],
 "constraint__solver_8h.html":[4,0,0,8,1,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX35 =
 "drake__lcm__interface_8h.html#ac0dd1948e81c44942a67677e6cc43d07":[4,0,0,5,1,5],
 "drake__lcm__log_8h.html":[4,0,0,5,2],
 "drake__marker_8h.html":[4,0,0,1,19],
-"drake__mock__lcm_8h.html":[4,0,0,5,3],
-"drake__path_8h.html":[4,0,0,1,20],
-"drake__path_8h.html#a3d3b9fa09763df2a9013eec2cf87df7b":[4,0,0,1,20,0],
-"drake__throw_8h.html":[4,0,0,1,21],
-"drake__throw_8h.html#a4d9c29b101212c8a886c7f4f1a8b71ca":[4,0,0,1,21,0]
+"drake__mock__lcm_8h.html":[4,0,0,5,3]
 };

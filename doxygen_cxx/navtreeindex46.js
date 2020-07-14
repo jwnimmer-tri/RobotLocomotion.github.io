@@ -1,5 +1,9 @@
 var NAVTREEINDEX46 =
 {
+"symbolic__formula_8h.html#aa71ff98005aa4a5b0d0639c055fb295f":[4,0,0,1,56,21],
+"symbolic__formula_8h.html#aa9fbe2690e2170be14656811a9d860d5":[4,0,0,1,56,32],
+"symbolic__formula_8h.html#aaba9db65867379d7603eeaeb9be56451":[4,0,0,1,56,55],
+"symbolic__formula_8h.html#aac0abfc50fd5ff7cda1e5709688b4569":[4,0,0,1,56,29],
 "symbolic__formula_8h.html#aaea3ce465525b0c357d1c5115e49a626":[4,0,0,1,56,39],
 "symbolic__formula_8h.html#aafc2f3979d06df08b80d2b280b9728c7":[4,0,0,1,56,77],
 "symbolic__formula_8h.html#abce383d57808e711c1517e9bd461cde2":[4,0,0,1,56,25],
@@ -245,9 +249,5 @@ var NAVTREEINDEX46 =
 "tamsi__solver__results_8h.html":[4,0,0,8,7,14],
 "temp__directory_8h.html":[4,0,0,1,67],
 "temp__directory_8h.html#a107ff2f218f356d05f8cdc3b7d254eb2":[4,0,0,1,67,0],
-"tessellation__strategy_8h.html":[4,0,0,4,0,34],
-"text__logging_8h.html":[4,0,0,1,68],
-"text__logging_8h.html#a43a4a42dcea3143d400de1575cb5758c":[4,0,0,1,68,5],
-"text__logging_8h.html#a9cae370466ffb304c10aebea42eca26b":[4,0,0,1,68,1],
-"text__logging_8h.html#abc074aead70b88bf38e18993bf9c28c3":[4,0,0,1,68,6]
+"tessellation__strategy_8h.html":[4,0,0,4,0,34]
 };
