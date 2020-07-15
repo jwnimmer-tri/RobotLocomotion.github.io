@@ -1,5 +1,12 @@
 var NAVTREEINDEX19 =
 {
+"classdrake_1_1symbolic_1_1_expression.html#a9d9ed4b56aef62ef067034e4bc706004":[3,0,0,12,3,41],
+"classdrake_1_1symbolic_1_1_expression.html#a9ddcc51253066082911475e06b0ac994":[3,0,0,12,3,35],
+"classdrake_1_1symbolic_1_1_expression.html#a9ec7d6eab8013f1b2e77621ba8a530dc":[3,0,0,12,3,105],
+"classdrake_1_1symbolic_1_1_expression.html#aa19665aa37ff4c0aff7aa1ca142eff46":[3,0,0,12,3,73],
+"classdrake_1_1symbolic_1_1_expression.html#aa1a9d0cb40d0253375fab226d58b5541":[3,0,0,12,3,135],
+"classdrake_1_1symbolic_1_1_expression.html#aa1d05f65671e4e7a917fb7a159dc6472":[3,0,0,12,3,133],
+"classdrake_1_1symbolic_1_1_expression.html#aa4a2c288d79cc175a23093bfe33a033a":[3,0,0,12,3,71],
 "classdrake_1_1symbolic_1_1_expression.html#aa4b273174794b2ba4f524c528d686906":[3,0,0,12,3,134],
 "classdrake_1_1symbolic_1_1_expression.html#aa4b71a6d010b9c81b85e494ddaf8e9c2":[3,0,0,12,3,103],
 "classdrake_1_1symbolic_1_1_expression.html#aa57efef61100945c693ecb05dadf6dcf":[3,0,0,12,3,89],
@@ -242,12 +249,5 @@ var NAVTREEINDEX19 =
 "classdrake_1_1symbolic_1_1_expression_mul.html#a79ae8c3014d743031f941bf1c0dcadd5":[3,0,0,12,23,0],
 "classdrake_1_1symbolic_1_1_expression_mul.html#aa3acb8f966e8bcc451ccd870c82c103b":[3,0,0,12,23,4],
 "classdrake_1_1symbolic_1_1_expression_mul.html#ab022b2a7bc26750aab90eeafb49c2d8a":[3,0,0,12,23,2],
-"classdrake_1_1symbolic_1_1_expression_mul.html#ada47b49d3b6cce5ea37277bf49f9a4c6":[3,0,0,12,23,6],
-"classdrake_1_1symbolic_1_1_expression_mul.html#ae4fb457c881d49e1e698120eae9e4c52":[3,0,0,12,23,5],
-"classdrake_1_1symbolic_1_1_expression_mul_factory.html":[3,0,0,12,24],
-"classdrake_1_1symbolic_1_1_expression_mul_factory.html#a0eafd152251a204f33d212cb1229ed46":[3,0,0,12,24,4],
-"classdrake_1_1symbolic_1_1_expression_mul_factory.html#a1009078cf5cdfc7c336b1fa26fe0fc37":[3,0,0,12,24,2],
-"classdrake_1_1symbolic_1_1_expression_mul_factory.html#a1b1f7a4ff5be78a8a3a73d8e63fbcda6":[3,0,0,12,24,11],
-"classdrake_1_1symbolic_1_1_expression_mul_factory.html#a2dd34154ac5a363dddc095ff3d7a9648":[3,0,0,12,24,3],
-"classdrake_1_1symbolic_1_1_expression_mul_factory.html#a2e689fd0c6ca0e5d67b3f98a309610ae":[3,0,0,12,24,9]
+"classdrake_1_1symbolic_1_1_expression_mul.html#ada47b49d3b6cce5ea37277bf49f9a4c6":[3,0,0,12,23,6]
 };

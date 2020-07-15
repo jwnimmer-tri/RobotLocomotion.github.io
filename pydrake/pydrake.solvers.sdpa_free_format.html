@@ -190,13 +190,14 @@
 <dt id="pydrake.solvers.sdpa_free_format.GenerateSDPA">
 <code class="descclassname">pydrake.solvers.sdpa_free_format.</code><code class="descname">GenerateSDPA</code><span class="sig-paren">(</span><em>prog: pydrake.solvers.mathematicalprogram.MathematicalProgram</em>, <em>file_name: str</em>, <em>method: pydrake.solvers.sdpa_free_format.RemoveFreeVariableMethod = RemoveFreeVariableMethod.kNullspace</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#pydrake.solvers.sdpa_free_format.GenerateSDPA" title="Permalink to this definition">¶</a></dt>
 <dd><p>SDPA is a format to record an SDP problem</p>
-<p>max tr(C*X) s.t tr(Aᵢ*X) = gᵢ X ≽ 0 or the dual of the problem</p>
-<p>min gᵀy s.t ∑ᵢ yᵢAᵢ - C ≽ 0 where X is a symmetric block diagonal
-matrix. The format is described in
-<a class="reference external" href="http://plato.asu.edu/ftp/sdpa_format.txt">http://plato.asu.edu/ftp/sdpa_format.txt</a>. Many solvers, such as CSDP,
-DSDP, SDPA, sedumi and SDPT3, accept an SDPA format file as the input.
-This function reads a MathematicalProgram that can be formulated as
-above, and write an SDPA file.</p>
+<p>max tr(C*X) s.t tr(Aᵢ*X) = gᵢ X ≽ 0</p>
+<p>or the dual of the problem</p>
+<p>min gᵀy s.t ∑ᵢ yᵢAᵢ - C ≽ 0</p>
+<p>where X is a symmetric block diagonal matrix. The format is described
+in <a class="reference external" href="http://plato.asu.edu/ftp/sdpa_format.txt">http://plato.asu.edu/ftp/sdpa_format.txt</a>. Many solvers, such as
+CSDP, DSDP, SDPA, sedumi and SDPT3, accept an SDPA format file as the
+input. This function reads a MathematicalProgram that can be
+formulated as above, and write an SDPA file.</p>
 <dl class="docutils">
 <dt>Parameter <code class="docutils literal"><span class="pre">prog</span></code>:</dt>
 <dd>a program that contains an optimization program.</dd>
@@ -227,9 +228,9 @@ solves is in this form P1</p>
 On the other hand, most real-world applications require free
 variables, namely problems in this form P2</p>
 <p>max tr(C * X) + dᵀs s.t tr(Aᵢ*X) + bᵢᵀs = aᵢ X ≽ 0 s is free.</p>
-<p>In order to remove the free variables, we consider two approaches. 1.
-Replace a free variable s with two variables s = p - q, p ≥ 0, q ≥ 0.
-2. First write the dual of the problem P2 as D2</p>
+<p>In order to remove the free variables, we consider three approaches.
+1. Replace a free variable s with two variables s = p - q, p ≥ 0, q ≥
+0. 2. First write the dual of the problem P2 as D2</p>
 <p>min aᵀy s.t ∑ᵢ yᵢAᵢ - C = Z Z ≽ 0 Bᵀ * y = d,</p>
 <p>where bᵢᵀ is the i’th row of B. The last constraint Bᵀ * y = d means y
 = ŷ + Nt, where Bᵀ * ŷ = d, and N is the null space of Bᵀ. Hence, D2
@@ -239,16 +240,25 @@ is equivalent to the following problem, D3</p>
 without free variables</p>
 <p>max tr((C-∑ᵢ ŷᵢAᵢ)*X̂) + aᵀŷ s.t tr(FᵢX̂) = (Nᵀa)(i) X̂ ≽ 0.</p>
 <p>Then (X, s) = (X̂, B⁻¹(a - tr(Aᵢ X̂))) is the solution to the original
-problem P2.</p>
+problem P2. 3. Add a slack variable t, with the Lorentz cone
+constraint t ≥ sqrt(sᵀs).</p>
 <p>Members:</p>
 <blockquote>
 <div>kNullspace : Approach 2, reformulate the dual problem by considering the nullspace</div></blockquote>
 <p>of the linear constraint in the dual.</p>
 <blockquote>
-<div>kTwoSlackVariables : Approach 1, replace a free variable s as s = y⁺ - y⁻, y⁺ ≥ 0, y⁻ ≥ 0.</div></blockquote>
+<div><p>kTwoSlackVariables : Approach 1, replace a free variable s as s = y⁺ - y⁻, y⁺ ≥ 0, y⁻ ≥ 0.</p>
+<p>kLorentzConeSlack : Approach 3, add a slack variable t with the lorentz cone constraint t</p>
+</div></blockquote>
+<p>≥ sqrt(sᵀs).</p>
 <dl class="method">
 <dt id="pydrake.solvers.sdpa_free_format.RemoveFreeVariableMethod.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.solvers.sdpa_free_format.RemoveFreeVariableMethod</em>, <em>arg0: int</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.solvers.sdpa_free_format.RemoveFreeVariableMethod.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.solvers.sdpa_free_format.RemoveFreeVariableMethod.kLorentzConeSlack">
+<code class="descname">kLorentzConeSlack</code><em class="property"> = RemoveFreeVariableMethod.kLorentzConeSlack</em><a class="headerlink" href="#pydrake.solvers.sdpa_free_format.RemoveFreeVariableMethod.kLorentzConeSlack" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">

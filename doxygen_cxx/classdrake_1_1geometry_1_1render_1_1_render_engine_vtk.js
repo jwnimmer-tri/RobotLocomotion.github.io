@@ -17,8 +17,14 @@ var classdrake_1_1geometry_1_1render_1_1_render_engine_vtk =
     [ "ImplementGeometry", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#a7e3d19bd99a23652bcc1079d6aabe3a6", null ],
     [ "operator=", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#aaa0981a4cafa2db60957d182cccd5bfd", null ],
     [ "operator=", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#a8169cca4018a438cc0012dbca354201d", null ],
+    [ "RenderColorImage", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#a9f2f69f75984d0ce2998cab1e2d1cc70", null ],
+    [ "RenderColorImage", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#a9cb220048250527c21a2c28cf082225d", null ],
     [ "RenderColorImage", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#a32011aa63bad99470e8834c53b13372e", null ],
+    [ "RenderDepthImage", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#a63971ade73063ab365b86db8a3dba38c", null ],
+    [ "RenderDepthImage", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#a4cb486ce4bf7773a6f1413415b378645", null ],
     [ "RenderDepthImage", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#a17ab13adb675f5774d9b144aab5be040", null ],
+    [ "RenderLabelImage", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#a7163985b2776dd26390a6b3e2b9eb837", null ],
+    [ "RenderLabelImage", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#ae24b8e9eafdf8078a1668854573fdd70", null ],
     [ "RenderLabelImage", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#ae73dde1043b9c0c6f8da21085017d301", null ],
     [ "UpdateViewpoint", "classdrake_1_1geometry_1_1render_1_1_render_engine_vtk.html#a81e26b02c3a6d32b4187fc3f14261cbf", null ]
 ];

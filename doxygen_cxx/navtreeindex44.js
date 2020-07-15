@@ -1,5 +1,13 @@
 var NAVTREEINDEX44 =
 {
+"structdrake_1_1systems_1_1controllers_1_1_pid_controlled_system_1_1_connect_result.html":[1,2,2,2,0],
+"structdrake_1_1systems_1_1controllers_1_1_pid_controlled_system_1_1_connect_result.html#a08e211873bd62f93a57ad06fdc27b3b2":[1,2,2,2,0,1],
+"structdrake_1_1systems_1_1controllers_1_1_pid_controlled_system_1_1_connect_result.html#a52ff55f212eefdef42762a59fd067f31":[1,2,2,2,0,0],
+"structdrake_1_1systems_1_1rendering_1_1_pose_velocity_input_ports.html":[3,0,0,13,6,6],
+"structdrake_1_1systems_1_1rendering_1_1_pose_velocity_input_ports.html#abc9564688bbee2a18b20e2e0c10ee252":[3,0,0,13,6,6,1],
+"structdrake_1_1systems_1_1rendering_1_1_pose_velocity_input_ports.html#af1a58b1ce15865c2470ca4b646f3ab83":[3,0,0,13,6,6,0],
+"structdrake_1_1systems_1_1scalar__conversion_1_1_from_double_traits.html":[3,0,0,13,7,0],
+"structdrake_1_1systems_1_1scalar__conversion_1_1_from_double_traits.html#ad608a62fdbb6a2b4507b17cd4131a345":[3,0,0,13,7,0,0],
 "structdrake_1_1systems_1_1scalar__conversion_1_1_non_symbolic_traits.html":[3,0,0,13,7,1],
 "structdrake_1_1systems_1_1scalar__conversion_1_1_non_symbolic_traits.html#a241d5297458cb6cc46faee075bafeca4":[3,0,0,13,7,1,0],
 "structdrake_1_1systems_1_1scalar__conversion_1_1_traits.html":[3,0,0,13,7,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX44 =
 "symbolic__expression_8h.html#a996064aacae33fb26d67c20617c764ee":[4,0,0,1,53,94],
 "symbolic__expression_8h.html#a9bd1b0e780b38b3c3538e516ba979f89":[4,0,0,1,53,88],
 "symbolic__expression_8h.html#a9d4ba82d6dffb1c0c6f40a768f86eae7":[4,0,0,1,53,18],
-"symbolic__expression_8h.html#a9d8e94c7598bd59e6a5314ffbc3c7f59":[4,0,0,1,53,78],
-"symbolic__expression_8h.html#a9da61282d0c5ccefeaa2068d84a19273":[4,0,0,1,53,72],
-"symbolic__expression_8h.html#aa12acbb0b86d35d1de9280e699d3999d":[4,0,0,1,53,15],
-"symbolic__expression_8h.html#aa12b990bcc72a788e6d8176894d0d8a2":[4,0,0,1,53,59],
-"symbolic__expression_8h.html#aa379ca3565b4c97f5124bc78599febf4":[4,0,0,1,53,89],
-"symbolic__expression_8h.html#aa66cbc3a6c390d0d04bf3839e4377850":[4,0,0,1,53,69],
-"symbolic__expression_8h.html#aa8f471231c119fee48c6dba7a2d5ab18":[4,0,0,1,53,57],
-"symbolic__expression_8h.html#aac410f7e82c9d06e796d7fcb4508f5e4":[4,0,0,1,53,92],
-"symbolic__expression_8h.html#aad0d56f8b2a9f5a4e7a6d23e244341df":[4,0,0,1,53,96]
+"symbolic__expression_8h.html#a9d8e94c7598bd59e6a5314ffbc3c7f59":[4,0,0,1,53,78]
 };

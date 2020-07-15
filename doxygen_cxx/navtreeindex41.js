@@ -1,5 +1,12 @@
 var NAVTREEINDEX41 =
 {
+"random__polynomial__matrix_8h.html":[4,0,0,1,1,8],
+"random__polynomial__matrix_8h.html#ac4fc5709db8aa88c23fc8f401ee3d2de":[4,0,0,1,1,8,0],
+"random__rotation_8h.html":[4,0,0,7,25],
+"random__rotation_8h.html#a6c92561b046b32c1ebe172bd32dc8276":[4,0,0,7,25,1],
+"random__rotation_8h.html#acc24ae9bbbf0b9d253f3344b97a9f3d4":[4,0,0,7,25,3],
+"random__rotation_8h.html#ae6aefde593f0fbe2f9ef04f40979827f":[4,0,0,7,25,0],
+"random__rotation_8h.html#af27920d083eb816f24f832091a662f28":[4,0,0,7,25,2],
 "random__source_8h.html":[4,0,0,11,7,16],
 "random__source_8h.html#aa72ba361cfcb5e3d692bf467798ab820":[4,0,0,11,7,16,0],
 "region__of__attraction_8h.html":[4,0,0,11,0,13],
@@ -124,6 +131,7 @@ var NAVTREEINDEX41 =
 "sdpa__free__format_8h.html":[4,0,0,10,41],
 "sdpa__free__format_8h.html#a121673ddbdadd10b2e3ceab52a93f5d3":[4,0,0,10,41,0],
 "sdpa__free__format_8h.html#a121673ddbdadd10b2e3ceab52a93f5d3a268e3bfe4e48f70785a46a8d3552e552":[4,0,0,10,41,0,0],
+"sdpa__free__format_8h.html#a121673ddbdadd10b2e3ceab52a93f5d3a2992c87df2428b480924bf6c6509edec":[4,0,0,10,41,0,2],
 "sdpa__free__format_8h.html#a121673ddbdadd10b2e3ceab52a93f5d3a54b9d7601ece96fc42e2ffd67aae2690":[4,0,0,10,41,0,1],
 "sdpa__free__format_8h.html#aeb2470f8cacd8e5f5a473b10d0acf6cc":[4,0,0,10,41,1],
 "semi__explicit__euler__integrator_8h.html":[4,0,0,11,0,20],
@@ -241,13 +249,5 @@ var NAVTREEINDEX41 =
 "stateless__system_8h.html":[4,0,0,11,0,0,15],
 "static__equilibrium__constraint_8h.html":[4,0,0,8,5,4],
 "static__equilibrium__problem_8h.html":[4,0,0,8,5,5],
-"static__friction__cone__complementarity__constraint_8h.html":[4,0,0,8,5,6],
-"static__friction__cone__complementarity__constraint_8h.html#a4508ec670196c3fe45e9b52af8a73d4a":[4,0,0,8,5,6,0],
-"static__friction__cone__constraint_8h.html":[4,0,0,8,5,7],
-"stationary__system_8h.html":[4,0,0,11,0,0,16],
-"stepwise__dense__output_8h.html":[4,0,0,11,0,26],
-"stiff__double__mass__spring__system_8h.html":[4,0,0,11,0,0,17],
-"stochastic__systems_8h.html":[4,0,0,11,12],
-"structdrake_1_1_delegating_hasher.html":[3,0,0,19],
-"structdrake_1_1_delegating_hasher.html#a2f06de017c348e04061971db98125a4e":[3,0,0,19,1]
+"static__friction__cone__complementarity__constraint_8h.html":[4,0,0,8,5,6]
 };

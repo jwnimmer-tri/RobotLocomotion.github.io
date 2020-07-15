@@ -82,6 +82,7 @@ var searchData=
   ['klinearsystem',['kLinearSystem',['../namespacedrake_1_1solvers.html#a8b06041d7c1fb05f379714f4312306ecaebb0e280cb0e7da8a3868247749a4d9d',1,'drake::solvers']]],
   ['klogarithmic',['kLogarithmic',['../namespacedrake_1_1solvers.html#a6297509967536d29159910e5c51fd285a5bff8e60dc42878e194fb2d87460ed29',1,'drake::solvers']]],
   ['klorentzconeconstraint',['kLorentzConeConstraint',['../namespacedrake_1_1solvers.html#a115b732b5de5502e59437ee38babe95faa19344b8110a4be1b5581a25f612713f',1,'drake::solvers']]],
+  ['klorentzconeslack',['kLorentzConeSlack',['../namespacedrake_1_1solvers.html#a121673ddbdadd10b2e3ceab52a93f5d3a2992c87df2428b480924bf6c6509edec',1,'drake::solvers']]],
   ['kmanipulationclass',['kManipulationClass',['../namespacedrake_1_1examples_1_1manipulation__station.html#a03a45bcb13e3495c10e2bbd63e351d63afabc1bfb382dd858259ae5f121328b3b',1,'drake::examples::manipulation_station']]],
   ['kmaxiterationsreached',['kMaxIterationsReached',['../namespacedrake_1_1multibody.html#a6144c2c8d4494bcb283f3f9e5841bfd2a1131fdd052242dd97fe2fe1d7a9a804a',1,'drake::multibody']]],
   ['kminimalcoordinates',['kMinimalCoordinates',['../classdrake_1_1examples_1_1bead__on__a__wire_1_1_bead_on_a_wire.html#af532ebccf30da4696c48ec61f6b4d663a9ff3e250bc19253cd24615673cc6c378',1,'drake::examples::bead_on_a_wire::BeadOnAWire']]],

@@ -1,5 +1,12 @@
 var NAVTREEINDEX34 =
 {
+"classdrake_1_1trajectories_1_1_bspline_trajectory.html#a7bf41e0881035d3f5e879b99ff8fc4c5":[3,0,0,15,0,16],
+"classdrake_1_1trajectories_1_1_bspline_trajectory.html#a8ba65f057b09f645ebefbccd5b490fcc":[3,0,0,15,0,19],
+"classdrake_1_1trajectories_1_1_bspline_trajectory.html#a9066afc9f6c06932c20b1f9688523603":[3,0,0,15,0,4],
+"classdrake_1_1trajectories_1_1_bspline_trajectory.html#a9aa1f1cfff6dcb352d5fbb15a80ee1a9":[3,0,0,15,0,20],
+"classdrake_1_1trajectories_1_1_bspline_trajectory.html#aa60dd7fd9939516ab657b3ad5a305e63":[3,0,0,15,0,13],
+"classdrake_1_1trajectories_1_1_bspline_trajectory.html#aba5bc39050417dea169199678e0273c5":[3,0,0,15,0,1],
+"classdrake_1_1trajectories_1_1_bspline_trajectory.html#ac9bec40ee20228e889951338227f5db7":[3,0,0,15,0,0],
 "classdrake_1_1trajectories_1_1_bspline_trajectory.html#acbd23484e581d27a21f383141f164980":[3,0,0,15,0,2],
 "classdrake_1_1trajectories_1_1_bspline_trajectory.html#acc1fbdce99e21637c6739f65cdb081c7":[3,0,0,15,0,18],
 "classdrake_1_1trajectories_1_1_bspline_trajectory.html#adca8eca2ee324f57170dedfb4b06160b":[3,0,0,15,0,7],
@@ -242,12 +249,5 @@ var NAVTREEINDEX34 =
 "connect__lcm__scope_8h.html#ga57212ab19e21f49a5f77f26da8344125":[4,0,0,11,4,0,0],
 "constant__value__source_8h.html":[4,0,0,11,7,3],
 "constant__vector__source_8h.html":[4,0,0,11,7,4],
-"constants_8h.html":[4,0,0,1,9],
-"constants_8h.html#a07869e660ffe730425feca7595de2273":[4,0,0,1,9,2],
-"constants_8h.html#a63c55e4d8662e0986e79d11486334486":[4,0,0,1,9,1],
-"constants_8h.html#ac9ce1d9cce0ad61dd2f5a295c1a10fc8":[4,0,0,1,9,6],
-"constants_8h.html#ace32fe90adc0d2100ad4fc9f4bc6f79a":[4,0,0,1,9,3],
-"constants_8h.html#aeab5b0d99cafc2f6ae5812128cea27a3":[4,0,0,1,9,4],
-"constants_8h.html#af869092c52ed7cc9d2db40ce56050c7c":[4,0,0,1,9,5],
-"constants_8h.html#af8777bc10296f9d39d52753861110e26":[4,0,0,1,9,0]
+"constants_8h.html":[4,0,0,1,9]
 };

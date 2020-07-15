@@ -1,5 +1,12 @@
 var NAVTREEINDEX8 =
 {
+"classdrake_1_1math_1_1_rigid_transform.html#ab3c9f6da94bb9af6ec8426b32bbb5da3":[3,0,0,7,12,36],
+"classdrake_1_1math_1_1_rigid_transform.html#ab8b71809f27af855296a40b46d8f0a83":[3,0,0,7,12,11],
+"classdrake_1_1math_1_1_rigid_transform.html#ab8d99e85efd9f05d378ea0ecb922fcfa":[3,0,0,7,12,7],
+"classdrake_1_1math_1_1_rigid_transform.html#abd964513cdca714478e29210f7e9cf31":[3,0,0,7,12,41],
+"classdrake_1_1math_1_1_rigid_transform.html#ac7b8a89a54006ff4502298b5907f7e28":[3,0,0,7,12,13],
+"classdrake_1_1math_1_1_rigid_transform.html#ac804feef1db1925cdb41771475381a17":[3,0,0,7,12,23],
+"classdrake_1_1math_1_1_rigid_transform.html#acbb70b2d5e20b8e9a4ffe2e21c7bf8fd":[3,0,0,7,12,33],
 "classdrake_1_1math_1_1_rigid_transform.html#ada1d92575e2e4beb3bfa036983c33923":[3,0,0,7,12,1],
 "classdrake_1_1math_1_1_rigid_transform.html#ae31756c2694bacdfdf6b0c75602d498b":[3,0,0,7,12,34],
 "classdrake_1_1math_1_1_rigid_transform.html#ae4c29dcfbeeb594af24ae82cff87f35f":[3,0,0,7,12,24],
@@ -242,12 +249,5 @@ var NAVTREEINDEX8 =
 "classdrake_1_1multibody_1_1_distance_constraint.html#a08a272efacc4d277535104d1ad96db6a":[3,0,0,8,16,1],
 "classdrake_1_1multibody_1_1_distance_constraint.html#a15690a925923c183e5657ab400b4c8d5":[3,0,0,8,16,0],
 "classdrake_1_1multibody_1_1_distance_constraint.html#a6c6edcb36ead3f998b5f2ee32c5fbd66":[3,0,0,8,16,6],
-"classdrake_1_1multibody_1_1_distance_constraint.html#aa2ac8bf926f4c4b19a02873f753c344c":[3,0,0,8,16,3],
-"classdrake_1_1multibody_1_1_distance_constraint.html#aad75abb4221bf6e44091ed60c7721241":[3,0,0,8,16,2],
-"classdrake_1_1multibody_1_1_distance_constraint.html#ad04269b2bfa6bfa65dc5af30515d41a8":[3,0,0,8,16,4],
-"classdrake_1_1multibody_1_1_door_hinge.html":[3,0,0,8,17],
-"classdrake_1_1multibody_1_1_door_hinge.html#a0480114a02d8ac4edc2f4011a3f3e3cd":[3,0,0,8,17,3],
-"classdrake_1_1multibody_1_1_door_hinge.html#a0b35f9a15174cdbc86feb93ab4191cf2":[3,0,0,8,17,7],
-"classdrake_1_1multibody_1_1_door_hinge.html#a14f1e33beb90541be76fcb45dea6af74":[3,0,0,8,17,20],
-"classdrake_1_1multibody_1_1_door_hinge.html#a1a3872435692d59007761e82cb48b17e":[3,0,0,8,17,5]
+"classdrake_1_1multibody_1_1_distance_constraint.html#aa2ac8bf926f4c4b19a02873f753c344c":[3,0,0,8,16,3]
 };

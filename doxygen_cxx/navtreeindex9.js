@@ -1,5 +1,12 @@
 var NAVTREEINDEX9 =
 {
+"classdrake_1_1multibody_1_1_distance_constraint.html#aad75abb4221bf6e44091ed60c7721241":[3,0,0,8,16,2],
+"classdrake_1_1multibody_1_1_distance_constraint.html#ad04269b2bfa6bfa65dc5af30515d41a8":[3,0,0,8,16,4],
+"classdrake_1_1multibody_1_1_door_hinge.html":[3,0,0,8,17],
+"classdrake_1_1multibody_1_1_door_hinge.html#a0480114a02d8ac4edc2f4011a3f3e3cd":[3,0,0,8,17,3],
+"classdrake_1_1multibody_1_1_door_hinge.html#a0b35f9a15174cdbc86feb93ab4191cf2":[3,0,0,8,17,7],
+"classdrake_1_1multibody_1_1_door_hinge.html#a14f1e33beb90541be76fcb45dea6af74":[3,0,0,8,17,20],
+"classdrake_1_1multibody_1_1_door_hinge.html#a1a3872435692d59007761e82cb48b17e":[3,0,0,8,17,5],
 "classdrake_1_1multibody_1_1_door_hinge.html#a1c1522be243a3ab3eeca60c8c56696ce":[3,0,0,8,17,1],
 "classdrake_1_1multibody_1_1_door_hinge.html#a23c73f4faed4d94c062ef26f1143c9ea":[3,0,0,8,17,4],
 "classdrake_1_1multibody_1_1_door_hinge.html#a4623cd61fedc3c25436ca083bbbac34a":[3,0,0,8,17,11],
@@ -242,12 +249,5 @@ var NAVTREEINDEX9 =
 "classdrake_1_1multibody_1_1_multibody_element.html#a47e4f9cb97baf94b1cdc26585e2e1e3c":[3,0,0,8,35,11],
 "classdrake_1_1multibody_1_1_multibody_element.html#a49109966f9505633199c07ad06b0632d":[3,0,0,8,35,13],
 "classdrake_1_1multibody_1_1_multibody_element.html#a59cf1173a305d4864320bf9e1bf60f35":[3,0,0,8,35,14],
-"classdrake_1_1multibody_1_1_multibody_element.html#a5a912f1fd024549f45d6197eadc30e48":[3,0,0,8,35,4],
-"classdrake_1_1multibody_1_1_multibody_element.html#a68e3e034aa4ff8fbfc3ae70b96923ccb":[3,0,0,8,35,12],
-"classdrake_1_1multibody_1_1_multibody_element.html#a7a5738fd3df2c9ea052b3c8312262071":[3,0,0,8,35,5],
-"classdrake_1_1multibody_1_1_multibody_element.html#a7b561934ea4adacae196c9f85cfa6f13":[3,0,0,8,35,3],
-"classdrake_1_1multibody_1_1_multibody_element.html#a8659b2212916d36167001616643398f1":[3,0,0,8,35,1],
-"classdrake_1_1multibody_1_1_multibody_element.html#aab10b1c612e1455976fc9e71c4ba7df6":[3,0,0,8,35,8],
-"classdrake_1_1multibody_1_1_multibody_element.html#ac7d3ff54398a47f3c1e9ce9b4fb2e120":[3,0,0,8,35,10],
-"classdrake_1_1multibody_1_1_multibody_element.html#acd2192bbd60e8c8d2c14763041d66d50":[3,0,0,8,35,9]
+"classdrake_1_1multibody_1_1_multibody_element.html#a5a912f1fd024549f45d6197eadc30e48":[3,0,0,8,35,4]
 };
