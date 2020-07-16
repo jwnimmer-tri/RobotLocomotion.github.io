@@ -1335,9 +1335,9 @@ SceneGraph::get_query_output_port() to
 get_geometry_query_input_port().</p>
 <p>Refer to the documentation provided in each of the methods above for
 further details.</p>
-<p>** Accessing point contact parameters</p>
-<p>MultibodyPlant’s point contact model looks for model parameters stored
-as geometry::ProximityProperties by geometry::SceneGraph. These
+<p>** Accessing point contact parameters MultibodyPlant’s point contact
+model looks for model parameters stored as
+geometry::ProximityProperties by geometry::SceneGraph. These
 properties can be obtained before or after context creation through
 geometry::SceneGraphInspector APIs as outlined below. MultibodyPlant
 expects the following properties for point contact modeling:</p>
@@ -1347,11 +1347,16 @@ expects the following properties for point contact modeling:</p>
 <p>Description | | :——–: | :————–: | :——: |
 :—————-: | :——————- | | material |
 coulomb_friction | yes¹ | CoulombFriction&lt;T&gt; | Static and Dynamic
-friction. |</p>
+friction. | | material | point_contact_stiffness | no² | T | Penalty
+method stiffness. | | material | hunt_crossley_dissipation | no² | T |
+Penalty method dissipation. |</p>
 <p>¹ Collision geometry is required to be registered with a
 geometry::ProximityProperties object that contains the (“material”,
-“coulomb_friction”) property. If the parameter is not registered,
+“coulomb_friction”) property. If the property is missing,
 MultibodyPlant will throw an exeception.</p>
+<p>² If the property is missing, MultibodyPlant will use a heuristic
+value as the default. Refer to the section mbp_penalty_method “Penalty
+method point contact” for further details.</p>
 <p>Accessing and modifying contact properties requires interfacing with
 geometry::SceneGraph’s model inspector. Interfacing with a model
 inspector obtained from geometry::SceneGraph will provide the default
@@ -4410,7 +4415,7 @@ post-finalize, see Finalize().</p>
 <code class="descname">WeldFrames</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.plant.MultibodyPlant_.MultibodyPlant_[float].WeldFrames" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>WeldFrames(self: pydrake.multibody.plant.MultibodyPlant_[float], A: pydrake.multibody.tree.Frame_[float], B: pydrake.multibody.tree.Frame_[float], X_AB: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f761d3d52f0&gt;) -&gt; pydrake.multibody.tree.WeldJoint_[float]</li>
+<li>WeldFrames(self: pydrake.multibody.plant.MultibodyPlant_[float], A: pydrake.multibody.tree.Frame_[float], B: pydrake.multibody.tree.Frame_[float], X_AB: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f7280d7a3f0&gt;) -&gt; pydrake.multibody.tree.WeldJoint_[float]</li>
 </ol>
 <p>Welds frames A and B with relative pose <code class="docutils literal"><span class="pre">X_AB</span></code>. That is, the pose of
 frame B in frame A is fixed, with value <code class="docutils literal"><span class="pre">X_AB</span></code>. The call to this
@@ -4655,9 +4660,9 @@ SceneGraph::get_query_output_port() to
 get_geometry_query_input_port().</p>
 <p>Refer to the documentation provided in each of the methods above for
 further details.</p>
-<p>** Accessing point contact parameters</p>
-<p>MultibodyPlant’s point contact model looks for model parameters stored
-as geometry::ProximityProperties by geometry::SceneGraph. These
+<p>** Accessing point contact parameters MultibodyPlant’s point contact
+model looks for model parameters stored as
+geometry::ProximityProperties by geometry::SceneGraph. These
 properties can be obtained before or after context creation through
 geometry::SceneGraphInspector APIs as outlined below. MultibodyPlant
 expects the following properties for point contact modeling:</p>
@@ -4667,11 +4672,16 @@ expects the following properties for point contact modeling:</p>
 <p>Description | | :——–: | :————–: | :——: |
 :—————-: | :——————- | | material |
 coulomb_friction | yes¹ | CoulombFriction&lt;T&gt; | Static and Dynamic
-friction. |</p>
+friction. | | material | point_contact_stiffness | no² | T | Penalty
+method stiffness. | | material | hunt_crossley_dissipation | no² | T |
+Penalty method dissipation. |</p>
 <p>¹ Collision geometry is required to be registered with a
 geometry::ProximityProperties object that contains the (“material”,
-“coulomb_friction”) property. If the parameter is not registered,
+“coulomb_friction”) property. If the property is missing,
 MultibodyPlant will throw an exeception.</p>
+<p>² If the property is missing, MultibodyPlant will use a heuristic
+value as the default. Refer to the section mbp_penalty_method “Penalty
+method point contact” for further details.</p>
 <p>Accessing and modifying contact properties requires interfacing with
 geometry::SceneGraph’s model inspector. Interfacing with a model
 inspector obtained from geometry::SceneGraph will provide the default
@@ -7730,7 +7740,7 @@ post-finalize, see Finalize().</p>
 <code class="descname">WeldFrames</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.plant.MultibodyPlant_[AutoDiffXd].WeldFrames" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>WeldFrames(self: pydrake.multibody.plant.MultibodyPlant_[AutoDiffXd], A: pydrake.multibody.tree.Frame_[AutoDiffXd], B: pydrake.multibody.tree.Frame_[AutoDiffXd], X_AB: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f761d3d5ab0&gt;) -&gt; pydrake.multibody.tree.WeldJoint_[AutoDiffXd]</li>
+<li>WeldFrames(self: pydrake.multibody.plant.MultibodyPlant_[AutoDiffXd], A: pydrake.multibody.tree.Frame_[AutoDiffXd], B: pydrake.multibody.tree.Frame_[AutoDiffXd], X_AB: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f7280d7abb0&gt;) -&gt; pydrake.multibody.tree.WeldJoint_[AutoDiffXd]</li>
 </ol>
 <p>Welds frames A and B with relative pose <code class="docutils literal"><span class="pre">X_AB</span></code>. That is, the pose of
 frame B in frame A is fixed, with value <code class="docutils literal"><span class="pre">X_AB</span></code>. The call to this
@@ -7973,9 +7983,9 @@ SceneGraph::get_query_output_port() to
 get_geometry_query_input_port().</p>
 <p>Refer to the documentation provided in each of the methods above for
 further details.</p>
-<p>** Accessing point contact parameters</p>
-<p>MultibodyPlant’s point contact model looks for model parameters stored
-as geometry::ProximityProperties by geometry::SceneGraph. These
+<p>** Accessing point contact parameters MultibodyPlant’s point contact
+model looks for model parameters stored as
+geometry::ProximityProperties by geometry::SceneGraph. These
 properties can be obtained before or after context creation through
 geometry::SceneGraphInspector APIs as outlined below. MultibodyPlant
 expects the following properties for point contact modeling:</p>
@@ -7985,11 +7995,16 @@ expects the following properties for point contact modeling:</p>
 <p>Description | | :——–: | :————–: | :——: |
 :—————-: | :——————- | | material |
 coulomb_friction | yes¹ | CoulombFriction&lt;T&gt; | Static and Dynamic
-friction. |</p>
+friction. | | material | point_contact_stiffness | no² | T | Penalty
+method stiffness. | | material | hunt_crossley_dissipation | no² | T |
+Penalty method dissipation. |</p>
 <p>¹ Collision geometry is required to be registered with a
 geometry::ProximityProperties object that contains the (“material”,
-“coulomb_friction”) property. If the parameter is not registered,
+“coulomb_friction”) property. If the property is missing,
 MultibodyPlant will throw an exeception.</p>
+<p>² If the property is missing, MultibodyPlant will use a heuristic
+value as the default. Refer to the section mbp_penalty_method “Penalty
+method point contact” for further details.</p>
 <p>Accessing and modifying contact properties requires interfacing with
 geometry::SceneGraph’s model inspector. Interfacing with a model
 inspector obtained from geometry::SceneGraph will provide the default
@@ -11048,7 +11063,7 @@ post-finalize, see Finalize().</p>
 <code class="descname">WeldFrames</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.plant.MultibodyPlant_[Expression].WeldFrames" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>WeldFrames(self: pydrake.multibody.plant.MultibodyPlant_[Expression], A: pydrake.multibody.tree.Frame_[Expression], B: pydrake.multibody.tree.Frame_[Expression], X_AB: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f761d3b1e70&gt;) -&gt; pydrake.multibody.tree.WeldJoint_[Expression]</li>
+<li>WeldFrames(self: pydrake.multibody.plant.MultibodyPlant_[Expression], A: pydrake.multibody.tree.Frame_[Expression], B: pydrake.multibody.tree.Frame_[Expression], X_AB: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f7280d56f70&gt;) -&gt; pydrake.multibody.tree.WeldJoint_[Expression]</li>
 </ol>
 <p>Welds frames A and B with relative pose <code class="docutils literal"><span class="pre">X_AB</span></code>. That is, the pose of
 frame B in frame A is fixed, with value <code class="docutils literal"><span class="pre">X_AB</span></code>. The call to this
@@ -11291,9 +11306,9 @@ SceneGraph::get_query_output_port() to
 get_geometry_query_input_port().</p>
 <p>Refer to the documentation provided in each of the methods above for
 further details.</p>
-<p>** Accessing point contact parameters</p>
-<p>MultibodyPlant’s point contact model looks for model parameters stored
-as geometry::ProximityProperties by geometry::SceneGraph. These
+<p>** Accessing point contact parameters MultibodyPlant’s point contact
+model looks for model parameters stored as
+geometry::ProximityProperties by geometry::SceneGraph. These
 properties can be obtained before or after context creation through
 geometry::SceneGraphInspector APIs as outlined below. MultibodyPlant
 expects the following properties for point contact modeling:</p>
@@ -11303,11 +11318,16 @@ expects the following properties for point contact modeling:</p>
 <p>Description | | :——–: | :————–: | :——: |
 :—————-: | :——————- | | material |
 coulomb_friction | yes¹ | CoulombFriction&lt;T&gt; | Static and Dynamic
-friction. |</p>
+friction. | | material | point_contact_stiffness | no² | T | Penalty
+method stiffness. | | material | hunt_crossley_dissipation | no² | T |
+Penalty method dissipation. |</p>
 <p>¹ Collision geometry is required to be registered with a
 geometry::ProximityProperties object that contains the (“material”,
-“coulomb_friction”) property. If the parameter is not registered,
+“coulomb_friction”) property. If the property is missing,
 MultibodyPlant will throw an exeception.</p>
+<p>² If the property is missing, MultibodyPlant will use a heuristic
+value as the default. Refer to the section mbp_penalty_method “Penalty
+method point contact” for further details.</p>
 <p>Accessing and modifying contact properties requires interfacing with
 geometry::SceneGraph’s model inspector. Interfacing with a model
 inspector obtained from geometry::SceneGraph will provide the default
@@ -14366,7 +14386,7 @@ post-finalize, see Finalize().</p>
 <code class="descname">WeldFrames</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.plant.MultibodyPlant_[float].WeldFrames" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>WeldFrames(self: pydrake.multibody.plant.MultibodyPlant_[float], A: pydrake.multibody.tree.Frame_[float], B: pydrake.multibody.tree.Frame_[float], X_AB: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f761d3d52f0&gt;) -&gt; pydrake.multibody.tree.WeldJoint_[float]</li>
+<li>WeldFrames(self: pydrake.multibody.plant.MultibodyPlant_[float], A: pydrake.multibody.tree.Frame_[float], B: pydrake.multibody.tree.Frame_[float], X_AB: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f7280d7a3f0&gt;) -&gt; pydrake.multibody.tree.WeldJoint_[float]</li>
 </ol>
 <p>Welds frames A and B with relative pose <code class="docutils literal"><span class="pre">X_AB</span></code>. That is, the pose of
 frame B in frame A is fixed, with value <code class="docutils literal"><span class="pre">X_AB</span></code>. The call to this
@@ -14844,7 +14864,7 @@ coordinates.</p>
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.plant.Propeller_.Propeller_[float].__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>__init__(self: pydrake.multibody.plant.Propeller_[float], body_index: pydrake.multibody.tree.BodyIndex, X_BP: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f761d3d5970&gt;, thrust_ratio: float = 1.0, moment_ratio: float = 0.0) -&gt; None</li>
+<li>__init__(self: pydrake.multibody.plant.Propeller_[float], body_index: pydrake.multibody.tree.BodyIndex, X_BP: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f7280d7aa70&gt;, thrust_ratio: float = 1.0, moment_ratio: float = 0.0) -&gt; None</li>
 </ol>
 <p>Constructs a system describing a single propeller.</p>
 <div class="admonition seealso">
@@ -14928,7 +14948,7 @@ coordinates.</p>
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.plant.Propeller_[AutoDiffXd].__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>__init__(self: pydrake.multibody.plant.Propeller_[AutoDiffXd], body_index: pydrake.multibody.tree.BodyIndex, X_BP: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f761d3d5b30&gt;, thrust_ratio: float = 1.0, moment_ratio: float = 0.0) -&gt; None</li>
+<li>__init__(self: pydrake.multibody.plant.Propeller_[AutoDiffXd], body_index: pydrake.multibody.tree.BodyIndex, X_BP: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f7280d56c70&gt;, thrust_ratio: float = 1.0, moment_ratio: float = 0.0) -&gt; None</li>
 </ol>
 <p>Constructs a system describing a single propeller.</p>
 <div class="admonition seealso">
@@ -15010,7 +15030,7 @@ coordinates.</p>
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.plant.Propeller_[Expression].__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>__init__(self: pydrake.multibody.plant.Propeller_[Expression], body_index: pydrake.multibody.tree.BodyIndex, X_BP: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f761d3b1e30&gt;, thrust_ratio: float = 1.0, moment_ratio: float = 0.0) -&gt; None</li>
+<li>__init__(self: pydrake.multibody.plant.Propeller_[Expression], body_index: pydrake.multibody.tree.BodyIndex, X_BP: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f7280d56d30&gt;, thrust_ratio: float = 1.0, moment_ratio: float = 0.0) -&gt; None</li>
 </ol>
 <p>Constructs a system describing a single propeller.</p>
 <div class="admonition seealso">
@@ -15092,7 +15112,7 @@ coordinates.</p>
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.multibody.plant.Propeller_[float].__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>__init__(self: pydrake.multibody.plant.Propeller_[float], body_index: pydrake.multibody.tree.BodyIndex, X_BP: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f761d3d5970&gt;, thrust_ratio: float = 1.0, moment_ratio: float = 0.0) -&gt; None</li>
+<li>__init__(self: pydrake.multibody.plant.Propeller_[float], body_index: pydrake.multibody.tree.BodyIndex, X_BP: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f7280d7aa70&gt;, thrust_ratio: float = 1.0, moment_ratio: float = 0.0) -&gt; None</li>
 </ol>
 <p>Constructs a system describing a single propeller.</p>
 <div class="admonition seealso">
@@ -15148,7 +15168,7 @@ MultibodyPlant::get_applied_spatial_force_input_port()
 properties of a single propeller.</p>
 <dl class="method">
 <dt id="pydrake.multibody.plant.PropellerInfo.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.multibody.plant.PropellerInfo</em>, <em>body_index: pydrake.multibody.tree.BodyIndex</em>, <em>X_BP: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f761d3d5a30&gt;</em>, <em>thrust_ratio: float = 1.0</em>, <em>moment_ratio: float = 0.0</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.multibody.plant.PropellerInfo.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.multibody.plant.PropellerInfo</em>, <em>body_index: pydrake.multibody.tree.BodyIndex</em>, <em>X_BP: pydrake.math.RigidTransform_[float] = &lt;pydrake.math.RigidTransform_[float] object at 0x7f7280d7ab70&gt;</em>, <em>thrust_ratio: float = 1.0</em>, <em>moment_ratio: float = 0.0</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.multibody.plant.PropellerInfo.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
