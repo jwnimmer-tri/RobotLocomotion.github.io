@@ -314,9 +314,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a8f7e1e330f1151c5eedc71964707a749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1geometry_1_1_surface_mesh.html">SurfaceMesh</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1geometry.html#a8f7e1e330f1151c5eedc71964707a749">ReadObjToSurfaceMesh</a> (std::istream *input_stream, double scale=1.0)</td></tr>
 <tr class="memdesc:a8f7e1e330f1151c5eedc71964707a749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of <a class="el" href="namespacedrake_1_1geometry.html#aba30e9e16353ed2eb6be9926468ef602">ReadObjToSurfaceMesh(const std::string&amp;, double)</a> with the Wavefront .obj file given in std::istream.  <a href="#a8f7e1e330f1151c5eedc71964707a749">More...</a><br /></td></tr>
 <tr class="separator:a8f7e1e330f1151c5eedc71964707a749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a994429610a1aadf4521959e996c5cfac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1geometry.html#a994429610a1aadf4521959e996c5cfac">AddContactMaterial</a> (const std::optional&lt; double &gt; &amp;elastic_modulus, const std::optional&lt; double &gt; &amp;dissipation, const std::optional&lt; <a class="el" href="classdrake_1_1multibody_1_1_coulomb_friction.html">multibody::CoulombFriction</a>&lt; double &gt;&gt; &amp;friction, <a class="el" href="classdrake_1_1geometry_1_1_proximity_properties.html">ProximityProperties</a> *properties)</td></tr>
-<tr class="memdesc:a994429610a1aadf4521959e996c5cfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds contact material properties to the given set of proximity <code>properties</code>.  <a href="#a994429610a1aadf4521959e996c5cfac">More...</a><br /></td></tr>
-<tr class="separator:a994429610a1aadf4521959e996c5cfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af76ed94bef3f81765a1b3ce069562e00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1geometry.html#af76ed94bef3f81765a1b3ce069562e00">AddRigidHydroelasticProperties</a> (double resolution_hint, <a class="el" href="classdrake_1_1geometry_1_1_proximity_properties.html">ProximityProperties</a> *properties)</td></tr>
 <tr class="memdesc:af76ed94bef3f81765a1b3ce069562e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds properties to the given set of proximity properties sufficient to cause the associated geometry to generate a rigid hydroelastic representation.  <a href="#af76ed94bef3f81765a1b3ce069562e00">More...</a><br /></td></tr>
 <tr class="separator:af76ed94bef3f81765a1b3ce069562e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -345,6 +342,20 @@ Functions</h2></td></tr>
 <tr class="memitem:aa70628317c9ed8d19606fee0d13643a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1geometry_1_1_illustration_properties.html">IllustrationProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1geometry.html#aa70628317c9ed8d19606fee0d13643a5">MakePhongIllustrationProperties</a> (const <a class="el" href="namespacedrake.html#af7e96394aef85f13f3fc84d3c3c238b3">Vector4</a>&lt; double &gt; &amp;diffuse)</td></tr>
 <tr class="memdesc:aa70628317c9ed8d19606fee0d13643a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an <a class="el" href="classdrake_1_1geometry_1_1_illustration_properties.html" title="The set of properties for geometry used in an &quot;illustration&quot; role.">IllustrationProperties</a> instance compatible with a simple "phong" material using only the given <code>diffuse</code> color.  <a href="#aa70628317c9ed8d19606fee0d13643a5">More...</a><br /></td></tr>
 <tr class="separator:aa70628317c9ed8d19606fee0d13643a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Contact Material Utility Functions</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="contact_material_utility_functions"></a> <a class="el" href="namespacedrake_1_1geometry.html#a75b8bc3ef835424639b5aa5e0874121b">AddContactMaterial()</a> adds contact material properties to the given set of proximity <code>properties</code>. Only the parameters that carry values will be added to the given set of <code>properties</code>; no default values will be provided. Downstream consumers of the contact materials can optionally provide defaults for missing properties.</p>
+<p>For legacy and backwards compatibility purposes, two overloads for <a class="el" href="namespacedrake_1_1geometry.html#a75b8bc3ef835424639b5aa5e0874121b">AddContactMaterial()</a> are provided. One supports all contact material properties <b>except</b> <code>point_stiffness</code>, and the other includes it. Users are encouraged to use the overload that contains the argument for <code>point_stiffness</code>.</p>
+<p>These functions will throw an error if:</p><ul>
+<li><code>elastic_modulus</code> is not positive</li>
+<li><code>dissipation</code> is negative</li>
+<li><code>point_stiffness</code> is not positive</li>
+<li>Any of the contact material properties have already been defined in <code>properties</code>. </li>
+</ul>
+</div></td></tr>
+<tr class="memitem:a75b8bc3ef835424639b5aa5e0874121b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1geometry.html#a75b8bc3ef835424639b5aa5e0874121b">AddContactMaterial</a> (const std::optional&lt; double &gt; &amp;elastic_modulus, const std::optional&lt; double &gt; &amp;dissipation, const std::optional&lt; double &gt; &amp;point_stiffness, const std::optional&lt; <a class="el" href="classdrake_1_1multibody_1_1_coulomb_friction.html">multibody::CoulombFriction</a>&lt; double &gt;&gt; &amp;friction, <a class="el" href="classdrake_1_1geometry_1_1_proximity_properties.html">ProximityProperties</a> *properties)</td></tr>
+<tr class="separator:a75b8bc3ef835424639b5aa5e0874121b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994429610a1aadf4521959e996c5cfac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1geometry.html#a994429610a1aadf4521959e996c5cfac">AddContactMaterial</a> (const std::optional&lt; double &gt; &amp;elastic_modulus, const std::optional&lt; double &gt; &amp;dissipation, const std::optional&lt; <a class="el" href="classdrake_1_1multibody_1_1_coulomb_friction.html">multibody::CoulombFriction</a>&lt; double &gt;&gt; &amp;friction, <a class="el" href="classdrake_1_1geometry_1_1_proximity_properties.html">ProximityProperties</a> *properties)</td></tr>
+<tr class="separator:a994429610a1aadf4521959e996c5cfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a43b41363b37fadf8cce0977d500e13cb"></a>
@@ -647,8 +658,60 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a75b8bc3ef835424639b5aa5e0874121b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75b8bc3ef835424639b5aa5e0874121b">&#9670;&nbsp;</a></span>AddContactMaterial() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void drake::geometry::AddContactMaterial </td>
+          <td>(</td>
+          <td class="paramtype">const std::optional&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>elastic_modulus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dissipation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>point_stiffness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; <a class="el" href="classdrake_1_1multibody_1_1_coulomb_friction.html">multibody::CoulombFriction</a>&lt; double &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>friction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1geometry_1_1_proximity_properties.html">ProximityProperties</a> *&#160;</td>
+          <td class="paramname"><em>properties</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>if any parameter doesn't satisfy the requirements listed in <a class="el" href="namespacedrake_1_1geometry.html#contact_material_utility_functions">Contact Material Utility Functions</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a994429610a1aadf4521959e996c5cfac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a994429610a1aadf4521959e996c5cfac">&#9670;&nbsp;</a></span>AddContactMaterial()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a994429610a1aadf4521959e996c5cfac">&#9670;&nbsp;</a></span>AddContactMaterial() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -684,15 +747,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Adds contact material properties to the given set of proximity <code>properties</code>. </p>
-<p>Only the parameters that carry values will be added to the given set of <code>properties</code>; no default values will be provided. Downstream consumers of the contact materials can optionally provide defaults for missing properties.</p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::logic_error</td><td>if <code>elastic_modulus</code> is not positive, <code>dissipation</code> is negative, or any of the contact material properties have already been defined in <code>properties</code>. </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section warning"><dt>Warning</dt><dd>Please use the overload of <a class="el" href="namespacedrake_1_1geometry.html#a75b8bc3ef835424639b5aa5e0874121b">AddContactMaterial()</a> that includes the argument for <code>point_stiffness</code> rather than this one. </dd></dl>
 
 </div>
 </div>

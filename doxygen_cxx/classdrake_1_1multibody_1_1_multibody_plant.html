@@ -412,7 +412,7 @@ Public Member Functions</h2></td></tr>
 <p>We use a dissipation model inspired by the model in [Hunt and Crossley, 1975], parameterized by a dissipation constant with units of inverse of velocity, i.e. <code>s/m</code>.</p>
 <p>The elastic modulus and dissipation can be specified in one of two ways:</p>
 <ul>
-<li>define them in an instance of <a class="el" href="classdrake_1_1geometry_1_1_proximity_properties.html" title="The set of properties for geometry used in a proximity role.">geometry::ProximityProperties</a> using the function <a class="el" href="namespacedrake_1_1geometry.html#a994429610a1aadf4521959e996c5cfac" title="Adds contact material properties to the given set of proximity properties.">geometry::AddContactMaterial()</a>, or</li>
+<li>define them in an instance of <a class="el" href="classdrake_1_1geometry_1_1_proximity_properties.html" title="The set of properties for geometry used in a proximity role.">geometry::ProximityProperties</a> using the function <a class="el" href="namespacedrake_1_1geometry.html#a75b8bc3ef835424639b5aa5e0874121b">geometry::AddContactMaterial()</a>, or</li>
 <li>define them in an input URDF/SDF as detailed <a class="el" href="/media/ephemeral0/ubuntu/workspace/linux-bionic-gcc-bazel-nightly-documentation/src/doxygen_tmp/input/drake/multibody/parsing/detail_scene_graph.h.html#sdf_contact_material">here for SDF</a> or <a class="el" href="/media/ephemeral0/ubuntu/workspace/linux-bionic-gcc-bazel-nightly-documentation/src/doxygen_tmp/input/drake/multibody/parsing/detail_urdf_geometry.h.html#urdf_contact_material">here for URDF</a>.</li>
 </ul>
 <p>With the effective properties of the pair defined as above, the hydroelastic model pressure field is computed according to: </p><pre>

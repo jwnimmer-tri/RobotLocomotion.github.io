@@ -105,13 +105,13 @@ var NAVTREEINDEX =
 "gurobi__qp_8h.html#a814877dec98d6d4cf4dfe93f686a0e8c",
 "matrix__util_8h.html#a84760cbea23b50efdbe9a85f3967f098",
 "namespacemembers_func.html",
-"random__polynomial__matrix_8h.html",
-"static__friction__cone__complementarity__constraint_8h.html#a4508ec670196c3fe45e9b52af8a73d4a",
-"structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#aecfdc8cfc228ee64e73c891738c3863d",
-"structdrake_1_1systems_1_1controllers_1_1_pid_controlled_system_1_1_connect_result.html",
-"symbolic__expression_8h.html#a9da61282d0c5ccefeaa2068d84a19273",
-"symbolic__formula_8h.html#a71e40924c21a4f08a5cc274eaf7ddebd",
-"tamsi__solver_8h.html#a6144c2c8d4494bcb283f3f9e5841bfd2"
+"random_8h.html#a72383be4710d27584d0821effc6506a5ab933cd0242085c2dbf804dbf288ce7f0",
+"static__friction__cone__complementarity__constraint_8h.html",
+"structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#ad7420fd6adfed409f3fc8551d0decb96",
+"structdrake_1_1systems_1_1controllers_1_1_linear_quadratic_regulator_result.html#a8f78ef113f89e86b283522fb7e59b308",
+"symbolic__expression_8h.html#a9d8e94c7598bd59e6a5314ffbc3c7f59",
+"symbolic__formula_8h.html#a6869e7044dd90be5d972ee7dd4e821b6afd116e3418522ffc34d7423bc601510d",
+"tamsi__solver_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
