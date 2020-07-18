@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af18177d9ffc5dd00b191be71fd255b5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1systems_1_1_discrete_values.html">DiscreteValues</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_discrete_values.html#af18177d9ffc5dd00b191be71fd255b5a">operator=</a> (<a class="el" href="classdrake_1_1systems_1_1_discrete_values.html">DiscreteValues</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:af18177d9ffc5dd00b191be71fd255b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Convenience accessors for DiscreteValues with just one group.</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>These will fail (at least in Debug builds) if there is more than one group in this DiscreteValues object.</p>
+<tr><td colspan="2"><div class="groupText"><p>These will throw if there is not exactly one group in this DiscreteValues object.</p>
 </div></td></tr>
 <tr class="memitem:af9593d4a5ff4274efaf429cb4f9e57cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_discrete_values.html#af9593d4a5ff4274efaf429cb4f9e57cc">size</a> () const</td></tr>
 <tr class="memdesc:af9593d4a5ff4274efaf429cb4f9e57cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the only DiscreteValues group.  <a href="#af9593d4a5ff4274efaf429cb4f9e57cc">More...</a><br /></td></tr>
@@ -626,7 +626,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resets the values in this <a class="el" href="classdrake_1_1systems_1_1_discrete_values.html" title="DiscreteValues is a container for numerical but non-continuous state and parameters.">DiscreteValues</a> from the values in <code>other</code>, possibly writing through to unowned data. </p>
-<p>Asserts if the dimensions don't match. </p>
+<p>Throws if the dimensions don't match. </p>
 
 </div>
 </div>

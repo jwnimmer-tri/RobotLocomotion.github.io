@@ -100,14 +100,21 @@ $(document).ready(function(){initNavTree('group__python__bindings.html','');});
 <h1>Overview</h1>
 <p>Drake uses <a href="http://pybind11.readthedocs.io/en/stable/">pybind11</a> for binding its C++ API to Python.</p>
 <p>At present, a fork of <code>pybind11</code> is used which permits bindings matrices with <code>dtype=object</code>, passing <code>unique_ptr</code> objects, and prevents aliasing for Python classes derived from <code>pybind11</code> classes.</p>
+<p>Before delving too deep into this, please first review the user-facing documentation about <a href="https://drake.mit.edu/python_bindings.html#what-s-available-from-python">What's Available from Python</a>.</p>
 <h2>Module Organization</h2>
-<p>The structure of the bindings generally follow the <em>directory structure</em>, not the namespace structure. As an example, if in C++ you do: </p><pre class="fragment">#include &lt;drake/multibody/plant/{header}.h&gt;
-using drake::multibody::{symbol};
-</pre><p>then in Python you would do: </p><pre class="fragment">from pydrake.multibody.plant import {symbol}
-</pre><p>Some (but not all) exceptions:</p>
+<p>The structure of the bindings generally follow the <em>directory structure</em>, not the namespace structure. As an example, the following code in C++:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="parser_8h.html">drake/multibody/parsing/parser.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="multibody__plant_8h.html">drake/multibody/plant/multibody_plant.h</a>&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <a class="code" href="classdrake_1_1multibody_1_1_multibody_plant.html">drake::multibody::MultibodyPlant</a>;</div><div class="line"><span class="keyword">using</span> <a class="code" href="classdrake_1_1multibody_1_1_parser.html">drake::multibody::Parser</a>;</div></div><!-- fragment --><p>will look similar in Python, but you won't use the header file's name:</p>
+<div class="fragment"><div class="line">from pydrake.multibody.parsing <span class="keyword">import</span> Parser</div><div class="line"><span class="keyword">from</span> pydrake.multibody.plant <span class="keyword">import</span> MultibodyPlant</div></div><!-- fragment --><p>In general, you can find where a symbol is bound by searching for the symbol's name in quotes underneath the directory <code>drake/bindings/pydrake</code>.</p>
+<p>For example, you should search for <code>"MultibodyPlant"</code>, <code>"Parser"</code>, etc. To elaborate, the binding of <code>Parser</code> is found in <code>.../pydrake/multibody/parsing_py.cc</code>, and looks like this:</p>
+<div class="fragment"><div class="line"><span class="keyword">using</span> Class = Parser;</div><div class="line">py::class_&lt;Class&gt;(m, <span class="stringliteral">&quot;Parser&quot;</span>, ...)</div></div><!-- fragment --><p>and binding of <code>MultibodyPlant</code> template instantiations are in <code>.../pydrake/multibody/plant_py.cc</code> and look like this:</p>
+<div class="fragment"><div class="line"><span class="keyword">using</span> Class = MultibodyPlant&lt;T&gt;;</div><div class="line">DefineTemplateClassWithDefault&lt;Class, systems::LeafSystem&lt;T&gt;&gt;(</div><div class="line">    m, <span class="stringliteral">&quot;MultibodyPlant&quot;</span>, ...)</div></div><!-- fragment --><p>where the function containing this definition is templated on type <code>T</code> and invoked for the scalar types mentioned in <code><a class="el" href="default__scalars_8h.html">drake/common/default_scalars.h</a></code>.</p>
+<p>Some (but not all) exceptions to the above rules:</p>
 <ul>
-<li><code>drake/multibody/rigid_body_tree.h</code> is actually contained in the module <code>pydrake.multibody.rigid_body_tree</code>.</li>
-<li><code><a class="el" href="mathematical__program_8h.html">drake/solvers/mathematical_program.h</a></code> is actually contained in the module <code>pydrake.solvers.mathematicalprogram</code>.</li>
+<li><code><a class="el" href="common_2autodiff_8h.html">drake/common/autodiff.h</a></code> symbols live in <code>pydrake.autodiffutils</code>.</li>
+<li><code><a class="el" href="symbolic_8h.html" title="Provides public header files of Drake&#39;s symbolic library.">drake/common/symbolic.h</a></code> symbols live in <code>pydrake.symbolic</code>.</li>
+<li><code><a class="el" href="value_8h.html">drake/common/value.h</a></code> symbols live in <code>pydrake.common.value</code>.</li>
+<li><code><a class="el" href="mathematical__program_8h.html">drake/solvers/mathematical_program.h</a></code> symbols live in <code>pydrake.solvers.mathematicalprogram</code> (notice the Python name has no underscore).</li>
+<li><code>drake/systems/framework/*.h</code> symbols live in <code>pydrake.systems.framework</code> (per the rule) and the bindings are ultimately linked via <code>pydrake/systems/framework_py.cc</code>, but for compilation speed the binding definitions themselves are split into <code>./framework_py_{semantics,systems,values}.cc</code>.</li>
 </ul>
 <h2><code>pybind11</code> Tips</h2>
 <h3>Python Types</h3>
