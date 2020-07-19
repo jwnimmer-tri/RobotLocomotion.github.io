@@ -1321,7 +1321,7 @@ the variables and pushes onto the linear cost data structure.</p>
 <code class="descname">AddLinearEqualityConstraint</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.solvers.mathematicalprogram.MathematicalProgram.AddLinearEqualityConstraint" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>AddLinearEqualityConstraint(self: pydrake.solvers.mathematicalprogram.MathematicalProgram, arg0: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], arg1: numpy.ndarray[numpy.float64[m, 1]], arg2: numpy.ndarray[object[m, 1]]) -&gt; drake::solvers::Binding&lt;drake::solvers::LinearEqualityConstraint&gt;</li>
+<li>AddLinearEqualityConstraint(self: pydrake.solvers.mathematicalprogram.MathematicalProgram, Aeq: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], beq: numpy.ndarray[numpy.float64[m, 1]], vars: numpy.ndarray[object[m, 1]]) -&gt; drake::solvers::Binding&lt;drake::solvers::LinearEqualityConstraint&gt;</li>
 </ol>
 <p>AddLinearEqualityConstraint</p>
 <p>Adds linear equality constraints referencing potentially a subset of
@@ -1340,7 +1340,7 @@ the elements of x, you could use</p>
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
-<li>AddLinearEqualityConstraint(self: pydrake.solvers.mathematicalprogram.MathematicalProgram, arg0: pydrake.symbolic.Expression, arg1: float) -&gt; drake::solvers::Binding&lt;drake::solvers::LinearEqualityConstraint&gt;</li>
+<li>AddLinearEqualityConstraint(self: pydrake.solvers.mathematicalprogram.MathematicalProgram, e: pydrake.symbolic.Expression, b: float) -&gt; drake::solvers::Binding&lt;drake::solvers::LinearEqualityConstraint&gt;</li>
 </ol>
 <p>Adds one row of linear constraint e = b where <code class="docutils literal"><span class="pre">e</span></code> is a symbolic
 expression.</p>
@@ -1373,7 +1373,7 @@ bound variable.</td>
 </tbody>
 </table>
 <ol class="arabic simple" start="3">
-<li>AddLinearEqualityConstraint(self: pydrake.solvers.mathematicalprogram.MathematicalProgram, arg0: pydrake.symbolic.Formula) -&gt; drake::solvers::Binding&lt;drake::solvers::LinearEqualityConstraint&gt;</li>
+<li>AddLinearEqualityConstraint(self: pydrake.solvers.mathematicalprogram.MathematicalProgram, f: pydrake.symbolic.Formula) -&gt; drake::solvers::Binding&lt;drake::solvers::LinearEqualityConstraint&gt;</li>
 </ol>
 <p>Adds a linear equality constraint represented by a symbolic formula to
 the program. The input formula <code class="docutils literal"><span class="pre">f</span></code> is either an equality formula
@@ -1383,6 +1383,44 @@ the program. The input formula <code class="docutils literal"><span class="pre">
 <li><code class="docutils literal"><span class="pre">f</span></code> is neither an equality formula nor a conjunction of equalities.</li>
 <li><code class="docutils literal"><span class="pre">f</span></code> includes a non-linear expression.</li>
 </ol>
+<ol class="arabic simple" start="4">
+<li>AddLinearEqualityConstraint(self: pydrake.solvers.mathematicalprogram.MathematicalProgram, v: numpy.ndarray[object[m, 1]], b: numpy.ndarray[numpy.float64[m, 1]]) -&gt; drake::solvers::Binding&lt;drake::solvers::LinearEqualityConstraint&gt;</li>
+</ol>
+<p>Adds linear equality constraints <span class="math">\(v = b\)</span>, where <code class="docutils literal"><span class="pre">v(i)</span></code> is a
+symbolic linear expression.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li>RuntimeError if 1. <code class="docutils literal"><span class="pre">v(i)</span></code> is a non-linear expression. 2.</li>
+<li><code class="docutils literal"><span class="pre">v(i)</span></code> is a constant.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Template parameter <code class="docutils literal"><span class="pre">DerivedV</span></code>:</dt>
+<dd>An Eigen Matrix type of Expression. A column vector.</dd>
+<dt>Template parameter <code class="docutils literal"><span class="pre">DerivedB</span></code>:</dt>
+<dd>An Eigen Matrix type of double. A column vector.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">v</span></code>:</dt>
+<dd>v(i) is a linear symbolic expression in the form of `` c0 + c1 *
+x1 + … + cn * xn `` where ci is a constant and &#64;xi is a
+variable.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">b</span></code>:</dt>
+<dd>A vector of doubles.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The newly added linear equality constraint, together with the
+bound variables.</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
