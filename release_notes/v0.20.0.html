@@ -63,6 +63,15 @@
 <p>On macOS, Homebrew now symlinks Drake’s compatible version of Python 3 (3.8)
 into <code class="docutils literal"><span class="pre">/usr/local/bin/</span></code>, so it is on the <code class="docutils literal"><span class="pre">$PATH</span></code> by default.  There is no
 longer any need to add <code class="docutils literal"><span class="pre">/usr/local/opt/python&#64;3.8/bin</span></code> to your <code class="docutils literal"><span class="pre">$PATH</span></code>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The newly-added feature for JavaScript system diagram visualization
+(<a class="reference external" href="https://github.com/RobotLocomotion/drake/pull/13644">#13644</a>) with function name <code class="docutils literal"><span class="pre">drake::systems::GenerateHtml</span></code> in C++ and
+<code class="docutils literal"><span class="pre">pydrake.systems.framework.GenerateHtml</span></code> in Python fetches the GoJS graph
+library in your browser with only an evaluation license.  We recommend
+avoiding this new feature while we sort out the licensing question
+(<a class="reference external" href="https://github.com/RobotLocomotion/drake/pull/13705">#13705</a>).</p>
+</div>
 </div>
 <div class="section" id="breaking-changes-since-v0-19-0">
 <h2>Breaking changes since v0.19.0<a class="headerlink" href="#breaking-changes-since-v0-19-0" title="Permalink to this headline">¶</a></h2>
