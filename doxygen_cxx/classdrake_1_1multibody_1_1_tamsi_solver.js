@@ -16,7 +16,7 @@ var classdrake_1_1multibody_1_1_tamsi_solver =
     [ "operator=", "classdrake_1_1multibody_1_1_tamsi_solver.html#a2ac71c044c74b654a651fdae15c82c20", null ],
     [ "set_solver_parameters", "classdrake_1_1multibody_1_1_tamsi_solver.html#a72660d4b210220b673a299c606992f00", null ],
     [ "SetOneWayCoupledProblemData", "classdrake_1_1multibody_1_1_tamsi_solver.html#ac9c880a38bb3a6c5cddfe5f258db8ca7", null ],
-    [ "SetTwoWayCoupledProblemData", "classdrake_1_1multibody_1_1_tamsi_solver.html#ad1cde0ee17b7223730d5247fa9a72aa4", null ],
+    [ "SetTwoWayCoupledProblemData", "classdrake_1_1multibody_1_1_tamsi_solver.html#a2f0dd5fb64de38e8f5fde32e1b19f862", null ],
     [ "SolveWithGuess", "classdrake_1_1multibody_1_1_tamsi_solver.html#a032d564905879232190e6b62afd0b8d0", null ],
     [ "TamsiSolverTester", "classdrake_1_1multibody_1_1_tamsi_solver.html#a4be23a2b9c291aeb80deed52cf42ba6d", null ]
 ];

@@ -6042,7 +6042,13 @@ Mobilizer::MapVelocityToQDot() </dd></dl>
 </div><div class="memdoc">
 
 <p>Sets the penetration allowance used to estimate the coefficients in the penalty method used to impose non-penetration among bodies. </p>
-<p>Refer to the section <a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#mbp_penalty_method">Contact by penalty method</a> for further details. </p>
+<p>Refer to the section <a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#mbp_penalty_method">Contact by penalty method</a> for further details.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>if penetration_allowance is not positive. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
