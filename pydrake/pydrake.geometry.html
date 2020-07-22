@@ -3997,6 +3997,34 @@ string) a default name will be defined by SceneGraph’s logic.</dd>
 </dd></dl>
 
 <dl class="method">
+<dt id="pydrake.geometry.SceneGraph_.SceneGraph_[float].RemoveRole">
+<code class="descname">RemoveRole</code><span class="sig-paren">(</span><em>self: pydrake.geometry.SceneGraph_[float], source_id: pydrake.geometry.SourceId, geometry_id: pydrake.geometry.GeometryId, role: pydrake.geometry.Role</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#pydrake.geometry.SceneGraph_.SceneGraph_[float].RemoveRole" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the indicated <code class="docutils literal"><span class="pre">role</span></code> from the geometry indicated by
+<code class="docutils literal"><span class="pre">geometry_id</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">One if the geometry had the role removed and zero if the geometry
+did not have the role assigned in the first place.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li>RuntimeError if a) <code class="docutils literal"><span class="pre">source_id</span></code> does not map to a registered</li>
+<li>source, b) <code class="docutils literal"><span class="pre">geometry_id</span></code> does not map to a registered geometry,</li>
+<li><ol class="first loweralpha" start="3">
+<li><code class="docutils literal"><span class="pre">geometry_id</span></code> does not belong to <code class="docutils literal"><span class="pre">source_id</span></code>, or d) the</li>
+</ol>
+</li>
+<li>context has already been allocated.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="pydrake.geometry.SceneGraph_.SceneGraph_[float].RendererCount">
 <code class="descname">RendererCount</code><span class="sig-paren">(</span><em>self: pydrake.geometry.SceneGraph_[float]</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#pydrake.geometry.SceneGraph_.SceneGraph_[float].RendererCount" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reports the number of renderers registered to this SceneGraph.</p>
@@ -4607,6 +4635,34 @@ string) a default name will be defined by SceneGraph’s logic.</dd>
 </dd></dl>
 
 <dl class="method">
+<dt id="pydrake.geometry.SceneGraph_[AutoDiffXd].RemoveRole">
+<code class="descname">RemoveRole</code><span class="sig-paren">(</span><em>self: pydrake.geometry.SceneGraph_[AutoDiffXd], source_id: pydrake.geometry.SourceId, geometry_id: pydrake.geometry.GeometryId, role: pydrake.geometry.Role</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#pydrake.geometry.SceneGraph_[AutoDiffXd].RemoveRole" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the indicated <code class="docutils literal"><span class="pre">role</span></code> from the geometry indicated by
+<code class="docutils literal"><span class="pre">geometry_id</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">One if the geometry had the role removed and zero if the geometry
+did not have the role assigned in the first place.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li>RuntimeError if a) <code class="docutils literal"><span class="pre">source_id</span></code> does not map to a registered</li>
+<li>source, b) <code class="docutils literal"><span class="pre">geometry_id</span></code> does not map to a registered geometry,</li>
+<li><ol class="first loweralpha" start="3">
+<li><code class="docutils literal"><span class="pre">geometry_id</span></code> does not belong to <code class="docutils literal"><span class="pre">source_id</span></code>, or d) the</li>
+</ol>
+</li>
+<li>context has already been allocated.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="pydrake.geometry.SceneGraph_[AutoDiffXd].RendererCount">
 <code class="descname">RendererCount</code><span class="sig-paren">(</span><em>self: pydrake.geometry.SceneGraph_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#pydrake.geometry.SceneGraph_[AutoDiffXd].RendererCount" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reports the number of renderers registered to this SceneGraph.</p>
@@ -5209,6 +5265,34 @@ string) a default name will be defined by SceneGraph’s logic.</dd>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">RuntimeError if the name is not unique.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.geometry.SceneGraph_[float].RemoveRole">
+<code class="descname">RemoveRole</code><span class="sig-paren">(</span><em>self: pydrake.geometry.SceneGraph_[float], source_id: pydrake.geometry.SourceId, geometry_id: pydrake.geometry.GeometryId, role: pydrake.geometry.Role</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#pydrake.geometry.SceneGraph_[float].RemoveRole" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the indicated <code class="docutils literal"><span class="pre">role</span></code> from the geometry indicated by
+<code class="docutils literal"><span class="pre">geometry_id</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">One if the geometry had the role removed and zero if the geometry
+did not have the role assigned in the first place.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li>RuntimeError if a) <code class="docutils literal"><span class="pre">source_id</span></code> does not map to a registered</li>
+<li>source, b) <code class="docutils literal"><span class="pre">geometry_id</span></code> does not map to a registered geometry,</li>
+<li><ol class="first loweralpha" start="3">
+<li><code class="docutils literal"><span class="pre">geometry_id</span></code> does not belong to <code class="docutils literal"><span class="pre">source_id</span></code>, or d) the</li>
+</ol>
+</li>
+<li>context has already been allocated.</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>

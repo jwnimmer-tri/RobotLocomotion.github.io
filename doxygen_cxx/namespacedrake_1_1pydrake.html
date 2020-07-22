@@ -102,7 +102,12 @@ $(document).ready(function(){initNavTree('namespacedrake_1_1pydrake.html','');})
 <div class="title">drake::pydrake Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>For more high-level information, see the <a class="el" href="group__python__bindings.html">Python Bindings</a> technical notes. </p>
+<p>Drake developers should prefer any aliases defined here over their full spellings in <code>pybind11</code>.</p>
+<p><code>namespace py</code> is a shorthand alias to <code>pybind11</code> for consistency. (This symbol cannot be exposed directly in Doxygen.)</p>
+<dl class="section note"><dt>Note</dt><dd>Downstream users should avoid <code>using namespace <a class="el" href="namespacedrake_1_1pydrake.html" title="For more high-level information, see the Python Bindings technical notes.">drake::pydrake</a></code>, as this may create ambiguous aliases (especially for GCC). Instead, consider using your own alias directly to the <code>pybind11</code> namespace. </dd></dl>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacedrake_1_1pydrake_1_1pysolvers"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake_1_1pysolvers.html">pysolvers</a></td></tr>
@@ -133,6 +138,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aab0999cb00e07db1ec4109413a82b6f4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#aab0999cb00e07db1ec4109413a82b6f4">wrap_arg_function</a> = typename internal::wrap_function_impl&lt; wrap_arg_policy &gt;::template wrap_arg&lt; std::function&lt; Signature &gt; &gt;</td></tr>
 <tr class="memdesc:aab0999cb00e07db1ec4109413a82b6f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Policy for explicitly wrapping functions for a given policy.  <a href="#aab0999cb00e07db1ec4109413a82b6f4">More...</a><br /></td></tr>
 <tr class="separator:aab0999cb00e07db1ec4109413a82b6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e587c4c8d044dd6eee74dad65c203ed"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#a6e587c4c8d044dd6eee74dad65c203ed">py_rvp</a> = py::return_value_policy</td></tr>
+<tr class="memdesc:a6e587c4c8d044dd6eee74dad65c203ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortened alias for py::return_value_policy.  <a href="#a6e587c4c8d044dd6eee74dad65c203ed">More...</a><br /></td></tr>
+<tr class="separator:a6e587c4c8d044dd6eee74dad65c203ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -292,6 +300,23 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Type pack for non-symbolic common scalar types. </p>
+
+</div>
+</div>
+<a id="a6e587c4c8d044dd6eee74dad65c203ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e587c4c8d044dd6eee74dad65c203ed">&#9670;&nbsp;</a></span>py_rvp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedrake_1_1pydrake.html#a6e587c4c8d044dd6eee74dad65c203ed">py_rvp</a> =  py::return_value_policy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shortened alias for py::return_value_policy. </p>
+<p>For more information, see the <a class="el" href="group__python__bindings.html#PydrakeReturnValuePolicy">Return Value Policy</a> section. </p>
 
 </div>
 </div>
@@ -1346,6 +1371,8 @@ Ts cannot be a <code>py::</code> symbol (e.g. <code>py::object</code>). On Mac, 
 </div><div class="memdoc">
 
 <p>Used when returning <code>T&amp; or</code>const T&amp;`, as pybind's default behavior is to copy lvalue references. </p>
+<p>(Deprecated.) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>"Please use py_rvp::reference instead" <br />
+ This will be removed from Drake on or after "2020-11-01" .</dd></dl>
 
 </div>
 </div>
@@ -1362,7 +1389,8 @@ Ts cannot be a <code>py::</code> symbol (e.g. <code>py::object</code>). On Mac, 
 </div><div class="memdoc">
 
 <p>Used when returning references to objects that are internally owned by <code>self</code>. </p>
-<p>Implies both <code>py_reference</code> and <code>py::keep_alive&lt;0, 1&gt;</code>, which implies "Keep alive, reference: `return` keeps` self` alive". </p>
+<p>Implies both <code>py_rvp::reference</code> and <code>py::keep_alive&lt;0, 1&gt;</code>, which implies "Keep alive, reference: `return` keeps` self` alive". (Deprecated.) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>"Please use py_rvp::reference_internal instead" <br />
+ This will be removed from Drake on or after "2020-11-01" .</dd></dl>
 
 </div>
 </div>

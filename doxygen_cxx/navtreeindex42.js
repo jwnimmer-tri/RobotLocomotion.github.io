@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"static__equilibrium__problem_8h.html":[4,0,0,8,5,5],
 "static__friction__cone__complementarity__constraint_8h.html":[4,0,0,8,5,6],
 "static__friction__cone__complementarity__constraint_8h.html#a4508ec670196c3fe45e9b52af8a73d4a":[4,0,0,8,5,6,0],
 "static__friction__cone__constraint_8h.html":[4,0,0,8,5,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#a98c1d757c37c73a7454c7922094ca9ac":[3,0,0,8,1,0,20],
 "structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#aa24636f116f235120b6b9c48c083a7e2":[3,0,0,8,1,0,3],
 "structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#ac3d38d1b83f93e18d5a4633beef4639f":[3,0,0,8,1,0,4],
-"structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#acedc23d500b8e04f9bf6b96cbb11bbeb":[3,0,0,8,1,0,11],
-"structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#ad03bc5722287da0acf149346388fa1b0":[3,0,0,8,1,0,9]
+"structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#acedc23d500b8e04f9bf6b96cbb11bbeb":[3,0,0,8,1,0,11]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX43 =
 {
+"structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#ad03bc5722287da0acf149346388fa1b0":[3,0,0,8,1,0,9],
 "structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#ad7420fd6adfed409f3fc8551d0decb96":[3,0,0,8,1,0,17],
 "structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#aecfdc8cfc228ee64e73c891738c3863d":[3,0,0,8,1,0,16],
 "structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#afd507a76abfe6745b786bbe0da7f5f89":[3,0,0,8,1,0,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX43 =
 "structdrake_1_1systems_1_1controllers_1_1_finite_horizon_linear_quadratic_regulator_result.html#ad4b8dfe12a35db518214e3cb4d76ae8a":[3,0,0,13,2,3,5],
 "structdrake_1_1systems_1_1controllers_1_1_finite_horizon_linear_quadratic_regulator_result.html#ae491527110c4ca50bb4fe345d2ef467a":[3,0,0,13,2,3,1],
 "structdrake_1_1systems_1_1controllers_1_1_finite_horizon_linear_quadratic_regulator_result.html#afac4934484438e44b34be1f0cc79d995":[3,0,0,13,2,3,2],
-"structdrake_1_1systems_1_1controllers_1_1_linear_quadratic_regulator_result.html":[3,0,0,13,2,7],
-"structdrake_1_1systems_1_1controllers_1_1_linear_quadratic_regulator_result.html#a1f3150ccf61b245d0363a198068ebf3d":[3,0,0,13,2,7,1]
+"structdrake_1_1systems_1_1controllers_1_1_linear_quadratic_regulator_result.html":[3,0,0,13,2,7]
 };
