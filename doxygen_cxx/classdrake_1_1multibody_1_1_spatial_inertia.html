@@ -140,9 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a70f239bc8c7a515ee38b9e26aad808"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html#a4a70f239bc8c7a515ee38b9e26aad808">SpatialInertia</a> ()</td></tr>
 <tr class="memdesc:a4a70f239bc8c7a515ee38b9e26aad808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default <a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html" title="This class represents the physical concept of a Spatial Inertia.">SpatialInertia</a> constructor initializes mass, center of mass and rotational inertia to invalid NaN's for a quick detection of uninitialized values.  <a href="#a4a70f239bc8c7a515ee38b9e26aad808">More...</a><br /></td></tr>
 <tr class="separator:a4a70f239bc8c7a515ee38b9e26aad808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28e94087f9349bc468ad0d628d901959"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html#a28e94087f9349bc468ad0d628d901959">SpatialInertia</a> (const T &amp;mass, const <a class="el" href="namespacedrake.html#a0ad29daab565ce347c4d1c5aae6a76c2">Vector3</a>&lt; T &gt; &amp;p_PScm_E, const <a class="el" href="classdrake_1_1multibody_1_1_unit_inertia.html">UnitInertia</a>&lt; T &gt; &amp;G_SP_E)</td></tr>
-<tr class="memdesc:a28e94087f9349bc468ad0d628d901959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a spatial inertia for a physical body or composite body S about a point P from a given mass, center of mass and rotational inertia.  <a href="#a28e94087f9349bc468ad0d628d901959">More...</a><br /></td></tr>
-<tr class="separator:a28e94087f9349bc468ad0d628d901959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7aa4145ca54c5ab8e45728648f7c5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html#a6d7aa4145ca54c5ab8e45728648f7c5b">SpatialInertia</a> (const T &amp;mass, const <a class="el" href="namespacedrake.html#a0ad29daab565ce347c4d1c5aae6a76c2">Vector3</a>&lt; T &gt; &amp;p_PScm_E, const <a class="el" href="classdrake_1_1multibody_1_1_unit_inertia.html">UnitInertia</a>&lt; T &gt; &amp;G_SP_E, const bool skip_validity_check=false)</td></tr>
+<tr class="memdesc:a6d7aa4145ca54c5ab8e45728648f7c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a spatial inertia for a physical body or composite body S about a point P from a given mass, center of mass and rotational inertia.  <a href="#a6d7aa4145ca54c5ab8e45728648f7c5b">More...</a><br /></td></tr>
+<tr class="separator:a6d7aa4145ca54c5ab8e45728648f7c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a751136a22e2d0980679dd41429d54c62"><td class="memTemplParams" colspan="2">template&lt;typename Scalar &gt; </td></tr>
 <tr class="memitem:a751136a22e2d0980679dd41429d54c62"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html">SpatialInertia</a>&lt; Scalar &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html#a751136a22e2d0980679dd41429d54c62">cast</a> () const</td></tr>
 <tr class="memdesc:a751136a22e2d0980679dd41429d54c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new SpatialInertia object templated on <code>Scalar</code> initialized from the value of <code>this</code> spatial inertia.  <a href="#a751136a22e2d0980679dd41429d54c62">More...</a><br /></td></tr>
@@ -296,8 +296,8 @@ Related Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a28e94087f9349bc468ad0d628d901959"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28e94087f9349bc468ad0d628d901959">&#9670;&nbsp;</a></span>SpatialInertia() <span class="overload">[4/4]</span></h2>
+<a id="a6d7aa4145ca54c5ab8e45728648f7c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d7aa4145ca54c5ab8e45728648f7c5b">&#9670;&nbsp;</a></span>SpatialInertia() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,7 +318,13 @@ Related Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_unit_inertia.html">UnitInertia</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>G_SP_E</em>&#160;</td>
+          <td class="paramname"><em>G_SP_E</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>skip_validity_check</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -332,12 +338,13 @@ Related Functions</h2></td></tr>
 <p>The center of mass is specified by the position vector <code>p_PScm_E</code> from point P to the center of mass point <code>Scm</code>, expressed in a frame E. The rotational inertia is provided as the <a class="el" href="classdrake_1_1multibody_1_1_unit_inertia.html" title="This class is used to represent rotational inertias for unit mass bodies.">UnitInertia</a> <code>G_SP_E</code> of the body or composite body S computed about point P and expressed in frame E.</p>
 <dl class="section note"><dt>Note</dt><dd>The third argument of this constructor is unusual in that it is an <a class="el" href="classdrake_1_1multibody_1_1_unit_inertia.html" title="This class is used to represent rotational inertias for unit mass bodies.">UnitInertia</a> (not a traditional <a class="el" href="classdrake_1_1multibody_1_1_rotational_inertia.html" title="This class describes the mass distribution (inertia properties) of a body or composite body about a p...">RotationalInertia</a>) and its inertia is about the arbitrary point P (not Scm &ndash; S's center of mass). </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html#a3c36e3056b0d3fcc88d8c972df267a0e" title="Creates a spatial inertia for a physical body or composite body S about a point P from a given mass,...">MakeFromCentralInertia</a> a factory method with traditional utility.</dd></dl>
-<p>This constructor checks for the physical validity of the resulting SpatialInertia with <a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html#a679852e6738fbcf5751ca37c51d2f084" title="Performs a number of checks to verify that this is a physically valid spatial inertia.">IsPhysicallyValid()</a> and throws a std::runtime_error exception in the event the provided input parameters lead to non-physically viable spatial inertia.</p>
+<p>This constructor checks for the physical validity of the resulting SpatialInertia with <a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html#a679852e6738fbcf5751ca37c51d2f084" title="Performs a number of checks to verify that this is a physically valid spatial inertia.">IsPhysicallyValid()</a> and throws a std::runtime_error exception in the event the provided input parameters lead to non-physically viable spatial inertia. Since this check has non-negligable runtime costs, it can be disabled by setting the optional argument <code>skip_validity_check</code> to <code>true</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">mass</td><td>The mass of the body or composite body S. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p_PScm_E</td><td>The position vector from point P to the center of mass of body or composite body S expressed in frame E. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">G_SP_E</td><td><a class="el" href="classdrake_1_1multibody_1_1_unit_inertia.html" title="This class is used to represent rotational inertias for unit mass bodies.">UnitInertia</a> of the body or composite body S computed about origin point P and expressed in frame E. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skip_validity_check</td><td>If true, skips the validity check described above. Defaults to false. </td></tr>
   </table>
   </dd>
 </dl>

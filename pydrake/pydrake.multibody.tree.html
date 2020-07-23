@@ -7240,7 +7240,7 @@ is symbolic::Expression.</p>
 and rotational inertia to invalid NaN’s for a quick detection of
 uninitialized values.</p>
 <ol class="arabic simple" start="2">
-<li>__init__(self: pydrake.multibody.tree.SpatialInertia_[float], mass: float, p_PScm_E: numpy.ndarray[numpy.float64[3, 1]], G_SP_E: pydrake.multibody.tree.UnitInertia_[float]) -&gt; None</li>
+<li>__init__(self: pydrake.multibody.tree.SpatialInertia_[float], mass: float, p_PScm_E: numpy.ndarray[numpy.float64[3, 1]], G_SP_E: pydrake.multibody.tree.UnitInertia_[float], skip_validity_check: bool = False) -&gt; None</li>
 </ol>
 <p>Constructs a spatial inertia for a physical body or composite body S
 about a point P from a given mass, center of mass and rotational
@@ -7262,7 +7262,9 @@ is about the arbitrary point P (not Scm – S’s center of mass).</p>
 <p>This constructor checks for the physical validity of the resulting
 SpatialInertia with IsPhysicallyValid() and throws a RuntimeError
 exception in the event the provided input parameters lead to
-non-physically viable spatial inertia.</p>
+non-physically viable spatial inertia. Since this check has
+non-negligable runtime costs, it can be disabled by setting the
+optional argument <code class="docutils literal"><span class="pre">skip_validity_check</span></code> to <code class="docutils literal"><span class="pre">True</span></code>.</p>
 <dl class="docutils">
 <dt>Parameter <code class="docutils literal"><span class="pre">mass</span></code>:</dt>
 <dd>The mass of the body or composite body S.</dd>
@@ -7272,6 +7274,9 @@ composite body S expressed in frame E.</dd>
 <dt>Parameter <code class="docutils literal"><span class="pre">G_SP_E</span></code>:</dt>
 <dd>UnitInertia of the body or composite body S computed about origin
 point P and expressed in frame E.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">skip_validity_check</span></code>:</dt>
+<dd>If true, skips the validity check described above. Defaults to
+false.</dd>
 </dl>
 </dd></dl>
 
@@ -7497,7 +7502,7 @@ is symbolic::Expression.</p>
 and rotational inertia to invalid NaN’s for a quick detection of
 uninitialized values.</p>
 <ol class="arabic simple" start="2">
-<li>__init__(self: pydrake.multibody.tree.SpatialInertia_[AutoDiffXd], mass: pydrake.autodiffutils.AutoDiffXd, p_PScm_E: numpy.ndarray[object[3, 1]], G_SP_E: pydrake.multibody.tree.UnitInertia_[AutoDiffXd]) -&gt; None</li>
+<li>__init__(self: pydrake.multibody.tree.SpatialInertia_[AutoDiffXd], mass: pydrake.autodiffutils.AutoDiffXd, p_PScm_E: numpy.ndarray[object[3, 1]], G_SP_E: pydrake.multibody.tree.UnitInertia_[AutoDiffXd], skip_validity_check: bool = False) -&gt; None</li>
 </ol>
 <p>Constructs a spatial inertia for a physical body or composite body S
 about a point P from a given mass, center of mass and rotational
@@ -7519,7 +7524,9 @@ is about the arbitrary point P (not Scm – S’s center of mass).</p>
 <p>This constructor checks for the physical validity of the resulting
 SpatialInertia with IsPhysicallyValid() and throws a RuntimeError
 exception in the event the provided input parameters lead to
-non-physically viable spatial inertia.</p>
+non-physically viable spatial inertia. Since this check has
+non-negligable runtime costs, it can be disabled by setting the
+optional argument <code class="docutils literal"><span class="pre">skip_validity_check</span></code> to <code class="docutils literal"><span class="pre">True</span></code>.</p>
 <dl class="docutils">
 <dt>Parameter <code class="docutils literal"><span class="pre">mass</span></code>:</dt>
 <dd>The mass of the body or composite body S.</dd>
@@ -7529,6 +7536,9 @@ composite body S expressed in frame E.</dd>
 <dt>Parameter <code class="docutils literal"><span class="pre">G_SP_E</span></code>:</dt>
 <dd>UnitInertia of the body or composite body S computed about origin
 point P and expressed in frame E.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">skip_validity_check</span></code>:</dt>
+<dd>If true, skips the validity check described above. Defaults to
+false.</dd>
 </dl>
 </dd></dl>
 
@@ -7752,7 +7762,7 @@ is symbolic::Expression.</p>
 and rotational inertia to invalid NaN’s for a quick detection of
 uninitialized values.</p>
 <ol class="arabic simple" start="2">
-<li>__init__(self: pydrake.multibody.tree.SpatialInertia_[Expression], mass: pydrake.symbolic.Expression, p_PScm_E: numpy.ndarray[object[3, 1]], G_SP_E: pydrake.multibody.tree.UnitInertia_[Expression]) -&gt; None</li>
+<li>__init__(self: pydrake.multibody.tree.SpatialInertia_[Expression], mass: pydrake.symbolic.Expression, p_PScm_E: numpy.ndarray[object[3, 1]], G_SP_E: pydrake.multibody.tree.UnitInertia_[Expression], skip_validity_check: bool = False) -&gt; None</li>
 </ol>
 <p>Constructs a spatial inertia for a physical body or composite body S
 about a point P from a given mass, center of mass and rotational
@@ -7774,7 +7784,9 @@ is about the arbitrary point P (not Scm – S’s center of mass).</p>
 <p>This constructor checks for the physical validity of the resulting
 SpatialInertia with IsPhysicallyValid() and throws a RuntimeError
 exception in the event the provided input parameters lead to
-non-physically viable spatial inertia.</p>
+non-physically viable spatial inertia. Since this check has
+non-negligable runtime costs, it can be disabled by setting the
+optional argument <code class="docutils literal"><span class="pre">skip_validity_check</span></code> to <code class="docutils literal"><span class="pre">True</span></code>.</p>
 <dl class="docutils">
 <dt>Parameter <code class="docutils literal"><span class="pre">mass</span></code>:</dt>
 <dd>The mass of the body or composite body S.</dd>
@@ -7784,6 +7796,9 @@ composite body S expressed in frame E.</dd>
 <dt>Parameter <code class="docutils literal"><span class="pre">G_SP_E</span></code>:</dt>
 <dd>UnitInertia of the body or composite body S computed about origin
 point P and expressed in frame E.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">skip_validity_check</span></code>:</dt>
+<dd>If true, skips the validity check described above. Defaults to
+false.</dd>
 </dl>
 </dd></dl>
 
@@ -8007,7 +8022,7 @@ is symbolic::Expression.</p>
 and rotational inertia to invalid NaN’s for a quick detection of
 uninitialized values.</p>
 <ol class="arabic simple" start="2">
-<li>__init__(self: pydrake.multibody.tree.SpatialInertia_[float], mass: float, p_PScm_E: numpy.ndarray[numpy.float64[3, 1]], G_SP_E: pydrake.multibody.tree.UnitInertia_[float]) -&gt; None</li>
+<li>__init__(self: pydrake.multibody.tree.SpatialInertia_[float], mass: float, p_PScm_E: numpy.ndarray[numpy.float64[3, 1]], G_SP_E: pydrake.multibody.tree.UnitInertia_[float], skip_validity_check: bool = False) -&gt; None</li>
 </ol>
 <p>Constructs a spatial inertia for a physical body or composite body S
 about a point P from a given mass, center of mass and rotational
@@ -8029,7 +8044,9 @@ is about the arbitrary point P (not Scm – S’s center of mass).</p>
 <p>This constructor checks for the physical validity of the resulting
 SpatialInertia with IsPhysicallyValid() and throws a RuntimeError
 exception in the event the provided input parameters lead to
-non-physically viable spatial inertia.</p>
+non-physically viable spatial inertia. Since this check has
+non-negligable runtime costs, it can be disabled by setting the
+optional argument <code class="docutils literal"><span class="pre">skip_validity_check</span></code> to <code class="docutils literal"><span class="pre">True</span></code>.</p>
 <dl class="docutils">
 <dt>Parameter <code class="docutils literal"><span class="pre">mass</span></code>:</dt>
 <dd>The mass of the body or composite body S.</dd>
@@ -8039,6 +8056,9 @@ composite body S expressed in frame E.</dd>
 <dt>Parameter <code class="docutils literal"><span class="pre">G_SP_E</span></code>:</dt>
 <dd>UnitInertia of the body or composite body S computed about origin
 point P and expressed in frame E.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">skip_validity_check</span></code>:</dt>
+<dd>If true, skips the validity check described above. Defaults to
+false.</dd>
 </dl>
 </dd></dl>
 
