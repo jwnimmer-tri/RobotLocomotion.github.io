@@ -346,7 +346,7 @@ Friends</h2></td></tr>
 </ul>
 <h3>Scalar support</h3>
 <p>This method provides support only for double. Attempting to invoke this method with T = AutoDiffXd will throw an exception if there are <em>any</em> geometry pairs that couldn't be culled.</p>
-<dl class="section return"><dt>Returns</dt><dd>A vector populated with all detected intersections characterized as contact surfaces. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector populated with all detected intersections characterized as contact surfaces. The ordering of the results is guaranteed to be consistent &ndash; for fixed geometry poses, the results will remain the same. </dd></dl>
 
 </div>
 </div>
@@ -380,6 +380,7 @@ Friends</h2></td></tr>
 <p>This is a hybrid contact algorithm. It allows for the contact surface penetration result where possible, but automatically provides a fallback for where a <a class="el" href="classdrake_1_1geometry_1_1_contact_surface.html" title="The ContactSurface characterizes the intersection of two geometries M and N as a contact surface with...">ContactSurface</a> cannot be defined.</p>
 <p>The fallback cannot guarantee success in all cases. Meshes have limited support in the proximity role; they are supported in the contact surface computation but <em>ignored</em> in the point pair collision query. If a mesh is in contact with another shape that <em>cannot</em> be resolved as a contact surface (e.g., rigid mesh vs another rigid shape), this computation will throw as there is no fallback functionality for mesh-shape.</p>
 <p>Because point pairs can only be computed for double-valued systems, this can also only support double-valued <a class="el" href="classdrake_1_1geometry_1_1_contact_surface.html" title="The ContactSurface characterizes the intersection of two geometries M and N as a contact surface with...">ContactSurface</a> instances.</p>
+<p>The ordering of the <em>added</em> results is guaranteed to be consistent &ndash; for fixed geometry poses, the results will remain the same.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">surfaces</td><td>The vector that contact surfaces will be added to. The vector will <em>not</em> be cleared. </td></tr>
@@ -411,7 +412,7 @@ Friends</h2></td></tr>
 <p>For two penetrating geometries g_A and g_B, it is guaranteed that they will map to <code>id_A</code> and <code>id_B</code> in a fixed, repeatable manner.</p>
 <h3>Scalar support</h3>
 <p>This method only provides double-valued penetration results.</p>
-<dl class="section return"><dt>Returns</dt><dd>A vector populated with all detected penetrations characterized as point pairs. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector populated with all detected penetrations characterized as point pairs. The ordering of the results is guaranteed to be consistent &ndash; for fixed geometry poses, the results will remain the same. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This silently ignores <a class="el" href="classdrake_1_1geometry_1_1_mesh.html" title="Limited support for meshes.">Mesh</a> geometries (but <a class="el" href="classdrake_1_1geometry_1_1_convex.html" title="Support for convex shapes.">Convex</a> mesh geometries are included). </dd></dl>
 
 </div>
@@ -567,7 +568,7 @@ For a convex object, outside the object at positive distance from the boundary, 
 
 <p>Applies a conservative culling mechanism to create a subset of all possible geometry pairs based on non-zero intersections. </p>
 <p>A geometry pair that is <em>absent</em> from the results is either a) culled by collision filters or b) <em>known</em> to be separated. The caller is responsible for confirming that the remaining, unculled geometry pairs are <em>actually</em> in collision.</p>
-<dl class="section return"><dt>Returns</dt><dd>A vector populated with collision pair candidates. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector populated with collision pair candidates (the order will remain constant for a fixed population but can change as geometry ids are added/removed). </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This silently ignores <a class="el" href="classdrake_1_1geometry_1_1_mesh.html" title="Limited support for meshes.">Mesh</a> geometries (but <a class="el" href="classdrake_1_1geometry_1_1_convex.html" title="Support for convex shapes.">Convex</a> mesh geometries are included). </dd></dl>
 
 </div>
