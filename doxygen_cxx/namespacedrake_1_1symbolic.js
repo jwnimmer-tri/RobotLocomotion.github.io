@@ -1,6 +1,7 @@
 var namespacedrake_1_1symbolic =
 [
     [ "BinaryExpressionCell", "classdrake_1_1symbolic_1_1_binary_expression_cell.html", "classdrake_1_1symbolic_1_1_binary_expression_cell" ],
+    [ "ChebyshevPolynomial", "classdrake_1_1symbolic_1_1_chebyshev_polynomial.html", "classdrake_1_1symbolic_1_1_chebyshev_polynomial" ],
     [ "CodeGenVisitor", "classdrake_1_1symbolic_1_1_code_gen_visitor.html", "classdrake_1_1symbolic_1_1_code_gen_visitor" ],
     [ "Environment", "classdrake_1_1symbolic_1_1_environment.html", "classdrake_1_1symbolic_1_1_environment" ],
     [ "Expression", "classdrake_1_1symbolic_1_1_expression.html", "classdrake_1_1symbolic_1_1_expression" ],

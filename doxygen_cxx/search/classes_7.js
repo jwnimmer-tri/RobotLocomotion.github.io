@@ -7,6 +7,7 @@ var searchData=
   ['hash_3c_20drake_3a_3asolvers_3a_3abinding_3c_20c_20_3e_20_3e',['hash&lt; drake::solvers::Binding&lt; C &gt; &gt;',['../structstd_1_1hash_3_01drake_1_1solvers_1_1_binding_3_01_c_01_4_01_4.html',1,'std']]],
   ['hash_3c_20drake_3a_3asolvers_3a_3asolverid_20_3e',['hash&lt; drake::solvers::SolverId &gt;',['../structstd_1_1hash_3_01drake_1_1solvers_1_1_solver_id_01_4.html',1,'std']]],
   ['hash_3c_20drake_3a_3asortedpair_3c_20t_20_3e_20_3e',['hash&lt; drake::SortedPair&lt; T &gt; &gt;',['../structstd_1_1hash_3_01drake_1_1_sorted_pair_3_01_t_01_4_01_4.html',1,'std']]],
+  ['hash_3c_20drake_3a_3asymbolic_3a_3achebyshevpolynomial_20_3e',['hash&lt; drake::symbolic::ChebyshevPolynomial &gt;',['../structstd_1_1hash_3_01drake_1_1symbolic_1_1_chebyshev_polynomial_01_4.html',1,'std']]],
   ['hash_3c_20drake_3a_3asymbolic_3a_3aexpression_20_3e',['hash&lt; drake::symbolic::Expression &gt;',['../structstd_1_1hash_3_01drake_1_1symbolic_1_1_expression_01_4.html',1,'std']]],
   ['hash_3c_20drake_3a_3asymbolic_3a_3aformula_20_3e',['hash&lt; drake::symbolic::Formula &gt;',['../structstd_1_1hash_3_01drake_1_1symbolic_1_1_formula_01_4.html',1,'std']]],
   ['hash_3c_20drake_3a_3asymbolic_3a_3amonomial_20_3e',['hash&lt; drake::symbolic::Monomial &gt;',['../structstd_1_1hash_3_01drake_1_1symbolic_1_1_monomial_01_4.html',1,'std']]],

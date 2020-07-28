@@ -8,6 +8,7 @@ var searchData=
   ['cameraproperties',['CameraProperties',['../structdrake_1_1geometry_1_1render_1_1_camera_properties.html',1,'drake::geometry::render']]],
   ['capsule',['Capsule',['../classdrake_1_1geometry_1_1_capsule.html',1,'drake::geometry']]],
   ['cartesiansetpoint',['CartesianSetpoint',['../classdrake_1_1systems_1_1controllers_1_1_cartesian_setpoint.html',1,'drake::systems::controllers']]],
+  ['chebyshevpolynomial',['ChebyshevPolynomial',['../classdrake_1_1symbolic_1_1_chebyshev_polynomial.html',1,'drake::symbolic']]],
   ['clippingrange',['ClippingRange',['../classdrake_1_1geometry_1_1render_1_1_clipping_range.html',1,'drake::geometry::render']]],
   ['codegenvisitor',['CodeGenVisitor',['../classdrake_1_1symbolic_1_1_code_gen_visitor.html',1,'drake::symbolic']]],
   ['color',['Color',['../structdrake_1_1systems_1_1sensors_1_1_color.html',1,'drake::systems::sensors']]],

@@ -12,6 +12,7 @@ var annotated_dup =
       [ "hash< drake::solvers::Binding< C > >", "structstd_1_1hash_3_01drake_1_1solvers_1_1_binding_3_01_c_01_4_01_4.html", null ],
       [ "hash< drake::solvers::SolverId >", "structstd_1_1hash_3_01drake_1_1solvers_1_1_solver_id_01_4.html", null ],
       [ "hash< drake::SortedPair< T > >", "structstd_1_1hash_3_01drake_1_1_sorted_pair_3_01_t_01_4_01_4.html", null ],
+      [ "hash< drake::symbolic::ChebyshevPolynomial >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_chebyshev_polynomial_01_4.html", null ],
       [ "hash< drake::symbolic::Expression >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_expression_01_4.html", null ],
       [ "hash< drake::symbolic::Formula >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_formula_01_4.html", null ],
       [ "hash< drake::symbolic::Monomial >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_monomial_01_4.html", null ],

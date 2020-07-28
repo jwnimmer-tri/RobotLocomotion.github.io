@@ -65,6 +65,7 @@ var dir_a36da230f0956f48b11c85f7d599788f =
     [ "sorted_pair.h", "sorted__pair_8h.html", "sorted__pair_8h" ],
     [ "sorted_vectors_have_intersection.h", "sorted__vectors__have__intersection_8h.html", "sorted__vectors__have__intersection_8h" ],
     [ "symbolic.h", "symbolic_8h.html", "symbolic_8h" ],
+    [ "symbolic_chebyshev_polynomial.h", "symbolic__chebyshev__polynomial_8h.html", "symbolic__chebyshev__polynomial_8h" ],
     [ "symbolic_codegen.h", "symbolic__codegen_8h.html", "symbolic__codegen_8h" ],
     [ "symbolic_decompose.h", "symbolic__decompose_8h.html", "symbolic__decompose_8h" ],
     [ "symbolic_environment.h", "symbolic__environment_8h.html", "symbolic__environment_8h" ],

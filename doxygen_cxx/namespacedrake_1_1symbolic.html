@@ -113,6 +113,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1symbolic_1_1_binary_expression_cell.html">BinaryExpressionCell</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the base class for binary expressions.  <a href="classdrake_1_1symbolic_1_1_binary_expression_cell.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_polynomial.html">ChebyshevPolynomial</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the Chebyshev polynomial of the first kind Tₙ(x).  <a href="classdrake_1_1symbolic_1_1_chebyshev_polynomial.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1symbolic_1_1_code_gen_visitor.html">CodeGenVisitor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visitor class for code generation.  <a href="classdrake_1_1symbolic_1_1_code_gen_visitor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -371,6 +374,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a31d454a069abf89b2a0b6c71222ec221"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1symbolic.html#a31d454a069abf89b2a0b6c71222ec221">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_polynomial.html">ChebyshevPolynomial</a> &amp;p)</td></tr>
+<tr class="separator:a31d454a069abf89b2a0b6c71222ec221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2d07751d060ddf51dad4702d441f651a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__codegen.html#ga2d07751d060ddf51dad4702d441f651a">CodeGen</a> (const std::string &amp;function_name, const std::vector&lt; <a class="el" href="classdrake_1_1symbolic_1_1_variable.html">Variable</a> &gt; &amp;parameters, const <a class="el" href="classdrake_1_1symbolic_1_1_expression.html">Expression</a> &amp;e)</td></tr>
 <tr class="memdesc:ga2d07751d060ddf51dad4702d441f651a"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a given symbolic expression <code>e</code>, generates two C functions, <code>&lt;function_name&gt;</code> and <code>&lt;function_name&gt;_meta</code>.  <a href="group__codegen.html#ga2d07751d060ddf51dad4702d441f651a">More...</a><br /></td></tr>
 <tr class="separator:ga2d07751d060ddf51dad4702d441f651a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -9099,7 +9104,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="ab6e0055c99275292d22eb59c103fb0ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6e0055c99275292d22eb59c103fb0ae">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e0055c99275292d22eb59c103fb0ae">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9126,8 +9131,36 @@ vars.size() == <code>n</code>. </dd></dl>
 
 </div>
 </div>
+<a id="a31d454a069abf89b2a0b6c71222ec221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d454a069abf89b2a0b6c71222ec221">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; drake::symbolic::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_polynomial.html">ChebyshevPolynomial</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8505db5f6e70df16a3cecda394bdcb24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8505db5f6e70df16a3cecda394bdcb24">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8505db5f6e70df16a3cecda394bdcb24">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9155,7 +9188,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="ad9eb2f0937be3e670ccdca9c4d30c63d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9eb2f0937be3e670ccdca9c4d30c63d">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9eb2f0937be3e670ccdca9c4d30c63d">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9183,7 +9216,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a3c794bfc916c077b16d9c7d47031f68c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c794bfc916c077b16d9c7d47031f68c">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c794bfc916c077b16d9c7d47031f68c">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9211,7 +9244,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a30a0c468c43eb087bc5e98af3c3ad278"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30a0c468c43eb087bc5e98af3c3ad278">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a0c468c43eb087bc5e98af3c3ad278">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

@@ -83,6 +83,7 @@ var searchData=
   ['supervector_2eh',['supervector.h',['../supervector_8h.html',1,'']]],
   ['surface_5fmesh_2eh',['surface_mesh.h',['../surface__mesh_8h.html',1,'']]],
   ['symbolic_2eh',['symbolic.h',['../symbolic_8h.html',1,'']]],
+  ['symbolic_5fchebyshev_5fpolynomial_2eh',['symbolic_chebyshev_polynomial.h',['../symbolic__chebyshev__polynomial_8h.html',1,'']]],
   ['symbolic_5fcodegen_2eh',['symbolic_codegen.h',['../symbolic__codegen_8h.html',1,'']]],
   ['symbolic_5fdecompose_2eh',['symbolic_decompose.h',['../symbolic__decompose_8h.html',1,'']]],
   ['symbolic_5fenvironment_2eh',['symbolic_environment.h',['../symbolic__environment_8h.html',1,'']]],
