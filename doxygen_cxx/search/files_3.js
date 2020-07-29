@@ -33,6 +33,7 @@ var searchData=
   ['direct_5ftranscription_2eh',['direct_transcription.h',['../direct__transcription_8h.html',1,'']]],
   ['discontinuous_5fspring_5fmass_5fdamper_5fsystem_2eh',['discontinuous_spring_mass_damper_system.h',['../discontinuous__spring__mass__damper__system_8h.html',1,'']]],
   ['discrete_5falgebraic_5friccati_5fequation_2eh',['discrete_algebraic_riccati_equation.h',['../discrete__algebraic__riccati__equation_8h.html',1,'']]],
+  ['discrete_5fcontact_5fpair_2eh',['discrete_contact_pair.h',['../discrete__contact__pair_8h.html',1,'']]],
   ['discrete_5fderivative_2eh',['discrete_derivative.h',['../discrete__derivative_8h.html',1,'']]],
   ['discrete_5flyapunov_5fequation_2eh',['discrete_lyapunov_equation.h',['../discrete__lyapunov__equation_8h.html',1,'']]],
   ['discrete_5fsystems_2eh',['discrete_systems.h',['../discrete__systems_8h.html',1,'']]],

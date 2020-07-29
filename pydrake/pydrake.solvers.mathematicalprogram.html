@@ -2715,6 +2715,25 @@ best-effort solution.</td>
 </tbody>
 </table>
 <ol class="arabic simple" start="6">
+<li>GetSolution(self: pydrake.solvers.mathematicalprogram.MathematicalProgramResult, arg0: pydrake.symbolic.Polynomial) -&gt; pydrake.symbolic.Polynomial</li>
+</ol>
+<p>Substitutes the value of all decision variables into the coefficients
+of the symbolic polynomial.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">p</span></code>:</dt>
+<dd>A symbolic polynomial. Its indeterminates can’t intersect with the
+set of decision variables of the MathematicalProgram from which
+this result is obtained.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the symbolic::Polynomial as the result of the substitution.</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="7">
 <li>GetSolution(self: pydrake.solvers.mathematicalprogram.MathematicalProgramResult, arg0: numpy.ndarray[object[m, n]]) -&gt; numpy.ndarray[object[m, n]]</li>
 </ol>
 </dd></dl>

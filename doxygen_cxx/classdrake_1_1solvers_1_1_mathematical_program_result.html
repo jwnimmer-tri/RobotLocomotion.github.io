@@ -168,6 +168,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a95fe776847b769ae0341b0844dd2d0c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1symbolic_1_1_expression.html">symbolic::Expression</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program_result.html#a95fe776847b769ae0341b0844dd2d0c7">GetSolution</a> (const <a class="el" href="classdrake_1_1symbolic_1_1_expression.html">symbolic::Expression</a> &amp;e) const</td></tr>
 <tr class="memdesc:a95fe776847b769ae0341b0844dd2d0c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substitutes the value of all decision variables into the Expression.  <a href="#a95fe776847b769ae0341b0844dd2d0c7">More...</a><br /></td></tr>
 <tr class="separator:a95fe776847b769ae0341b0844dd2d0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66c730c31d65150eba65d0c66670cc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program_result.html#af66c730c31d65150eba65d0c66670cc3">GetSolution</a> (const <a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a> &amp;p) const</td></tr>
+<tr class="memdesc:af66c730c31d65150eba65d0c66670cc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substitutes the value of all decision variables into the coefficients of the symbolic polynomial.  <a href="#af66c730c31d65150eba65d0c66670cc3">More...</a><br /></td></tr>
+<tr class="separator:af66c730c31d65150eba65d0c66670cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad55027d1a3991df08891d0afde133319"><td class="memTemplParams" colspan="2">template&lt;typename Derived &gt; </td></tr>
 <tr class="memitem:ad55027d1a3991df08891d0afde133319"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; typename Derived::Scalar, <a class="el" href="classdrake_1_1symbolic_1_1_expression.html">symbolic::Expression</a> &gt;::value, Eigen::Matrix&lt; <a class="el" href="classdrake_1_1symbolic_1_1_expression.html">symbolic::Expression</a>, Derived::RowsAtCompileTime, Derived::ColsAtCompileTime &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdrake_1_1solvers_1_1_mathematical_program_result.html#ad55027d1a3991df08891d0afde133319">GetSolution</a> (const Eigen::MatrixBase&lt; Derived &gt; &amp;m) const</td></tr>
 <tr class="memdesc:ad55027d1a3991df08891d0afde133319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substitutes the value of all decision variables into the Matrix&lt;Expression&gt;.  <a href="#ad55027d1a3991df08891d0afde133319">More...</a><br /></td></tr>
@@ -606,7 +609,7 @@ The user must have called <a class="el" href="classdrake_1_1solvers_1_1_mathemat
 </div>
 </div>
 <a id="a0f8ef3892870d92bd4d3b0b5cd2e155f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f8ef3892870d92bd4d3b0b5cd2e155f">&#9670;&nbsp;</a></span>GetSolution() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f8ef3892870d92bd4d3b0b5cd2e155f">&#9670;&nbsp;</a></span>GetSolution() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -625,7 +628,7 @@ The user must have called <a class="el" href="classdrake_1_1solvers_1_1_mathemat
 </div>
 </div>
 <a id="ad3f9009b5477548c86d6253f21975323"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3f9009b5477548c86d6253f21975323">&#9670;&nbsp;</a></span>GetSolution() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f9009b5477548c86d6253f21975323">&#9670;&nbsp;</a></span>GetSolution() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -658,7 +661,7 @@ The user must have called <a class="el" href="classdrake_1_1solvers_1_1_mathemat
 </div>
 </div>
 <a id="ae75eb95dd928015b0410479833c607f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae75eb95dd928015b0410479833c607f7">&#9670;&nbsp;</a></span>GetSolution() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae75eb95dd928015b0410479833c607f7">&#9670;&nbsp;</a></span>GetSolution() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -691,7 +694,7 @@ The user must have called <a class="el" href="classdrake_1_1solvers_1_1_mathemat
 </div>
 </div>
 <a id="a95fe776847b769ae0341b0844dd2d0c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95fe776847b769ae0341b0844dd2d0c7">&#9670;&nbsp;</a></span>GetSolution() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a95fe776847b769ae0341b0844dd2d0c7">&#9670;&nbsp;</a></span>GetSolution() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -717,8 +720,35 @@ The user must have called <a class="el" href="classdrake_1_1solvers_1_1_mathemat
 
 </div>
 </div>
+<a id="af66c730c31d65150eba65d0c66670cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af66c730c31d65150eba65d0c66670cc3">&#9670;&nbsp;</a></span>GetSolution() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a> GetSolution </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">symbolic::Polynomial</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Substitutes the value of all decision variables into the coefficients of the symbolic polynomial. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>A symbolic polynomial. Its indeterminates can't intersect with the set of decision variables of the <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html" title="MathematicalProgram stores the decision variables, the constraints and costs of an optimization probl...">MathematicalProgram</a> from which this result is obtained. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html" title="Represents symbolic polynomials.">symbolic::Polynomial</a> as the result of the substitution. </dd></dl>
+
+</div>
+</div>
 <a id="ad55027d1a3991df08891d0afde133319"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad55027d1a3991df08891d0afde133319">&#9670;&nbsp;</a></span>GetSolution() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55027d1a3991df08891d0afde133319">&#9670;&nbsp;</a></span>GetSolution() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

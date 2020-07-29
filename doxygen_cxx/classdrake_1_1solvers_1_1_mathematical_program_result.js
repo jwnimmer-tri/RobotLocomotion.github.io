@@ -19,6 +19,7 @@ var classdrake_1_1solvers_1_1_mathematical_program_result =
     [ "GetSolution", "classdrake_1_1solvers_1_1_mathematical_program_result.html#ad3f9009b5477548c86d6253f21975323", null ],
     [ "GetSolution", "classdrake_1_1solvers_1_1_mathematical_program_result.html#ae75eb95dd928015b0410479833c607f7", null ],
     [ "GetSolution", "classdrake_1_1solvers_1_1_mathematical_program_result.html#a95fe776847b769ae0341b0844dd2d0c7", null ],
+    [ "GetSolution", "classdrake_1_1solvers_1_1_mathematical_program_result.html#af66c730c31d65150eba65d0c66670cc3", null ],
     [ "GetSolution", "classdrake_1_1solvers_1_1_mathematical_program_result.html#ad55027d1a3991df08891d0afde133319", null ],
     [ "GetSuboptimalSolution", "classdrake_1_1solvers_1_1_mathematical_program_result.html#ab4467f1dc5d5f895ee48eb5d466d0952", null ],
     [ "GetSuboptimalSolution", "classdrake_1_1solvers_1_1_mathematical_program_result.html#a0f1b5841ee288eef56aab11d80344e64", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX40 =
 {
+"namespacedrake_1_1systems_1_1trajectory__optimization.html":[3,0,0,13,9],
+"namespacedrake_1_1test.html":[3,0,0,14],
 "namespacedrake_1_1test.html":[2,0,0,14],
 "namespacedrake_1_1trajectories.html":[3,0,0,15],
 "namespacedrake_1_1trajectories.html":[2,0,0,15],
@@ -142,6 +144,7 @@ var NAVTREEINDEX40 =
 "planar__gripper__lcm_8h.html#a912bfe40f5046c670e716025d6678d9c":[4,0,0,3,11,4,4],
 "planar__manipuland__lcm_8h.html":[4,0,0,3,11,5],
 "planar__manipuland__lcm_8h.html#a909c985f8e6897a3936dda06c9648da4":[4,0,0,3,11,5,2],
+"planar__mobilizer_8h.html":[4,0,0,8,10,28],
 "plane_8h.html":[4,0,0,4,0,28],
 "pleides__system_8h.html":[4,0,0,11,0,0,9],
 "pleides__system_8h.html#a322dbcada3667894a629fe3f1a476f2a":[4,0,0,11,0,0,9,1],
@@ -159,7 +162,7 @@ var NAVTREEINDEX40 =
 "point__cloud__flags_8h.html#ac6b11bb7c847d6211b1f4d4720a683afaba0ec049309fcce2fbb0aa588bacce66":[4,0,0,9,2,3,3],
 "point__cloud__flags_8h.html#ac6b11bb7c847d6211b1f4d4720a683afaf7838358503ffc19f4ed15a03804b7f1":[4,0,0,9,2,3,2],
 "point__cloud__flags_8h.html#acff44cbce439811c7213d1bb4e295e4c":[4,0,0,9,2,6],
-"point__pair__contact__info_8h.html":[4,0,0,8,7,11],
+"point__pair__contact__info_8h.html":[4,0,0,8,7,12],
 "point__to__point__distance__constraint_8h.html":[4,0,0,8,3,8],
 "pointer__cast_8h.html":[4,0,0,1,40],
 "pointer__cast_8h.html#a983e5f23fd0a884e01038572bd3e24a2":[4,0,0,1,40,2],
@@ -181,9 +184,9 @@ var NAVTREEINDEX40 =
 "pose__vector_8h.html":[4,0,0,11,8,5],
 "posed__half__space_8h.html":[4,0,0,4,0,29],
 "position__constraint_8h.html":[4,0,0,8,3,9],
-"position__kinematics__cache_8h.html":[4,0,0,8,10,28],
-"prismatic__joint_8h.html":[4,0,0,8,10,29],
-"prismatic__mobilizer_8h.html":[4,0,0,8,10,30],
+"position__kinematics__cache_8h.html":[4,0,0,8,10,29],
+"prismatic__joint_8h.html":[4,0,0,8,10,30],
+"prismatic__mobilizer_8h.html":[4,0,0,8,10,31],
 "program__attribute_8h.html":[4,0,0,10,38],
 "program__attribute_8h.html#a115b732b5de5502e59437ee38babe95f":[4,0,0,10,38,1],
 "program__attribute_8h.html#a115b732b5de5502e59437ee38babe95fa12a1034a77cf500ebcff46f8e493bb10":[4,0,0,10,38,1,12],
@@ -206,7 +209,7 @@ var NAVTREEINDEX40 =
 "program__attribute_8h.html#a5fa3414cee7c7ef46d8549673b42e344":[4,0,0,10,38,3],
 "program__attribute_8h.html#aab3eb74236fcb577dba315f884034169":[4,0,0,10,38,6],
 "program__attribute_8h.html#adfb26b995d486732f1b2867751dbbee7":[4,0,0,10,38,5],
-"propeller_8h.html":[4,0,0,8,7,12],
+"propeller_8h.html":[4,0,0,8,7,13],
 "proximity__doxygen_8h.html":[4,0,0,4,0,30],
 "proximity__engine_8h.html":[4,0,0,4,18],
 "proximity__properties_8h.html":[4,0,0,4,19],
@@ -246,8 +249,5 @@ var NAVTREEINDEX40 =
 "quaternion_8h.html#a0fc70ebdc0ea497711e6e7b69eddef2d":[4,0,0,7,24,14],
 "quaternion_8h.html#a29059591a43a840c9a7e2f31a2d55130":[4,0,0,7,24,13],
 "quaternion_8h.html#a2e47f892f2417dfc861a095328019361":[4,0,0,7,24,7],
-"quaternion_8h.html#a3b38bdfc1e3df8662c8726bc89a08ed0":[4,0,0,7,24,6],
-"quaternion_8h.html#a5e37615af3b6facc6f7dec51323a628e":[4,0,0,7,24,4],
-"quaternion_8h.html#a7e6bdc00adb60394da9687fc9aa5b0aa":[4,0,0,7,24,9],
-"quaternion_8h.html#a88a6d40e458bc9f766f33b819a7b4900":[4,0,0,7,24,5]
+"quaternion_8h.html#a3b38bdfc1e3df8662c8726bc89a08ed0":[4,0,0,7,24,6]
 };

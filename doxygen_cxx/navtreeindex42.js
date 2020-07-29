@@ -1,9 +1,12 @@
 var NAVTREEINDEX42 =
 {
+"sos__basis__generator_8h.html":[4,0,0,10,51],
+"sos__basis__generator_8h.html#a6703c1f6f99f3e06a86f6a54e7dbd63d":[4,0,0,10,51,0],
+"space__xyz__mobilizer_8h.html":[4,0,0,8,10,38],
 "spatial__acceleration_8h.html":[4,0,0,8,4,0],
 "spatial__algebra_8h.html":[4,0,0,8,4,1],
 "spatial__force_8h.html":[4,0,0,8,4,2],
-"spatial__inertia_8h.html":[4,0,0,8,10,38],
+"spatial__inertia_8h.html":[4,0,0,8,10,39],
 "spatial__kinematics_8h.html":[4,0,0,8,8,2],
 "spatial__momentum_8h.html":[4,0,0,8,4,3],
 "spatial__vector_8h.html":[4,0,0,8,4,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX42 =
 "structdrake_1_1multibody_1_1benchmarks_1_1kuka__iiwa__robot_1_1_kuka_robot_joint_reaction_forces.html#ad0c3c5a0cf4055c763011fc59fbb4cb3":[3,0,0,8,0,2,1,0],
 "structdrake_1_1multibody_1_1benchmarks_1_1kuka__iiwa__robot_1_1_kuka_robot_joint_reaction_forces.html#ad4d2d87cee466cb27680067e1b4ee5c5":[3,0,0,8,0,2,1,1],
 "structdrake_1_1multibody_1_1benchmarks_1_1kuka__iiwa__robot_1_1_kuka_robot_joint_reaction_forces.html#adddb155f97ee7c54be548096bbbba70e":[3,0,0,8,0,2,1,3],
-"structdrake_1_1multibody_1_1benchmarks_1_1kuka__iiwa__robot_1_1_kuka_robot_joint_reaction_forces.html#afb2dd735f5c20820dd24342eafdfccb1":[3,0,0,8,0,2,1,4],
-"structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html":[3,0,0,8,1,0],
-"structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#a09f8d0da960e3eed8859508f7efdb421":[3,0,0,8,1,0,0],
-"structdrake_1_1multibody_1_1constraint_1_1_constraint_accel_problem_data.html#a0f29fed6311156aa9a7efefa57dfae06":[3,0,0,8,1,0,7]
+"structdrake_1_1multibody_1_1benchmarks_1_1kuka__iiwa__robot_1_1_kuka_robot_joint_reaction_forces.html#afb2dd735f5c20820dd24342eafdfccb1":[3,0,0,8,0,2,1,4]
 };

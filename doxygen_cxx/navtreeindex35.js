@@ -1,5 +1,6 @@
 var NAVTREEINDEX35 =
 {
+"compute__numerical__gradient_8h.html":[4,0,0,7,4],
 "compute__numerical__gradient_8h.html#a33f67c50b300b399043477a51861400a":[4,0,0,7,4,1],
 "compute__numerical__gradient_8h.html#a33f67c50b300b399043477a51861400aa39209ccaab9620e08ec04483c22a7eda":[4,0,0,7,4,1,2],
 "compute__numerical__gradient_8h.html#a33f67c50b300b399043477a51861400aa5cc7cc1518100eae9e3f2d83673a74ed":[4,0,0,7,4,1,1],
@@ -227,6 +228,7 @@ var NAVTREEINDEX35 =
 "discontinuous__spring__mass__damper__system_8h.html":[4,0,0,11,0,0,2],
 "discrete__algebraic__riccati__equation_8h.html":[4,0,0,7,9],
 "discrete__algebraic__riccati__equation_8h.html#a8cd8a0787e886faf633f2c1f5be2365e":[4,0,0,7,9,0],
+"discrete__contact__pair_8h.html":[4,0,0,8,7,6],
 "discrete__derivative_8h.html":[4,0,0,11,7,6],
 "discrete__lyapunov__equation_8h.html":[4,0,0,7,10],
 "discrete__lyapunov__equation_8h.html#a41733a5b284046800224cd293e055ff7":[4,0,0,7,10,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX35 =
 "drake__assert_8h.html":[4,0,0,1,14],
 "drake__assert_8h.html#a0d126d5c79d6e74d5f03f8c81e4b3a63":[4,0,0,1,14,0],
 "drake__assert_8h.html#a53797785bb2511ded7061028fcca65c5":[4,0,0,1,14,1],
-"drake__assert_8h.html#a90a6aa22721ddd3bc514c45d8e1d8674":[4,0,0,1,14,2],
-"drake__assert_8h.html#aaf9506c208e2a7d09f67d1a9ab84992a":[4,0,0,1,14,3],
-"drake__assertion__error_8h.html":[4,0,0,1,15]
+"drake__assert_8h.html#a90a6aa22721ddd3bc514c45d8e1d8674":[4,0,0,1,14,2]
 };

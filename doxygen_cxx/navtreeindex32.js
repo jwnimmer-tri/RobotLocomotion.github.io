@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"classdrake_1_1systems_1_1controllers_1_1_vector_setpoint.html#af9593d4a5ff4274efaf429cb4f9e57cc":[3,0,0,13,2,11,20],
 "classdrake_1_1systems_1_1controllers_1_1_z_m_p_planner.html":[3,0,0,13,2,12],
 "classdrake_1_1systems_1_1controllers_1_1_z_m_p_planner.html#a0579793f4ce5ad302173ab0f1ab8d4fe":[3,0,0,13,2,12,3],
 "classdrake_1_1systems_1_1controllers_1_1_z_m_p_planner.html#a26b85162b5bb123a554b1ba7ec1d22ac":[3,0,0,13,2,12,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "classdrake_1_1systems_1_1sensors_1_1_beam_model.html#afab4d0f4a234cdb8f46a1ba19cc3fec3":[1,2,4,1,12],
 "classdrake_1_1systems_1_1sensors_1_1_camera_info.html":[3,0,0,13,8,2],
 "classdrake_1_1systems_1_1sensors_1_1_camera_info.html#a123b2aa06c4f7c906822c2bb81c5803a":[3,0,0,13,8,2,3],
-"classdrake_1_1systems_1_1sensors_1_1_camera_info.html#a2a47edcba32f94edbb71f18864c70d92":[3,0,0,13,8,2,2],
-"classdrake_1_1systems_1_1sensors_1_1_camera_info.html#a3145619e4a819f4ae2ec061893bef1d5":[3,0,0,13,8,2,4]
+"classdrake_1_1systems_1_1sensors_1_1_camera_info.html#a2a47edcba32f94edbb71f18864c70d92":[3,0,0,13,8,2,2]
 };

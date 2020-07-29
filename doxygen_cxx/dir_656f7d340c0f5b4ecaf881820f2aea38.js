@@ -8,6 +8,7 @@ var dir_656f7d340c0f5b4ecaf881820f2aea38 =
     ] ],
     [ "contact_results_to_lcm.h", "contact__results__to__lcm_8h.html", "contact__results__to__lcm_8h" ],
     [ "coulomb_friction.h", "coulomb__friction_8h.html", "coulomb__friction_8h" ],
+    [ "discrete_contact_pair.h", "discrete__contact__pair_8h.html", null ],
     [ "externally_applied_spatial_force.h", "externally__applied__spatial__force_8h.html", [
       [ "ExternallyAppliedSpatialForce", "structdrake_1_1multibody_1_1_externally_applied_spatial_force.html", "structdrake_1_1multibody_1_1_externally_applied_spatial_force" ]
     ] ],

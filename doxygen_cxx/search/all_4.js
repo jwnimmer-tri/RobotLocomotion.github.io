@@ -208,6 +208,7 @@ var searchData=
   ['discontinuousspringmassdampertest',['DiscontinuousSpringMassDamperTest',['../classdrake_1_1systems_1_1analysis__test_1_1_implicit_integrator_test.html#ad5f7520c949d2785ec3695b363126a6a',1,'drake::systems::analysis_test::ImplicitIntegratorTest']]],
   ['discount_5ffactor',['discount_factor',['../structdrake_1_1systems_1_1controllers_1_1_dynamic_programming_options.html#ad7e0abe77b84e16a4224c12492730d30',1,'drake::systems::controllers::DynamicProgrammingOptions']]],
   ['discrete_5falgebraic_5friccati_5fequation_2eh',['discrete_algebraic_riccati_equation.h',['../discrete__algebraic__riccati__equation_8h.html',1,'']]],
+  ['discrete_5fcontact_5fpair_2eh',['discrete_contact_pair.h',['../discrete__contact__pair_8h.html',1,'']]],
   ['discrete_5fderivative_2eh',['discrete_derivative.h',['../discrete__derivative_8h.html',1,'']]],
   ['discrete_5flyapunov_5fequation_2eh',['discrete_lyapunov_equation.h',['../discrete__lyapunov__equation_8h.html',1,'']]],
   ['discrete_5fstate',['discrete_state',['../classdrake_1_1systems_1_1_system_symbolic_inspector.html#a50d9bfb7066711ade3a6b4adf9920739',1,'drake::systems::SystemSymbolicInspector']]],
