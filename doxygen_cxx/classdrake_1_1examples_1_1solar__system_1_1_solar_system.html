@@ -135,8 +135,9 @@ class drake::examples::solar_system::SolarSystem&lt; T &gt;</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">P - ●  </td><td class="markdownTableBodyLeft">Phobos's (Mars's moon) frame   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Oᵢ  </td><td class="markdownTableBodyLeft">Body's orbit in a circular path. <code>i ∈ {e, m, l, p}</code> for Earth, Mars, Luna, and Phobos, respectively.   </td></tr>
+<td class="markdownTableBodyCenter">Oᵢ  </td><td class="markdownTableBodyLeft">Body's orbit in a circular path¹   </td></tr>
 </table>
+<p>¹ <code>i ∈ {e, m, l, p}</code> for Earth, Mars, Luna, and Phobos, respectively.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadCenter">Pose Symbol  </th><th class="markdownTableHeadLeft">Meaning   </th></tr>
@@ -157,7 +158,7 @@ class drake::examples::solar_system::SolarSystem&lt; T &gt;</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter"><code>X_OₚP</code>  </td><td class="markdownTableBodyLeft">Phobos's frame P relative to its orbit Oₚ   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter"><code>X_MR</code>  </td><td class="markdownTableBodyLeft">Mars's rings R relative to Mars's frame M (not shown in diagram).   </td></tr>
+<td class="markdownTableBodyCenter"><code>X_MR</code>  </td><td class="markdownTableBodyLeft">Mars's rings R relative to Mars's frame M (not shown in diagram)   </td></tr>
 </table>
 <div class="fragment"><div class="line">    X_OₑE  X_OₗL                          X_OₘM  X_OₚP</div><div class="line">       ↓   ↓                                ↓   ↓</div><div class="line">       E   L         ▁▁▁                    M   P</div><div class="line">       ◯   ◑        ╱   ╲                   ◍   ●</div><div class="line">X_OₑOₗ→├───┘       │  S  │         X_OₘOₚ → ├───┘</div><div class="line">       │            ╲▁▁▁╱                   │</div><div class="line">       │              │                     │</div><div class="line">       └──────────────┤ ← X_SOₑ             │</div><div class="line">                      └─────────────────────┘</div><div class="line">                      ↑</div><div class="line">                     X_SOₘ</div></div><!-- fragment --><p>The frame of orbit's origin lies at the circle's center and it's z-axis is perpendicular to the plane of the circle.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>

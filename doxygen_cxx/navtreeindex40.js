@@ -1,12 +1,13 @@
 var NAVTREEINDEX40 =
 {
+"namespacedrake_1_1systems_1_1trajectory__optimization.html":[2,0,0,13,11],
 "namespacedrake_1_1systems_1_1trajectory__optimization.html":[3,0,0,13,9],
 "namespacedrake_1_1test.html":[3,0,0,14],
 "namespacedrake_1_1test.html":[2,0,0,14],
 "namespacedrake_1_1trajectories.html":[3,0,0,15],
 "namespacedrake_1_1trajectories.html":[2,0,0,15],
-"namespacedrake_1_1yaml.html":[3,0,0,16],
 "namespacedrake_1_1yaml.html":[2,0,0,16],
+"namespacedrake_1_1yaml.html":[3,0,0,16],
 "namespacemembers.html":[2,1,0],
 "namespacemembers.html":[2,1,0,0],
 "namespacemembers_b.html":[2,1,0,1],
@@ -16,8 +17,8 @@ var NAVTREEINDEX40 =
 "namespacemembers_enum.html":[2,1,4],
 "namespacemembers_eval.html":[2,1,5],
 "namespacemembers_f.html":[2,1,0,5],
-"namespacemembers_func.html":[2,1,1],
 "namespacemembers_func.html":[2,1,1,0],
+"namespacemembers_func.html":[2,1,1],
 "namespacemembers_func_b.html":[2,1,1,1],
 "namespacemembers_func_c.html":[2,1,1,2],
 "namespacemembers_func_d.html":[2,1,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX40 =
 "quaternion_8h.html#a0d6538743074d86b4dc68c7d0455b680":[4,0,0,7,24,15],
 "quaternion_8h.html#a0fc70ebdc0ea497711e6e7b69eddef2d":[4,0,0,7,24,14],
 "quaternion_8h.html#a29059591a43a840c9a7e2f31a2d55130":[4,0,0,7,24,13],
-"quaternion_8h.html#a2e47f892f2417dfc861a095328019361":[4,0,0,7,24,7],
-"quaternion_8h.html#a3b38bdfc1e3df8662c8726bc89a08ed0":[4,0,0,7,24,6]
+"quaternion_8h.html#a2e47f892f2417dfc861a095328019361":[4,0,0,7,24,7]
 };

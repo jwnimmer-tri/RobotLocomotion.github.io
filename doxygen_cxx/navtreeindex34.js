@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"classdrake_1_1test_1_1_limit_malloc.html#a478ec7cfb497736991907bf0b70d9cc0":[3,0,0,14,0,0],
 "classdrake_1_1test_1_1_limit_malloc.html#a6c0c47e1e5af49b346ab24c53aaa6ded":[3,0,0,14,0,4],
 "classdrake_1_1test_1_1_limit_malloc.html#a8b0b677bcfc5aadb02adacc95d993b95":[3,0,0,14,0,2],
 "classdrake_1_1test_1_1_limit_malloc.html#a923eedb579481aa1bab9babf206d3ead":[3,0,0,14,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "common__solver__option_8h.html#ae07229124cd16e9d8b62fe359c7d0b40a222307df6fb67d2a524cade7227ca4f8":[4,0,0,10,6,0,0],
 "common__solver__option_8h.html#ae07229124cd16e9d8b62fe359c7d0b40aca5719f05d0aceacc42e256644394100":[4,0,0,10,6,0,1],
 "common__solver__option_8h.html#aed794af38e7da9270528fd2185861862":[4,0,0,10,6,1],
-"compass__gait_8h.html":[4,0,0,3,4,0],
-"compass__gait__geometry_8h.html":[4,0,0,3,4,1]
+"compass__gait_8h.html":[4,0,0,3,4,0]
 };

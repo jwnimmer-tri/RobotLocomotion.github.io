@@ -16,6 +16,7 @@ var classdrake_1_1multibody_1_1_joint =
     [ "do_get_num_velocities", "classdrake_1_1multibody_1_1_joint.html#a9bd306c3dbd70fed97a6efd1013660ef", null ],
     [ "do_get_position_start", "classdrake_1_1multibody_1_1_joint.html#a2556aa7cb0dfde452bc41c8179ae9fe7", null ],
     [ "do_get_velocity_start", "classdrake_1_1multibody_1_1_joint.html#a70e87b5a1d82be8df33127108a74c899", null ],
+    [ "do_set_default_positions", "classdrake_1_1multibody_1_1_joint.html#a173513e6bfdeb8698d4e8b75685d986f", null ],
     [ "DoAddInDamping", "classdrake_1_1multibody_1_1_joint.html#af63e6defdaac784a56512d2d892cb9b4", null ],
     [ "DoAddInOneForce", "classdrake_1_1multibody_1_1_joint.html#aefbbc9dd65e623d71ae99f3ba61a9ca5", null ],
     [ "DoCloneToScalar", "classdrake_1_1multibody_1_1_joint.html#a8ed5ee2256ac8372e493caa547cbeb1e", null ],

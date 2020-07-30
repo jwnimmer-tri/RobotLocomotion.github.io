@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"group__simulator__configuration.html#ga5d1fc9d510c450590826170fca172e5a":[1,4,0,1,0],
 "group__simulator__configuration.html#gad32461bc90073aac39049d636974a04b":[1,4,0,1,1],
 "group__solvers.html":[1,1],
 "group__stochastic__systems.html":[1,2,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "mass__damper__spring__analytical__solution_8h.html":[4,0,0,8,0,4,0],
 "math_2autodiff_8h.html":[4,0,0,7,0],
 "math_2autodiff_8h.html#a1fc937230e65e9d6bcc7f64f9121d876":[4,0,0,7,0,3],
-"math_2autodiff_8h.html#a2131d12e81399c3201b29118d59adc87":[4,0,0,7,0,2],
-"math_2autodiff_8h.html#a32d860f5fd00b3004e866af6f73a1362":[4,0,0,7,0,7]
+"math_2autodiff_8h.html#a2131d12e81399c3201b29118d59adc87":[4,0,0,7,0,2]
 };

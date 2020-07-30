@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"classdrake_1_1systems_1_1sensors_1_1_camera_info.html#a2a47edcba32f94edbb71f18864c70d92":[3,0,0,13,8,2,2],
 "classdrake_1_1systems_1_1sensors_1_1_camera_info.html#a3145619e4a819f4ae2ec061893bef1d5":[3,0,0,13,8,2,4],
 "classdrake_1_1systems_1_1sensors_1_1_camera_info.html#a5260647c6d73b9af547424968d24da09":[3,0,0,13,8,2,6],
 "classdrake_1_1systems_1_1sensors_1_1_camera_info.html#a840e2471b3f05b98dbb7d9ec51f6efd7":[3,0,0,13,8,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_multiple_shooting.html#afdb93529350e8cd4872dfc89198e2cfa":[3,0,0,13,9,4,32],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_multiple_shooting.html#aff3e6c4f0b60a31114bec85318e0617f":[3,0,0,13,9,4,2],
 "classdrake_1_1test_1_1_limit_malloc.html":[3,0,0,14,0],
-"classdrake_1_1test_1_1_limit_malloc.html#a14d16b667a4d7d25d44e45315f9a7deb":[3,0,0,14,0,5],
-"classdrake_1_1test_1_1_limit_malloc.html#a478ec7cfb497736991907bf0b70d9cc0":[3,0,0,14,0,0]
+"classdrake_1_1test_1_1_limit_malloc.html#a14d16b667a4d7d25d44e45315f9a7deb":[3,0,0,14,0,5]
 };
