@@ -1,6 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_sender.html#a8af7cf1d8a05ae8d29654e64830fc530":[3,0,0,6,1,3,5],
 "classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_sender.html#a96c34d3a2a266d4027080905bdade6b5":[3,0,0,6,1,3,8],
 "classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_sender.html#ac27d72548e04d961df7e17a7459b7904":[3,0,0,6,1,3,4],
 "classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_sender.html#acd6f4e4db626cf155bf661ee390a5a6c":[3,0,0,6,1,3,11],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "classdrake_1_1math_1_1_rigid_transform.html#aaa71b78707a3d79cbcb1a8f3cc854bee":[3,0,0,7,12,2],
 "classdrake_1_1math_1_1_rigid_transform.html#aaac6934d2979499ff35457a8583ce60a":[3,0,0,7,12,0],
 "classdrake_1_1math_1_1_rigid_transform.html#aadac43ad1559a232d321b36e501605fe":[3,0,0,7,12,4],
-"classdrake_1_1math_1_1_rigid_transform.html#aae328b72ac0f21f3bcdd7abe9cc19144":[3,0,0,7,12,9]
+"classdrake_1_1math_1_1_rigid_transform.html#aae328b72ac0f21f3bcdd7abe9cc19144":[3,0,0,7,12,9],
+"classdrake_1_1math_1_1_rigid_transform.html#ab3c9f6da94bb9af6ec8426b32bbb5da3":[3,0,0,7,12,36]
 };

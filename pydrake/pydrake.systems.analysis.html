@@ -1500,7 +1500,7 @@ simulation).</p>
 
 <dl class="function">
 <dt id="pydrake.systems.analysis.RegionOfAttraction">
-<code class="descclassname">pydrake.systems.analysis.</code><code class="descname">RegionOfAttraction</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], options: pydrake.systems.analysis.RegionOfAttractionOptions = &lt;pydrake.systems.analysis.RegionOfAttractionOptions object at 0x7fdda8d8ec30&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.symbolic.Expression<a class="headerlink" href="#pydrake.systems.analysis.RegionOfAttraction" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">pydrake.systems.analysis.</code><code class="descname">RegionOfAttraction</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], options: pydrake.systems.analysis.RegionOfAttractionOptions = &lt;pydrake.systems.analysis.RegionOfAttractionOptions object at 0x7f0f2ee53970&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.symbolic.Expression<a class="headerlink" href="#pydrake.systems.analysis.RegionOfAttraction" title="Permalink to this definition">¶</a></dt>
 <dd><p>Estimates the region of attraction of the time-invariant <code class="docutils literal"><span class="pre">system</span></code> at
 the fixed point defined by <code class="docutils literal"><span class="pre">context</span></code>.</p>
 <p>This implementation only searches for the largest level set of the
@@ -2300,12 +2300,6 @@ context must be set before attempting to step the system forward.</dd>
 </dd></dl>
 
 <dl class="method">
-<dt id="pydrake.systems.analysis.Simulator_.Simulator_[float].reset_integrator">
-<code class="descname">reset_integrator</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float], integrator: pydrake.systems.analysis.IntegratorBase_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.IntegratorBase_[float]<a class="headerlink" href="#pydrake.systems.analysis.Simulator_.Simulator_[float].reset_integrator" title="Permalink to this definition">¶</a></dt>
-<dd><p>(Deprecated.) pydrake.systems.Simulator.reset_integrator is deprecated and will be removed from Drake on or after 2020-08-01. Use pydrake.systems.ResetIntegratorFromFlags instead.</p>
-</dd></dl>
-
-<dl class="method">
 <dt id="pydrake.systems.analysis.Simulator_.Simulator_[float].ResetStatistics">
 <code class="descname">ResetStatistics</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float]</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.systems.analysis.Simulator_.Simulator_[float].ResetStatistics" title="Permalink to this definition">¶</a></dt>
 <dd><p>Forget accumulated statistics. Statistics are reset to the values they
@@ -2877,12 +2871,6 @@ context must be set before attempting to step the system forward.</dd>
 </dd></dl>
 
 <dl class="method">
-<dt id="pydrake.systems.analysis.Simulator_[AutoDiffXd].reset_integrator">
-<code class="descname">reset_integrator</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[AutoDiffXd], integrator: pydrake.systems.analysis.IntegratorBase_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.IntegratorBase_[AutoDiffXd]<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[AutoDiffXd].reset_integrator" title="Permalink to this definition">¶</a></dt>
-<dd><p>(Deprecated.) pydrake.systems.Simulator.reset_integrator is deprecated and will be removed from Drake on or after 2020-08-01. Use pydrake.systems.ResetIntegratorFromFlags instead.</p>
-</dd></dl>
-
-<dl class="method">
 <dt id="pydrake.systems.analysis.Simulator_[AutoDiffXd].ResetStatistics">
 <code class="descname">ResetStatistics</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[AutoDiffXd].ResetStatistics" title="Permalink to this definition">¶</a></dt>
 <dd><p>Forget accumulated statistics. Statistics are reset to the values they
@@ -3449,12 +3437,6 @@ Context.</p>
 <dd>The new context, which may be null. If the context is null, a new
 context must be set before attempting to step the system forward.</dd>
 </dl>
-</dd></dl>
-
-<dl class="method">
-<dt id="pydrake.systems.analysis.Simulator_[float].reset_integrator">
-<code class="descname">reset_integrator</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float], integrator: pydrake.systems.analysis.IntegratorBase_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.IntegratorBase_[float]<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[float].reset_integrator" title="Permalink to this definition">¶</a></dt>
-<dd><p>(Deprecated.) pydrake.systems.Simulator.reset_integrator is deprecated and will be removed from Drake on or after 2020-08-01. Use pydrake.systems.ResetIntegratorFromFlags instead.</p>
 </dd></dl>
 
 <dl class="method">

@@ -1,7 +1,6 @@
 var classdrake_1_1trajectories_1_1_piecewise_polynomial =
 [
     [ "PolynomialMatrix", "classdrake_1_1trajectories_1_1_piecewise_polynomial.html#a9c5cbf1ba95055937fdb8283769df797", null ],
-    [ "PolynomialType", "classdrake_1_1trajectories_1_1_piecewise_polynomial.html#ae731cfe9328d801453bbc5fe7402d435", null ],
     [ "PiecewisePolynomial", "classdrake_1_1trajectories_1_1_piecewise_polynomial.html#a6a44781cbe3dd6c55234638a1b63d4ef", null ],
     [ "PiecewisePolynomial", "classdrake_1_1trajectories_1_1_piecewise_polynomial.html#acd5823d88e611200dc63daaf05eeb9d9", null ],
     [ "PiecewisePolynomial", "classdrake_1_1trajectories_1_1_piecewise_polynomial.html#a8c9575eec7fd062e42ed17407a337abc", null ],

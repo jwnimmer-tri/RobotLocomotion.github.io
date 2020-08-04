@@ -1,7 +1,5 @@
 var NAVTREEINDEX41 =
 {
-"quaternion_8h.html#a3b38bdfc1e3df8662c8726bc89a08ed0":[4,0,0,7,24,6],
-"quaternion_8h.html#a5e37615af3b6facc6f7dec51323a628e":[4,0,0,7,24,4],
 "quaternion_8h.html#a7e6bdc00adb60394da9687fc9aa5b0aa":[4,0,0,7,24,9],
 "quaternion_8h.html#a88a6d40e458bc9f766f33b819a7b4900":[4,0,0,7,24,5],
 "quaternion_8h.html#a98411a94334e6d40ef2ca10bfc053118":[4,0,0,7,24,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX41 =
 "sorted__pair_8h.html#ae8b6812b1ccb5ba802e724ef1082569c":[4,0,0,1,47,7],
 "sorted__pair__pybind_8h.html":[4,0,0,0,0,0,6],
 "sorted__triplet_8h.html":[4,0,0,4,0,32],
-"sorted__vectors__have__intersection_8h.html":[4,0,0,1,48]
+"sorted__vectors__have__intersection_8h.html":[4,0,0,1,48],
+"sorted__vectors__have__intersection_8h.html#a24b4f4d56e6ad4e7f40d8d1010c577aa":[4,0,0,1,48,0],
+"sos__basis__generator_8h.html":[4,0,0,10,51]
 };

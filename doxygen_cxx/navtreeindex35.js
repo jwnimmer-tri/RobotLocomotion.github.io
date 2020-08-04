@@ -1,7 +1,5 @@
 var NAVTREEINDEX35 =
 {
-"compass__gait__geometry_8h.html":[4,0,0,3,4,1],
-"compute__numerical__gradient_8h.html":[4,0,0,7,4],
 "compute__numerical__gradient_8h.html#a33f67c50b300b399043477a51861400a":[4,0,0,7,4,1],
 "compute__numerical__gradient_8h.html#a33f67c50b300b399043477a51861400aa39209ccaab9620e08ec04483c22a7eda":[4,0,0,7,4,1,2],
 "compute__numerical__gradient_8h.html#a33f67c50b300b399043477a51861400aa5cc7cc1518100eae9e3f2d83673a74ed":[4,0,0,7,4,1,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX35 =
 "doxygen__cxx_8h.html":[4,0,0,1,13],
 "drake__assert_8h.html":[4,0,0,1,14],
 "drake__assert_8h.html#a0d126d5c79d6e74d5f03f8c81e4b3a63":[4,0,0,1,14,0],
-"drake__assert_8h.html#a53797785bb2511ded7061028fcca65c5":[4,0,0,1,14,1]
+"drake__assert_8h.html#a53797785bb2511ded7061028fcca65c5":[4,0,0,1,14,1],
+"drake__assert_8h.html#a90a6aa22721ddd3bc514c45d8e1d8674":[4,0,0,1,14,2],
+"drake__assert_8h.html#aaf9506c208e2a7d09f67d1a9ab84992a":[4,0,0,1,14,3]
 };

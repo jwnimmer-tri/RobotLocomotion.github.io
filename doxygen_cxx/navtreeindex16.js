@@ -1,6 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"classdrake_1_1solvers_1_1_mathematical_program.html#afff086e342ead2410215c884dfd4e82d":[1,1,0,180],
 "classdrake_1_1solvers_1_1_mathematical_program_result.html":[3,0,0,11,29],
 "classdrake_1_1solvers_1_1_mathematical_program_result.html#a08eae785a81fe46335b4ad6cb962eb74":[3,0,0,11,29,9],
 "classdrake_1_1solvers_1_1_mathematical_program_result.html#a0f1b5841ee288eef56aab11d80344e64":[3,0,0,11,29,22],
@@ -249,5 +248,6 @@ var NAVTREEINDEX16 =
 "classdrake_1_1solvers_1_1_quadratic_cost.html#a9d8ff870e3b3fc1b49c7678f60ec8735":[3,0,0,11,51,1],
 "classdrake_1_1solvers_1_1_quadratic_cost.html#aae45694d3595659922653fd027d15cb6":[3,0,0,11,51,4],
 "classdrake_1_1solvers_1_1_quadratic_cost.html#ad28904862cf4938e8c664c7dde9f2792":[3,0,0,11,51,2],
-"classdrake_1_1solvers_1_1_quadratic_cost.html#ad7bdab17ed07c782e00ed7b5f9683071":[3,0,0,11,51,3]
+"classdrake_1_1solvers_1_1_quadratic_cost.html#ad7bdab17ed07c782e00ed7b5f9683071":[3,0,0,11,51,3],
+"classdrake_1_1solvers_1_1_quadratic_cost.html#adef0fed0cb1426f67a076769f9867786":[3,0,0,11,51,5]
 };

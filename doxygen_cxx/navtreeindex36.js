@@ -1,7 +1,5 @@
 var NAVTREEINDEX36 =
 {
-"drake__assert_8h.html#a90a6aa22721ddd3bc514c45d8e1d8674":[4,0,0,1,14,2],
-"drake__assert_8h.html#aaf9506c208e2a7d09f67d1a9ab84992a":[4,0,0,1,14,3],
 "drake__assertion__error_8h.html":[4,0,0,1,15],
 "drake__bool_8h.html":[4,0,0,1,16],
 "drake__bool_8h.html#a01aa931c5cbfd4b09d847cc4d7b4c699":[4,0,0,1,16,6],
@@ -234,8 +232,8 @@ var NAVTREEINDEX36 =
 "functions_enum.html":[3,3,4],
 "functions_eval.html":[3,3,5],
 "functions_f.html":[3,3,0,5],
-"functions_func.html":[3,3,1,0],
 "functions_func.html":[3,3,1],
+"functions_func.html":[3,3,1,0],
 "functions_func_b.html":[3,3,1,1],
 "functions_func_c.html":[3,3,1,2],
 "functions_func_d.html":[3,3,1,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX36 =
 "functions_func_l.html":[3,3,1,11],
 "functions_func_m.html":[3,3,1,12],
 "functions_func_n.html":[3,3,1,13],
-"functions_func_o.html":[3,3,1,14]
+"functions_func_o.html":[3,3,1,14],
+"functions_func_p.html":[3,3,1,15],
+"functions_func_q.html":[3,3,1,16]
 };
