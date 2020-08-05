@@ -103,8 +103,11 @@ $(document).ready(function(){initNavTree('deprecation__pybind_8h.html','');});
 <div class="textblock"><p>Provides access to Python deprecation utilities from C++. </p>
 <p>For example usages, please see <code>deprecation_example/cc_module_py.cc</code>. </p>
 </div><div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &quot;pybind11/pybind11.h&quot;</code><br />
+<code>#include &quot;pybind11/stl.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="wrap__function_8h.html">drake/bindings/pydrake/common/wrap_function.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pydrake__pybind_8h.html">drake/bindings/pydrake/pydrake_pybind.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -124,12 +127,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afe3567351a140778a7edb77b3dc8e8fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#afe3567351a140778a7edb77b3dc8e8fb">DeprecateAttribute</a> (py::object cls, py::str name, py::str message)</td></tr>
-<tr class="memdesc:afe3567351a140778a7edb77b3dc8e8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecates an attribute <code>name</code> of a class <code>cls</code>.  <a href="namespacedrake_1_1pydrake.html#afe3567351a140778a7edb77b3dc8e8fb">More...</a><br /></td></tr>
-<tr class="separator:afe3567351a140778a7edb77b3dc8e8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e9b7f8b6f530a09bb02d8b0aeeb0e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#ac2e9b7f8b6f530a09bb02d8b0aeeb0e8">WarnDeprecated</a> (py::str message)</td></tr>
-<tr class="memdesc:ac2e9b7f8b6f530a09bb02d8b0aeeb0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raises a deprecation warning.  <a href="namespacedrake_1_1pydrake.html#ac2e9b7f8b6f530a09bb02d8b0aeeb0e8">More...</a><br /></td></tr>
-<tr class="separator:ac2e9b7f8b6f530a09bb02d8b0aeeb0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b68ce63cf178e7d4e91f95e0e483e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#ab0b68ce63cf178e7d4e91f95e0e483e1">DeprecateAttribute</a> (py::object cls, py::str name, py::str message, std::optional&lt; std::string &gt; date={})</td></tr>
+<tr class="memdesc:ab0b68ce63cf178e7d4e91f95e0e483e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecates an attribute <code>name</code> of a class <code>cls</code>.  <a href="namespacedrake_1_1pydrake.html#ab0b68ce63cf178e7d4e91f95e0e483e1">More...</a><br /></td></tr>
+<tr class="separator:ab0b68ce63cf178e7d4e91f95e0e483e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a20567ddf6e5978a874a3cb46353f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#a88a20567ddf6e5978a874a3cb46353f4">WarnDeprecated</a> (py::str message, std::optional&lt; std::string &gt; date={})</td></tr>
+<tr class="memdesc:a88a20567ddf6e5978a874a3cb46353f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raises a deprecation warning.  <a href="namespacedrake_1_1pydrake.html#a88a20567ddf6e5978a874a3cb46353f4">More...</a><br /></td></tr>
+<tr class="separator:a88a20567ddf6e5978a874a3cb46353f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13cd6cd963823cafbc0068bacc7eeadd"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
 <tr class="memitem:a13cd6cd963823cafbc0068bacc7eeadd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#a13cd6cd963823cafbc0068bacc7eeadd">WrapDeprecated</a> (py::str message, Func &amp;&amp;func)</td></tr>
 <tr class="memdesc:a13cd6cd963823cafbc0068bacc7eeadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps any callable (function pointer, method pointer, lambda, etc.) to emit a deprecation message.  <a href="namespacedrake_1_1pydrake.html#a13cd6cd963823cafbc0068bacc7eeadd">More...</a><br /></td></tr>

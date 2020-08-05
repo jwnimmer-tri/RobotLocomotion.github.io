@@ -4700,6 +4700,990 @@ forces stored by <code class="docutils literal"><span class="pre">this</span></c
 </dd></dl>
 
 <dl class="attribute">
+<dt id="pydrake.multibody.tree.PlanarJoint">
+<code class="descclassname">pydrake.multibody.tree.</code><code class="descname">PlanarJoint</code><a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#pydrake.multibody.tree.PlanarJoint_[float]" title="pydrake.multibody.tree.PlanarJoint_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.multibody.tree.PlanarJoint_[float]</span></code></a></p>
+</dd></dl>
+
+<dl class="template">
+<dt id="pydrake.multibody.tree.PlanarJoint_">
+<em class="property">template </em><code class="descclassname">pydrake.multibody.tree.</code><code class="descname">PlanarJoint_</code><a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instantiations: <a class="reference internal" href="#pydrake.multibody.tree.PlanarJoint_[float]" title="pydrake.multibody.tree.PlanarJoint_[float]"><code class="xref py py-class docutils literal"><span class="pre">PlanarJoint_[float]</span></code></a>, <a class="reference internal" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd]" title="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd]"><code class="xref py py-class docutils literal"><span class="pre">PlanarJoint_[AutoDiffXd]</span></code></a>, <a class="reference internal" href="#pydrake.multibody.tree.PlanarJoint_[Expression]" title="pydrake.multibody.tree.PlanarJoint_[Expression]"><code class="xref py py-class docutils literal"><span class="pre">PlanarJoint_[Expression]</span></code></a></p>
+<dl class="class">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float]">
+<em class="property">class </em><code class="descname">PlanarJoint_[float]</code><a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float]" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pydrake.multibody.tree.Joint_[float]" title="pydrake.multibody.tree.Joint_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.multibody.tree.Joint_[float]</span></code></a></p>
+<p>This joint models a planar joint allowing two bodies to translate and
+rotate relative to one another in a plane with three degrees of
+freedom. That is, given a frame F attached to the parent body P and a
+frame M attached to the child body B (see the Joint class’s
+documentation), this joint allows frame M to translate within the x-y
+plane of frame F and to rotate about the z-axis, with M’s z-axis Mz
+and F’s z-axis Fz coincident at all times. The translations along the
+x- and y-axes of F, the rotation about the z-axis and their rates
+specify the state of the joint. Zero (x, y, θ) corresponds to frames F
+and M being coincident and aligned. Translation (x, y) is defined to
+be positive in the direction of the respective axes and the rotation θ
+is defined to be positive according to the right-hand-rule with the
+thumb aligned in the direction of frame F’s z-axis.</p>
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], name: str, frame_on_parent: pydrake.multibody.tree.Frame_[float], frame_on_child: pydrake.multibody.tree.Frame_[float], damping: numpy.ndarray[numpy.float64[3, 1]] = array([ 0.,  0.,  0.])</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructor to create a planar joint between two bodies so that frame
+F attached to the parent body P and frame M attached to the child body
+B translate and rotate as described in the class’s documentation. This
+constructor signature creates a joint with no joint limits, i.e. the
+joint position, velocity and acceleration limits are the pair <code class="docutils literal"><span class="pre">(-∞,</span>
+<span class="pre">∞)</span></code>. These can be set using the Joint methods set_position_limits(),
+set_velocity_limits() and set_acceleration_limits(). The first three
+arguments to this constructor are those of the Joint class
+constructor. See the Joint class’s documentation for details. The
+additional parameters are:</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">damping</span></code>:</dt>
+<dd>Viscous damping coefficient, in N⋅s/m for translation and N⋅m⋅s
+for rotation, used to model losses within the joint. See
+documentation of damping() for details on modelling of the damping
+force and torque.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">RuntimeError if any element of damping is negative.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].damping">
+<code class="descname">damping</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].damping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal"><span class="pre">this</span></code> joint’s damping constant in N⋅s/m for the
+translational degrees and N⋅m⋅s for the rotational degree. The damping
+force (in N) is modeled as <code class="docutils literal"><span class="pre">fᵢ</span> <span class="pre">=</span> <span class="pre">-dampingᵢ⋅vᵢ,</span> <span class="pre">i</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">2</span></code> i.e.
+opposing motion, with vᵢ the translation rates along the i-th axis for
+<code class="docutils literal"><span class="pre">this</span></code> joint (see get_translational_velocity()) and fᵢ the force on
+child body B at Mo and expressed in F. That is, f_BMo_F = (f₁, f₂).
+The damping torque (in N⋅m) is modeled as <code class="docutils literal"><span class="pre">τ</span> <span class="pre">=</span> <span class="pre">-damping₃⋅ω</span></code> i.e.
+opposing motion, with ω the angular rate for <code class="docutils literal"><span class="pre">this</span></code> joint (see
+get_angular_velocity()) and τ the torque on child body B expressed in
+frame F as t_B_F = τ⋅Fz_F.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].get_angular_velocity">
+<code class="descname">get_angular_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float]</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].get_angular_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the rate of change, in radians per second, of <code class="docutils literal"><span class="pre">this</span></code> joint’s
+angle θ from <code class="docutils literal"><span class="pre">context</span></code>. See class documentation for the definition
+of this angle.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">theta_dot</span></code>:</dt>
+<dd>The rate of change of <code class="docutils literal"><span class="pre">this</span></code> joint’s angle θ as stored in the
+<code class="docutils literal"><span class="pre">context</span></code>.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].get_rotation">
+<code class="descname">get_rotation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float]</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].get_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the angle θ of <code class="docutils literal"><span class="pre">this</span></code> joint from <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">theta</span></code>:</dt>
+<dd>The angle of <code class="docutils literal"><span class="pre">this</span></code> joint stored in the <code class="docutils literal"><span class="pre">context</span></code>. See class
+documentation for details.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].get_translation">
+<code class="descname">get_translation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[2, 1]]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].get_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the position of <code class="docutils literal"><span class="pre">this</span></code> joint from <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">p_FoMo_F</span></code>:</dt>
+<dd>The position of <code class="docutils literal"><span class="pre">this</span></code> joint stored in the <code class="docutils literal"><span class="pre">context</span></code> ordered
+as (x, y). See class documentation for details.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].get_translational_velocity">
+<code class="descname">get_translational_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[2, 1]]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].get_translational_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the translational velocity v_FoMo_F, in meters per second, of
+<code class="docutils literal"><span class="pre">this</span></code> joint’s Mo measured and expressed in frame F from
+<code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">v_FoMo_F</span></code>:</dt>
+<dd>The translational velocity of <code class="docutils literal"><span class="pre">this</span></code> joint as stored in the
+<code class="docutils literal"><span class="pre">context</span></code>.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].set_angular_velocity">
+<code class="descname">set_angular_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float], theta_dot: float</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[float]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].set_angular_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the rate of change, in radians per second, of <code class="docutils literal"><span class="pre">this</span></code> joint’s
+angle θ (see class documentation) to <code class="docutils literal"><span class="pre">theta_dot</span></code>. The new rate of
+change gets stored in <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">theta_dot</span></code>:</dt>
+<dd>The desired rates of change of <code class="docutils literal"><span class="pre">this</span></code> joint’s angle in radians
+per second.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].set_pose">
+<code class="descname">set_pose</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float], p_FoMo_F: numpy.ndarray[numpy.float64[2, 1]], theta: float</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[float]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].set_pose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the <code class="docutils literal"><span class="pre">context</span></code> so that the position of <code class="docutils literal"><span class="pre">this</span></code> joint equals
+<code class="docutils literal"><span class="pre">p_FoMo_F</span></code> and its angle equals <code class="docutils literal"><span class="pre">theta</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">p_FoMo_F</span></code>:</dt>
+<dd>The desired position in meters to be stored in <code class="docutils literal"><span class="pre">context</span></code> ordered
+as (x, y). See class documentation for details.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">theta</span></code>:</dt>
+<dd>The desired angle in radians to be stored in <code class="docutils literal"><span class="pre">context</span></code>. See
+class documentation for details.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].set_random_pose_distribution">
+<code class="descname">set_random_pose_distribution</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], p_FoMo_F: numpy.ndarray[object[2, 1]], theta: pydrake.symbolic.Expression</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].set_random_pose_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the random distribution that the position and angle of this joint
+will be randomly sampled from. See class documentation for details on
+the definition of the position and angle.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].set_rotation">
+<code class="descname">set_rotation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float], theta: float</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[float]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].set_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the <code class="docutils literal"><span class="pre">context</span></code> so that the angle θ of <code class="docutils literal"><span class="pre">this</span></code> joint equals
+<code class="docutils literal"><span class="pre">theta</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">theta</span></code>:</dt>
+<dd>The desired angle in radians to be stored in <code class="docutils literal"><span class="pre">context</span></code>. See
+class documentation for details.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].set_translation">
+<code class="descname">set_translation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float], p_FoMo_F: numpy.ndarray[numpy.float64[2, 1]]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[float]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].set_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the <code class="docutils literal"><span class="pre">context</span></code> so that the position of <code class="docutils literal"><span class="pre">this</span></code> joint equals
+<code class="docutils literal"><span class="pre">p_FoMo_F</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">p_FoMo_F</span></code>:</dt>
+<dd>The desired position in meters to be stored in <code class="docutils literal"><span class="pre">context</span></code> ordered
+as (x, y). See class documentation for details.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].set_translational_velocity">
+<code class="descname">set_translational_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float], v_FoMo_F: numpy.ndarray[numpy.float64[2, 1]]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[float]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_.PlanarJoint_[float].set_translational_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the translational velocity, in meters per second, of this
+<code class="docutils literal"><span class="pre">this</span></code> joint’s Mo measured and expressed in frame F to <code class="docutils literal"><span class="pre">v_FoMo_F</span></code>.
+The new translational velocity gets stored in <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">v_FoMo_F</span></code>:</dt>
+<dd>The desired translational velocity of <code class="docutils literal"><span class="pre">this</span></code> joint in meters per
+second.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.tree.</code><code class="descname">PlanarJoint_[AutoDiffXd]</code><a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd]" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pydrake.multibody.tree.Joint_[AutoDiffXd]" title="pydrake.multibody.tree.Joint_[AutoDiffXd]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.multibody.tree.Joint_[AutoDiffXd]</span></code></a></p>
+<p>This joint models a planar joint allowing two bodies to translate and
+rotate relative to one another in a plane with three degrees of
+freedom. That is, given a frame F attached to the parent body P and a
+frame M attached to the child body B (see the Joint class’s
+documentation), this joint allows frame M to translate within the x-y
+plane of frame F and to rotate about the z-axis, with M’s z-axis Mz
+and F’s z-axis Fz coincident at all times. The translations along the
+x- and y-axes of F, the rotation about the z-axis and their rates
+specify the state of the joint. Zero (x, y, θ) corresponds to frames F
+and M being coincident and aligned. Translation (x, y) is defined to
+be positive in the direction of the respective axes and the rotation θ
+is defined to be positive according to the right-hand-rule with the
+thumb aligned in the direction of frame F’s z-axis.</p>
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[AutoDiffXd], name: str, frame_on_parent: pydrake.multibody.tree.Frame_[AutoDiffXd], frame_on_child: pydrake.multibody.tree.Frame_[AutoDiffXd], damping: numpy.ndarray[numpy.float64[3, 1]] = array([ 0.,  0.,  0.])</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructor to create a planar joint between two bodies so that frame
+F attached to the parent body P and frame M attached to the child body
+B translate and rotate as described in the class’s documentation. This
+constructor signature creates a joint with no joint limits, i.e. the
+joint position, velocity and acceleration limits are the pair <code class="docutils literal"><span class="pre">(-∞,</span>
+<span class="pre">∞)</span></code>. These can be set using the Joint methods set_position_limits(),
+set_velocity_limits() and set_acceleration_limits(). The first three
+arguments to this constructor are those of the Joint class
+constructor. See the Joint class’s documentation for details. The
+additional parameters are:</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">damping</span></code>:</dt>
+<dd>Viscous damping coefficient, in N⋅s/m for translation and N⋅m⋅s
+for rotation, used to model losses within the joint. See
+documentation of damping() for details on modelling of the damping
+force and torque.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">RuntimeError if any element of damping is negative.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].damping">
+<code class="descname">damping</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].damping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal"><span class="pre">this</span></code> joint’s damping constant in N⋅s/m for the
+translational degrees and N⋅m⋅s for the rotational degree. The damping
+force (in N) is modeled as <code class="docutils literal"><span class="pre">fᵢ</span> <span class="pre">=</span> <span class="pre">-dampingᵢ⋅vᵢ,</span> <span class="pre">i</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">2</span></code> i.e.
+opposing motion, with vᵢ the translation rates along the i-th axis for
+<code class="docutils literal"><span class="pre">this</span></code> joint (see get_translational_velocity()) and fᵢ the force on
+child body B at Mo and expressed in F. That is, f_BMo_F = (f₁, f₂).
+The damping torque (in N⋅m) is modeled as <code class="docutils literal"><span class="pre">τ</span> <span class="pre">=</span> <span class="pre">-damping₃⋅ω</span></code> i.e.
+opposing motion, with ω the angular rate for <code class="docutils literal"><span class="pre">this</span></code> joint (see
+get_angular_velocity()) and τ the torque on child body B expressed in
+frame F as t_B_F = τ⋅Fz_F.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].get_angular_velocity">
+<code class="descname">get_angular_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[AutoDiffXd], context: pydrake.systems.framework.Context_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; pydrake.autodiffutils.AutoDiffXd<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].get_angular_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the rate of change, in radians per second, of <code class="docutils literal"><span class="pre">this</span></code> joint’s
+angle θ from <code class="docutils literal"><span class="pre">context</span></code>. See class documentation for the definition
+of this angle.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">theta_dot</span></code>:</dt>
+<dd>The rate of change of <code class="docutils literal"><span class="pre">this</span></code> joint’s angle θ as stored in the
+<code class="docutils literal"><span class="pre">context</span></code>.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].get_rotation">
+<code class="descname">get_rotation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[AutoDiffXd], context: pydrake.systems.framework.Context_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; pydrake.autodiffutils.AutoDiffXd<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].get_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the angle θ of <code class="docutils literal"><span class="pre">this</span></code> joint from <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">theta</span></code>:</dt>
+<dd>The angle of <code class="docutils literal"><span class="pre">this</span></code> joint stored in the <code class="docutils literal"><span class="pre">context</span></code>. See class
+documentation for details.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].get_translation">
+<code class="descname">get_translation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[AutoDiffXd], context: pydrake.systems.framework.Context_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[2, 1]]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].get_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the position of <code class="docutils literal"><span class="pre">this</span></code> joint from <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">p_FoMo_F</span></code>:</dt>
+<dd>The position of <code class="docutils literal"><span class="pre">this</span></code> joint stored in the <code class="docutils literal"><span class="pre">context</span></code> ordered
+as (x, y). See class documentation for details.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].get_translational_velocity">
+<code class="descname">get_translational_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[AutoDiffXd], context: pydrake.systems.framework.Context_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[2, 1]]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].get_translational_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the translational velocity v_FoMo_F, in meters per second, of
+<code class="docutils literal"><span class="pre">this</span></code> joint’s Mo measured and expressed in frame F from
+<code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">v_FoMo_F</span></code>:</dt>
+<dd>The translational velocity of <code class="docutils literal"><span class="pre">this</span></code> joint as stored in the
+<code class="docutils literal"><span class="pre">context</span></code>.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].set_angular_velocity">
+<code class="descname">set_angular_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[AutoDiffXd], context: pydrake.systems.framework.Context_[AutoDiffXd], theta_dot: pydrake.autodiffutils.AutoDiffXd</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].set_angular_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the rate of change, in radians per second, of <code class="docutils literal"><span class="pre">this</span></code> joint’s
+angle θ (see class documentation) to <code class="docutils literal"><span class="pre">theta_dot</span></code>. The new rate of
+change gets stored in <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">theta_dot</span></code>:</dt>
+<dd>The desired rates of change of <code class="docutils literal"><span class="pre">this</span></code> joint’s angle in radians
+per second.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].set_pose">
+<code class="descname">set_pose</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[AutoDiffXd], context: pydrake.systems.framework.Context_[AutoDiffXd], p_FoMo_F: numpy.ndarray[object[2, 1]], theta: pydrake.autodiffutils.AutoDiffXd</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].set_pose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the <code class="docutils literal"><span class="pre">context</span></code> so that the position of <code class="docutils literal"><span class="pre">this</span></code> joint equals
+<code class="docutils literal"><span class="pre">p_FoMo_F</span></code> and its angle equals <code class="docutils literal"><span class="pre">theta</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">p_FoMo_F</span></code>:</dt>
+<dd>The desired position in meters to be stored in <code class="docutils literal"><span class="pre">context</span></code> ordered
+as (x, y). See class documentation for details.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">theta</span></code>:</dt>
+<dd>The desired angle in radians to be stored in <code class="docutils literal"><span class="pre">context</span></code>. See
+class documentation for details.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].set_random_pose_distribution">
+<code class="descname">set_random_pose_distribution</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[AutoDiffXd], p_FoMo_F: numpy.ndarray[object[2, 1]], theta: pydrake.symbolic.Expression</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].set_random_pose_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the random distribution that the position and angle of this joint
+will be randomly sampled from. See class documentation for details on
+the definition of the position and angle.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].set_rotation">
+<code class="descname">set_rotation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[AutoDiffXd], context: pydrake.systems.framework.Context_[AutoDiffXd], theta: pydrake.autodiffutils.AutoDiffXd</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].set_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the <code class="docutils literal"><span class="pre">context</span></code> so that the angle θ of <code class="docutils literal"><span class="pre">this</span></code> joint equals
+<code class="docutils literal"><span class="pre">theta</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">theta</span></code>:</dt>
+<dd>The desired angle in radians to be stored in <code class="docutils literal"><span class="pre">context</span></code>. See
+class documentation for details.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].set_translation">
+<code class="descname">set_translation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[AutoDiffXd], context: pydrake.systems.framework.Context_[AutoDiffXd], p_FoMo_F: numpy.ndarray[object[2, 1]]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].set_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the <code class="docutils literal"><span class="pre">context</span></code> so that the position of <code class="docutils literal"><span class="pre">this</span></code> joint equals
+<code class="docutils literal"><span class="pre">p_FoMo_F</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">p_FoMo_F</span></code>:</dt>
+<dd>The desired position in meters to be stored in <code class="docutils literal"><span class="pre">context</span></code> ordered
+as (x, y). See class documentation for details.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].set_translational_velocity">
+<code class="descname">set_translational_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[AutoDiffXd], context: pydrake.systems.framework.Context_[AutoDiffXd], v_FoMo_F: numpy.ndarray[object[2, 1]]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[AutoDiffXd]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[AutoDiffXd].set_translational_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the translational velocity, in meters per second, of this
+<code class="docutils literal"><span class="pre">this</span></code> joint’s Mo measured and expressed in frame F to <code class="docutils literal"><span class="pre">v_FoMo_F</span></code>.
+The new translational velocity gets stored in <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">v_FoMo_F</span></code>:</dt>
+<dd>The desired translational velocity of <code class="docutils literal"><span class="pre">this</span></code> joint in meters per
+second.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.tree.</code><code class="descname">PlanarJoint_[Expression]</code><a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression]" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pydrake.multibody.tree.Joint_[Expression]" title="pydrake.multibody.tree.Joint_[Expression]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.multibody.tree.Joint_[Expression]</span></code></a></p>
+<p>This joint models a planar joint allowing two bodies to translate and
+rotate relative to one another in a plane with three degrees of
+freedom. That is, given a frame F attached to the parent body P and a
+frame M attached to the child body B (see the Joint class’s
+documentation), this joint allows frame M to translate within the x-y
+plane of frame F and to rotate about the z-axis, with M’s z-axis Mz
+and F’s z-axis Fz coincident at all times. The translations along the
+x- and y-axes of F, the rotation about the z-axis and their rates
+specify the state of the joint. Zero (x, y, θ) corresponds to frames F
+and M being coincident and aligned. Translation (x, y) is defined to
+be positive in the direction of the respective axes and the rotation θ
+is defined to be positive according to the right-hand-rule with the
+thumb aligned in the direction of frame F’s z-axis.</p>
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[Expression], name: str, frame_on_parent: pydrake.multibody.tree.Frame_[Expression], frame_on_child: pydrake.multibody.tree.Frame_[Expression], damping: numpy.ndarray[numpy.float64[3, 1]] = array([ 0.,  0.,  0.])</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructor to create a planar joint between two bodies so that frame
+F attached to the parent body P and frame M attached to the child body
+B translate and rotate as described in the class’s documentation. This
+constructor signature creates a joint with no joint limits, i.e. the
+joint position, velocity and acceleration limits are the pair <code class="docutils literal"><span class="pre">(-∞,</span>
+<span class="pre">∞)</span></code>. These can be set using the Joint methods set_position_limits(),
+set_velocity_limits() and set_acceleration_limits(). The first three
+arguments to this constructor are those of the Joint class
+constructor. See the Joint class’s documentation for details. The
+additional parameters are:</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">damping</span></code>:</dt>
+<dd>Viscous damping coefficient, in N⋅s/m for translation and N⋅m⋅s
+for rotation, used to model losses within the joint. See
+documentation of damping() for details on modelling of the damping
+force and torque.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">RuntimeError if any element of damping is negative.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression].damping">
+<code class="descname">damping</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression].damping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal"><span class="pre">this</span></code> joint’s damping constant in N⋅s/m for the
+translational degrees and N⋅m⋅s for the rotational degree. The damping
+force (in N) is modeled as <code class="docutils literal"><span class="pre">fᵢ</span> <span class="pre">=</span> <span class="pre">-dampingᵢ⋅vᵢ,</span> <span class="pre">i</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">2</span></code> i.e.
+opposing motion, with vᵢ the translation rates along the i-th axis for
+<code class="docutils literal"><span class="pre">this</span></code> joint (see get_translational_velocity()) and fᵢ the force on
+child body B at Mo and expressed in F. That is, f_BMo_F = (f₁, f₂).
+The damping torque (in N⋅m) is modeled as <code class="docutils literal"><span class="pre">τ</span> <span class="pre">=</span> <span class="pre">-damping₃⋅ω</span></code> i.e.
+opposing motion, with ω the angular rate for <code class="docutils literal"><span class="pre">this</span></code> joint (see
+get_angular_velocity()) and τ the torque on child body B expressed in
+frame F as t_B_F = τ⋅Fz_F.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression].get_angular_velocity">
+<code class="descname">get_angular_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[Expression], context: pydrake.systems.framework.Context_[Expression]</em><span class="sig-paren">)</span> &#x2192; pydrake.symbolic.Expression<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression].get_angular_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the rate of change, in radians per second, of <code class="docutils literal"><span class="pre">this</span></code> joint’s
+angle θ from <code class="docutils literal"><span class="pre">context</span></code>. See class documentation for the definition
+of this angle.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">theta_dot</span></code>:</dt>
+<dd>The rate of change of <code class="docutils literal"><span class="pre">this</span></code> joint’s angle θ as stored in the
+<code class="docutils literal"><span class="pre">context</span></code>.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression].get_rotation">
+<code class="descname">get_rotation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[Expression], context: pydrake.systems.framework.Context_[Expression]</em><span class="sig-paren">)</span> &#x2192; pydrake.symbolic.Expression<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression].get_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the angle θ of <code class="docutils literal"><span class="pre">this</span></code> joint from <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">theta</span></code>:</dt>
+<dd>The angle of <code class="docutils literal"><span class="pre">this</span></code> joint stored in the <code class="docutils literal"><span class="pre">context</span></code>. See class
+documentation for details.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression].get_translation">
+<code class="descname">get_translation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[Expression], context: pydrake.systems.framework.Context_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[2, 1]]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression].get_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the position of <code class="docutils literal"><span class="pre">this</span></code> joint from <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">p_FoMo_F</span></code>:</dt>
+<dd>The position of <code class="docutils literal"><span class="pre">this</span></code> joint stored in the <code class="docutils literal"><span class="pre">context</span></code> ordered
+as (x, y). See class documentation for details.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression].get_translational_velocity">
+<code class="descname">get_translational_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[Expression], context: pydrake.systems.framework.Context_[Expression]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[object[2, 1]]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression].get_translational_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the translational velocity v_FoMo_F, in meters per second, of
+<code class="docutils literal"><span class="pre">this</span></code> joint’s Mo measured and expressed in frame F from
+<code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">v_FoMo_F</span></code>:</dt>
+<dd>The translational velocity of <code class="docutils literal"><span class="pre">this</span></code> joint as stored in the
+<code class="docutils literal"><span class="pre">context</span></code>.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression].set_angular_velocity">
+<code class="descname">set_angular_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[Expression], context: pydrake.systems.framework.Context_[Expression], theta_dot: pydrake.symbolic.Expression</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[Expression]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression].set_angular_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the rate of change, in radians per second, of <code class="docutils literal"><span class="pre">this</span></code> joint’s
+angle θ (see class documentation) to <code class="docutils literal"><span class="pre">theta_dot</span></code>. The new rate of
+change gets stored in <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">theta_dot</span></code>:</dt>
+<dd>The desired rates of change of <code class="docutils literal"><span class="pre">this</span></code> joint’s angle in radians
+per second.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression].set_pose">
+<code class="descname">set_pose</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[Expression], context: pydrake.systems.framework.Context_[Expression], p_FoMo_F: numpy.ndarray[object[2, 1]], theta: pydrake.symbolic.Expression</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[Expression]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression].set_pose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the <code class="docutils literal"><span class="pre">context</span></code> so that the position of <code class="docutils literal"><span class="pre">this</span></code> joint equals
+<code class="docutils literal"><span class="pre">p_FoMo_F</span></code> and its angle equals <code class="docutils literal"><span class="pre">theta</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">p_FoMo_F</span></code>:</dt>
+<dd>The desired position in meters to be stored in <code class="docutils literal"><span class="pre">context</span></code> ordered
+as (x, y). See class documentation for details.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">theta</span></code>:</dt>
+<dd>The desired angle in radians to be stored in <code class="docutils literal"><span class="pre">context</span></code>. See
+class documentation for details.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression].set_random_pose_distribution">
+<code class="descname">set_random_pose_distribution</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[Expression], p_FoMo_F: numpy.ndarray[object[2, 1]], theta: pydrake.symbolic.Expression</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression].set_random_pose_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the random distribution that the position and angle of this joint
+will be randomly sampled from. See class documentation for details on
+the definition of the position and angle.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression].set_rotation">
+<code class="descname">set_rotation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[Expression], context: pydrake.systems.framework.Context_[Expression], theta: pydrake.symbolic.Expression</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[Expression]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression].set_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the <code class="docutils literal"><span class="pre">context</span></code> so that the angle θ of <code class="docutils literal"><span class="pre">this</span></code> joint equals
+<code class="docutils literal"><span class="pre">theta</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">theta</span></code>:</dt>
+<dd>The desired angle in radians to be stored in <code class="docutils literal"><span class="pre">context</span></code>. See
+class documentation for details.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression].set_translation">
+<code class="descname">set_translation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[Expression], context: pydrake.systems.framework.Context_[Expression], p_FoMo_F: numpy.ndarray[object[2, 1]]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[Expression]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression].set_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the <code class="docutils literal"><span class="pre">context</span></code> so that the position of <code class="docutils literal"><span class="pre">this</span></code> joint equals
+<code class="docutils literal"><span class="pre">p_FoMo_F</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">p_FoMo_F</span></code>:</dt>
+<dd>The desired position in meters to be stored in <code class="docutils literal"><span class="pre">context</span></code> ordered
+as (x, y). See class documentation for details.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[Expression].set_translational_velocity">
+<code class="descname">set_translational_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[Expression], context: pydrake.systems.framework.Context_[Expression], v_FoMo_F: numpy.ndarray[object[2, 1]]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[Expression]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[Expression].set_translational_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the translational velocity, in meters per second, of this
+<code class="docutils literal"><span class="pre">this</span></code> joint’s Mo measured and expressed in frame F to <code class="docutils literal"><span class="pre">v_FoMo_F</span></code>.
+The new translational velocity gets stored in <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">v_FoMo_F</span></code>:</dt>
+<dd>The desired translational velocity of <code class="docutils literal"><span class="pre">this</span></code> joint in meters per
+second.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float]">
+<em class="property">class </em><code class="descclassname">pydrake.multibody.tree.</code><code class="descname">PlanarJoint_[float]</code><a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float]" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pydrake.multibody.tree.Joint_[float]" title="pydrake.multibody.tree.Joint_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.multibody.tree.Joint_[float]</span></code></a></p>
+<p>This joint models a planar joint allowing two bodies to translate and
+rotate relative to one another in a plane with three degrees of
+freedom. That is, given a frame F attached to the parent body P and a
+frame M attached to the child body B (see the Joint class’s
+documentation), this joint allows frame M to translate within the x-y
+plane of frame F and to rotate about the z-axis, with M’s z-axis Mz
+and F’s z-axis Fz coincident at all times. The translations along the
+x- and y-axes of F, the rotation about the z-axis and their rates
+specify the state of the joint. Zero (x, y, θ) corresponds to frames F
+and M being coincident and aligned. Translation (x, y) is defined to
+be positive in the direction of the respective axes and the rotation θ
+is defined to be positive according to the right-hand-rule with the
+thumb aligned in the direction of frame F’s z-axis.</p>
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float].__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], name: str, frame_on_parent: pydrake.multibody.tree.Frame_[float], frame_on_child: pydrake.multibody.tree.Frame_[float], damping: numpy.ndarray[numpy.float64[3, 1]] = array([ 0.,  0.,  0.])</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float].__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructor to create a planar joint between two bodies so that frame
+F attached to the parent body P and frame M attached to the child body
+B translate and rotate as described in the class’s documentation. This
+constructor signature creates a joint with no joint limits, i.e. the
+joint position, velocity and acceleration limits are the pair <code class="docutils literal"><span class="pre">(-∞,</span>
+<span class="pre">∞)</span></code>. These can be set using the Joint methods set_position_limits(),
+set_velocity_limits() and set_acceleration_limits(). The first three
+arguments to this constructor are those of the Joint class
+constructor. See the Joint class’s documentation for details. The
+additional parameters are:</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">damping</span></code>:</dt>
+<dd>Viscous damping coefficient, in N⋅s/m for translation and N⋅m⋅s
+for rotation, used to model losses within the joint. See
+documentation of damping() for details on modelling of the damping
+force and torque.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">RuntimeError if any element of damping is negative.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float].damping">
+<code class="descname">damping</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[3, 1]]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float].damping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal"><span class="pre">this</span></code> joint’s damping constant in N⋅s/m for the
+translational degrees and N⋅m⋅s for the rotational degree. The damping
+force (in N) is modeled as <code class="docutils literal"><span class="pre">fᵢ</span> <span class="pre">=</span> <span class="pre">-dampingᵢ⋅vᵢ,</span> <span class="pre">i</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">2</span></code> i.e.
+opposing motion, with vᵢ the translation rates along the i-th axis for
+<code class="docutils literal"><span class="pre">this</span></code> joint (see get_translational_velocity()) and fᵢ the force on
+child body B at Mo and expressed in F. That is, f_BMo_F = (f₁, f₂).
+The damping torque (in N⋅m) is modeled as <code class="docutils literal"><span class="pre">τ</span> <span class="pre">=</span> <span class="pre">-damping₃⋅ω</span></code> i.e.
+opposing motion, with ω the angular rate for <code class="docutils literal"><span class="pre">this</span></code> joint (see
+get_angular_velocity()) and τ the torque on child body B expressed in
+frame F as t_B_F = τ⋅Fz_F.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float].get_angular_velocity">
+<code class="descname">get_angular_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float]</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float].get_angular_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the rate of change, in radians per second, of <code class="docutils literal"><span class="pre">this</span></code> joint’s
+angle θ from <code class="docutils literal"><span class="pre">context</span></code>. See class documentation for the definition
+of this angle.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">theta_dot</span></code>:</dt>
+<dd>The rate of change of <code class="docutils literal"><span class="pre">this</span></code> joint’s angle θ as stored in the
+<code class="docutils literal"><span class="pre">context</span></code>.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float].get_rotation">
+<code class="descname">get_rotation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float]</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float].get_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the angle θ of <code class="docutils literal"><span class="pre">this</span></code> joint from <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">theta</span></code>:</dt>
+<dd>The angle of <code class="docutils literal"><span class="pre">this</span></code> joint stored in the <code class="docutils literal"><span class="pre">context</span></code>. See class
+documentation for details.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float].get_translation">
+<code class="descname">get_translation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[2, 1]]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float].get_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the position of <code class="docutils literal"><span class="pre">this</span></code> joint from <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">p_FoMo_F</span></code>:</dt>
+<dd>The position of <code class="docutils literal"><span class="pre">this</span></code> joint stored in the <code class="docutils literal"><span class="pre">context</span></code> ordered
+as (x, y). See class documentation for details.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float].get_translational_velocity">
+<code class="descname">get_translational_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[2, 1]]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float].get_translational_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the translational velocity v_FoMo_F, in meters per second, of
+<code class="docutils literal"><span class="pre">this</span></code> joint’s Mo measured and expressed in frame F from
+<code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Returns <code class="docutils literal"><span class="pre">v_FoMo_F</span></code>:</dt>
+<dd>The translational velocity of <code class="docutils literal"><span class="pre">this</span></code> joint as stored in the
+<code class="docutils literal"><span class="pre">context</span></code>.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float].set_angular_velocity">
+<code class="descname">set_angular_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float], theta_dot: float</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[float]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float].set_angular_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the rate of change, in radians per second, of <code class="docutils literal"><span class="pre">this</span></code> joint’s
+angle θ (see class documentation) to <code class="docutils literal"><span class="pre">theta_dot</span></code>. The new rate of
+change gets stored in <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">theta_dot</span></code>:</dt>
+<dd>The desired rates of change of <code class="docutils literal"><span class="pre">this</span></code> joint’s angle in radians
+per second.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float].set_pose">
+<code class="descname">set_pose</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float], p_FoMo_F: numpy.ndarray[numpy.float64[2, 1]], theta: float</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[float]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float].set_pose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the <code class="docutils literal"><span class="pre">context</span></code> so that the position of <code class="docutils literal"><span class="pre">this</span></code> joint equals
+<code class="docutils literal"><span class="pre">p_FoMo_F</span></code> and its angle equals <code class="docutils literal"><span class="pre">theta</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">p_FoMo_F</span></code>:</dt>
+<dd>The desired position in meters to be stored in <code class="docutils literal"><span class="pre">context</span></code> ordered
+as (x, y). See class documentation for details.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">theta</span></code>:</dt>
+<dd>The desired angle in radians to be stored in <code class="docutils literal"><span class="pre">context</span></code>. See
+class documentation for details.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float].set_random_pose_distribution">
+<code class="descname">set_random_pose_distribution</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], p_FoMo_F: numpy.ndarray[object[2, 1]], theta: pydrake.symbolic.Expression</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float].set_random_pose_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the random distribution that the position and angle of this joint
+will be randomly sampled from. See class documentation for details on
+the definition of the position and angle.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float].set_rotation">
+<code class="descname">set_rotation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float], theta: float</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[float]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float].set_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the <code class="docutils literal"><span class="pre">context</span></code> so that the angle θ of <code class="docutils literal"><span class="pre">this</span></code> joint equals
+<code class="docutils literal"><span class="pre">theta</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">theta</span></code>:</dt>
+<dd>The desired angle in radians to be stored in <code class="docutils literal"><span class="pre">context</span></code>. See
+class documentation for details.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float].set_translation">
+<code class="descname">set_translation</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float], p_FoMo_F: numpy.ndarray[numpy.float64[2, 1]]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[float]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float].set_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the <code class="docutils literal"><span class="pre">context</span></code> so that the position of <code class="docutils literal"><span class="pre">this</span></code> joint equals
+<code class="docutils literal"><span class="pre">p_FoMo_F</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">p_FoMo_F</span></code>:</dt>
+<dd>The desired position in meters to be stored in <code class="docutils literal"><span class="pre">context</span></code> ordered
+as (x, y). See class documentation for details.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.multibody.tree.PlanarJoint_[float].set_translational_velocity">
+<code class="descname">set_translational_velocity</code><span class="sig-paren">(</span><em>self: pydrake.multibody.tree.PlanarJoint_[float], context: pydrake.systems.framework.Context_[float], v_FoMo_F: numpy.ndarray[numpy.float64[2, 1]]</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.PlanarJoint_[float]<a class="headerlink" href="#pydrake.multibody.tree.PlanarJoint_[float].set_translational_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the translational velocity, in meters per second, of this
+<code class="docutils literal"><span class="pre">this</span></code> joint’s Mo measured and expressed in frame F to <code class="docutils literal"><span class="pre">v_FoMo_F</span></code>.
+The new translational velocity gets stored in <code class="docutils literal"><span class="pre">context</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">context</span></code>:</dt>
+<dd>The context of the model this joint belongs to.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">v_FoMo_F</span></code>:</dt>
+<dd>The desired translational velocity of <code class="docutils literal"><span class="pre">this</span></code> joint in meters per
+second.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a constant reference to <code class="docutils literal"><span class="pre">this</span></code> joint.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
 <dt id="pydrake.multibody.tree.PrismaticJoint">
 <code class="descclassname">pydrake.multibody.tree.</code><code class="descname">PrismaticJoint</code><a class="headerlink" href="#pydrake.multibody.tree.PrismaticJoint" title="Permalink to this definition">¶</a></dt>
 <dd><p>alias of <a class="reference internal" href="#pydrake.multibody.tree.PrismaticJoint_[float]" title="pydrake.multibody.tree.PrismaticJoint_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.multibody.tree.PrismaticJoint_[float]</span></code></a></p>

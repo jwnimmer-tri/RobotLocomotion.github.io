@@ -197,13 +197,20 @@ can do something like:</p>
 <cite>“ignore”</cite> action for <cite>warnings.simplefilter</cite>.</p>
 <dl class="function">
 <dt id="pydrake.common.deprecation.deprecated">
-<code class="descclassname">pydrake.common.deprecation.</code><code class="descname">deprecated</code><span class="sig-paren">(</span><em>message</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.common.deprecation.deprecated" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">pydrake.common.deprecation.</code><code class="descname">deprecated</code><span class="sig-paren">(</span><em>message</em>, <em>*</em>, <em>date=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.common.deprecation.deprecated" title="Permalink to this definition">¶</a></dt>
 <dd><p>Decorator that deprecates a member of a class based on access.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>message</strong> – Warning message when member is accessed.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>message</strong> – Warning message when member is accessed.</li>
+<li><strong>date</strong> – (Optional) String of the form “YYYY-MM-DD”.
+If supplied, will reformat the message to add the date as is done
+with DRAKE_DEPRECATED and its processing in mkdoc.py. This must be
+present if <code class="docutils literal"><span class="pre">message</span></code> does not contain the date itself.</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>

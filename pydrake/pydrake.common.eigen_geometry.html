@@ -614,16 +614,9 @@
 <li>__init__(self: pydrake.common.eigen_geometry.Isometry3_[float], quaternion: Eigen::Quaternion&lt;double, 0&gt;, translation: numpy.ndarray[numpy.float64[3, 1]]) -&gt; None</li>
 <li>__init__(self: pydrake.common.eigen_geometry.Isometry3_[float], other: pydrake.common.eigen_geometry.Isometry3_[float]) -&gt; None</li>
 <li>__init__(self: pydrake.common.eigen_geometry.Isometry3_[float], arg0: pydrake.math.RigidTransform_[float]) -&gt; None</li>
-</ol>
-<p>Implicit conversion from RigidTransform to Eigen::Isometry3 is deprecated. You may convert explicitly by calling GetAsIsometry3(), or try to avoid using Eigen::Isometry3 in the first place.</p>
-<ol class="arabic simple" start="7">
 <li>__init__(self: pydrake.common.eigen_geometry.Isometry3_[float], arg0: pydrake.math.RigidTransform_[AutoDiffXd]) -&gt; None</li>
-</ol>
-<p>Implicit conversion from RigidTransform to Eigen::Isometry3 is deprecated. You may convert explicitly by calling GetAsIsometry3(), or try to avoid using Eigen::Isometry3 in the first place.</p>
-<ol class="arabic simple" start="8">
 <li>__init__(self: pydrake.common.eigen_geometry.Isometry3_[float], arg0: pydrake.math.RigidTransform_[Expression]) -&gt; None</li>
 </ol>
-<p>Implicit conversion from RigidTransform to Eigen::Isometry3 is deprecated. You may convert explicitly by calling GetAsIsometry3(), or try to avoid using Eigen::Isometry3 in the first place.</p>
 </dd></dl>
 
 <dl class="template">
@@ -953,16 +946,9 @@
 <li>__init__(self: pydrake.common.eigen_geometry.Isometry3_[float], quaternion: Eigen::Quaternion&lt;double, 0&gt;, translation: numpy.ndarray[numpy.float64[3, 1]]) -&gt; None</li>
 <li>__init__(self: pydrake.common.eigen_geometry.Isometry3_[float], other: pydrake.common.eigen_geometry.Isometry3_[float]) -&gt; None</li>
 <li>__init__(self: pydrake.common.eigen_geometry.Isometry3_[float], arg0: pydrake.math.RigidTransform_[float]) -&gt; None</li>
-</ol>
-<p>Implicit conversion from RigidTransform to Eigen::Isometry3 is deprecated. You may convert explicitly by calling GetAsIsometry3(), or try to avoid using Eigen::Isometry3 in the first place.</p>
-<ol class="arabic simple" start="7">
 <li>__init__(self: pydrake.common.eigen_geometry.Isometry3_[float], arg0: pydrake.math.RigidTransform_[AutoDiffXd]) -&gt; None</li>
-</ol>
-<p>Implicit conversion from RigidTransform to Eigen::Isometry3 is deprecated. You may convert explicitly by calling GetAsIsometry3(), or try to avoid using Eigen::Isometry3 in the first place.</p>
-<ol class="arabic simple" start="8">
 <li>__init__(self: pydrake.common.eigen_geometry.Isometry3_[float], arg0: pydrake.math.RigidTransform_[Expression]) -&gt; None</li>
 </ol>
-<p>Implicit conversion from RigidTransform to Eigen::Isometry3 is deprecated. You may convert explicitly by calling GetAsIsometry3(), or try to avoid using Eigen::Isometry3 in the first place.</p>
 </dd></dl>
 
 <dl class="template">
@@ -1176,6 +1162,12 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="pydrake.common.eigen_geometry.Quaternion_.Quaternion_[float].slerp">
+<code class="descname">slerp</code><span class="sig-paren">(</span><em>self: pydrake.common.eigen_geometry.Quaternion_[float], t: float, other: pydrake.common.eigen_geometry.Quaternion_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.common.eigen_geometry.Quaternion_[float]<a class="headerlink" href="#pydrake.common.eigen_geometry.Quaternion_.Quaternion_[float].slerp" title="Permalink to this definition">¶</a></dt>
+<dd><p>The spherical linear interpolation between the two quaternions (self and other) at the parameter t in [0;1].</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="pydrake.common.eigen_geometry.Quaternion_.Quaternion_[float].w">
 <code class="descname">w</code><span class="sig-paren">(</span><em>self: pydrake.common.eigen_geometry.Quaternion_[float]</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#pydrake.common.eigen_geometry.Quaternion_.Quaternion_[float].w" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -1298,6 +1290,12 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="pydrake.common.eigen_geometry.Quaternion_[AutoDiffXd].slerp">
+<code class="descname">slerp</code><span class="sig-paren">(</span><em>self: pydrake.common.eigen_geometry.Quaternion_[AutoDiffXd], t: float, other: pydrake.common.eigen_geometry.Quaternion_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; pydrake.common.eigen_geometry.Quaternion_[AutoDiffXd]<a class="headerlink" href="#pydrake.common.eigen_geometry.Quaternion_[AutoDiffXd].slerp" title="Permalink to this definition">¶</a></dt>
+<dd><p>The spherical linear interpolation between the two quaternions (self and other) at the parameter t in [0;1].</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="pydrake.common.eigen_geometry.Quaternion_[AutoDiffXd].w">
 <code class="descname">w</code><span class="sig-paren">(</span><em>self: pydrake.common.eigen_geometry.Quaternion_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; pydrake.autodiffutils.AutoDiffXd<a class="headerlink" href="#pydrake.common.eigen_geometry.Quaternion_[AutoDiffXd].w" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -1415,6 +1413,12 @@
 <li>set_wxyz(self: pydrake.common.eigen_geometry.Quaternion_[Expression], wxyz: numpy.ndarray[object[4, 1]]) -&gt; None</li>
 <li>set_wxyz(self: pydrake.common.eigen_geometry.Quaternion_[Expression], w: pydrake.symbolic.Expression, x: pydrake.symbolic.Expression, y: pydrake.symbolic.Expression, z: pydrake.symbolic.Expression) -&gt; None</li>
 </ol>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.common.eigen_geometry.Quaternion_[Expression].slerp">
+<code class="descname">slerp</code><span class="sig-paren">(</span><em>self: pydrake.common.eigen_geometry.Quaternion_[Expression], t: float, other: pydrake.common.eigen_geometry.Quaternion_[Expression]</em><span class="sig-paren">)</span> &#x2192; pydrake.common.eigen_geometry.Quaternion_[Expression]<a class="headerlink" href="#pydrake.common.eigen_geometry.Quaternion_[Expression].slerp" title="Permalink to this definition">¶</a></dt>
+<dd><p>The spherical linear interpolation between the two quaternions (self and other) at the parameter t in [0;1].</p>
 </dd></dl>
 
 <dl class="method">
@@ -1547,6 +1551,12 @@
 <li>set_wxyz(self: pydrake.common.eigen_geometry.Quaternion_[float], wxyz: numpy.ndarray[numpy.float64[4, 1]]) -&gt; None</li>
 <li>set_wxyz(self: pydrake.common.eigen_geometry.Quaternion_[float], w: float, x: float, y: float, z: float) -&gt; None</li>
 </ol>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.common.eigen_geometry.Quaternion_[float].slerp">
+<code class="descname">slerp</code><span class="sig-paren">(</span><em>self: pydrake.common.eigen_geometry.Quaternion_[float], t: float, other: pydrake.common.eigen_geometry.Quaternion_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.common.eigen_geometry.Quaternion_[float]<a class="headerlink" href="#pydrake.common.eigen_geometry.Quaternion_[float].slerp" title="Permalink to this definition">¶</a></dt>
+<dd><p>The spherical linear interpolation between the two quaternions (self and other) at the parameter t in [0;1].</p>
 </dd></dl>
 
 <dl class="method">

@@ -69,6 +69,9 @@ var dir_3f9cb8dbb3b4911cb2ecb548acd672c3 =
     [ "multibody_tree_indexes.h", "multibody__tree__indexes_8h.html", "multibody__tree__indexes_8h" ],
     [ "multibody_tree_system.h", "multibody__tree__system_8h.html", null ],
     [ "multibody_tree_topology.h", "multibody__tree__topology_8h.html", null ],
+    [ "planar_joint.h", "planar__joint_8h.html", [
+      [ "PlanarJoint", "classdrake_1_1multibody_1_1_planar_joint.html", "classdrake_1_1multibody_1_1_planar_joint" ]
+    ] ],
     [ "planar_mobilizer.h", "planar__mobilizer_8h.html", null ],
     [ "position_kinematics_cache.h", "position__kinematics__cache_8h.html", null ],
     [ "prismatic_joint.h", "prismatic__joint_8h.html", [

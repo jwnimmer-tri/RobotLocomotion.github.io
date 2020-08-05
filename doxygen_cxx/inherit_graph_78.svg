@@ -9,42 +9,42 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 4856)">
 <title>Graphical Class Hierarchy</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-4856 1503,-4856 1503,4 -4,4"/>
-<!-- Node769 -->
+<!-- Node770 -->
 <g id="node1" class="node">
-<title>Node769</title>
+<title>Node770</title>
 <g id="a_node1"><a xlink:href="classdrake_1_1lcm_1_1_drake_lcm_interface.html" target="_top" xlink:title="A pure virtual interface that enables LCM to be mocked.">
 <polygon fill="#ffffff" stroke="#000000" points="538.5,-4794.5 538.5,-4813.5 648.5,-4813.5 648.5,-4794.5 538.5,-4794.5"/>
 <text text-anchor="middle" x="593.5" y="-4801.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">DrakeLcmInterface</text>
 </a>
 </g>
 </g>
-<!-- Node770 -->
+<!-- Node771 -->
 <g id="node2" class="node">
-<title>Node770</title>
+<title>Node771</title>
 <g id="a_node2"><a xlink:href="classdrake_1_1lcm_1_1_drake_lcm.html" target="_top" xlink:title="A wrapper around a real LCM instance.">
 <polygon fill="#ffffff" stroke="#000000" points="802.5,-4832.5 802.5,-4851.5 868.5,-4851.5 868.5,-4832.5 802.5,-4832.5"/>
 <text text-anchor="middle" x="835.5" y="-4839.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">DrakeLcm</text>
 </a>
 </g>
 </g>
-<!-- Node769&#45;&gt;Node770 -->
+<!-- Node770&#45;&gt;Node771 -->
 <g id="edge1" class="edge">
-<title>Node769&#45;&gt;Node770</title>
+<title>Node770&#45;&gt;Node771</title>
 <path fill="none" stroke="#191970" d="M658.6999,-4814.238C705.1523,-4821.5322 765.6534,-4831.0323 802.4828,-4836.8155"/>
 <polygon fill="#191970" stroke="#191970" points="659.1383,-4810.764 648.7164,-4812.6703 658.0523,-4817.6793 659.1383,-4810.764"/>
 </g>
-<!-- Node772 -->
+<!-- Node773 -->
 <g id="node4" class="node">
-<title>Node772</title>
+<title>Node773</title>
 <g id="a_node4"><a xlink:href="classdrake_1_1lcm_1_1_drake_lcm_log.html" target="_top" xlink:title="A LCM interface for logging LCM messages to a file or playing back from a existing log.">
 <polygon fill="#ffffff" stroke="#000000" points="794,-4794.5 794,-4813.5 877,-4813.5 877,-4794.5 794,-4794.5"/>
 <text text-anchor="middle" x="835.5" y="-4801.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">DrakeLcmLog</text>
 </a>
 </g>
 </g>
-<!-- Node769&#45;&gt;Node772 -->
+<!-- Node770&#45;&gt;Node773 -->
 <g id="edge3" class="edge">
-<title>Node769&#45;&gt;Node772</title>
+<title>Node770&#45;&gt;Node773</title>
 <path fill="none" stroke="#191970" d="M658.7927,-4804C701.7119,-4804 756.5927,-4804 793.7201,-4804"/>
 <polygon fill="#191970" stroke="#191970" points="658.7164,-4800.5001 648.7164,-4804 658.7163,-4807.5001 658.7164,-4800.5001"/>
 </g>
@@ -57,24 +57,24 @@
 </a>
 </g>
 </g>
-<!-- Node769&#45;&gt;Node260 -->
+<!-- Node770&#45;&gt;Node260 -->
 <g id="edge4" class="edge">
-<title>Node769&#45;&gt;Node260</title>
+<title>Node770&#45;&gt;Node260</title>
 <path fill="none" stroke="#191970" d="M658.834,-4793.7409C695.5842,-4787.9703 741.0945,-4780.824 776.7195,-4775.23"/>
 <polygon fill="#191970" stroke="#191970" points="658.0523,-4790.3207 648.7164,-4795.3297 659.1383,-4797.236 658.0523,-4790.3207"/>
 </g>
-<!-- Node771 -->
+<!-- Node772 -->
 <g id="node3" class="node">
-<title>Node771</title>
+<title>Node772</title>
 <g id="a_node3"><a xlink:href="classdrake_1_1lcm_1_1_drake_mock_lcm.html" target="_top" xlink:title="An implementation of DrakeLcmInterface that manipulates LCM messages in memory, not on the wire.">
 <polygon fill="#ffffff" stroke="#000000" points="1015,-4832.5 1015,-4851.5 1107,-4851.5 1107,-4832.5 1015,-4832.5"/>
 <text text-anchor="middle" x="1061" y="-4839.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">DrakeMockLcm</text>
 </a>
 </g>
 </g>
-<!-- Node770&#45;&gt;Node771 -->
+<!-- Node771&#45;&gt;Node772 -->
 <g id="edge2" class="edge">
-<title>Node770&#45;&gt;Node771</title>
+<title>Node771&#45;&gt;Node772</title>
 <path fill="none" stroke="#191970" d="M879.2537,-4842C918.191,-4842 974.9637,-4842 1014.6649,-4842"/>
 <polygon fill="#191970" stroke="#191970" points="878.7733,-4838.5001 868.7733,-4842 878.7733,-4845.5001 878.7733,-4838.5001"/>
 </g>

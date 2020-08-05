@@ -29,6 +29,7 @@ var searchData=
   ['piecewisetrajectory',['PiecewiseTrajectory',['../classdrake_1_1trajectories_1_1_piecewise_trajectory.html',1,'drake::trajectories']]],
   ['piecewisetrajectory_3c_20autodiffxd_20_3e',['PiecewiseTrajectory&lt; AutoDiffXd &gt;',['../classdrake_1_1trajectories_1_1_piecewise_trajectory.html',1,'drake::trajectories']]],
   ['piecewisetrajectory_3c_20double_20_3e',['PiecewiseTrajectory&lt; double &gt;',['../classdrake_1_1trajectories_1_1_piecewise_trajectory.html',1,'drake::trajectories']]],
+  ['planarjoint',['PlanarJoint',['../classdrake_1_1multibody_1_1_planar_joint.html',1,'drake::multibody']]],
   ['planarmanipulandstatusdecoder',['PlanarManipulandStatusDecoder',['../classdrake_1_1examples_1_1planar__gripper_1_1_planar_manipuland_status_decoder.html',1,'drake::examples::planar_gripper']]],
   ['planarmanipulandstatusencoder',['PlanarManipulandStatusEncoder',['../classdrake_1_1examples_1_1planar__gripper_1_1_planar_manipuland_status_encoder.html',1,'drake::examples::planar_gripper']]],
   ['pleidessystem',['PleidesSystem',['../classdrake_1_1systems_1_1analysis_1_1test_1_1_pleides_system.html',1,'drake::systems::analysis::test']]],

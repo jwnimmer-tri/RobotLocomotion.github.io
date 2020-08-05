@@ -118,6 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2bc82a9937f1710e5da413dcad7a3ded"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedrake_1_1multibody.html#af65439a17091283a89eb12f1955c6db0">ModelInstanceIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_parser.html#a2bc82a9937f1710e5da413dcad7a3ded">AddModelFromFile</a> (const std::string &amp;file_name, const std::string &amp;model_name={})</td></tr>
 <tr class="memdesc:a2bc82a9937f1710e5da413dcad7a3ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the SDF or URDF file named in <code>file_name</code> and adds one model to <code>plant</code>.  <a href="#a2bc82a9937f1710e5da413dcad7a3ded">More...</a><br /></td></tr>
 <tr class="separator:a2bc82a9937f1710e5da413dcad7a3ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818199bfa51f6b3d5e9a8660bc4e486c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedrake_1_1multibody.html#af65439a17091283a89eb12f1955c6db0">ModelInstanceIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_parser.html#a818199bfa51f6b3d5e9a8660bc4e486c">AddModelFromString</a> (const std::string &amp;file_contents, const std::string &amp;file_type, const std::string &amp;model_name={})</td></tr>
+<tr class="memdesc:a818199bfa51f6b3d5e9a8660bc4e486c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the SDF or URDF XML data passed given in <code>file_contents</code> and adds one model to <code>plant</code>.  <a href="#a818199bfa51f6b3d5e9a8660bc4e486c">More...</a><br /></td></tr>
+<tr class="separator:a818199bfa51f6b3d5e9a8660bc4e486c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Does not allow copy, move, or assignment</div></td></tr>
 <tr class="memitem:a874a4b22e398a11c45d9f3530c9add35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_parser.html#a874a4b22e398a11c45d9f3530c9add35">Parser</a> (const <a class="el" href="classdrake_1_1multibody_1_1_parser.html">Parser</a> &amp;)=delete</td></tr>
 <tr class="separator:a874a4b22e398a11c45d9f3530c9add35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,6 +296,58 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">file_name</td><td>The name of the SDF or URDF file to be parsed. The file type will be inferred from the extension. </td></tr>
+    <tr><td class="paramname">model_name</td><td>The name given to the newly created instance of this model. If empty, the "name" attribute from the <code>&lt;model&gt;</code> or <code>&lt;robot&gt;</code> tag will be used. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The instance index for the newly added model. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td>in case of errors. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a818199bfa51f6b3d5e9a8660bc4e486c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a818199bfa51f6b3d5e9a8660bc4e486c">&#9670;&nbsp;</a></span>AddModelFromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedrake_1_1multibody.html#af65439a17091283a89eb12f1955c6db0">ModelInstanceIndex</a> AddModelFromString </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_contents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>model_name</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses the SDF or URDF XML data passed given in <code>file_contents</code> and adds one model to <code>plant</code>. </p>
+<p>It is an error to call this using an SDF with more than one <code>&lt;model&gt;</code> element.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_contents</td><td>The XML data to be parsed. </td></tr>
+    <tr><td class="paramname">file_type</td><td>The data format; must be either "sdf" or "urdf". </td></tr>
     <tr><td class="paramname">model_name</td><td>The name given to the newly created instance of this model. If empty, the "name" attribute from the <code>&lt;model&gt;</code> or <code>&lt;robot&gt;</code> tag will be used. </td></tr>
   </table>
   </dd>

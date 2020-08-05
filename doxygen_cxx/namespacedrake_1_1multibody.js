@@ -42,6 +42,7 @@ var namespacedrake_1_1multibody =
     [ "OrientationConstraint", "classdrake_1_1multibody_1_1_orientation_constraint.html", "classdrake_1_1multibody_1_1_orientation_constraint" ],
     [ "PackageMap", "classdrake_1_1multibody_1_1_package_map.html", "classdrake_1_1multibody_1_1_package_map" ],
     [ "Parser", "classdrake_1_1multibody_1_1_parser.html", "classdrake_1_1multibody_1_1_parser" ],
+    [ "PlanarJoint", "classdrake_1_1multibody_1_1_planar_joint.html", "classdrake_1_1multibody_1_1_planar_joint" ],
     [ "PointPairContactInfo", "classdrake_1_1multibody_1_1_point_pair_contact_info.html", "classdrake_1_1multibody_1_1_point_pair_contact_info" ],
     [ "PointToPointDistanceConstraint", "classdrake_1_1multibody_1_1_point_to_point_distance_constraint.html", "classdrake_1_1multibody_1_1_point_to_point_distance_constraint" ],
     [ "PositionConstraint", "classdrake_1_1multibody_1_1_position_constraint.html", "classdrake_1_1multibody_1_1_position_constraint" ],

@@ -454,6 +454,7 @@ var hierarchy =
     [ "MultibodyElement< Joint, T, JointIndex >", "classdrake_1_1multibody_1_1_multibody_element.html", [
       [ "Joint< T >", "classdrake_1_1multibody_1_1_joint.html", [
         [ "BallRpyJoint< T >", "classdrake_1_1multibody_1_1_ball_rpy_joint.html", null ],
+        [ "PlanarJoint< T >", "classdrake_1_1multibody_1_1_planar_joint.html", null ],
         [ "PrismaticJoint< T >", "classdrake_1_1multibody_1_1_prismatic_joint.html", null ],
         [ "RevoluteJoint< T >", "classdrake_1_1multibody_1_1_revolute_joint.html", null ],
         [ "UniversalJoint< T >", "classdrake_1_1multibody_1_1_universal_joint.html", null ],

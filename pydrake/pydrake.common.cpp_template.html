@@ -317,7 +317,7 @@ example, <cite>Impl</cite> will be renamed to <cite>MyTemplate[int]</cite> when
 
 <dl class="method">
 <dt id="pydrake.common.cpp_template.TemplateBase.deprecate_instantiation">
-<code class="descname">deprecate_instantiation</code><span class="sig-paren">(</span><em>param</em>, <em>message</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.common.cpp_template.TemplateBase.deprecate_instantiation" title="Permalink to this definition">¶</a></dt>
+<code class="descname">deprecate_instantiation</code><span class="sig-paren">(</span><em>param</em>, <em>message</em>, <em>*</em>, <em>date=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.common.cpp_template.TemplateBase.deprecate_instantiation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Deprecates an instantiation for the given set of parameters.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -330,6 +330,11 @@ example, <cite>Impl</cite> will be renamed to <cite>MyTemplate[int]</cite> when
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>param</strong> – Parameters for an instantiation that is already registered.</li>
 <li><strong>message</strong> – Message to be shown when issuing a deprecation warning.</li>
+<li><strong>date</strong> – (Optional) String of the form “YYYY-MM-DD”.
+If supplied, will reformat the message to add the date as is
+done with DRAKE_DEPRECATED and its processing in mkdoc.py. This
+must be present if <code class="docutils literal"><span class="pre">message</span></code> does not contain the date
+itself.</li>
 </ul>
 </td>
 </tr>

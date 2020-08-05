@@ -175,12 +175,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a6294e82ee237c93a7e6cbc2fb4d924b2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#a6294e82ee237c93a7e6cbc2fb4d924b2">DefCast</a> (PyClass *cls, const char *doc, UPack U_pack={})</td></tr>
 <tr class="memdesc:a6294e82ee237c93a7e6cbc2fb4d924b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds <code>cast&lt;T&gt;()</code> explicitly.  <a href="#a6294e82ee237c93a7e6cbc2fb4d924b2">More...</a><br /></td></tr>
 <tr class="separator:a6294e82ee237c93a7e6cbc2fb4d924b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe3567351a140778a7edb77b3dc8e8fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#afe3567351a140778a7edb77b3dc8e8fb">DeprecateAttribute</a> (py::object cls, py::str name, py::str message)</td></tr>
-<tr class="memdesc:afe3567351a140778a7edb77b3dc8e8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecates an attribute <code>name</code> of a class <code>cls</code>.  <a href="#afe3567351a140778a7edb77b3dc8e8fb">More...</a><br /></td></tr>
-<tr class="separator:afe3567351a140778a7edb77b3dc8e8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e9b7f8b6f530a09bb02d8b0aeeb0e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#ac2e9b7f8b6f530a09bb02d8b0aeeb0e8">WarnDeprecated</a> (py::str message)</td></tr>
-<tr class="memdesc:ac2e9b7f8b6f530a09bb02d8b0aeeb0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raises a deprecation warning.  <a href="#ac2e9b7f8b6f530a09bb02d8b0aeeb0e8">More...</a><br /></td></tr>
-<tr class="separator:ac2e9b7f8b6f530a09bb02d8b0aeeb0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b68ce63cf178e7d4e91f95e0e483e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#ab0b68ce63cf178e7d4e91f95e0e483e1">DeprecateAttribute</a> (py::object cls, py::str name, py::str message, std::optional&lt; std::string &gt; date={})</td></tr>
+<tr class="memdesc:ab0b68ce63cf178e7d4e91f95e0e483e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecates an attribute <code>name</code> of a class <code>cls</code>.  <a href="#ab0b68ce63cf178e7d4e91f95e0e483e1">More...</a><br /></td></tr>
+<tr class="separator:ab0b68ce63cf178e7d4e91f95e0e483e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a20567ddf6e5978a874a3cb46353f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#a88a20567ddf6e5978a874a3cb46353f4">WarnDeprecated</a> (py::str message, std::optional&lt; std::string &gt; date={})</td></tr>
+<tr class="memdesc:a88a20567ddf6e5978a874a3cb46353f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raises a deprecation warning.  <a href="#a88a20567ddf6e5978a874a3cb46353f4">More...</a><br /></td></tr>
+<tr class="separator:a88a20567ddf6e5978a874a3cb46353f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13cd6cd963823cafbc0068bacc7eeadd"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
 <tr class="memitem:a13cd6cd963823cafbc0068bacc7eeadd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#a13cd6cd963823cafbc0068bacc7eeadd">WrapDeprecated</a> (py::str message, Func &amp;&amp;func)</td></tr>
 <tr class="memdesc:a13cd6cd963823cafbc0068bacc7eeadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps any callable (function pointer, method pointer, lambda, etc.) to emit a deprecation message.  <a href="#a13cd6cd963823cafbc0068bacc7eeadd">More...</a><br /></td></tr>
@@ -901,8 +901,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afe3567351a140778a7edb77b3dc8e8fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe3567351a140778a7edb77b3dc8e8fb">&#9670;&nbsp;</a></span>DeprecateAttribute()</h2>
+<a id="ab0b68ce63cf178e7d4e91f95e0e483e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0b68ce63cf178e7d4e91f95e0e483e1">&#9670;&nbsp;</a></span>DeprecateAttribute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -923,7 +923,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">py::str&#160;</td>
-          <td class="paramname"><em>message</em>&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>date</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1235,8 +1241,8 @@ Ts cannot be a <code>py::</code> symbol (e.g. <code>py::object</code>). On Mac, 
 
 </div>
 </div>
-<a id="ac2e9b7f8b6f530a09bb02d8b0aeeb0e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2e9b7f8b6f530a09bb02d8b0aeeb0e8">&#9670;&nbsp;</a></span>WarnDeprecated()</h2>
+<a id="a88a20567ddf6e5978a874a3cb46353f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a20567ddf6e5978a874a3cb46353f4">&#9670;&nbsp;</a></span>WarnDeprecated()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1245,8 +1251,18 @@ Ts cannot be a <code>py::</code> symbol (e.g. <code>py::object</code>). On Mac, 
           <td class="memname">void drake::pydrake::WarnDeprecated </td>
           <td>(</td>
           <td class="paramtype">py::str&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::optional&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>date</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

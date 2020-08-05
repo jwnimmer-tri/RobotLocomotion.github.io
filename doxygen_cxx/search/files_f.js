@@ -20,6 +20,7 @@ var searchData=
   ['pixel_5ftypes_2eh',['pixel_types.h',['../pixel__types_8h.html',1,'']]],
   ['planar_5fgripper_5fcommon_2eh',['planar_gripper_common.h',['../planar__gripper__common_8h.html',1,'']]],
   ['planar_5fgripper_5flcm_2eh',['planar_gripper_lcm.h',['../planar__gripper__lcm_8h.html',1,'']]],
+  ['planar_5fjoint_2eh',['planar_joint.h',['../planar__joint_8h.html',1,'']]],
   ['planar_5fmanipuland_5flcm_2eh',['planar_manipuland_lcm.h',['../planar__manipuland__lcm_8h.html',1,'']]],
   ['planar_5fmobilizer_2eh',['planar_mobilizer.h',['../planar__mobilizer_8h.html',1,'']]],
   ['plane_2eh',['plane.h',['../plane_8h.html',1,'']]],
