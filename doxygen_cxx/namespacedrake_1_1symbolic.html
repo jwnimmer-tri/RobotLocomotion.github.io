@@ -113,6 +113,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1symbolic_1_1_binary_expression_cell.html">BinaryExpressionCell</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the base class for binary expressions.  <a href="classdrake_1_1symbolic_1_1_binary_expression_cell.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html">ChebyshevBasisElement</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html" title="ChebyshevBasisElement represents an element of Chebyshev polynomial basis, written as the product of ...">ChebyshevBasisElement</a> represents an element of Chebyshev polynomial basis, written as the product of Chebyshev polynomials, in the form Tₚ₀(x₀)Tₚ₁(x₁)...Tₚₙ(xₙ), where each Tₚᵢ(xᵢ) is a (univariate) Chebyshev polynomial of degree pᵢ.  <a href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_polynomial.html">ChebyshevPolynomial</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the Chebyshev polynomial of the first kind Tₙ(x).  <a href="classdrake_1_1symbolic_1_1_chebyshev_polynomial.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,6 +281,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1symbolic_1_1_polynomial.html">Polynomial</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents symbolic polynomials.  <a href="classdrake_1_1symbolic_1_1_polynomial.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1symbolic_1_1_polynomial_basis_element.html">PolynomialBasisElement</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each polynomial p(x) can be written as a linear combination of its basis elements p(x) = ∑ᵢ cᵢ * ϕᵢ(x), where ϕᵢ(x) is the i'th element in the basis, cᵢ is the coefficient of that element.  <a href="classdrake_1_1symbolic_1_1_polynomial_basis_element.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1symbolic_1_1_rational_function.html">RationalFunction</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents symbolic rational function.  <a href="classdrake_1_1symbolic_1_1_rational_function.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -374,8 +380,14 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a76deccd3cd3f64d9b875dd5116792c07"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html">ChebyshevBasisElement</a>, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1symbolic.html#a76deccd3cd3f64d9b875dd5116792c07">operator *</a> (const <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html">ChebyshevBasisElement</a> &amp;a, const <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html">ChebyshevBasisElement</a> &amp;b)</td></tr>
+<tr class="memdesc:a76deccd3cd3f64d9b875dd5116792c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the product of two Chebyshev basis elements.  <a href="#a76deccd3cd3f64d9b875dd5116792c07">More...</a><br /></td></tr>
+<tr class="separator:a76deccd3cd3f64d9b875dd5116792c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31d454a069abf89b2a0b6c71222ec221"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1symbolic.html#a31d454a069abf89b2a0b6c71222ec221">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_polynomial.html">ChebyshevPolynomial</a> &amp;p)</td></tr>
 <tr class="separator:a31d454a069abf89b2a0b6c71222ec221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b9a5af49a6b9d6140189a132c4c2d7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1symbolic.html#a87b9a5af49a6b9d6140189a132c4c2d7">EvaluateChebyshevPolynomial</a> (double variable_val, <a class="el" href="classint.html">int</a> degree)</td></tr>
+<tr class="memdesc:a87b9a5af49a6b9d6140189a132c4c2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates a Chebyshev polynomial at a given value.  <a href="#a87b9a5af49a6b9d6140189a132c4c2d7">More...</a><br /></td></tr>
+<tr class="separator:a87b9a5af49a6b9d6140189a132c4c2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2d07751d060ddf51dad4702d441f651a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__codegen.html#ga2d07751d060ddf51dad4702d441f651a">CodeGen</a> (const std::string &amp;function_name, const std::vector&lt; <a class="el" href="classdrake_1_1symbolic_1_1_variable.html">Variable</a> &gt; &amp;parameters, const <a class="el" href="classdrake_1_1symbolic_1_1_expression.html">Expression</a> &amp;e)</td></tr>
 <tr class="memdesc:ga2d07751d060ddf51dad4702d441f651a"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a given symbolic expression <code>e</code>, generates two C functions, <code>&lt;function_name&gt;</code> and <code>&lt;function_name&gt;_meta</code>.  <a href="group__codegen.html#ga2d07751d060ddf51dad4702d441f651a">More...</a><br /></td></tr>
 <tr class="separator:ga2d07751d060ddf51dad4702d441f651a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2288,6 +2300,43 @@ v.rows() == expressions.rows(). </dd></dl>
   <table class="exception">
     <tr><td class="paramname">std::runtime_error</td><td>if there exists a variable in <code>m</code> whose value is not provided by <code>env</code>. </td></tr>
     <tr><td class="paramname">std::runtime_error</td><td>if NaN is detected during evaluation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a87b9a5af49a6b9d6140189a132c4c2d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87b9a5af49a6b9d6140189a132c4c2d7">&#9670;&nbsp;</a></span>EvaluateChebyshevPolynomial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double drake::symbolic::EvaluateChebyshevPolynomial </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>variable_val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
+          <td class="paramname"><em>degree</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evaluates a Chebyshev polynomial at a given value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variable_val</td><td>The value of the variable. </td></tr>
+    <tr><td class="paramname">degree</td><td>The degree of the Chebyshev polynomial. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6247,8 +6296,42 @@ vars.size() == <code>n</code>. </dd></dl>
 
 </div>
 </div>
+<a id="a76deccd3cd3f64d9b875dd5116792c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76deccd3cd3f64d9b875dd5116792c07">&#9670;&nbsp;</a></span>operator *() <span class="overload">[1/27]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html">ChebyshevBasisElement</a>, double&gt; drake::symbolic::operator * </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html">ChebyshevBasisElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html">ChebyshevBasisElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the product of two Chebyshev basis elements. </p>
+<p>Since Tₘ(x) * Tₙ(x) = 0.5 (Tₘ₊ₙ(x) + Tₘ₋ₙ(x)) if m &gt;= n, the product of Chebyshev basis elements is the weighted sum of several Chebyshev basis elements. For example T₁(x)T₂(y) * T₃(x)T₁(y) = 0.25*(T₄(x)T₃(y) + T₂(x)T₃(y)</p><ul>
+<li>T₄(x)T₁(y) + T₂(x)T₁(y)) <dl class="section return"><dt>Returns</dt><dd>the result of the product, from each <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html" title="ChebyshevBasisElement represents an element of Chebyshev polynomial basis, written as the product of ...">ChebyshevBasisElement</a> to its coefficient. In the example above, it returns (T₄(x)T₃(y) -&gt; 0.25), (T₂(x)T₃(y) -&gt; 0.25), (T₄(x)T₁(y) -&gt; 0.25) and (T₂(x)T₁(y) -&gt; 0.25) </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
 <a id="a97671d479c281451e703b58530b17082"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97671d479c281451e703b58530b17082">&#9670;&nbsp;</a></span>operator *() <span class="overload">[1/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a97671d479c281451e703b58530b17082">&#9670;&nbsp;</a></span>operator *() <span class="overload">[2/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6276,7 +6359,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="ad71ee73fb966e97f0de864fa7cdb3692"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad71ee73fb966e97f0de864fa7cdb3692">&#9670;&nbsp;</a></span>operator *() <span class="overload">[2/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71ee73fb966e97f0de864fa7cdb3692">&#9670;&nbsp;</a></span>operator *() <span class="overload">[3/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6304,7 +6387,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a1c5c62b680b89f6fe992e5bc6b01e6c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c5c62b680b89f6fe992e5bc6b01e6c7">&#9670;&nbsp;</a></span>operator *() <span class="overload">[3/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c5c62b680b89f6fe992e5bc6b01e6c7">&#9670;&nbsp;</a></span>operator *() <span class="overload">[4/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6332,7 +6415,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a1611c62700b00b9861c339879899a121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1611c62700b00b9861c339879899a121">&#9670;&nbsp;</a></span>operator *() <span class="overload">[4/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1611c62700b00b9861c339879899a121">&#9670;&nbsp;</a></span>operator *() <span class="overload">[5/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6360,7 +6443,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a347249d56768661c610bf3bafb5ff167"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a347249d56768661c610bf3bafb5ff167">&#9670;&nbsp;</a></span>operator *() <span class="overload">[5/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a347249d56768661c610bf3bafb5ff167">&#9670;&nbsp;</a></span>operator *() <span class="overload">[6/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6388,7 +6471,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a791475e9d37a8e5fd5f1314045428997"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a791475e9d37a8e5fd5f1314045428997">&#9670;&nbsp;</a></span>operator *() <span class="overload">[6/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a791475e9d37a8e5fd5f1314045428997">&#9670;&nbsp;</a></span>operator *() <span class="overload">[7/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6418,7 +6501,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a267c5d854d55ce16b1e58490ff426661"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a267c5d854d55ce16b1e58490ff426661">&#9670;&nbsp;</a></span>operator *() <span class="overload">[7/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a267c5d854d55ce16b1e58490ff426661">&#9670;&nbsp;</a></span>operator *() <span class="overload">[8/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6467,7 +6550,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="ae3b6eea79253234902bbcf4643e34d81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3b6eea79253234902bbcf4643e34d81">&#9670;&nbsp;</a></span>operator *() <span class="overload">[8/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3b6eea79253234902bbcf4643e34d81">&#9670;&nbsp;</a></span>operator *() <span class="overload">[9/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6495,7 +6578,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a9e804fc81cb6d40414b816f559f81a7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e804fc81cb6d40414b816f559f81a7d">&#9670;&nbsp;</a></span>operator *() <span class="overload">[9/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e804fc81cb6d40414b816f559f81a7d">&#9670;&nbsp;</a></span>operator *() <span class="overload">[10/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6523,7 +6606,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="af38134e3394d8c40a7a91490154de2b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af38134e3394d8c40a7a91490154de2b3">&#9670;&nbsp;</a></span>operator *() <span class="overload">[10/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af38134e3394d8c40a7a91490154de2b3">&#9670;&nbsp;</a></span>operator *() <span class="overload">[11/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6551,7 +6634,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="ab04739aabb37142340b869a126cc54a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab04739aabb37142340b869a126cc54a1">&#9670;&nbsp;</a></span>operator *() <span class="overload">[11/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04739aabb37142340b869a126cc54a1">&#9670;&nbsp;</a></span>operator *() <span class="overload">[12/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6579,7 +6662,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a812892dbfc6443dc1eed055e1915f5e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a812892dbfc6443dc1eed055e1915f5e4">&#9670;&nbsp;</a></span>operator *() <span class="overload">[12/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a812892dbfc6443dc1eed055e1915f5e4">&#9670;&nbsp;</a></span>operator *() <span class="overload">[13/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6607,7 +6690,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a46fe276a728b54ce277fcc972fd28d78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46fe276a728b54ce277fcc972fd28d78">&#9670;&nbsp;</a></span>operator *() <span class="overload">[13/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a46fe276a728b54ce277fcc972fd28d78">&#9670;&nbsp;</a></span>operator *() <span class="overload">[14/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6635,7 +6718,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="aa78d0e5127e0fa0fab9f26c075c6ad9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa78d0e5127e0fa0fab9f26c075c6ad9d">&#9670;&nbsp;</a></span>operator *() <span class="overload">[14/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78d0e5127e0fa0fab9f26c075c6ad9d">&#9670;&nbsp;</a></span>operator *() <span class="overload">[15/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6663,7 +6746,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a1a0eab276a88883d8e2607630cb93bc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a0eab276a88883d8e2607630cb93bc5">&#9670;&nbsp;</a></span>operator *() <span class="overload">[15/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a0eab276a88883d8e2607630cb93bc5">&#9670;&nbsp;</a></span>operator *() <span class="overload">[16/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6691,7 +6774,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="ab66975f1892907d118eb8cb98d6465c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab66975f1892907d118eb8cb98d6465c7">&#9670;&nbsp;</a></span>operator *() <span class="overload">[16/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66975f1892907d118eb8cb98d6465c7">&#9670;&nbsp;</a></span>operator *() <span class="overload">[17/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6719,7 +6802,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="aece6b8e4e48de49ed447c6d62b81ce88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aece6b8e4e48de49ed447c6d62b81ce88">&#9670;&nbsp;</a></span>operator *() <span class="overload">[17/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aece6b8e4e48de49ed447c6d62b81ce88">&#9670;&nbsp;</a></span>operator *() <span class="overload">[18/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6759,7 +6842,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a1dbec6a09664cb563d86071a7be38913"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dbec6a09664cb563d86071a7be38913">&#9670;&nbsp;</a></span>operator *() <span class="overload">[18/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dbec6a09664cb563d86071a7be38913">&#9670;&nbsp;</a></span>operator *() <span class="overload">[19/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6787,7 +6870,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="af9672ecf8933b210eeedda1d56e670c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9672ecf8933b210eeedda1d56e670c8">&#9670;&nbsp;</a></span>operator *() <span class="overload">[19/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af9672ecf8933b210eeedda1d56e670c8">&#9670;&nbsp;</a></span>operator *() <span class="overload">[20/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6828,7 +6911,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a106c3f1e5e8ffaf1d667a7c1858753ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a106c3f1e5e8ffaf1d667a7c1858753ad">&#9670;&nbsp;</a></span>operator *() <span class="overload">[20/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a106c3f1e5e8ffaf1d667a7c1858753ad">&#9670;&nbsp;</a></span>operator *() <span class="overload">[21/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6869,7 +6952,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a9128a895c3456d01b9c3c5b76bedf68b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9128a895c3456d01b9c3c5b76bedf68b">&#9670;&nbsp;</a></span>operator *() <span class="overload">[21/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9128a895c3456d01b9c3c5b76bedf68b">&#9670;&nbsp;</a></span>operator *() <span class="overload">[22/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6910,7 +6993,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a9bd1b0e780b38b3c3538e516ba979f89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bd1b0e780b38b3c3538e516ba979f89">&#9670;&nbsp;</a></span>operator *() <span class="overload">[22/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bd1b0e780b38b3c3538e516ba979f89">&#9670;&nbsp;</a></span>operator *() <span class="overload">[23/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6951,7 +7034,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="aa379ca3565b4c97f5124bc78599febf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa379ca3565b4c97f5124bc78599febf4">&#9670;&nbsp;</a></span>operator *() <span class="overload">[23/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa379ca3565b4c97f5124bc78599febf4">&#9670;&nbsp;</a></span>operator *() <span class="overload">[24/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6992,7 +7075,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a4c03c6df6e36906365f51623fd53bdb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c03c6df6e36906365f51623fd53bdb6">&#9670;&nbsp;</a></span>operator *() <span class="overload">[24/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c03c6df6e36906365f51623fd53bdb6">&#9670;&nbsp;</a></span>operator *() <span class="overload">[25/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7033,7 +7116,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="adac78e96efaa07849f158591192b2dca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adac78e96efaa07849f158591192b2dca">&#9670;&nbsp;</a></span>operator *() <span class="overload">[25/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adac78e96efaa07849f158591192b2dca">&#9670;&nbsp;</a></span>operator *() <span class="overload">[26/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7063,7 +7146,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="aac410f7e82c9d06e796d7fcb4508f5e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac410f7e82c9d06e796d7fcb4508f5e4">&#9670;&nbsp;</a></span>operator *() <span class="overload">[26/26]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aac410f7e82c9d06e796d7fcb4508f5e4">&#9670;&nbsp;</a></span>operator *() <span class="overload">[27/27]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

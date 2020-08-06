@@ -8,6 +8,7 @@ var namespacedrake_1_1examples =
     [ "fibonacci", "namespacedrake_1_1examples_1_1fibonacci.html", "namespacedrake_1_1examples_1_1fibonacci" ],
     [ "kuka_iiwa_arm", "namespacedrake_1_1examples_1_1kuka__iiwa__arm.html", "namespacedrake_1_1examples_1_1kuka__iiwa__arm" ],
     [ "manipulation_station", "namespacedrake_1_1examples_1_1manipulation__station.html", "namespacedrake_1_1examples_1_1manipulation__station" ],
+    [ "mass_spring_cloth", "namespacedrake_1_1examples_1_1mass__spring__cloth.html", "namespacedrake_1_1examples_1_1mass__spring__cloth" ],
     [ "multibody", "namespacedrake_1_1examples_1_1multibody.html", null ],
     [ "particles", "namespacedrake_1_1examples_1_1particles.html", "namespacedrake_1_1examples_1_1particles" ],
     [ "pendulum", "namespacedrake_1_1examples_1_1pendulum.html", "namespacedrake_1_1examples_1_1pendulum" ],

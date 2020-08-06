@@ -8,6 +8,7 @@ var dir_bf85a0c13984f214f436b2edc519c6dd =
     [ "fibonacci", "dir_3dcc4f971d55774b1875fdd225f3ac02.html", "dir_3dcc4f971d55774b1875fdd225f3ac02" ],
     [ "kuka_iiwa_arm", "dir_d42ade6542543a8b520c5d5191846d08.html", "dir_d42ade6542543a8b520c5d5191846d08" ],
     [ "manipulation_station", "dir_970ffa4dc1494551190363316edbd789.html", "dir_970ffa4dc1494551190363316edbd789" ],
+    [ "mass_spring_cloth", "dir_1cfb1308721b0b1c7dbbf4fcf7c61022.html", "dir_1cfb1308721b0b1c7dbbf4fcf7c61022" ],
     [ "multibody", "dir_9acdd6771460017440c69ee654743722.html", "dir_9acdd6771460017440c69ee654743722" ],
     [ "particles", "dir_7f529e11694ce2aa9c93efef3543018b.html", "dir_7f529e11694ce2aa9c93efef3543018b" ],
     [ "pendulum", "dir_dc85ca307a056e878fb7cdf32e7a9a8e.html", "dir_dc85ca307a056e878fb7cdf32e7a9a8e" ],

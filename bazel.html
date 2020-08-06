@@ -308,8 +308,10 @@ development tools:</p>
 debuggging symbols, and produce nicely formatted browse-able coverage reports.</p>
 <p>Drake’s <code class="docutils literal"><span class="pre">kcov</span></code> build system integration is only supported on Ubuntu, not
 macOS.</p>
-<p>To use kcov, you must first run Drake’s <code class="docutils literal"><span class="pre">install_prereqs</span></code> setup script using
-the <code class="docutils literal"><span class="pre">--with-kcov</span></code> option.</p>
+<p>To use kcov on Ubuntu 18.04 (Bionic), you must first run Drake’s
+<code class="docutils literal"><span class="pre">install_prereqs</span></code> setup script using the <code class="docutils literal"><span class="pre">--with-kcov</span></code> option. On Ubuntu
+20.04 (Focal), the option is ignored. The macOS <code class="docutils literal"><span class="pre">install_prereqs</span></code> setup
+script does not install kcov, and passing a <code class="docutils literal"><span class="pre">--with-kcov</span></code> option is an error.</p>
 <p>To analyze test coverage, run one (or more) tests under <code class="docutils literal"><span class="pre">kcov</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">bazel</span> <span class="n">test</span> <span class="o">--</span><span class="n">config</span><span class="o">=</span><span class="n">kcov</span> <span class="n">common</span><span class="p">:</span><span class="n">polynomial_test</span>
 </pre></div>

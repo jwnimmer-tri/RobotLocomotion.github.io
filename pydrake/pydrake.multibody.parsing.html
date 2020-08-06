@@ -338,6 +338,34 @@ tag will be used.</dd>
 </dd></dl>
 
 <dl class="method">
+<dt id="pydrake.multibody.parsing.Parser.AddModelFromString">
+<code class="descname">AddModelFromString</code><span class="sig-paren">(</span><em>self: pydrake.multibody.parsing.Parser</em>, <em>file_contents: str</em>, <em>file_type: str</em>, <em>model_name: str = ''</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.tree.ModelInstanceIndex<a class="headerlink" href="#pydrake.multibody.parsing.Parser.AddModelFromString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses the SDF or URDF XML data passed given in <code class="docutils literal"><span class="pre">file_contents</span></code> and
+adds one model to <code class="docutils literal"><span class="pre">plant</span></code>. It is an error to call this using an SDF
+with more than one <code class="docutils literal"><span class="pre">&lt;model&gt;</span></code> element.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">file_contents</span></code>:</dt>
+<dd>The XML data to be parsed.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">file_type</span></code>:</dt>
+<dd>The data format; must be either “sdf” or “urdf”.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">model_name</span></code>:</dt>
+<dd>The name given to the newly created instance of this model. If
+empty, the “name” attribute from the <code class="docutils literal"><span class="pre">&lt;model&gt;</span></code> or <code class="docutils literal"><span class="pre">&lt;robot&gt;</span></code>
+tag will be used.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The instance index for the newly added model.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body">RuntimeError in case of errors.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="pydrake.multibody.parsing.Parser.package_map">
 <code class="descname">package_map</code><span class="sig-paren">(</span><em>self: pydrake.multibody.parsing.Parser</em><span class="sig-paren">)</span> &#x2192; pydrake.multibody.parsing.PackageMap<a class="headerlink" href="#pydrake.multibody.parsing.Parser.package_map" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gets a mutable reference to the PackageMap used by this parser.</p>

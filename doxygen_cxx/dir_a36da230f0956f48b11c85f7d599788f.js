@@ -65,6 +65,7 @@ var dir_a36da230f0956f48b11c85f7d599788f =
     [ "sorted_pair.h", "sorted__pair_8h.html", "sorted__pair_8h" ],
     [ "sorted_vectors_have_intersection.h", "sorted__vectors__have__intersection_8h.html", "sorted__vectors__have__intersection_8h" ],
     [ "symbolic.h", "symbolic_8h.html", "symbolic_8h" ],
+    [ "symbolic_chebyshev_basis_element.h", "symbolic__chebyshev__basis__element_8h.html", "symbolic__chebyshev__basis__element_8h" ],
     [ "symbolic_chebyshev_polynomial.h", "symbolic__chebyshev__polynomial_8h.html", "symbolic__chebyshev__polynomial_8h" ],
     [ "symbolic_codegen.h", "symbolic__codegen_8h.html", "symbolic__codegen_8h" ],
     [ "symbolic_decompose.h", "symbolic__decompose_8h.html", "symbolic__decompose_8h" ],
@@ -79,6 +80,9 @@ var dir_a36da230f0956f48b11c85f7d599788f =
     [ "symbolic_monomial.h", "symbolic__monomial_8h.html", "symbolic__monomial_8h" ],
     [ "symbolic_monomial_util.h", "symbolic__monomial__util_8h.html", "symbolic__monomial__util_8h" ],
     [ "symbolic_polynomial.h", "symbolic__polynomial_8h.html", "symbolic__polynomial_8h" ],
+    [ "symbolic_polynomial_basis_element.h", "symbolic__polynomial__basis__element_8h.html", [
+      [ "PolynomialBasisElement", "classdrake_1_1symbolic_1_1_polynomial_basis_element.html", "classdrake_1_1symbolic_1_1_polynomial_basis_element" ]
+    ] ],
     [ "symbolic_rational_function.h", "symbolic__rational__function_8h.html", "symbolic__rational__function_8h" ],
     [ "symbolic_simplification.h", "symbolic__simplification_8h.html", "symbolic__simplification_8h" ],
     [ "symbolic_variable.h", "symbolic__variable_8h.html", "symbolic__variable_8h" ],

@@ -454,6 +454,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af2e1d0462e0e3506873f993879d48898"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1solvers_1_1_solver_id.html">SolverId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1solvers.html#af2e1d0462e0e3506873f993879d48898">ChooseBestSolver</a> (const <a class="el" href="classdrake_1_1solvers_1_1_mathematical_program.html">MathematicalProgram</a> &amp;prog)</td></tr>
 <tr class="memdesc:af2e1d0462e0e3506873f993879d48898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose the best solver given the formulation in the optimization program and the availability of the solvers.  <a href="#af2e1d0462e0e3506873f993879d48898">More...</a><br /></td></tr>
 <tr class="separator:af2e1d0462e0e3506873f993879d48898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b69ef16f17a627abcbe62dde1d4807"><td class="memItemLeft" align="right" valign="top">const std::set&lt; <a class="el" href="classdrake_1_1solvers_1_1_solver_id.html">SolverId</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1solvers.html#a55b69ef16f17a627abcbe62dde1d4807">GetKnownSolvers</a> ()</td></tr>
+<tr class="memdesc:a55b69ef16f17a627abcbe62dde1d4807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the set of solvers known to ChooseBestSolver.  <a href="#a55b69ef16f17a627abcbe62dde1d4807">More...</a><br /></td></tr>
+<tr class="separator:a55b69ef16f17a627abcbe62dde1d4807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0a32aadfdc1241e4e39f206479b6000"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classdrake_1_1solvers_1_1_solver_interface.html">SolverInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1solvers.html#ac0a32aadfdc1241e4e39f206479b6000">MakeSolver</a> (const <a class="el" href="classdrake_1_1solvers_1_1_solver_id.html">SolverId</a> &amp;id)</td></tr>
 <tr class="memdesc:ac0a32aadfdc1241e4e39f206479b6000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the solver ID, create the solver with the matching ID.  <a href="#ac0a32aadfdc1241e4e39f206479b6000">More...</a><br /></td></tr>
 <tr class="separator:ac0a32aadfdc1241e4e39f206479b6000"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2407,6 +2410,25 @@ s.t ∑ᵢ yᵢAᵢ - C ≽ 0
 </dl>
 <p>Note: Currently most constraints have the empty string as the description, so the <a class="el" href="classdrake_1_1_nice_type_name.html" title="Obtains canonicalized, platform-independent, human-readable names for arbitrarily-complicated C++ typ...">NiceTypeName</a> of the <a class="el" href="classdrake_1_1solvers_1_1_constraint.html" title="A constraint is a function + lower and upper bounds.">Constraint</a> is used instead. Use e.g. <code>prog.AddConstraint(x == 1).evaluator().set_description(str)</code> to make this method more specific/useful. (Deprecated.) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>"This function is replaced by " "MathematicalProgramResult::GetInfeasibleConstraintNames(prog, tolerance);" <br />
  This will be removed from Drake on or after "2020-09-01" .</dd></dl>
+
+</div>
+</div>
+<a id="a55b69ef16f17a627abcbe62dde1d4807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55b69ef16f17a627abcbe62dde1d4807">&#9670;&nbsp;</a></span>GetKnownSolvers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::set&lt;<a class="el" href="classdrake_1_1solvers_1_1_solver_id.html">SolverId</a>&gt;&amp; drake::solvers::GetKnownSolvers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the set of solvers known to ChooseBestSolver. </p>
 
 </div>
 </div>

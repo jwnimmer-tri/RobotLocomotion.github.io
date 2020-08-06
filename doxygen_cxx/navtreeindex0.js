@@ -71,11 +71,11 @@ var NAVTREEINDEX0 =
 "bot__core__lcm__encode__decode_8h.html#acf4e3b16ffca40398aaf67fd94941c08":[4,0,0,6,5,0,2],
 "bot__core__lcm__encode__decode_8h.html#af00779bcaa55e611cfec885c728ac28a":[4,0,0,6,5,0,3],
 "bouncing__ball_8h.html":[4,0,0,3,3,0],
-"bouncing__ball__plant_8h.html":[4,0,0,3,15,0],
+"bouncing__ball__plant_8h.html":[4,0,0,3,16,0],
 "bounding__volume__hierarchy_8h.html":[4,0,0,4,0,0],
 "branch__and__bound_8h.html":[4,0,0,10,4],
-"brick__static__equilibrium__constraint_8h.html":[4,0,0,3,11,0],
-"brick__static__equilibrium__constraint_8h.html#a0e17e8c15421b3bf195f9ef1b724fc14":[4,0,0,3,11,0,1],
+"brick__static__equilibrium__constraint_8h.html":[4,0,0,3,12,0],
+"brick__static__equilibrium__constraint_8h.html#a0e17e8c15421b3bf195f9ef1b724fc14":[4,0,0,3,12,0,1],
 "bspline__basis_8h.html":[4,0,0,7,3],
 "bspline__trajectory_8h.html":[4,0,0,1,2,0],
 "buffer__dim_8h.html":[4,0,0,4,2,0,0],
@@ -94,7 +94,8 @@ var NAVTREEINDEX0 =
 "check__constraint__eval__nonsymbolic_8h.html":[4,0,0,10,1,0],
 "check__constraint__eval__nonsymbolic_8h.html#a38add06103af2ff100219257e2ef2ada":[4,0,0,10,1,0,0],
 "choose__best__solver_8h.html":[4,0,0,10,5],
-"choose__best__solver_8h.html#ac0a32aadfdc1241e4e39f206479b6000":[4,0,0,10,5,1],
+"choose__best__solver_8h.html#a55b69ef16f17a627abcbe62dde1d4807":[4,0,0,10,5,1],
+"choose__best__solver_8h.html#ac0a32aadfdc1241e4e39f206479b6000":[4,0,0,10,5,2],
 "choose__best__solver_8h.html#af2e1d0462e0e3506873f993879d48898":[4,0,0,10,5,0],
 "classdrake_1_1_abstract_value.html":[3,0,0,17],
 "classdrake_1_1_abstract_value.html#a152ec6f223695f5a4f3b3e87ccc32ac4":[3,0,0,17,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classdrake_1_1_random_generator.html":[3,0,0,40],
 "classdrake_1_1_random_generator.html#a0a528a94da8ddce6eea385b93757b3fa":[3,0,0,40,4],
 "classdrake_1_1_random_generator.html#a225b04ff27646e6105e31c25687fce3d":[3,0,0,40,3],
-"classdrake_1_1_random_generator.html#a229f4c6190dd60c0d2876fb702199101":[3,0,0,40,2],
-"classdrake_1_1_random_generator.html#a2cdcb3683599478b35326a45c926c35d":[3,0,0,40,1]
+"classdrake_1_1_random_generator.html#a229f4c6190dd60c0d2876fb702199101":[3,0,0,40,2]
 };

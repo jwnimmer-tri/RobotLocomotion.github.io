@@ -139,6 +139,13 @@ are necessary for <a class="reference internal" href="from_binary.html#binary-in
 <code class="docutils literal"><span class="pre">source_distribution</span></code> will also install prerequisites in
 <code class="docutils literal"><span class="pre">binary_distribution</span></code>, you do not need to duplicate binary prerequisites in
 <code class="docutils literal"><span class="pre">source_distribution</span></code>.</p>
+<p>Prerequisites of the <code class="docutils literal"><span class="pre">source_distribution</span></code> are further split into three
+parts: those that are needed for building and running the <code class="docutils literal"><span class="pre">//:install</span></code> target
+using <code class="docutils literal"><span class="pre">bazel</span></code> (<code class="docutils literal"><span class="pre">bazel</span> <span class="pre">run</span> <span class="pre">//:install</span></code>), those additional dependencies for
+building and running tests (<code class="docutils literal"><span class="pre">bazel</span> <span class="pre">test</span> <span class="pre">...</span></code>), and those additional
+dependencies for running select maintainer scripts (e.g., <code class="docutils literal"><span class="pre">mirror_to_s3.py</span></code>
+and <code class="docutils literal"><span class="pre">new_release.py</span></code>). Again, it is expected that a given prerequisite will
+only appear in one of these lists.</p>
 <p>When updating prerequisites with these scripts, the normal experimental CI will
 most likely fail. To test new prerequisites, you should first request
 unprovisioned experimental builds, e.g.:</p>

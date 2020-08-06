@@ -514,6 +514,9 @@ var hierarchy =
     [ "PointPairContactInfo< T >", "classdrake_1_1multibody_1_1_point_pair_contact_info.html", null ],
     [ "Polynomial", "classdrake_1_1symbolic_1_1_polynomial.html", null ],
     [ "Polynomial< T >", "classdrake_1_1_polynomial.html", null ],
+    [ "PolynomialBasisElement", "classdrake_1_1symbolic_1_1_polynomial_basis_element.html", [
+      [ "ChebyshevBasisElement", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html", null ]
+    ] ],
     [ "PortBase", "classdrake_1_1systems_1_1_port_base.html", [
       [ "InputPortBase", "classdrake_1_1systems_1_1_input_port_base.html", [
         [ "InputPort< T >", "classdrake_1_1systems_1_1_input_port.html", null ],
@@ -697,6 +700,7 @@ var hierarchy =
             [ "BeadOnAWire< T >", "classdrake_1_1examples_1_1bead__on__a__wire_1_1_bead_on_a_wire.html", null ],
             [ "BouncingBall< T >", "classdrake_1_1examples_1_1bouncing__ball_1_1_bouncing_ball.html", null ],
             [ "CompassGait< T >", "classdrake_1_1examples_1_1compass__gait_1_1_compass_gait.html", null ],
+            [ "ClothSpringModel< T >", "classdrake_1_1examples_1_1mass__spring__cloth_1_1_cloth_spring_model.html", null ],
             [ "Particle< T >", "classdrake_1_1examples_1_1particles_1_1_particle.html", null ],
             [ "PendulumPlant< T >", "classdrake_1_1examples_1_1pendulum_1_1_pendulum_plant.html", null ],
             [ "QuadrotorPlant< T >", "classdrake_1_1examples_1_1quadrotor_1_1_quadrotor_plant.html", null ],
@@ -798,6 +802,7 @@ var hierarchy =
             [ "AllegroStatusSender", "classdrake_1_1examples_1_1allegro__hand_1_1_allegro_status_sender.html", null ],
             [ "CompassGaitGeometry", "classdrake_1_1examples_1_1compass__gait_1_1_compass_gait_geometry.html", null ],
             [ "FibonacciDifferenceEquation", "classdrake_1_1examples_1_1fibonacci_1_1_fibonacci_difference_equation.html", null ],
+            [ "ClothSpringModelGeometry", "classdrake_1_1examples_1_1mass__spring__cloth_1_1_cloth_spring_model_geometry.html", null ],
             [ "ParticleGeometry", "classdrake_1_1examples_1_1particles_1_1_particle_geometry.html", null ],
             [ "PendulumGeometry", "classdrake_1_1examples_1_1pendulum_1_1_pendulum_geometry.html", null ],
             [ "GripperCommandDecoder", "classdrake_1_1examples_1_1planar__gripper_1_1_gripper_command_decoder.html", null ],

@@ -1,6 +1,7 @@
 var namespacedrake_1_1symbolic =
 [
     [ "BinaryExpressionCell", "classdrake_1_1symbolic_1_1_binary_expression_cell.html", "classdrake_1_1symbolic_1_1_binary_expression_cell" ],
+    [ "ChebyshevBasisElement", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html", "classdrake_1_1symbolic_1_1_chebyshev_basis_element" ],
     [ "ChebyshevPolynomial", "classdrake_1_1symbolic_1_1_chebyshev_polynomial.html", "classdrake_1_1symbolic_1_1_chebyshev_polynomial" ],
     [ "CodeGenVisitor", "classdrake_1_1symbolic_1_1_code_gen_visitor.html", "classdrake_1_1symbolic_1_1_code_gen_visitor" ],
     [ "Environment", "classdrake_1_1symbolic_1_1_environment.html", "classdrake_1_1symbolic_1_1_environment" ],
@@ -56,6 +57,7 @@ var namespacedrake_1_1symbolic =
     [ "Monomial", "classdrake_1_1symbolic_1_1_monomial.html", "classdrake_1_1symbolic_1_1_monomial" ],
     [ "NaryFormulaCell", "classdrake_1_1symbolic_1_1_nary_formula_cell.html", "classdrake_1_1symbolic_1_1_nary_formula_cell" ],
     [ "Polynomial", "classdrake_1_1symbolic_1_1_polynomial.html", "classdrake_1_1symbolic_1_1_polynomial" ],
+    [ "PolynomialBasisElement", "classdrake_1_1symbolic_1_1_polynomial_basis_element.html", "classdrake_1_1symbolic_1_1_polynomial_basis_element" ],
     [ "RationalFunction", "classdrake_1_1symbolic_1_1_rational_function.html", "classdrake_1_1symbolic_1_1_rational_function" ],
     [ "RelationalFormulaCell", "classdrake_1_1symbolic_1_1_relational_formula_cell.html", "classdrake_1_1symbolic_1_1_relational_formula_cell" ],
     [ "RewritingRule", "classdrake_1_1symbolic_1_1_rewriting_rule.html", "classdrake_1_1symbolic_1_1_rewriting_rule" ],
