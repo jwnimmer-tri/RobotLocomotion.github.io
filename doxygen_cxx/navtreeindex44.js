@@ -1,5 +1,6 @@
 var NAVTREEINDEX44 =
 {
+"structdrake_1_1systems_1_1_antiderivative_function_1_1_integrable_function_context.html#a4ea421bf7af0092fa62093e57aa8ef0c":[3,0,0,13,13,0,3],
 "structdrake_1_1systems_1_1_antiderivative_function_1_1_integrable_function_context.html#a679aaa175c31a52db8c054ce5387f50b":[3,0,0,13,13,0,1],
 "structdrake_1_1systems_1_1_antiderivative_function_1_1_integrable_function_context.html#ab853a3a6d8692d0994a854ad92b6ab3d":[3,0,0,13,13,0,2],
 "structdrake_1_1systems_1_1_antiderivative_function_1_1_integrable_function_context.html#ac889e7a98cdd339004f5997d60da4304":[3,0,0,13,13,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX44 =
 "structstd_1_1hash_3_01drake_1_1symbolic_1_1_monomial_01_4.html":[3,0,1,13],
 "structstd_1_1hash_3_01drake_1_1symbolic_1_1_polynomial_01_4.html":[3,0,1,14],
 "structstd_1_1hash_3_01drake_1_1symbolic_1_1_variable_01_4.html":[3,0,1,15],
-"structstd_1_1hash_3_01drake_1_1symbolic_1_1_variables_01_4.html":[3,0,1,16],
-"structstd_1_1hash_3_01drake_1_1systems_1_1sensors_1_1_color_3_01_t_01_4_01_4.html":[3,0,1,17]
+"structstd_1_1hash_3_01drake_1_1symbolic_1_1_variables_01_4.html":[3,0,1,16]
 };

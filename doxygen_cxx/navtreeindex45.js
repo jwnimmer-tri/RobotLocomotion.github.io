@@ -1,5 +1,6 @@
 var NAVTREEINDEX45 =
 {
+"structstd_1_1hash_3_01drake_1_1systems_1_1sensors_1_1_color_3_01_t_01_4_01_4.html":[3,0,1,17],
 "structstd_1_1hash_3_01drake_1_1systems_1_1sensors_1_1_pixel_type_01_4.html":[3,0,1,18],
 "structstd_1_1less_3_01drake_1_1solvers_1_1_solver_id_01_4.html":[3,0,1,20],
 "structstd_1_1less_3_01drake_1_1solvers_1_1_solver_id_01_4.html#aacab57c845ae554fb21a347bf8137ef3":[3,0,1,20,0],
@@ -10,8 +11,8 @@ var NAVTREEINDEX45 =
 "structstd_1_1less_3_01drake_1_1symbolic_1_1_variable_01_4.html":[3,0,1,23],
 "structstd_1_1less_3_01drake_1_1symbolic_1_1_variable_01_4.html#a69e9ace88f698342e05dcf0cc1899818":[3,0,1,23,0],
 "structstd_1_1numeric__limits_3_01drake_1_1symbolic_1_1_expression_01_4.html":[3,0,1,25],
-"subvector_8h.html":[4,0,0,11,3,35],
-"supervector_8h.html":[4,0,0,11,3,36],
+"subvector_8h.html":[4,0,0,11,3,36],
+"supervector_8h.html":[4,0,0,11,3,37],
 "surface__mesh_8h.html":[4,0,0,4,0,33],
 "surface__mesh_8h.html#a4b6bae4ff910e57daa4b0ac8e4f481b8":[4,0,0,4,0,33,5],
 "surface__mesh_8h.html#a831785d5225564e2a531b4fd2445e1d6":[4,0,0,4,0,33,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX45 =
 "symbolic__expression__cell_8h.html#ab2b19c2ecb35334ffe962c6f81928a59":[4,0,0,1,56,111],
 "symbolic__expression__cell_8h.html#ab3f6cc91aa5d1f9133526887cec35cd4":[4,0,0,1,56,35],
 "symbolic__expression__cell_8h.html#ab651038b9eb8bfe5e9eee3a972d5e3db":[4,0,0,1,56,92],
-"symbolic__expression__cell_8h.html#abacb0e6cb526379b60fd156af4b527cf":[4,0,0,1,56,88],
-"symbolic__expression__cell_8h.html#abe7e04a20dd742f4b319659a7bcca24f":[4,0,0,1,56,77]
+"symbolic__expression__cell_8h.html#abacb0e6cb526379b60fd156af4b527cf":[4,0,0,1,56,88]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"simulator__gflags_8h.html#a2ddf6e3d8e5f2ecb32db146fad3ce6bd":[4,0,0,11,0,23,1],
 "simulator__gflags_8h.html#a3d75057ea20bd20cb537d756182baacd":[4,0,0,11,0,23,7],
 "simulator__gflags_8h.html#a44b2301806f1e1407fe8deee5d9e3304":[4,0,0,11,0,23,6],
 "simulator__gflags_8h.html#a612cd2f0112fbe6b3f1465cdc6f90b0e":[4,0,0,11,0,23,0],
@@ -8,7 +9,7 @@ var NAVTREEINDEX42 =
 "simulator__print__stats_8h.html#a3b136438cfc1637c0cd5724187f8153a":[4,0,0,11,0,24,0],
 "simulator__status_8h.html":[4,0,0,11,0,25],
 "sine_8h.html":[4,0,0,11,7,20],
-"single__output__vector__source_8h.html":[4,0,0,11,3,33],
+"single__output__vector__source_8h.html":[4,0,0,11,3,34],
 "sliding__friction__complementarity__constraint_8h.html":[4,0,0,8,5,3],
 "sliding__friction__complementarity__constraint_8h.html#aa1fd44e85ab30519ef7a904a4ebeb82d":[4,0,0,8,5,3,0],
 "sliding__friction__complementarity__constraint_8h.html#ad168321c6009ddda8ee2ca9abbef90b1":[4,0,0,8,5,3,1],
@@ -86,7 +87,7 @@ var NAVTREEINDEX42 =
 "spong__controller_8h.html":[4,0,0,3,0,3],
 "spring__mass__damper__system_8h.html":[4,0,0,11,0,0,14],
 "spring__mass__system_8h.html":[4,0,0,11,6,0,0],
-"state_8h.html":[4,0,0,11,3,34],
+"state_8h.html":[4,0,0,11,3,35],
 "state__feedback__controller__interface_8h.html":[4,0,0,11,1,10],
 "stateless__system_8h.html":[4,0,0,11,0,0,15],
 "static__equilibrium__constraint_8h.html":[4,0,0,8,5,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "structdrake_1_1math_1_1_gradient_3_01_derived_00_01_nq_00_011_01_4.html#ac7cad89eecaf8f9c49522b5fbb9b4491":[3,0,0,7,7,0],
 "structdrake_1_1math_1_1_gray_codes_matrix.html":[3,0,0,7,8],
 "structdrake_1_1math_1_1_gray_codes_matrix.html#a83c3b24ce255b931f182e59775510cb1":[3,0,0,7,8,0],
-"structdrake_1_1math_1_1_mat_grad_mult.html":[3,0,0,7,9],
-"structdrake_1_1math_1_1_mat_grad_mult.html#aedf6234380039a5c5cd89540d2c57045":[3,0,0,7,9,0]
+"structdrake_1_1math_1_1_mat_grad_mult.html":[3,0,0,7,9]
 };

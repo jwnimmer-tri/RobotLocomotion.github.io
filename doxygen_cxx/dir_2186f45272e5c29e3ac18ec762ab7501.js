@@ -34,7 +34,6 @@ var dir_2186f45272e5c29e3ac18ec762ab7501 =
       [ "DiagramBuilder", "classdrake_1_1systems_1_1_diagram_builder.html", "classdrake_1_1systems_1_1_diagram_builder" ]
     ] ],
     [ "diagram_context.h", "diagram__context_8h.html", [
-      [ "DiagramState", "classdrake_1_1systems_1_1_diagram_state.html", "classdrake_1_1systems_1_1_diagram_state" ],
       [ "DiagramContext", "classdrake_1_1systems_1_1_diagram_context.html", "classdrake_1_1systems_1_1_diagram_context" ]
     ] ],
     [ "diagram_continuous_state.h", "diagram__continuous__state_8h.html", [
@@ -45,6 +44,9 @@ var dir_2186f45272e5c29e3ac18ec762ab7501 =
     ] ],
     [ "diagram_output_port.h", "diagram__output__port_8h.html", [
       [ "DiagramOutputPort", "classdrake_1_1systems_1_1_diagram_output_port.html", "classdrake_1_1systems_1_1_diagram_output_port" ]
+    ] ],
+    [ "diagram_state.h", "diagram__state_8h.html", [
+      [ "DiagramState", "classdrake_1_1systems_1_1_diagram_state.html", "classdrake_1_1systems_1_1_diagram_state" ]
     ] ],
     [ "discrete_values.h", "discrete__values_8h.html", [
       [ "DiscreteValues", "classdrake_1_1systems_1_1_discrete_values.html", "classdrake_1_1systems_1_1_discrete_values" ]

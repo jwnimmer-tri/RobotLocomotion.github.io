@@ -1,5 +1,6 @@
 var NAVTREEINDEX43 =
 {
+"structdrake_1_1math_1_1_mat_grad_mult.html#aedf6234380039a5c5cd89540d2c57045":[3,0,0,7,9,0],
 "structdrake_1_1math_1_1_mat_grad_mult_mat.html":[3,0,0,7,10],
 "structdrake_1_1math_1_1_mat_grad_mult_mat.html#ace7e8b3669d26250f77f8c4e4aa7e1e4":[3,0,0,7,10,0],
 "structdrake_1_1multibody_1_1_add_multibody_plant_scene_graph_result.html":[3,0,0,8,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX43 =
 "structdrake_1_1solvers_1_1fbstab_1_1_solver_out.html#aa7f4579892c94207be5727c9175cbbf5":[3,0,0,11,0,13,1],
 "structdrake_1_1symbolic_1_1_graded_reverse_lex_order.html":[3,0,0,12,53],
 "structdrake_1_1symbolic_1_1_graded_reverse_lex_order.html#af1b666b4bbbf1ba4ad66a257f92e73a4":[3,0,0,12,53,0],
-"structdrake_1_1systems_1_1_antiderivative_function_1_1_integrable_function_context.html":[3,0,0,13,13,0],
-"structdrake_1_1systems_1_1_antiderivative_function_1_1_integrable_function_context.html#a4ea421bf7af0092fa62093e57aa8ef0c":[3,0,0,13,13,0,3]
+"structdrake_1_1systems_1_1_antiderivative_function_1_1_integrable_function_context.html":[3,0,0,13,13,0]
 };
