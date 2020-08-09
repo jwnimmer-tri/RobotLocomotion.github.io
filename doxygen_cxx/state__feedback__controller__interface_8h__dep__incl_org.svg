@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 202)">
 <title>drake/systems/controllers/state_feedback_controller_interface.h</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-202 703,-202 703,4 -4,4"/>
-<!-- Node100 -->
+<!-- Node99 -->
 <g id="node1" class="node">
-<title>Node100</title>
+<title>Node99</title>
 <g id="a_node1"><a xlink:title=" ">
 <polygon fill="#bfbfbf" stroke="#000000" points="195.5,-156.5 195.5,-197.5 341.5,-197.5 341.5,-156.5 195.5,-156.5"/>
 <text text-anchor="start" x="203.5" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/controllers</text>
@@ -20,9 +20,9 @@
 </a>
 </g>
 </g>
-<!-- Node101 -->
+<!-- Node100 -->
 <g id="node2" class="node">
-<title>Node101</title>
+<title>Node100</title>
 <g id="a_node2"><a xlink:href="kuka__torque__controller_8h.html" target="_top" xlink:title=" ">
 <polygon fill="#ffffff" stroke="#000000" points="0,-78.5 0,-119.5 131,-119.5 131,-78.5 0,-78.5"/>
 <text text-anchor="start" x="8" y="-107.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/examples/kuka</text>
@@ -31,15 +31,15 @@
 </a>
 </g>
 </g>
-<!-- Node100&#45;&gt;Node101 -->
+<!-- Node99&#45;&gt;Node100 -->
 <g id="edge1" class="edge">
-<title>Node100&#45;&gt;Node101</title>
+<title>Node99&#45;&gt;Node100</title>
 <path fill="none" stroke="#191970" d="M205.3137,-152.7215C177.6438,-142.0897 145.5217,-129.7473 119.0495,-119.5757"/>
 <polygon fill="#191970" stroke="#191970" points="204.3086,-156.0847 214.8986,-156.4044 206.8193,-149.5505 204.3086,-156.0847"/>
 </g>
-<!-- Node102 -->
+<!-- Node101 -->
 <g id="node3" class="node">
-<title>Node102</title>
+<title>Node101</title>
 <g id="a_node3"><a xlink:href="schunk__wsg__plain__controller_8h.html" target="_top" xlink:title=" ">
 <polygon fill="#ffffff" stroke="#000000" points="149,-78.5 149,-119.5 290,-119.5 290,-78.5 149,-78.5"/>
 <text text-anchor="start" x="157" y="-107.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/manipulation</text>
@@ -48,15 +48,15 @@
 </a>
 </g>
 </g>
-<!-- Node100&#45;&gt;Node102 -->
+<!-- Node99&#45;&gt;Node101 -->
 <g id="edge2" class="edge">
-<title>Node100&#45;&gt;Node102</title>
+<title>Node99&#45;&gt;Node101</title>
 <path fill="none" stroke="#191970" d="M249.9793,-147.5181C244.1559,-138.2482 237.8525,-128.2141 232.4974,-119.6898"/>
 <polygon fill="#191970" stroke="#191970" points="247.0856,-149.4915 255.3689,-156.0974 253.0131,-145.7678 247.0856,-149.4915"/>
 </g>
-<!-- Node103 -->
+<!-- Node102 -->
 <g id="node4" class="node">
-<title>Node103</title>
+<title>Node102</title>
 <g id="a_node4"><a xlink:href="inverse__dynamics__controller_8h.html" target="_top" xlink:title=" ">
 <polygon fill="#ffffff" stroke="#000000" points="216,-6 216,-36 385,-36 385,-6 216,-6"/>
 <text text-anchor="start" x="224" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/controllers</text>
@@ -64,15 +64,15 @@
 </a>
 </g>
 </g>
-<!-- Node100&#45;&gt;Node103 -->
+<!-- Node99&#45;&gt;Node102 -->
 <g id="edge3" class="edge">
-<title>Node100&#45;&gt;Node103</title>
+<title>Node99&#45;&gt;Node102</title>
 <path fill="none" stroke="#191970" d="M288.0272,-147.5749C292.7014,-139.031 297.0461,-129.4481 299.5,-120 307.0183,-91.0526 304.7784,-55.7201 302.5721,-36.0551"/>
 <polygon fill="#191970" stroke="#191970" points="284.9062,-145.9795 282.8997,-156.3826 290.9557,-149.5013 284.9062,-145.9795"/>
 </g>
-<!-- Node104 -->
+<!-- Node103 -->
 <g id="node5" class="node">
-<title>Node104</title>
+<title>Node103</title>
 <g id="a_node5"><a xlink:href="pid__controller_8h.html" target="_top" xlink:title=" ">
 <polygon fill="#ffffff" stroke="#000000" points="382,-84 382,-114 525,-114 525,-84 382,-84"/>
 <text text-anchor="start" x="390" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/controllers</text>
@@ -80,21 +80,21 @@
 </a>
 </g>
 </g>
-<!-- Node100&#45;&gt;Node104 -->
+<!-- Node99&#45;&gt;Node103 -->
 <g id="edge4" class="edge">
-<title>Node100&#45;&gt;Node104</title>
+<title>Node99&#45;&gt;Node103</title>
 <path fill="none" stroke="#191970" d="M327.0401,-152.3182C356.7911,-139.7746 391.9846,-124.9362 417.6811,-114.102"/>
 <polygon fill="#191970" stroke="#191970" points="325.4456,-149.1921 317.5909,-156.3022 328.1652,-155.6422 325.4456,-149.1921"/>
 </g>
-<!-- Node104&#45;&gt;Node103 -->
+<!-- Node103&#45;&gt;Node102 -->
 <g id="edge6" class="edge">
-<title>Node104&#45;&gt;Node103</title>
+<title>Node103&#45;&gt;Node102</title>
 <path fill="none" stroke="#191970" d="M415.0593,-79.4028C388.7475,-65.9889 354.3755,-48.4659 330.17,-36.1259"/>
 <polygon fill="#191970" stroke="#191970" points="413.5013,-82.5371 424.0001,-83.9608 416.6807,-76.3007 413.5013,-82.5371"/>
 </g>
-<!-- Node105 -->
+<!-- Node104 -->
 <g id="node6" class="node">
-<title>Node105</title>
+<title>Node104</title>
 <g id="a_node6"><a xlink:href="controlled__spring__mass__system_8h.html" target="_top" xlink:title=" ">
 <polygon fill="#ffffff" stroke="#000000" points="403.5,-.5 403.5,-41.5 537.5,-41.5 537.5,-.5 403.5,-.5"/>
 <text text-anchor="start" x="411.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/analysis</text>
@@ -103,15 +103,15 @@
 </a>
 </g>
 </g>
-<!-- Node104&#45;&gt;Node105 -->
+<!-- Node103&#45;&gt;Node104 -->
 <g id="edge5" class="edge">
-<title>Node104&#45;&gt;Node105</title>
+<title>Node103&#45;&gt;Node104</title>
 <path fill="none" stroke="#191970" d="M458.9198,-74.1327C461.206,-63.6431 463.836,-51.5761 466.0112,-41.5956"/>
 <polygon fill="#191970" stroke="#191970" points="455.4876,-73.4448 456.7778,-83.9608 462.3271,-74.9355 455.4876,-73.4448"/>
 </g>
-<!-- Node106 -->
+<!-- Node105 -->
 <g id="node7" class="node">
-<title>Node106</title>
+<title>Node105</title>
 <g id="a_node7"><a xlink:href="pid__controlled__system_8h.html" target="_top" xlink:title=" ">
 <polygon fill="#ffffff" stroke="#000000" points="556,-6 556,-36 699,-36 699,-6 556,-6"/>
 <text text-anchor="start" x="564" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">drake/systems/controllers</text>
@@ -119,9 +119,9 @@
 </a>
 </g>
 </g>
-<!-- Node104&#45;&gt;Node106 -->
+<!-- Node103&#45;&gt;Node105 -->
 <g id="edge7" class="edge">
-<title>Node104&#45;&gt;Node106</title>
+<title>Node103&#45;&gt;Node105</title>
 <path fill="none" stroke="#191970" d="M496.435,-79.7533C526.4564,-66.2954 565.9894,-48.5737 593.7576,-36.1259"/>
 <polygon fill="#191970" stroke="#191970" points="494.7423,-76.6764 487.049,-83.9608 497.6058,-83.064 494.7423,-76.6764"/>
 </g>
