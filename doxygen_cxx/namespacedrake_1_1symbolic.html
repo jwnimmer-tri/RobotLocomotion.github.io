@@ -5033,12 +5033,11 @@ More information about the C++'s conditional expression and ternary operator is 
 </div><div class="memdoc">
 
 <p>Returns a <a class="el" href="classdrake_1_1symbolic_1_1_formula.html" title="Represents a symbolic form of a first-order logic formula.">Formula</a> for the predicate isnan(e) to the given expression. </p>
-<p>This serves as the argument-dependent lookup related to std::isnan(double). When evaluated, this <a class="el" href="classdrake_1_1symbolic_1_1_formula.html" title="Represents a symbolic form of a first-order logic formula.">Formula</a> will return false when the <a class="el" href="namespacedrake_1_1symbolic.html#ac085a32409b678f96a69f5e50fc00ed7" title="Evaluates a symbolic matrix m using env and random_generator.">e.Evaluate()</a> is not NaN. </p><dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::runtime_error</td><td>if NaN is detected during evaluation. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>This serves as the argument-dependent lookup related to std::isnan(double).</p>
+<p>When this formula is evaluated, there are two possible outcomes:</p><ul>
+<li>Returns false if the <a class="el" href="namespacedrake_1_1symbolic.html#ac085a32409b678f96a69f5e50fc00ed7" title="Evaluates a symbolic matrix m using env and random_generator.">e.Evaluate()</a> is not NaN.</li>
+<li>Throws std::runtime_error if NaN is detected during evaluation. Note that the evaluation of <code>isnan(e)</code> never returns true. </li>
+</ul>
 
 </div>
 </div>
