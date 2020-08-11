@@ -383,6 +383,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a76deccd3cd3f64d9b875dd5116792c07"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html">ChebyshevBasisElement</a>, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1symbolic.html#a76deccd3cd3f64d9b875dd5116792c07">operator *</a> (const <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html">ChebyshevBasisElement</a> &amp;a, const <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html">ChebyshevBasisElement</a> &amp;b)</td></tr>
 <tr class="memdesc:a76deccd3cd3f64d9b875dd5116792c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the product of two Chebyshev basis elements.  <a href="#a76deccd3cd3f64d9b875dd5116792c07">More...</a><br /></td></tr>
 <tr class="separator:a76deccd3cd3f64d9b875dd5116792c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af975c2571c59b1d8b03b213a15096336"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1symbolic.html#af975c2571c59b1d8b03b213a15096336">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html">ChebyshevBasisElement</a> &amp;m)</td></tr>
+<tr class="separator:af975c2571c59b1d8b03b213a15096336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31d454a069abf89b2a0b6c71222ec221"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1symbolic.html#a31d454a069abf89b2a0b6c71222ec221">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_polynomial.html">ChebyshevPolynomial</a> &amp;p)</td></tr>
 <tr class="separator:a31d454a069abf89b2a0b6c71222ec221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87b9a5af49a6b9d6140189a132c4c2d7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1symbolic.html#a87b9a5af49a6b9d6140189a132c4c2d7">EvaluateChebyshevPolynomial</a> (double variable_val, <a class="el" href="classint.html">int</a> degree)</td></tr>
@@ -9185,8 +9187,36 @@ vars.size() == <code>n</code>. </dd></dl>
 
 </div>
 </div>
+<a id="af975c2571c59b1d8b03b213a15096336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af975c2571c59b1d8b03b213a15096336">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; drake::symbolic::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1symbolic_1_1_chebyshev_basis_element.html">ChebyshevBasisElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab6e0055c99275292d22eb59c103fb0ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6e0055c99275292d22eb59c103fb0ae">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e0055c99275292d22eb59c103fb0ae">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9214,7 +9244,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a31d454a069abf89b2a0b6c71222ec221"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31d454a069abf89b2a0b6c71222ec221">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d454a069abf89b2a0b6c71222ec221">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9242,7 +9272,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a8505db5f6e70df16a3cecda394bdcb24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8505db5f6e70df16a3cecda394bdcb24">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8505db5f6e70df16a3cecda394bdcb24">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9270,7 +9300,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="ad9eb2f0937be3e670ccdca9c4d30c63d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9eb2f0937be3e670ccdca9c4d30c63d">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9eb2f0937be3e670ccdca9c4d30c63d">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9298,7 +9328,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a3c794bfc916c077b16d9c7d47031f68c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c794bfc916c077b16d9c7d47031f68c">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c794bfc916c077b16d9c7d47031f68c">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9326,7 +9356,7 @@ vars.size() == <code>n</code>. </dd></dl>
 </div>
 </div>
 <a id="a30a0c468c43eb087bc5e98af3c3ad278"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30a0c468c43eb087bc5e98af3c3ad278">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a0c468c43eb087bc5e98af3c3ad278">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

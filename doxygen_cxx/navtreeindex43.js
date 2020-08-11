@@ -1,5 +1,11 @@
 var NAVTREEINDEX43 =
 {
+"structdrake_1_1math_1_1_gradient.html#a7e931855896541356d337c7ad3d66f53":[3,0,0,7,6,0],
+"structdrake_1_1math_1_1_gradient_3_01_derived_00_01_nq_00_011_01_4.html":[3,0,0,7,7],
+"structdrake_1_1math_1_1_gradient_3_01_derived_00_01_nq_00_011_01_4.html#ac7cad89eecaf8f9c49522b5fbb9b4491":[3,0,0,7,7,0],
+"structdrake_1_1math_1_1_gray_codes_matrix.html":[3,0,0,7,8],
+"structdrake_1_1math_1_1_gray_codes_matrix.html#a83c3b24ce255b931f182e59775510cb1":[3,0,0,7,8,0],
+"structdrake_1_1math_1_1_mat_grad_mult.html":[3,0,0,7,9],
 "structdrake_1_1math_1_1_mat_grad_mult.html#aedf6234380039a5c5cd89540d2c57045":[3,0,0,7,9,0],
 "structdrake_1_1math_1_1_mat_grad_mult_mat.html":[3,0,0,7,10],
 "structdrake_1_1math_1_1_mat_grad_mult_mat.html#ace7e8b3669d26250f77f8c4e4aa7e1e4":[3,0,0,7,10,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX43 =
 "structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_variable.html#ac7936c5ff57ef16032fcd1f0f89f200b":[3,0,0,11,0,7,1,0],
 "structdrake_1_1solvers_1_1fbstab_1_1_solver_out.html":[3,0,0,11,0,13],
 "structdrake_1_1solvers_1_1fbstab_1_1_solver_out.html#a23a877c2541d4bc63ff845fb8a788055":[3,0,0,11,0,13,2],
-"structdrake_1_1solvers_1_1fbstab_1_1_solver_out.html#a46d8df809ec79cc954f5a74cd4f0ae45":[3,0,0,11,0,13,0],
-"structdrake_1_1solvers_1_1fbstab_1_1_solver_out.html#a6998d64b1d5b8fec0d92a0b294062e3d":[3,0,0,11,0,13,3],
-"structdrake_1_1solvers_1_1fbstab_1_1_solver_out.html#a73e4cc856cf85fecbb324b0280f30d21":[3,0,0,11,0,13,4],
-"structdrake_1_1solvers_1_1fbstab_1_1_solver_out.html#aa7f4579892c94207be5727c9175cbbf5":[3,0,0,11,0,13,1],
-"structdrake_1_1symbolic_1_1_graded_reverse_lex_order.html":[3,0,0,12,53],
-"structdrake_1_1symbolic_1_1_graded_reverse_lex_order.html#af1b666b4bbbf1ba4ad66a257f92e73a4":[3,0,0,12,53,0],
-"structdrake_1_1systems_1_1_antiderivative_function_1_1_integrable_function_context.html":[3,0,0,13,13,0]
+"structdrake_1_1solvers_1_1fbstab_1_1_solver_out.html#a46d8df809ec79cc954f5a74cd4f0ae45":[3,0,0,11,0,13,0]
 };

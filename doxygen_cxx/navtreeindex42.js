@@ -1,5 +1,11 @@
 var NAVTREEINDEX42 =
 {
+"simulator__flags_8h.html#ga5d1fc9d510c450590826170fca172e5a":[4,0,0,11,0,22,0],
+"simulator__flags_8h.html#gad32461bc90073aac39049d636974a04b":[4,0,0,11,0,22,1],
+"simulator__gflags_8h.html":[4,0,0,11,0,23],
+"simulator__gflags_8h.html#a03ad7235991b77cba364074f82049d31":[4,0,0,11,0,23,2],
+"simulator__gflags_8h.html#a0cc9deeb95a8594918a525db7ac445c2":[4,0,0,11,0,23,3],
+"simulator__gflags_8h.html#a1de575cbf61e7155e7ed13858b9ce177":[4,0,0,11,0,23,5],
 "simulator__gflags_8h.html#a2ddf6e3d8e5f2ecb32db146fad3ce6bd":[4,0,0,11,0,23,1],
 "simulator__gflags_8h.html#a3d75057ea20bd20cb537d756182baacd":[4,0,0,11,0,23,7],
 "simulator__gflags_8h.html#a44b2301806f1e1407fe8deee5d9e3304":[4,0,0,11,0,23,6],
@@ -243,11 +249,5 @@ var NAVTREEINDEX42 =
 "structdrake_1_1math_1_1_get_sub_matrix_gradient_array.html#a49c4cd96758b9a7158941e142fd156b9":[3,0,0,7,4,0],
 "structdrake_1_1math_1_1_get_sub_matrix_gradient_single_element.html":[3,0,0,7,5],
 "structdrake_1_1math_1_1_get_sub_matrix_gradient_single_element.html#a2a3fbd89c3970167a18d02ef2263914d":[3,0,0,7,5,0],
-"structdrake_1_1math_1_1_gradient.html":[3,0,0,7,6],
-"structdrake_1_1math_1_1_gradient.html#a7e931855896541356d337c7ad3d66f53":[3,0,0,7,6,0],
-"structdrake_1_1math_1_1_gradient_3_01_derived_00_01_nq_00_011_01_4.html":[3,0,0,7,7],
-"structdrake_1_1math_1_1_gradient_3_01_derived_00_01_nq_00_011_01_4.html#ac7cad89eecaf8f9c49522b5fbb9b4491":[3,0,0,7,7,0],
-"structdrake_1_1math_1_1_gray_codes_matrix.html":[3,0,0,7,8],
-"structdrake_1_1math_1_1_gray_codes_matrix.html#a83c3b24ce255b931f182e59775510cb1":[3,0,0,7,8,0],
-"structdrake_1_1math_1_1_mat_grad_mult.html":[3,0,0,7,9]
+"structdrake_1_1math_1_1_gradient.html":[3,0,0,7,6]
 };

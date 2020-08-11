@@ -448,6 +448,45 @@ linting tools to be able to lint and compile simultaneously.</p>
 </div>
 </div>
 </div>
+<div class="section" id="debugging-an-arbitrary-program-in-drake-with-clion">
+<h2>Debugging an arbitrary program in Drake with CLion<a class="headerlink" href="#debugging-an-arbitrary-program-in-drake-with-clion" title="Permalink to this headline">¶</a></h2>
+<p>Apparently CLion (or perhaps the Bazel plugin) has a certain amount of
+auto-configuration of run/debug targets. It appears to hinge on the presence of
+the gtest.h header in source files. This is convenient, but only further
+mystifies the process of debugging a non-gtest program. This section explains
+how to configure debugging support for arbitrary programs in a Drake/CLion
+project.</p>
+<p>This section assumes all of the Drake-recommended installation and
+configuration is done.</p>
+<div class="section" id="get-the-bazel-target-string">
+<h3>Get the bazel target string<a class="headerlink" href="#get-the-bazel-target-string" title="Permalink to this headline">¶</a></h3>
+<p>Find the source file of the program in the file tree view. Right-click on the
+file, and select “Copy BUILD Target String”. This will put the Bazel target
+name into the clipboard.</p>
+</div>
+<div class="section" id="start-a-run-configuration">
+<h3>Start a run configuration<a class="headerlink" href="#start-a-run-configuration" title="Permalink to this headline">¶</a></h3>
+<p>From the top menu, select “Run/Edit Configurations…”. Select the “+” at the
+upper left of the dialog to add a new configuration. From the list, select
+“Bazel Command”.</p>
+</div>
+<div class="section" id="fill-in-the-configuration">
+<h3>Fill in the configuration<a class="headerlink" href="#fill-in-the-configuration" title="Permalink to this headline">¶</a></h3>
+<p>Now it’s time to fill in the new blank configuration. Give it a name, then
+select the “+” at the right side to add the target expression. Once the edit
+box appears, paste the contents of the clipboard there. Hit “Enter” or “Tab” to
+confirm the setting; a port number value should appear in the “Port number”
+field below. In “Bazel command”, select either “run” (for an arbitrary
+program), or “test” (for a Bazel test target). Everything else can be left at
+default values. Click OK to finish.</p>
+</div>
+<div class="section" id="launch-the-debugger">
+<h3>Launch the debugger<a class="headerlink" href="#launch-the-debugger" title="Permalink to this headline">¶</a></h3>
+<p>At this point, the top menu “Run” should have entries to run or debug the new
+configuration. Select the debug entry there, or use the controls at the upper
+right to launch the debugger.</p>
+</div>
+</div>
 </div>
 
 
@@ -503,6 +542,13 @@ linting tools to be able to lint and compile simultaneously.</p>
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a class="reference internal" href="#debugging-an-arbitrary-program-in-drake-with-clion">Debugging an arbitrary program in Drake with CLion</a><ul>
+<li><a class="reference internal" href="#get-the-bazel-target-string">Get the bazel target string</a></li>
+<li><a class="reference internal" href="#start-a-run-configuration">Start a run configuration</a></li>
+<li><a class="reference internal" href="#fill-in-the-configuration">Fill in the configuration</a></li>
+<li><a class="reference internal" href="#launch-the-debugger">Launch the debugger</a></li>
 </ul>
 </li>
 </ul>

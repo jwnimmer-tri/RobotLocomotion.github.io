@@ -1,5 +1,11 @@
 var NAVTREEINDEX34 =
 {
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#ac6326e597490a24805947c96623d6891":[3,0,0,13,9,1,4],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#ae3f1c577ee698959014f42a2937d6730":[3,0,0,13,9,1,3],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_transcription.html":[3,0,0,13,9,2],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_transcription.html#a167c6e03556d42ea16011cb93061104e":[3,0,0,13,9,2,9],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_transcription.html#a2257e99613e8e2241db334b2a3a4c6ad":[3,0,0,13,9,2,1],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_transcription.html#a22a7433c13b1c3710731b688e73d6e66":[3,0,0,13,9,2,7],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_transcription.html#a336445379d572c9b6818d533734a1f8d":[3,0,0,13,9,2,4],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_transcription.html#a4e0d5526b3c774c0c2d0b743e896078e":[3,0,0,13,9,2,8],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_transcription.html#a6a25bf3d1414193bdb730ed15125fe67":[3,0,0,13,9,2,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX34 =
 "classdrake_1_1yaml_1_1_yaml_write_archive.html":[3,0,0,16,1],
 "classdrake_1_1yaml_1_1_yaml_write_archive.html#a11fa5fb835de47b2d0fa547c73f9f2fe":[3,0,0,16,1,2],
 "classdrake_1_1yaml_1_1_yaml_write_archive.html#a1e3aefef6223888bec2e7abc5ed6ded2":[3,0,0,16,1,3],
-"classdrake_1_1yaml_1_1_yaml_write_archive.html#a4be48306479f62ee5fd61a2e7c850314":[3,0,0,16,1,4],
-"classdrake_1_1yaml_1_1_yaml_write_archive.html#a7f230d1503e5819de7eac6f6cd32356f":[3,0,0,16,1,7],
-"classdrake_1_1yaml_1_1_yaml_write_archive.html#ad07970d1981e352e2202269ecbc5f6f1":[3,0,0,16,1,1],
-"classdrake_1_1yaml_1_1_yaml_write_archive.html#ad74fcde70ec6dc999250a2aa8cfc22d6":[3,0,0,16,1,5],
-"classdrake_1_1yaml_1_1_yaml_write_archive.html#adb2b0520524752843b0b4adb6dcda87c":[3,0,0,16,1,0],
-"classdrake_1_1yaml_1_1_yaml_write_archive.html#aed2a3370d019639c501af0a383a2da01":[3,0,0,16,1,6],
-"classdrake_1_1yaml_1_1_yaml_write_archive.html#af98867e5146bdd5ce4faa20597595dd3":[3,0,0,16,1,8]
+"classdrake_1_1yaml_1_1_yaml_write_archive.html#a4be48306479f62ee5fd61a2e7c850314":[3,0,0,16,1,4]
 };
