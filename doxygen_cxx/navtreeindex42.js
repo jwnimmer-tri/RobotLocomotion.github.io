@@ -1,5 +1,16 @@
 var NAVTREEINDEX42 =
 {
+"shader__program_8h.html":[4,0,0,4,2,0,6],
+"shape__meshes_8h.html":[4,0,0,4,2,0,7],
+"shape__specification_8h.html":[4,0,0,4,24],
+"shape__to__string_8h.html":[4,0,0,4,25],
+"signal__log_8h.html":[4,0,0,11,7,18],
+"signal__logger_8h.html":[4,0,0,11,7,19],
+"signed__distance__pair_8h.html":[4,0,0,4,1,2],
+"signed__distance__to__point_8h.html":[4,0,0,4,1,3],
+"signed__distance__to__point__with__gradient_8h.html":[4,0,0,4,1,4],
+"simulator_8h.html":[4,0,0,11,0,21],
+"simulator__flags_8h.html":[4,0,0,11,0,22],
 "simulator__flags_8h.html#ga5d1fc9d510c450590826170fca172e5a":[4,0,0,11,0,22,0],
 "simulator__flags_8h.html#gad32461bc90073aac39049d636974a04b":[4,0,0,11,0,22,1],
 "simulator__gflags_8h.html":[4,0,0,11,0,23],
@@ -238,16 +249,5 @@ var NAVTREEINDEX42 =
 "structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html#a1c465fdede6b5ea8a96275e2b9f1ecb3":[3,0,0,6,3,0,0,3],
 "structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html#ae01adb7e45a3f63fccccf9f06a9eea2f":[3,0,0,6,3,0,0,2],
 "structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html#afeff966124fec7399f4a3e1eef5c9a26":[3,0,0,6,3,0,0,1],
-"structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html":[3,0,0,6,3,2],
-"structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html#aac0e5776ad59e265686244006b0be308":[3,0,0,6,3,2,0],
-"structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html#aaf6a8034fc68445c84db4f8d0fcabc79":[3,0,0,6,3,2,1],
-"structdrake_1_1math_1_1_auto_diff_to_gradient_matrix.html":[3,0,0,7,0],
-"structdrake_1_1math_1_1_auto_diff_to_gradient_matrix.html#a21348e29bb1c2afd6ca653f663394d49":[3,0,0,7,0,0],
-"structdrake_1_1math_1_1_auto_diff_to_value_matrix.html":[3,0,0,7,1],
-"structdrake_1_1math_1_1_auto_diff_to_value_matrix.html#af305efdc2919b4ec48cf0a6eb515ebcf":[3,0,0,7,1,0],
-"structdrake_1_1math_1_1_get_sub_matrix_gradient_array.html":[3,0,0,7,4],
-"structdrake_1_1math_1_1_get_sub_matrix_gradient_array.html#a49c4cd96758b9a7158941e142fd156b9":[3,0,0,7,4,0],
-"structdrake_1_1math_1_1_get_sub_matrix_gradient_single_element.html":[3,0,0,7,5],
-"structdrake_1_1math_1_1_get_sub_matrix_gradient_single_element.html#a2a3fbd89c3970167a18d02ef2263914d":[3,0,0,7,5,0],
-"structdrake_1_1math_1_1_gradient.html":[3,0,0,7,6]
+"structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html":[3,0,0,6,3,2]
 };

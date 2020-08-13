@@ -14,6 +14,7 @@ var hierarchy =
     [ "AutoDiffToGradientMatrix< Derived >", "structdrake_1_1math_1_1_auto_diff_to_gradient_matrix.html", null ],
     [ "AutoDiffToValueMatrix< Derived >", "structdrake_1_1math_1_1_auto_diff_to_value_matrix.html", null ],
     [ "BarycentricMesh< T >", "classdrake_1_1math_1_1_barycentric_mesh.html", null ],
+    [ "BasisElementGradedReverseLexOrder< VariableOrder, BasisElement >", "structdrake_1_1symbolic_1_1_basis_element_graded_reverse_lex_order.html", null ],
     [ "Binding< C >", "classdrake_1_1solvers_1_1_binding.html", null ],
     [ "Binding< drake::solvers::BoundingBoxConstraint >", "classdrake_1_1solvers_1_1_binding.html", null ],
     [ "Binding< drake::solvers::Constraint >", "classdrake_1_1solvers_1_1_binding.html", null ],

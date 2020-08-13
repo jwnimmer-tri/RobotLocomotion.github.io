@@ -24,6 +24,7 @@ var searchData=
   ['basicvector_3c_20double_20_3e',['BasicVector&lt; double &gt;',['../classdrake_1_1systems_1_1_basic_vector.html',1,'drake::systems']]],
   ['basicvector_3c_20drake_3a_3asymbolic_3a_3aexpression_20_3e',['BasicVector&lt; drake::symbolic::Expression &gt;',['../classdrake_1_1systems_1_1_basic_vector.html',1,'drake::systems']]],
   ['basis',['basis',['../classdrake_1_1trajectories_1_1_bspline_trajectory.html#a576612a037dee8597b5975d3525b3a48',1,'drake::trajectories::BsplineTrajectory']]],
+  ['basiselementgradedreverselexorder',['BasisElementGradedReverseLexOrder',['../structdrake_1_1symbolic_1_1_basis_element_graded_reverse_lex_order.html',1,'drake::symbolic']]],
   ['bead_5fon_5fa_5fwire_2eh',['bead_on_a_wire.h',['../bead__on__a__wire_8h.html',1,'']]],
   ['beadonawire',['BeadOnAWire',['../classdrake_1_1examples_1_1bead__on__a__wire_1_1_bead_on_a_wire.html',1,'BeadOnAWire&lt; T &gt;'],['../classdrake_1_1examples_1_1bead__on__a__wire_1_1_bead_on_a_wire.html#ac775b4b38fca6202a84dd9be58442b71',1,'drake::examples::bead_on_a_wire::BeadOnAWire::BeadOnAWire()']]],
   ['beam_5fmodel_2eh',['beam_model.h',['../beam__model_8h.html',1,'']]],

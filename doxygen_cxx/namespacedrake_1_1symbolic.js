@@ -1,5 +1,6 @@
 var namespacedrake_1_1symbolic =
 [
+    [ "BasisElementGradedReverseLexOrder", "structdrake_1_1symbolic_1_1_basis_element_graded_reverse_lex_order.html", "structdrake_1_1symbolic_1_1_basis_element_graded_reverse_lex_order" ],
     [ "BinaryExpressionCell", "classdrake_1_1symbolic_1_1_binary_expression_cell.html", "classdrake_1_1symbolic_1_1_binary_expression_cell" ],
     [ "ChebyshevBasisElement", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html", "classdrake_1_1symbolic_1_1_chebyshev_basis_element" ],
     [ "ChebyshevPolynomial", "classdrake_1_1symbolic_1_1_chebyshev_polynomial.html", "classdrake_1_1symbolic_1_1_chebyshev_polynomial" ],

@@ -1,5 +1,18 @@
 var NAVTREEINDEX47 =
 {
+"symbolic__polynomial_8h.html#ae3b6eea79253234902bbcf4643e34d81":[4,0,0,1,64,4],
+"symbolic__polynomial_8h.html#ae9423440606bd13d4767c72dd97ec6a2":[4,0,0,1,64,35],
+"symbolic__polynomial_8h.html#aece6b8e4e48de49ed447c6d62b81ce88":[4,0,0,1,64,13],
+"symbolic__polynomial_8h.html#af04dff9a90e39ac9985d520d3e66f5c3":[4,0,0,1,64,17],
+"symbolic__polynomial_8h.html#af38134e3394d8c40a7a91490154de2b3":[4,0,0,1,64,6],
+"symbolic__polynomial_8h.html#affb3773f2d585ffce0253cb15c8c00a0":[4,0,0,1,64,14],
+"symbolic__polynomial__basis__element_8h.html":[4,0,0,1,65],
+"symbolic__rational__function_8h.html":[4,0,0,1,66],
+"symbolic__rational__function_8h.html#a0dc08ea95543252bcf2b31fdfe723d26":[4,0,0,1,66,11],
+"symbolic__rational__function_8h.html#a0ec6e83953a4663403fcb08592e16b01":[4,0,0,1,66,14],
+"symbolic__rational__function_8h.html#a1611c62700b00b9861c339879899a121":[4,0,0,1,66,4],
+"symbolic__rational__function_8h.html#a167d0d14d66effceeb5834371626452b":[4,0,0,1,66,10],
+"symbolic__rational__function_8h.html#a185c9ab6bca14a042a837aadf2064546":[4,0,0,1,66,9],
 "symbolic__rational__function_8h.html#a1c5c62b680b89f6fe992e5bc6b01e6c7":[4,0,0,1,66,3],
 "symbolic__rational__function_8h.html#a22f74050260696325581c3087d07fab7":[4,0,0,1,66,17],
 "symbolic__rational__function_8h.html#a267c5d854d55ce16b1e58490ff426661":[4,0,0,1,66,6],
