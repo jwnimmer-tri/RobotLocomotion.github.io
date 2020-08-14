@@ -131,9 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a644718bb2fb240de962dc3c9a1fdf0dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram_builder.html#a644718bb2fb240de962dc3c9a1fdf0dc">empty</a> () const</td></tr>
 <tr class="memdesc:a644718bb2fb240de962dc3c9a1fdf0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether any Systems have been added yet.  <a href="#a644718bb2fb240de962dc3c9a1fdf0dc">More...</a><br /></td></tr>
 <tr class="separator:a644718bb2fb240de962dc3c9a1fdf0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3a7f9997722b15a6b7d79c91645d84b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdrake_1_1systems_1_1_system.html">systems::System</a>&lt; T &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram_builder.html#ac3a7f9997722b15a6b7d79c91645d84b">GetMutableSystems</a> ()</td></tr>
-<tr class="memdesc:ac3a7f9997722b15a6b7d79c91645d84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of contained Systems.  <a href="#ac3a7f9997722b15a6b7d79c91645d84b">More...</a><br /></td></tr>
-<tr class="separator:ac3a7f9997722b15a6b7d79c91645d84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d78e9d85a3593c7656aeddbf90d4766"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdrake_1_1systems_1_1_system.html">System</a>&lt; T &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram_builder.html#a7d78e9d85a3593c7656aeddbf90d4766">GetMutableSystems</a> ()</td></tr>
+<tr class="memdesc:a7d78e9d85a3593c7656aeddbf90d4766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of contained Systems.  <a href="#a7d78e9d85a3593c7656aeddbf90d4766">More...</a><br /></td></tr>
+<tr class="separator:a7d78e9d85a3593c7656aeddbf90d4766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a8352f868d18200ed5f6894edc303d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram_builder.html#a3a8352f868d18200ed5f6894edc303d7">Connect</a> (const <a class="el" href="classdrake_1_1systems_1_1_output_port.html">OutputPort</a>&lt; T &gt; &amp;src, const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">InputPort</a>&lt; T &gt; &amp;dest)</td></tr>
 <tr class="memdesc:a3a8352f868d18200ed5f6894edc303d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares that input port <code>dest</code> is connected to output port <code>src</code>.  <a href="#a3a8352f868d18200ed5f6894edc303d7">More...</a><br /></td></tr>
 <tr class="separator:a3a8352f868d18200ed5f6894edc303d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,9 +167,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a7556cbe1df314f4d3c25ae09e10c3903"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram_builder.html#a7556cbe1df314f4d3c25ae09e10c3903">AddRandomInputs</a> (double, <a class="el" href="classdrake_1_1systems_1_1_diagram_builder.html">systems::DiagramBuilder</a>&lt; double &gt; *)</td></tr>
-<tr class="memdesc:a7556cbe1df314f4d3c25ae09e10c3903"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each subsystem input port in <code>builder</code> that is (a) not yet connected and (b) labeled as random in the <a class="el" href="classdrake_1_1systems_1_1_input_port.html" title="An InputPort is a System resource that describes the kind of input a System accepts,...">InputPort</a>, this method will add a new <a class="el" href="classdrake_1_1systems_1_1_random_source.html" title="A source block which generates random numbers at a fixed sampling interval, with a zero-order hold be...">RandomSource</a> system of the appropriate type and connect it to the subsystem input port.  <a href="#a7556cbe1df314f4d3c25ae09e10c3903">More...</a><br /></td></tr>
-<tr class="separator:a7556cbe1df314f4d3c25ae09e10c3903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8efad54cc57d74fc37998416647a78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_diagram_builder.html#a2a8efad54cc57d74fc37998416647a78">AddRandomInputs</a> (double, <a class="el" href="classdrake_1_1systems_1_1_diagram_builder.html">DiagramBuilder</a>&lt; double &gt; *)</td></tr>
+<tr class="memdesc:a2a8efad54cc57d74fc37998416647a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each subsystem input port in <code>builder</code> that is (a) not yet connected and (b) labeled as random in the <a class="el" href="classdrake_1_1systems_1_1_input_port.html" title="An InputPort is a System resource that describes the kind of input a System accepts,...">InputPort</a>, this method will add a new <a class="el" href="classdrake_1_1systems_1_1_random_source.html" title="A source block which generates random numbers at a fixed sampling interval, with a zero-order hold be...">RandomSource</a> system of the appropriate type and connect it to the subsystem input port.  <a href="#a2a8efad54cc57d74fc37998416647a78">More...</a><br /></td></tr>
+<tr class="separator:a2a8efad54cc57d74fc37998416647a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa3171750ccde03a5c67ba3acb598435a"></a>
@@ -592,14 +592,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ac3a7f9997722b15a6b7d79c91645d84b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3a7f9997722b15a6b7d79c91645d84b">&#9670;&nbsp;</a></span>GetMutableSystems()</h2>
+<a id="a7d78e9d85a3593c7656aeddbf90d4766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d78e9d85a3593c7656aeddbf90d4766">&#9670;&nbsp;</a></span>GetMutableSystems()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classdrake_1_1systems_1_1_system.html">systems::System</a>&lt;T&gt;*&gt; GetMutableSystems </td>
+          <td class="memname">std::vector&lt;<a class="el" href="classdrake_1_1systems_1_1_system.html">System</a>&lt;T&gt;*&gt; GetMutableSystems </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -664,8 +664,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a7556cbe1df314f4d3c25ae09e10c3903"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7556cbe1df314f4d3c25ae09e10c3903">&#9670;&nbsp;</a></span>AddRandomInputs</h2>
+<a id="a2a8efad54cc57d74fc37998416647a78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a8efad54cc57d74fc37998416647a78">&#9670;&nbsp;</a></span>AddRandomInputs</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -682,7 +682,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1systems_1_1_diagram_builder.html">systems::DiagramBuilder</a>&lt; double &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1systems_1_1_diagram_builder.html">DiagramBuilder</a>&lt; double &gt; *&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>

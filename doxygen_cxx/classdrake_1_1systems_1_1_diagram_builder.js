@@ -15,8 +15,8 @@ var classdrake_1_1systems_1_1_diagram_builder =
     [ "empty", "classdrake_1_1systems_1_1_diagram_builder.html#a644718bb2fb240de962dc3c9a1fdf0dc", null ],
     [ "ExportInput", "classdrake_1_1systems_1_1_diagram_builder.html#a1db762bc34903d5e5eb8f1c26ec2f255", null ],
     [ "ExportOutput", "classdrake_1_1systems_1_1_diagram_builder.html#a1eb25ed5b825b50aadf96f3c0f0e54d6", null ],
-    [ "GetMutableSystems", "classdrake_1_1systems_1_1_diagram_builder.html#ac3a7f9997722b15a6b7d79c91645d84b", null ],
+    [ "GetMutableSystems", "classdrake_1_1systems_1_1_diagram_builder.html#a7d78e9d85a3593c7656aeddbf90d4766", null ],
     [ "operator=", "classdrake_1_1systems_1_1_diagram_builder.html#a9707232e37c28463f285aaab01f88c49", null ],
     [ "operator=", "classdrake_1_1systems_1_1_diagram_builder.html#a1c4553ec1b3caebff0d951e5795fd617", null ],
-    [ "AddRandomInputs", "classdrake_1_1systems_1_1_diagram_builder.html#a7556cbe1df314f4d3c25ae09e10c3903", null ]
+    [ "AddRandomInputs", "classdrake_1_1systems_1_1_diagram_builder.html#a2a8efad54cc57d74fc37998416647a78", null ]
 ];
