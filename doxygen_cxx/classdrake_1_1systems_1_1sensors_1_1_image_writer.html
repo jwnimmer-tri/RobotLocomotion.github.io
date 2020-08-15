@@ -132,6 +132,8 @@ $(document).ready(function(){initNavTree('classdrake_1_1systems_1_1sensors_1_1_i
 <li>ImageRgba8U - typically a color image written to disk as .png images.</li>
 <li>ImageDepth32F - typically a depth image, written to disk as .tiff images.</li>
 <li>ImageLabel16I - typically a label image, written to disk as .png images.</li>
+<li>ImageDepth16U - typically a depth image, written to disk as .png images.</li>
+<li>ImageGrey8U - typically a grey scale image, written to disk as .png images.</li>
 </ul>
 <p>Input ports are added to an ImageWriter via <a class="el" href="classdrake_1_1systems_1_1sensors_1_1_image_writer.html#a157e8f358edae6333e0fae01e3150f5e" title="Declares and configures a new image input port.">DeclareImageInputPort()</a>. See that function's documentation for elaboration on how to configure image output. It is important to note, that every declared image input port <em>must</em> be connected; otherwise, attempting to write an image from that port, will cause an error in the system. </p>
 </div>
@@ -1330,7 +1332,7 @@ time" value <code>tₛ</code>, the frames will be written at: <code>t = tₛ + [
 </dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">kPixelType</td><td>The representation of the per-pixel data (see PixelType). Must be one of {<a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a37140413518dff2aa63096a2e31b9b3dab2ba7d59e9ac2edec71ea18cc201b478" title="The pixel format used by ImageRgba8U.">PixelType::kRgba8U</a>, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a37140413518dff2aa63096a2e31b9b3da238a889ea664dc69a583c89712b4f96c" title="The pixel format used by ImageDepth32F.">PixelType::kDepth32F</a>, or <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a37140413518dff2aa63096a2e31b9b3da2a67266021c4dc63b8ed214bff50abec" title="The pixel format used by ImageLabel16I.">PixelType::kLabel16I</a>}. </td></tr>
+    <tr><td class="paramname">kPixelType</td><td>The representation of the per-pixel data (see PixelType). Must be one of {<a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a37140413518dff2aa63096a2e31b9b3dab2ba7d59e9ac2edec71ea18cc201b478" title="The pixel format used by ImageRgba8U.">PixelType::kRgba8U</a>, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a37140413518dff2aa63096a2e31b9b3da238a889ea664dc69a583c89712b4f96c" title="The pixel format used by ImageDepth32F.">PixelType::kDepth32F</a>, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a37140413518dff2aa63096a2e31b9b3da2a67266021c4dc63b8ed214bff50abec" title="The pixel format used by ImageLabel16I.">PixelType::kLabel16I</a>, <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a37140413518dff2aa63096a2e31b9b3daf85535e7c32140b6d5a5544342787ced" title="The pixel format used by ImageDepth16U.">PixelType::kDepth16U</a>, or <a class="el" href="namespacedrake_1_1systems_1_1sensors.html#a37140413518dff2aa63096a2e31b9b3da3798842b1f11a731f5e11d9744c29774" title="The pixel format used by ImageGrey8U.">PixelType::kGrey8U</a>}. </td></tr>
   </table>
   </dd>
 </dl>
