@@ -1,5 +1,10 @@
 var NAVTREEINDEX47 =
 {
+"symbolic__polynomial_8h.html#ab876f48eb96e82b718df0050b9d57d8b":[4,0,0,1,64,23],
+"symbolic__polynomial_8h.html#abe6ad1d11dea0eafbfed0db238957d64":[4,0,0,1,64,31],
+"symbolic__polynomial_8h.html#ad9eb2f0937be3e670ccdca9c4d30c63d":[4,0,0,1,64,36],
+"symbolic__polynomial_8h.html#ada023ba3d82bbf8137d74409bf596457":[4,0,0,1,64,28],
+"symbolic__polynomial_8h.html#ade37df718218bcbdbc1edd9a0b6a596a":[4,0,0,1,64,24],
 "symbolic__polynomial_8h.html#ae3b6eea79253234902bbcf4643e34d81":[4,0,0,1,64,4],
 "symbolic__polynomial_8h.html#ae9423440606bd13d4767c72dd97ec6a2":[4,0,0,1,64,35],
 "symbolic__polynomial_8h.html#aece6b8e4e48de49ed447c6d62b81ce88":[4,0,0,1,64,13],

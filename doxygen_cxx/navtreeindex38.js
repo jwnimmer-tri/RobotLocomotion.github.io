@@ -1,5 +1,10 @@
 var NAVTREEINDEX38 =
 {
+"group___dt__multibody__quantities.html":[1,0,1,3],
+"group__accuracy__and__tolerance.html":[1,0,0],
+"group__acrobot__systems.html":[1,2,11,0],
+"group__acrobot__systems.html#gafb2ab3ad52a7daf958473b205ceb8877":[1,2,11,0,8],
+"group__algorithms.html":[1,4],
 "group__analysis.html":[1,4,1],
 "group__analysis.html#ga08757b3b0c28f5051e1c37d98f2cc58b":[1,4,1,0],
 "group__analysis.html#ga2ccd9a43fd950b9e3490dd8c98534c3e":[1,4,1,3],
@@ -39,8 +44,8 @@ var NAVTREEINDEX38 =
 "group__default__scalars.html#ga6333534b3097a37c55fbacf434491e2e":[4,0,0,1,11,0],
 "group__default__scalars.html#gab6234c37b7596964a364d799933f4a17":[1,6,1,2],
 "group__default__scalars.html#gab6234c37b7596964a364d799933f4a17":[4,0,0,1,11,2],
-"group__default__scalars.html#gad69d96bfd76d7750f2d40ebe0a546b3c":[1,6,1,3],
 "group__default__scalars.html#gad69d96bfd76d7750f2d40ebe0a546b3c":[4,0,0,1,11,3],
+"group__default__scalars.html#gad69d96bfd76d7750f2d40ebe0a546b3c":[1,6,1,3],
 "group__discrete__systems.html":[1,2,8],
 "group__drake__contacts.html":[1,3,1],
 "group__estimation.html":[1,4,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX38 =
 "jaco__constants_8h.html#aea7ed85292870a6405c353c62f8a2075":[4,0,0,6,0,2,1],
 "jaco__status__receiver_8h.html":[4,0,0,6,0,3],
 "jaco__status__sender_8h.html":[4,0,0,6,0,4],
-"jacobian_8h.html":[4,0,0,7,18],
-"jacobian_8h.html#a57457683becdddf605a55be881c065b4":[4,0,0,7,18,1],
-"jacobian_8h.html#a6dce37732e3e532f7b87cd517789da7f":[4,0,0,7,18,0],
-"joint_8h.html":[4,0,0,8,10,14],
-"joint__actuator_8h.html":[4,0,0,8,10,15],
-"kalman__filter_8h.html":[4,0,0,11,2,0]
+"jacobian_8h.html":[4,0,0,7,18]
 };

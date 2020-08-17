@@ -97,6 +97,7 @@ var group__systems =
       [ "CollectRegisteredGeometries", "classdrake_1_1multibody_1_1_multibody_plant.html#a830e17ff113f70e86e1c6a8b1b60d662", null ],
       [ "default_coulomb_friction", "classdrake_1_1multibody_1_1_multibody_plant.html#a38608634b36afab217b71de1f31fbc85", null ],
       [ "EvalBodyPoseInWorld", "classdrake_1_1multibody_1_1_multibody_plant.html#a6f1fff1ed5cdfefba9e2ce717380783b", null ],
+      [ "EvalBodySpatialAccelerationInWorld", "classdrake_1_1multibody_1_1_multibody_plant.html#a8e168e4ff2ffdf90285819ca0553ba8c", null ],
       [ "EvalBodySpatialVelocityInWorld", "classdrake_1_1multibody_1_1_multibody_plant.html#a8377774b012b4975b46941b3197f29c3", null ],
       [ "EvalPointPairPenetrations", "classdrake_1_1multibody_1_1_multibody_plant.html#aecf801449932225a58b7daeb64a8f911", null ],
       [ "ExcludeCollisionGeometriesWithCollisionFilterGroupPair", "classdrake_1_1multibody_1_1_multibody_plant.html#a41edc1b3c920a1e48f27ad5661584fad", null ],

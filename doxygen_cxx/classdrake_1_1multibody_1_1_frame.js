@@ -13,6 +13,7 @@ var classdrake_1_1multibody_1_1_frame =
     [ "CalcRotationMatrix", "classdrake_1_1multibody_1_1_frame.html#aa19115a9160df4a7936a333684cc26f4", null ],
     [ "CalcRotationMatrixInBodyFrame", "classdrake_1_1multibody_1_1_frame.html#a306cd244c02c230ad6642efcdc5ba312", null ],
     [ "CalcRotationMatrixInWorld", "classdrake_1_1multibody_1_1_frame.html#a8d6b793a9b933ba18d670f763ca90eb4", null ],
+    [ "CalcSpatialAccelerationInWorld", "classdrake_1_1multibody_1_1_frame.html#a2c96f5b61a2a9047007f24f74b2ad63f", null ],
     [ "CalcSpatialVelocity", "classdrake_1_1multibody_1_1_frame.html#afebfd42eb5a5a2b1ff8c5d5686359f77", null ],
     [ "CalcSpatialVelocityInWorld", "classdrake_1_1multibody_1_1_frame.html#a2e26d78710628e036f86e991d3434d4b", null ],
     [ "CloneToScalar", "classdrake_1_1multibody_1_1_frame.html#a72750ba8b4de6270d8625462a7453e85", null ],
@@ -24,6 +25,6 @@ var classdrake_1_1multibody_1_1_frame =
     [ "GetFixedRotationMatrixInBody", "classdrake_1_1multibody_1_1_frame.html#aaff50422b2283b8cc9b6560092b80803", null ],
     [ "GetFixedRotationMatrixInBodyFrame", "classdrake_1_1multibody_1_1_frame.html#ab645c93960ef7dc30603102c64015644", null ],
     [ "name", "classdrake_1_1multibody_1_1_frame.html#ad8227ba86a01f26e4f173cd5e219d5d1", null ],
-    [ "operator=", "classdrake_1_1multibody_1_1_frame.html#a486765b5bb3145d29946d6dae95a9332", null ],
-    [ "operator=", "classdrake_1_1multibody_1_1_frame.html#a8e197bedf7aa897596ace36baca53361", null ]
+    [ "operator=", "classdrake_1_1multibody_1_1_frame.html#a8e197bedf7aa897596ace36baca53361", null ],
+    [ "operator=", "classdrake_1_1multibody_1_1_frame.html#a486765b5bb3145d29946d6dae95a9332", null ]
 ];

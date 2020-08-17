@@ -1,5 +1,10 @@
 var NAVTREEINDEX34 =
 {
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation.html#a4e0d5526b3c774c0c2d0b743e896078e":[3,0,0,13,9,0,6],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation.html#a4e7e2451f0e6ee53d4bd8444a5e368f2":[3,0,0,13,9,0,1],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation.html#a6b919734963d0c38356747786ca44f55":[3,0,0,13,9,0,4],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation.html#a732aeddf39ef1457d22d5629dca4e41c":[3,0,0,13,9,0,3],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation.html#a91b3d512821b5f210669cef35d8e4859":[3,0,0,13,9,0,0],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html":[3,0,0,13,9,1],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a198bf2c564777ff4d7d5acd711e5e349":[3,0,0,13,9,1,8],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a3cbd3e24f7648ab7712c803ca8a63f3e":[3,0,0,13,9,1,9],
@@ -244,10 +249,5 @@ var NAVTREEINDEX34 =
 "classdrake_1_1trajectories_1_1_trajectory.html#a857db071d9bf847d026ba7046aa9744e":[3,0,0,15,5,15],
 "classdrake_1_1trajectories_1_1_trajectory.html#a9507f1cc6b538dc632d20e3d681bbaba":[3,0,0,15,5,11],
 "classdrake_1_1trajectories_1_1_trajectory.html#ac51b842ba9d2ee39e9398c86fdc38a75":[3,0,0,15,5,8],
-"classdrake_1_1trajectories_1_1_trajectory.html#ae4c7cdf72ed60fd130e1985ecd8c3846":[3,0,0,15,5,6],
-"classdrake_1_1trajectories_1_1_trajectory.html#aec58a75947d06ba435adda6fd990678e":[3,0,0,15,5,0],
-"classdrake_1_1trajectories_1_1_trajectory.html#af2e2fa698b2c37469f44381ec7ae3344":[3,0,0,15,5,10],
-"classdrake_1_1trajectories_1_1_trajectory.html#af752fbd39919690fbbe2110639682be7":[3,0,0,15,5,2],
-"classdrake_1_1trajectories_1_1_trajectory.html#afbddf9c56911aa6014253b5800fbff83":[3,0,0,15,5,7],
-"classdrake_1_1yaml_1_1_yaml_read_archive.html":[3,0,0,16,0]
+"classdrake_1_1trajectories_1_1_trajectory.html#ae4c7cdf72ed60fd130e1985ecd8c3846":[3,0,0,15,5,6]
 };

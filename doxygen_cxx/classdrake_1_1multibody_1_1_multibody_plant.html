@@ -588,6 +588,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8377774b012b4975b46941b3197f29c3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1multibody_1_1_spatial_velocity.html">SpatialVelocity</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a8377774b012b4975b46941b3197f29c3">EvalBodySpatialVelocityInWorld</a> (const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;context, const <a class="el" href="classdrake_1_1multibody_1_1_body.html">Body</a>&lt; T &gt; &amp;body_B) const</td></tr>
 <tr class="memdesc:a8377774b012b4975b46941b3197f29c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the spatial velocity <code>V_WB</code> of a body B in the world frame W.  <a href="#a8377774b012b4975b46941b3197f29c3">More...</a><br /></td></tr>
 <tr class="separator:a8377774b012b4975b46941b3197f29c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e168e4ff2ffdf90285819ca0553ba8c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1multibody_1_1_spatial_acceleration.html">SpatialAcceleration</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a8e168e4ff2ffdf90285819ca0553ba8c">EvalBodySpatialAccelerationInWorld</a> (const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;context, const <a class="el" href="classdrake_1_1multibody_1_1_body.html">Body</a>&lt; T &gt; &amp;body_B) const</td></tr>
+<tr class="memdesc:a8e168e4ff2ffdf90285819ca0553ba8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates A_WB_W, the spatial acceleration of a body B in the world world frame W, expressed in the world frame W.  <a href="#a8e168e4ff2ffdf90285819ca0553ba8c">More...</a><br /></td></tr>
+<tr class="separator:a8e168e4ff2ffdf90285819ca0553ba8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf801449932225a58b7daeb64a8f911"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structdrake_1_1geometry_1_1_penetration_as_point_pair.html">geometry::PenetrationAsPointPair</a>&lt; T &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#aecf801449932225a58b7daeb64a8f911">EvalPointPairPenetrations</a> (const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;context) const</td></tr>
 <tr class="memdesc:aecf801449932225a58b7daeb64a8f911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates all point pairs of contact for a given state of the model stored in <code>context</code>.  <a href="#aecf801449932225a58b7daeb64a8f911">More...</a><br /></td></tr>
 <tr class="separator:aecf801449932225a58b7daeb64a8f911"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2711,10 +2714,55 @@ Related Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::exception</td><td>if <a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a8fee61d7a783cade1a3d07fe86284d27" title="This method must be called after all elements in the model (joints, bodies, force elements,...">Finalize()</a> was not called on <code>this</code> model or if <code>body_B</code> does not belong to this model. </td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>if <a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a8fee61d7a783cade1a3d07fe86284d27" title="This method must be called after all elements in the model (joints, bodies, force elements,...">Finalize()</a> was not called on <code>this</code> model or if <code>body_B</code> does not belong to this model. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8e168e4ff2ffdf90285819ca0553ba8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e168e4ff2ffdf90285819ca0553ba8c">&#9670;&nbsp;</a></span>EvalBodySpatialAccelerationInWorld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdrake_1_1multibody_1_1_spatial_acceleration.html">SpatialAcceleration</a>&lt;T&gt;&amp; EvalBodySpatialAccelerationInWorld </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_body.html">Body</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>body_B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evaluates A_WB_W, the spatial acceleration of a body B in the world world frame W, expressed in the world frame W. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The context storing the state of the model. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">body_B</td><td>The body B for which the spatial acceleration is requested. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A_WB_W The spatial acceleration of body B in the world frame W, expressed in W. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>if <a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a8fee61d7a783cade1a3d07fe86284d27" title="This method must be called after all elements in the model (joints, bodies, force elements,...">Finalize()</a> was not called on <code>this</code> model or if <code>body_B</code> does not belong to this model. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>When cached values are out of sync with the state stored in context, this method performs an expensive forward dynamics computation, whereas once evaluated, successive calls to this method are inexpensive. </dd></dl>
 
 </div>
 </div>
@@ -2755,7 +2803,7 @@ Related Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>V_WB The spatial velocity of body frame B in the world frame W. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::exception</td><td>if <a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a8fee61d7a783cade1a3d07fe86284d27" title="This method must be called after all elements in the model (joints, bodies, force elements,...">Finalize()</a> was not called on <code>this</code> model or if <code>body_B</code> does not belong to this model. </td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>if <a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a8fee61d7a783cade1a3d07fe86284d27" title="This method must be called after all elements in the model (joints, bodies, force elements,...">Finalize()</a> was not called on <code>this</code> model or if <code>body_B</code> does not belong to this model. </td></tr>
   </table>
   </dd>
 </dl>

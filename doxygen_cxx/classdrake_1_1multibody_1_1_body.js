@@ -13,6 +13,7 @@ var classdrake_1_1multibody_1_1_body =
     [ "DoCloneToScalar", "classdrake_1_1multibody_1_1_body.html#ac30c4ad9b052699cd01568d8bf024a3c", null ],
     [ "DoCloneToScalar", "classdrake_1_1multibody_1_1_body.html#ae062c2e92129f7be1f2b7a9f20398714", null ],
     [ "EvalPoseInWorld", "classdrake_1_1multibody_1_1_body.html#adb15f7a08a083af61068735632ada406", null ],
+    [ "EvalSpatialAccelerationInWorld", "classdrake_1_1multibody_1_1_body.html#a87451694c9fdf67303c1550f11bdf3c2", null ],
     [ "EvalSpatialVelocityInWorld", "classdrake_1_1multibody_1_1_body.html#a9c07832f25dde3f8403e98c73dd24d1b", null ],
     [ "floating_positions_start", "classdrake_1_1multibody_1_1_body.html#a8e98e34e5da5ecfc7e03086b70cf5489", null ],
     [ "floating_velocities_start", "classdrake_1_1multibody_1_1_body.html#adc1bbbf124d24c628bb23796cfa5c594", null ],
@@ -25,7 +26,7 @@ var classdrake_1_1multibody_1_1_body =
     [ "is_floating", "classdrake_1_1multibody_1_1_body.html#a7df065349a370f3007ee52c6ede868d0", null ],
     [ "name", "classdrake_1_1multibody_1_1_body.html#ad8227ba86a01f26e4f173cd5e219d5d1", null ],
     [ "node_index", "classdrake_1_1multibody_1_1_body.html#a57367ee577b21dc678509209435858ec", null ],
-    [ "operator=", "classdrake_1_1multibody_1_1_body.html#a20f1ef3c39eacf3b33b85fa8a5cef621", null ],
     [ "operator=", "classdrake_1_1multibody_1_1_body.html#a2d29729c246c174fc4dcf96b7d2c5ade", null ],
+    [ "operator=", "classdrake_1_1multibody_1_1_body.html#a20f1ef3c39eacf3b33b85fa8a5cef621", null ],
     [ "internal::BodyAttorney< T >", "classdrake_1_1multibody_1_1_body.html#abd26dede9af88af24e2971996b18a5a4", null ]
 ];

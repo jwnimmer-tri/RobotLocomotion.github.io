@@ -106,6 +106,7 @@ var searchData=
   ['calcrpyddtfromangularaccelinchild',['CalcRpyDDtFromAngularAccelInChild',['../classdrake_1_1math_1_1_roll_pitch_yaw.html#a9608dfad05e4d055ccd12ea16724d682',1,'drake::math::RollPitchYaw']]],
   ['calcrpyddtfromrpydtandangularaccelinparent',['CalcRpyDDtFromRpyDtAndAngularAccelInParent',['../classdrake_1_1math_1_1_roll_pitch_yaw.html#a004c7da954357916497d26a6592f7660',1,'drake::math::RollPitchYaw']]],
   ['calcrpydtfromangularvelocityinparent',['CalcRpyDtFromAngularVelocityInParent',['../classdrake_1_1math_1_1_roll_pitch_yaw.html#a4ad4c305a20bcd72fe81699869055af6',1,'drake::math::RollPitchYaw']]],
+  ['calcspatialaccelerationinworld',['CalcSpatialAccelerationInWorld',['../classdrake_1_1multibody_1_1_frame.html#a2c96f5b61a2a9047007f24f74b2ad63f',1,'drake::multibody::Frame']]],
   ['calcspatialaccelerationsfromvdot',['CalcSpatialAccelerationsFromVdot',['../classdrake_1_1multibody_1_1_multibody_plant.html#aefa1c5393d7cab419a944009cc93aa6c',1,'drake::multibody::MultibodyPlant']]],
   ['calcspatialinertiainbodyframe',['CalcSpatialInertiaInBodyFrame',['../classdrake_1_1multibody_1_1_body.html#ae2cf2457b20082313585ad750dc24672',1,'drake::multibody::Body::CalcSpatialInertiaInBodyFrame()'],['../classdrake_1_1multibody_1_1_rigid_body.html#afc17e461112163a828e418ecc7952627',1,'drake::multibody::RigidBody::CalcSpatialInertiaInBodyFrame()']]],
   ['calcspatialvelocity',['CalcSpatialVelocity',['../classdrake_1_1multibody_1_1_frame.html#afebfd42eb5a5a2b1ff8c5d5686359f77',1,'drake::multibody::Frame']]],

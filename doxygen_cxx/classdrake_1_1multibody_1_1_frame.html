@@ -167,6 +167,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afebfd42eb5a5a2b1ff8c5d5686359f77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1multibody_1_1_spatial_velocity.html">SpatialVelocity</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_frame.html#afebfd42eb5a5a2b1ff8c5d5686359f77">CalcSpatialVelocity</a> (const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;context, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_M, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_E) const</td></tr>
 <tr class="memdesc:afebfd42eb5a5a2b1ff8c5d5686359f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes and returns the spatial velocity <code>V_MF_E</code> of <code>this</code> frame F measured in <code>frame_M</code> and expressed in <code>frame_E</code> as a function of the state of the model stored in <code>context</code>.  <a href="#afebfd42eb5a5a2b1ff8c5d5686359f77">More...</a><br /></td></tr>
 <tr class="separator:afebfd42eb5a5a2b1ff8c5d5686359f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c96f5b61a2a9047007f24f74b2ad63f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1multibody_1_1_spatial_acceleration.html">SpatialAcceleration</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_frame.html#a2c96f5b61a2a9047007f24f74b2ad63f">CalcSpatialAccelerationInWorld</a> (const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;context) const</td></tr>
+<tr class="memdesc:a2c96f5b61a2a9047007f24f74b2ad63f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes and returns the spatial acceleration A_WF_W of <code>this</code> frame F in world frame W expressed in W as a function of the state stored in context.  <a href="#a2c96f5b61a2a9047007f24f74b2ad63f">More...</a><br /></td></tr>
+<tr class="separator:a2c96f5b61a2a9047007f24f74b2ad63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72750ba8b4de6270d8625462a7453e85"><td class="memTemplParams" colspan="2">template&lt;typename ToScalar &gt; </td></tr>
 <tr class="memitem:a72750ba8b4de6270d8625462a7453e85"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; ToScalar &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_frame.html#a72750ba8b4de6270d8625462a7453e85">CloneToScalar</a> (const internal::MultibodyTree&lt; ToScalar &gt; &amp;tree_clone) const</td></tr>
 <tr class="memdesc:a72750ba8b4de6270d8625462a7453e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Advanced) NVI to <a class="el" href="classdrake_1_1multibody_1_1_frame.html#a0162ba098d0c07be12d3a7244914de38" title="Clones this Frame (templated on T) to a frame templated on double.">DoCloneToScalar()</a> templated on the scalar type of the new clone to be created.  <a href="#a72750ba8b4de6270d8625462a7453e85">More...</a><br /></td></tr>
@@ -635,6 +638,29 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2c96f5b61a2a9047007f24f74b2ad63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c96f5b61a2a9047007f24f74b2ad63f">&#9670;&nbsp;</a></span>CalcSpatialAccelerationInWorld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrake_1_1multibody_1_1_spatial_acceleration.html">SpatialAcceleration</a>&lt;T&gt; CalcSpatialAccelerationInWorld </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes and returns the spatial acceleration A_WF_W of <code>this</code> frame F in world frame W expressed in W as a function of the state stored in context. </p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="classdrake_1_1multibody_1_1_body.html#a87451694c9fdf67303c1550f11bdf3c2" title="Returns A_WB_W, the spatial acceleration of this body B in the world frame W expressed in frame W as ...">Body::EvalSpatialAccelerationInWorld()</a> provides a more efficient way to obtain the spatial acceleration for a body frame. </dd>
+<dd>
+When cached values are out of sync with the state stored in context, this method performs an expensive forward dynamics computation, whereas once evaluated, successive calls to this method are inexpensive. </dd></dl>
+
+</div>
+</div>
 <a id="afebfd42eb5a5a2b1ff8c5d5686359f77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afebfd42eb5a5a2b1ff8c5d5686359f77">&#9670;&nbsp;</a></span>CalcSpatialVelocity()</h2>
 
@@ -969,8 +995,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a486765b5bb3145d29946d6dae95a9332"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a486765b5bb3145d29946d6dae95a9332">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="a8e197bedf7aa897596ace36baca53361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e197bedf7aa897596ace36baca53361">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -981,7 +1007,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -995,8 +1021,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8e197bedf7aa897596ace36baca53361"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e197bedf7aa897596ace36baca53361">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="a486765b5bb3145d29946d6dae95a9332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486765b5bb3145d29946d6dae95a9332">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1007,7 +1033,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

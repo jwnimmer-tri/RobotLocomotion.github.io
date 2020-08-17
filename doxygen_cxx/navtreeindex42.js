@@ -1,5 +1,10 @@
 var NAVTREEINDEX42 =
 {
+"sequential__expression__manager_8h.html":[4,0,0,11,10,4],
+"serializer_8h.html":[4,0,0,11,4,5],
+"setpoint_8h.html":[4,0,0,11,1,9],
+"setpoint_8h.html#aaba057485dc4c132a7a7d0f36d2c79a3":[4,0,0,11,1,9,3],
+"setpoint_8h.html#adb22f9d1fe222ce02c4af337253f7fe3":[4,0,0,11,1,9,2],
 "shader__program_8h.html":[4,0,0,4,2,0,6],
 "shape__meshes_8h.html":[4,0,0,4,2,0,7],
 "shape__specification_8h.html":[4,0,0,4,24],
@@ -244,10 +249,5 @@ var NAVTREEINDEX42 =
 "structdrake_1_1is__eigen__vector__of.html":[3,0,0,34],
 "structdrake_1_1logging_1_1_warn.html":[3,0,0,5,0],
 "structdrake_1_1logging_1_1_warn.html#adfebb4989e81d5d715e9ef669de87dfe":[3,0,0,5,0,0],
-"structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html":[3,0,0,6,3,0,0],
-"structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html#a063aefa11fdbf773814f73dbf1fabd64":[3,0,0,6,3,0,0,0],
-"structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html#a1c465fdede6b5ea8a96275e2b9f1ecb3":[3,0,0,6,3,0,0,3],
-"structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html#ae01adb7e45a3f63fccccf9f06a9eea2f":[3,0,0,6,3,0,0,2],
-"structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html#afeff966124fec7399f4a3e1eef5c9a26":[3,0,0,6,3,0,0,1],
-"structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html":[3,0,0,6,3,2]
+"structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html":[3,0,0,6,3,0,0]
 };
