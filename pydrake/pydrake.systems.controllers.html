@@ -296,7 +296,7 @@ has run once), not zero.</p>
 
 <dl class="function">
 <dt id="pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulator">
-<code class="descclassname">pydrake.systems.controllers.</code><code class="descname">FiniteHorizonLinearQuadraticRegulator</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], t0: float, tf: float, Q: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], R: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], options: pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions = &lt;pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions object at 0x7fa03b43c070&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorResult<a class="headerlink" href="#pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulator" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">pydrake.systems.controllers.</code><code class="descname">FiniteHorizonLinearQuadraticRegulator</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], t0: float, tf: float, Q: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], R: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], options: pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions = &lt;pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions object at 0x7f263add21f0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorResult<a class="headerlink" href="#pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Solves the differential Riccati equation to compute the optimal
 controller and optimal cost-to-go for the finite-horizon linear
 quadratic regulator:</p>
@@ -631,7 +631,7 @@ InverseDynamics. More specifically, the output of this controller is:
 <span class="pre">kd(v*</span> <span class="pre">-</span> <span class="pre">v)</span> <span class="pre">+</span> <span class="pre">ki</span> <span class="pre">int(q*</span> <span class="pre">-</span> <span class="pre">q)</span> <span class="pre">+</span> <span class="pre">vd*</span></code>. <cite>q</cite> and <code class="docutils literal"><span class="pre">v</span></code> stand for the
 generalized position and velocity, and <code class="docutils literal"><span class="pre">vd</span></code> is the generalized
 acceleration. <code class="docutils literal"><span class="pre">*</span></code> indicates reference values.</p>
-<p>This controller always has a BasicVector input port for estimated
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">estimated_state&rarr;</td></tr><tr><td align=right style="padding:5px 0px 5px 0px">desired_state&rarr;</td></tr><tr><td align=right style="padding:5px 0px 5px 0px">desired_acceleration*&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>InverseDynamicsController</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; force</td></tr></table></td></tr></table><p>This controller always has a BasicVector input port for estimated
 robot state <code class="docutils literal"><span class="pre">(q,</span> <span class="pre">v)</span></code>, a BasicVector input port for reference robot
 state <code class="docutils literal"><span class="pre">(q*,</span> <span class="pre">v*)</span></code> and a BasicVector output port for computed torque
 <code class="docutils literal"><span class="pre">torque</span></code>. A constructor flag can be set to track reference
@@ -641,7 +641,7 @@ also declared, and it’s content is used as <code class="docutils literal"><spa
 <p>Note that this class assumes the robot is fully actuated, its position
 and velocity have the same dimension, and it does not have a floating
 base. If violated, the program will abort. This controller was not
-designed for closed loop systems: the controller accounts for neither
+designed for closed-loop systems: the controller accounts for neither
 constraint forces nor actuator forces applied at loop constraints. Use
 on such systems is not recommended.</p>
 <div class="admonition seealso">
@@ -907,7 +907,7 @@ system coordinates.</td>
 
 <dl class="function">
 <dt id="pydrake.systems.controllers.MakeFiniteHorizonLinearQuadraticRegulator">
-<code class="descclassname">pydrake.systems.controllers.</code><code class="descname">MakeFiniteHorizonLinearQuadraticRegulator</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], t0: float, tf: float, Q: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], R: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], options: pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions = &lt;pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions object at 0x7fa03b43c0b0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.System_[float]<a class="headerlink" href="#pydrake.systems.controllers.MakeFiniteHorizonLinearQuadraticRegulator" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">pydrake.systems.controllers.</code><code class="descname">MakeFiniteHorizonLinearQuadraticRegulator</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], t0: float, tf: float, Q: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], R: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], options: pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions = &lt;pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions object at 0x7f263add2230&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.System_[float]<a class="headerlink" href="#pydrake.systems.controllers.MakeFiniteHorizonLinearQuadraticRegulator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Variant of FiniteHorizonLinearQuadraticRegulator that returns a System
 implementing the regulator (controller) as a System, with a single
 “plant_state” input for the estimated plant state, and a single
