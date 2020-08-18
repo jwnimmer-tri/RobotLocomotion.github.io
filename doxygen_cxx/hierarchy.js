@@ -326,6 +326,7 @@ var hierarchy =
     [ "ImageTraits< PixelType::kRgb8U >", "structdrake_1_1systems_1_1sensors_1_1_image_traits_3_01_pixel_type_1_1k_rgb8_u_01_4.html", null ],
     [ "ImageTraits< PixelType::kRgba8U >", "structdrake_1_1systems_1_1sensors_1_1_image_traits_3_01_pixel_type_1_1k_rgba8_u_01_4.html", null ],
     [ "ImageTraits< systems::sensors::PixelType::kLabel16I >", "structdrake_1_1systems_1_1sensors_1_1_image_traits.html", null ],
+    [ "InitializeParams", "structdrake_1_1systems_1_1_initialize_params.html", null ],
     [ "InitialValueProblem< T >", "classdrake_1_1systems_1_1_initial_value_problem.html", null ],
     [ "AntiderivativeFunction< T >::IntegrableFunctionContext", "structdrake_1_1systems_1_1_antiderivative_function_1_1_integrable_function_context.html", null ],
     [ "integral_constant", null, [
@@ -516,7 +517,8 @@ var hierarchy =
     [ "Polynomial", "classdrake_1_1symbolic_1_1_polynomial.html", null ],
     [ "Polynomial< T >", "classdrake_1_1_polynomial.html", null ],
     [ "PolynomialBasisElement", "classdrake_1_1symbolic_1_1_polynomial_basis_element.html", [
-      [ "ChebyshevBasisElement", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html", null ]
+      [ "ChebyshevBasisElement", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html", null ],
+      [ "MonomialBasisElement", "classdrake_1_1symbolic_1_1_monomial_basis_element.html", null ]
     ] ],
     [ "PortBase", "classdrake_1_1systems_1_1_port_base.html", [
       [ "InputPortBase", "classdrake_1_1systems_1_1_input_port_base.html", [
@@ -946,6 +948,7 @@ var hierarchy =
       [ "hash< drake::symbolic::Expression >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_expression_01_4.html", null ],
       [ "hash< drake::symbolic::Formula >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_formula_01_4.html", null ],
       [ "hash< drake::symbolic::Monomial >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_monomial_01_4.html", null ],
+      [ "hash< drake::symbolic::MonomialBasisElement >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_monomial_basis_element_01_4.html", null ],
       [ "hash< drake::symbolic::Polynomial >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_polynomial_01_4.html", null ],
       [ "hash< drake::symbolic::Variable >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_variable_01_4.html", null ],
       [ "hash< drake::symbolic::Variables >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_variables_01_4.html", null ],

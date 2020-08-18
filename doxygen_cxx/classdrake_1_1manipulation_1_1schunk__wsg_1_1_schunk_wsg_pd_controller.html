@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('classdrake_1_1manipulation_1_1schunk__
 <tr>
 <td align="right" style="padding:5px 0px 5px 0px">desired_state&rarr;</td></tr>
 <tr>
-<td align="right" style="padding:5px 0px 5px 0px">force_limit&rarr;</td></tr>
+<td align="right" style="padding:5px 0px 5px 0px">force_limit (optional)&rarr;</td></tr>
 <tr>
 <td align="right" style="padding:5px 0px 5px 0px">state&rarr;</td></tr>
 </table>
@@ -123,15 +123,15 @@ $(document).ready(function(){initNavTree('classdrake_1_1manipulation_1_1schunk__
 </table>
 </td></tr>
 </table>
-<p>The desired_state is a <a class="el" href="classdrake_1_1systems_1_1_basic_vector.html">BasicVector&lt;double&gt;</a> of size 2 (position and velocity of the distance between the fingers). The force_limit is a scalar (<a class="el" href="classdrake_1_1systems_1_1_basic_vector.html">BasicVector&lt;double&gt;</a> of size 1). The state is a <a class="el" href="classdrake_1_1systems_1_1_basic_vector.html">BasicVector&lt;double&gt;</a> of size 4 (positions and velocities of the two fingers). The output generalized_force is a <a class="el" href="classdrake_1_1systems_1_1_basic_vector.html">BasicVector&lt;double&gt;</a> of size 2 (generalized force inputs to the two fingers). The output grip_force is a scalar surrogate for the force measurement from the driver, f = abs(f₀-f₁) which, like the gripper itself, only reports a positive force. </p>
+<p>The desired_state is a <a class="el" href="classdrake_1_1systems_1_1_basic_vector.html">BasicVector&lt;double&gt;</a> of size 2 (position and velocity of the distance between the fingers). The force_limit is a scalar (<a class="el" href="classdrake_1_1systems_1_1_basic_vector.html">BasicVector&lt;double&gt;</a> of size 1) and is optional; if the input port is not connected then the constant value passed into the constructor is used. The state is a <a class="el" href="classdrake_1_1systems_1_1_basic_vector.html">BasicVector&lt;double&gt;</a> of size 4 (positions and velocities of the two fingers). The output generalized_force is a <a class="el" href="classdrake_1_1systems_1_1_basic_vector.html">BasicVector&lt;double&gt;</a> of size 2 (generalized force inputs to the two fingers). The output grip_force is a scalar surrogate for the force measurement from the driver, f = abs(f₀-f₁) which, like the gripper itself, only reports a positive force. </p>
 </div>
 <p><code>#include &lt;drake/manipulation/schunk_wsg/schunk_wsg_position_controller.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11ae53d7cdbae0d11f65b819b5f17bc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_pd_controller.html#a11ae53d7cdbae0d11f65b819b5f17bc9">SchunkWsgPdController</a> (double kp_command=200.0, double kd_command=5.0, double kp_constraint=2000.0, double kd_constraint=5.0)</td></tr>
-<tr class="memdesc:a11ae53d7cdbae0d11f65b819b5f17bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the controller.  <a href="#a11ae53d7cdbae0d11f65b819b5f17bc9">More...</a><br /></td></tr>
-<tr class="separator:a11ae53d7cdbae0d11f65b819b5f17bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7793df8579c52a7ea9c46cde474489"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_pd_controller.html#a2f7793df8579c52a7ea9c46cde474489">SchunkWsgPdController</a> (double kp_command=200.0, double kd_command=5.0, double kp_constraint=2000.0, double kd_constraint=5.0, double default_force_limit=40.0)</td></tr>
+<tr class="memdesc:a2f7793df8579c52a7ea9c46cde474489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the controller.  <a href="#a2f7793df8579c52a7ea9c46cde474489">More...</a><br /></td></tr>
+<tr class="separator:a2f7793df8579c52a7ea9c46cde474489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae869c0f777f5cba6dcc84f046e7a4a3c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">systems::InputPort</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_pd_controller.html#ae869c0f777f5cba6dcc84f046e7a4a3c">get_desired_state_input_port</a> () const</td></tr>
 <tr class="separator:ae869c0f777f5cba6dcc84f046e7a4a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81f7b538a90c7ca880c6085b0d386cf1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">systems::InputPort</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_pd_controller.html#a81f7b538a90c7ca880c6085b0d386cf1">get_force_limit_input_port</a> () const</td></tr>
@@ -1208,8 +1208,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a11ae53d7cdbae0d11f65b819b5f17bc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11ae53d7cdbae0d11f65b819b5f17bc9">&#9670;&nbsp;</a></span>SchunkWsgPdController() <span class="overload">[3/3]</span></h2>
+<a id="a2f7793df8579c52a7ea9c46cde474489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f7793df8579c52a7ea9c46cde474489">&#9670;&nbsp;</a></span>SchunkWsgPdController() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1236,7 +1236,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>kd_constraint</em> = <code>5.0</code>&#160;</td>
+          <td class="paramname"><em>kd_constraint</em> = <code>5.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>default_force_limit</em> = <code>40.0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

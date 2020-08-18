@@ -25,6 +25,7 @@ var searchData=
   ['mobylcpsolver',['MobyLCPSolver',['../classdrake_1_1solvers_1_1_moby_l_c_p_solver.html',1,'drake::solvers']]],
   ['mobylcpsolverid',['MobyLcpSolverId',['../classdrake_1_1solvers_1_1_moby_lcp_solver_id.html',1,'drake::solvers']]],
   ['monomial',['Monomial',['../classdrake_1_1symbolic_1_1_monomial.html',1,'Monomial'],['../classdrake_1_1_polynomial_1_1_monomial.html',1,'Polynomial&lt; T &gt;::Monomial']]],
+  ['monomialbasiselement',['MonomialBasisElement',['../classdrake_1_1symbolic_1_1_monomial_basis_element.html',1,'drake::symbolic']]],
   ['moseksolver',['MosekSolver',['../classdrake_1_1solvers_1_1_mosek_solver.html',1,'drake::solvers']]],
   ['moseksolverdetails',['MosekSolverDetails',['../structdrake_1_1solvers_1_1_mosek_solver_details.html',1,'drake::solvers']]],
   ['moveikdemobase',['MoveIkDemoBase',['../classdrake_1_1manipulation_1_1util_1_1_move_ik_demo_base.html',1,'drake::manipulation::util']]],

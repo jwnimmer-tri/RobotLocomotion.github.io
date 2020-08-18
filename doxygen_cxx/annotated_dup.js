@@ -17,6 +17,7 @@ var annotated_dup =
       [ "hash< drake::symbolic::Expression >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_expression_01_4.html", null ],
       [ "hash< drake::symbolic::Formula >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_formula_01_4.html", null ],
       [ "hash< drake::symbolic::Monomial >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_monomial_01_4.html", null ],
+      [ "hash< drake::symbolic::MonomialBasisElement >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_monomial_basis_element_01_4.html", null ],
       [ "hash< drake::symbolic::Polynomial >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_polynomial_01_4.html", null ],
       [ "hash< drake::symbolic::Variable >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_variable_01_4.html", null ],
       [ "hash< drake::symbolic::Variables >", "structstd_1_1hash_3_01drake_1_1symbolic_1_1_variables_01_4.html", null ],

@@ -198,6 +198,28 @@
 ResetIntegratorFromFlags().</p>
 </dd></dl>
 
+<dl class="class">
+<dt id="pydrake.systems.analysis.InitializeParams">
+<em class="property">class </em><code class="descclassname">pydrake.systems.analysis.</code><code class="descname">InitializeParams</code><a class="headerlink" href="#pydrake.systems.analysis.InitializeParams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parameters for fine control of simulator initialization.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last">Simulator&lt;T&gt;::Initialize().</p>
+</div>
+<dl class="method">
+<dt id="pydrake.systems.analysis.InitializeParams.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.InitializeParams</em>, <em>**kwargs</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.systems.analysis.InitializeParams.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.systems.analysis.InitializeParams.suppress_initialization_events">
+<code class="descname">suppress_initialization_events</code><a class="headerlink" href="#pydrake.systems.analysis.InitializeParams.suppress_initialization_events" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether to trigger initialization events. Events are triggered by
+default; it may be useful to suppress them when reusing a simulator.</p>
+</dd></dl>
+
+</dd></dl>
+
 <dl class="attribute">
 <dt id="pydrake.systems.analysis.IntegratorBase">
 <code class="descclassname">pydrake.systems.analysis.</code><code class="descname">IntegratorBase</code><a class="headerlink" href="#pydrake.systems.analysis.IntegratorBase" title="Permalink to this definition">¶</a></dt>
@@ -1500,7 +1522,7 @@ simulation).</p>
 
 <dl class="function">
 <dt id="pydrake.systems.analysis.RegionOfAttraction">
-<code class="descclassname">pydrake.systems.analysis.</code><code class="descname">RegionOfAttraction</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], options: pydrake.systems.analysis.RegionOfAttractionOptions = &lt;pydrake.systems.analysis.RegionOfAttractionOptions object at 0x7f4666b19e30&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.symbolic.Expression<a class="headerlink" href="#pydrake.systems.analysis.RegionOfAttraction" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">pydrake.systems.analysis.</code><code class="descname">RegionOfAttraction</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], options: pydrake.systems.analysis.RegionOfAttractionOptions = &lt;pydrake.systems.analysis.RegionOfAttractionOptions object at 0x7fe443f0ee30&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.symbolic.Expression<a class="headerlink" href="#pydrake.systems.analysis.RegionOfAttraction" title="Permalink to this definition">¶</a></dt>
 <dd><p>Estimates the region of attraction of the time-invariant <code class="docutils literal"><span class="pre">system</span></code> at
 the fixed point defined by <code class="docutils literal"><span class="pre">context</span></code>.</p>
 <p>This implementation only searches for the largest level set of the
@@ -2015,6 +2037,7 @@ CallMonitor(t, x(t))
 // trajectory, and thus the value the Context should contain at the start of the
 // first simulation step.
 procedure Initialize(t₀, x₀) → status
+// Initialization events can be optionally suppressed.
 x⁺(t₀) ← DoAnyInitializationUpdates as in Step()
 x⁻(t₀) ← x⁺(t₀)  // No continuous update needed.
 
@@ -2029,14 +2052,17 @@ CallMonitor(t₀, x⁻(t₀))
 <p>Initialize() can be viewed as a “0ᵗʰ step” that occurs before the
 first Step() call as described above. Like Step(), Initialize() first
 performs pending updates (in this case only initialization events can
-be “pending”). Time doesn’t advance so there is no continuous update
-phase and witnesses cannot trigger. Finally, again like Step(), the
-initial trajectory point <code class="docutils literal"><span class="pre">{t₀,</span> <span class="pre">x⁻(t₀)}</span></code> is provided to the handlers
-for any triggered publish events. That includes initialization publish
-events, per-step publish events, and periodic or timed publish events
-that trigger at t₀, followed by a call to the monitor() function if
-one has been defined (a monitor is semantically identical to a
-per-step publish).</p>
+be “pending”, and even those may be optionally suppressed). Time
+doesn’t advance so there is no continuous update phase and witnesses
+cannot trigger. Finally, again like Step(), the initial trajectory
+point <code class="docutils literal"><span class="pre">{t₀,</span> <span class="pre">x⁻(t₀)}</span></code> is provided to the handlers for any triggered
+publish events. That includes initialization publish events (if not
+suppressed), per-step publish events, and periodic or timed publish
+events that trigger at t₀, followed by a call to the monitor()
+function if one has been defined (a monitor is semantically identical
+to a per-step publish).</p>
+<p>Optionally, initialization events can be suppressed. This can be
+useful when reusing the simulator over the same system and time span.</p>
 <dl class="method">
 <dt id="pydrake.systems.analysis.Simulator_.Simulator_[float].__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float], system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float] = None</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.systems.analysis.Simulator_.Simulator_[float].__init__" title="Permalink to this definition">¶</a></dt>
@@ -2238,17 +2264,8 @@ called.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.analysis.Simulator_.Simulator_[float].Initialize">
-<code class="descname">Initialize</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.SimulatorStatus<a class="headerlink" href="#pydrake.systems.analysis.Simulator_.Simulator_[float].Initialize" title="Permalink to this definition">¶</a></dt>
-<dd><p>Prepares the Simulator for a simulation. In order, the sequence of
-actions taken here are: - The active integrator’s Initialize() method
-is invoked. - Statistics are reset. - Initialization update events are
-triggered and handled to produce the initial trajectory value <code class="docutils literal"><span class="pre">{t₀,</span>
-<span class="pre">x(t₀)}</span></code>. - Then that initial value is provided to the handlers for
-any publish events that have triggered, including initialization and
-per-step publish events, periodic or other time-triggered publish
-events that are scheduled for the initial time t₀, and finally a call
-to the monitor() function if one has been defined.</p>
-<p>See the class documentation for more information. We recommend calling
+<code class="descname">Initialize</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float], params: pydrake.systems.analysis.InitializeParams = &lt;pydrake.systems.analysis.InitializeParams object at 0x7fe443f0eaf0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.SimulatorStatus<a class="headerlink" href="#pydrake.systems.analysis.Simulator_.Simulator_[float].Initialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>See the class documentation for more information. We recommend calling
 Initialize() explicitly prior to beginning a simulation so that error
 conditions will be discovered early. However, Initialize() will be
 called automatically by the first AdvanceTo() call if it hasn’t
@@ -2269,6 +2286,13 @@ at the new starting time. Currently, the AdvanceTo() call will
 print a warning for the first violation; after 2020-12-01 the
 warning will become a hard error.</p>
 </div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The only way to suppress initialization events is by calling
+Initialize() explicitly. The most common scenario for this is when
+reusing a Simulator object. In this case, the caller is
+responsible for ensuring the correctness of the initial state.</p>
+</div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Initialize() does not automatically attempt to satisfy System
@@ -2278,6 +2302,14 @@ satisfied by the initial conditions.</p>
 <p>This method will throw <code class="docutils literal"><span class="pre">RuntimeError</span></code> if the combination of options
 doesn’t make sense. Other failures are possible from the System and
 integrator in use.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">params</span></code>:</dt>
+<dd>(optional) a parameter structure (</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last">InitializeParams).</p>
+</div>
 <dl class="docutils">
 <dt>Returns <code class="docutils literal"><span class="pre">status</span></code>:</dt>
 <dd>A SimulatorStatus object indicating success, termination, or an
@@ -2591,6 +2623,7 @@ CallMonitor(t, x(t))
 // trajectory, and thus the value the Context should contain at the start of the
 // first simulation step.
 procedure Initialize(t₀, x₀) → status
+// Initialization events can be optionally suppressed.
 x⁺(t₀) ← DoAnyInitializationUpdates as in Step()
 x⁻(t₀) ← x⁺(t₀)  // No continuous update needed.
 
@@ -2605,14 +2638,17 @@ CallMonitor(t₀, x⁻(t₀))
 <p>Initialize() can be viewed as a “0ᵗʰ step” that occurs before the
 first Step() call as described above. Like Step(), Initialize() first
 performs pending updates (in this case only initialization events can
-be “pending”). Time doesn’t advance so there is no continuous update
-phase and witnesses cannot trigger. Finally, again like Step(), the
-initial trajectory point <code class="docutils literal"><span class="pre">{t₀,</span> <span class="pre">x⁻(t₀)}</span></code> is provided to the handlers
-for any triggered publish events. That includes initialization publish
-events, per-step publish events, and periodic or timed publish events
-that trigger at t₀, followed by a call to the monitor() function if
-one has been defined (a monitor is semantically identical to a
-per-step publish).</p>
+be “pending”, and even those may be optionally suppressed). Time
+doesn’t advance so there is no continuous update phase and witnesses
+cannot trigger. Finally, again like Step(), the initial trajectory
+point <code class="docutils literal"><span class="pre">{t₀,</span> <span class="pre">x⁻(t₀)}</span></code> is provided to the handlers for any triggered
+publish events. That includes initialization publish events (if not
+suppressed), per-step publish events, and periodic or timed publish
+events that trigger at t₀, followed by a call to the monitor()
+function if one has been defined (a monitor is semantically identical
+to a per-step publish).</p>
+<p>Optionally, initialization events can be suppressed. This can be
+useful when reusing the simulator over the same system and time span.</p>
 <dl class="method">
 <dt id="pydrake.systems.analysis.Simulator_[AutoDiffXd].__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[AutoDiffXd], system: pydrake.systems.framework.System_[AutoDiffXd], context: pydrake.systems.framework.Context_[AutoDiffXd] = None</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[AutoDiffXd].__init__" title="Permalink to this definition">¶</a></dt>
@@ -2814,17 +2850,8 @@ called.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.analysis.Simulator_[AutoDiffXd].Initialize">
-<code class="descname">Initialize</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[AutoDiffXd]</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.SimulatorStatus<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[AutoDiffXd].Initialize" title="Permalink to this definition">¶</a></dt>
-<dd><p>Prepares the Simulator for a simulation. In order, the sequence of
-actions taken here are: - The active integrator’s Initialize() method
-is invoked. - Statistics are reset. - Initialization update events are
-triggered and handled to produce the initial trajectory value <code class="docutils literal"><span class="pre">{t₀,</span>
-<span class="pre">x(t₀)}</span></code>. - Then that initial value is provided to the handlers for
-any publish events that have triggered, including initialization and
-per-step publish events, periodic or other time-triggered publish
-events that are scheduled for the initial time t₀, and finally a call
-to the monitor() function if one has been defined.</p>
-<p>See the class documentation for more information. We recommend calling
+<code class="descname">Initialize</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[AutoDiffXd], params: pydrake.systems.analysis.InitializeParams = &lt;pydrake.systems.analysis.InitializeParams object at 0x7fe443f0edb0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.SimulatorStatus<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[AutoDiffXd].Initialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>See the class documentation for more information. We recommend calling
 Initialize() explicitly prior to beginning a simulation so that error
 conditions will be discovered early. However, Initialize() will be
 called automatically by the first AdvanceTo() call if it hasn’t
@@ -2845,6 +2872,13 @@ at the new starting time. Currently, the AdvanceTo() call will
 print a warning for the first violation; after 2020-12-01 the
 warning will become a hard error.</p>
 </div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The only way to suppress initialization events is by calling
+Initialize() explicitly. The most common scenario for this is when
+reusing a Simulator object. In this case, the caller is
+responsible for ensuring the correctness of the initial state.</p>
+</div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Initialize() does not automatically attempt to satisfy System
@@ -2854,6 +2888,14 @@ satisfied by the initial conditions.</p>
 <p>This method will throw <code class="docutils literal"><span class="pre">RuntimeError</span></code> if the combination of options
 doesn’t make sense. Other failures are possible from the System and
 integrator in use.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">params</span></code>:</dt>
+<dd>(optional) a parameter structure (</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last">InitializeParams).</p>
+</div>
 <dl class="docutils">
 <dt>Returns <code class="docutils literal"><span class="pre">status</span></code>:</dt>
 <dd>A SimulatorStatus object indicating success, termination, or an
@@ -3165,6 +3207,7 @@ CallMonitor(t, x(t))
 // trajectory, and thus the value the Context should contain at the start of the
 // first simulation step.
 procedure Initialize(t₀, x₀) → status
+// Initialization events can be optionally suppressed.
 x⁺(t₀) ← DoAnyInitializationUpdates as in Step()
 x⁻(t₀) ← x⁺(t₀)  // No continuous update needed.
 
@@ -3179,14 +3222,17 @@ CallMonitor(t₀, x⁻(t₀))
 <p>Initialize() can be viewed as a “0ᵗʰ step” that occurs before the
 first Step() call as described above. Like Step(), Initialize() first
 performs pending updates (in this case only initialization events can
-be “pending”). Time doesn’t advance so there is no continuous update
-phase and witnesses cannot trigger. Finally, again like Step(), the
-initial trajectory point <code class="docutils literal"><span class="pre">{t₀,</span> <span class="pre">x⁻(t₀)}</span></code> is provided to the handlers
-for any triggered publish events. That includes initialization publish
-events, per-step publish events, and periodic or timed publish events
-that trigger at t₀, followed by a call to the monitor() function if
-one has been defined (a monitor is semantically identical to a
-per-step publish).</p>
+be “pending”, and even those may be optionally suppressed). Time
+doesn’t advance so there is no continuous update phase and witnesses
+cannot trigger. Finally, again like Step(), the initial trajectory
+point <code class="docutils literal"><span class="pre">{t₀,</span> <span class="pre">x⁻(t₀)}</span></code> is provided to the handlers for any triggered
+publish events. That includes initialization publish events (if not
+suppressed), per-step publish events, and periodic or timed publish
+events that trigger at t₀, followed by a call to the monitor()
+function if one has been defined (a monitor is semantically identical
+to a per-step publish).</p>
+<p>Optionally, initialization events can be suppressed. This can be
+useful when reusing the simulator over the same system and time span.</p>
 <dl class="method">
 <dt id="pydrake.systems.analysis.Simulator_[float].__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float], system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float] = None</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[float].__init__" title="Permalink to this definition">¶</a></dt>
@@ -3388,17 +3434,8 @@ called.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.analysis.Simulator_[float].Initialize">
-<code class="descname">Initialize</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.SimulatorStatus<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[float].Initialize" title="Permalink to this definition">¶</a></dt>
-<dd><p>Prepares the Simulator for a simulation. In order, the sequence of
-actions taken here are: - The active integrator’s Initialize() method
-is invoked. - Statistics are reset. - Initialization update events are
-triggered and handled to produce the initial trajectory value <code class="docutils literal"><span class="pre">{t₀,</span>
-<span class="pre">x(t₀)}</span></code>. - Then that initial value is provided to the handlers for
-any publish events that have triggered, including initialization and
-per-step publish events, periodic or other time-triggered publish
-events that are scheduled for the initial time t₀, and finally a call
-to the monitor() function if one has been defined.</p>
-<p>See the class documentation for more information. We recommend calling
+<code class="descname">Initialize</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float], params: pydrake.systems.analysis.InitializeParams = &lt;pydrake.systems.analysis.InitializeParams object at 0x7fe443f0eaf0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.SimulatorStatus<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[float].Initialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>See the class documentation for more information. We recommend calling
 Initialize() explicitly prior to beginning a simulation so that error
 conditions will be discovered early. However, Initialize() will be
 called automatically by the first AdvanceTo() call if it hasn’t
@@ -3419,6 +3456,13 @@ at the new starting time. Currently, the AdvanceTo() call will
 print a warning for the first violation; after 2020-12-01 the
 warning will become a hard error.</p>
 </div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The only way to suppress initialization events is by calling
+Initialize() explicitly. The most common scenario for this is when
+reusing a Simulator object. In this case, the caller is
+responsible for ensuring the correctness of the initial state.</p>
+</div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Initialize() does not automatically attempt to satisfy System
@@ -3428,6 +3472,14 @@ satisfied by the initial conditions.</p>
 <p>This method will throw <code class="docutils literal"><span class="pre">RuntimeError</span></code> if the combination of options
 doesn’t make sense. Other failures are possible from the System and
 integrator in use.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">params</span></code>:</dt>
+<dd>(optional) a parameter structure (</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last">InitializeParams).</p>
+</div>
 <dl class="docutils">
 <dt>Returns <code class="docutils literal"><span class="pre">status</span></code>:</dt>
 <dd>A SimulatorStatus object indicating success, termination, or an

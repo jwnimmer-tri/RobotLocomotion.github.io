@@ -78,6 +78,7 @@ var dir_a36da230f0956f48b11c85f7d599788f =
     [ "symbolic_formula_visitor.h", "symbolic__formula__visitor_8h.html", "symbolic__formula__visitor_8h" ],
     [ "symbolic_ldlt.h", "symbolic__ldlt_8h.html", null ],
     [ "symbolic_monomial.h", "symbolic__monomial_8h.html", "symbolic__monomial_8h" ],
+    [ "symbolic_monomial_basis_element.h", "symbolic__monomial__basis__element_8h.html", "symbolic__monomial__basis__element_8h" ],
     [ "symbolic_monomial_util.h", "symbolic__monomial__util_8h.html", "symbolic__monomial__util_8h" ],
     [ "symbolic_polynomial.h", "symbolic__polynomial_8h.html", "symbolic__polynomial_8h" ],
     [ "symbolic_polynomial_basis_element.h", "symbolic__polynomial__basis__element_8h.html", [

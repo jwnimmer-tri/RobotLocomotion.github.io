@@ -11,7 +11,7 @@ var classdrake_1_1symbolic_1_1_chebyshev_basis_element =
     [ "~ChebyshevBasisElement", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html#a7dde75622e6133c6bbf88c4e43c46ad9", null ],
     [ "Differentiate", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html#a38ee88c008b73d992ee8f5a4ed9da3e7", null ],
     [ "EvaluatePartial", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html#ad07bb4182d6a3dc3b0ddcf165a492825", null ],
-    [ "Integration", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html#a8e5bbf2797e779a6e6c8cf18254b4522", null ],
+    [ "Integrate", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html#aba26a87c6147b18e8abf8c2bbccd2e06", null ],
     [ "operator<", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html#af43531f645bc3f0d26090c621394a217", null ],
     [ "operator=", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html#a67a4f0a8fd4c135cd142f0fb677b8535", null ],
     [ "operator=", "classdrake_1_1symbolic_1_1_chebyshev_basis_element.html#aaf22e557ede1a46c5e97c194b30ecb15", null ],

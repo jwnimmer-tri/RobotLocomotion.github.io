@@ -22,7 +22,7 @@ var classdrake_1_1systems_1_1_simulator =
     [ "get_target_realtime_rate", "classdrake_1_1systems_1_1_simulator.html#ad49b5416e03527dc9a06ac3668f56d77", null ],
     [ "GetCurrentWitnessTimeIsolation", "classdrake_1_1systems_1_1_simulator.html#a18ca2f66796e3ec16ce492ec68669bfb", null ],
     [ "has_context", "classdrake_1_1systems_1_1_simulator.html#a1c7916f5c954d724ee084c41cc371a17", null ],
-    [ "Initialize", "classdrake_1_1systems_1_1_simulator.html#a176a995fc2bd7c9924739b658e8ee098", null ],
+    [ "Initialize", "classdrake_1_1systems_1_1_simulator.html#aa1862c2aeab9862e391194d157a96c21", null ],
     [ "operator=", "classdrake_1_1systems_1_1_simulator.html#a9e8575d9029f7febab0a5d347b8ac502", null ],
     [ "operator=", "classdrake_1_1systems_1_1_simulator.html#ab52b9a3d9e687fc51a489fff8bb26233", null ],
     [ "release_context", "classdrake_1_1systems_1_1_simulator.html#af0ecc40cda7115ce6a66ba4737bd62a6", null ],

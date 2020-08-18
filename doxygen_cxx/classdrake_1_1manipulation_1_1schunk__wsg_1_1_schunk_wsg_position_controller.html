@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('classdrake_1_1manipulation_1_1schunk__
 <tr>
 <td align="right" style="padding:5px 0px 5px 0px">desired_position&rarr;</td></tr>
 <tr>
-<td align="right" style="padding:5px 0px 5px 0px">force_limit&rarr;</td></tr>
+<td align="right" style="padding:5px 0px 5px 0px">force_limit (optional)&rarr;</td></tr>
 <tr>
 <td align="right" style="padding:5px 0px 5px 0px">state&rarr;</td></tr>
 </table>
@@ -126,9 +126,9 @@ $(document).ready(function(){initNavTree('classdrake_1_1manipulation_1_1schunk__
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa5dade8cfa37fcf164490d4c988a6391"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_position_controller.html#aa5dade8cfa37fcf164490d4c988a6391">SchunkWsgPositionController</a> (double time_step=0.05, double kp_command=200.0, double kd_command=5.0, double kp_constraint=2000.0, double kd_constraint=5.0)</td></tr>
-<tr class="memdesc:aa5dade8cfa37fcf164490d4c988a6391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the controller.  <a href="#aa5dade8cfa37fcf164490d4c988a6391">More...</a><br /></td></tr>
-<tr class="separator:aa5dade8cfa37fcf164490d4c988a6391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be76b8a8ec623602dcd89f0e4dfa19e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_position_controller.html#a2be76b8a8ec623602dcd89f0e4dfa19e">SchunkWsgPositionController</a> (double time_step=0.05, double kp_command=200.0, double kd_command=5.0, double kp_constraint=2000.0, double kd_constraint=5.0, double default_force_limit=40.0)</td></tr>
+<tr class="memdesc:a2be76b8a8ec623602dcd89f0e4dfa19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the controller.  <a href="#a2be76b8a8ec623602dcd89f0e4dfa19e">More...</a><br /></td></tr>
+<tr class="separator:a2be76b8a8ec623602dcd89f0e4dfa19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32f1afa470a4479ee8d7f4cb620dd30e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_position_controller.html#a32f1afa470a4479ee8d7f4cb620dd30e">set_initial_position</a> (<a class="el" href="classdrake_1_1systems_1_1_state.html">systems::State</a>&lt; double &gt; *state, double desired_position) const</td></tr>
 <tr class="memdesc:a32f1afa470a4479ee8d7f4cb620dd30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Deprecated.)  <a href="#a32f1afa470a4479ee8d7f4cb620dd30e">More...</a><br /></td></tr>
 <tr class="separator:a32f1afa470a4479ee8d7f4cb620dd30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1053,8 +1053,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aa5dade8cfa37fcf164490d4c988a6391"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5dade8cfa37fcf164490d4c988a6391">&#9670;&nbsp;</a></span>SchunkWsgPositionController() <span class="overload">[3/3]</span></h2>
+<a id="a2be76b8a8ec623602dcd89f0e4dfa19e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2be76b8a8ec623602dcd89f0e4dfa19e">&#9670;&nbsp;</a></span>SchunkWsgPositionController() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1087,7 +1087,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>kd_constraint</em> = <code>5.0</code>&#160;</td>
+          <td class="paramname"><em>kd_constraint</em> = <code>5.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>default_force_limit</em> = <code>40.0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
