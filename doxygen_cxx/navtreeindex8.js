@@ -1,8 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"classdrake_1_1math_1_1_rigid_transform.html#a605ec47e36e257f4661d7c86a7f2ac8c":[3,0,0,7,12,17],
-"classdrake_1_1math_1_1_rigid_transform.html#a6e77b1e5fde8184fd5d18a62d00297bf":[3,0,0,7,12,40],
-"classdrake_1_1math_1_1_rigid_transform.html#a7408076cfba12eda75c0c354d70c6a96":[3,0,0,7,12,27],
 "classdrake_1_1math_1_1_rigid_transform.html#a814b6772b29ffd1c2bbc34befae3667d":[3,0,0,7,12,32],
 "classdrake_1_1math_1_1_rigid_transform.html#a89d3b170a7e3621ad02fe72ee7218a10":[3,0,0,7,12,16],
 "classdrake_1_1math_1_1_rigid_transform.html#a8bedd8c483aaf5bc48587d10d7a3d485":[3,0,0,7,12,44],
@@ -249,5 +246,8 @@ var NAVTREEINDEX8 =
 "classdrake_1_1multibody_1_1_contact_wrench_from_force_in_world_frame_evaluator.html#a3c6921d5f87aa536af2e289faea9c989":[3,0,0,8,14,3],
 "classdrake_1_1multibody_1_1_contact_wrench_from_force_in_world_frame_evaluator.html#a6fa8191fb1a239040842f929e814016d":[3,0,0,8,14,2],
 "classdrake_1_1multibody_1_1_contact_wrench_from_force_in_world_frame_evaluator.html#ae890659533400e40f7e557c308b41c50":[3,0,0,8,14,1],
-"classdrake_1_1multibody_1_1_contact_wrench_from_force_in_world_frame_evaluator.html#af8df1f433a7c06ee0893d1f3ef7b9c2e":[3,0,0,8,14,4]
+"classdrake_1_1multibody_1_1_contact_wrench_from_force_in_world_frame_evaluator.html#af8df1f433a7c06ee0893d1f3ef7b9c2e":[3,0,0,8,14,4],
+"classdrake_1_1multibody_1_1_contact_wrench_from_force_in_world_frame_evaluator.html#aff2e1c2309bc3fe94aa506b5c7f7d53b":[3,0,0,8,14,0],
+"classdrake_1_1multibody_1_1_coulomb_friction.html":[3,0,0,8,15],
+"classdrake_1_1multibody_1_1_coulomb_friction.html#a092e05e3995b9dcf1b34a4c596678ae6":[3,0,0,8,15,4]
 };

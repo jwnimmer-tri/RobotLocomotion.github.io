@@ -25,6 +25,7 @@ var searchData=
   ['diagrameventcollection',['DiagramEventCollection',['../classdrake_1_1systems_1_1_diagram_event_collection.html',1,'drake::systems']]],
   ['diagramoutputport',['DiagramOutputPort',['../classdrake_1_1systems_1_1_diagram_output_port.html',1,'drake::systems']]],
   ['diagramstate',['DiagramState',['../classdrake_1_1systems_1_1_diagram_state.html',1,'drake::systems']]],
+  ['differentialinversekinematicsintegrator',['DifferentialInverseKinematicsIntegrator',['../classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html',1,'drake::manipulation::planner']]],
   ['differentialinversekinematicsparameters',['DifferentialInverseKinematicsParameters',['../classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_parameters.html',1,'drake::manipulation::planner']]],
   ['differentialinversekinematicsresult',['DifferentialInverseKinematicsResult',['../structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html',1,'drake::manipulation::planner']]],
   ['directcollocation',['DirectCollocation',['../classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation.html',1,'drake::systems::trajectory_optimization']]],

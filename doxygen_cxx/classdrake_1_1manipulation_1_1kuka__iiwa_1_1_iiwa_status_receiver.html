@@ -143,8 +143,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4aace8bd793b99b949b1522ec18c3347"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_receiver.html">IiwaStatusReceiver</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_receiver.html#a4aace8bd793b99b949b1522ec18c3347">operator=</a> (<a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_receiver.html">IiwaStatusReceiver</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:a4aace8bd793b99b949b1522ec18c3347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Named accessors for this System's input and output ports.</div></td></tr>
-<tr class="memitem:a191b9f7bf704e7e69bb569f6bf819c33"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">systems::InputPort</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_receiver.html#a191b9f7bf704e7e69bb569f6bf819c33">get_input_port</a> () const</td></tr>
-<tr class="separator:a191b9f7bf704e7e69bb569f6bf819c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad94bf531cee42bee1c83d47b54eb8a2b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_output_port.html">systems::OutputPort</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_receiver.html#ad94bf531cee42bee1c83d47b54eb8a2b">get_position_commanded_output_port</a> () const</td></tr>
 <tr class="separator:ad94bf531cee42bee1c83d47b54eb8a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9db3275e9ca71d56c13029264009c088"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_output_port.html">systems::OutputPort</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_receiver.html#a9db3275e9ca71d56c13029264009c088">get_position_measured_output_port</a> () const</td></tr>
@@ -1241,23 +1239,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a191b9f7bf704e7e69bb569f6bf819c33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a191b9f7bf704e7e69bb569f6bf819c33">&#9670;&nbsp;</a></span>get_input_port()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">systems::InputPort</a>&lt;double&gt;&amp; get_input_port </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ad94bf531cee42bee1c83d47b54eb8a2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad94bf531cee42bee1c83d47b54eb8a2b">&#9670;&nbsp;</a></span>get_position_commanded_output_port()</h2>
 
@@ -1360,8 +1341,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a4aace8bd793b99b949b1522ec18c3347"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4aace8bd793b99b949b1522ec18c3347">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="a699d45f796ad1e984e90aeb4d40ad5f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699d45f796ad1e984e90aeb4d40ad5f7">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1372,7 +1353,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_receiver.html">IiwaStatusReceiver</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_receiver.html">IiwaStatusReceiver</a> &amp;&amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_receiver.html">IiwaStatusReceiver</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1386,8 +1367,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a699d45f796ad1e984e90aeb4d40ad5f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a699d45f796ad1e984e90aeb4d40ad5f7">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="a4aace8bd793b99b949b1522ec18c3347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aace8bd793b99b949b1522ec18c3347">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1398,7 +1379,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_receiver.html">IiwaStatusReceiver</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_receiver.html">IiwaStatusReceiver</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_status_receiver.html">IiwaStatusReceiver</a> &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

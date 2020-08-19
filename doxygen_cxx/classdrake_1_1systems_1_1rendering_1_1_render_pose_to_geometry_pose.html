@@ -118,12 +118,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adb016598bcc24886dbf9ebff8a66ba6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0999fca1cdc09f845851dba2ff8b56db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1rendering_1_1_render_pose_to_geometry_pose.html#a0999fca1cdc09f845851dba2ff8b56db">~RenderPoseToGeometryPose</a> () override</td></tr>
 <tr class="separator:a0999fca1cdc09f845851dba2ff8b56db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcfc22af164f8b6ee671b0d598fd2466"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">InputPort</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1rendering_1_1_render_pose_to_geometry_pose.html#abcfc22af164f8b6ee671b0d598fd2466">get_input_port</a> () const</td></tr>
-<tr class="memdesc:abcfc22af164f8b6ee671b0d598fd2466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classdrake_1_1systems_1_1rendering_1_1_pose_vector.html" title="A 7-vector representing the transform of frame A in the world frame, X_WA, in the form {p_WA,...">rendering::PoseVector</a> input port.  <a href="#abcfc22af164f8b6ee671b0d598fd2466">More...</a><br /></td></tr>
-<tr class="separator:abcfc22af164f8b6ee671b0d598fd2466"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08e2c5bab385f7c5e1069d61c45600c3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_output_port.html">OutputPort</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1rendering_1_1_render_pose_to_geometry_pose.html#a08e2c5bab385f7c5e1069d61c45600c3">get_output_port</a> () const</td></tr>
-<tr class="memdesc:a08e2c5bab385f7c5e1069d61c45600c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="namespacedrake_1_1geometry.html#a4ace159b1ce98627d4af8aeb8c681087" title="Class for communicating pose information to SceneGraph for registered frames.">geometry::FramePoseVector</a> output port.  <a href="#a08e2c5bab385f7c5e1069d61c45600c3">More...</a><br /></td></tr>
-<tr class="separator:a08e2c5bab385f7c5e1069d61c45600c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Does not allow copy, move, or assignment</div></td></tr>
 <tr class="memitem:ad016d0d966323a52f81db6e775cc939b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1rendering_1_1_render_pose_to_geometry_pose.html#ad016d0d966323a52f81db6e775cc939b">RenderPoseToGeometryPose</a> (const <a class="el" href="classdrake_1_1systems_1_1rendering_1_1_render_pose_to_geometry_pose.html">RenderPoseToGeometryPose</a> &amp;)=delete</td></tr>
 <tr class="separator:ad016d0d966323a52f81db6e775cc939b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1324,44 +1318,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abcfc22af164f8b6ee671b0d598fd2466"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcfc22af164f8b6ee671b0d598fd2466">&#9670;&nbsp;</a></span>get_input_port()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">InputPort</a>&lt;T&gt;&amp; get_input_port </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the <a class="el" href="classdrake_1_1systems_1_1rendering_1_1_pose_vector.html" title="A 7-vector representing the transform of frame A in the world frame, X_WA, in the form {p_WA,...">rendering::PoseVector</a> input port. </p>
-
-</div>
-</div>
-<a id="a08e2c5bab385f7c5e1069d61c45600c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08e2c5bab385f7c5e1069d61c45600c3">&#9670;&nbsp;</a></span>get_output_port()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classdrake_1_1systems_1_1_output_port.html">OutputPort</a>&lt;T&gt;&amp; get_output_port </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the <a class="el" href="namespacedrake_1_1geometry.html#a4ace159b1ce98627d4af8aeb8c681087" title="Class for communicating pose information to SceneGraph for registered frames.">geometry::FramePoseVector</a> output port. </p>
-
-</div>
-</div>
 <a id="a280f8975d45bda8b9cce7a4ca408870c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a280f8975d45bda8b9cce7a4ca408870c">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 

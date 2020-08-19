@@ -1,8 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"classdrake_1_1multibody_1_1_contact_wrench_from_force_in_world_frame_evaluator.html#aff2e1c2309bc3fe94aa506b5c7f7d53b":[3,0,0,8,14,0],
-"classdrake_1_1multibody_1_1_coulomb_friction.html":[3,0,0,8,15],
-"classdrake_1_1multibody_1_1_coulomb_friction.html#a092e05e3995b9dcf1b34a4c596678ae6":[3,0,0,8,15,4],
 "classdrake_1_1multibody_1_1_coulomb_friction.html#a2848467f6e5ecfb123aadd75043f6b07":[3,0,0,8,15,0],
 "classdrake_1_1multibody_1_1_coulomb_friction.html#a306bc2fdf04bd2c3754ad7a7df0f5c9c":[3,0,0,8,15,5],
 "classdrake_1_1multibody_1_1_coulomb_friction.html#a76e290d9e06bff006cd385765e8f965f":[3,0,0,8,15,6],
@@ -249,5 +246,8 @@ var NAVTREEINDEX9 =
 "classdrake_1_1multibody_1_1_manipulator_equation_constraint.html#a708dd38a797b1c36cec1ca04c7bb9baf":[3,0,0,8,33,2],
 "classdrake_1_1multibody_1_1_manipulator_equation_constraint.html#a72ebf9cd9b7848d5f515a86295c9b066":[3,0,0,8,33,5],
 "classdrake_1_1multibody_1_1_manipulator_equation_constraint.html#a752ff3547759ecee9facf1571404d8ee":[3,0,0,8,33,6],
-"classdrake_1_1multibody_1_1_manipulator_equation_constraint.html#a8feee622344fbece71798110a1176a30":[3,0,0,8,33,4]
+"classdrake_1_1multibody_1_1_manipulator_equation_constraint.html#a8feee622344fbece71798110a1176a30":[3,0,0,8,33,4],
+"classdrake_1_1multibody_1_1_manipulator_equation_constraint.html#ab5acfc7f9201760c921ffda8cc1685c7":[3,0,0,8,33,1],
+"classdrake_1_1multibody_1_1_minimum_distance_constraint.html":[3,0,0,8,34],
+"classdrake_1_1multibody_1_1_minimum_distance_constraint.html#a07fb9bf860fab40cc9bee0d34998df25":[3,0,0,8,34,8]
 };

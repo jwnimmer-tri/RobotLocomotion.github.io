@@ -1,14 +1,5 @@
 var NAVTREEINDEX43 =
 {
-"structdrake_1_1geometry_1_1render_1_1_render_engine_ospray_params.html#a55aece3b83c62e47043df6580a644a8b":[3,0,0,3,0,10,2],
-"structdrake_1_1geometry_1_1render_1_1_render_engine_ospray_params.html#ab0128f21da79318f9d8a2da1d4d3a684":[3,0,0,3,0,10,1],
-"structdrake_1_1geometry_1_1render_1_1_render_engine_ospray_params.html#abf06475def6727f78151bbf258e61e39":[3,0,0,3,0,10,3],
-"structdrake_1_1geometry_1_1render_1_1_render_engine_ospray_params.html#af2454e495f746a372a67e8b356818908":[3,0,0,3,0,10,4],
-"structdrake_1_1geometry_1_1render_1_1_render_engine_vtk_params.html":[3,0,0,3,0,12],
-"structdrake_1_1geometry_1_1render_1_1_render_engine_vtk_params.html#a21e03ddd563337ed39c36bc8f4463d8a":[3,0,0,3,0,12,0],
-"structdrake_1_1geometry_1_1render_1_1_render_engine_vtk_params.html#ab0128f21da79318f9d8a2da1d4d3a684":[3,0,0,3,0,12,1],
-"structdrake_1_1geometry_1_1render_1_1_render_engine_vtk_params.html#af07157dad706c34acd6d255451d6a08d":[3,0,0,3,0,12,2],
-"structdrake_1_1is__eigen__nonvector__expression__double__pair.html":[3,0,0,28],
 "structdrake_1_1is__eigen__nonvector__of.html":[3,0,0,29],
 "structdrake_1_1is__eigen__scalar__same.html":[3,0,0,30],
 "structdrake_1_1is__eigen__type.html":[3,0,0,31],
@@ -22,9 +13,9 @@ var NAVTREEINDEX43 =
 "structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html#a1c465fdede6b5ea8a96275e2b9f1ecb3":[3,0,0,6,3,0,0,3],
 "structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html#ae01adb7e45a3f63fccccf9f06a9eea2f":[3,0,0,6,3,0,0,2],
 "structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html#afeff966124fec7399f4a3e1eef5c9a26":[3,0,0,6,3,0,0,1],
-"structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html":[3,0,0,6,3,2],
-"structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html#aac0e5776ad59e265686244006b0be308":[3,0,0,6,3,2,0],
-"structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html#aaf6a8034fc68445c84db4f8d0fcabc79":[3,0,0,6,3,2,1],
+"structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html":[3,0,0,6,3,3],
+"structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html#aac0e5776ad59e265686244006b0be308":[3,0,0,6,3,3,0],
+"structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html#aaf6a8034fc68445c84db4f8d0fcabc79":[3,0,0,6,3,3,1],
 "structdrake_1_1math_1_1_auto_diff_to_gradient_matrix.html":[3,0,0,7,0],
 "structdrake_1_1math_1_1_auto_diff_to_gradient_matrix.html#a21348e29bb1c2afd6ca653f663394d49":[3,0,0,7,0,0],
 "structdrake_1_1math_1_1_auto_diff_to_value_matrix.html":[3,0,0,7,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX43 =
 "structdrake_1_1solvers_1_1_snopt_solver_details.html#a7263cb2847210d145fcb11838abe81b5":[3,0,0,11,56,1],
 "structdrake_1_1solvers_1_1_snopt_solver_details.html#aada45ddf3bf7b63a6feeb32c3b136cab":[3,0,0,11,56,3],
 "structdrake_1_1solvers_1_1_system_identification_1_1_system_identification_result.html":[3,0,0,11,62,0],
-"structdrake_1_1solvers_1_1_system_identification_1_1_system_identification_result.html#a18e93ca094ae69c7976e4b564759cb28":[3,0,0,11,62,0,3]
+"structdrake_1_1solvers_1_1_system_identification_1_1_system_identification_result.html#a18e93ca094ae69c7976e4b564759cb28":[3,0,0,11,62,0,3],
+"structdrake_1_1solvers_1_1_system_identification_1_1_system_identification_result.html#a42d9b820ef41e4fa4653af17fce5c26b":[3,0,0,11,62,0,4],
+"structdrake_1_1solvers_1_1_system_identification_1_1_system_identification_result.html#a563eb23cbeea0bba6d3af87f73229774":[3,0,0,11,62,0,1],
+"structdrake_1_1solvers_1_1_system_identification_1_1_system_identification_result.html#a8baf6734662529de192e18051c1d6f46":[3,0,0,11,62,0,2],
+"structdrake_1_1solvers_1_1_system_identification_1_1_system_identification_result.html#af6390c53706afa59c954018c4bfe0975":[3,0,0,11,62,0,0],
+"structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_dense_1_1_q_p_data.html":[3,0,0,11,0,6,0],
+"structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_dense_1_1_q_p_data.html#a4785852636b6c359b4513d4b331344da":[3,0,0,11,0,6,0,3],
+"structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_dense_1_1_q_p_data.html#a761d331483743e4b9438d443adf076f5":[3,0,0,11,0,6,0,1],
+"structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_dense_1_1_q_p_data.html#a7bb0467431a13b0f68153c300ce815d0":[3,0,0,11,0,6,0,0],
+"structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_dense_1_1_q_p_data.html#a80e22261e2e582e8618d9f59cf04e8c0":[3,0,0,11,0,6,0,2]
 };

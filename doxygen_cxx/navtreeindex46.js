@@ -1,14 +1,5 @@
 var NAVTREEINDEX46 =
 {
-"symbolic__expression__cell_8h.html#a4abe6ed64006a6caf5b8ffd016d9d564":[4,0,0,1,56,73],
-"symbolic__expression__cell_8h.html#a4de0c0fabeedb18688b94ce9d85a21d1":[4,0,0,1,56,139],
-"symbolic__expression__cell_8h.html#a4faed8e01e77e2e45b88050b550b934e":[4,0,0,1,56,140],
-"symbolic__expression__cell_8h.html#a568d4712bfb6ef78d4908efce797ebd2":[4,0,0,1,56,44],
-"symbolic__expression__cell_8h.html#a572832161aa30d231e6ad34194feb033":[4,0,0,1,56,117],
-"symbolic__expression__cell_8h.html#a5a9a716129fbcdd8a274085e04ca26c1":[4,0,0,1,56,81],
-"symbolic__expression__cell_8h.html#a5c636513383a9a3ab3f8fd92064932c6":[4,0,0,1,56,75],
-"symbolic__expression__cell_8h.html#a61a80e99d12d93faa0ac6d5d7e322f3b":[4,0,0,1,56,86],
-"symbolic__expression__cell_8h.html#a63f0ee9736a5612de981fc34c959b83a":[4,0,0,1,56,121],
 "symbolic__expression__cell_8h.html#a66792167f2936394301f9322b77104f8":[4,0,0,1,56,94],
 "symbolic__expression__cell_8h.html#a6681bd6eee8a596b9d010a4374a18026":[4,0,0,1,56,62],
 "symbolic__expression__cell_8h.html#a67b27dc7be5ef0b7ed9d9da76141fd06":[4,0,0,1,56,82],
@@ -249,5 +240,14 @@ var NAVTREEINDEX46 =
 "symbolic__monomial__util_8h.html#ade6ac4e26dcd9023a9f8146aa75454c7":[4,0,0,1,64,5],
 "symbolic__monomial__util_8h.html#af297794f22c0458592aeea637cce060a":[4,0,0,1,64,3],
 "symbolic__monomial__util_8h.html#aff00cd9261b602f7ce7708286d2dae05":[4,0,0,1,64,1],
-"symbolic__polynomial_8h.html":[4,0,0,1,65]
+"symbolic__polynomial_8h.html":[4,0,0,1,65],
+"symbolic__polynomial_8h.html#a03731fe9a001a20e071a7a9e106061bd":[4,0,0,1,65,33],
+"symbolic__polynomial_8h.html#a0e4fa4bbef7ce58efc247dd1717a2ded":[4,0,0,1,65,29],
+"symbolic__polynomial_8h.html#a1596c40ec725591479b2b4290a6e347b":[4,0,0,1,65,2],
+"symbolic__polynomial_8h.html#a1a0eab276a88883d8e2607630cb93bc5":[4,0,0,1,65,11],
+"symbolic__polynomial_8h.html#a1aa3f21ab39b7fb01be90ed9255df5f9":[4,0,0,1,65,25],
+"symbolic__polynomial_8h.html#a289b47480364e01b67e3c86aa33a0fe4":[4,0,0,1,65,20],
+"symbolic__polynomial_8h.html#a30f8eee8c5c646b5f3fc43baf3ce5854":[4,0,0,1,65,34],
+"symbolic__polynomial_8h.html#a369ea32ea396cc86951892020d5c4a4b":[4,0,0,1,65,30],
+"symbolic__polynomial_8h.html#a42522d07a4a9c32a89e8b4eea9a00a60":[4,0,0,1,65,22]
 };

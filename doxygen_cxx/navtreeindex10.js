@@ -1,8 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"classdrake_1_1multibody_1_1_manipulator_equation_constraint.html#ab5acfc7f9201760c921ffda8cc1685c7":[3,0,0,8,33,1],
-"classdrake_1_1multibody_1_1_minimum_distance_constraint.html":[3,0,0,8,34],
-"classdrake_1_1multibody_1_1_minimum_distance_constraint.html#a07fb9bf860fab40cc9bee0d34998df25":[3,0,0,8,34,8],
 "classdrake_1_1multibody_1_1_minimum_distance_constraint.html#a084659d68be4a5bebf2be75907f7e76a":[3,0,0,8,34,0],
 "classdrake_1_1multibody_1_1_minimum_distance_constraint.html#a56cddcd9e15326b09a5bb54af6c18049":[3,0,0,8,34,2],
 "classdrake_1_1multibody_1_1_minimum_distance_constraint.html#a5f54fe1174b9d9de89ffefb622bb5161":[3,0,0,8,34,6],
@@ -249,5 +246,8 @@ var NAVTREEINDEX10 =
 "classdrake_1_1multibody_1_1_orientation_constraint.html#ae980c1406985953fe4b78c1435ff1785":[3,0,0,8,39,3],
 "classdrake_1_1multibody_1_1_package_map.html":[3,0,0,8,40],
 "classdrake_1_1multibody_1_1_package_map.html#a26f6421b2b1971f71b16c808851bf044":[3,0,0,8,40,2],
-"classdrake_1_1multibody_1_1_package_map.html#a510d35f38c93d44fa6a70d727f55cb8c":[3,0,0,8,40,10]
+"classdrake_1_1multibody_1_1_package_map.html#a510d35f38c93d44fa6a70d727f55cb8c":[3,0,0,8,40,10],
+"classdrake_1_1multibody_1_1_package_map.html#a55f75d8f06f181082e2db71cce389276":[3,0,0,8,40,1],
+"classdrake_1_1multibody_1_1_package_map.html#a56d456159a3495e76b55c66802b07b04":[3,0,0,8,40,13],
+"classdrake_1_1multibody_1_1_package_map.html#a5e2fbb72a84c2c5527f8d2b452918602":[3,0,0,8,40,11]
 };

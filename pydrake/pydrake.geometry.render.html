@@ -261,6 +261,51 @@ will produce a “dummy” implementation.</p>
 </dd></dl>
 
 <dl class="function">
+<dt id="pydrake.geometry.render.MakeRenderEngineOspray">
+<code class="descclassname">pydrake.geometry.render.</code><code class="descname">MakeRenderEngineOspray</code><span class="sig-paren">(</span><em>params: pydrake.geometry.render.RenderEngineOsprayParams</em><span class="sig-paren">)</span> &#x2192; pydrake.geometry.render.RenderEngine<a class="headerlink" href="#pydrake.geometry.render.MakeRenderEngineOspray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructs a RenderEngine implementation which uses an OSPRay-based
+renderer.</p>
+<p>This RenderEngine implementation looks for the following properties
+when registering visual geometry.</p>
+<p><strong>RGB images</strong></p>
+<div class="line-block">
+<div class="line">Group name | Property Name | Required | Property Type | Property</div>
+</div>
+<p>Description | | :——–: | :———–: | :——: |
+:————-: | :——————- | | phong | diffuse | no¹ |
+Eigen::Vector4d | The rgba value of the object surface. |</p>
+<p>¹ If no diffuse value is given, a default rgba value will be applied.
+The default color is a bright orange. This default value can be
+changed to a different value at construction.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This RenderEngine implementation contains a sophisticated renderer
+for advanced lighting and material affects. The above documented
+behavior is the smallest slice. In the future, the advanced
+features will be exposed and it will change the properties that
+expect to be provided.</p>
+</div>
+<p><strong>Depth images</strong></p>
+<p>This RenderEngine implementation does not currently support depth
+images.</p>
+<p><strong>Label images</strong></p>
+<p>This RenderEngine implementation does not currently support label
+images.</p>
+<p><strong>Geometries accepted by RenderEngineVtk</strong></p>
+<p>As documented in RenderEngine::RegisterVisual(), a RenderEngine
+implementation can use the properties found in the
+PerceptionProperties to determine whether it <em>accepts</em> a shape
+provided for registration. this RenderEngine implementation makes use
+of defaults to accept <em>all</em> geometries.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">When the API extends to include advanced materials, this will
+change to only accept geometries that have valid OSPRay materials
+defined.</p>
+</div>
+</dd></dl>
+
+<dl class="function">
 <dt id="pydrake.geometry.render.MakeRenderEngineVtk">
 <code class="descclassname">pydrake.geometry.render.</code><code class="descname">MakeRenderEngineVtk</code><span class="sig-paren">(</span><em>params: pydrake.geometry.render.RenderEngineVtkParams</em><span class="sig-paren">)</span> &#x2192; pydrake.geometry.render.RenderEngine<a class="headerlink" href="#pydrake.geometry.render.MakeRenderEngineVtk" title="Permalink to this definition">¶</a></dt>
 <dd><p>Constructs a RenderEngine implementation which uses a VTK-based OpenGL
@@ -313,12 +358,98 @@ e.g., render label validation).</p>
 </dd></dl>
 
 <dl class="class">
+<dt id="pydrake.geometry.render.OsprayMode">
+<em class="property">class </em><code class="descclassname">pydrake.geometry.render.</code><code class="descname">OsprayMode</code><a class="headerlink" href="#pydrake.geometry.render.OsprayMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>The mode in which the RenderEngineOspray performs.</p>
+<p>The ray tracer can produce hard shadows and doesn’t depend on the
+samples per pixel value. Ray tracing produces <em>simple</em> illumination
+effects at a relatively low computation cost.</p>
+<p>The path tracer produces complex global illumination and depends on
+the samples per pixel. Path tracing produces <em>complex</em> illumination
+effects (caustics, indirect illumination, soft shadows, etc.) at a
+high computation cost.</p>
+<p>Members:</p>
+<blockquote>
+<div><p>kRayTracer :</p>
+<p>kPathTracer :</p>
+</div></blockquote>
+<dl class="method">
+<dt id="pydrake.geometry.render.OsprayMode.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.geometry.render.OsprayMode</em>, <em>arg0: int</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.geometry.render.OsprayMode.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.geometry.render.OsprayMode.kPathTracer">
+<code class="descname">kPathTracer</code><em class="property"> = OsprayMode.kPathTracer</em><a class="headerlink" href="#pydrake.geometry.render.OsprayMode.kPathTracer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.geometry.render.OsprayMode.kRayTracer">
+<code class="descname">kRayTracer</code><em class="property"> = OsprayMode.kRayTracer</em><a class="headerlink" href="#pydrake.geometry.render.OsprayMode.kRayTracer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.geometry.render.OsprayMode.name">
+<code class="descname">name</code><a class="headerlink" href="#pydrake.geometry.render.OsprayMode.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
 <dt id="pydrake.geometry.render.RenderEngine">
 <em class="property">class </em><code class="descclassname">pydrake.geometry.render.</code><code class="descname">RenderEngine</code><a class="headerlink" href="#pydrake.geometry.render.RenderEngine" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
 <dt id="pydrake.geometry.render.RenderEngine.__init__">
 <code class="descname">__init__</code><a class="headerlink" href="#pydrake.geometry.render.RenderEngine.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.geometry.render.RenderEngineOsprayParams">
+<em class="property">class </em><code class="descclassname">pydrake.geometry.render.</code><code class="descname">RenderEngineOsprayParams</code><a class="headerlink" href="#pydrake.geometry.render.RenderEngineOsprayParams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construction parameters for the RenderEngineOspray.</p>
+<dl class="method">
+<dt id="pydrake.geometry.render.RenderEngineOsprayParams.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.geometry.render.RenderEngineOsprayParams</em>, <em>**kwargs</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.geometry.render.RenderEngineOsprayParams.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.geometry.render.RenderEngineOsprayParams.background_color">
+<code class="descname">background_color</code><a class="headerlink" href="#pydrake.geometry.render.RenderEngineOsprayParams.background_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>The rgb color for the environment background (each channel in the
+range [0, 1]). The default value is the same color as in the
+equivalent byte-valued rgb triple [204, 229, 255].</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.geometry.render.RenderEngineOsprayParams.default_diffuse">
+<code class="descname">default_diffuse</code><a class="headerlink" href="#pydrake.geometry.render.RenderEngineOsprayParams.default_diffuse" title="Permalink to this definition">¶</a></dt>
+<dd><p>The (optional) rgba color to apply to the (phong, diffuse) property
+when none is otherwise specified. Note: currently the alpha channel is
+unused by RenderEngineOspray.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.geometry.render.RenderEngineOsprayParams.mode">
+<code class="descname">mode</code><a class="headerlink" href="#pydrake.geometry.render.RenderEngineOsprayParams.mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>The rendering mode to use.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.geometry.render.RenderEngineOsprayParams.samples_per_pixel">
+<code class="descname">samples_per_pixel</code><a class="headerlink" href="#pydrake.geometry.render.RenderEngineOsprayParams.samples_per_pixel" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of illumination samples per pixel. Higher numbers introduce
+higher quality at increased cost. Only has an effect if mode is
+OsprayMode::kPathTracer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.geometry.render.RenderEngineOsprayParams.use_shadows">
+<code class="descname">use_shadows</code><a class="headerlink" href="#pydrake.geometry.render.RenderEngineOsprayParams.use_shadows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether to turn on shadows when in the <code class="docutils literal"><span class="pre">OsprayMode::kRayTracer</span></code>
+rendering mode. It is ignored in other modes.</p>
 </dd></dl>
 
 </dd></dl>

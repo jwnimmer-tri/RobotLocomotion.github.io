@@ -17,6 +17,15 @@ var group__manipulation__systems =
       [ "operator=", "classdrake_1_1manipulation_1_1perception_1_1_pose_smoother.html#ab390d4ff554ce0ee52608c4eb58e7bf2", null ],
       [ "operator=", "classdrake_1_1manipulation_1_1perception_1_1_pose_smoother.html#ad95246103f568ec3362a1bec742d89f4", null ]
     ] ],
+    [ "DifferentialInverseKinematicsIntegrator", "classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html", [
+      [ "DifferentialInverseKinematicsIntegrator", "classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html#a6329f7d7632378d3468c21998625d154", null ],
+      [ "DifferentialInverseKinematicsIntegrator", "classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html#a40f26f7d3890b9dd6f90aae8b8e7ec6f", null ],
+      [ "DifferentialInverseKinematicsIntegrator", "classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html#a929b3bb3230f4ca82b4c5b81c19c1458", null ],
+      [ "ForwardKinematics", "classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html#adb9c056fd315645e92def45ae627b797", null ],
+      [ "operator=", "classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html#acd4ab9a551b8b7a9fc891ec7aa9c6324", null ],
+      [ "operator=", "classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html#aeb6a061fd038bef7ddf9ebb7883da7e3", null ],
+      [ "SetPositions", "classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html#a7e19cbe0d0e26536ec4e025d06e7337a", null ]
+    ] ],
     [ "RobotPlanInterpolator", "classdrake_1_1manipulation_1_1planner_1_1_robot_plan_interpolator.html", [
       [ "RobotPlanInterpolator", "classdrake_1_1manipulation_1_1planner_1_1_robot_plan_interpolator.html#a1ba9e59fed168c02473ee4b1b760b374", null ],
       [ "RobotPlanInterpolator", "classdrake_1_1manipulation_1_1planner_1_1_robot_plan_interpolator.html#a5272382471553a1552daf97d5f9bee20", null ],
@@ -52,10 +61,9 @@ var group__manipulation__systems =
       [ "get_input_port_estimated_state", "classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_plain_controller.html#a6274926b910ba8702481fbf629524fdd", null ],
       [ "get_input_port_feed_forward_force", "classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_plain_controller.html#a65258be6174626bf51b9b4bd379ae62e", null ],
       [ "get_input_port_max_force", "classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_plain_controller.html#a7fdeb240d2a441929f00c9b8ae24b323", null ],
-      [ "get_output_port", "classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_plain_controller.html#a2ef7e6a5eb801e53722e9457b888d11c", null ],
       [ "get_output_port_control", "classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_plain_controller.html#a51df4a9975d9dc48513547675728ef26", null ],
-      [ "operator=", "classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_plain_controller.html#aafbbd8adc46009f9305d5a2522b4093b", null ],
-      [ "operator=", "classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_plain_controller.html#af71a66f365f5efc8fcaa78a2c2fde404", null ]
+      [ "operator=", "classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_plain_controller.html#af71a66f365f5efc8fcaa78a2c2fde404", null ],
+      [ "operator=", "classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_plain_controller.html#aafbbd8adc46009f9305d5a2522b4093b", null ]
     ] ],
     [ "SchunkWsgTrajectoryGenerator", "classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_trajectory_generator.html", [
       [ "SchunkWsgTrajectoryGenerator", "classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_trajectory_generator.html#a10275792be7b6ee4fc39985407f2d568", null ],

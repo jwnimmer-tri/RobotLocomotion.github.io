@@ -12,11 +12,7 @@ var classdrake_1_1systems_1_1_vector_system =
     [ "DoCalcVectorOutput", "classdrake_1_1systems_1_1_vector_system.html#aef5d5729502ec9a436205f55de33db81", null ],
     [ "DoCalcVectorTimeDerivatives", "classdrake_1_1systems_1_1_vector_system.html#ad9f01cddabb2182fd0fcaa6094a94172", null ],
     [ "EvalVectorInput", "classdrake_1_1systems_1_1_vector_system.html#a8c6af63b91bf487bee37f57d8fa33777", null ],
-    [ "get_input_port", "classdrake_1_1systems_1_1_vector_system.html#abcfc22af164f8b6ee671b0d598fd2466", null ],
-    [ "get_input_port", "classdrake_1_1systems_1_1_vector_system.html#af07d1e37465e6831d7f90d4a9f85da04", null ],
-    [ "get_output_port", "classdrake_1_1systems_1_1_vector_system.html#a08e2c5bab385f7c5e1069d61c45600c3", null ],
-    [ "get_output_port", "classdrake_1_1systems_1_1_vector_system.html#a6e576c064b27b966834ded493ce67673", null ],
     [ "GetVectorState", "classdrake_1_1systems_1_1_vector_system.html#a312673de32e312d265f8fd8efea0374f", null ],
-    [ "operator=", "classdrake_1_1systems_1_1_vector_system.html#a15657222d975c52638e0d03e8dddb6c9", null ],
-    [ "operator=", "classdrake_1_1systems_1_1_vector_system.html#a64e5065f46589c0dcafcf358366af0ff", null ]
+    [ "operator=", "classdrake_1_1systems_1_1_vector_system.html#a64e5065f46589c0dcafcf358366af0ff", null ],
+    [ "operator=", "classdrake_1_1systems_1_1_vector_system.html#a15657222d975c52638e0d03e8dddb6c9", null ]
 ];

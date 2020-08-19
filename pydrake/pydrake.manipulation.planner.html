@@ -180,6 +180,61 @@
 <span id="pydrake-manipulation-planner"></span><h1>pydrake.manipulation.planner<a class="headerlink" href="#module-pydrake.manipulation.planner" title="Permalink to this headline">¶</a></h1>
 <p>Tools for manipulation planning.</p>
 <dl class="class">
+<dt id="pydrake.manipulation.planner.DifferentialInverseKinematicsIntegrator">
+<em class="property">class </em><code class="descclassname">pydrake.manipulation.planner.</code><code class="descname">DifferentialInverseKinematicsIntegrator</code><a class="headerlink" href="#pydrake.manipulation.planner.DifferentialInverseKinematicsIntegrator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pydrake.systems.framework.html#pydrake.systems.framework.LeafSystem_[float]" title="pydrake.systems.framework.LeafSystem_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.systems.framework.LeafSystem_[float]</span></code></a></p>
+<p>A LeafSystem which uses DoDifferentialInverseKinematics to produce
+joint position commands.</p>
+<p>Rather than calling DoDifferentialInverseKinematics on the current
+measured positions of the robot, this System maintains its own
+internal state and integrates successive velocity commands open loop.
+Using measured joint positions in a feedback loop can lead to undamped
+oscillations in the redundant joints; we hope to resolve this and are
+tracking it in #9773.</p>
+<p>Note: It is highly recommended that the user calls <code class="docutils literal"><span class="pre">SetPosition()</span></code>
+once to initialize the position commands to match the initial
+positions of the robot.</p>
+<table align=center cellpadding=0 cellspacing=0><tr align=center><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=right style="padding:5px 0px 5px 0px">X_WE_desired&rarr;</td></tr></table></td><td align=center style="border:solid;padding-left:20px;padding-right:20px;vertical-align:middle" bgcolor=#F0F0F0>DifferentialInverseKinematicsIntegrator</td><td style="vertical-align:middle"><table cellspacing=0 cellpadding=0><tr><td align=left style="padding:5px 0px 5px 0px">&rarr; joint_positions</td></tr></table></td></tr></table><dl class="method">
+<dt id="pydrake.manipulation.planner.DifferentialInverseKinematicsIntegrator.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.manipulation.planner.DifferentialInverseKinematicsIntegrator</em>, <em>robot: drake::multibody::MultibodyPlant&lt;double&gt;</em>, <em>frame_E: drake::multibody::Frame&lt;double&gt;</em>, <em>time_step: float</em>, <em>parameters: pydrake.manipulation.planner.DifferentialInverseKinematicsParameters</em>, <em>robot_context: pydrake.systems.framework.Context_[float] = None</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.manipulation.planner.DifferentialInverseKinematicsIntegrator.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructs the system.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">robot</span></code>:</dt>
+<dd>A MultibodyPlant describing the robot.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">frame_E</span></code>:</dt>
+<dd>End-effector frame.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">time_step</span></code>:</dt>
+<dd>the discrete time step of the (Euler) integration.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">parameters</span></code>:</dt>
+<dd>Collection of various problem specific constraints and constants.
+The <code class="docutils literal"><span class="pre">timestep</span></code> parameter will be set to <code class="docutils literal"><span class="pre">time_step</span></code>.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">robot_context</span></code>:</dt>
+<dd>Optional Context of the MultibodyPlant. The position values of
+this context will be overwritten during integration; you only need
+to pass this in if the robot has any non-default parameters.
+$*Default:* <code class="docutils literal"><span class="pre">robot.CreateDefaultContext()</span></code>.</dd>
+</dl>
+<p>Note: All references must remain valid for the lifetime of this
+system.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.manipulation.planner.DifferentialInverseKinematicsIntegrator.ForwardKinematics">
+<code class="descname">ForwardKinematics</code><span class="sig-paren">(</span><em>self: pydrake.manipulation.planner.DifferentialInverseKinematicsIntegrator, context: pydrake.systems.framework.Context_[float]</em><span class="sig-paren">)</span> &#x2192; pydrake.math.RigidTransform_[float]<a class="headerlink" href="#pydrake.manipulation.planner.DifferentialInverseKinematicsIntegrator.ForwardKinematics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides X_WE as a function of the joint position set in <code class="docutils literal"><span class="pre">context</span></code>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.manipulation.planner.DifferentialInverseKinematicsIntegrator.SetPositions">
+<code class="descname">SetPositions</code><span class="sig-paren">(</span><em>self: pydrake.manipulation.planner.DifferentialInverseKinematicsIntegrator, context: pydrake.systems.framework.Context_[float], positions: numpy.ndarray[numpy.float64[m, 1]]</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.manipulation.planner.DifferentialInverseKinematicsIntegrator.SetPositions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the joint positions, which are stored as state in the context. It
+is recommended that the user calls this method to initialize the
+position commands to match the initial positions of the robot.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
 <dt id="pydrake.manipulation.planner.DifferentialInverseKinematicsParameters">
 <em class="property">class </em><code class="descclassname">pydrake.manipulation.planner.</code><code class="descname">DifferentialInverseKinematicsParameters</code><a class="headerlink" href="#pydrake.manipulation.planner.DifferentialInverseKinematicsParameters" title="Permalink to this definition">¶</a></dt>
 <dd><p>Contains parameters for differential inverse kinematics.</p>
@@ -445,28 +500,36 @@ freedom to <code class="docutils literal"><span class="pre">limit</span></code>.
 </ol>
 <p>Computes a generalized velocity v_next, via the following
 MathematicalProgram:</p>
-<p>min_{v_next,alpha} 100 * | alpha - <a href="#id5"><span class="problematic" id="id6">|V|</span></a> <a href="#id1"><span class="problematic" id="id2">|</span></a>^2 // iff J.rows() &lt; J.cols(),
-then + | q_current + v_next*dt - q_nominal <a href="#id3"><span class="problematic" id="id4">|</span></a>^2</p>
-<p>s.t. J*v_next = alpha * V / <a href="#id7"><span class="problematic" id="id8">|V|</span></a> // J*v_next has the same direction as
-V joint_lim_min &lt;= q_current + v_next*dt &lt;= joint_lim_max
-joint_vel_lim_min &lt;= v_next &lt;= joint_vel_lim_max joint_accel_lim_min
-&lt;= (v_next - v_current)/dt &lt;= joint_accel_lim_max for all i &gt;
-J.rows(), -unconstrained_vel_lim &lt;= S.col(i)’ v_next &lt;=
-unconstrained_vel_lim where J = UΣS’ is the SVD, with the singular
-values in decreasing order. Note that the constraint is imposed on
-each column independently.</p>
-<p>and any additional linear constraints added via
-AddLinearVelocityConstraint() in the
-DifferentialInverseKinematicsParameters. where J.rows() == V.size()
-and J.cols() == v_current.size() == q_current.size() == v_next.size().
-V can have any size, with each element representing a constraint on
-the solution (6 constraints specifying an end-effector pose is
-typical, but not required).</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">min_</span><span class="p">{</span><span class="n">v_next</span><span class="p">,</span><span class="n">alpha</span><span class="p">}</span>   <span class="mi">100</span> <span class="o">*</span> <span class="o">|</span> <span class="n">alpha</span> <span class="o">-</span> <span class="o">|</span><span class="n">V</span><span class="o">|</span> <span class="o">|^</span><span class="mi">2</span>
+                       <span class="o">//</span> <span class="n">iff</span> <span class="n">J</span><span class="o">.</span><span class="n">rows</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">J</span><span class="o">.</span><span class="n">cols</span><span class="p">(),</span> <span class="n">then</span>
+                         <span class="o">+</span> <span class="o">|</span> <span class="n">q_current</span> <span class="o">+</span> <span class="n">v_next</span><span class="o">*</span><span class="n">dt</span> <span class="o">-</span> <span class="n">q_nominal</span> <span class="o">|^</span><span class="mi">2</span>
+
+  <span class="n">s</span><span class="o">.</span><span class="n">t</span><span class="o">.</span> <span class="n">J</span><span class="o">*</span><span class="n">v_next</span> <span class="o">=</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">V</span> <span class="o">/</span> <span class="o">|</span><span class="n">V</span><span class="o">|</span>  <span class="o">//</span> <span class="n">J</span><span class="o">*</span><span class="n">v_next</span> <span class="n">has</span> <span class="n">the</span> <span class="n">same</span> <span class="n">direction</span> <span class="k">as</span> <span class="n">V</span>
+       <span class="n">joint_lim_min</span> <span class="o">&lt;=</span> <span class="n">q_current</span> <span class="o">+</span> <span class="n">v_next</span><span class="o">*</span><span class="n">dt</span> <span class="o">&lt;=</span> <span class="n">joint_lim_max</span>
+       <span class="n">joint_vel_lim_min</span> <span class="o">&lt;=</span> <span class="n">v_next</span> <span class="o">&lt;=</span> <span class="n">joint_vel_lim_max</span>
+       <span class="n">joint_accel_lim_min</span> <span class="o">&lt;=</span> <span class="p">(</span><span class="n">v_next</span> <span class="o">-</span> <span class="n">v_current</span><span class="p">)</span><span class="o">/</span><span class="n">dt</span> <span class="o">&lt;=</span>
+         <span class="n">joint_accel_lim_max</span>
+       <span class="k">for</span> <span class="nb">all</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="n">J</span><span class="o">.</span><span class="n">rows</span><span class="p">(),</span>
+         <span class="o">-</span><span class="n">unconstrained_vel_lim</span> <span class="o">&lt;=</span> <span class="n">S</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="s1">&#39; v_next &lt;= unconstrained_vel_lim</span>
+         <span class="n">where</span> <span class="n">J</span> <span class="o">=</span> <span class="n">UΣS</span><span class="s1">&#39; is the SVD, with the singular values in decreasing</span>
+         <span class="n">order</span><span class="o">.</span>  <span class="n">Note</span> <span class="n">that</span> <span class="n">the</span> <span class="n">constraint</span> <span class="ow">is</span> <span class="n">imposed</span> <span class="n">on</span> <span class="n">each</span> <span class="n">column</span>
+         <span class="n">independently</span><span class="o">.</span>
+
+       <span class="ow">and</span> <span class="nb">any</span> <span class="n">additional</span> <span class="n">linear</span> <span class="n">constraints</span> <span class="n">added</span> <span class="n">via</span>
+         <span class="n">AddLinearVelocityConstraint</span><span class="p">()</span> <span class="ow">in</span> <span class="n">the</span>
+         <span class="n">DifferentialInverseKinematicsParameters</span><span class="o">.</span>
+  <span class="n">where</span> <span class="n">J</span><span class="o">.</span><span class="n">rows</span><span class="p">()</span> <span class="o">==</span> <span class="n">V</span><span class="o">.</span><span class="n">size</span><span class="p">()</span> <span class="ow">and</span>
+  <span class="n">J</span><span class="o">.</span><span class="n">cols</span><span class="p">()</span> <span class="o">==</span> <span class="n">v_current</span><span class="o">.</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="n">q_current</span><span class="o">.</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="n">v_next</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span>  <span class="n">V</span>
+  <span class="n">can</span> <span class="n">have</span> <span class="nb">any</span> <span class="n">size</span><span class="p">,</span> <span class="k">with</span> <span class="n">each</span> <span class="n">element</span> <span class="n">representing</span> <span class="n">a</span> <span class="n">constraint</span> <span class="n">on</span> <span class="n">the</span>
+  <span class="n">solution</span> <span class="p">(</span><span class="mi">6</span> <span class="n">constraints</span> <span class="n">specifying</span> <span class="n">an</span> <span class="n">end</span><span class="o">-</span><span class="n">effector</span> <span class="n">pose</span> <span class="ow">is</span> <span class="n">typical</span><span class="p">,</span> <span class="n">but</span>
+  <span class="ow">not</span> <span class="n">required</span><span class="p">)</span><span class="o">.</span>
+</pre></div>
+</div>
 <p>Intuitively, this finds a v_next such that J*v_next is in the same
-direction as V, and the difference between <a href="#id9"><span class="problematic" id="id10">|V|</span></a> and <a href="#id11"><span class="problematic" id="id12">|J * v_next|</span></a> is
+direction as V, and the difference between <a href="#id1"><span class="problematic" id="id2">|V|</span></a> and <a href="#id3"><span class="problematic" id="id4">|J * v_next|</span></a> is
 minimized while all constraints in <code class="docutils literal"><span class="pre">parameters</span></code> are satisfied as
 well. If the problem is redundant, a secondary objective to minimize
-<a href="#id13"><span class="problematic" id="id14">|q_current + v_next * dt - q_nominal|</span></a> is added to the problem.</p>
+<a href="#id5"><span class="problematic" id="id6">|q_current + v_next * dt - q_nominal|</span></a> is added to the problem.</p>
 <p>It is possible that the solver is unable to find such a generalized
 velocity while not violating the constraints, in which case, status
 will be set to kStuck in the returned

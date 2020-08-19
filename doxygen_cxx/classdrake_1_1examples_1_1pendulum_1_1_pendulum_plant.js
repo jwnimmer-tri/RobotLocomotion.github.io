@@ -6,7 +6,6 @@ var classdrake_1_1examples_1_1pendulum_1_1_pendulum_plant =
     [ "PendulumPlant", "classdrake_1_1examples_1_1pendulum_1_1_pendulum_plant.html#abff1502cbccbd53fbbe24e8d47553734", null ],
     [ "~PendulumPlant", "classdrake_1_1examples_1_1pendulum_1_1_pendulum_plant.html#af0d40b13b2ae42e721ca8859357038c7", null ],
     [ "CalcTotalEnergy", "classdrake_1_1examples_1_1pendulum_1_1_pendulum_plant.html#a2913da3e8bfc64780eabce978f042dca", null ],
-    [ "get_input_port", "classdrake_1_1examples_1_1pendulum_1_1_pendulum_plant.html#a49447f38d806d93361646bb4ccec81c0", null ],
     [ "get_mutable_parameters", "classdrake_1_1examples_1_1pendulum_1_1_pendulum_plant.html#ac8009de5687008e5128f15f5ecb737c8", null ],
     [ "get_mutable_state", "classdrake_1_1examples_1_1pendulum_1_1_pendulum_plant.html#ae3e8f4b03568b361b3638a39891c36ad", null ],
     [ "get_mutable_state", "classdrake_1_1examples_1_1pendulum_1_1_pendulum_plant.html#a866a65044ef28473ca165d235830d307", null ],
