@@ -205,6 +205,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af50a9a915770def7cbf4f78aa68235dc"><td class="memTemplItemLeft" align="right" valign="top">py::object&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#af50a9a915770def7cbf4f78aa68235dc">ToArray</a> (const T *ptr, <a class="el" href="classint.html">int</a> size, py::tuple shape)</td></tr>
 <tr class="memdesc:af50a9a915770def7cbf4f78aa68235dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a raw array to a numpy array (<code>const</code> variant).  <a href="#af50a9a915770def7cbf4f78aa68235dc">More...</a><br /></td></tr>
 <tr class="separator:af50a9a915770def7cbf4f78aa68235dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f81d7315477aaa1694d9aa02a1346b"><td class="memItemLeft" align="right" valign="top">py::object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#af5f81d7315477aaa1694d9aa02a1346b">WrapToMatchInputShape</a> (py::handle func)</td></tr>
+<tr class="memdesc:af5f81d7315477aaa1694d9aa02a1346b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a overload instance method to reshape the output to be the same as a given input argument.  <a href="#af5f81d7315477aaa1694d9aa02a1346b">More...</a><br /></td></tr>
+<tr class="separator:af5f81d7315477aaa1694d9aa02a1346b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a236143263d0a18d6ec439f707140d7e1"><td class="memTemplParams" colspan="2">template&lt;typename Class &gt; </td></tr>
 <tr class="memitem:a236143263d0a18d6ec439f707140d7e1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1pydrake.html#a236143263d0a18d6ec439f707140d7e1">BindTypeSafeIndex</a> (py::module m, const std::string &amp;name, const std::string &amp;class_doc=&quot;&quot;)</td></tr>
 <tr class="memdesc:a236143263d0a18d6ec439f707140d7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a <a class="el" href="classdrake_1_1_type_safe_index.html" title="A type-safe non-negative index class.">TypeSafeIndex</a> instantiation.  <a href="#a236143263d0a18d6ec439f707140d7e1">More...</a><br /></td></tr>
@@ -1354,6 +1357,30 @@ Ts cannot be a <code>py::</code> symbol (e.g. <code>py::object</code>). On Mac, 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Wrapped function lambda. N.B. Construct a <code>std::function&lt;&gt;</code> from this if you encounter inference issues downstream of this method. </dd></dl>
+
+</div>
+</div>
+<a id="af5f81d7315477aaa1694d9aa02a1346b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f81d7315477aaa1694d9aa02a1346b">&#9670;&nbsp;</a></span>WrapToMatchInputShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">py::object drake::pydrake::WrapToMatchInputShape </td>
+          <td>(</td>
+          <td class="paramtype">py::handle&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wraps a overload instance method to reshape the output to be the same as a given input argument. </p>
+<p>The input should be the first and only argument to trigger reshaping.</p>
+<p>This preserves the original docstrings so that they still indicate the shapes of the input and output arrays.</p>
+<p>Example:</p>
+<div class="fragment"><div class="line">cls  <span class="comment">// BR</span></div><div class="line">  .def(<span class="stringliteral">&quot;multiply&quot;</span>, [](<span class="keyword">const</span> Class&amp; <span class="keyword">self</span>, <span class="keyword">const</span> Class&amp; other) { ... })</div><div class="line">  .def(<span class="stringliteral">&quot;multiply&quot;</span>, [](<span class="keyword">const</span> Class&amp; <span class="keyword">self</span>, <span class="keyword">const</span> Vector3&lt;T&gt;&amp; p) { ... })</div><div class="line">  .def(<span class="stringliteral">&quot;multiply&quot;</span>, [](<span class="keyword">const</span> Class&amp; <span class="keyword">self</span>, <span class="keyword">const</span> Matrix3X&lt;T&gt;&amp; plist) { ... });</div><div class="line">cls.attr(<span class="stringliteral">&quot;multiply&quot;</span>) = <a class="code" href="namespacedrake_1_1pydrake.html#af5f81d7315477aaa1694d9aa02a1346b">WrapToMatchInputShape</a>(cls.attr(<span class="stringliteral">&quot;multiply&quot;</span>));</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__python__bindings.html#PydrakeReturnVectorsOrMatrices">PydrakeReturnVectorsOrMatrices</a> </dd></dl>
 
 </div>
 </div>

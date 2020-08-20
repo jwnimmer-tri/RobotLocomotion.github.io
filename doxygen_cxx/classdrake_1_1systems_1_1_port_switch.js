@@ -7,7 +7,6 @@ var classdrake_1_1systems_1_1_port_switch =
     [ "PortSwitch", "classdrake_1_1systems_1_1_port_switch.html#a70bae3e32e13dfcb337769dab4bba993", null ],
     [ "PortSwitch", "classdrake_1_1systems_1_1_port_switch.html#aad40e5721a78d9074fcee16b44654609", null ],
     [ "DeclareInputPort", "classdrake_1_1systems_1_1_port_switch.html#afb9f2d2e0af4f4121bfbbd740ef76b6a", null ],
-    [ "get_output_port", "classdrake_1_1systems_1_1_port_switch.html#a08e2c5bab385f7c5e1069d61c45600c3", null ],
     [ "get_port_selector_input_port", "classdrake_1_1systems_1_1_port_switch.html#a42afa2d5baf37b6e696e70754ceba78a", null ],
     [ "operator=", "classdrake_1_1systems_1_1_port_switch.html#ae23dedf36651fbe8b011774d2e2e79c4", null ],
     [ "operator=", "classdrake_1_1systems_1_1_port_switch.html#a555d7b37f161287f0e3da64b704a923e", null ],

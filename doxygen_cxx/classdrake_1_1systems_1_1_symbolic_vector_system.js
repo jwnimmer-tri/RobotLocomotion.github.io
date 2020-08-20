@@ -7,11 +7,9 @@ var classdrake_1_1systems_1_1_symbolic_vector_system =
     [ "SymbolicVectorSystem", "classdrake_1_1systems_1_1_symbolic_vector_system.html#ad57f9dd62883c6d2792eb292585880e2", null ],
     [ "~SymbolicVectorSystem", "classdrake_1_1systems_1_1_symbolic_vector_system.html#ab133988517ef5aa1471234a2c0223f0a", null ],
     [ "dynamics", "classdrake_1_1systems_1_1_symbolic_vector_system.html#a17a6d51848ae96e35bdf4cfccfd7129b", null ],
-    [ "get_input_port", "classdrake_1_1systems_1_1_symbolic_vector_system.html#abcfc22af164f8b6ee671b0d598fd2466", null ],
-    [ "get_output_port", "classdrake_1_1systems_1_1_symbolic_vector_system.html#a08e2c5bab385f7c5e1069d61c45600c3", null ],
     [ "input_vars", "classdrake_1_1systems_1_1_symbolic_vector_system.html#acf8451dffb1b2adcd1a55d4c282befc5", null ],
-    [ "operator=", "classdrake_1_1systems_1_1_symbolic_vector_system.html#a37545e83b48633eff2a016a8688f572f", null ],
     [ "operator=", "classdrake_1_1systems_1_1_symbolic_vector_system.html#afcd6bcc154b67b6fe62a5ace8b010ba7", null ],
+    [ "operator=", "classdrake_1_1systems_1_1_symbolic_vector_system.html#a37545e83b48633eff2a016a8688f572f", null ],
     [ "parameter_vars", "classdrake_1_1systems_1_1_symbolic_vector_system.html#af4353a0aade79a8b74d02cbee0eafa4b", null ],
     [ "state_vars", "classdrake_1_1systems_1_1_symbolic_vector_system.html#a8eb04bede37e10023a8c4681ca9adcad", null ],
     [ "time_var", "classdrake_1_1systems_1_1_symbolic_vector_system.html#a0535f33c63779deb222a2f30b205028a", null ]

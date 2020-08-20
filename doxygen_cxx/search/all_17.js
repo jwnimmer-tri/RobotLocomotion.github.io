@@ -33,6 +33,7 @@ var searchData=
   ['wrapdeprecated',['WrapDeprecated',['../namespacedrake_1_1pydrake.html#a13cd6cd963823cafbc0068bacc7eeadd',1,'drake::pydrake']]],
   ['wrapfunction',['WrapFunction',['../namespacedrake_1_1pydrake.html#a52b03ea674322481f48a1262e0c607a2',1,'drake::pydrake']]],
   ['wrapped',['Wrapped',['../structdrake_1_1pydrake_1_1wrap__arg__default.html#af86f89529a81600b291217b3f9b1a067',1,'drake::pydrake::wrap_arg_default']]],
+  ['wraptomatchinputshape',['WrapToMatchInputShape',['../namespacedrake_1_1pydrake.html#af5f81d7315477aaa1694d9aa02a1346b',1,'drake::pydrake']]],
   ['wraptosystem',['WrapToSystem',['../classdrake_1_1systems_1_1_wrap_to_system.html',1,'WrapToSystem&lt; T &gt;'],['../classdrake_1_1systems_1_1_wrap_to_system.html#a65e0d4f46f5ba8ef6354028859a3283b',1,'drake::systems::WrapToSystem::WrapToSystem(const WrapToSystem &amp;)=delete'],['../classdrake_1_1systems_1_1_wrap_to_system.html#a1f97e1da44446079e68078d247231f91',1,'drake::systems::WrapToSystem::WrapToSystem(WrapToSystem &amp;&amp;)=delete'],['../classdrake_1_1systems_1_1_wrap_to_system.html#a9faf5ed7e350ab9a7b3873aa3df4c16c',1,'drake::systems::WrapToSystem::WrapToSystem(int input_size)']]],
   ['wrenchvector',['WrenchVector',['../namespacedrake.html#af98fed5f98c376f4d45fff56bb96c8e1',1,'drake']]]
 ];

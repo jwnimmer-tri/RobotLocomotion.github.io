@@ -143,13 +143,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af7527be0e4177959b67a5b28e1d550f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1lcm_1_1_drake_lcm_interface.html">drake::lcm::DrakeLcmInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1lcm_1_1_lcm_publisher_system.html#af7527be0e4177959b67a5b28e1d550f2">lcm</a> ()</td></tr>
 <tr class="memdesc:af7527be0e4177959b67a5b28e1d550f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a mutable reference to the LCM object in use by this publisher.  <a href="#af7527be0e4177959b67a5b28e1d550f2">More...</a><br /></td></tr>
 <tr class="separator:af7527be0e4177959b67a5b28e1d550f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f2cc8ffd7419097224944cbb18c111d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">InputPort</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1lcm_1_1_lcm_publisher_system.html#a8f2cc8ffd7419097224944cbb18c111d">get_input_port</a> () const</td></tr>
-<tr class="memdesc:a8f2cc8ffd7419097224944cbb18c111d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sole input port.  <a href="#a8f2cc8ffd7419097224944cbb18c111d">More...</a><br /></td></tr>
-<tr class="separator:a8f2cc8ffd7419097224944cbb18c111d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53d53d0ceb01ab5c73cda7ba969a9118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1lcm_1_1_lcm_publisher_system.html#a53d53d0ceb01ab5c73cda7ba969a9118">get_input_port</a> (<a class="el" href="classint.html">int</a> index)=delete</td></tr>
-<tr class="separator:a53d53d0ceb01ab5c73cda7ba969a9118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e576c064b27b966834ded493ce67673"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1lcm_1_1_lcm_publisher_system.html#a6e576c064b27b966834ded493ce67673">get_output_port</a> (<a class="el" href="classint.html">int</a>)=delete</td></tr>
-<tr class="separator:a6e576c064b27b966834ded493ce67673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Does not allow copy, move, or assignment</div></td></tr>
 <tr class="memitem:ab9088a7af754da8d0ec334ddc03a8d22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1lcm_1_1_lcm_publisher_system.html#ab9088a7af754da8d0ec334ddc03a8d22">LcmPublisherSystem</a> (const <a class="el" href="classdrake_1_1systems_1_1lcm_1_1_lcm_publisher_system.html">LcmPublisherSystem</a> &amp;)=delete</td></tr>
 <tr class="separator:ab9088a7af754da8d0ec334ddc03a8d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1434,77 +1427,6 @@ trigger_types contains a subset of {kForced, kPeriodic, kPerStep}. </dd></dl>
 </div><div class="memdoc">
 
 <p>Returns the channel name supplied during construction. </p>
-
-</div>
-</div>
-<a id="a8f2cc8ffd7419097224944cbb18c111d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f2cc8ffd7419097224944cbb18c111d">&#9670;&nbsp;</a></span>get_input_port() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">InputPort</a>&lt;double&gt;&amp; get_input_port </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the sole input port. </p>
-
-</div>
-</div>
-<a id="a53d53d0ceb01ab5c73cda7ba969a9118"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53d53d0ceb01ab5c73cda7ba969a9118">&#9670;&nbsp;</a></span>get_input_port() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void get_input_port </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6e576c064b27b966834ded493ce67673"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e576c064b27b966834ded493ce67673">&#9670;&nbsp;</a></span>get_output_port()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void get_output_port </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

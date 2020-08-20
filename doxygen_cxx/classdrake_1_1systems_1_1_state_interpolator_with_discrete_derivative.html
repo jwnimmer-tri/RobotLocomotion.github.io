@@ -134,10 +134,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0f52a430dc68250ab8de72c3df90b01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_state_interpolator_with_discrete_derivative.html#ac0f52a430dc68250ab8de72c3df90b01">suppress_initial_transient</a> () const</td></tr>
 <tr class="memdesc:ac0f52a430dc68250ab8de72c3df90b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <code>suppress_initial_transient</code> passed to the constructor.  <a href="#ac0f52a430dc68250ab8de72c3df90b01">More...</a><br /></td></tr>
 <tr class="separator:ac0f52a430dc68250ab8de72c3df90b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49447f38d806d93361646bb4ccec81c0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">systems::InputPort</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_state_interpolator_with_discrete_derivative.html#a49447f38d806d93361646bb4ccec81c0">get_input_port</a> () const</td></tr>
-<tr class="separator:a49447f38d806d93361646bb4ccec81c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25265df82f15c7eb03b0dd9516696ff4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_output_port.html">systems::OutputPort</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_state_interpolator_with_discrete_derivative.html#a25265df82f15c7eb03b0dd9516696ff4">get_output_port</a> () const</td></tr>
-<tr class="separator:a25265df82f15c7eb03b0dd9516696ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2e72527cc9b40d8b29eaaca0bde3ab2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_state_interpolator_with_discrete_derivative.html#ab2e72527cc9b40d8b29eaaca0bde3ab2">set_initial_position</a> (<a class="el" href="classdrake_1_1systems_1_1_state.html">systems::State</a>&lt; T &gt; *state, const Eigen::Ref&lt; const <a class="el" href="namespacedrake.html#a77dd228fb4dd66a2c17dd3f7f38ffd85">VectorX</a>&lt; T &gt;&gt; &amp;position) const</td></tr>
 <tr class="memdesc:ab2e72527cc9b40d8b29eaaca0bde3ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience method that sets the entire position history for the discrete-time derivative to a constant vector value (resulting in velocity estimate of zero).  <a href="#ab2e72527cc9b40d8b29eaaca0bde3ab2">More...</a><br /></td></tr>
 <tr class="separator:ab2e72527cc9b40d8b29eaaca0bde3ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1105,42 +1101,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a49447f38d806d93361646bb4ccec81c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49447f38d806d93361646bb4ccec81c0">&#9670;&nbsp;</a></span>get_input_port()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">systems::InputPort</a>&lt;T&gt;&amp; get_input_port </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a25265df82f15c7eb03b0dd9516696ff4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25265df82f15c7eb03b0dd9516696ff4">&#9670;&nbsp;</a></span>get_output_port()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classdrake_1_1systems_1_1_output_port.html">systems::OutputPort</a>&lt;T&gt;&amp; get_output_port </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3b689004040660502e57c9a8f6998ce3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b689004040660502e57c9a8f6998ce3">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="a9c3937505bdb9d7b7b3ac00cc9fbbb38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3937505bdb9d7b7b3ac00cc9fbbb38">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1151,7 +1113,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1systems_1_1_state_interpolator_with_discrete_derivative.html">StateInterpolatorWithDiscreteDerivative</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1systems_1_1_state_interpolator_with_discrete_derivative.html">StateInterpolatorWithDiscreteDerivative</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1systems_1_1_state_interpolator_with_discrete_derivative.html">StateInterpolatorWithDiscreteDerivative</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1165,8 +1127,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a9c3937505bdb9d7b7b3ac00cc9fbbb38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c3937505bdb9d7b7b3ac00cc9fbbb38">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="a3b689004040660502e57c9a8f6998ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b689004040660502e57c9a8f6998ce3">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1177,7 +1139,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1systems_1_1_state_interpolator_with_discrete_derivative.html">StateInterpolatorWithDiscreteDerivative</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1systems_1_1_state_interpolator_with_discrete_derivative.html">StateInterpolatorWithDiscreteDerivative</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1systems_1_1_state_interpolator_with_discrete_derivative.html">StateInterpolatorWithDiscreteDerivative</a>&lt; T &gt; &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

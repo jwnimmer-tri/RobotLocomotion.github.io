@@ -42,6 +42,7 @@ var searchData=
   ['robertsonsystem',['RobertsonSystem',['../classdrake_1_1systems_1_1analysis_1_1test_1_1_robertson_system.html',1,'drake::systems::analysis::test']]],
   ['robotplaninterpolator',['RobotPlanInterpolator',['../classdrake_1_1manipulation_1_1planner_1_1_robot_plan_interpolator.html',1,'drake::manipulation::planner']]],
   ['rod2d',['Rod2D',['../classdrake_1_1examples_1_1rod2d_1_1_rod2_d.html',1,'drake::examples::rod2d']]],
+  ['rod2dgeometry',['Rod2dGeometry',['../classdrake_1_1examples_1_1rod2d_1_1_rod2d_geometry.html',1,'drake::examples::rod2d']]],
   ['rollpitchyaw',['RollPitchYaw',['../classdrake_1_1math_1_1_roll_pitch_yaw.html',1,'drake::math']]],
   ['rotaryencoders',['RotaryEncoders',['../classdrake_1_1systems_1_1sensors_1_1_rotary_encoders.html',1,'drake::systems::sensors']]],
   ['rotatedlorentzconeconstraint',['RotatedLorentzConeConstraint',['../classdrake_1_1solvers_1_1_rotated_lorentz_cone_constraint.html',1,'drake::solvers']]],

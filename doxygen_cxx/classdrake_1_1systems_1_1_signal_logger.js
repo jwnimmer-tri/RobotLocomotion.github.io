@@ -5,7 +5,6 @@ var classdrake_1_1systems_1_1_signal_logger =
     [ "SignalLogger", "classdrake_1_1systems_1_1_signal_logger.html#a15742b4b9541c20c7beec8bcda888e2a", null ],
     [ "SignalLogger", "classdrake_1_1systems_1_1_signal_logger.html#ac8973ac203c85614f12f9f38a013f12c", null ],
     [ "data", "classdrake_1_1systems_1_1_signal_logger.html#a858086c675854f1162a36b5286bcc27e", null ],
-    [ "get_input_port", "classdrake_1_1systems_1_1_signal_logger.html#abcfc22af164f8b6ee671b0d598fd2466", null ],
     [ "num_samples", "classdrake_1_1systems_1_1_signal_logger.html#a16f68e98d0fe5d308ee4afee21efce3c", null ],
     [ "operator=", "classdrake_1_1systems_1_1_signal_logger.html#a65c20fdd77aa5801264a6d0cfe5ec9b9", null ],
     [ "operator=", "classdrake_1_1systems_1_1_signal_logger.html#a0fdd88c3c5eb22121178d7091645e109", null ],

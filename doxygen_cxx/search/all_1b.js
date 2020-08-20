@@ -130,6 +130,7 @@ var searchData=
   ['_7erimlesswheelgeometry',['~RimlessWheelGeometry',['../classdrake_1_1examples_1_1rimless__wheel_1_1_rimless_wheel_geometry.html#a9a9ecbabf91ef8c0ef422ce7f56a1cbc',1,'drake::examples::rimless_wheel::RimlessWheelGeometry']]],
   ['_7erobotplaninterpolator',['~RobotPlanInterpolator',['../classdrake_1_1manipulation_1_1planner_1_1_robot_plan_interpolator.html#a8216fa2eb3a37a841236728ab6c0ee87',1,'drake::manipulation::planner::RobotPlanInterpolator']]],
   ['_7erod2d',['~Rod2D',['../classdrake_1_1examples_1_1rod2d_1_1_rod2_d.html#a51310633dfb0da91deb07a64ec22d9fe',1,'drake::examples::rod2d::Rod2D']]],
+  ['_7erod2dgeometry',['~Rod2dGeometry',['../classdrake_1_1examples_1_1rod2d_1_1_rod2d_geometry.html#ac58d1445c90b8b748f0a16c86ea584af',1,'drake::examples::rod2d::Rod2dGeometry']]],
   ['_7erotatedlorentzconeconstraint',['~RotatedLorentzConeConstraint',['../classdrake_1_1solvers_1_1_rotated_lorentz_cone_constraint.html#a5afb75bb7c4f86306f91f1152f867caf',1,'drake::solvers::RotatedLorentzConeConstraint']]],
   ['_7erungekutta2integrator',['~RungeKutta2Integrator',['../classdrake_1_1systems_1_1_runge_kutta2_integrator.html#af3564d590c3b219c27ce83e6f46fad07',1,'drake::systems::RungeKutta2Integrator']]],
   ['_7erungekutta3integrator',['~RungeKutta3Integrator',['../classdrake_1_1systems_1_1_runge_kutta3_integrator.html#a6feb774094471a9ae52b7611699f11c6',1,'drake::systems::RungeKutta3Integrator']]],

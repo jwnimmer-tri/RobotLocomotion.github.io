@@ -816,6 +816,7 @@ var hierarchy =
             [ "PlanarManipulandStatusEncoder", "classdrake_1_1examples_1_1planar__gripper_1_1_planar_manipuland_status_encoder.html", null ],
             [ "QuadrotorGeometry", "classdrake_1_1examples_1_1quadrotor_1_1_quadrotor_geometry.html", null ],
             [ "RimlessWheelGeometry", "classdrake_1_1examples_1_1rimless__wheel_1_1_rimless_wheel_geometry.html", null ],
+            [ "Rod2dGeometry", "classdrake_1_1examples_1_1rod2d_1_1_rod2d_geometry.html", null ],
             [ "JacoCommandReceiver", "classdrake_1_1manipulation_1_1kinova__jaco_1_1_jaco_command_receiver.html", null ],
             [ "JacoCommandSender", "classdrake_1_1manipulation_1_1kinova__jaco_1_1_jaco_command_sender.html", null ],
             [ "JacoStatusReceiver", "classdrake_1_1manipulation_1_1kinova__jaco_1_1_jaco_status_receiver.html", null ],

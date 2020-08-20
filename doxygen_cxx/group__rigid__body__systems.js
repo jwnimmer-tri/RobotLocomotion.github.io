@@ -30,7 +30,6 @@ var group__rigid__body__systems =
       [ "get_force_port", "classdrake_1_1systems_1_1_spring_mass_system.html#ad427d817a0c728995b90a4176febcd56", null ],
       [ "get_input_force", "classdrake_1_1systems_1_1_spring_mass_system.html#a6943ca520bfce2956720f1caa93e6c50", null ],
       [ "get_mass", "classdrake_1_1systems_1_1_spring_mass_system.html#ac38135f823919cf70f2d2fa4cb628c38", null ],
-      [ "get_output_port", "classdrake_1_1systems_1_1_spring_mass_system.html#a08e2c5bab385f7c5e1069d61c45600c3", null ],
       [ "get_position", "classdrake_1_1systems_1_1_spring_mass_system.html#a114a89ca79fedc222a8fa40951b7ddce", null ],
       [ "get_spring_constant", "classdrake_1_1systems_1_1_spring_mass_system.html#ad039f0073ec403449cbbfa071b7818af", null ],
       [ "get_system_is_forced", "classdrake_1_1systems_1_1_spring_mass_system.html#a4a6e6383af063ca68b40eac72e49f2ed", null ],

@@ -1,5 +1,12 @@
 var NAVTREEINDEX12 =
 {
+"classdrake_1_1multibody_1_1_spatial_acceleration.html#a779e53116ddd6e0dbded2c52f141c580":[3,0,0,8,54,1],
+"classdrake_1_1multibody_1_1_spatial_acceleration.html#a7b917a147d41074fa7d6b8108d3d19c1":[3,0,0,8,54,4],
+"classdrake_1_1multibody_1_1_spatial_acceleration.html#a8bf37dab7236092d343a3550f3c0a97d":[3,0,0,8,54,0],
+"classdrake_1_1multibody_1_1_spatial_acceleration.html#aa6bf6b4ed657ad8f3bacd8d7cf2e8338":[3,0,0,8,54,3],
+"classdrake_1_1multibody_1_1_spatial_acceleration.html#ac25c00618e065fa3f4ff67a60f2334f7":[3,0,0,8,54,11],
+"classdrake_1_1multibody_1_1_spatial_acceleration.html#ad7f507917333adceb2c6542f4d2df38c":[3,0,0,8,54,2],
+"classdrake_1_1multibody_1_1_spatial_acceleration.html#ae22f700b0034b66f92265fd7c962f754":[3,0,0,8,54,10],
 "classdrake_1_1multibody_1_1_spatial_acceleration.html#aee62fde8bf4152c9ce65f0865ea44712":[3,0,0,8,54,9],
 "classdrake_1_1multibody_1_1_spatial_acceleration.html#af1304fa4eec81102161931379fe4b55c":[3,0,0,8,54,6],
 "classdrake_1_1multibody_1_1_spatial_force.html":[3,0,0,8,55],
@@ -242,12 +249,5 @@ var NAVTREEINDEX12 =
 "classdrake_1_1multibody_1_1_universal_joint.html#aaf74a3f7b11353d199a585fbb4c85eb9":[3,0,0,8,70,13],
 "classdrake_1_1multibody_1_1_universal_joint.html#ab3c16872b1d7ca25be9f833acd33264b":[3,0,0,8,70,6],
 "classdrake_1_1multibody_1_1_universal_joint.html#abae9b9ebb7e360384c17235462aa1216":[3,0,0,8,70,11],
-"classdrake_1_1multibody_1_1_universal_joint.html#ac26a6dc0b1e4bced2875df3137eacd8a":[3,0,0,8,70,17],
-"classdrake_1_1multibody_1_1_universal_joint.html#ae58dc70f3e0535c09582b85ecbc612a7":[3,0,0,8,70,5],
-"classdrake_1_1multibody_1_1_universal_joint.html#aed1a9065bba2f51f45b65aa8f0b12cea":[3,0,0,8,70,9],
-"classdrake_1_1multibody_1_1_universal_joint.html#af128263676ba2589816a4b4906f6dc07":[3,0,0,8,70,7],
-"classdrake_1_1multibody_1_1_universal_joint.html#af97d689d941b9eade67b31632c84d6bd":[3,0,0,8,70,10],
-"classdrake_1_1multibody_1_1_weld_joint.html":[3,0,0,8,71],
-"classdrake_1_1multibody_1_1_weld_joint.html#a30cc1bb39ba9b636b9d9b89aecbffc46":[3,0,0,8,71,3],
-"classdrake_1_1multibody_1_1_weld_joint.html#a4374412fa825a46abdc4b2484b9c1630":[3,0,0,8,71,8]
+"classdrake_1_1multibody_1_1_universal_joint.html#ac26a6dc0b1e4bced2875df3137eacd8a":[3,0,0,8,70,17]
 };
