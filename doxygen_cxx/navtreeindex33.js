@@ -1,5 +1,7 @@
 var NAVTREEINDEX33 =
 {
+"classdrake_1_1systems_1_1rendering_1_1_pose_bundle.html#a0070474d1a9cf6c11d8c15a6df118f94":[3,0,0,13,6,3,6],
+"classdrake_1_1systems_1_1rendering_1_1_pose_bundle.html#a2e94640282fb6d7b9b8e8c114fb3b6cc":[3,0,0,13,6,3,13],
 "classdrake_1_1systems_1_1rendering_1_1_pose_bundle.html#a37d847755931c68c88e6fcc3c74c47f1":[3,0,0,13,6,3,12],
 "classdrake_1_1systems_1_1rendering_1_1_pose_bundle.html#a4b7ae0d8a4c42a8f7dd7f47cba74fa6d":[3,0,0,13,6,3,8],
 "classdrake_1_1systems_1_1rendering_1_1_pose_bundle.html#a504d1e8555223689975a43c0c485b411":[3,0,0,13,6,3,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX33 =
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a198bf2c564777ff4d7d5acd711e5e349":[3,0,0,13,9,1,8],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a3cbd3e24f7648ab7712c803ca8a63f3e":[3,0,0,13,9,1,9],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a581b17083c0cf2685271136830b65104":[3,0,0,13,9,1,2],
-"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a5eea9354674efc1c07bf537319628ead":[3,0,0,13,9,1,7],
-"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a643ccb05dea44d65aa2d91b422f20f12":[3,0,0,13,9,1,0],
-"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a66022c63d007d32a9812270a90890e7f":[3,0,0,13,9,1,11]
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a5eea9354674efc1c07bf537319628ead":[3,0,0,13,9,1,7]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX44 =
 {
+"structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_data.html#aee32e8e170503d8b19b2f5703619b0ad":[3,0,0,11,0,7,0,7],
+"structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_data.html#af02e44a9cbc4d0a9ea490704fbe74114":[3,0,0,11,0,7,0,9],
 "structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_variable.html":[3,0,0,11,0,7,1],
 "structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_variable.html#a0a4dab7f19136a1c6da932a2f1b5268c":[3,0,0,11,0,7,1,1],
 "structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_variable.html#a81c75d82efc1b0586ace9eca3f454610":[3,0,0,11,0,7,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX44 =
 "structdrake_1_1yaml_1_1_yaml_read_archive_1_1_options.html#aa4ca52e888e12f7fd01ae981e6b63275":[3,0,0,16,0,0,1],
 "structdrake_1_1yaml_1_1_yaml_read_archive_1_1_options.html#aea27c3ce8aaf9792e86b006e57659938":[3,0,0,16,0,0,2],
 "structdrake_1_1yaml_1_1_yaml_read_archive_1_1_options.html#afcf03c1d7facd07abeb941be18cc75b2":[3,0,0,16,0,0,0],
-"structstd_1_1equal__to_3_01drake_1_1symbolic_1_1_expression_01_4.html":[3,0,1,0],
-"structstd_1_1equal__to_3_01drake_1_1symbolic_1_1_expression_01_4.html#a538d122bb822306915eed589daae8627":[3,0,1,0,0],
-"structstd_1_1equal__to_3_01drake_1_1symbolic_1_1_formula_01_4.html":[3,0,1,1]
+"structstd_1_1equal__to_3_01drake_1_1symbolic_1_1_expression_01_4.html":[3,0,1,0]
 };

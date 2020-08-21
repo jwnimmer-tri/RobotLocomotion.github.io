@@ -24,7 +24,9 @@ var classdrake_1_1multibody_1_1_frame =
     [ "GetFixedPoseInBodyFrame", "classdrake_1_1multibody_1_1_frame.html#a9f41fe43f53ca7807f256f0d5daa0734", null ],
     [ "GetFixedRotationMatrixInBody", "classdrake_1_1multibody_1_1_frame.html#aaff50422b2283b8cc9b6560092b80803", null ],
     [ "GetFixedRotationMatrixInBodyFrame", "classdrake_1_1multibody_1_1_frame.html#ab645c93960ef7dc30603102c64015644", null ],
+    [ "is_body_frame", "classdrake_1_1multibody_1_1_frame.html#a6681a8def9431af1311063721c46fe14", null ],
+    [ "is_world_frame", "classdrake_1_1multibody_1_1_frame.html#a64d83126860c9766c12c88786177cf22", null ],
     [ "name", "classdrake_1_1multibody_1_1_frame.html#ad8227ba86a01f26e4f173cd5e219d5d1", null ],
-    [ "operator=", "classdrake_1_1multibody_1_1_frame.html#a8e197bedf7aa897596ace36baca53361", null ],
-    [ "operator=", "classdrake_1_1multibody_1_1_frame.html#a486765b5bb3145d29946d6dae95a9332", null ]
+    [ "operator=", "classdrake_1_1multibody_1_1_frame.html#a486765b5bb3145d29946d6dae95a9332", null ],
+    [ "operator=", "classdrake_1_1multibody_1_1_frame.html#a8e197bedf7aa897596ace36baca53361", null ]
 ];

@@ -122,6 +122,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb41e2fea35bd8efcbcd67c896bc5766"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1multibody_1_1_body.html">Body</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_frame.html#aeb41e2fea35bd8efcbcd67c896bc5766">body</a> () const</td></tr>
 <tr class="memdesc:aeb41e2fea35bd8efcbcd67c896bc5766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the body associated to this Frame.  <a href="#aeb41e2fea35bd8efcbcd67c896bc5766">More...</a><br /></td></tr>
 <tr class="separator:aeb41e2fea35bd8efcbcd67c896bc5766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d83126860c9766c12c88786177cf22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_frame.html#a64d83126860c9766c12c88786177cf22">is_world_frame</a> () const</td></tr>
+<tr class="memdesc:a64d83126860c9766c12c88786177cf22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if <code>this</code> is the world frame.  <a href="#a64d83126860c9766c12c88786177cf22">More...</a><br /></td></tr>
+<tr class="separator:a64d83126860c9766c12c88786177cf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6681a8def9431af1311063721c46fe14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_frame.html#a6681a8def9431af1311063721c46fe14">is_body_frame</a> () const</td></tr>
+<tr class="memdesc:a6681a8def9431af1311063721c46fe14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if <code>this</code> is the body frame.  <a href="#a6681a8def9431af1311063721c46fe14">More...</a><br /></td></tr>
+<tr class="separator:a6681a8def9431af1311063721c46fe14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8227ba86a01f26e4f173cd5e219d5d1"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_frame.html#ad8227ba86a01f26e4f173cd5e219d5d1">name</a> () const</td></tr>
 <tr class="memdesc:ad8227ba86a01f26e4f173cd5e219d5d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of this frame. It may be empty if unnamed.  <a href="#ad8227ba86a01f26e4f173cd5e219d5d1">More...</a><br /></td></tr>
 <tr class="separator:ad8227ba86a01f26e4f173cd5e219d5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -976,6 +982,44 @@ When cached values are out of sync with the state stored in context, this method
 
 </div>
 </div>
+<a id="a6681a8def9431af1311063721c46fe14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6681a8def9431af1311063721c46fe14">&#9670;&nbsp;</a></span>is_body_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_body_frame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if <code>this</code> is the body frame. </p>
+
+</div>
+</div>
+<a id="a64d83126860c9766c12c88786177cf22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d83126860c9766c12c88786177cf22">&#9670;&nbsp;</a></span>is_world_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_world_frame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if <code>this</code> is the world frame. </p>
+
+</div>
+</div>
 <a id="ad8227ba86a01f26e4f173cd5e219d5d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8227ba86a01f26e4f173cd5e219d5d1">&#9670;&nbsp;</a></span>name()</h2>
 
@@ -995,8 +1039,8 @@ When cached values are out of sync with the state stored in context, this method
 
 </div>
 </div>
-<a id="a8e197bedf7aa897596ace36baca53361"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e197bedf7aa897596ace36baca53361">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="a486765b5bb3145d29946d6dae95a9332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486765b5bb3145d29946d6dae95a9332">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1007,7 +1051,7 @@ When cached values are out of sync with the state stored in context, this method
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1021,8 +1065,8 @@ When cached values are out of sync with the state stored in context, this method
 
 </div>
 </div>
-<a id="a486765b5bb3145d29946d6dae95a9332"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a486765b5bb3145d29946d6dae95a9332">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="a8e197bedf7aa897596ace36baca53361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e197bedf7aa897596ace36baca53361">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1033,7 +1077,7 @@ When cached values are out of sync with the state stored in context, this method
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
