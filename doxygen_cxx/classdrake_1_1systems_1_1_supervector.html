@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classdrake_1_1systems_1_1_supervector.
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classdrake_1_1systems_1_1_supervector-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Supervector&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">Supervector&lt; T &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -119,9 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae691d69ca31d626ce55256ccc00584a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_supervector.html#ae691d69ca31d626ce55256ccc00584a0">Supervector</a> (const std::vector&lt; <a class="el" href="classdrake_1_1systems_1_1_vector_base.html">VectorBase</a>&lt; T &gt; * &gt; &amp;subvectors)</td></tr>
 <tr class="memdesc:ae691d69ca31d626ce55256ccc00584a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a supervector consisting of all the vectors in subvectors, which must live at least as long as this supervector.  <a href="#ae691d69ca31d626ce55256ccc00584a0">More...</a><br /></td></tr>
 <tr class="separator:ae691d69ca31d626ce55256ccc00584a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4538a1305a44cbf7a5bd9a536b55eaad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_supervector.html#a4538a1305a44cbf7a5bd9a536b55eaad">size</a> () const override</td></tr>
-<tr class="memdesc:a4538a1305a44cbf7a5bd9a536b55eaad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the vector.  <a href="#a4538a1305a44cbf7a5bd9a536b55eaad">More...</a><br /></td></tr>
-<tr class="separator:a4538a1305a44cbf7a5bd9a536b55eaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f794bc20ca26b81a247bcee7c7f6a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_supervector.html#a00f794bc20ca26b81a247bcee7c7f6a4">size</a> () const final</td></tr>
+<tr class="memdesc:a00f794bc20ca26b81a247bcee7c7f6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the vector.  <a href="#a00f794bc20ca26b81a247bcee7c7f6a4">More...</a><br /></td></tr>
+<tr class="separator:a00f794bc20ca26b81a247bcee7c7f6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Does not allow copy, move, or assignment</div></td></tr>
 <tr class="memitem:a6048e9429ab19b42293ecbea1f094f1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_supervector.html#a6048e9429ab19b42293ecbea1f094f1e">Supervector</a> (const <a class="el" href="classdrake_1_1systems_1_1_supervector.html">Supervector</a> &amp;)=delete</td></tr>
 <tr class="separator:a6048e9429ab19b42293ecbea1f094f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,12 +192,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2dd76d9d8b56c2121f37277fa00f023f"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_supervector.html#a2dd76d9d8b56c2121f37277fa00f023f">DoGetAtIndex</a> (<a class="el" href="classint.html">int</a> index) const override</td></tr>
-<tr class="memdesc:a2dd76d9d8b56c2121f37277fa00f023f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations should ensure this operation is O(1) and allocates no memory.  <a href="#a2dd76d9d8b56c2121f37277fa00f023f">More...</a><br /></td></tr>
-<tr class="separator:a2dd76d9d8b56c2121f37277fa00f023f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48e66f6acd6f9273fbcae0a42e9a34f3"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_supervector.html#a48e66f6acd6f9273fbcae0a42e9a34f3">DoGetAtIndex</a> (<a class="el" href="classint.html">int</a> index) override</td></tr>
-<tr class="memdesc:a48e66f6acd6f9273fbcae0a42e9a34f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations should ensure this operation is O(1) and allocates no memory.  <a href="#a48e66f6acd6f9273fbcae0a42e9a34f3">More...</a><br /></td></tr>
-<tr class="separator:a48e66f6acd6f9273fbcae0a42e9a34f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0107f456ef8dc0b64bcebcdcabf812e5"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_supervector.html#a0107f456ef8dc0b64bcebcdcabf812e5">DoGetAtIndex</a> (<a class="el" href="classint.html">int</a> index) const final</td></tr>
+<tr class="memdesc:a0107f456ef8dc0b64bcebcdcabf812e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations should ensure this operation is O(1) and allocates no memory.  <a href="#a0107f456ef8dc0b64bcebcdcabf812e5">More...</a><br /></td></tr>
+<tr class="separator:a0107f456ef8dc0b64bcebcdcabf812e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fff24e719b2bdc456bf2c3cd963b63"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_supervector.html#ac5fff24e719b2bdc456bf2c3cd963b63">DoGetAtIndex</a> (<a class="el" href="classint.html">int</a> index) final</td></tr>
+<tr class="memdesc:ac5fff24e719b2bdc456bf2c3cd963b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations should ensure this operation is O(1) and allocates no memory.  <a href="#ac5fff24e719b2bdc456bf2c3cd963b63">More...</a><br /></td></tr>
+<tr class="separator:ac5fff24e719b2bdc456bf2c3cd963b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classdrake_1_1systems_1_1_vector_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdrake_1_1systems_1_1_vector_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdrake_1_1systems_1_1_vector_base.html">VectorBase&lt; T &gt;</a></td></tr>
 <tr class="memitem:a146b52fc4bf3790ed55a6c097ca3e76b inherit pro_methods_classdrake_1_1systems_1_1_vector_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_vector_base.html#a146b52fc4bf3790ed55a6c097ca3e76b">VectorBase</a> ()</td></tr>
 <tr class="separator:a146b52fc4bf3790ed55a6c097ca3e76b inherit pro_methods_classdrake_1_1systems_1_1_vector_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,8 +287,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2dd76d9d8b56c2121f37277fa00f023f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dd76d9d8b56c2121f37277fa00f023f">&#9670;&nbsp;</a></span>DoGetAtIndex() <span class="overload">[1/2]</span></h2>
+<a id="a0107f456ef8dc0b64bcebcdcabf812e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0107f456ef8dc0b64bcebcdcabf812e5">&#9670;&nbsp;</a></span>DoGetAtIndex() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,7 +306,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -318,8 +318,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a48e66f6acd6f9273fbcae0a42e9a34f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48e66f6acd6f9273fbcae0a42e9a34f3">&#9670;&nbsp;</a></span>DoGetAtIndex() <span class="overload">[2/2]</span></h2>
+<a id="ac5fff24e719b2bdc456bf2c3cd963b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5fff24e719b2bdc456bf2c3cd963b63">&#9670;&nbsp;</a></span>DoGetAtIndex() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,7 +337,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -401,8 +401,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4538a1305a44cbf7a5bd9a536b55eaad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4538a1305a44cbf7a5bd9a536b55eaad">&#9670;&nbsp;</a></span>size()</h2>
+<a id="a00f794bc20ca26b81a247bcee7c7f6a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f794bc20ca26b81a247bcee7c7f6a4">&#9670;&nbsp;</a></span>size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -419,7 +419,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

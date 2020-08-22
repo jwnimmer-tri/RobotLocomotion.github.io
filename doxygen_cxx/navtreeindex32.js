@@ -1,6 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"classdrake_1_1systems_1_1controllers_1_1_inverse_dynamics_controller.html#a66aa93bf35e68ebadbbd49e3ee740383":[1,2,2,0,0],
 "classdrake_1_1systems_1_1controllers_1_1_inverse_dynamics_controller.html#a732444f829ebfe8412054c910289173f":[1,2,2,0,2],
 "classdrake_1_1systems_1_1controllers_1_1_inverse_dynamics_controller.html#a87fbace92efba2a49277e2be09510e57":[1,2,2,0,4],
 "classdrake_1_1systems_1_1controllers_1_1_inverse_dynamics_controller.html#a97a3685bc3186e92bfaaab2967b89ba7":[1,2,2,0,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX32 =
 "classdrake_1_1systems_1_1rendering_1_1_pose_aggregator.html#aa3dcc6e555a951c9502d9b396f2042d6":[3,0,0,13,6,2,8],
 "classdrake_1_1systems_1_1rendering_1_1_pose_aggregator.html#aa502d9f303438b4b6c33a9936e0bb7f4":[3,0,0,13,6,2,4],
 "classdrake_1_1systems_1_1rendering_1_1_pose_aggregator.html#ac28de6f439b617d22ed7ec6e3626720e":[3,0,0,13,6,2,3],
-"classdrake_1_1systems_1_1rendering_1_1_pose_bundle.html":[3,0,0,13,6,3]
+"classdrake_1_1systems_1_1rendering_1_1_pose_bundle.html":[3,0,0,13,6,3],
+"classdrake_1_1systems_1_1rendering_1_1_pose_bundle.html#a0070474d1a9cf6c11d8c15a6df118f94":[3,0,0,13,6,3,6]
 };

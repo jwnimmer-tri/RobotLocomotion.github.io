@@ -93,7 +93,6 @@ $(document).ready(function(){initNavTree('classdrake_1_1multibody_1_1_multibody_
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classdrake_1_1multibody_1_1_multibody_forces-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -115,17 +114,11 @@ class drake::multibody::MultibodyForces&lt; T &gt;</h3>
 </div>
 <p><code>#include &lt;drake/multibody/tree/multibody_forces.h&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a7bafef016b88953ee4591b0dda5d0033"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a7bafef016b88953ee4591b0dda5d0033"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#a7bafef016b88953ee4591b0dda5d0033">MultibodyPlantSurrogate</a> = internal::MultibodyTreeSystem&lt; U &gt;</td></tr>
-<tr class="separator:a7bafef016b88953ee4591b0dda5d0033"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adef0fb9bd3cb41ccd5a6af9caf2397ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#adef0fb9bd3cb41ccd5a6af9caf2397ec">MultibodyForces</a> (const <a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#a7bafef016b88953ee4591b0dda5d0033">MultibodyPlantSurrogate</a>&lt; T &gt; &amp;plant)</td></tr>
-<tr class="memdesc:adef0fb9bd3cb41ccd5a6af9caf2397ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a force object to store a set of forces to be applied to the multibody model for <code>plant</code>.  <a href="#adef0fb9bd3cb41ccd5a6af9caf2397ec">More...</a><br /></td></tr>
-<tr class="separator:adef0fb9bd3cb41ccd5a6af9caf2397ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff2b3798b49185928b79d66fb66afdc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#aeff2b3798b49185928b79d66fb66afdc">MultibodyForces</a> (const internal::MultibodyTreeSystem&lt; T &gt; &amp;plant)</td></tr>
+<tr class="memdesc:aeff2b3798b49185928b79d66fb66afdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a force object to store a set of forces to be applied to the multibody model for <code>plant</code>.  <a href="#aeff2b3798b49185928b79d66fb66afdc">More...</a><br /></td></tr>
+<tr class="separator:aeff2b3798b49185928b79d66fb66afdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6843eaddec5b973e41314479f48e0aae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#a6843eaddec5b973e41314479f48e0aae">MultibodyForces</a> (const internal::MultibodyTree&lt; T &gt; &amp;model)</td></tr>
 <tr class="memdesc:a6843eaddec5b973e41314479f48e0aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Advanced) Tree overload.  <a href="#a6843eaddec5b973e41314479f48e0aae">More...</a><br /></td></tr>
 <tr class="separator:a6843eaddec5b973e41314479f48e0aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,9 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4bebeb0fade3383fdb4acbab2bcc4c3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#a4bebeb0fade3383fdb4acbab2bcc4c3b">AddInForces</a> (const <a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html">MultibodyForces</a>&lt; T &gt; &amp;addend)</td></tr>
 <tr class="memdesc:a4bebeb0fade3383fdb4acbab2bcc4c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds into <code>this</code> the force contribution stored in <code>addend</code>.  <a href="#a4bebeb0fade3383fdb4acbab2bcc4c3b">More...</a><br /></td></tr>
 <tr class="separator:a4bebeb0fade3383fdb4acbab2bcc4c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57cec5d458fb191b828669829f693339"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#a57cec5d458fb191b828669829f693339">CheckHasRightSizeForModel</a> (const <a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#a7bafef016b88953ee4591b0dda5d0033">MultibodyPlantSurrogate</a>&lt; T &gt; &amp;plant) const</td></tr>
-<tr class="memdesc:a57cec5d458fb191b828669829f693339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility that checks that the forces stored by <code>this</code> object have the proper sizes to represent the set of forces for the given <code>plant</code>.  <a href="#a57cec5d458fb191b828669829f693339">More...</a><br /></td></tr>
-<tr class="separator:a57cec5d458fb191b828669829f693339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f578949393a46b4234993e06381f52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#ab3f578949393a46b4234993e06381f52">CheckHasRightSizeForModel</a> (const internal::MultibodyTreeSystem&lt; T &gt; &amp;plant) const</td></tr>
+<tr class="memdesc:ab3f578949393a46b4234993e06381f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility that checks that the forces stored by <code>this</code> object have the proper sizes to represent the set of forces for the given <code>plant</code>.  <a href="#ab3f578949393a46b4234993e06381f52">More...</a><br /></td></tr>
+<tr class="separator:ab3f578949393a46b4234993e06381f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9047cccd5c3ffdd52b8cb63ab985850c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#a9047cccd5c3ffdd52b8cb63ab985850c">CheckHasRightSizeForModel</a> (const internal::MultibodyTree&lt; T &gt; &amp;model) const</td></tr>
 <tr class="memdesc:a9047cccd5c3ffdd52b8cb63ab985850c"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Advanced) Tree overload.  <a href="#a9047cccd5c3ffdd52b8cb63ab985850c">More...</a><br /></td></tr>
 <tr class="separator:a9047cccd5c3ffdd52b8cb63ab985850c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,21 +165,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac8375383084bb0f4bff8b6580434e04a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html">MultibodyForces</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#ac8375383084bb0f4bff8b6580434e04a">operator=</a> (<a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html">MultibodyForces</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:ac8375383084bb0f4bff8b6580434e04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a7bafef016b88953ee4591b0dda5d0033"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bafef016b88953ee4591b0dda5d0033">&#9670;&nbsp;</a></span>MultibodyPlantSurrogate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#a7bafef016b88953ee4591b0dda5d0033">MultibodyPlantSurrogate</a> =  internal::MultibodyTreeSystem&lt;U&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a64a7bf5e2e15cf6080635e435d9294c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64a7bf5e2e15cf6080635e435d9294c0">&#9670;&nbsp;</a></span>MultibodyForces() <span class="overload">[1/5]</span></h2>
@@ -240,8 +218,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adef0fb9bd3cb41ccd5a6af9caf2397ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adef0fb9bd3cb41ccd5a6af9caf2397ec">&#9670;&nbsp;</a></span>MultibodyForces() <span class="overload">[3/5]</span></h2>
+<a id="aeff2b3798b49185928b79d66fb66afdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff2b3798b49185928b79d66fb66afdc">&#9670;&nbsp;</a></span>MultibodyForces() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +230,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html">MultibodyForces</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#a7bafef016b88953ee4591b0dda5d0033">MultibodyPlantSurrogate</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype">const internal::MultibodyTreeSystem&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>plant</em></td><td>)</td>
           <td></td>
         </tr>
@@ -369,8 +347,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a57cec5d458fb191b828669829f693339"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57cec5d458fb191b828669829f693339">&#9670;&nbsp;</a></span>CheckHasRightSizeForModel() <span class="overload">[1/2]</span></h2>
+<a id="ab3f578949393a46b4234993e06381f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f578949393a46b4234993e06381f52">&#9670;&nbsp;</a></span>CheckHasRightSizeForModel() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,7 +356,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool CheckHasRightSizeForModel </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_multibody_forces.html#a7bafef016b88953ee4591b0dda5d0033">MultibodyPlantSurrogate</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype">const internal::MultibodyTreeSystem&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>plant</em></td><td>)</td>
           <td> const</td>
         </tr>

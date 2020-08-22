@@ -1,6 +1,5 @@
 var NAVTREEINDEX43 =
 {
-"structdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_result.html#aaf6a8034fc68445c84db4f8d0fcabc79":[3,0,0,6,3,3,1],
 "structdrake_1_1math_1_1_auto_diff_to_gradient_matrix.html":[3,0,0,7,0],
 "structdrake_1_1math_1_1_auto_diff_to_gradient_matrix.html#a21348e29bb1c2afd6ca653f663394d49":[3,0,0,7,0,0],
 "structdrake_1_1math_1_1_auto_diff_to_value_matrix.html":[3,0,0,7,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX43 =
 "structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_data.html#aaaef3c73820ba35182193a28ecdb916b":[3,0,0,11,0,7,0,3],
 "structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_data.html#ac16cd7b41023caaef86f6139df3da40e":[3,0,0,11,0,7,0,2],
 "structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_data.html#ac398f23f442f485a744b957ea27d4749":[3,0,0,11,0,7,0,8],
-"structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_data.html#ac80f466ba4de9666501bc983e0a3d893":[3,0,0,11,0,7,0,1]
+"structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_data.html#ac80f466ba4de9666501bc983e0a3d893":[3,0,0,11,0,7,0,1],
+"structdrake_1_1solvers_1_1fbstab_1_1_f_bstab_mpc_1_1_q_p_data.html#aee32e8e170503d8b19b2f5703619b0ad":[3,0,0,11,0,7,0,7]
 };

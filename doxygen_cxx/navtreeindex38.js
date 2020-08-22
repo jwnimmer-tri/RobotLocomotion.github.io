@@ -1,6 +1,5 @@
 var NAVTREEINDEX38 =
 {
-"group__analysis.html#ga2ccd9a43fd950b9e3490dd8c98534c3e":[1,4,1,3],
 "group__analysis.html#ga9f3c726f3a915c5188fbcd8bff683cb5":[1,4,1,1],
 "group__analysis.html#gaafb17ca05a19fe7365d28f8a105cff76":[1,4,1,2],
 "group__cache__design__notes.html":[1,6,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX38 =
 "joint__actuator_8h.html":[4,0,0,8,10,15],
 "kalman__filter_8h.html":[4,0,0,11,2,0],
 "kalman__filter_8h.html#ga3949eebe88ae99b71a997dfa0bad5cff":[4,0,0,11,2,0,1],
-"kalman__filter_8h.html#ga483f8a39c210ad058dfc19ae26d93e16":[4,0,0,11,2,0,0]
+"kalman__filter_8h.html#ga483f8a39c210ad058dfc19ae26d93e16":[4,0,0,11,2,0,0],
+"kalman__filter_8h.html#gaffc5a5eabe473ebd57f96b0310d70ed8":[4,0,0,11,2,0,2]
 };

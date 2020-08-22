@@ -1,6 +1,5 @@
 var NAVTREEINDEX37 =
 {
-"fbstab__mpc_8h.html#a203e4647dbc3e3ccc4207f5b41f13e61":[4,0,0,10,0,3,3],
 "fibonacci__difference__equation_8h.html":[4,0,0,3,5,0],
 "files.html":[4,0],
 "filesystem_8h.html":[4,0,0,1,27],
@@ -59,8 +58,8 @@ var NAVTREEINDEX37 =
 "framework__py__values_8h.html#ae073851bc679a64d47dc27c133b8d89d":[4,0,0,0,0,2,2,0],
 "free__body_8h.html":[4,0,0,8,0,1,0],
 "function_8h.html":[4,0,0,10,18],
-"functions.html":[3,3,0,0],
 "functions.html":[3,3,0],
+"functions.html":[3,3,0,0],
 "functions_b.html":[3,3,0,1],
 "functions_c.html":[3,3,0,2],
 "functions_d.html":[3,3,0,3],
@@ -137,8 +136,8 @@ var NAVTREEINDEX37 =
 "functions_type.html":[3,3,3],
 "functions_u.html":[3,3,0,20],
 "functions_v.html":[3,3,0,21],
-"functions_vars.html":[3,3,2,0],
 "functions_vars.html":[3,3,2],
+"functions_vars.html":[3,3,2,0],
 "functions_vars_b.html":[3,3,2,1],
 "functions_vars_c.html":[3,3,2,2],
 "functions_vars_d.html":[3,3,2,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX37 =
 "group__acrobot__systems.html#gafb2ab3ad52a7daf958473b205ceb8877":[1,2,11,0,8],
 "group__algorithms.html":[1,4],
 "group__analysis.html":[1,4,1],
-"group__analysis.html#ga08757b3b0c28f5051e1c37d98f2cc58b":[1,4,1,0]
+"group__analysis.html#ga08757b3b0c28f5051e1c37d98f2cc58b":[1,4,1,0],
+"group__analysis.html#ga2ccd9a43fd950b9e3490dd8c98534c3e":[1,4,1,3]
 };

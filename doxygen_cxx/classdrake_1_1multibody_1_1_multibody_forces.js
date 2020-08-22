@@ -1,14 +1,13 @@
 var classdrake_1_1multibody_1_1_multibody_forces =
 [
-    [ "MultibodyPlantSurrogate", "classdrake_1_1multibody_1_1_multibody_forces.html#a7bafef016b88953ee4591b0dda5d0033", null ],
     [ "MultibodyForces", "classdrake_1_1multibody_1_1_multibody_forces.html#a64a7bf5e2e15cf6080635e435d9294c0", null ],
     [ "MultibodyForces", "classdrake_1_1multibody_1_1_multibody_forces.html#ac93c68c274df369dca980144a897a4b0", null ],
-    [ "MultibodyForces", "classdrake_1_1multibody_1_1_multibody_forces.html#adef0fb9bd3cb41ccd5a6af9caf2397ec", null ],
+    [ "MultibodyForces", "classdrake_1_1multibody_1_1_multibody_forces.html#aeff2b3798b49185928b79d66fb66afdc", null ],
     [ "MultibodyForces", "classdrake_1_1multibody_1_1_multibody_forces.html#a6843eaddec5b973e41314479f48e0aae", null ],
     [ "MultibodyForces", "classdrake_1_1multibody_1_1_multibody_forces.html#a979baec5b19c1b415da5e64c3565b9b1", null ],
     [ "AddInForces", "classdrake_1_1multibody_1_1_multibody_forces.html#a4bebeb0fade3383fdb4acbab2bcc4c3b", null ],
     [ "body_forces", "classdrake_1_1multibody_1_1_multibody_forces.html#a91264c805be8c0a30df5eb481316dd65", null ],
-    [ "CheckHasRightSizeForModel", "classdrake_1_1multibody_1_1_multibody_forces.html#a57cec5d458fb191b828669829f693339", null ],
+    [ "CheckHasRightSizeForModel", "classdrake_1_1multibody_1_1_multibody_forces.html#ab3f578949393a46b4234993e06381f52", null ],
     [ "CheckHasRightSizeForModel", "classdrake_1_1multibody_1_1_multibody_forces.html#a9047cccd5c3ffdd52b8cb63ab985850c", null ],
     [ "generalized_forces", "classdrake_1_1multibody_1_1_multibody_forces.html#a8823f94494d680a558889504d46a6f6e", null ],
     [ "mutable_body_forces", "classdrake_1_1multibody_1_1_multibody_forces.html#a8305e8fcc4884808d757748513b4855e", null ],

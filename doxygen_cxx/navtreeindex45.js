@@ -1,6 +1,5 @@
 var NAVTREEINDEX45 =
 {
-"structstd_1_1equal__to_3_01drake_1_1symbolic_1_1_expression_01_4.html#a538d122bb822306915eed589daae8627":[3,0,1,0,0],
 "structstd_1_1equal__to_3_01drake_1_1symbolic_1_1_formula_01_4.html":[3,0,1,1],
 "structstd_1_1equal__to_3_01drake_1_1symbolic_1_1_formula_01_4.html#ad8fefac14435343adfcc69f7348f0961":[3,0,1,1,0],
 "structstd_1_1equal__to_3_01drake_1_1symbolic_1_1_variable_01_4.html":[3,0,1,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX45 =
 "symbolic__expression__cell_8h.html#a790f1dea22ffa64d7c75849403aae060":[4,0,0,1,56,54],
 "symbolic__expression__cell_8h.html#a7abdc81f10cc7d9c2dad5f809d6d1905":[4,0,0,1,56,90],
 "symbolic__expression__cell_8h.html#a7be1d5cbdfe80024dcbf36264504f720":[4,0,0,1,56,76],
-"symbolic__expression__cell_8h.html#a7cf591075325809961d0975a0bad30a0":[4,0,0,1,56,115]
+"symbolic__expression__cell_8h.html#a7cf591075325809961d0975a0bad30a0":[4,0,0,1,56,115],
+"symbolic__expression__cell_8h.html#a7d693b2bf5346dc1f4092a1bbc77d790":[4,0,0,1,56,128]
 };
