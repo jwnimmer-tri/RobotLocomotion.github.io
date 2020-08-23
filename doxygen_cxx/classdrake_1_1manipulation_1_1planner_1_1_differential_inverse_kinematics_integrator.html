@@ -129,6 +129,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb9c056fd315645e92def45ae627b797"><td class="memItemLeft" align="right" valign="top">math::RigidTransformd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html#adb9c056fd315645e92def45ae627b797">ForwardKinematics</a> (const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; double &gt; &amp;context) const</td></tr>
 <tr class="memdesc:adb9c056fd315645e92def45ae627b797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides X_WE as a function of the joint position set in <code>context</code>.  <a href="#adb9c056fd315645e92def45ae627b797">More...</a><br /></td></tr>
 <tr class="separator:adb9c056fd315645e92def45ae627b797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ba40d686f61340829ffab0302c60d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_parameters.html">DifferentialInverseKinematicsParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html#a84ba40d686f61340829ffab0302c60d2">get_parameters</a> () const</td></tr>
+<tr class="memdesc:a84ba40d686f61340829ffab0302c60d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the differential IK parameters owned by this system.  <a href="#a84ba40d686f61340829ffab0302c60d2">More...</a><br /></td></tr>
+<tr class="separator:a84ba40d686f61340829ffab0302c60d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ec04b8090fb67a27ba4fd3599bcd2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_parameters.html">DifferentialInverseKinematicsParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html#a91ec04b8090fb67a27ba4fd3599bcd2e">get_mutable_parameters</a> ()</td></tr>
+<tr class="memdesc:a91ec04b8090fb67a27ba4fd3599bcd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a mutable reference to the differential IK parameters owned by this system.  <a href="#a91ec04b8090fb67a27ba4fd3599bcd2e">More...</a><br /></td></tr>
+<tr class="separator:a91ec04b8090fb67a27ba4fd3599bcd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Does not allow copy, move, or assignment</div></td></tr>
 <tr class="memitem:a6329f7d7632378d3468c21998625d154"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html#a6329f7d7632378d3468c21998625d154">DifferentialInverseKinematicsIntegrator</a> (const <a class="el" href="classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_integrator.html">DifferentialInverseKinematicsIntegrator</a> &amp;)=delete</td></tr>
 <tr class="separator:a6329f7d7632378d3468c21998625d154"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1270,6 +1276,44 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Provides X_WE as a function of the joint position set in <code>context</code>. </p>
+
+</div>
+</div>
+<a id="a91ec04b8090fb67a27ba4fd3599bcd2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ec04b8090fb67a27ba4fd3599bcd2e">&#9670;&nbsp;</a></span>get_mutable_parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_parameters.html">DifferentialInverseKinematicsParameters</a>&amp; get_mutable_parameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a mutable reference to the differential IK parameters owned by this system. </p>
+
+</div>
+</div>
+<a id="a84ba40d686f61340829ffab0302c60d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84ba40d686f61340829ffab0302c60d2">&#9670;&nbsp;</a></span>get_parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdrake_1_1manipulation_1_1planner_1_1_differential_inverse_kinematics_parameters.html">DifferentialInverseKinematicsParameters</a>&amp; get_parameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a const reference to the differential IK parameters owned by this system. </p>
 
 </div>
 </div>
