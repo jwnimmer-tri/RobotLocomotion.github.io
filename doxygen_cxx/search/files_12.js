@@ -100,6 +100,7 @@ var searchData=
   ['symbolic_5fmonomial_5fbasis_5felement_2eh',['symbolic_monomial_basis_element.h',['../symbolic__monomial__basis__element_8h.html',1,'']]],
   ['symbolic_5fmonomial_5futil_2eh',['symbolic_monomial_util.h',['../symbolic__monomial__util_8h.html',1,'']]],
   ['symbolic_5fpolynomial_2eh',['symbolic_polynomial.h',['../symbolic__polynomial_8h.html',1,'']]],
+  ['symbolic_5fpolynomial_5fbasis_2eh',['symbolic_polynomial_basis.h',['../symbolic__polynomial__basis_8h.html',1,'']]],
   ['symbolic_5fpolynomial_5fbasis_5felement_2eh',['symbolic_polynomial_basis_element.h',['../symbolic__polynomial__basis__element_8h.html',1,'']]],
   ['symbolic_5frational_5ffunction_2eh',['symbolic_rational_function.h',['../symbolic__rational__function_8h.html',1,'']]],
   ['symbolic_5fsimplification_2eh',['symbolic_simplification.h',['../symbolic__simplification_8h.html',1,'']]],

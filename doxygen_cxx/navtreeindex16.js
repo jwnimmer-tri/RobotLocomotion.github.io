@@ -1,5 +1,10 @@
 var NAVTREEINDEX16 =
 {
+"classdrake_1_1solvers_1_1_mathematical_program.html#aa73c34779cac8f3d622aa353c8212d38":[1,1,0,106],
+"classdrake_1_1solvers_1_1_mathematical_program.html#aa8745eb0e81fcbfc031c8e8c57609284":[1,1,0,38],
+"classdrake_1_1solvers_1_1_mathematical_program.html#aa97e94e833feb1d3570a61226b1e4a19":[1,1,0,84],
+"classdrake_1_1solvers_1_1_mathematical_program.html#aac012f5939e75603d8318ab593b8d04b":[1,1,0,110],
+"classdrake_1_1solvers_1_1_mathematical_program.html#aac264e3eaafb940135dfa11d3ba84c67":[1,1,0,137],
 "classdrake_1_1solvers_1_1_mathematical_program.html#aadbd3feebe9cd0d5acf67dd4947c7994":[1,1,0,22],
 "classdrake_1_1solvers_1_1_mathematical_program.html#aae23f7c130166d82b578205015aed630":[1,1,0,155],
 "classdrake_1_1solvers_1_1_mathematical_program.html#aae95dc15cec0d839a3eeaf69aeecf766":[1,1,0,123],
@@ -244,10 +249,5 @@ var NAVTREEINDEX16 =
 "classdrake_1_1solvers_1_1_osqp_solver.html#a7ac8ab830c4d723c3b657635030dafb6":[3,0,0,11,44,2],
 "classdrake_1_1solvers_1_1_osqp_solver.html#a8ed370bb9c586abb237c55a5f36a4815":[3,0,0,11,44,4],
 "classdrake_1_1solvers_1_1_osqp_solver.html#aad3b86a30c6110a46792f5451e1df046":[3,0,0,11,44,3],
-"classdrake_1_1solvers_1_1_osqp_solver.html#af2ff6a250a78bb79ef64f7527c51b01c":[3,0,0,11,44,11],
-"classdrake_1_1solvers_1_1_osqp_solver.html#afa135bc8b8d84cf608c982037e707e09":[3,0,0,11,44,8],
-"classdrake_1_1solvers_1_1_osqp_solver.html#afdbc2d66c43c508fe956c4a18e531c76":[3,0,0,11,44,0],
-"classdrake_1_1solvers_1_1_polynomial_constraint.html":[3,0,0,11,46],
-"classdrake_1_1solvers_1_1_polynomial_constraint.html#a25f396d1eaf4be52eb3db66072895105":[3,0,0,11,46,7],
-"classdrake_1_1solvers_1_1_polynomial_constraint.html#a4983fdabdbaa1977122fd25c7081127d":[3,0,0,11,46,0]
+"classdrake_1_1solvers_1_1_osqp_solver.html#af2ff6a250a78bb79ef64f7527c51b01c":[3,0,0,11,44,11]
 };

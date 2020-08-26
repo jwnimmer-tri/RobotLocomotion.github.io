@@ -1,5 +1,10 @@
 var NAVTREEINDEX17 =
 {
+"classdrake_1_1solvers_1_1_osqp_solver.html#afa135bc8b8d84cf608c982037e707e09":[3,0,0,11,44,8],
+"classdrake_1_1solvers_1_1_osqp_solver.html#afdbc2d66c43c508fe956c4a18e531c76":[3,0,0,11,44,0],
+"classdrake_1_1solvers_1_1_polynomial_constraint.html":[3,0,0,11,46],
+"classdrake_1_1solvers_1_1_polynomial_constraint.html#a25f396d1eaf4be52eb3db66072895105":[3,0,0,11,46,7],
+"classdrake_1_1solvers_1_1_polynomial_constraint.html#a4983fdabdbaa1977122fd25c7081127d":[3,0,0,11,46,0],
 "classdrake_1_1solvers_1_1_polynomial_constraint.html#a4cfabc8f2d2a53ee991b848f84516bb6":[3,0,0,11,46,6],
 "classdrake_1_1solvers_1_1_polynomial_constraint.html#a73f0868e6a43746c0d368f80b12ed428":[3,0,0,11,46,3],
 "classdrake_1_1solvers_1_1_polynomial_constraint.html#aacd88a44cead011690d465fbdf56026c":[3,0,0,11,46,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX17 =
 "classdrake_1_1solvers_1_1fbstab_1_1_dense_feasibility.html#abcbba9d34fa5a926181f4882483338df":[3,0,0,11,0,1,6],
 "classdrake_1_1solvers_1_1fbstab_1_1_dense_feasibility.html#ae301e404043f3365476a3a533f25a39c":[3,0,0,11,0,1,7],
 "classdrake_1_1solvers_1_1fbstab_1_1_dense_linear_solver.html":[3,0,0,11,0,2],
-"classdrake_1_1solvers_1_1fbstab_1_1_dense_linear_solver.html#a0d3ef949383b3fc1980758d2b6b1f2bf":[3,0,0,11,0,2,3],
-"classdrake_1_1solvers_1_1fbstab_1_1_dense_linear_solver.html#a502568c1de7065fc3de043a231ad1f1f":[3,0,0,11,0,2,7],
-"classdrake_1_1solvers_1_1fbstab_1_1_dense_linear_solver.html#a54fec3504340cb5b3b15860d7b8929f2":[3,0,0,11,0,2,2],
-"classdrake_1_1solvers_1_1fbstab_1_1_dense_linear_solver.html#a846830de124e22627562f0c8cbdda6a7":[3,0,0,11,0,2,4],
-"classdrake_1_1solvers_1_1fbstab_1_1_dense_linear_solver.html#a85ab6b4bd08f5d110cbc4b87a6412409":[3,0,0,11,0,2,5],
-"classdrake_1_1solvers_1_1fbstab_1_1_dense_linear_solver.html#a9117e4a6fb3ded3267eba43ffc87a388":[3,0,0,11,0,2,0]
+"classdrake_1_1solvers_1_1fbstab_1_1_dense_linear_solver.html#a0d3ef949383b3fc1980758d2b6b1f2bf":[3,0,0,11,0,2,3]
 };

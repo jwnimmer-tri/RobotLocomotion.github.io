@@ -7,6 +7,7 @@ var group__systems =
     [ "Sensors", "group__sensor__systems.html", "group__sensor__systems" ],
     [ "Manipulation", "group__manipulation__systems.html", "group__manipulation__systems" ],
     [ "Message Passing", "group__message__passing.html", "group__message__passing" ],
+    [ "Multibody Systems", "group__multibody__systems.html", "group__multibody__systems" ],
     [ "Perception", "group__perception__systems.html", "group__perception__systems" ],
     [ "Discrete Systems", "group__discrete__systems.html", null ],
     [ "Stochastic Systems", "group__stochastic__systems.html", null ],

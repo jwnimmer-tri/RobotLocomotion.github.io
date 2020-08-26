@@ -94,6 +94,8 @@ var searchData=
   ['evaluatechebyshevpolynomial',['EvaluateChebyshevPolynomial',['../namespacedrake_1_1symbolic.html#a87b9a5af49a6b9d6140189a132c4c2d7',1,'drake::symbolic']]],
   ['evaluatecurve',['EvaluateCurve',['../classdrake_1_1math_1_1_bspline_basis.html#a0b2383f7cbcf2f4a8bc47c1ccde3134b',1,'drake::math::BsplineBasis']]],
   ['evaluatee_5fmn',['EvaluateE_MN',['../classdrake_1_1geometry_1_1_contact_surface.html#aeaff112482dbeec4be3eba755202bac3',1,'drake::geometry::ContactSurface::EvaluateE_MN(SurfaceFaceIndex face, const typename SurfaceMesh&lt; T &gt;::Barycentric &amp;barycentric) const'],['../classdrake_1_1geometry_1_1_contact_surface.html#a50475632b661f5cd129d19eafe98c874',1,'drake::geometry::ContactSurface::EvaluateE_MN(SurfaceVertexIndex vertex) const']]],
+  ['evaluategrade_5fm_5fw',['EvaluateGradE_M_W',['../classdrake_1_1geometry_1_1_contact_surface.html#a393a6630f6cd898d5cf6b2df407d9807',1,'drake::geometry::ContactSurface']]],
+  ['evaluategrade_5fn_5fw',['EvaluateGradE_N_W',['../classdrake_1_1geometry_1_1_contact_surface.html#a58c68925ce5de96a17ac36604d27bd47',1,'drake::geometry::ContactSurface']]],
   ['evaluategradient',['EvaluateGradient',['../classdrake_1_1geometry_1_1_mesh_field_linear.html#aa91da100f3b62c33232b5e43f24094ee',1,'drake::geometry::MeshFieldLinear']]],
   ['evaluatemultivariate',['EvaluateMultivariate',['../classdrake_1_1_polynomial.html#a96ba53803e4244c1878ed9ad381854a7',1,'drake::Polynomial::EvaluateMultivariate()'],['../classdrake_1_1_trig_poly.html#a96ba53803e4244c1878ed9ad381854a7',1,'drake::TrigPoly::EvaluateMultivariate()']]],
   ['evaluatenth',['EvaluateNth',['../classdrake_1_1systems_1_1_dense_output.html#a84e2a0ad8be6719d4650925e571751ab',1,'drake::systems::DenseOutput']]],

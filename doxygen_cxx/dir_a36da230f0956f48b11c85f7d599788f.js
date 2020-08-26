@@ -81,6 +81,7 @@ var dir_a36da230f0956f48b11c85f7d599788f =
     [ "symbolic_monomial_basis_element.h", "symbolic__monomial__basis__element_8h.html", "symbolic__monomial__basis__element_8h" ],
     [ "symbolic_monomial_util.h", "symbolic__monomial__util_8h.html", "symbolic__monomial__util_8h" ],
     [ "symbolic_polynomial.h", "symbolic__polynomial_8h.html", "symbolic__polynomial_8h" ],
+    [ "symbolic_polynomial_basis.h", "symbolic__polynomial__basis_8h.html", "symbolic__polynomial__basis_8h" ],
     [ "symbolic_polynomial_basis_element.h", "symbolic__polynomial__basis__element_8h.html", [
       [ "PolynomialBasisElement", "classdrake_1_1symbolic_1_1_polynomial_basis_element.html", "classdrake_1_1symbolic_1_1_polynomial_basis_element" ],
       [ "BasisElementGradedReverseLexOrder", "structdrake_1_1symbolic_1_1_basis_element_graded_reverse_lex_order.html", "structdrake_1_1symbolic_1_1_basis_element_graded_reverse_lex_order" ]

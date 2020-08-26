@@ -1,5 +1,10 @@
 var NAVTREEINDEX34 =
 {
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation.html#a91b3d512821b5f210669cef35d8e4859":[3,0,0,13,9,0,0],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html":[3,0,0,13,9,1],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a198bf2c564777ff4d7d5acd711e5e349":[3,0,0,13,9,1,8],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a3cbd3e24f7648ab7712c803ca8a63f3e":[3,0,0,13,9,1,9],
+"classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a581b17083c0cf2685271136830b65104":[3,0,0,13,9,1,2],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a5eea9354674efc1c07bf537319628ead":[3,0,0,13,9,1,7],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a643ccb05dea44d65aa2d91b422f20f12":[3,0,0,13,9,1,0],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_direct_collocation_constraint.html#a66022c63d007d32a9812270a90890e7f":[3,0,0,13,9,1,11],
@@ -77,12 +82,13 @@ var NAVTREEINDEX34 =
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_multiple_shooting.html#afdb93529350e8cd4872dfc89198e2cfa":[3,0,0,13,9,4,32],
 "classdrake_1_1systems_1_1trajectory__optimization_1_1_multiple_shooting.html#aff3e6c4f0b60a31114bec85318e0617f":[3,0,0,13,9,4,2],
 "classdrake_1_1test_1_1_limit_malloc.html":[3,0,0,14,0],
-"classdrake_1_1test_1_1_limit_malloc.html#a14d16b667a4d7d25d44e45315f9a7deb":[3,0,0,14,0,5],
+"classdrake_1_1test_1_1_limit_malloc.html#a14d16b667a4d7d25d44e45315f9a7deb":[3,0,0,14,0,6],
 "classdrake_1_1test_1_1_limit_malloc.html#a478ec7cfb497736991907bf0b70d9cc0":[3,0,0,14,0,0],
 "classdrake_1_1test_1_1_limit_malloc.html#a6c0c47e1e5af49b346ab24c53aaa6ded":[3,0,0,14,0,4],
 "classdrake_1_1test_1_1_limit_malloc.html#a8b0b677bcfc5aadb02adacc95d993b95":[3,0,0,14,0,2],
 "classdrake_1_1test_1_1_limit_malloc.html#a923eedb579481aa1bab9babf206d3ead":[3,0,0,14,0,3],
-"classdrake_1_1test_1_1_limit_malloc.html#aab5411a4588acfe4e13675e9234adedf":[3,0,0,14,0,6],
+"classdrake_1_1test_1_1_limit_malloc.html#aab5411a4588acfe4e13675e9234adedf":[3,0,0,14,0,7],
+"classdrake_1_1test_1_1_limit_malloc.html#afcdbfd967bf9091f3554dc4b5609c288":[3,0,0,14,0,5],
 "classdrake_1_1test_1_1_limit_malloc.html#afef229bd4c5ea3baf6feca1c8720d9da":[3,0,0,14,0,1],
 "classdrake_1_1trajectories_1_1_bspline_trajectory.html":[3,0,0,15,0],
 "classdrake_1_1trajectories_1_1_bspline_trajectory.html#a0acbf3fa1589153652739854f168b63e":[3,0,0,15,0,10],
@@ -243,11 +249,5 @@ var NAVTREEINDEX34 =
 "classdrake_1_1trajectories_1_1_trajectory.html#ae4c7cdf72ed60fd130e1985ecd8c3846":[3,0,0,15,5,6],
 "classdrake_1_1trajectories_1_1_trajectory.html#aec58a75947d06ba435adda6fd990678e":[3,0,0,15,5,0],
 "classdrake_1_1trajectories_1_1_trajectory.html#af2e2fa698b2c37469f44381ec7ae3344":[3,0,0,15,5,10],
-"classdrake_1_1trajectories_1_1_trajectory.html#af752fbd39919690fbbe2110639682be7":[3,0,0,15,5,2],
-"classdrake_1_1trajectories_1_1_trajectory.html#afbddf9c56911aa6014253b5800fbff83":[3,0,0,15,5,7],
-"classdrake_1_1yaml_1_1_yaml_read_archive.html":[3,0,0,16,0],
-"classdrake_1_1yaml_1_1_yaml_read_archive.html#a2cf67590f7dd50de0aae1275f1653a95":[3,0,0,16,0,6],
-"classdrake_1_1yaml_1_1_yaml_read_archive.html#a2dd47c9c9eb4bdd686bb7f4feb8ba0cd":[3,0,0,16,0,7],
-"classdrake_1_1yaml_1_1_yaml_read_archive.html#a8189e33097bb92db33d21590028e4bbf":[3,0,0,16,0,5],
-"classdrake_1_1yaml_1_1_yaml_read_archive.html#a8259d3cf087a43e721fe51a2b34cbcde":[3,0,0,16,0,4]
+"classdrake_1_1trajectories_1_1_trajectory.html#af752fbd39919690fbbe2110639682be7":[3,0,0,15,5,2]
 };
