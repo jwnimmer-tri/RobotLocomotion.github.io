@@ -44,6 +44,7 @@ var searchData=
   ['linearequalityconstraint',['LinearEqualityConstraint',['../classdrake_1_1solvers_1_1_linear_equality_constraint.html',1,'drake::solvers']]],
   ['linearmatrixinequalityconstraint',['LinearMatrixInequalityConstraint',['../classdrake_1_1solvers_1_1_linear_matrix_inequality_constraint.html',1,'drake::solvers']]],
   ['linearmodelpredictivecontroller',['LinearModelPredictiveController',['../classdrake_1_1systems_1_1controllers_1_1_linear_model_predictive_controller.html',1,'drake::systems::controllers']]],
+  ['linearoperator',['LinearOperator',['../classdrake_1_1multibody_1_1solvers_1_1_linear_operator.html',1,'drake::multibody::solvers']]],
   ['linearquadraticregulatorresult',['LinearQuadraticRegulatorResult',['../structdrake_1_1systems_1_1controllers_1_1_linear_quadratic_regulator_result.html',1,'drake::systems::controllers']]],
   ['linearscalarsystem',['LinearScalarSystem',['../classdrake_1_1systems_1_1analysis__test_1_1_linear_scalar_system.html',1,'drake::systems::analysis_test']]],
   ['linearspringdamper',['LinearSpringDamper',['../classdrake_1_1multibody_1_1_linear_spring_damper.html',1,'drake::multibody']]],

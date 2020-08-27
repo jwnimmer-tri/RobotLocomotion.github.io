@@ -18,6 +18,7 @@ var searchData=
   ['limit_5fmalloc_2eh',['limit_malloc.h',['../limit__malloc_8h.html',1,'']]],
   ['linear_5fbushing_5froll_5fpitch_5fyaw_2eh',['linear_bushing_roll_pitch_yaw.h',['../linear__bushing__roll__pitch__yaw_8h.html',1,'']]],
   ['linear_5fmodel_5fpredictive_5fcontroller_2eh',['linear_model_predictive_controller.h',['../linear__model__predictive__controller_8h.html',1,'']]],
+  ['linear_5foperator_2eh',['linear_operator.h',['../linear__operator_8h.html',1,'']]],
   ['linear_5fquadratic_5fregulator_2eh',['linear_quadratic_regulator.h',['../linear__quadratic__regulator_8h.html',1,'']]],
   ['linear_5fscalar_5fsystem_2eh',['linear_scalar_system.h',['../linear__scalar__system_8h.html',1,'']]],
   ['linear_5fspring_5fdamper_2eh',['linear_spring_damper.h',['../linear__spring__damper_8h.html',1,'']]],

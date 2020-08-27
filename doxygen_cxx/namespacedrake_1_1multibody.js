@@ -2,6 +2,7 @@ var namespacedrake_1_1multibody =
 [
     [ "benchmarks", "namespacedrake_1_1multibody_1_1benchmarks.html", "namespacedrake_1_1multibody_1_1benchmarks" ],
     [ "constraint", "namespacedrake_1_1multibody_1_1constraint.html", "namespacedrake_1_1multibody_1_1constraint" ],
+    [ "solvers", "namespacedrake_1_1multibody_1_1solvers.html", "namespacedrake_1_1multibody_1_1solvers" ],
     [ "test", "namespacedrake_1_1multibody_1_1test.html", "namespacedrake_1_1multibody_1_1test" ],
     [ "test_utilities", "namespacedrake_1_1multibody_1_1test__utilities.html", "namespacedrake_1_1multibody_1_1test__utilities" ],
     [ "AddMultibodyPlantSceneGraphResult", "structdrake_1_1multibody_1_1_add_multibody_plant_scene_graph_result.html", "structdrake_1_1multibody_1_1_add_multibody_plant_scene_graph_result" ],

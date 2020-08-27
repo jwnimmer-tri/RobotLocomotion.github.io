@@ -54,6 +54,7 @@ var searchData=
   ['solvestatusinfo',['SolveStatusInfo',['../structdrake_1_1solvers_1_1_gurobi_solver_1_1_solve_status_info.html',1,'drake::solvers::GurobiSolver']]],
   ['sortedpair',['SortedPair',['../structdrake_1_1_sorted_pair.html',1,'drake']]],
   ['sortedpair_3c_20drake_3a_3ageometry_3a_3ageometryid_20_3e',['SortedPair&lt; drake::geometry::GeometryId &gt;',['../structdrake_1_1_sorted_pair.html',1,'drake']]],
+  ['sparselinearoperator',['SparseLinearOperator',['../classdrake_1_1multibody_1_1solvers_1_1_sparse_linear_operator.html',1,'drake::multibody::solvers']]],
   ['spatialacceleration',['SpatialAcceleration',['../classdrake_1_1multibody_1_1_spatial_acceleration.html',1,'drake::multibody']]],
   ['spatialforce',['SpatialForce',['../classdrake_1_1multibody_1_1_spatial_force.html',1,'drake::multibody']]],
   ['spatialforce_3c_20double_20_3e',['SpatialForce&lt; double &gt;',['../classdrake_1_1multibody_1_1_spatial_force.html',1,'drake::multibody']]],

@@ -57,6 +57,7 @@ var searchData=
   ['sorted_5fvectors_5fhave_5fintersection_2eh',['sorted_vectors_have_intersection.h',['../sorted__vectors__have__intersection_8h.html',1,'']]],
   ['sos_5fbasis_5fgenerator_2eh',['sos_basis_generator.h',['../sos__basis__generator_8h.html',1,'']]],
   ['space_5fxyz_5fmobilizer_2eh',['space_xyz_mobilizer.h',['../space__xyz__mobilizer_8h.html',1,'']]],
+  ['sparse_5flinear_5foperator_2eh',['sparse_linear_operator.h',['../sparse__linear__operator_8h.html',1,'']]],
   ['spatial_5facceleration_2eh',['spatial_acceleration.h',['../spatial__acceleration_8h.html',1,'']]],
   ['spatial_5falgebra_2eh',['spatial_algebra.h',['../spatial__algebra_8h.html',1,'']]],
   ['spatial_5fforce_2eh',['spatial_force.h',['../spatial__force_8h.html',1,'']]],

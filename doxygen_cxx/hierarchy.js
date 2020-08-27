@@ -387,6 +387,9 @@ var hierarchy =
     [ "less< drake::symbolic::Variable >", "structstd_1_1less_3_01drake_1_1symbolic_1_1_variable_01_4.html", null ],
     [ "LimitMalloc", "classdrake_1_1test_1_1_limit_malloc.html", null ],
     [ "LimitMallocParams", "structdrake_1_1test_1_1_limit_malloc_params.html", null ],
+    [ "LinearOperator< T >", "classdrake_1_1multibody_1_1solvers_1_1_linear_operator.html", [
+      [ "SparseLinearOperator< T >", "classdrake_1_1multibody_1_1solvers_1_1_sparse_linear_operator.html", null ]
+    ] ],
     [ "LinearQuadraticRegulatorResult", "structdrake_1_1systems_1_1controllers_1_1_linear_quadratic_regulator_result.html", null ],
     [ "LogarithmicSos2NewBinaryVariables< NumLambda >", "structdrake_1_1solvers_1_1_logarithmic_sos2_new_binary_variables.html", null ],
     [ "MassDamperSpringAnalyticalSolution< T >", "classdrake_1_1multibody_1_1benchmarks_1_1_mass_damper_spring_analytical_solution.html", null ],
