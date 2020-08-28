@@ -195,10 +195,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab0efcd599640dacc6ef37cf640143fdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1multibody_1_1_spatial_momentum.html">SpatialMomentum</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html#ab0efcd599640dacc6ef37cf640143fdc">operator *</a> (const <a class="el" href="classdrake_1_1multibody_1_1_spatial_velocity.html">SpatialVelocity</a>&lt; T &gt; &amp;V_WBp_E) const</td></tr>
 <tr class="memdesc:ab0efcd599640dacc6ef37cf640143fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies <code>this</code> spatial inertia <code>M_BP_E</code> of a body B about a point P by the spatial velocity <code>V_WBp</code>, in a frame W, of the body frame B shifted to point P.  <a href="#ab0efcd599640dacc6ef37cf640143fdc">More...</a><br /></td></tr>
 <tr class="separator:ab0efcd599640dacc6ef37cf640143fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af13e5292b6e92ebcd0ada1d9e5e5b3f0"><td class="memTemplParams" colspan="2">template&lt;typename Derived &gt; </td></tr>
-<tr class="memitem:af13e5292b6e92ebcd0ada1d9e5e5b3f0"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; T, 6, Derived::ColsAtCompileTime &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html#af13e5292b6e92ebcd0ada1d9e5e5b3f0">operator *</a> (const Eigen::MatrixBase&lt; Derived &gt; &amp;Mmatrix) const</td></tr>
-<tr class="memdesc:af13e5292b6e92ebcd0ada1d9e5e5b3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies <code>this</code> spatial inertia by a set of spatial vectors in M⁶ stored as columns of input matrix <code>Mmatrix</code>.  <a href="#af13e5292b6e92ebcd0ada1d9e5e5b3f0">More...</a><br /></td></tr>
-<tr class="separator:af13e5292b6e92ebcd0ada1d9e5e5b3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3f6e6102f427a8624f86758eb536fd"><td class="memTemplParams" colspan="2">template&lt;typename Derived &gt; </td></tr>
+<tr class="memitem:acc3f6e6102f427a8624f86758eb536fd"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; T, 6, Derived::ColsAtCompileTime, 0, 6, Derived::MaxColsAtCompileTime &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html#acc3f6e6102f427a8624f86758eb536fd">operator *</a> (const Eigen::MatrixBase&lt; Derived &gt; &amp;Mmatrix) const</td></tr>
+<tr class="memdesc:acc3f6e6102f427a8624f86758eb536fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies <code>this</code> spatial inertia by a set of spatial vectors in M⁶ stored as columns of input matrix <code>Mmatrix</code>.  <a href="#acc3f6e6102f427a8624f86758eb536fd">More...</a><br /></td></tr>
+<tr class="separator:acc3f6e6102f427a8624f86758eb536fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Implements CopyConstructible, CopyAssignable, MoveConstructible, MoveAssignable</div></td></tr>
 <tr class="memitem:a8f02d78a11a4fd918699c75b48573520"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html#a8f02d78a11a4fd918699c75b48573520">SpatialInertia</a> (const <a class="el" href="classdrake_1_1multibody_1_1_spatial_inertia.html">SpatialInertia</a> &amp;)=default</td></tr>
 <tr class="separator:a8f02d78a11a4fd918699c75b48573520"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -663,14 +663,14 @@ Related Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af13e5292b6e92ebcd0ada1d9e5e5b3f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af13e5292b6e92ebcd0ada1d9e5e5b3f0">&#9670;&nbsp;</a></span>operator *() <span class="overload">[3/3]</span></h2>
+<a id="acc3f6e6102f427a8624f86758eb536fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3f6e6102f427a8624f86758eb536fd">&#9670;&nbsp;</a></span>operator *() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix&lt;T, 6, Derived::ColsAtCompileTime&gt; operator * </td>
+          <td class="memname">Eigen::Matrix&lt;T, 6, Derived::ColsAtCompileTime, 0, 6, Derived::MaxColsAtCompileTime&gt; operator * </td>
           <td>(</td>
           <td class="paramtype">const Eigen::MatrixBase&lt; Derived &gt; &amp;&#160;</td>
           <td class="paramname"><em>Mmatrix</em></td><td>)</td>

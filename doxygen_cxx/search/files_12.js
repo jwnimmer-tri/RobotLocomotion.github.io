@@ -79,6 +79,7 @@ var searchData=
   ['stationary_5fsystem_2eh',['stationary_system.h',['../stationary__system_8h.html',1,'']]],
   ['stepwise_5fdense_5foutput_2eh',['stepwise_dense_output.h',['../stepwise__dense__output_8h.html',1,'']]],
   ['stiff_5fdouble_5fmass_5fspring_5fsystem_2eh',['stiff_double_mass_spring_system.h',['../stiff__double__mass__spring__system_8h.html',1,'']]],
+  ['stochastic_2eh',['stochastic.h',['../stochastic_8h.html',1,'']]],
   ['stochastic_5fsystems_2eh',['stochastic_systems.h',['../stochastic__systems_8h.html',1,'']]],
   ['subvector_2eh',['subvector.h',['../subvector_8h.html',1,'']]],
   ['supervector_2eh',['supervector.h',['../supervector_8h.html',1,'']]],

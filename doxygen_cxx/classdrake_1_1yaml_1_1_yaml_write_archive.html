@@ -248,7 +248,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the YAML string for whatever Serializable was most recently passed into Accept. </p>
-<p>The returned document will be a single Map node named using <code>root_name</code> with the Serializable's visited fields as key-value entries within it. </p>
+<p>If the <code>root_name</code> is empty, the returned document will be the Serializable's visited content (which itself is already a Map node) directly. If the visited serializable content is null (in cases <code>Accpet()</code> has not been called or the entries are erased after calling <code><a class="el" href="classdrake_1_1yaml_1_1_yaml_write_archive.html#ad74fcde70ec6dc999250a2aa8cfc22d6" title="(Advanced.) Remove from this archive any map entries that are identical to an entry in other,...">EraseMatchingMaps()</a></code>), then an empty map <code>{}</code> will be emitted.</p>
+<p>If the <code>root_name</code> is not empty, the returned document will be a single Map node named using <code>root_name</code> with the Serializable's visited content as key-value entries within it. The visited content could be null and the nullness is defined as above. </p>
 
 </div>
 </div>

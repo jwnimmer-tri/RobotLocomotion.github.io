@@ -53,6 +53,7 @@ var searchData=
   ['rod2d',['rod2d',['../namespacedrake_1_1examples_1_1rod2d.html',1,'drake::examples']]],
   ['scalar_5fconversion',['scalar_conversion',['../namespacedrake_1_1systems_1_1scalar__conversion.html',1,'drake::systems']]],
   ['scene_5fgraph',['scene_graph',['../namespacedrake_1_1examples_1_1scene__graph.html',1,'drake::examples']]],
+  ['schema',['schema',['../namespacedrake_1_1schema.html',1,'drake']]],
   ['schunk_5fwsg',['schunk_wsg',['../namespacedrake_1_1manipulation_1_1schunk__wsg.html',1,'drake::manipulation']]],
   ['sensors',['sensors',['../namespacedrake_1_1systems_1_1sensors.html',1,'drake::systems']]],
   ['shaders',['shaders',['../namespacedrake_1_1geometry_1_1render_1_1shaders.html',1,'drake::geometry::render']]],

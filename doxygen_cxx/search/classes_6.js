@@ -1,7 +1,9 @@
 var searchData=
 [
   ['gain',['Gain',['../classdrake_1_1systems_1_1_gain.html',1,'drake::systems']]],
+  ['gaussian',['Gaussian',['../classdrake_1_1schema_1_1_gaussian.html',1,'drake::schema']]],
   ['gaussiantrianglequadraturerule',['GaussianTriangleQuadratureRule',['../classdrake_1_1multibody_1_1_gaussian_triangle_quadrature_rule.html',1,'drake::multibody']]],
+  ['gaussianvector',['GaussianVector',['../classdrake_1_1schema_1_1_gaussian_vector.html',1,'drake::schema']]],
   ['gazetargetconstraint',['GazeTargetConstraint',['../classdrake_1_1multibody_1_1_gaze_target_constraint.html',1,'drake::multibody']]],
   ['genericintegratortest',['GenericIntegratorTest',['../structdrake_1_1systems_1_1analysis__test_1_1_generic_integrator_test.html',1,'drake::systems::analysis_test']]],
   ['geometryframe',['GeometryFrame',['../classdrake_1_1geometry_1_1_geometry_frame.html',1,'drake::geometry']]],

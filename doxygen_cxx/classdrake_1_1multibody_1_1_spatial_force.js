@@ -9,8 +9,9 @@ var classdrake_1_1multibody_1_1_spatial_force =
     [ "operator=", "classdrake_1_1multibody_1_1_spatial_force.html#a8cb331ee8374547a5016a580556119f0", null ],
     [ "operator=", "classdrake_1_1multibody_1_1_spatial_force.html#a4a986da49bae72b84a406084126741e6", null ],
     [ "Shift", "classdrake_1_1multibody_1_1_spatial_force.html#aac6191ea5169aaac3b7097dbed1b88cb", null ],
-    [ "Shift", "classdrake_1_1multibody_1_1_spatial_force.html#acb0ca2ebbc106c5649b786b861ae9023", null ],
+    [ "Shift", "classdrake_1_1multibody_1_1_spatial_force.html#a6745e40b25190e963a6773e17fee9810", null ],
     [ "ShiftInPlace", "classdrake_1_1multibody_1_1_spatial_force.html#a2000b1386ff9eefcdf503ccb73fec59e", null ],
+    [ "ShiftInPlace", "classdrake_1_1multibody_1_1_spatial_force.html#a870ac8e42f8816667f55e6200e319850", null ],
     [ "operator+", "classdrake_1_1multibody_1_1_spatial_force.html#a45127a810cb019441dc10a43ef88f8a8", null ],
     [ "operator-", "classdrake_1_1multibody_1_1_spatial_force.html#a8d0528e3cf5b7dcd25aedffe760321a1", null ]
 ];

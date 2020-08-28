@@ -113,6 +113,17 @@ var hierarchy =
     [ "DiscreteValues< AutoDiffXd >", "classdrake_1_1systems_1_1_discrete_values.html", null ],
     [ "DiscreteValues< double >", "classdrake_1_1systems_1_1_discrete_values.html", null ],
     [ "DiscreteValues< drake::symbolic::Expression >", "classdrake_1_1systems_1_1_discrete_values.html", null ],
+    [ "Distribution", "classdrake_1_1schema_1_1_distribution.html", [
+      [ "Deterministic", "classdrake_1_1schema_1_1_deterministic.html", null ],
+      [ "Gaussian", "classdrake_1_1schema_1_1_gaussian.html", null ],
+      [ "Uniform", "classdrake_1_1schema_1_1_uniform.html", null ],
+      [ "UniformDiscrete", "classdrake_1_1schema_1_1_uniform_discrete.html", null ]
+    ] ],
+    [ "DistributionVector", "classdrake_1_1schema_1_1_distribution_vector.html", [
+      [ "DeterministicVector< Size >", "classdrake_1_1schema_1_1_deterministic_vector.html", null ],
+      [ "GaussianVector< Size >", "classdrake_1_1schema_1_1_gaussian_vector.html", null ],
+      [ "UniformVector< Size >", "classdrake_1_1schema_1_1_uniform_vector.html", null ]
+    ] ],
     [ "DoorHingeConfig", "structdrake_1_1multibody_1_1_door_hinge_config.html", null ],
     [ "DrakeKukaIIwaRobot< T >", "classdrake_1_1multibody_1_1benchmarks_1_1kuka__iiwa__robot_1_1_drake_kuka_i_iwa_robot.html", null ],
     [ "DrakeLcmInterface", "classdrake_1_1lcm_1_1_drake_lcm_interface.html", [

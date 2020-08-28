@@ -227,9 +227,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:acb0ca2ebbc106c5649b786b861ae9023"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_spatial_force.html#acb0ca2ebbc106c5649b786b861ae9023">Shift</a> (const Eigen::Ref&lt; const <a class="el" href="namespacedrake.html#a668e1152f8b876967b9093ae4d95298b">Matrix6X</a>&lt; T &gt;&gt; &amp;F_P_E, const <a class="el" href="namespacedrake.html#a0ad29daab565ce347c4d1c5aae6a76c2">Vector3</a>&lt; T &gt; &amp;p_PQ_E, <a class="el" href="classdrake_1_1_eigen_ptr.html">EigenPtr</a>&lt; <a class="el" href="namespacedrake.html#a668e1152f8b876967b9093ae4d95298b">Matrix6X</a>&lt; T &gt;&gt; F_Q_E)</td></tr>
-<tr class="memdesc:acb0ca2ebbc106c5649b786b861ae9023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a rigid shift of each column of <code>F_P_E</code> as if they contained the 6 components of a spatial force.  <a href="#acb0ca2ebbc106c5649b786b861ae9023">More...</a><br /></td></tr>
-<tr class="separator:acb0ca2ebbc106c5649b786b861ae9023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870ac8e42f8816667f55e6200e319850"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_spatial_force.html#a870ac8e42f8816667f55e6200e319850">ShiftInPlace</a> (<a class="el" href="classdrake_1_1_eigen_ptr.html">EigenPtr</a>&lt; <a class="el" href="namespacedrake.html#a668e1152f8b876967b9093ae4d95298b">Matrix6X</a>&lt; T &gt;&gt; F_Bp_E_all, const <a class="el" href="namespacedrake.html#a0ad29daab565ce347c4d1c5aae6a76c2">Vector3</a>&lt; T &gt; &amp;p_BpBq_E)</td></tr>
+<tr class="memdesc:a870ac8e42f8816667f55e6200e319850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a rigid in-place shift of each column of 6 x n matrix <code>F_Bp_E_all</code> as if each column were a SpatialForce.  <a href="#a870ac8e42f8816667f55e6200e319850">More...</a><br /></td></tr>
+<tr class="separator:a870ac8e42f8816667f55e6200e319850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6745e40b25190e963a6773e17fee9810"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_spatial_force.html#a6745e40b25190e963a6773e17fee9810">Shift</a> (const Eigen::Ref&lt; const <a class="el" href="namespacedrake.html#a668e1152f8b876967b9093ae4d95298b">Matrix6X</a>&lt; T &gt;&gt; &amp;F_Bp_E_all, const <a class="el" href="namespacedrake.html#a0ad29daab565ce347c4d1c5aae6a76c2">Vector3</a>&lt; T &gt; &amp;p_BpBq_E, <a class="el" href="classdrake_1_1_eigen_ptr.html">EigenPtr</a>&lt; <a class="el" href="namespacedrake.html#a668e1152f8b876967b9093ae4d95298b">Matrix6X</a>&lt; T &gt;&gt; F_Bq_E_all)</td></tr>
+<tr class="memdesc:a6745e40b25190e963a6773e17fee9810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a rigid shift of each column of 6 x n matrix <code>F_Bp_E_all</code> into <code>F_Bq_E_all</code> as if each column were a SpatialForce.  <a href="#a6745e40b25190e963a6773e17fee9810">More...</a><br /></td></tr>
+<tr class="separator:a6745e40b25190e963a6773e17fee9810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classdrake_1_1multibody_1_1_spatial_vector"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classdrake_1_1multibody_1_1_spatial_vector')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classdrake_1_1multibody_1_1_spatial_vector.html">SpatialVector&lt; SpatialForce, T &gt;</a></td></tr>
 <tr class="memitem:a73f248b5cef3cf345c59fe794472fc4c inherit pub_static_methods_classdrake_1_1multibody_1_1_spatial_vector"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classdrake_1_1multibody_1_1_spatial_vector.html#a9e320858f0854b7842fbd11edeeca62c">SpatialQuantity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_spatial_vector.html#a73f248b5cef3cf345c59fe794472fc4c">Zero</a> ()</td></tr>
 <tr class="memdesc:a73f248b5cef3cf345c59fe794472fc4c inherit pub_static_methods_classdrake_1_1multibody_1_1_spatial_vector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory to create a <em>zero</em> SpatialVector, i.e.  <a href="classdrake_1_1multibody_1_1_spatial_vector.html#a73f248b5cef3cf345c59fe794472fc4c">More...</a><br /></td></tr>
@@ -508,8 +511,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="acb0ca2ebbc106c5649b786b861ae9023"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb0ca2ebbc106c5649b786b861ae9023">&#9670;&nbsp;</a></span>Shift() <span class="overload">[2/2]</span></h2>
+<a id="a6745e40b25190e963a6773e17fee9810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6745e40b25190e963a6773e17fee9810">&#9670;&nbsp;</a></span>Shift() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -521,19 +524,19 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">static void Shift </td>
           <td>(</td>
           <td class="paramtype">const Eigen::Ref&lt; const <a class="el" href="namespacedrake.html#a668e1152f8b876967b9093ae4d95298b">Matrix6X</a>&lt; T &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>F_P_E</em>, </td>
+          <td class="paramname"><em>F_Bp_E_all</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="namespacedrake.html#a0ad29daab565ce347c4d1c5aae6a76c2">Vector3</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>p_PQ_E</em>, </td>
+          <td class="paramname"><em>p_BpBq_E</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classdrake_1_1_eigen_ptr.html">EigenPtr</a>&lt; <a class="el" href="namespacedrake.html#a668e1152f8b876967b9093ae4d95298b">Matrix6X</a>&lt; T &gt;&gt;&#160;</td>
-          <td class="paramname"><em>F_Q_E</em>&#160;</td>
+          <td class="paramname"><em>F_Bq_E_all</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -548,13 +551,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Performs a rigid shift of each column of <code>F_P_E</code> as if they contained the 6 components of a spatial force. </p>
-<p>It is assumed the first three elements of each column store the rotational component while the last three elements store the translational component. Given the position of Q in P, each spatial force <code>F_P_E</code> about P is rigidly shifted to point Q, see <a class="el" href="classdrake_1_1multibody_1_1_spatial_force.html#aac6191ea5169aaac3b7097dbed1b88cb" title="Shift of a SpatialForce from one application point to another.">Shift()</a>. All quantities are expressed in a same common frame E. F_Q_E must be non-null and point to a matrix of 6 rows and as many columns as input F_P_E, otherwise an assertion failure is triggered. </p><dl class="section note"><dt>Note</dt><dd>Aliasing is allowed. That is, F_Q_E can point to the same memory referenced by F_P_E, resulting in an in-place operation. </dd></dl>
+<p>Performs a rigid shift of each column of 6 x n matrix <code>F_Bp_E_all</code> into <code>F_Bq_E_all</code> as if each column were a SpatialForce. </p>
+<p>The spatial forces are assumed to be applied at point P of a body B, and we shift them to point Q of that body by modifying the moment appropriately (translational forces are unchanged). The first three elements of each column must store the torque (rotational) component while the last three elements store the force (translational) component. All quantities are expressed in the same common frame E.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">F_Bp_E_all</td><td>A 6 x n matrix of spatial forces at point Bp on input, shifted to point Bq on output. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_BpBq_E</td><td>The vector from point Bp to point Bq. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">F_Bq_E_all</td><td>A 6 x n matrix of spatial forces shifted from Bp to Bq.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>Columns are spatial forces with torque first, then force. </dd>
+<dd>
+F_Bq_E_all must be non-null and point to a 6 x n matrix (same size as the input matrix). </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Although this method will function if the input and output are the same matrix, it is faster to use <a class="el" href="classdrake_1_1multibody_1_1_spatial_force.html#a2000b1386ff9eefcdf503ccb73fec59e" title="In-place shift of a SpatialForce from one application point to another.">ShiftInPlace()</a> in that case since the translational components don't need to be copied. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdrake_1_1multibody_1_1_spatial_force.html#a2000b1386ff9eefcdf503ccb73fec59e" title="In-place shift of a SpatialForce from one application point to another.">ShiftInPlace(const Vector3&lt;T&gt;&amp;)</a> for details. </dd></dl>
 
 </div>
 </div>
 <a id="a2000b1386ff9eefcdf503ccb73fec59e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2000b1386ff9eefcdf503ccb73fec59e">&#9670;&nbsp;</a></span>ShiftInPlace()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2000b1386ff9eefcdf503ccb73fec59e">&#9670;&nbsp;</a></span>ShiftInPlace() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -595,6 +611,54 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to <code>this</code> spatial force which is now <code>F_Bq_E</code>, that is, the force is now applied at point Q rather than P.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classdrake_1_1multibody_1_1_spatial_force.html#aac6191ea5169aaac3b7097dbed1b88cb" title="Shift of a SpatialForce from one application point to another.">Shift()</a> to compute the shifted spatial force without modifying this original object. </dd></dl>
+
+</div>
+</div>
+<a id="a870ac8e42f8816667f55e6200e319850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870ac8e42f8816667f55e6200e319850">&#9670;&nbsp;</a></span>ShiftInPlace() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ShiftInPlace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1_eigen_ptr.html">EigenPtr</a>&lt; <a class="el" href="namespacedrake.html#a668e1152f8b876967b9093ae4d95298b">Matrix6X</a>&lt; T &gt;&gt;&#160;</td>
+          <td class="paramname"><em>F_Bp_E_all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacedrake.html#a0ad29daab565ce347c4d1c5aae6a76c2">Vector3</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_BpBq_E</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs a rigid in-place shift of each column of 6 x n matrix <code>F_Bp_E_all</code> as if each column were a SpatialForce. </p>
+<p>The spatial forces are assumed to be applied at point P of a body B, and we shift them to point Q of that body by modifying the moment appropriately (translational forces are unchanged). Hence on output the matrix should be renamed F_Bq_E_all (conceptually). The first three elements of each column must store the torque (rotational) component while the last three elements store the force (translational) component. All quantities are expressed in the same common frame E.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">F_Bp_E_all</td><td>A 6 x n matrix of spatial forces at point Bp on input, shifted to point Bq on output. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_BpBq_E</td><td>The vector from point Bp to point Bq.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>Columns are spatial forces with torque first, then force. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdrake_1_1multibody_1_1_spatial_force.html#a2000b1386ff9eefcdf503ccb73fec59e" title="In-place shift of a SpatialForce from one application point to another.">ShiftInPlace(const Vector3&lt;T&gt;&amp;)</a> for details. </dd></dl>
 
 </div>
 </div>

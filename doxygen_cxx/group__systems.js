@@ -10,7 +10,7 @@ var group__systems =
     [ "Multibody Systems", "group__multibody__systems.html", "group__multibody__systems" ],
     [ "Perception", "group__perception__systems.html", "group__perception__systems" ],
     [ "Discrete Systems", "group__discrete__systems.html", null ],
-    [ "Stochastic Systems", "group__stochastic__systems.html", null ],
+    [ "Stochastic Systems", "group__stochastic__systems.html", "group__stochastic__systems" ],
     [ "Visualization", "group__visualization.html", "group__visualization" ],
     [ "Examples", "group__example__systems.html", "group__example__systems" ],
     [ "(Attic) Rigid-Body Systems", "group__rigid__body__systems.html", "group__rigid__body__systems" ],

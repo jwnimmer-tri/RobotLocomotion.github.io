@@ -16,7 +16,7 @@ var classdrake_1_1multibody_1_1_spatial_inertia =
     [ "MakeFromCentralInertia", "classdrake_1_1multibody_1_1_spatial_inertia.html#a3c36e3056b0d3fcc88d8c972df267a0e", null ],
     [ "operator *", "classdrake_1_1multibody_1_1_spatial_inertia.html#acd0afd330ef98eb2418ae915e3a1b024", null ],
     [ "operator *", "classdrake_1_1multibody_1_1_spatial_inertia.html#ab0efcd599640dacc6ef37cf640143fdc", null ],
-    [ "operator *", "classdrake_1_1multibody_1_1_spatial_inertia.html#af13e5292b6e92ebcd0ada1d9e5e5b3f0", null ],
+    [ "operator *", "classdrake_1_1multibody_1_1_spatial_inertia.html#acc3f6e6102f427a8624f86758eb536fd", null ],
     [ "operator+=", "classdrake_1_1multibody_1_1_spatial_inertia.html#a7124bb702e0614d7b4874c09e4b0c649", null ],
     [ "operator=", "classdrake_1_1multibody_1_1_spatial_inertia.html#a2d612851b1578071428ec79f7da1047a", null ],
     [ "operator=", "classdrake_1_1multibody_1_1_spatial_inertia.html#aa43ccc9d77b74b64c25cfcaf3deeaf0b", null ],
