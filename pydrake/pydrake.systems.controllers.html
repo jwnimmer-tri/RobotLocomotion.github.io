@@ -53,7 +53,8 @@
          <div class="menu__wrap">
             <ul class="menu__list">
                <li class="menu__list__item menu__list__item__link button--text">
-                  <a href="https://drake.mit.edu/quickstart.html" class="menu__list__item__link button--text">Quickstart</a>
+                  <!-- TODO(jwnimmer-tri) Change to quickstart.html once that page exists. -->
+                  <a href="https://drake.mit.edu/installation.html" class="menu__list__item__link button--text">Quickstart</a>
                </li>
                <li class="menu__list__item menu__list__item__link button--text">
                   <a href="https://drake.mit.edu/gallery.html" class="menu__list__item__link button--text">Gallery</a>
@@ -338,7 +339,7 @@ has run once), not zero.</p>
 
 <dl class="function">
 <dt id="pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulator">
-<code class="descclassname">pydrake.systems.controllers.</code><code class="descname">FiniteHorizonLinearQuadraticRegulator</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], t0: float, tf: float, Q: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], R: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], options: pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions = &lt;pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions object at 0x7f41df4e7430&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorResult<a class="headerlink" href="#pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulator" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">pydrake.systems.controllers.</code><code class="descname">FiniteHorizonLinearQuadraticRegulator</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], t0: float, tf: float, Q: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], R: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], options: pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions = &lt;pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions object at 0x7f5d99c55b30&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorResult<a class="headerlink" href="#pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Solves the differential Riccati equation to compute the optimal
 controller and optimal cost-to-go for the finite-horizon linear
 quadratic regulator:</p>
@@ -949,7 +950,7 @@ system coordinates.</td>
 
 <dl class="function">
 <dt id="pydrake.systems.controllers.MakeFiniteHorizonLinearQuadraticRegulator">
-<code class="descclassname">pydrake.systems.controllers.</code><code class="descname">MakeFiniteHorizonLinearQuadraticRegulator</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], t0: float, tf: float, Q: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], R: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], options: pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions = &lt;pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions object at 0x7f41df4e7b70&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.System_[float]<a class="headerlink" href="#pydrake.systems.controllers.MakeFiniteHorizonLinearQuadraticRegulator" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">pydrake.systems.controllers.</code><code class="descname">MakeFiniteHorizonLinearQuadraticRegulator</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], t0: float, tf: float, Q: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], R: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous], options: pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions = &lt;pydrake.systems.controllers.FiniteHorizonLinearQuadraticRegulatorOptions object at 0x7f5d99c55b70&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.System_[float]<a class="headerlink" href="#pydrake.systems.controllers.MakeFiniteHorizonLinearQuadraticRegulator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Variant of FiniteHorizonLinearQuadraticRegulator that returns a System
 implementing the regulator (controller) as a System, with a single
 “plant_state” input for the estimated plant state, and a single
@@ -1376,7 +1377,7 @@ output projection matrix <code class="docutils literal"><span class="pre">P_y</s
       </div>
    </div>
    <div class="footer__copyright wrap">
-      <span class="footnote">© 2020 Drake - Robot Locomotion Group (MIT)</span>
+      <span class="footnote">© 2020 The Drake Development Team</span>
    </div>
 </footer>
 

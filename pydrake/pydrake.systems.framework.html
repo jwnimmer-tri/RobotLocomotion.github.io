@@ -53,7 +53,8 @@
          <div class="menu__wrap">
             <ul class="menu__list">
                <li class="menu__list__item menu__list__item__link button--text">
-                  <a href="https://drake.mit.edu/quickstart.html" class="menu__list__item__link button--text">Quickstart</a>
+                  <!-- TODO(jwnimmer-tri) Change to quickstart.html once that page exists. -->
+                  <a href="https://drake.mit.edu/installation.html" class="menu__list__item__link button--text">Quickstart</a>
                </li>
                <li class="menu__list__item menu__list__item__link button--text">
                   <a href="https://drake.mit.edu/gallery.html" class="menu__list__item__link button--text">Gallery</a>
@@ -4201,7 +4202,7 @@ present on that port.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.framework.DiagramBuilder_.DiagramBuilder_[float].ExportInput">
-<code class="descname">ExportInput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[float], input: drake::systems::InputPort&lt;double&gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f41e4f5f930&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.InputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_.DiagramBuilder_[float].ExportInput" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ExportInput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[float], input: drake::systems::InputPort&lt;double&gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f5d9f6cceb0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.InputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_.DiagramBuilder_[float].ExportInput" title="Permalink to this definition">¶</a></dt>
 <dd><p>Declares that the given <code class="docutils literal"><span class="pre">input</span></code> port of a constituent system is an
 input to the entire Diagram. <code class="docutils literal"><span class="pre">name</span></code> is an optional name for the
 input port; if it is unspecified, then a default name will be
@@ -4222,7 +4223,7 @@ provided.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.framework.DiagramBuilder_.DiagramBuilder_[float].ExportOutput">
-<code class="descname">ExportOutput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[float], output: drake::systems::OutputPort&lt;double&gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f41e4f5f9b0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.OutputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_.DiagramBuilder_[float].ExportOutput" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ExportOutput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[float], output: drake::systems::OutputPort&lt;double&gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f5d9f6ccf30&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.OutputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_.DiagramBuilder_[float].ExportOutput" title="Permalink to this definition">¶</a></dt>
 <dd><p>Declares that the given <code class="docutils literal"><span class="pre">output</span></code> port of a constituent system is an
 output of the entire diagram. <code class="docutils literal"><span class="pre">name</span></code> is an optional name for the
 output port; if it is unspecified, then a default name will be
@@ -4339,7 +4340,7 @@ present on that port.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.framework.DiagramBuilder_[AutoDiffXd].ExportInput">
-<code class="descname">ExportInput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[AutoDiffXd], input: drake::systems::InputPort&lt;Eigen::AutoDiffScalar&lt;Eigen::Matrix&lt;double, -1, 1, 0, -1, 1&gt; &gt; &gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f41e5832eb0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.InputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_[AutoDiffXd].ExportInput" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ExportInput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[AutoDiffXd], input: drake::systems::InputPort&lt;Eigen::AutoDiffScalar&lt;Eigen::Matrix&lt;double, -1, 1, 0, -1, 1&gt; &gt; &gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f5d9ffa4530&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.InputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_[AutoDiffXd].ExportInput" title="Permalink to this definition">¶</a></dt>
 <dd><p>Declares that the given <code class="docutils literal"><span class="pre">input</span></code> port of a constituent system is an
 input to the entire Diagram. <code class="docutils literal"><span class="pre">name</span></code> is an optional name for the
 input port; if it is unspecified, then a default name will be
@@ -4360,7 +4361,7 @@ provided.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.framework.DiagramBuilder_[AutoDiffXd].ExportOutput">
-<code class="descname">ExportOutput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[AutoDiffXd], output: drake::systems::OutputPort&lt;Eigen::AutoDiffScalar&lt;Eigen::Matrix&lt;double, -1, 1, 0, -1, 1&gt; &gt; &gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f41e5832f30&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.OutputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_[AutoDiffXd].ExportOutput" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ExportOutput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[AutoDiffXd], output: drake::systems::OutputPort&lt;Eigen::AutoDiffScalar&lt;Eigen::Matrix&lt;double, -1, 1, 0, -1, 1&gt; &gt; &gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f5d9ffa44b0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.OutputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_[AutoDiffXd].ExportOutput" title="Permalink to this definition">¶</a></dt>
 <dd><p>Declares that the given <code class="docutils literal"><span class="pre">output</span></code> port of a constituent system is an
 output of the entire diagram. <code class="docutils literal"><span class="pre">name</span></code> is an optional name for the
 output port; if it is unspecified, then a default name will be
@@ -4475,7 +4476,7 @@ present on that port.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.framework.DiagramBuilder_[Expression].ExportInput">
-<code class="descname">ExportInput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[Expression], input: drake::systems::InputPort&lt;drake::symbolic::Expression&gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f41e4f37f70&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.InputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_[Expression].ExportInput" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ExportInput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[Expression], input: drake::systems::InputPort&lt;drake::symbolic::Expression&gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f5d9ffa4570&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.InputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_[Expression].ExportInput" title="Permalink to this definition">¶</a></dt>
 <dd><p>Declares that the given <code class="docutils literal"><span class="pre">input</span></code> port of a constituent system is an
 input to the entire Diagram. <code class="docutils literal"><span class="pre">name</span></code> is an optional name for the
 input port; if it is unspecified, then a default name will be
@@ -4496,7 +4497,7 @@ provided.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.framework.DiagramBuilder_[Expression].ExportOutput">
-<code class="descname">ExportOutput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[Expression], output: drake::systems::OutputPort&lt;drake::symbolic::Expression&gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f41e5832f70&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.OutputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_[Expression].ExportOutput" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ExportOutput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[Expression], output: drake::systems::OutputPort&lt;drake::symbolic::Expression&gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f5d9ffa45b0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.OutputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_[Expression].ExportOutput" title="Permalink to this definition">¶</a></dt>
 <dd><p>Declares that the given <code class="docutils literal"><span class="pre">output</span></code> port of a constituent system is an
 output of the entire diagram. <code class="docutils literal"><span class="pre">name</span></code> is an optional name for the
 output port; if it is unspecified, then a default name will be
@@ -4611,7 +4612,7 @@ present on that port.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.framework.DiagramBuilder_[float].ExportInput">
-<code class="descname">ExportInput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[float], input: drake::systems::InputPort&lt;double&gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f41e4f5f930&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.InputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_[float].ExportInput" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ExportInput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[float], input: drake::systems::InputPort&lt;double&gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f5d9f6cceb0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.InputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_[float].ExportInput" title="Permalink to this definition">¶</a></dt>
 <dd><p>Declares that the given <code class="docutils literal"><span class="pre">input</span></code> port of a constituent system is an
 input to the entire Diagram. <code class="docutils literal"><span class="pre">name</span></code> is an optional name for the
 input port; if it is unspecified, then a default name will be
@@ -4632,7 +4633,7 @@ provided.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.framework.DiagramBuilder_[float].ExportOutput">
-<code class="descname">ExportOutput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[float], output: drake::systems::OutputPort&lt;double&gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f41e4f5f9b0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.OutputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_[float].ExportOutput" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ExportOutput</code><span class="sig-paren">(</span><em>self: pydrake.systems.framework.DiagramBuilder_[float], output: drake::systems::OutputPort&lt;double&gt;, name: Union[str, pydrake.systems.framework.UseDefaultName] = &lt;pydrake.systems.framework.UseDefaultName object at 0x7f5d9f6ccf30&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.framework.OutputPortIndex<a class="headerlink" href="#pydrake.systems.framework.DiagramBuilder_[float].ExportOutput" title="Permalink to this definition">¶</a></dt>
 <dd><p>Declares that the given <code class="docutils literal"><span class="pre">output</span></code> port of a constituent system is an
 output of the entire diagram. <code class="docutils literal"><span class="pre">name</span></code> is an optional name for the
 output port; if it is unspecified, then a default name will be
@@ -13960,7 +13961,7 @@ kPositiveThenNonNegative OR kNegativeThenNonNegative.</p>
       </div>
    </div>
    <div class="footer__copyright wrap">
-      <span class="footnote">© 2020 Drake - Robot Locomotion Group (MIT)</span>
+      <span class="footnote">© 2020 The Drake Development Team</span>
    </div>
 </footer>
 
