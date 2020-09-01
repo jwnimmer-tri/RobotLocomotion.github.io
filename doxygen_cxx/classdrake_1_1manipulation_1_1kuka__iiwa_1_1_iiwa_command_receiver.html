@@ -129,15 +129,9 @@ $(document).ready(function(){initNavTree('classdrake_1_1manipulation_1_1kuka__ii
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2ec6a482d23f3a35abe49c967cdfbed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_command_receiver.html#ab2ec6a482d23f3a35abe49c967cdfbed">IiwaCommandReceiver</a> (<a class="el" href="classint.html">int</a> num_joints=<a class="el" href="namespacedrake_1_1manipulation_1_1kuka__iiwa.html#ab5064aebe6beff8d3ab30a4455e0dc11">kIiwaArmNumJoints</a>)</td></tr>
 <tr class="separator:ab2ec6a482d23f3a35abe49c967cdfbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6ea3c0e52ff8ceb7639fca4eb23bf84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_command_receiver.html#af6ea3c0e52ff8ceb7639fca4eb23bf84">set_initial_position</a> (<a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; double &gt; *context, const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;q) const</td></tr>
-<tr class="memdesc:af6ea3c0e52ff8ceb7639fca4eb23bf84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the initial commanded position of the controlled iiwa prior to any command messages being received.  <a href="#af6ea3c0e52ff8ceb7639fca4eb23bf84">More...</a><br /></td></tr>
-<tr class="separator:af6ea3c0e52ff8ceb7639fca4eb23bf84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedfdc1ea4461e65efa2fcdbe240f4ff6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_command_receiver.html#aedfdc1ea4461e65efa2fcdbe240f4ff6">LatchInitialPosition</a> (<a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; double &gt; *context) const</td></tr>
 <tr class="memdesc:aedfdc1ea4461e65efa2fcdbe240f4ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Advanced.) Copies the current "position_measured" input (or zero if not connected) into Context state, and changes the behavior of the "position" output to produce the latched state if no message has been received yet.  <a href="#aedfdc1ea4461e65efa2fcdbe240f4ff6">More...</a><br /></td></tr>
 <tr class="separator:aedfdc1ea4461e65efa2fcdbe240f4ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a191b9f7bf704e7e69bb569f6bf819c33"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">systems::InputPort</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_command_receiver.html#a191b9f7bf704e7e69bb569f6bf819c33">get_input_port</a> () const</td></tr>
-<tr class="memdesc:a191b9f7bf704e7e69bb569f6bf819c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Deprecated.)  <a href="#a191b9f7bf704e7e69bb569f6bf819c33">More...</a><br /></td></tr>
-<tr class="separator:a191b9f7bf704e7e69bb569f6bf819c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Does not allow copy, move, or assignment</div></td></tr>
 <tr class="memitem:ae65a9e04e24c178969a8de8aa7104ced"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_command_receiver.html#ae65a9e04e24c178969a8de8aa7104ced">IiwaCommandReceiver</a> (const <a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_command_receiver.html">IiwaCommandReceiver</a> &amp;)=delete</td></tr>
 <tr class="separator:ae65a9e04e24c178969a8de8aa7104ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1274,27 +1268,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a191b9f7bf704e7e69bb569f6bf819c33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a191b9f7bf704e7e69bb569f6bf819c33">&#9670;&nbsp;</a></span>get_input_port()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">systems::InputPort</a>&lt;double&gt;&amp; get_input_port </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>(Deprecated.) </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>"Use get_message_input_port() instead." <br />
- This will be removed from Drake on or after "2020-09-01" .</dd></dl>
-
-</div>
-</div>
 <a id="ad0c57d99c93d8b808ff1e2eebee4ca9c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0c57d99c93d8b808ff1e2eebee4ca9c">&#9670;&nbsp;</a></span>get_message_input_port()</h2>
 
@@ -1350,34 +1323,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2cca2749bb8b02bbf518ffe096d08e11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cca2749bb8b02bbf518ffe096d08e11">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_command_receiver.html">IiwaCommandReceiver</a>&amp; operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_command_receiver.html">IiwaCommandReceiver</a> &amp;&amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac692c2788bc230d2ecdfa0ea34ffcbed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac692c2788bc230d2ecdfa0ea34ffcbed">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac692c2788bc230d2ecdfa0ea34ffcbed">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1402,35 +1349,29 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af6ea3c0e52ff8ceb7639fca4eb23bf84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6ea3c0e52ff8ceb7639fca4eb23bf84">&#9670;&nbsp;</a></span>set_initial_position()</h2>
+<a id="a2cca2749bb8b02bbf518ffe096d08e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cca2749bb8b02bbf518ffe096d08e11">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void set_initial_position </td>
+          <td class="memname"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_command_receiver.html">IiwaCommandReceiver</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; double &gt; *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1manipulation_1_1kuka__iiwa_1_1_iiwa_command_receiver.html">IiwaCommandReceiver</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">const Eigen::Ref&lt; const Eigen::VectorXd &gt; &amp;&#160;</td>
-          <td class="paramname"><em>q</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Sets the initial commanded position of the controlled iiwa prior to any command messages being received. </p>
-<p>If this function is not called, the starting position will be the zero configuration. The initial commanded torque is always zero and cannot be set. (Deprecated.) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>"To provide position commands prior to receiving the first message, " "connect the position_measured instead of setting this parameter" <br />
- This will be removed from Drake on or after "2020-09-01" .</dd></dl>
 
 </div>
 </div>

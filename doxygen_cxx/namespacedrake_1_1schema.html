@@ -121,6 +121,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1schema_1_1_gaussian_vector.html">GaussianVector</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A gaussian distribution with vector <code>mean</code> and vector or scalar <code>stddev</code>.  <a href="classdrake_1_1schema_1_1_gaussian_vector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1schema_1_1_rotation.html">Rotation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A specification for an SO(3) rotation, to be used for serialization purposes, e.g., to define stochastic scenarios.  <a href="classdrake_1_1schema_1_1_rotation.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1schema_1_1_transform.html">Transform</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A specification for a 3d rotation and translation, optionally with respect to a base frame.  <a href="classdrake_1_1schema_1_1_transform.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1schema_1_1_uniform.html">Uniform</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A uniform distribution with <code>min</code> inclusive and <code>max</code> exclusive.  <a href="classdrake_1_1schema_1_1_uniform.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,7 +222,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Variant over all kinds of vector distributions. </p>
-<p>If the Size parameter allows for 1-element vectors (i.e, is either 1 or Eigen::Dynamic), then this variant also offers the single distributions.</p>
+<p>If the Size parameter allows for 1-element vectors (i.e, is either 1 or Eigen::Dynamic), then this variant also offers the single distribution types (<a class="el" href="classdrake_1_1schema_1_1_deterministic.html" title="A single deterministic value.">Deterministic</a>, <a class="el" href="classdrake_1_1schema_1_1_gaussian.html" title="A gaussian distribution with mean and stddev.">Gaussian</a>, <a class="el" href="classdrake_1_1schema_1_1_uniform.html" title="A uniform distribution with min inclusive and max exclusive.">Uniform</a>). If the Size parameter is 2 or greater, the single distribution types are not allowed.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Size</td><td>rows at compile time (max 6) or else Eigen::Dynamic. </td></tr>

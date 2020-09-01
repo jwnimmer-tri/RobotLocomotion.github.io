@@ -54,6 +54,7 @@ var namespacedrake_1_1symbolic =
     [ "FormulaPositiveSemidefinite", "classdrake_1_1symbolic_1_1_formula_positive_semidefinite.html", "classdrake_1_1symbolic_1_1_formula_positive_semidefinite" ],
     [ "FormulaTrue", "classdrake_1_1symbolic_1_1_formula_true.html", "classdrake_1_1symbolic_1_1_formula_true" ],
     [ "FormulaVar", "classdrake_1_1symbolic_1_1_formula_var.html", "classdrake_1_1symbolic_1_1_formula_var" ],
+    [ "GenericPolynomial", "classdrake_1_1symbolic_1_1_generic_polynomial.html", "classdrake_1_1symbolic_1_1_generic_polynomial" ],
     [ "GradedReverseLexOrder", "structdrake_1_1symbolic_1_1_graded_reverse_lex_order.html", "structdrake_1_1symbolic_1_1_graded_reverse_lex_order" ],
     [ "Monomial", "classdrake_1_1symbolic_1_1_monomial.html", "classdrake_1_1symbolic_1_1_monomial" ],
     [ "MonomialBasisElement", "classdrake_1_1symbolic_1_1_monomial_basis_element.html", "classdrake_1_1symbolic_1_1_monomial_basis_element" ],

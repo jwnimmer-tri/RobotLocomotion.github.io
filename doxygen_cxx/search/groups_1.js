@@ -10,5 +10,6 @@ var searchData=
   ['contact_20modeling_20in_20drake',['Contact Modeling in Drake',['../group__drake__contacts.html',1,'']]],
   ['contact_20surface',['Contact Surface',['../group__module__contact__surface.html',1,'']]],
   ['configuring_20distributions',['Configuring distributions',['../group__schema__stochastic.html',1,'']]],
+  ['configuring_20transforms',['Configuring transforms',['../group__schema__transform.html',1,'']]],
   ['continuous_20approximation_20of_20coulomb',['Continuous Approximation of Coulomb',['../group__stribeck__approximation.html',1,'']]]
 ];

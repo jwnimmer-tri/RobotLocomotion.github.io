@@ -18,5 +18,7 @@ var classdrake_1_1systems_1_1_output_port =
     [ "operator=", "classdrake_1_1systems_1_1_output_port.html#a5005f784201b7574311e703e2c697439", null ],
     [ "operator=", "classdrake_1_1systems_1_1_output_port.html#a6e2b7aab8e6f1219880ef895db1a7814", null ],
     [ "size", "classdrake_1_1systems_1_1_output_port.html#af9593d4a5ff4274efaf429cb4f9e57cc", null ],
+    [ "ThrowIfInvalidPortValueType", "classdrake_1_1systems_1_1_output_port.html#afb9ffc926b2159046fb2fe08325df0a4", null ],
+    [ "ThrowIfInvalidPortValueType", "classdrake_1_1systems_1_1_output_port.html#a48ccdb92a406dbc24791fef6352883b1", null ],
     [ "ticket", "classdrake_1_1systems_1_1_output_port.html#a65af7fcc4d673554e5fa127b1cf1382b", null ]
 ];

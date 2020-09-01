@@ -2,7 +2,7 @@ var searchData=
 [
   ['map',['map',['../classdrake_1_1symbolic_1_1_environment.html#a91eac0c5504daf746db818d5ecfa64fd',1,'drake::symbolic::Environment']]],
   ['mapped_5ftype',['mapped_type',['../classdrake_1_1symbolic_1_1_environment.html#a231088519ec2ff5cfeacac5ae590570b',1,'drake::symbolic::Environment']]],
-  ['maptype',['MapType',['../classdrake_1_1symbolic_1_1_polynomial.html#a714081178880dda3a70720c80f807471',1,'drake::symbolic::Polynomial']]],
+  ['maptype',['MapType',['../classdrake_1_1symbolic_1_1_generic_polynomial.html#a688e3c02bb3dc730f24bff8364a4fed6',1,'drake::symbolic::GenericPolynomial::MapType()'],['../classdrake_1_1symbolic_1_1_polynomial.html#a714081178880dda3a70720c80f807471',1,'drake::symbolic::Polynomial::MapType()']]],
   ['matrix2',['Matrix2',['../namespacedrake.html#a06406a5da633da84f911e2979aa48549',1,'drake']]],
   ['matrix2x',['Matrix2X',['../namespacedrake.html#af13883859324817e6310d04a6d2fe206',1,'drake']]],
   ['matrix3',['Matrix3',['../namespacedrake.html#a3922cc0c6264e8ff225a6aa0dd993667',1,'drake']]],

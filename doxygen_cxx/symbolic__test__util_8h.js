@@ -10,6 +10,7 @@ var symbolic__test__util_8h =
     [ "FormulaLess", "symbolic__test__util_8h.html#ade9bc3fff93c686d4776771a8e0249af", null ],
     [ "FormulaNotEqual", "symbolic__test__util_8h.html#a5f68813c021d723596cf0e927df40b30", null ],
     [ "FormulaNotLess", "symbolic__test__util_8h.html#abca93568505710bf72e917c5c73d4b9c", null ],
+    [ "GenericPolyEqual", "symbolic__test__util_8h.html#a467aeee6e03396202196949a99d091b3", null ],
     [ "PolyEqual", "symbolic__test__util_8h.html#ad7cee2f49aca9d7d87803728389fdfae", null ],
     [ "PolyEqualAfterExpansion", "symbolic__test__util_8h.html#a7c25d0add2e7a5b5ac520fde29a095ac", null ],
     [ "PolynomialEqual", "symbolic__test__util_8h.html#a663e73fe69ce1b37a442113b1bc1d09d", null ],

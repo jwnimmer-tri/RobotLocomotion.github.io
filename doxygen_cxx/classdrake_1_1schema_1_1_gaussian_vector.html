@@ -105,6 +105,8 @@ $(document).ready(function(){initNavTree('classdrake_1_1schema_1_1_gaussian_vect
 class drake::schema::GaussianVector&lt; Size &gt;</h3>
 
 <p>A gaussian distribution with vector <code>mean</code> and vector or scalar <code>stddev</code>. </p>
+<p>When <code>mean</code> and <code>stddev</code> both have the same number of elements, that denotes an elementwise pairing of the 0th mean with 0th stddev, 1st mean with 1st stddev, etc.</p>
+<p>Alternatively, <code>stddev</code> can be a vector with a single element, no matter the size of <code>mean</code>; that denotes the same <code>stddev</code> value applied to every element of <code>mean</code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Size</td><td>rows at compile time (max 6) or else Eigen::Dynamic. </td></tr>

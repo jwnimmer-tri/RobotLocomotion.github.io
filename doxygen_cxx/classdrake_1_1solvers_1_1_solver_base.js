@@ -4,7 +4,6 @@ var classdrake_1_1solvers_1_1_solver_base =
     [ "SolverBase", "classdrake_1_1solvers_1_1_solver_base.html#a049180fe6d71c290a16c62f1b5d97836", null ],
     [ "~SolverBase", "classdrake_1_1solvers_1_1_solver_base.html#a6d380dcebbd2d8a52d4c44b931fec3a1", null ],
     [ "SolverBase", "classdrake_1_1solvers_1_1_solver_base.html#a9b9e50a472416d94684735917501ec89", null ],
-    [ "SolverBase", "classdrake_1_1solvers_1_1_solver_base.html#a4d8c54371e6c35f1ba7bdddf03402997", null ],
     [ "AreProgramAttributesSatisfied", "classdrake_1_1solvers_1_1_solver_base.html#a0ef97dfe948b1e50246018c3cfe8a62e", null ],
     [ "available", "classdrake_1_1solvers_1_1_solver_base.html#ac910159108658c34a743b0806d81ab10", null ],
     [ "DoSolve", "classdrake_1_1solvers_1_1_solver_base.html#a3167403a57ab305d317b437e0655cac3", null ],

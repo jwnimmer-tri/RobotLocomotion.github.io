@@ -9,6 +9,7 @@ var hierarchy =
     [ "AddMultibodyPlantSceneGraphResult< T >", "structdrake_1_1multibody_1_1_add_multibody_plant_scene_graph_result.html", null ],
     [ "AddRotationMatrixBoxSphereIntersectionReturn", "structdrake_1_1solvers_1_1_add_rotation_matrix_box_sphere_intersection_return.html", null ],
     [ "AllegroHandMotionState", "classdrake_1_1examples_1_1allegro__hand_1_1_allegro_hand_motion_state.html", null ],
+    [ "Rotation::AngleAxis", "structdrake_1_1schema_1_1_rotation_1_1_angle_axis.html", null ],
     [ "AntiderivativeFunction< T >", "classdrake_1_1systems_1_1_antiderivative_function.html", null ],
     [ "ArticulatedBodyInertia< T >", "classdrake_1_1multibody_1_1_articulated_body_inertia.html", null ],
     [ "AutoDiffToGradientMatrix< Derived >", "structdrake_1_1math_1_1_auto_diff_to_gradient_matrix.html", null ],
@@ -294,6 +295,7 @@ var hierarchy =
     [ "FrameKinematicsVector< KinematicsValue >", "classdrake_1_1geometry_1_1_frame_kinematics_vector.html", null ],
     [ "FreeBody", "classdrake_1_1multibody_1_1benchmarks_1_1free__body_1_1_free_body.html", null ],
     [ "FromDoubleTraits", "structdrake_1_1systems_1_1scalar__conversion_1_1_from_double_traits.html", null ],
+    [ "GenericPolynomial< BasisElement >", "classdrake_1_1symbolic_1_1_generic_polynomial.html", null ],
     [ "GeometryFrame", "classdrake_1_1geometry_1_1_geometry_frame.html", null ],
     [ "GeometryInstance", "classdrake_1_1geometry_1_1_geometry_instance.html", null ],
     [ "GeometryProperties", "classdrake_1_1geometry_1_1_geometry_properties.html", [
@@ -324,6 +326,7 @@ var hierarchy =
       [ "GeometryId", "classdrake_1_1geometry_1_1_geometry_id.html", null ]
     ] ],
     [ "Identifier< class SourceTag >", "classdrake_1_1_identifier.html", null ],
+    [ "Rotation::Identity", "structdrake_1_1schema_1_1_rotation_1_1_identity.html", null ],
     [ "ConstraintRelaxingIk::IkCartesianWaypoint", "structdrake_1_1manipulation_1_1planner_1_1_constraint_relaxing_ik_1_1_ik_cartesian_waypoint.html", null ],
     [ "Image< kPixelType >", "classdrake_1_1systems_1_1sensors_1_1_image.html", null ],
     [ "ImageTraits< PixelType >", "structdrake_1_1systems_1_1sensors_1_1_image_traits.html", null ],
@@ -583,6 +586,7 @@ var hierarchy =
     [ "RigidTransform< Scalar >", "classdrake_1_1math_1_1_rigid_transform.html", null ],
     [ "RlocationOrError", "structdrake_1_1_rlocation_or_error.html", null ],
     [ "RollPitchYaw< T >", "classdrake_1_1math_1_1_roll_pitch_yaw.html", null ],
+    [ "Rotation", "classdrake_1_1schema_1_1_rotation.html", null ],
     [ "RotationalInertia< T >", "classdrake_1_1multibody_1_1_rotational_inertia.html", [
       [ "UnitInertia< T >", "classdrake_1_1multibody_1_1_unit_inertia.html", null ]
     ] ],
@@ -593,6 +597,7 @@ var hierarchy =
     [ "RotationMatrix< AutoDiffXd >", "classdrake_1_1math_1_1_rotation_matrix.html", null ],
     [ "RotationMatrix< double >", "classdrake_1_1math_1_1_rotation_matrix.html", null ],
     [ "RotationMatrix< Scalar >", "classdrake_1_1math_1_1_rotation_matrix.html", null ],
+    [ "Rotation::Rpy", "structdrake_1_1schema_1_1_rotation_1_1_rpy.html", null ],
     [ "scalar_predicate< T >", "structdrake_1_1scalar__predicate.html", null ],
     [ "ScalarInitialValueProblem< T >", "classdrake_1_1systems_1_1_scalar_initial_value_problem.html", null ],
     [ "ScalarInitialValueProblem< T >::ScalarOdeContext", "structdrake_1_1systems_1_1_scalar_initial_value_problem_1_1_scalar_ode_context.html", null ],
@@ -930,6 +935,7 @@ var hierarchy =
         [ "PiecewisePolynomial< double >", "classdrake_1_1trajectories_1_1_piecewise_polynomial.html", null ]
       ] ]
     ] ],
+    [ "Transform", "classdrake_1_1schema_1_1_transform.html", null ],
     [ "TriangleQuadrature< NumericReturnType, T >", "classdrake_1_1multibody_1_1_triangle_quadrature.html", null ],
     [ "TriangleQuadratureRule", "classdrake_1_1multibody_1_1_triangle_quadrature_rule.html", [
       [ "GaussianTriangleQuadratureRule", "classdrake_1_1multibody_1_1_gaussian_triangle_quadrature_rule.html", null ]
@@ -950,7 +956,6 @@ var hierarchy =
     [ "TypeSafeIndex< class InputPortTag >", "classdrake_1_1_type_safe_index.html", null ],
     [ "TypeSafeIndex< class JointElementTag >", "classdrake_1_1_type_safe_index.html", null ],
     [ "TypeSafeIndex< class ModelInstanceTag >", "classdrake_1_1_type_safe_index.html", null ],
-    [ "TypeSafeIndex< class NumericParameterTag >", "classdrake_1_1_type_safe_index.html", null ],
     [ "TypeSafeIndex< class OutputPortTag >", "classdrake_1_1_type_safe_index.html", null ],
     [ "TypeSafeIndex< class SurfaceFaceTag >", "classdrake_1_1_type_safe_index.html", null ],
     [ "uhash< HashAlgorithm >", "structdrake_1_1uhash.html", [
@@ -972,6 +977,7 @@ var hierarchy =
       [ "hash< drake::systems::sensors::PixelType >", "structstd_1_1hash_3_01drake_1_1systems_1_1sensors_1_1_pixel_type_01_4.html", null ],
       [ "hash< drake::TypeSafeIndex< Tag > >", "structstd_1_1hash_3_01drake_1_1_type_safe_index_3_01_tag_01_4_01_4.html", null ]
     ] ],
+    [ "Rotation::Uniform", "structdrake_1_1schema_1_1_rotation_1_1_uniform.html", null ],
     [ "uniform_real_distribution< drake::symbolic::Expression >", "classstd_1_1uniform__real__distribution_3_01drake_1_1symbolic_1_1_expression_01_4.html", null ],
     [ "unique_ptr< T >", null, [
       [ "copyable_unique_ptr< drake::AbstractValue >", "classdrake_1_1copyable__unique__ptr.html", null ],

@@ -515,7 +515,7 @@ IIWA. &#64;v must have size num_iiwa_joints().</p>
 
 <dl class="method">
 <dt id="pydrake.examples.manipulation_station.ManipulationStation.SetupClutterClearingStation">
-<code class="descname">SetupClutterClearingStation</code><span class="sig-paren">(</span><em>self: pydrake.examples.manipulation_station.ManipulationStation</em>, <em>X_WCameraBody: Optional[pydrake.math.RigidTransform_[float]] = None</em>, <em>collision_model: pydrake.examples.manipulation_station.IiwaCollisionModel = IiwaCollisionModel.kNoCollision</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.examples.manipulation_station.ManipulationStation.SetupClutterClearingStation" title="Permalink to this definition">¶</a></dt>
+<code class="descname">SetupClutterClearingStation</code><span class="sig-paren">(</span><em>self: pydrake.examples.manipulation_station.ManipulationStation</em>, <em>X_WCameraBody: Optional[pydrake.math.RigidTransform_[float]] = None</em>, <em>collision_model: pydrake.examples.manipulation_station.IiwaCollisionModel = IiwaCollisionModel.kNoCollision</em>, <em>schunk_model: pydrake.examples.manipulation_station.SchunkCollisionModel = SchunkCollisionModel.kBox</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.examples.manipulation_station.ManipulationStation.SetupClutterClearingStation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adds a default iiwa, wsg, two bins, and a camera, then calls
 RegisterIiwaControllerModel() and RegisterWsgControllerModel() with
 the appropriate arguments.</p>
@@ -532,12 +532,14 @@ the appropriate arguments.</p>
 <dd>Transformation between the world and the camera body.</dd>
 <dt>Parameter <code class="docutils literal"><span class="pre">collision_model</span></code>:</dt>
 <dd>Determines which sdf is loaded for the IIWA.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">schunk_model</span></code>:</dt>
+<dd>Determines which sdf is loaded for the Schunk.</dd>
 </dl>
 </dd></dl>
 
 <dl class="method">
 <dt id="pydrake.examples.manipulation_station.ManipulationStation.SetupManipulationClassStation">
-<code class="descname">SetupManipulationClassStation</code><span class="sig-paren">(</span><em>self: pydrake.examples.manipulation_station.ManipulationStation</em>, <em>collision_model: pydrake.examples.manipulation_station.IiwaCollisionModel = IiwaCollisionModel.kNoCollision</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.examples.manipulation_station.ManipulationStation.SetupManipulationClassStation" title="Permalink to this definition">¶</a></dt>
+<code class="descname">SetupManipulationClassStation</code><span class="sig-paren">(</span><em>self: pydrake.examples.manipulation_station.ManipulationStation</em>, <em>collision_model: pydrake.examples.manipulation_station.IiwaCollisionModel = IiwaCollisionModel.kNoCollision</em>, <em>schunk_model: pydrake.examples.manipulation_station.SchunkCollisionModel = SchunkCollisionModel.kBox</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.examples.manipulation_station.ManipulationStation.SetupManipulationClassStation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adds a default iiwa, wsg, cupboard, and 80/20 frame for the MIT
 Intelligent Robot Manipulation class, then calls
 RegisterIiwaControllerModel() and RegisterWsgControllerModel() with
@@ -553,12 +555,14 @@ the appropriate arguments.</p>
 <dl class="docutils">
 <dt>Parameter <code class="docutils literal"><span class="pre">collision_model</span></code>:</dt>
 <dd>Determines which sdf is loaded for the IIWA.</dd>
+<dt>Parameter <code class="docutils literal"><span class="pre">schunk_model</span></code>:</dt>
+<dd>Determines which sdf is loaded for the Schunk.</dd>
 </dl>
 </dd></dl>
 
 <dl class="method">
 <dt id="pydrake.examples.manipulation_station.ManipulationStation.SetupPlanarIiwaStation">
-<code class="descname">SetupPlanarIiwaStation</code><span class="sig-paren">(</span><em>self: pydrake.examples.manipulation_station.ManipulationStation</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.examples.manipulation_station.ManipulationStation.SetupPlanarIiwaStation" title="Permalink to this definition">¶</a></dt>
+<code class="descname">SetupPlanarIiwaStation</code><span class="sig-paren">(</span><em>self: pydrake.examples.manipulation_station.ManipulationStation</em>, <em>schunk_model: pydrake.examples.manipulation_station.SchunkCollisionModel = SchunkCollisionModel.kBox</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.examples.manipulation_station.ManipulationStation.SetupPlanarIiwaStation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adds a version of the iiwa with joints that would result in
 out-of-plane rotations welded in a fixed orientation, reducing the
 total degrees of freedom of the arm to 3. This arm lives in the X-Z
@@ -573,6 +577,10 @@ manipulands) will still potentially move in 3D.</p>
 <p class="first admonition-title">Note</p>
 <p class="last">Only one of the <code class="docutils literal"><span class="pre">Setup___()</span></code> methods should be called.</p>
 </div>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">schunk_model</span></code>:</dt>
+<dd>Determines which sdf is loaded for the Schunk.</dd>
+</dl>
 </dd></dl>
 
 <dl class="method">
@@ -649,6 +657,42 @@ Schunk WSG gripper.</p>
 <dd><p>Gets the number of joints in the IIWA (only – does not include the
 gripper).</p>
 </dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.examples.manipulation_station.SchunkCollisionModel">
+<em class="property">class </em><code class="descclassname">pydrake.examples.manipulation_station.</code><code class="descname">SchunkCollisionModel</code><a class="headerlink" href="#pydrake.examples.manipulation_station.SchunkCollisionModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines which schunk model is used for the ManipulationStation. -
+kBox loads a model with a box collision geometry. This model is for
+those who want simplified collision behavior. -
+kBoxPlusFingertipSpheres loads a Schunk model with collision spheres
+that models the indentations at tip of the fingers, in addition to the
+box collision geometry on the fingers.</p>
+<p>Members:</p>
+<blockquote>
+<div><p>kBox :</p>
+<p>kBoxPlusFingertipSpheres :</p>
+</div></blockquote>
+<dl class="method">
+<dt id="pydrake.examples.manipulation_station.SchunkCollisionModel.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self: pydrake.examples.manipulation_station.SchunkCollisionModel</em>, <em>arg0: int</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pydrake.examples.manipulation_station.SchunkCollisionModel.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.examples.manipulation_station.SchunkCollisionModel.kBox">
+<code class="descname">kBox</code><em class="property"> = SchunkCollisionModel.kBox</em><a class="headerlink" href="#pydrake.examples.manipulation_station.SchunkCollisionModel.kBox" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.examples.manipulation_station.SchunkCollisionModel.kBoxPlusFingertipSpheres">
+<code class="descname">kBoxPlusFingertipSpheres</code><em class="property"> = SchunkCollisionModel.kBoxPlusFingertipSpheres</em><a class="headerlink" href="#pydrake.examples.manipulation_station.SchunkCollisionModel.kBoxPlusFingertipSpheres" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pydrake.examples.manipulation_station.SchunkCollisionModel.name">
+<code class="descname">name</code><a class="headerlink" href="#pydrake.examples.manipulation_station.SchunkCollisionModel.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 

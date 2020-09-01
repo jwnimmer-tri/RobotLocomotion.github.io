@@ -38,6 +38,7 @@ var searchData=
   ['rod2d_5fgeometry_2eh',['rod2d_geometry.h',['../rod2d__geometry_8h.html',1,'']]],
   ['roll_5fpitch_5fyaw_2eh',['roll_pitch_yaw.h',['../roll__pitch__yaw_8h.html',1,'']]],
   ['rotary_5fencoders_2eh',['rotary_encoders.h',['../rotary__encoders_8h.html',1,'']]],
+  ['rotation_2eh',['rotation.h',['../rotation_8h.html',1,'']]],
   ['rotation_5fconstraint_2eh',['rotation_constraint.h',['../rotation__constraint_8h.html',1,'']]],
   ['rotation_5fconversion_5fgradient_2eh',['rotation_conversion_gradient.h',['../rotation__conversion__gradient_8h.html',1,'']]],
   ['rotation_5fmatrix_2eh',['rotation_matrix.h',['../rotation__matrix_8h.html',1,'']]],

@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('classdrake_1_1systems_1_1_output_port.
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="classdrake_1_1systems_1_1_output_port-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">OutputPort&lt; T &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -238,6 +239,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:af88e845c5cd35ef910521ea4cfc4978a"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classdrake_1_1_abstract_value.html">AbstractValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_output_port.html#af88e845c5cd35ef910521ea4cfc4978a">DoEval</a> (const <a class="el" href="classdrake_1_1systems_1_1_context.html">Context</a>&lt; T &gt; &amp;context) const =0</td></tr>
 <tr class="memdesc:af88e845c5cd35ef910521ea4cfc4978a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A concrete OutputPort must provide access to the current value of this output port stored within the given <a class="el" href="classdrake_1_1systems_1_1_context.html" title="Context is an abstract class template that represents all the typed values that are used in a System&#39;...">Context</a>.  <a href="#af88e845c5cd35ef910521ea4cfc4978a">More...</a><br /></td></tr>
 <tr class="separator:af88e845c5cd35ef910521ea4cfc4978a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9ffc926b2159046fb2fe08325df0a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_output_port.html#afb9ffc926b2159046fb2fe08325df0a4">ThrowIfInvalidPortValueType</a> (const <a class="el" href="classdrake_1_1systems_1_1_context.html">Context</a>&lt; T &gt; &amp;context, const <a class="el" href="classdrake_1_1_abstract_value.html">AbstractValue</a> &amp;proposed_value) const =0</td></tr>
+<tr class="memdesc:afb9ffc926b2159046fb2fe08325df0a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that an <a class="el" href="classdrake_1_1_abstract_value.html" title="A fully type-erased container class.">AbstractValue</a> provided to <a class="el" href="classdrake_1_1systems_1_1_output_port.html#a8520422da7923b8327550ad2807f783d" title="Unconditionally computes the value of this output port with respect to the given context,...">Calc()</a> is suitable for this port.  <a href="#afb9ffc926b2159046fb2fe08325df0a4">More...</a><br /></td></tr>
+<tr class="separator:afb9ffc926b2159046fb2fe08325df0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classdrake_1_1systems_1_1_output_port_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdrake_1_1systems_1_1_output_port_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdrake_1_1systems_1_1_output_port_base.html">OutputPortBase</a></td></tr>
 <tr class="memitem:afa8b96b8578d8bb569e7c6d3dcc22437 inherit pro_methods_classdrake_1_1systems_1_1_output_port_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_output_port_base.html#afa8b96b8578d8bb569e7c6d3dcc22437">OutputPortBase</a> (internal::SystemMessageInterface *owning_system, std::string name, <a class="el" href="namespacedrake_1_1systems.html#afb427ae7d4f36f7a3cfe34eb5a3d51aa">OutputPortIndex</a> index, <a class="el" href="namespacedrake_1_1systems.html#a4dead03a05139d2c4dfc0a7042a936ee">DependencyTicket</a> <a class="el" href="classdrake_1_1systems_1_1_port_base.html#a65af7fcc4d673554e5fa127b1cf1382b">ticket</a>, <a class="el" href="namespacedrake_1_1systems.html#ae516fceb67f15f61c7a232b9cc483fbe">PortDataType</a> data_type, <a class="el" href="classint.html">int</a> <a class="el" href="classdrake_1_1systems_1_1_port_base.html#af9593d4a5ff4274efaf429cb4f9e57cc">size</a>)</td></tr>
 <tr class="memdesc:afa8b96b8578d8bb569e7c6d3dcc22437 inherit pro_methods_classdrake_1_1systems_1_1_output_port_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides derived classes the ability to set the base class members at construction.  <a href="classdrake_1_1systems_1_1_output_port_base.html#afa8b96b8578d8bb569e7c6d3dcc22437">More...</a><br /></td></tr>
@@ -274,6 +278,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6fc5e41cf7712c218f806f44aa0cf727 inherit pro_methods_classdrake_1_1systems_1_1_port_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_port_base.html#a6fc5e41cf7712c218f806f44aa0cf727">ThrowBadCast</a> (const std::string &amp;value_typename, const std::string &amp;eval_typename) const</td></tr>
 <tr class="memdesc:a6fc5e41cf7712c218f806f44aa0cf727 inherit pro_methods_classdrake_1_1systems_1_1_port_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports that the user provided a bad ValueType argument to Eval.  <a href="classdrake_1_1systems_1_1_port_base.html#a6fc5e41cf7712c218f806f44aa0cf727">More...</a><br /></td></tr>
 <tr class="separator:a6fc5e41cf7712c218f806f44aa0cf727 inherit pro_methods_classdrake_1_1systems_1_1_port_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a48ccdb92a406dbc24791fef6352883b1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1systems_1_1_output_port.html#a48ccdb92a406dbc24791fef6352883b1">ThrowIfInvalidPortValueType</a> (const <a class="el" href="classdrake_1_1systems_1_1_output_port.html">OutputPort</a>&lt; T &gt; &amp;port, const <a class="el" href="classdrake_1_1systems_1_1_context.html">Context</a>&lt; T &gt; &amp;context, const <a class="el" href="classdrake_1_1_abstract_value.html">AbstractValue</a> &amp;proposed_value)</td></tr>
+<tr class="memdesc:a48ccdb92a406dbc24791fef6352883b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method allows <a class="el" href="classdrake_1_1systems_1_1_diagram_output_port.html" title="(Advanced.) Holds information about a subsystem output port that has been exported to become one of t...">DiagramOutputPort</a> to call this recursively.  <a href="#a48ccdb92a406dbc24791fef6352883b1">More...</a><br /></td></tr>
+<tr class="separator:a48ccdb92a406dbc24791fef6352883b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4c8bdb8325355a70bf735c64f77088f2"></a>
@@ -773,6 +783,89 @@ The output port is of type ValueType (when ValueType is provided). </dd></dl>
 
 <p>Returns the fixed size expected for a vector-valued port. </p>
 <p>Not meaningful for abstract-valued ports. </p>
+
+</div>
+</div>
+<a id="afb9ffc926b2159046fb2fe08325df0a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9ffc926b2159046fb2fe08325df0a4">&#9670;&nbsp;</a></span>ThrowIfInvalidPortValueType() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ThrowIfInvalidPortValueType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1systems_1_1_context.html">Context</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1_abstract_value.html">AbstractValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>proposed_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check that an <a class="el" href="classdrake_1_1_abstract_value.html" title="A fully type-erased container class.">AbstractValue</a> provided to <a class="el" href="classdrake_1_1systems_1_1_output_port.html#a8520422da7923b8327550ad2807f783d" title="Unconditionally computes the value of this output port with respect to the given context,...">Calc()</a> is suitable for this port. </p>
+<p>Derived classes should throw a helpful message if not (see <a class="el" href="classdrake_1_1systems_1_1_leaf_output_port.html" title="(Advanced.) Implements an output port whose value is managed by a cache entry in the same LeafSystem ...">LeafOutputPort</a> for an example). It is OK for this to be an expensive check because we will only call it in Debug builds. </p>
+
+</div>
+</div>
+<a id="a48ccdb92a406dbc24791fef6352883b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ccdb92a406dbc24791fef6352883b1">&#9670;&nbsp;</a></span>ThrowIfInvalidPortValueType() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ThrowIfInvalidPortValueType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1systems_1_1_output_port.html">OutputPort</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1systems_1_1_context.html">Context</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrake_1_1_abstract_value.html">AbstractValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>proposed_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Static method allows <a class="el" href="classdrake_1_1systems_1_1_diagram_output_port.html" title="(Advanced.) Holds information about a subsystem output port that has been exported to become one of t...">DiagramOutputPort</a> to call this recursively. </p>
 
 </div>
 </div>

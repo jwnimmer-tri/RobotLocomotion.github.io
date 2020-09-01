@@ -5,7 +5,6 @@ var group__estimator__systems =
       [ "LuenbergerObserver", "classdrake_1_1systems_1_1estimators_1_1_luenberger_observer.html#aad627f771b16f15ab12904fde13e5f86", null ],
       [ "LuenbergerObserver", "classdrake_1_1systems_1_1estimators_1_1_luenberger_observer.html#aec8654f6fef2f02fae53910ff4319980", null ],
       [ "LuenbergerObserver", "classdrake_1_1systems_1_1estimators_1_1_luenberger_observer.html#a93700584c5d48070d9704f4ad7f83f8a", null ],
-      [ "LuenbergerObserver", "classdrake_1_1systems_1_1estimators_1_1_luenberger_observer.html#ab04e73a403f410e38bcbd24eb36d3feb", null ],
       [ "get_estimated_state_output_port", "classdrake_1_1systems_1_1estimators_1_1_luenberger_observer.html#ad99fec330effea7b0b0952ec31cd5f82", null ],
       [ "get_observed_system_input_input_port", "classdrake_1_1systems_1_1estimators_1_1_luenberger_observer.html#a789215f20f4dd16718b9003d08daf99d", null ],
       [ "get_observed_system_output_input_port", "classdrake_1_1systems_1_1estimators_1_1_luenberger_observer.html#aebe74a87d7957f9ab354177ba42f5a78", null ],

@@ -18,8 +18,6 @@ var searchData=
   ['calcangularvelocityinparentfromrpydt',['CalcAngularVelocityInParentFromRpyDt',['../classdrake_1_1math_1_1_roll_pitch_yaw.html#ab1685c931b42a054e9658ffa77708175',1,'drake::math::RollPitchYaw']]],
   ['calcbarycentric',['CalcBarycentric',['../classdrake_1_1geometry_1_1_surface_mesh.html#abd51a326a711ae6678174e84da721ac3',1,'drake::geometry::SurfaceMesh::CalcBarycentric()'],['../classdrake_1_1geometry_1_1_volume_mesh.html#a8b6bd2a02d8b97693e0ed3a05efdfab1',1,'drake::geometry::VolumeMesh::CalcBarycentric()']]],
   ['calcbiascenterofmasstranslationalacceleration',['CalcBiasCenterOfMassTranslationalAcceleration',['../classdrake_1_1multibody_1_1_multibody_plant.html#a029b22a36d5c6ee85247b9c1cfe84c6b',1,'drake::multibody::MultibodyPlant']]],
-  ['calcbiasforjacobianspatialvelocity',['CalcBiasForJacobianSpatialVelocity',['../classdrake_1_1multibody_1_1_multibody_plant.html#ab1acb4f78f307092671567a002b39c4b',1,'drake::multibody::MultibodyPlant']]],
-  ['calcbiasforjacobiantranslationalvelocity',['CalcBiasForJacobianTranslationalVelocity',['../classdrake_1_1multibody_1_1_multibody_plant.html#a72169faa39827ad74deb36e4a9bd18e9',1,'drake::multibody::MultibodyPlant']]],
   ['calcbiasspatialacceleration',['CalcBiasSpatialAcceleration',['../classdrake_1_1multibody_1_1_multibody_plant.html#aa238d2cebe527f4da55e0ec5d75e8dda',1,'drake::multibody::MultibodyPlant']]],
   ['calcbiasterm',['CalcBiasTerm',['../classdrake_1_1multibody_1_1_multibody_plant.html#a843e1ba389c017c706df10935784b4e5',1,'drake::multibody::MultibodyPlant']]],
   ['calcbiastranslationalacceleration',['CalcBiasTranslationalAcceleration',['../classdrake_1_1multibody_1_1_multibody_plant.html#add53749e8bb0ec1b0c564bdc14d3c74e',1,'drake::multibody::MultibodyPlant']]],

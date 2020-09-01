@@ -129,12 +129,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2be76b8a8ec623602dcd89f0e4dfa19e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_position_controller.html#a2be76b8a8ec623602dcd89f0e4dfa19e">SchunkWsgPositionController</a> (double time_step=0.05, double kp_command=200.0, double kd_command=5.0, double kp_constraint=2000.0, double kd_constraint=5.0, double default_force_limit=40.0)</td></tr>
 <tr class="memdesc:a2be76b8a8ec623602dcd89f0e4dfa19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the controller.  <a href="#a2be76b8a8ec623602dcd89f0e4dfa19e">More...</a><br /></td></tr>
 <tr class="separator:a2be76b8a8ec623602dcd89f0e4dfa19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f1afa470a4479ee8d7f4cb620dd30e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_position_controller.html#a32f1afa470a4479ee8d7f4cb620dd30e">set_initial_position</a> (<a class="el" href="classdrake_1_1systems_1_1_state.html">systems::State</a>&lt; double &gt; *state, double desired_position) const</td></tr>
-<tr class="memdesc:a32f1afa470a4479ee8d7f4cb620dd30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Deprecated.)  <a href="#a32f1afa470a4479ee8d7f4cb620dd30e">More...</a><br /></td></tr>
-<tr class="separator:a32f1afa470a4479ee8d7f4cb620dd30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73695b0d901bb8b508a7a27e37d7db15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_position_controller.html#a73695b0d901bb8b508a7a27e37d7db15">set_initial_position</a> (<a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; double &gt; *context, double desired_position) const</td></tr>
-<tr class="memdesc:a73695b0d901bb8b508a7a27e37d7db15"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Deprecated.)  <a href="#a73695b0d901bb8b508a7a27e37d7db15">More...</a><br /></td></tr>
-<tr class="separator:a73695b0d901bb8b508a7a27e37d7db15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a356498b2bd580d7052b0eb6548a06c9c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">systems::InputPort</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_position_controller.html#a356498b2bd580d7052b0eb6548a06c9c">get_desired_position_input_port</a> () const</td></tr>
 <tr class="separator:a356498b2bd580d7052b0eb6548a06c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81f7b538a90c7ca880c6085b0d386cf1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1systems_1_1_input_port.html">systems::InputPort</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_position_controller.html#a81f7b538a90c7ca880c6085b0d386cf1">get_force_limit_input_port</a> () const</td></tr>
@@ -1194,34 +1188,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2697220d4384c1aa4baf583efa3ef305"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2697220d4384c1aa4baf583efa3ef305">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_position_controller.html">SchunkWsgPositionController</a>&amp; operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_position_controller.html">SchunkWsgPositionController</a> &amp;&amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a612f07c0174c09bb0207ecc6a53c4b45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a612f07c0174c09bb0207ecc6a53c4b45">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a612f07c0174c09bb0207ecc6a53c4b45">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1246,67 +1214,29 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a32f1afa470a4479ee8d7f4cb620dd30e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32f1afa470a4479ee8d7f4cb620dd30e">&#9670;&nbsp;</a></span>set_initial_position() <span class="overload">[1/2]</span></h2>
+<a id="a2697220d4384c1aa4baf583efa3ef305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2697220d4384c1aa4baf583efa3ef305">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void set_initial_position </td>
+          <td class="memname"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_position_controller.html">SchunkWsgPositionController</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1systems_1_1_state.html">systems::State</a>&lt; double &gt; *&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="classdrake_1_1manipulation_1_1schunk__wsg_1_1_schunk_wsg_position_controller.html">SchunkWsgPositionController</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>desired_position</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>(Deprecated.) </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>"There's no need anymore to zero the velocity estimate via this method." <br />
- This will be removed from Drake on or after "2020-09-01" .</dd></dl>
-
-</div>
-</div>
-<a id="a73695b0d901bb8b508a7a27e37d7db15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73695b0d901bb8b508a7a27e37d7db15">&#9670;&nbsp;</a></span>set_initial_position() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void set_initial_position </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; double &gt; *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>desired_position</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>(Deprecated.) </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>"There's no need anymore to zero the velocity estimate via this method." <br />
- This will be removed from Drake on or after "2020-09-01" .</dd></dl>
 
 </div>
 </div>

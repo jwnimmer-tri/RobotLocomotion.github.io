@@ -645,12 +645,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa238d2cebe527f4da55e0ec5d75e8dda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrake_1_1multibody_1_1_spatial_acceleration.html">SpatialAcceleration</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#aa238d2cebe527f4da55e0ec5d75e8dda">CalcBiasSpatialAcceleration</a> (const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;context, <a class="el" href="namespacedrake_1_1multibody.html#ad95b5f6a8d72582ad91a1aca26d76658">JacobianWrtVariable</a> with_respect_to, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_B, const Eigen::Ref&lt; const <a class="el" href="namespacedrake.html#a0ad29daab565ce347c4d1c5aae6a76c2">Vector3</a>&lt; T &gt;&gt; &amp;p_BoBp_B, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_A, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_E) const</td></tr>
 <tr class="memdesc:aa238d2cebe527f4da55e0ec5d75e8dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">For one point Bp affixed/welded to a frame B, calculates A𝑠Bias_ABp, Bp's spatial acceleration bias in frame A with respect to "speeds" 𝑠, where 𝑠 is either q̇ (time-derivatives of generalized positions) or v (generalized velocities).  <a href="#aa238d2cebe527f4da55e0ec5d75e8dda">More...</a><br /></td></tr>
 <tr class="separator:aa238d2cebe527f4da55e0ec5d75e8dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72169faa39827ad74deb36e4a9bd18e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedrake.html#a77dd228fb4dd66a2c17dd3f7f38ffd85">VectorX</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a72169faa39827ad74deb36e4a9bd18e9">CalcBiasForJacobianTranslationalVelocity</a> (const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;context, <a class="el" href="namespacedrake_1_1multibody.html#ad95b5f6a8d72582ad91a1aca26d76658">JacobianWrtVariable</a> with_respect_to, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_F, const Eigen::Ref&lt; const <a class="el" href="namespacedrake.html#a28c58d881c60e96f48a7a4e32a699b95">MatrixX</a>&lt; T &gt;&gt; &amp;p_FP_list, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_A, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_E) const</td></tr>
-<tr class="memdesc:a72169faa39827ad74deb36e4a9bd18e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a point Fp that is fixed to a frame F, calculates Fp's translational acceleration "bias" term <code>abias_AFp = J̇s_v_AFp(q, s) * s</code> in frame A with respect to "speeds" 𝑠.  <a href="#a72169faa39827ad74deb36e4a9bd18e9">More...</a><br /></td></tr>
-<tr class="separator:a72169faa39827ad74deb36e4a9bd18e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1acb4f78f307092671567a002b39c4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedrake.html#a14aa433aedda321a15238f2d4074d4c3">Vector6</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#ab1acb4f78f307092671567a002b39c4b">CalcBiasForJacobianSpatialVelocity</a> (const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;context, <a class="el" href="namespacedrake_1_1multibody.html#ad95b5f6a8d72582ad91a1aca26d76658">JacobianWrtVariable</a> with_respect_to, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_F, const Eigen::Ref&lt; const <a class="el" href="namespacedrake.html#a0ad29daab565ce347c4d1c5aae6a76c2">Vector3</a>&lt; T &gt;&gt; &amp;p_FoFp_F, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_A, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_E) const</td></tr>
-<tr class="memdesc:ab1acb4f78f307092671567a002b39c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a point Fp that is fixed to a frame F, calculates Fp's spatial acceleration "bias" term <code>Abias_AFp = J̇s_V_AFp * s</code> in frame A with respect to "speeds" 𝑠.  <a href="#ab1acb4f78f307092671567a002b39c4b">More...</a><br /></td></tr>
-<tr class="separator:ab1acb4f78f307092671567a002b39c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f39a8f68fae3de53767a281503a3313"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a5f39a8f68fae3de53767a281503a3313">CalcJacobianSpatialVelocity</a> (const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;context, <a class="el" href="namespacedrake_1_1multibody.html#ad95b5f6a8d72582ad91a1aca26d76658">JacobianWrtVariable</a> with_respect_to, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_B, const Eigen::Ref&lt; const <a class="el" href="namespacedrake.html#a0ad29daab565ce347c4d1c5aae6a76c2">Vector3</a>&lt; T &gt;&gt; &amp;p_BoBp_B, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_A, const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;frame_E, <a class="el" href="classdrake_1_1_eigen_ptr.html">EigenPtr</a>&lt; <a class="el" href="namespacedrake.html#a28c58d881c60e96f48a7a4e32a699b95">MatrixX</a>&lt; T &gt;&gt; Js_V_ABp_E) const</td></tr>
 <tr class="memdesc:a5f39a8f68fae3de53767a281503a3313"><td class="mdescLeft">&#160;</td><td class="mdescRight">For one point Bp fixed/welded to a frame B, calculates J𝑠_V_ABp, Bp's spatial velocity Jacobian in frame A with respect to "speeds" 𝑠.  <a href="#a5f39a8f68fae3de53767a281503a3313">More...</a><br /></td></tr>
 <tr class="separator:a5f39a8f68fae3de53767a281503a3313"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -856,9 +850,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a94d1093944c929bd5ca5322836b91bd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedrake_1_1multibody.html#a6f6e054758d34b83e86bea87d65dfe4e">ContactModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a94d1093944c929bd5ca5322836b91bd4">get_contact_model</a> () const</td></tr>
 <tr class="memdesc:a94d1093944c929bd5ca5322836b91bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the model used for contact. See documentation for ContactModel.  <a href="#a94d1093944c929bd5ca5322836b91bd4">More...</a><br /></td></tr>
 <tr class="separator:a94d1093944c929bd5ca5322836b91bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38608634b36afab217b71de1f31fbc85"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrake_1_1multibody_1_1_coulomb_friction.html">CoulombFriction</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a38608634b36afab217b71de1f31fbc85">default_coulomb_friction</a> (<a class="el" href="classdrake_1_1geometry_1_1_geometry_id.html">geometry::GeometryId</a> id) const</td></tr>
-<tr class="memdesc:a38608634b36afab217b71de1f31fbc85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the friction coefficients provided during geometry registration for the given geometry <code>id</code>.  <a href="#a38608634b36afab217b71de1f31fbc85">More...</a><br /></td></tr>
-<tr class="separator:a38608634b36afab217b71de1f31fbc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c0b698e0102d42f085ca39f337b019"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#aa7c0b698e0102d42f085ca39f337b019">num_visual_geometries</a> () const</td></tr>
 <tr class="memdesc:aa7c0b698e0102d42f085ca39f337b019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of geometries registered for visualization.  <a href="#aa7c0b698e0102d42f085ca39f337b019">More...</a><br /></td></tr>
 <tr class="separator:aa7c0b698e0102d42f085ca39f337b019"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1424,166 +1415,6 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ab1acb4f78f307092671567a002b39c4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1acb4f78f307092671567a002b39c4b">&#9670;&nbsp;</a></span>CalcBiasForJacobianSpatialVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedrake.html#a14aa433aedda321a15238f2d4074d4c3">Vector6</a>&lt;T&gt; CalcBiasForJacobianSpatialVelocity </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacedrake_1_1multibody.html#ad95b5f6a8d72582ad91a1aca26d76658">JacobianWrtVariable</a>&#160;</td>
-          <td class="paramname"><em>with_respect_to</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>frame_F</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Eigen::Ref&lt; const <a class="el" href="namespacedrake.html#a0ad29daab565ce347c4d1c5aae6a76c2">Vector3</a>&lt; T &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>p_FoFp_F</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>frame_A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>frame_E</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For a point Fp that is fixed to a frame F, calculates Fp's spatial acceleration "bias" term <code>Abias_AFp = J̇s_V_AFp * s</code> in frame A with respect to "speeds" 𝑠. </p>
-<pre>
-  A_AFp = J𝑠_V_AFp(q)⋅ṡ + Abias_AFp(q, v)
-</pre><p> A_AFp is point Fp's spatial acceleration in frame A and 𝑠 is either q̇ ≜ [q̇₁ ... q̇ⱼ]ᵀ (time-derivatives of generalized positions) or v ≜ [v₁ ... vₖ]ᵀ (generalized velocities). Note: <code>Abias_AFp = J̇s_V_AFp(q, s)⋅s</code>  is quadratic in 𝑠 ≜ [𝑠₁ ... 𝑠ₙ]ᵀ Note: This method is misnamed CalcBiasForJacobianSpatialVelocity. Expect a name change to reflect its acceleration (not velocity) nature.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#a5f39a8f68fae3de53767a281503a3313" title="For one point Bp fixed/welded to a frame B, calculates J𝑠_V_ABp, Bp&#39;s spatial velocity Jacobian in fr...">CalcJacobianSpatialVelocity()</a> to compute <code>J𝑠_V_AFp</code>, point Fp's spatial velocity Jacobian in frame A with respect to 𝑠.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The state of the multibody system, which includes the generalized positions q and generalized velocities v. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">with_respect_to</td><td>Enum equal to <a class="el" href="namespacedrake_1_1multibody.html#ad95b5f6a8d72582ad91a1aca26d76658a08a6dd2b7a7e7a0a13886a70c696f72b" title="J = ∂V/∂q̇">JacobianWrtVariable::kQDot</a> or <a class="el" href="namespacedrake_1_1multibody.html#ad95b5f6a8d72582ad91a1aca26d76658a63b39853c60d1092c257c1ab898bad0a" title="J = ∂V/∂v.">JacobianWrtVariable::kV</a>, indicating whether the Jacobian <code>J𝑠_v_AFp</code> is partial derivatives with respect to 𝑠 = q̇ (time-derivatives of generalized positions) or with respect to 𝑠 = v (generalized velocities). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frame_F</td><td>The frame on which point Fp is fixed/welded. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_FoFp_F</td><td>position vector from Fo (frame F's origin) to point Fp, expressed in frame F. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frame_A</td><td>The frame that measures <code>Abias_AFp</code>. Currently, an exception is thrown if frame_A is not the World frame. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frame_E</td><td>The frame in which <code>Abias_AFp</code> is expressed on output. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Abias_AFp_E Fp's spatial acceleration bias in frame_A is returned in a <code>6 x 1</code> matrix whose first three elements are frame_F's angular acceleration bias in frame_A (expressed in frame_E) and whose last three elements are point Fp's translational acceleration bias in frame_A (expressed in frame_E). These bias terms are functions of the generalized positions q and the generalized velocities v and depend on whether <code>with_respect_to</code> is kQDot or kV. Note: Although the return quantity is a Vector6, it is actually a <a class="el" href="classdrake_1_1multibody_1_1_spatial_acceleration.html" title="This class is used to represent a spatial acceleration that combines rotational (angular acceleration...">SpatialAcceleration</a> (having units of that type). </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td>if <code>with_respect_to</code> is not <a class="el" href="namespacedrake_1_1multibody.html#ad95b5f6a8d72582ad91a1aca26d76658a63b39853c60d1092c257c1ab898bad0a" title="J = ∂V/∂v.">JacobianWrtVariable::kV</a> </td></tr>
-    <tr><td class="paramname">std::exception</td><td>if frame_A is not the world frame. (Deprecated.) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>"Use CalcBiasSpatialAcceleration() instead " "of CalcBiasForJacobianSpatialVelocity()." <br />
- This will be removed from Drake on or after "2020-09-01" .</dd></dl>
-
-</div>
-</div>
-<a id="a72169faa39827ad74deb36e4a9bd18e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72169faa39827ad74deb36e4a9bd18e9">&#9670;&nbsp;</a></span>CalcBiasForJacobianTranslationalVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedrake.html#a77dd228fb4dd66a2c17dd3f7f38ffd85">VectorX</a>&lt;T&gt; CalcBiasForJacobianTranslationalVelocity </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1systems_1_1_context.html">systems::Context</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacedrake_1_1multibody.html#ad95b5f6a8d72582ad91a1aca26d76658">JacobianWrtVariable</a>&#160;</td>
-          <td class="paramname"><em>with_respect_to</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>frame_F</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Eigen::Ref&lt; const <a class="el" href="namespacedrake.html#a28c58d881c60e96f48a7a4e32a699b95">MatrixX</a>&lt; T &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>p_FP_list</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>frame_A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classdrake_1_1multibody_1_1_frame.html">Frame</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>frame_E</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For a point Fp that is fixed to a frame F, calculates Fp's translational acceleration "bias" term <code>abias_AFp = J̇s_v_AFp(q, s) * s</code> in frame A with respect to "speeds" 𝑠. </p>
-<pre>
-  a_AFp = J𝑠_v_AFp(q)⋅ṡ + abias_AFp(q, v)
-</pre><p> a_AFp is point Fp's translational acceleration in frame A and 𝑠 is either q̇ ≜ [q̇₁ ... q̇ⱼ]ᵀ (time-derivatives of generalized positions) or v ≜ [v₁ ... vₖ]ᵀ (generalized velocities). Note: <code>abias_AFp = J̇s_v_AFp(q, s)⋅s</code>  is quadratic in 𝑠 ≜ [𝑠₁ ... 𝑠ₙ]ᵀ Note: This method is misnamed CalcBiasForJacobianTranslationalVelocity. Expect a name change to reflect its acceleration (not velocity) nature.</p>
-<p>This method computes <code>abias_AFp</code> for each point Fp in the <code>p_FP_list</code>. The <code>p_FP_list</code> is a list of position vectors from Fo (<a class="el" href="classdrake_1_1multibody_1_1_frame.html" title="Frame is an abstract class representing a material frame (also called a physical frame),...">Frame</a> F's origin) to each such point Fp, expressed in frame F.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#ae2516569f5a2cc27e76ee0cc8b728746" title="For each point Bi affixed/welded to a frame B, calculates J𝑠_v_ABi, Bi&#39;s translational velocity Jacob...">CalcJacobianTranslationalVelocity()</a> to compute <code>J𝑠_v_AFp</code>, point Fp's translational velocity Jacobian in frame A with respect to s.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The state of the multibody system, which includes the generalized positions q and generalized velocities v. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">with_respect_to</td><td>Enum equal to <a class="el" href="namespacedrake_1_1multibody.html#ad95b5f6a8d72582ad91a1aca26d76658a08a6dd2b7a7e7a0a13886a70c696f72b" title="J = ∂V/∂q̇">JacobianWrtVariable::kQDot</a> or <a class="el" href="namespacedrake_1_1multibody.html#ad95b5f6a8d72582ad91a1aca26d76658a63b39853c60d1092c257c1ab898bad0a" title="J = ∂V/∂v.">JacobianWrtVariable::kV</a>, indicating whether the Jacobian <code>J𝑠_v_AFp</code> is partial derivatives with respect to 𝑠 = q̇ (time-derivatives of generalized positions) or with respect to 𝑠 = v (generalized velocities). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frame_F</td><td>The frame on which point Fp is fixed/welded. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p_FP_list</td><td><code>3 x n</code> matrix of position vectors <code>p_FoFp_F</code> from Fo (frame F's origin) to each such point Fp, expressed in frame F. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frame_A</td><td>The frame that measures <code>abias_AFp</code>. Currently, an exception is thrown if frame_A is not the World frame. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frame_E</td><td>The frame in which <code>abias_AFp</code> is expressed on output. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>abias_AFp_E matrix of translational acceleration bias terms in frame_A and expressed in frame_E for each of the <code>n</code> points associated with p_FP_list. These bias terms are functions of the generalized positions q and the generalized velocities v and depend on whether <code>with_respect_to</code> is kQDot or kV. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td>if <code>p_FP_list</code> does not have 3 rows. </td></tr>
-    <tr><td class="paramname">std::exception</td><td>if <code>with_respect_to</code> is not <a class="el" href="namespacedrake_1_1multibody.html#ad95b5f6a8d72582ad91a1aca26d76658a63b39853c60d1092c257c1ab898bad0a" title="J = ∂V/∂v.">JacobianWrtVariable::kV</a> </td></tr>
-    <tr><td class="paramname">std::exception</td><td>if frame_A is not the world frame. (Deprecated.) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>"Use CalcBiasTranslationalAcceleration " "instead of CalcBiasForJacobianTranslationalVelocity()." <br />
- This will be removed from Drake on or after "2020-09-01" .</dd></dl>
 
 </div>
 </div>
@@ -2641,34 +2472,6 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a38608634b36afab217b71de1f31fbc85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38608634b36afab217b71de1f31fbc85">&#9670;&nbsp;</a></span>default_coulomb_friction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classdrake_1_1multibody_1_1_coulomb_friction.html">CoulombFriction</a>&lt;double&gt;&amp; default_coulomb_friction </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrake_1_1geometry_1_1_geometry_id.html">geometry::GeometryId</a>&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the friction coefficients provided during geometry registration for the given geometry <code>id</code>. </p>
-<p>We call these the "default" coefficients but note that we mean user-supplied per-geometry default, not something more global. </p><dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td>if <code>id</code> does not correspond to a geometry in <code>this</code> model registered for contact modeling. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html#ac9b4f41a4f2575707d43ea031ce5a9ea" title="Registers geometry in a SceneGraph with a given geometry::Shape to be used for the contact modeling o...">RegisterCollisionGeometry()</a> for details on <a class="el" href="namespacedrake_1_1geometry.html">geometry</a> registration. (Deprecated.) </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>"default_coulomb_friction() will be removed. Please use SceneGraph which " "now stores friction properties in ProximityProperties. See the section " "\"Accessing point contact parameters" in the documentation for "       "<a class="el" href="classdrake_1_1multibody_1_1_multibody_plant.html" title="MultibodyPlant is a Drake system framework representation (see systems::System) for the model of a ph...">MultibodyPlant</a>."   &lt;br&gt; This will be removed from Drake on or after   "2020-09-01" .</dd></dl>
 
 </div>
 </div>

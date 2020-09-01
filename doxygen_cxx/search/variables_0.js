@@ -6,5 +6,7 @@ var searchData=
   ['abspath',['abspath',['../structdrake_1_1_rlocation_or_error.html#a73f9ba255d9f67483bea8f29d42f9e13',1,'drake::RlocationOrError']]],
   ['allow_5fcpp_5fwith_5fno_5fyaml',['allow_cpp_with_no_yaml',['../structdrake_1_1yaml_1_1_yaml_read_archive_1_1_options.html#aa4ca52e888e12f7fd01ae981e6b63275',1,'drake::yaml::YamlReadArchive::Options']]],
   ['allow_5fyaml_5fwith_5fno_5fcpp',['allow_yaml_with_no_cpp',['../structdrake_1_1yaml_1_1_yaml_read_archive_1_1_options.html#aea27c3ce8aaf9792e86b006e57659938',1,'drake::yaml::YamlReadArchive::Options']]],
-  ['assume_5fnon_5fcontinuous_5fstates_5fare_5ffixed',['assume_non_continuous_states_are_fixed',['../structdrake_1_1systems_1_1controllers_1_1_dynamic_programming_options.html#a2f676e6424410f6f9742e3f7177cb90c',1,'drake::systems::controllers::DynamicProgrammingOptions']]]
+  ['angle_5fdeg',['angle_deg',['../structdrake_1_1schema_1_1_rotation_1_1_angle_axis.html#a5272723f1677b4033eed7eede51a1da8',1,'drake::schema::Rotation::AngleAxis']]],
+  ['assume_5fnon_5fcontinuous_5fstates_5fare_5ffixed',['assume_non_continuous_states_are_fixed',['../structdrake_1_1systems_1_1controllers_1_1_dynamic_programming_options.html#a2f676e6424410f6f9742e3f7177cb90c',1,'drake::systems::controllers::DynamicProgrammingOptions']]],
+  ['axis',['axis',['../structdrake_1_1schema_1_1_rotation_1_1_angle_axis.html#a370df3b5b1ee0045d5f876aa4757fc44',1,'drake::schema::Rotation::AngleAxis']]]
 ];

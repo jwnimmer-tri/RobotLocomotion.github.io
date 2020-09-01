@@ -1093,18 +1093,7 @@ For example, for a given variable ordering x &gt; y &gt; z,
 <dl class="class">
 <dt id="pydrake.symbolic.Polynomial">
 <em class="property">class </em><code class="descclassname">pydrake.symbolic.</code><code class="descname">Polynomial</code><a class="headerlink" href="#pydrake.symbolic.Polynomial" title="Permalink to this definition">¶</a></dt>
-<dd><p>Represents symbolic polynomials. A symbolic polynomial keeps a mapping
-from a monomial of indeterminates to its coefficient in a symbolic
-expression.</p>
-<p>A polynomial <code class="docutils literal"><span class="pre">p</span></code> has to satisfy an invariant such that
-<code class="docutils literal"><span class="pre">p.decision_variables()</span> <span class="pre">∩</span> <span class="pre">p.indeterminates()</span> <span class="pre">=</span> <span class="pre">∅</span></code>. We have
-CheckInvariant() method to check the invariant.</p>
-<p>Note that arithmetic operations (+,-,*) between a Polynomial and a
-Variable are not provided. The problem is that Variable class has no
-intrinsic information if a variable is a decision variable or an
-indeterminate while we need this information to perform arithmetic
-operations over Polynomials.</p>
-<dl class="method">
+<dd><dl class="method">
 <dt id="pydrake.symbolic.Polynomial.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.symbolic.Polynomial.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>

@@ -1,6 +1,8 @@
 var dir_d8973131f51b66669fc427ecaef4c4db =
 [
-    [ "controlled_spring_mass_system.h", "controlled__spring__mass__system_8h.html", null ],
+    [ "controlled_spring_mass_system.h", "controlled__spring__mass__system_8h.html", [
+      [ "PidControlledSpringMassSystem", "classdrake_1_1systems_1_1_pid_controlled_spring_mass_system.html", "classdrake_1_1systems_1_1_pid_controlled_spring_mass_system" ]
+    ] ],
     [ "cubic_scalar_system.h", "cubic__scalar__system_8h.html", [
       [ "CubicScalarSystem", "classdrake_1_1systems_1_1analysis__test_1_1_cubic_scalar_system.html", "classdrake_1_1systems_1_1analysis__test_1_1_cubic_scalar_system" ]
     ] ],

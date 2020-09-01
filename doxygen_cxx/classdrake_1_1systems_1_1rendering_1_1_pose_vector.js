@@ -4,7 +4,6 @@ var classdrake_1_1systems_1_1rendering_1_1_pose_vector =
     [ "~PoseVector", "classdrake_1_1systems_1_1rendering_1_1_pose_vector.html#a9f370fc32911ffa55008c817b7d1b67e", null ],
     [ "PoseVector", "classdrake_1_1systems_1_1rendering_1_1_pose_vector.html#a4aa371aa8ffc3addc6b6197e7a736c78", null ],
     [ "DoClone", "classdrake_1_1systems_1_1rendering_1_1_pose_vector.html#ae0df4b8adfe4e2169b30f4d41f73241e", null ],
-    [ "get_isometry", "classdrake_1_1systems_1_1rendering_1_1_pose_vector.html#ab83af9b5932f851fb0b9f230d540990b", null ],
     [ "get_rotation", "classdrake_1_1systems_1_1rendering_1_1_pose_vector.html#ad9b5d470b015d5120d95a662eeb6827d", null ],
     [ "get_transform", "classdrake_1_1systems_1_1rendering_1_1_pose_vector.html#adb6354947969de057f262afeac83fa19", null ],
     [ "get_translation", "classdrake_1_1systems_1_1rendering_1_1_pose_vector.html#a309b02e3199511b88ab52e79e22a65e7", null ],

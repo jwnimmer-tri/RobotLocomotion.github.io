@@ -1,12 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"classdrake_1_1multibody_1_1_multibody_plant_tester.html#a78a41aa29da521844db86fcdcead6434":[3,0,0,8,39,0],
-"classdrake_1_1multibody_1_1_orientation_constraint.html":[3,0,0,8,40],
-"classdrake_1_1multibody_1_1_orientation_constraint.html#a22427cb90ec03f716f3af18bdf8bf280":[3,0,0,8,40,6],
-"classdrake_1_1multibody_1_1_orientation_constraint.html#a9862e431b26f8dae52b24b0627d928c4":[3,0,0,8,40,0],
-"classdrake_1_1multibody_1_1_orientation_constraint.html#a9e2c5a91a6075fad66c8cc5b8784cf48":[3,0,0,8,40,1],
-"classdrake_1_1multibody_1_1_orientation_constraint.html#aa83dc77534d07e556348f0c97a8a39f4":[3,0,0,8,40,5],
-"classdrake_1_1multibody_1_1_orientation_constraint.html#ab78d1f1f419685fc5ce820fcd7d8c4bb":[3,0,0,8,40,2],
 "classdrake_1_1multibody_1_1_orientation_constraint.html#aced68d25b3b28edb4e1af6ac2f8fd541":[3,0,0,8,40,4],
 "classdrake_1_1multibody_1_1_orientation_constraint.html#ae980c1406985953fe4b78c1435ff1785":[3,0,0,8,40,3],
 "classdrake_1_1multibody_1_1_package_map.html":[3,0,0,8,41],
@@ -249,5 +242,12 @@ var NAVTREEINDEX11 =
 "classdrake_1_1multibody_1_1_rotational_inertia.html#aef27cf48918c4ca310e1e5d67de50f7a":[3,0,0,8,53,36],
 "classdrake_1_1multibody_1_1_rotational_inertia.html#af016e2a9451f4692a56bec5209ddbaf5":[3,0,0,8,53,16],
 "classdrake_1_1multibody_1_1_rotational_inertia.html#af36dbdaa401764e4df48b07d3b6ad7d4":[3,0,0,8,53,3],
-"classdrake_1_1multibody_1_1_rotational_inertia.html#af38985b256018ac664935ee8423bbe8b":[3,0,0,8,53,10]
+"classdrake_1_1multibody_1_1_rotational_inertia.html#af38985b256018ac664935ee8423bbe8b":[3,0,0,8,53,10],
+"classdrake_1_1multibody_1_1_rotational_inertia.html#afa1e01c37486db2e78263fb70eaff550":[3,0,0,8,53,8],
+"classdrake_1_1multibody_1_1_rotational_inertia.html#afa36a24a9c8fa583631e45d1ad366ce3":[3,0,0,8,53,38],
+"classdrake_1_1multibody_1_1_rotational_inertia.html#afae48d85764cacfd54fc3001250b4eac":[3,0,0,8,53,20],
+"classdrake_1_1multibody_1_1_spatial_acceleration.html":[3,0,0,8,55],
+"classdrake_1_1multibody_1_1_spatial_acceleration.html#a0e2c52c1ca5f71c7d19ae3e462f28ea4":[3,0,0,8,55,7],
+"classdrake_1_1multibody_1_1_spatial_acceleration.html#a14d884425e1c5f562da032c8945fc47d":[3,0,0,8,55,12],
+"classdrake_1_1multibody_1_1_spatial_acceleration.html#a1df3ad1add32b42c37e8a62c63c17c70":[3,0,0,8,55,8]
 };
