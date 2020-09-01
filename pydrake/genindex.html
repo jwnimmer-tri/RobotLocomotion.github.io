@@ -38,7 +38,49 @@
         <link rel="index" title="Index"
               href="#"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="pydrake  documentation" href="index.html"/> 
+    <link rel="top" title="pydrake  documentation" href="index.html"/>
+<header class="header--main black-back">
+   <div class="wrap grid__2-col">
+      <a href="https://drake.mit.edu" class="header__logo">
+      <img src="_static/drake-logo-white.svg" class="header__logo__img">
+      </a>
+      <div class="menu__toggle js-menu-toggle">
+         <div class="menu__toggle__icon"><span></span></div>
+      </div>
+      <nav class="header__menu">
+         <div class="menu__wrap">
+            <ul class="menu__list">
+               <li class="menu__list__item menu__list__item__link button--text">
+                  <a href="https://drake.mit.edu/quickstart.html" class="menu__list__item__link button--text">Quickstart</a>
+               </li>
+               <li class="menu__list__item menu__list__item__link button--text">
+                  <a href="https://drake.mit.edu/gallery.html" class="menu__list__item__link button--text">Gallery</a>
+               </li>
+               <li class="menu__list__item menu__list__item__link button--text">
+                  API Documentation
+                  <div class="menu_sub">
+                     <a href="https://drake.mit.edu/doxygen_cxx/index.html" class="menu__list__item__link button--text">C++</a>
+                     <a href="https://drake.mit.edu/pydrake/index.html" class="menu__list__item__link button--text">Python</a>
+                  </div>
+               </li>
+               <li class="menu__list__item menu__list__item__link button--text">
+                  Resources
+                  <div class="menu_sub">
+                     <a href="https://drake.mit.edu/getting_help.html" class="menu__list__item__link button--text">Getting Help</a>
+                     <a href="https://github.com/RobotLocomotion/drake/tree/master/tutorials" class="menu__list__item__link button--text">Tutorials</a>
+                     <a href="https://drake.mit.edu/developers.html" class="menu__list__item__link button--text">For Developers</a>
+                     <a href="https://drake.mit.edu/credits.html" class="menu__list__item__link button--text">Credits</a>
+                  </div>
+               </li>
+               <li class="menu__list__item menu__list__item__link button--text github--link">
+                  <a href="https://github.com/RobotLocomotion/drake" class="menu__list__item__link button--text">Github <img src="_static/github-white.svg"></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+</header>
+
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -1604,6 +1646,8 @@
         <li><a href="pydrake.systems.trajectory_optimization.html#pydrake.systems.trajectory_optimization.TimeStep.__init__">(pydrake.systems.trajectory_optimization.TimeStep method)</a>
 </li>
         <li><a href="pydrake.trajectories.html#pydrake.trajectories.PiecewisePolynomial.__init__">(pydrake.trajectories.PiecewisePolynomial method)</a>
+</li>
+        <li><a href="pydrake.trajectories.html#pydrake.trajectories.PiecewiseQuaternionSlerp.__init__">(pydrake.trajectories.PiecewiseQuaternionSlerp method)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -8212,6 +8256,8 @@
         <li><a href="pydrake.multibody.plant.html#pydrake.multibody.plant.MultibodyPlant_[float].MakeActuationMatrix">(pydrake.multibody.plant.MultibodyPlant_[float] method)</a>
 </li>
       </ul></li>
+      <li><a href="pydrake.trajectories.html#pydrake.trajectories.Trajectory.MakeDerivative">MakeDerivative() (pydrake.trajectories.Trajectory method)</a>
+</li>
       <li><a href="pydrake.systems.controllers.html#pydrake.systems.controllers.MakeFiniteHorizonLinearQuadraticRegulator">MakeFiniteHorizonLinearQuadraticRegulator() (in module pydrake.systems.controllers)</a>
 </li>
       <li><a href="pydrake.manipulation.schunk_wsg.html#pydrake.manipulation.schunk_wsg.MakeMultibodyStateToWsgStateSystem">MakeMultibodyStateToWsgStateSystem() (in module pydrake.manipulation.schunk_wsg)</a>
@@ -9297,6 +9343,8 @@
       <li><a href="pydrake.systems.controllers.html#pydrake.systems.controllers.PidController">PidController (class in pydrake.systems.controllers)</a>
 </li>
       <li><a href="pydrake.trajectories.html#pydrake.trajectories.PiecewisePolynomial">PiecewisePolynomial (class in pydrake.trajectories)</a>
+</li>
+      <li><a href="pydrake.trajectories.html#pydrake.trajectories.PiecewiseQuaternionSlerp">PiecewiseQuaternionSlerp (class in pydrake.trajectories)</a>
 </li>
       <li><a href="pydrake.trajectories.html#pydrake.trajectories.PiecewiseTrajectory">PiecewiseTrajectory (class in pydrake.trajectories)</a>
 </li>
@@ -12471,7 +12519,7 @@
 </li>
         <li><a href="pydrake.geometry.html#pydrake.geometry.FramePoseVector_[float].value">(pydrake.geometry.FramePoseVector_[float] method)</a>
 </li>
-        <li><a href="pydrake.trajectories.html#pydrake.trajectories.PiecewisePolynomial.value">(pydrake.trajectories.PiecewisePolynomial method)</a>
+        <li><a href="pydrake.trajectories.html#pydrake.trajectories.Trajectory.value">(pydrake.trajectories.Trajectory method)</a>
 </li>
       </ul></li>
       <li><a href="pydrake.common.value.html#pydrake.common.value.Value.Value[str]">Value.Value[str] (class in pydrake.common.value)</a>
@@ -12674,7 +12722,7 @@
         <li><a href="pydrake.math.html#pydrake.math.RollPitchYaw_[float].vector">(pydrake.math.RollPitchYaw_[float] method)</a>
 </li>
       </ul></li>
-      <li><a href="pydrake.trajectories.html#pydrake.trajectories.PiecewiseTrajectory.vector_values">vector_values() (pydrake.trajectories.PiecewiseTrajectory method)</a>
+      <li><a href="pydrake.trajectories.html#pydrake.trajectories.Trajectory.vector_values">vector_values() (pydrake.trajectories.Trajectory method)</a>
 </li>
       <li><a href="pydrake.systems.framework.html#pydrake.systems.framework.VectorBase">VectorBase (in module pydrake.systems.framework)</a>
 </li>
@@ -13161,7 +13209,33 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-   
+  
+<footer class="footer">
+   <div class="wrap grid">
+      <a href="/" class="footer__logo">
+      <img src="_static/drake-logo.svg" class="footer__logo__img">
+      </a>
+      <div class="menu__wrap">
+         <ul class="menu__list">
+            <li class="menu__list__item menu__list__item__link button--text">
+               <a href="https://drake.mit.edu/doxygen_cxx/index.html" class="menu__list__item__link button--text">C++</a>
+            </li>
+            <li class="menu__list__item menu__list__item__link button--text">
+               <a href="https://drake.mit.edu/pydrake/index.html" class="menu__list__item__link button--text">Python</a>
+            </li>
+            <li class="menu__list__item menu__list__item__link button--text github--link">
+               <a href="https://github.com/RobotLocomotion/drake" class="menu__list__item__link button--text">
+               Github <img src="_static/github.svg">
+               </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <div class="footer__copyright wrap">
+      <span class="footnote">© 2020 Drake - Robot Locomotion Group (MIT)</span>
+   </div>
+</footer>
+
 
 </body>
 </html>

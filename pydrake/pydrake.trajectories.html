@@ -39,7 +39,49 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="pydrake  documentation" href="index.html"/>
         <link rel="next" title="pydrake.visualization" href="pydrake.visualization.html"/>
-        <link rel="prev" title="pydrake.systems.trajectory_optimization" href="pydrake.systems.trajectory_optimization.html"/> 
+        <link rel="prev" title="pydrake.systems.trajectory_optimization" href="pydrake.systems.trajectory_optimization.html"/>
+<header class="header--main black-back">
+   <div class="wrap grid__2-col">
+      <a href="https://drake.mit.edu" class="header__logo">
+      <img src="_static/drake-logo-white.svg" class="header__logo__img">
+      </a>
+      <div class="menu__toggle js-menu-toggle">
+         <div class="menu__toggle__icon"><span></span></div>
+      </div>
+      <nav class="header__menu">
+         <div class="menu__wrap">
+            <ul class="menu__list">
+               <li class="menu__list__item menu__list__item__link button--text">
+                  <a href="https://drake.mit.edu/quickstart.html" class="menu__list__item__link button--text">Quickstart</a>
+               </li>
+               <li class="menu__list__item menu__list__item__link button--text">
+                  <a href="https://drake.mit.edu/gallery.html" class="menu__list__item__link button--text">Gallery</a>
+               </li>
+               <li class="menu__list__item menu__list__item__link button--text">
+                  API Documentation
+                  <div class="menu_sub">
+                     <a href="https://drake.mit.edu/doxygen_cxx/index.html" class="menu__list__item__link button--text">C++</a>
+                     <a href="https://drake.mit.edu/pydrake/index.html" class="menu__list__item__link button--text">Python</a>
+                  </div>
+               </li>
+               <li class="menu__list__item menu__list__item__link button--text">
+                  Resources
+                  <div class="menu_sub">
+                     <a href="https://drake.mit.edu/getting_help.html" class="menu__list__item__link button--text">Getting Help</a>
+                     <a href="https://github.com/RobotLocomotion/drake/tree/master/tutorials" class="menu__list__item__link button--text">Tutorials</a>
+                     <a href="https://drake.mit.edu/developers.html" class="menu__list__item__link button--text">For Developers</a>
+                     <a href="https://drake.mit.edu/credits.html" class="menu__list__item__link button--text">Credits</a>
+                  </div>
+               </li>
+               <li class="menu__list__item menu__list__item__link button--text github--link">
+                  <a href="https://github.com/RobotLocomotion/drake" class="menu__list__item__link button--text">Github <img src="_static/github-white.svg"></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+</header>
+
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -597,39 +639,6 @@ validate <code class="docutils literal"><span class="pre">segment_index</span></
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="pydrake.trajectories.PiecewisePolynomial.value">
-<code class="descname">value</code><span class="sig-paren">(</span><em>self: pydrake.trajectories.PiecewisePolynomial</em>, <em>t: float</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[m, n]]<a class="headerlink" href="#pydrake.trajectories.PiecewisePolynomial.value" title="Permalink to this definition">¶</a></dt>
-<dd><p>Evaluates the PiecewisePolynomial at the given time t.</p>
-<dl class="docutils">
-<dt>Parameter <code class="docutils literal"><span class="pre">t</span></code>:</dt>
-<dd>The time at which to evaluate the PiecewisePolynomial.</dd>
-</dl>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The matrix of evaluated values.</td>
-</tr>
-</tbody>
-</table>
-<dl class="docutils">
-<dt>Precondition:</dt>
-<dd>If T == symbolic::Expression, <code class="docutils literal"><span class="pre">t.is_constant()</span></code> must be true.</dd>
-</dl>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">If t does not lie in the range that the polynomial is defined
-over, the polynomial will silently be evaluated at the closest
-point to t. For example, <code class="docutils literal"><span class="pre">value(-1)</span></code> will return <code class="docutils literal"><span class="pre">value(0)</span></code>
-for a polynomial defined over [0, 1].</p>
-</div>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">See warning in polynomial_construction_warning.</p>
-</div>
-</dd></dl>
-
 <dl class="staticmethod">
 <dt id="pydrake.trajectories.PiecewisePolynomial.ZeroOrderHold">
 <em class="property">static </em><code class="descname">ZeroOrderHold</code><span class="sig-paren">(</span><em>arg0: numpy.ndarray[numpy.float64[m, 1]], arg1: numpy.ndarray[numpy.float64[m, n], flags.f_contiguous]</em><span class="sig-paren">)</span> &#x2192; pydrake.trajectories.PiecewisePolynomial<a class="headerlink" href="#pydrake.trajectories.PiecewisePolynomial.ZeroOrderHold" title="Permalink to this definition">¶</a></dt>
@@ -647,6 +656,83 @@ represents a sample point.</p>
 <tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
 <li>RuntimeError under the conditions specified under</li>
 <li><code class="xref py py-exc docutils literal"><span class="pre">coefficient_construction_methods.</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pydrake.trajectories.PiecewiseQuaternionSlerp">
+<em class="property">class </em><code class="descclassname">pydrake.trajectories.</code><code class="descname">PiecewiseQuaternionSlerp</code><a class="headerlink" href="#pydrake.trajectories.PiecewiseQuaternionSlerp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pydrake.trajectories.PiecewiseTrajectory" title="pydrake.trajectories.PiecewiseTrajectory"><code class="xref py py-class docutils literal"><span class="pre">pydrake.trajectories.PiecewiseTrajectory</span></code></a></p>
+<p>A class representing a trajectory for quaternions that are
+interpolated using piecewise slerp (spherical linear interpolation).
+All the orientation samples are expected to be with respect to the
+same parent reference frame, i.e. q_i represents the rotation R_PBi
+for the orientation of frame B at the ith sample in a fixed parent
+frame P. The world frame is a common choice for the parent frame. The
+angular velocity and acceleration are also relative to the parent
+frame and expressed in the parent frame. Since there is a sign
+ambiguity when using quaternions to represent orientation, namely q
+and -q represent the same orientation, the internal quaternion
+representations ensure that q_n.dot(q_{n+1}) &gt;= 0. Another intuitive
+way to think about this is that consecutive quaternions have the
+shortest geodesic distance on the unit sphere.</p>
+<dl class="method">
+<dt id="pydrake.trajectories.PiecewiseQuaternionSlerp.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.trajectories.PiecewiseQuaternionSlerp.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>__init__(self: pydrake.trajectories.PiecewiseQuaternionSlerp) -&gt; None</li>
+</ol>
+<p>Builds an empty PiecewiseQuaternionSlerp.</p>
+<ol class="arabic simple" start="2">
+<li>__init__(self: pydrake.trajectories.PiecewiseQuaternionSlerp, breaks: List[float], quaternions: List[pydrake.common.eigen_geometry.Quaternion_[float]]) -&gt; None</li>
+</ol>
+<p>Builds a PiecewiseQuaternionSlerp.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li>RuntimeError if breaks and quaternions have different length, or</li>
+<li>breaks have length &lt; 2.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="3">
+<li>__init__(self: pydrake.trajectories.PiecewiseQuaternionSlerp, breaks: List[float], rotation_matrices: List[numpy.ndarray[numpy.float64[3, 3]]]) -&gt; None</li>
+</ol>
+<p>Builds a PiecewiseQuaternionSlerp.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li>RuntimeError if breaks and rot_matrices have different length, or</li>
+<li>breaks have length &lt; 2.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="4">
+<li>__init__(self: pydrake.trajectories.PiecewiseQuaternionSlerp, breaks: List[float], angle_axes: List[pydrake.common.eigen_geometry.AngleAxis_[float]]) -&gt; None</li>
+</ol>
+<p>Builds a PiecewiseQuaternionSlerp.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li>RuntimeError if breaks and ang_axes have different length, or</li>
+<li>breaks have length &lt; 2.</li>
 </ul>
 </td>
 </tr>
@@ -717,24 +803,6 @@ trajectory that is represented by simpler logic in each segment or
 </ol>
 </dd></dl>
 
-<dl class="method">
-<dt id="pydrake.trajectories.PiecewiseTrajectory.vector_values">
-<code class="descname">vector_values</code><span class="sig-paren">(</span><em>self: pydrake.trajectories.PiecewiseTrajectory, arg0: List[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[m, n]]<a class="headerlink" href="#pydrake.trajectories.PiecewiseTrajectory.vector_values" title="Permalink to this definition">¶</a></dt>
-<dd><p>If cols()==1, then evaluates the trajectory at each time <code class="docutils literal"><span class="pre">t</span></code>, and
-returns the results as a Matrix with the ith column corresponding to
-the ith time. Otherwise, if rows()==1, then evaluates the trajectory
-at each time <code class="docutils literal"><span class="pre">t</span></code>, and returns the results as a Matrix with the ith
-row corresponding to the ith time.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">RuntimeError if both cols and rows are not equal to 1.</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
 </dd></dl>
 
 <dl class="class">
@@ -774,6 +842,24 @@ the nth derivative, where <code class="docutils literal"><span class="pre">n</sp
 </dd></dl>
 
 <dl class="method">
+<dt id="pydrake.trajectories.Trajectory.MakeDerivative">
+<code class="descname">MakeDerivative</code><span class="sig-paren">(</span><em>self: pydrake.trajectories.Trajectory</em>, <em>derivative_order: int = 1</em><span class="sig-paren">)</span> &#x2192; pydrake.trajectories.Trajectory<a class="headerlink" href="#pydrake.trajectories.Trajectory.MakeDerivative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the derivative of this Trajectory.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">derivative_order</span></code>:</dt>
+<dd>The number of times to take the derivative before returning.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The nth derivative of this object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="pydrake.trajectories.Trajectory.rows">
 <code class="descname">rows</code><span class="sig-paren">(</span><em>self: pydrake.trajectories.Trajectory</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#pydrake.trajectories.Trajectory.rows" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
@@ -781,6 +867,42 @@ the nth derivative, where <code class="docutils literal"><span class="pre">n</sp
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The number of rows in the matrix returned by value().</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.trajectories.Trajectory.value">
+<code class="descname">value</code><span class="sig-paren">(</span><em>self: pydrake.trajectories.Trajectory</em>, <em>t: float</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[m, n]]<a class="headerlink" href="#pydrake.trajectories.Trajectory.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluates the trajectory at the given time <code class="docutils literal"><span class="pre">t</span></code>.</p>
+<dl class="docutils">
+<dt>Parameter <code class="docutils literal"><span class="pre">t</span></code>:</dt>
+<dd>The time at which to evaluate the trajectory.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The matrix of evaluated values.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.trajectories.Trajectory.vector_values">
+<code class="descname">vector_values</code><span class="sig-paren">(</span><em>self: pydrake.trajectories.Trajectory, arg0: List[float]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[numpy.float64[m, n]]<a class="headerlink" href="#pydrake.trajectories.Trajectory.vector_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>If cols()==1, then evaluates the trajectory at each time <code class="docutils literal"><span class="pre">t</span></code>, and
+returns the results as a Matrix with the ith column corresponding to
+the ith time. Otherwise, if rows()==1, then evaluates the trajectory
+at each time <code class="docutils literal"><span class="pre">t</span></code>, and returns the results as a Matrix with the ith
+row corresponding to the ith time.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">RuntimeError if both cols and rows are not equal to 1.</td>
 </tr>
 </tbody>
 </table>
@@ -858,7 +980,33 @@ the nth derivative, where <code class="docutils literal"><span class="pre">n</sp
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-   
+  
+<footer class="footer">
+   <div class="wrap grid">
+      <a href="/" class="footer__logo">
+      <img src="_static/drake-logo.svg" class="footer__logo__img">
+      </a>
+      <div class="menu__wrap">
+         <ul class="menu__list">
+            <li class="menu__list__item menu__list__item__link button--text">
+               <a href="https://drake.mit.edu/doxygen_cxx/index.html" class="menu__list__item__link button--text">C++</a>
+            </li>
+            <li class="menu__list__item menu__list__item__link button--text">
+               <a href="https://drake.mit.edu/pydrake/index.html" class="menu__list__item__link button--text">Python</a>
+            </li>
+            <li class="menu__list__item menu__list__item__link button--text github--link">
+               <a href="https://github.com/RobotLocomotion/drake" class="menu__list__item__link button--text">
+               Github <img src="_static/github.svg">
+               </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <div class="footer__copyright wrap">
+      <span class="footnote">© 2020 Drake - Robot Locomotion Group (MIT)</span>
+   </div>
+</footer>
+
 
 </body>
 </html>

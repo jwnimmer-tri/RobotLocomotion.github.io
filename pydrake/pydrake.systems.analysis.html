@@ -40,7 +40,49 @@
     <link rel="top" title="pydrake  documentation" href="index.html"/>
         <link rel="up" title="pydrake.systems" href="pydrake.systems.html"/>
         <link rel="next" title="pydrake.systems.controllers" href="pydrake.systems.controllers.html"/>
-        <link rel="prev" title="pydrake.systems.all" href="pydrake.systems.all.html"/> 
+        <link rel="prev" title="pydrake.systems.all" href="pydrake.systems.all.html"/>
+<header class="header--main black-back">
+   <div class="wrap grid__2-col">
+      <a href="https://drake.mit.edu" class="header__logo">
+      <img src="_static/drake-logo-white.svg" class="header__logo__img">
+      </a>
+      <div class="menu__toggle js-menu-toggle">
+         <div class="menu__toggle__icon"><span></span></div>
+      </div>
+      <nav class="header__menu">
+         <div class="menu__wrap">
+            <ul class="menu__list">
+               <li class="menu__list__item menu__list__item__link button--text">
+                  <a href="https://drake.mit.edu/quickstart.html" class="menu__list__item__link button--text">Quickstart</a>
+               </li>
+               <li class="menu__list__item menu__list__item__link button--text">
+                  <a href="https://drake.mit.edu/gallery.html" class="menu__list__item__link button--text">Gallery</a>
+               </li>
+               <li class="menu__list__item menu__list__item__link button--text">
+                  API Documentation
+                  <div class="menu_sub">
+                     <a href="https://drake.mit.edu/doxygen_cxx/index.html" class="menu__list__item__link button--text">C++</a>
+                     <a href="https://drake.mit.edu/pydrake/index.html" class="menu__list__item__link button--text">Python</a>
+                  </div>
+               </li>
+               <li class="menu__list__item menu__list__item__link button--text">
+                  Resources
+                  <div class="menu_sub">
+                     <a href="https://drake.mit.edu/getting_help.html" class="menu__list__item__link button--text">Getting Help</a>
+                     <a href="https://github.com/RobotLocomotion/drake/tree/master/tutorials" class="menu__list__item__link button--text">Tutorials</a>
+                     <a href="https://drake.mit.edu/developers.html" class="menu__list__item__link button--text">For Developers</a>
+                     <a href="https://drake.mit.edu/credits.html" class="menu__list__item__link button--text">Credits</a>
+                  </div>
+               </li>
+               <li class="menu__list__item menu__list__item__link button--text github--link">
+                  <a href="https://github.com/RobotLocomotion/drake" class="menu__list__item__link button--text">Github <img src="_static/github-white.svg"></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+</header>
+
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -1522,7 +1564,7 @@ simulation).</p>
 
 <dl class="function">
 <dt id="pydrake.systems.analysis.RegionOfAttraction">
-<code class="descclassname">pydrake.systems.analysis.</code><code class="descname">RegionOfAttraction</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], options: pydrake.systems.analysis.RegionOfAttractionOptions = &lt;pydrake.systems.analysis.RegionOfAttractionOptions object at 0x7f07bffc4f30&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.symbolic.Expression<a class="headerlink" href="#pydrake.systems.analysis.RegionOfAttraction" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">pydrake.systems.analysis.</code><code class="descname">RegionOfAttraction</code><span class="sig-paren">(</span><em>system: pydrake.systems.framework.System_[float], context: pydrake.systems.framework.Context_[float], options: pydrake.systems.analysis.RegionOfAttractionOptions = &lt;pydrake.systems.analysis.RegionOfAttractionOptions object at 0x7f41e0ef7770&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.symbolic.Expression<a class="headerlink" href="#pydrake.systems.analysis.RegionOfAttraction" title="Permalink to this definition">¶</a></dt>
 <dd><p>Estimates the region of attraction of the time-invariant <code class="docutils literal"><span class="pre">system</span></code> at
 the fixed point defined by <code class="docutils literal"><span class="pre">context</span></code>.</p>
 <p>This implementation only searches for the largest level set of the
@@ -2264,7 +2306,7 @@ called.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.analysis.Simulator_.Simulator_[float].Initialize">
-<code class="descname">Initialize</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float], params: pydrake.systems.analysis.InitializeParams = &lt;pydrake.systems.analysis.InitializeParams object at 0x7f07bffc4bf0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.SimulatorStatus<a class="headerlink" href="#pydrake.systems.analysis.Simulator_.Simulator_[float].Initialize" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Initialize</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float], params: pydrake.systems.analysis.InitializeParams = &lt;pydrake.systems.analysis.InitializeParams object at 0x7f41e0ef7430&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.SimulatorStatus<a class="headerlink" href="#pydrake.systems.analysis.Simulator_.Simulator_[float].Initialize" title="Permalink to this definition">¶</a></dt>
 <dd><p>See the class documentation for more information. We recommend calling
 Initialize() explicitly prior to beginning a simulation so that error
 conditions will be discovered early. However, Initialize() will be
@@ -2850,7 +2892,7 @@ called.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.analysis.Simulator_[AutoDiffXd].Initialize">
-<code class="descname">Initialize</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[AutoDiffXd], params: pydrake.systems.analysis.InitializeParams = &lt;pydrake.systems.analysis.InitializeParams object at 0x7f07bffc4eb0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.SimulatorStatus<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[AutoDiffXd].Initialize" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Initialize</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[AutoDiffXd], params: pydrake.systems.analysis.InitializeParams = &lt;pydrake.systems.analysis.InitializeParams object at 0x7f41e0ef76f0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.SimulatorStatus<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[AutoDiffXd].Initialize" title="Permalink to this definition">¶</a></dt>
 <dd><p>See the class documentation for more information. We recommend calling
 Initialize() explicitly prior to beginning a simulation so that error
 conditions will be discovered early. However, Initialize() will be
@@ -3434,7 +3476,7 @@ called.</p>
 
 <dl class="method">
 <dt id="pydrake.systems.analysis.Simulator_[float].Initialize">
-<code class="descname">Initialize</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float], params: pydrake.systems.analysis.InitializeParams = &lt;pydrake.systems.analysis.InitializeParams object at 0x7f07bffc4bf0&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.SimulatorStatus<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[float].Initialize" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Initialize</code><span class="sig-paren">(</span><em>self: pydrake.systems.analysis.Simulator_[float], params: pydrake.systems.analysis.InitializeParams = &lt;pydrake.systems.analysis.InitializeParams object at 0x7f41e0ef7430&gt;</em><span class="sig-paren">)</span> &#x2192; pydrake.systems.analysis.SimulatorStatus<a class="headerlink" href="#pydrake.systems.analysis.Simulator_[float].Initialize" title="Permalink to this definition">¶</a></dt>
 <dd><p>See the class documentation for more information. We recommend calling
 Initialize() explicitly prior to beginning a simulation so that error
 conditions will be discovered early. However, Initialize() will be
@@ -3847,7 +3889,33 @@ should be attributed to the System as a whole.</p>
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-   
+  
+<footer class="footer">
+   <div class="wrap grid">
+      <a href="/" class="footer__logo">
+      <img src="_static/drake-logo.svg" class="footer__logo__img">
+      </a>
+      <div class="menu__wrap">
+         <ul class="menu__list">
+            <li class="menu__list__item menu__list__item__link button--text">
+               <a href="https://drake.mit.edu/doxygen_cxx/index.html" class="menu__list__item__link button--text">C++</a>
+            </li>
+            <li class="menu__list__item menu__list__item__link button--text">
+               <a href="https://drake.mit.edu/pydrake/index.html" class="menu__list__item__link button--text">Python</a>
+            </li>
+            <li class="menu__list__item menu__list__item__link button--text github--link">
+               <a href="https://github.com/RobotLocomotion/drake" class="menu__list__item__link button--text">
+               Github <img src="_static/github.svg">
+               </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <div class="footer__copyright wrap">
+      <span class="footnote">© 2020 Drake - Robot Locomotion Group (MIT)</span>
+   </div>
+</footer>
+
 
 </body>
 </html>
