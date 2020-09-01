@@ -395,7 +395,7 @@ not provide RGB values.</li>
 
 <dl class="class">
 <dt id="pydrake.systems.meshcat_visualizer.MeshcatVisualizer">
-<em class="property">class </em><code class="descclassname">pydrake.systems.meshcat_visualizer.</code><code class="descname">MeshcatVisualizer</code><span class="sig-paren">(</span><em>scene_graph</em>, <em>draw_period=0.03333333333333333</em>, <em>prefix='drake'</em>, <em>zmq_url='default'</em>, <em>open_browser=None</em>, <em>frames_to_draw={}</em>, <em>frames_opacity=1.0</em>, <em>axis_length=0.15</em>, <em>axis_radius=0.006</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.meshcat_visualizer.MeshcatVisualizer" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pydrake.systems.meshcat_visualizer.</code><code class="descname">MeshcatVisualizer</code><span class="sig-paren">(</span><em>scene_graph</em>, <em>draw_period=0.03333333333333333</em>, <em>prefix='drake'</em>, <em>zmq_url='default'</em>, <em>open_browser=None</em>, <em>frames_to_draw={}</em>, <em>frames_opacity=1.0</em>, <em>axis_length=0.15</em>, <em>axis_radius=0.006</em>, <em>delete_prefix_on_load=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.meshcat_visualizer.MeshcatVisualizer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pydrake.systems.framework.html#pydrake.systems.framework.LeafSystem_[float]" title="pydrake.systems.framework.LeafSystem_[float]"><code class="xref py py-class docutils literal"><span class="pre">pydrake.systems.framework.LeafSystem_[float]</span></code></a></p>
 <p>MeshcatVisualizer is a System block that connects to the pose bundle output
 port of a SceneGraph and visualizes the scene in Meshcat.</p>
@@ -408,7 +408,7 @@ browser, then to run drake apps (potentially many times) that publish to
 that default url.</p>
 <dl class="method">
 <dt id="pydrake.systems.meshcat_visualizer.MeshcatVisualizer.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>scene_graph</em>, <em>draw_period=0.03333333333333333</em>, <em>prefix='drake'</em>, <em>zmq_url='default'</em>, <em>open_browser=None</em>, <em>frames_to_draw={}</em>, <em>frames_opacity=1.0</em>, <em>axis_length=0.15</em>, <em>axis_radius=0.006</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.meshcat_visualizer.MeshcatVisualizer.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>scene_graph</em>, <em>draw_period=0.03333333333333333</em>, <em>prefix='drake'</em>, <em>zmq_url='default'</em>, <em>open_browser=None</em>, <em>frames_to_draw={}</em>, <em>frames_opacity=1.0</em>, <em>axis_length=0.15</em>, <em>axis_radius=0.006</em>, <em>delete_prefix_on_load=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.meshcat_visualizer.MeshcatVisualizer.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -440,6 +440,14 @@ For example, if we want to draw the frames of body “A” and
 <div>{“1”: {“A”, “B”}}.</div></blockquote>
 </li>
 <li><strong>axis_length and axis_radius are the opacity</strong><strong>, </strong><strong>length</strong> (<em>frames_opacity</em><em>,</em>) – and radius of the coordinate axes to be drawn.</li>
+<li><strong>delete_prefix_on_load</strong> – Specifies whether we should delete the
+visualizer path associated with prefix on our load
+initialization event.  True ensures a clean slate for every
+simulation.  False allows for the possibility of caching object
+meshes on the zmqserver/clients, to avoid repeatedly
+downloading meshes over the websockets link, but will cause
+geometry from previous simulations to remain in the scene.  You
+may call <code class="docutils literal"><span class="pre">delete_prefix()</span></code> manually to clear the scene.</li>
 </ul>
 </td>
 </tr>
@@ -470,6 +478,16 @@ in a python executable.  Example:</p>
             <span class="n">open_browser</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">open_browser</span><span class="p">))</span>
 </pre></div>
 </div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydrake.systems.meshcat_visualizer.MeshcatVisualizer.delete_prefix">
+<code class="descname">delete_prefix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydrake.systems.meshcat_visualizer.MeshcatVisualizer.delete_prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manually delete the meshcat prefix path specified in the constructor.
+All objects/transforms at or below this path will be removed.  This
+effectively clears all previous visualizations.  You will need to call
+<code class="docutils literal"><span class="pre">load()</span></code> directly, or trigger the initialization event that occurs at
+the beginning of a simulation, to see any visualizations.</p>
 </dd></dl>
 
 <dl class="method">
